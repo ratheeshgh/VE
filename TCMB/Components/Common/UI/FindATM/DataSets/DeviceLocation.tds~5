@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="-1">
+  <!---->
+  <Device DS_REF_DATAGROUP_ATTRIBUTE_NAME="WorkingElements[1].Device[1]" DS_UID="-1" Latitude="79.522844" Longitude="8.977011"/>
+</DataSetRoot>

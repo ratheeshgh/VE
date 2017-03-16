@@ -1,0 +1,1 @@
+<input class="$$ITEM.CLASS$" id="$$ITEM.ID()$" type="text" placeholder="$$ITEM.PLACEHOLDER$">

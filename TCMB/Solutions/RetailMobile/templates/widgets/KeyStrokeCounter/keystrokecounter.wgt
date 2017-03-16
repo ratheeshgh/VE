@@ -1,0 +1,16 @@
+<script type="text/javascript">
+jQuery(document).ready(function() {
+var wgtkeyup=function() 
+{                     
+  $('#$$ITEM.SOURCE$').keyup(function () {
+    var left = 1000 - $(this).val().length;
+    if (left < 0) {
+        left = 0;
+    }
+    $('#$$ITEM.RESULT$').html('<span> ' + left + ' characters remaining</span>');
+});
+}  
+wgtkeyup();
+if(Hi) Hi.addHook('postProcessResponses', wgtkeyup);
+});
+</script>

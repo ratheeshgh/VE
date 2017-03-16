@@ -1,0 +1,11 @@
+<!-- $Revision: 1.6 $ -->
+<div id="$$ITEM.ID()$Header" style="margin-top: -1px; border: 2px solid $$ITEM.PARENT_CONTAINER().TAB_NAV_COLOR$; border-top: none;
+	$%IF ITEM.SectionLayout != "Auto"$margin-left: $$ITEM.MarginWidth$px;height: $$ITEM.SectionHeight$px; width: $$ITEM.SectionWidth$px;$%ENDIF$
+	$$ITEM.INLINE_STYLES().SectionStyle$ " 
+	$%IF ITEM.STYLES().SectionStyle != ""$class="$$ITEM.STYLES().SectionStyle$"$%ENDIF$
+	>
+	<div id="Pane$$ITEM.ID()$">
+		$$FORMCONTENT$
+	</div>
+</div>
+

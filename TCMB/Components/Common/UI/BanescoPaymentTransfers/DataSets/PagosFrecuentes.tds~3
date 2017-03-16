@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="1">
+  <!---->
+  <BanescoThirdParty AccountNumber="5433-****-****-34566" DS_REF_DATAGROUP_ATTRIBUTE_NAME="FrequentPayments[1].BanescoThirdParty[1]" DS_UID="-1" Name="Juan Perez"/>
+  <BanescoThirdParty AccountNumber="5433-****-****-34566" DS_REF_DATAGROUP_ATTRIBUTE_NAME="FrequentPayments[1].BanescoThirdParty[1]" DS_UID="-1" Name="Mariano Diaz"/>
+  <BanescoThirdParty AccountNumber="5433-****-****-34566" DS_REF_DATAGROUP_ATTRIBUTE_NAME="FrequentPayments[1].BanescoThirdParty[1]" DS_UID="0" Name="Ricardo Alvarez"/>
+</DataSetRoot>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><DeploymentDescriptor AllowDataSets="Y" Connect="version 5.3.1__19" Name="4TRESS_Integration" ProjectFileName="4TRESS_Integration.ifp" eid="5B8F098F1E3C959130471">
+  <WebServices Name="Web Services Root" co_user="chjahnavi" eid="4B39CF3593033A4527087"/>
+  <VersioningInfo Name="Versioning Info" co_user="chjahnavi" eid="4B39CF3593033A4527211"/>
+  <Portlets Name="Portlets Root" co_user="chjahnavi" eid="4B39CF3593033A4527088"/>
+  <Parameters Name="Variables Root" co_user="chjahnavi" eid="4B39CF3593033A4527090">
+    <RunTimeParameters Name="Runtime Variables" co_user="chjahnavi" eid="4B39CF3593033A4527091">
+      <RunTimeParameter Mode="Live" Name="Mode" eid="5B8F098F1E3C959130493"/>
+      <RunTimeParameter Name="Session Timeout" eid="5B8F098F1E3C959130494"/>
+      <RunTimeParameter Name="Debug Level" eid="5B8F098F1E3C959130495"/>
+      <RunTimeParameter Name="Cryptokey File" eid="5B8F098F1E3C959130496"/>
+      <RunTimeParameter Name="Security" eid="5B8F098F1E3C959130497"/>
+      <RunTimeParameter Name="SubSession" eid="5B8F098F1E3C959130498"/>
+    </RunTimeParameters>
+    <GlobalParameters Name="Global Variables" co_user="chjahnavi" eid="4B39CF3593033A4527098">
+      <GlobalParameter GlobalParameterValue="CH_DIRECT" Name="CHANNEL_CODE_SYSTEM" eid="97B0DE35F550A94139684"/>
+      <GlobalParameter GlobalParameterValue="CH_WEB" Name="CHANNEL_CODE_USER" eid="97B0DE35F550A94139685"/>
+      <GlobalParameter GlobalParameterValue="AT_SYSLOG" Name="AUTHENTICATION_TYPE_CODE_SYSTEM" eid="97B0DE35F550A94139686"/>
+      <GlobalParameter GlobalParameterValue="AT_CUSTPW" Name="AUTHENTICATION_TYPE_CODE_USER_PRIMARY" eid="97B0DE35F550A94139687"/>
+      <GlobalParameter GlobalParameterValue="AT_CUSTMW" Name="AUTHENTICATION_TYPE_CODE_USER_SECONDARY" eid="97B0DE35F550A94139688"/>
+      <GlobalParameter GlobalParameterValue="AT_CUSTOTP" Name="AUTHENTICATION_TYPE_CODE_DEVICE_PRIMARY" eid="97B0DE35F550A94139689"/>
+      <GlobalParameter GlobalParameterValue="AT_CUSTPIN" Name="AUTHENTICATION_TYPE_CODE_DEVICE_SECONDARY" eid="97B0DE35F550A94139690"/>
+      <GlobalParameter GlobalParameterValue="AT_CUSTOOB" Name="AUTHENTICATION_TYPE_CODE_OOB" eid="97B0DE35F550A94139691"/>
+      <GlobalParameter GlobalParameterValue="OTPAC" Name="TEMPLATE_NAME" eid="DE679F88F995A6B626011"/>
+      <GlobalParameter GlobalParameterValue="3" Name="SEED_POSITION_NUMBER" eid="97B0DE345500B94139684"/>
+      <GlobalParameter GlobalParameterValue="true" Name="DONOT_IMPERSONATE" eid="97B0DE35F550A94139692"/>
+      <GlobalParameter GlobalParameterValue="DOMESA" Name="SECURITY_DOMAIN" eid="97B0DE35F550A94139693"/>
+      <GlobalParameter GlobalParameterValue="ENABLED" Name="DEFAULT_CREDENTIAL_STATUS" eid="97B0DE35F550A94276893"/>
+      <GlobalParameter GlobalParameterValue="N" Name="REMOTE_WORKING" eid="97B0DE35F550A94139694"/>
+      <GlobalParameter GlobalParameterValue="$$LIBRARY_HOME$properties/4TRESS_Errors.properties" Name="ERROR_PROPERTIES_LOCATION" eid="97B0DE35F550A94139695"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/Authenticator-70" Name="4TRESS_AUTHENTICATOR_SERVICE_URL" eid="97B0DE35F550A94139696"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/UserManager-70" Name="4TRESS_USERMANAGER_SERVICE_URL" eid="97B0DE35F550A94139697"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/CredentialManager-70" Name="4TRESS_CREDENTIALMANAGER_SERVICE_URL" eid="97B0DE35F550A94139698"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/AuthenticatorManager-70" Name="4TRESS_AUTHENTICATORMANAGER_SERVICE_URL" eid="97B0DE35F550A94139699"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/DeviceManager-70" Name="4TRESS_DEVICEMANAGER_SERVICE_URL" eid="43206B45AD494BDB27397"/>
+      <GlobalParameter GlobalParameterValue="http://10.93.5.70:9090/4TRESSSoap/services/Auditor-70" Name="4TRESS_AUDITOR_SERVICE_URL" eid="97B0DE35F550A94139700"/>
+      <GlobalParameter GlobalParameterValue="1_0_0__201411" Name="RELEASE_VERSION" eid="250B29E105E39DC410724"/>
+    </GlobalParameters>
+  </Parameters>
+  <DirectoryStructure Name="Directory Structure Root" co_user="chjahnavi" eid="4B39CF3593033A4527155">
+    <Directory DefaultDir="Y" Directory="./templates" Name="Templates dir" eid="5B8F098F1E3C959130484"/>
+    <Directory DefaultDir="Y" Directory="./html" Name="HTML dir" eid="5B8F098F1E3C959130485"/>
+    <Directory DefaultDir="Y" Directory="./html/js" Name="JavaScript dir" eid="5B8F098F1E3C959130486"/>
+    <Directory DefaultDir="Y" Directory="./html/css" Name="Stylesheet dir" eid="5B8F098F1E3C959130487"/>
+    <Directory DefaultDir="Y" Directory="./html/templates" Name="HTML Templates dir" eid="5B8F098F1E3C959130488"/>
+    <Directory DefaultDir="Y" Directory="./images" Name="Images dir" eid="5B8F098F1E3C959130489"/>
+    <Directory DefaultDir="Y" Directory="./dictionary" Name="Dictionary dir" eid="5B8F098F1E3C959130490"/>
+    <Directory DefaultDir="Y" Directory="./DataSets" Name="Data Sets dir" eid="5B8F098F1E3C959130491"/>
+  </DirectoryStructure>
+  <ComponentRoot Name="ComponentRoot" co_user="chjahnavi" eid="4B39CF3593033A4527089"/>
+  <Profiles Name="Profiles Root" co_user="chjahnavi" eid="4B39CF3593033A4527172">
+    <IOSProfiles Name="iOS Profiles" co_user="chjahnavi" eid="4B39CF3593033A4527173"/>
+    <AndroidProfiles Name="Android Profiles" co_user="chjahnavi" eid="4B39CF3593033A4527174"/>
+    <WindowsProfiles Name="Windows Profiles" co_user="chjahnavi" eid="4B39CF3593033A4527175"/>
+  </Profiles>
+  <Messages Name="Messages Root" co_user="chjahnavi" eid="4B39CF3593033A4527176">
+    <Message MESSAGE_NAME="ok" Name="ok" VALUE="OK" co_user="chjahnavi" eid="4B39CF3593033A4527177"/>
+    <Message MESSAGE_NAME="not_now" Name="not_now" VALUE="Not Now" co_user="chjahnavi" eid="4B39CF3593033A4527178"/>
+    <Message MESSAGE_NAME="user_settings" Name="user_settings" VALUE="Settings" co_user="chjahnavi" eid="4B39CF3593033A4527179"/>
+    <Message MESSAGE_NAME="check_updates" Name="check_updates" VALUE="Check for updates" co_user="chjahnavi" eid="4B39CF3593033A4527180"/>
+    <Message MESSAGE_NAME="developer_settings" Name="developer_settings" VALUE="Developer settings" co_user="chjahnavi" eid="4B39CF3593033A4527181"/>
+    <Message MESSAGE_NAME="title_activity_app_pereferences" Name="title_activity_app_pereferences" VALUE="Settings" co_user="chjahnavi" eid="4B39CF3593033A4527182"/>
+    <Message MESSAGE_NAME="internet_connection_needed_title" Name="internet_connection_needed_title" VALUE="No Connectivity" co_user="chjahnavi" eid="4B39CF3593033A4527183"/>
+    <Message MESSAGE_NAME="internet_connection_needed" Name="internet_connection_needed" VALUE="Please verify you have cellular network or WiFi connection" co_user="chjahnavi" eid="4B39CF3593033A4527184"/>
+    <Message MESSAGE_NAME="error_accessing_server_title" Name="error_accessing_server_title" VALUE="Error communicating with the server" co_user="chjahnavi" eid="4B39CF3593033A4527185"/>
+    <Message MESSAGE_NAME="error_accessing_server_description" Name="error_accessing_server_description" VALUE="The server cannot be reached" co_user="chjahnavi" eid="4B39CF3593033A4527186"/>
+    <Message MESSAGE_NAME="invalid_ssl_cert" Name="invalid_ssl_cert" VALUE="The SSL certificate is invalid. The server cannot be trusted." co_user="chjahnavi" eid="4B39CF3593033A4527187"/>
+    <Message MESSAGE_NAME="invalid_ssl_cert_development" Name="invalid_ssl_cert_development" VALUE="The SSL certificate is invalid. This is allowed only in development mode." co_user="chjahnavi" eid="4B39CF3593033A4527188"/>
+    <Message MESSAGE_NAME="lang_preference_dialog_title" Name="lang_preference_dialog_title" VALUE="Preferred language" co_user="chjahnavi" eid="4B39CF3593033A4527189"/>
+    <Message MESSAGE_NAME="lang_preference_title" Name="lang_preference_title" VALUE="Language settings" co_user="chjahnavi" eid="4B39CF3593033A4527190"/>
+    <Message MESSAGE_NAME="lang_preference_summary" Name="lang_preference_summary" VALUE="Select your preferred language" co_user="chjahnavi" eid="4B39CF3593033A4527191"/>
+    <Message MESSAGE_NAME="change_confirm_reload" Name="change_confirm_reload" VALUE="For applying your settings, the application has to be reloaded. Reload the application now?" co_user="chjahnavi" eid="4B39CF3593033A4527192"/>
+    <Message MESSAGE_NAME="settings_update_title" Name="settings_update_title" VALUE="Settings update" co_user="chjahnavi" eid="4B39CF3593033A4527193"/>
+    <Message MESSAGE_NAME="udpate_download_updates_now" Name="udpate_download_updates_now" VALUE="Updates are available. Download updates now?" co_user="chjahnavi" eid="4B39CF3593033A4527194"/>
+    <Message MESSAGE_NAME="udpate_result_uptodate" Name="udpate_result_uptodate" VALUE="The application is uptodate." co_user="chjahnavi" eid="4B39CF3593033A4527195"/>
+    <Message MESSAGE_NAME="udpate_result_error" Name="udpate_result_error" VALUE="The update site rejected the query." co_user="chjahnavi" eid="4B39CF3593033A4527196"/>
+    <Message MESSAGE_NAME="udpate_result_processing_error" Name="udpate_result_processing_error" VALUE="Error encountered during update." co_user="chjahnavi" eid="4B39CF3593033A4527197"/>
+    <Message MESSAGE_NAME="udpate_result_unknown_error" Name="udpate_result_unknown_error" VALUE="Error reading the update status from the update site." co_user="chjahnavi" eid="4B39CF3593033A4527198"/>
+    <Message MESSAGE_NAME="downloading_file_title" Name="downloading_file_title" VALUE="Downloading updates..." co_user="chjahnavi" eid="4B39CF3593033A4527199"/>
+    <Message MESSAGE_NAME="downloading_file_starting" Name="downloading_file_starting" VALUE="Starting..." co_user="chjahnavi" eid="4B39CF3593033A4527200"/>
+    <Message MESSAGE_NAME="downloading_file_progress" Name="downloading_file_progress" VALUE="Downloading file  %1$d of %2$d." co_user="chjahnavi" eid="4B39CF3593033A4527201"/>
+    <Message MESSAGE_NAME="downloading_updates_error" Name="downloading_updates_error" VALUE="Failed to download the updates." co_user="chjahnavi" eid="4B39CF3593033A4527202"/>
+    <Message MESSAGE_NAME="downloading_updates_success" Name="downloading_updates_success" VALUE="The updates were downloaded successfully." co_user="chjahnavi" eid="4B39CF3593033A4527203"/>
+    <Message MESSAGE_NAME="update_through_googleplay_confirmation" Name="update_through_googleplay_confirmation" VALUE="You need to update the application through google play. Download the updated application now?" co_user="chjahnavi" eid="4B39CF3593033A4527204"/>
+    <Message MESSAGE_NAME="update_through_windows_store_confirmation" Name="update_through_windows_store_confirmation" VALUE="You need to update the application through Windows Phone Store. Download the updated application now?" co_user="chjahnavi" eid="4B39CF3593033A4527205"/>
+    <Message MESSAGE_NAME="store_updatetitle" Name="store_updatetitle" VALUE="AppStore update" co_user="chjahnavi" eid="4B39CF3593033A4527206"/>
+    <Message MESSAGE_NAME="udpate_result_major_update" Name="udpate_result_major_update" VALUE="Updates are available for this application. Connect to iTunes now?" co_user="chjahnavi" eid="4B39CF3593033A4527207"/>
+    <Message MESSAGE_NAME="alert_title" Name="alert_title" VALUE="Alert" co_user="chjahnavi" eid="4B39CF3593033A4527208"/>
+    <Message MESSAGE_NAME="loading_wait" Name="loading_wait" VALUE="Loading, please wait..." co_user="chjahnavi" eid="4B39CF3593033A4527209"/>
+  </Messages>
+  <HybridLanguages Name="HybridLanguages Root" co_user="chjahnavi" eid="4B39CF3593033A4527210"/>
+  <DataMapping/>
+</DeploymentDescriptor>

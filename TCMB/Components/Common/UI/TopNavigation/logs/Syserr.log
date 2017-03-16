@@ -1,0 +1,76 @@
+[2017-01-15 23:35:06.361], A 'Level 2 (Recoverable Errors)' runtime error has occurred in your project:
+
+Running startup rules failed: java.io.FileNotFoundException: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\TopNavigation (Access is denied)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+[2017-01-15 23:35:06.361], Exception time: Sun Jan 15 23:35:06 CST 2017
+[2017-01-15 23:35:06.361], FormContext Project: "TopNavigation"
+['STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'none']
+ApplicationFormSession 
+[2017-01-15 23:35:06.363], com.acquire.intelligentforms.rules.RuleException: java.io.FileNotFoundException: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\TopNavigation (Access is denied)
+[2017-01-15 23:35:06.363], 	at com.acquire.intelligentforms.rules.XMLMapperRule.evaluate(XMLMapperRule.java:699)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.runRule(RulesEngine.java:2075)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRuleInternal(RulesEngine.java:1862)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRuleInternal(RulesEngine.java:2009)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRule(RulesEngine.java:1756)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.runRuleListStoppingAtBreakout(RulesEngine.java:2663)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.runProjectStartupRules(RulesEngine.java:2526)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.rules.RulesEngine.runProjectStartupRules(RulesEngine.java:2440)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.presentation.ServletController.initRTE(ServletController.java:773)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.presentation.ServletController.initServletController(ServletController.java:693)
+[2017-01-15 23:35:06.366], 	at com.acquire.intelligentforms.presentation.ServletController.init(ServletController.java:671)
+[2017-01-15 23:35:06.366], 	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:542)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.servlet.ServletHolder.getServlet(ServletHolder.java:424)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:671)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:138)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:564)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:213)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1094)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1028)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:258)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.Server.handle(Server.java:445)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:267)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:224)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+[2017-01-15 23:35:06.366], 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+[2017-01-15 23:35:06.366], 	at java.lang.Thread.run(Thread.java:722)
+[2017-01-15 23:35:06.366], Caused by: java.io.FileNotFoundException: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\TopNavigation (Access is denied)
+[2017-01-15 23:35:06.366], 	at java.io.FileInputStream.open(Native Method)
+[2017-01-15 23:35:06.366], 	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+[2017-01-15 23:35:06.366], 	at java.io.FileInputStream.<init>(FileInputStream.java:97)
+[2017-01-15 23:35:06.366], 	at com.acquire.util.file.FileHandler.newFileInputStream(FileHandler.java:88)
+[2017-01-15 23:35:06.368], 	at com.acquire.util.FileUtility.newFileInputStream(FileUtility.java:2116)
+[2017-01-15 23:35:06.368], 	at com.acquire.intelligentforms.entities.xml.XMLDataConnection.readXMLDocument(XMLDataConnection.java:104)
+[2017-01-15 23:35:06.368], 	at com.acquire.intelligentforms.entities.xml.XMLMapperSerialiser.readData(XMLMapperSerialiser.java:128)
+[2017-01-15 23:35:06.368], 	at com.acquire.intelligentforms.rules.XMLMapperRule.readData(XMLMapperRule.java:876)
+[2017-01-15 23:35:06.368], 	at com.acquire.intelligentforms.rules.XMLMapperRule.evaluate(XMLMapperRule.java:661)
+[2017-01-15 23:35:06.368], 	... 32 more
+[2017-01-15 23:35:06.701], A 'Level 2 (Recoverable Errors)' runtime error has occurred in your project:
+
+Cannot find specified text to include.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+[2017-01-15 23:35:10.465], A 'Level 1 (Critical Errors)' runtime error has occurred in your project:
+
+Rule description : Mobile/BasicTopNavigation/NavigationBasic/Broadcast logout message
+Path : com.acquire.intelligentforms.rules.BroadcastRule
+com.acquire.intelligentforms.rules.RuleException: java.lang.Exception: This rule can only be used within a presentation based component
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+[2017-01-15 23:35:10.710], A 'Level 1 (Critical Errors)' runtime error has occurred in your project:
+
+Caught an exception, going to error phase: java.lang.Exception: This rule can only be used within a presentation based component
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+[2017-01-15 23:35:10.730], A 'Level 2 (Recoverable Errors)' runtime error has occurred in your project:
+
+Created new phase to handle error: BasicTopNavigation.ErrorPhase
+
+-----------------------------------------------------------------------------------------------------------------------------------------

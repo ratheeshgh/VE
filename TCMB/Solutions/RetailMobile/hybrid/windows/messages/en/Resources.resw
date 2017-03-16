@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+  <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root" xmlns="">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element msdata:IsDataSet="true" name="root">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+                <xsd:element minOccurs="0" msdata:Ordinal="2" name="comment" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute msdata:Ordinal="1" name="name" type="xsd:string" use="required"/>
+              <xsd:attribute msdata:Ordinal="3" name="type" type="xsd:string"/>
+              <xsd:attribute msdata:Ordinal="4" name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" msdata:Ordinal="1" name="value" type="xsd:string"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+  </data>
+<data name="ResourceLanguage" xml:space="preserve">
+    <value>en</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="not_now" xml:space="preserve">
+    <value>Not Now</value>
+  </data>
+  <data name="user_settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="check_updates" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="developer_settings" xml:space="preserve">
+    <value>Developer settings</value>
+  </data>
+  <data name="title_activity_app_pereferences" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="internet_connection_needed_title" xml:space="preserve">
+    <value>No Connectivity</value>
+  </data>
+  <data name="internet_connection_needed" xml:space="preserve">
+    <value>Please verify you have cellular network or WiFi connection</value>
+  </data>
+  <data name="error_accessing_server_title" xml:space="preserve">
+    <value>Error communicating with the server</value>
+  </data>
+  <data name="error_accessing_server_description" xml:space="preserve">
+    <value>The server cannot be reached</value>
+  </data>
+  <data name="invalid_ssl_cert" xml:space="preserve">
+    <value>The SSL certificate is invalid. The server cannot be trusted.</value>
+  </data>
+  <data name="invalid_ssl_cert_development" xml:space="preserve">
+    <value>The SSL certificate is invalid. This is allowed only in development mode.</value>
+  </data>
+  <data name="lang_preference_dialog_title" xml:space="preserve">
+    <value>Preferred language</value>
+  </data>
+  <data name="lang_preference_title" xml:space="preserve">
+    <value>Language settings</value>
+  </data>
+  <data name="lang_preference_summary" xml:space="preserve">
+    <value>Select your preferred language</value>
+  </data>
+  <data name="change_confirm_reload" xml:space="preserve">
+    <value>For applying your settings, the application has to be reloaded. Reload the application now?</value>
+  </data>
+  <data name="settings_update_title" xml:space="preserve">
+    <value>Settings update</value>
+  </data>
+  <data name="update_download_updates_now" xml:space="preserve">
+    <value>Updates are available. Download updates now?</value>
+  </data>
+  <data name="update_result_uptodate" xml:space="preserve">
+    <value>The application is up to date.</value>
+  </data>
+  <data name="update_result_error" xml:space="preserve">
+    <value>The update site rejected the query.</value>
+  </data>
+  <data name="update_result_processing_error" xml:space="preserve">
+    <value>Error encountered during update.</value>
+  </data>
+  <data name="update_result_unknown_error" xml:space="preserve">
+    <value>Error reading the update status from the update site.</value>
+  </data>
+  <data name="downloading_file_title" xml:space="preserve">
+    <value>Downloading updates...</value>
+  </data>
+  <data name="downloading_file_starting" xml:space="preserve">
+    <value>Starting...</value>
+  </data>
+  <data name="downloading_file_progress" xml:space="preserve">
+    <value>Downloading file %1$d of %2$d.</value>
+  </data>
+  <data name="downloading_updates_error" xml:space="preserve">
+    <value>Failed to download the updates.</value>
+  </data>
+  <data name="downloading_updates_success" xml:space="preserve">
+    <value>The updates were downloaded successfully.</value>
+  </data>
+  <data name="update_through_googleplay_confirmation" xml:space="preserve">
+    <value>You need to update the application through Google play. Download the updated application now?</value>
+  </data>
+  <data name="store_updatetitle" xml:space="preserve">
+    <value>AppStore update</value>
+  </data>
+  <data name="update_result_major_update" xml:space="preserve">
+    <value>Updates are available for this application. Connect to iTunes now?</value>
+  </data>
+  <data name="alert_title" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="loading_wait" xml:space="preserve">
+    <value>Loading, please wait...</value>
+  </data>
+  <data name="update_through_windows_store_confirmation" xml:space="preserve">
+    <value>You need to update the application through Windows Phone Store. Download the updated application now?</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="use_device_language" xml:space="preserve">
+    <value>Use device language</value>
+  </data>
+  <data name="all_pages" xml:space="preserve">
+    <value>All pages</value>
+  </data>
+  <data name="filesave_success" xml:space="preserve">
+    <value>File saved successfully</value>
+  </data>
+  <data name="one_page" xml:space="preserve">
+    <value>One page</value>
+  </data>
+  <data name="pdf_documents" xml:space="preserve">
+    <value>PDF Documents</value>
+  </data>
+  <data name="print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+</root>

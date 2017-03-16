@@ -1,0 +1,5 @@
+$$ITEM.EC_GENERATE()$
+<script>
+$('#$$ITEM.ID()$_0').addClass('toggle');
+$( '<label for="$$ITEM.ID()$_0"></label>' ).insertAfter( 'input[id*="$$ITEM.ID()$_0"]' );
+</script>

@@ -1,0 +1,71 @@
+<!-- $Revision: 1.0 $ -->
+
+<script type="text/javascript" charset="utf-8">
+
+window.com=window.com||{};
+window.com.temenos=window.com.temenos||{};
+window.com.temenos.widgets=window.com.temenos.widgets||{};
+window.com.temenos.widgets.hybrid=window.com.temenos.widgets.hybrid||{};
+window.com.temenos.widgets.hybrid.contacts=window.com.temenos.widgets.hybrid.contacts||{};
+
+window.com.temenos.widgets.hybrid.contacts.getcontacts = (function () {
+    var contactsAPI = {}
+
+    //replace [C]s with arg[1] then arg[2] etc...
+    function processName(input)
+    {
+        var args = arguments;
+        var argIndex = 1;
+
+        var name = input.toUpperCase();
+        name = name.replace(" ", "");
+        
+        var Cindex = -1;
+        while ( (Cindex = name.indexOf("C]")) > 0) {
+            var instance = argIndex + 1 > args.length ? 1 : args[argIndex++];
+            name = name.substring(0, Cindex) + instance + name.substring(Cindex + 1);
+        }
+        return name;
+    };
+
+    function populateOrCreateInput(name, value) {
+        if (!value) return;
+
+        var els = document.getElementsByName(name);
+        var el;
+        if (els == null || els.length == 0) {
+            el = document.createElement("input");
+            el.type = "text";
+            el.name = name;
+            el.style.display  = "none";
+            document.forms["form1"].appendChild(el);
+        } else {
+            el = els[0];
+        }
+        
+        el.value = value.trim();
+    };
+
+    contactsAPI.extractValue = function(val, dataItem, instance1, instance2) {
+        if (dataItem && dataItem.length > 0) {
+            var elName = processName(dataItem, instance1, instance2);
+            populateOrCreateInput(elName, val);
+        }
+    };
+
+    //extract the value and type into data items (if specified)
+    contactsAPI.extractValues = function(valArray, dataItem, typeDataItem, instance1) {
+        var nums = valArray  == null ? [] : valArray;
+        for (var j = 0; j < nums.length; j++) {
+            contactsAPI.extractValue(nums[j].value, dataItem, instance1, j+1);
+            if (nums[j].value && nums[j].value.length > 0) {
+                contactsAPI.extractValue(nums[j].type, typeDataItem, instance1, j+1);
+            }
+        }
+    };
+
+
+    return contactsAPI;
+})();   
+   
+</script>

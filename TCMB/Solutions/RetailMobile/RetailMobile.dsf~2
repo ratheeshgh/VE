@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><DeploymentDescriptor AllowDataSets="N" AndroidProfile="TCMB_ANDROID_BETA" AppURLOverride="http://192.168.4.77:8181/RetailMobile/servletcontroller" ApplicationName="RetailMobile" BuildAndroidApp="Y" BuildIOSApp="N" BuildWAR="Y" BuildWebApp="N" BuildWindowsApp="N" BuildWindowsUniversalApp="N" Connect="version 5.4.1__7" DefaultDataSet="Do not use Data Sets" DeploymentDestination="D:/SVN/Deployments/Test/2015_08/interim_1" ExcludeXMLJars="Y" IncludeStdJars="Y" JailbreakErrorPhase="OfflineEnabled.JailBreak" Name="RetailMobile" OfflineErrorPhase="OfflineEnabled.Offline" Presentation="TCMB" ProjectFileName="RetailMobile.ifp" RepositoryFolder="C:/TemenosCR/Projects/Banesco/TCMBEVA/Banesco_EVA/TCMB" SSLErrorPhase="OfflineEnabled.SSL Error" Version="1.121" eid="DFFA14F4CB65DE8321529">
+  <WebServices Name="Web Services Root" eid="2B363CEF7D050D7F84119"/>
+  <VersioningInfo FilePattern="*.gif,*.jpg,*.png,*.css,*.js,*.html" Name="Versioning Info" RepositoryFolder="D:/svn/RepositoryLocation" ResourceFolders="images,html,hybrid" Version="1.121" eid="DFFA14F4CB65DE8340463"/>
+  <Portlets Name="Portlets Root" eid="2B363CEF7D050D7F84122"/>
+  <Parameters Name="Variables Root" eid="2B363CEF7D050D7F84262">
+    <RunTimeParameters Name="Runtime Variables" eid="2B363CEF7D050D7F84263">
+      <RunTimeParameter Mode="Live" Name="Mode" eid="DFFA14F4CB65DE8321557"/>
+      <RunTimeParameter Name="Session Timeout" SessionTimeout="300" eid="DFFA14F4CB65DE8321558"/>
+      <RunTimeParameter Name="Debug Level" eid="DFFA14F4CB65DE8321559"/>
+      <RunTimeParameter Name="Cryptokey File" eid="DFFA14F4CB65DE8321560"/>
+      <RunTimeParameter Name="Security" eid="DFFA14F4CB65DE8321561"/>
+      <RunTimeParameter Name="SubSession" eid="DFFA14F4CB65DE8321562"/>
+    </RunTimeParameters>
+    <GlobalParameters Name="Global Variables" eid="2B363CEF7D050D7F84270">
+      <GlobalParameter GlobalParameterValue="N" Name="4TRESS_SERVICE_STATUS" eid="DFFA14F4CB65DE8345490"/>
+      <GlobalParameter GlobalParameterValue="http://192.168.4.174:8085/TCMBCommon-iris/TCMBCommon.svc/GB0010001/" Name="IRIS_COMMON_SERVICE_ROOT_URI" eid="E7929170CDF56B9B12410"/>
+      <GlobalParameter GlobalParameterValue="http://192.168.4.174:8085/TCMBRetail-iris/TCMBRetail.svc/GB0010001/" Name="IRIS_RETAIL_SERVICE_ROOT_URI" eid="C8A9C675B390B88019929"/>
+      <GlobalParameter GlobalParameterValue="123456" Name="STATIC_DEMO_PASSWD" eid="29CE80C7510DBF8F10240"/>
+      <GlobalParameter GlobalParameterValue="ROLFGERLINGTC" Name="SYSTEM_USER" eid="191A652DED73DE1812957"/>
+      <GlobalParameter GlobalParameterValue="123456" Name="SYSTEM_PASSWORD" eid="191A652DED73DE1812958"/>
+      <GlobalParameter GlobalParameterValue="111111" Name="HELP_DESK_NUMBER" eid="9A59337C9A6BCD3D13131"/>
+      <GlobalParameter GlobalParameterValue="Temenos" Name="NAME" eid="78966D99B5C6962C25532"/>
+      <GlobalParameter GlobalParameterValue="TCMB_V1_0_0__20160417" Name="VERSION" eid="78966D99B5C6962C25533"/>
+      <GlobalParameter GlobalParameterValue="17-APR-2016" Name="RELEASE_DATE" eid="78966D99B5C6962C25535"/>
+      <GlobalParameter GlobalParameterValue="10" Name="NO_OF_TXNS" eid="12CC3C1D68903F5816086"/>
+      <GlobalParameter GlobalParameterValue="5" Name="NO_OF_RECENT_TXNS" eid="12CC3C1D68903F5816086"/>
+      <GlobalParameter GlobalParameterValue="10" Name="NO_OF_MESSAGES" eid="661755204E5E32E137961"/>
+      <GlobalParameter GlobalParameterValue="777777" Name="ABOUT_CONTACT_NO" eid="0F3E3B60C24DEB5012014"/>
+      <GlobalParameter GlobalParameterValue="WEB-INF/config/Configuration.xml" Name="CONFIG_FILENAME" eid="A177D25759C831D615847"/>
+      <GlobalParameter GlobalParameterValue="4" Name="SEARCH_RADIUS" eid="B52D98FA54ED023F22066"/>
+      <GlobalParameter GlobalParameterValue="Y" Name="LOAD_ALL_LOCATIONS" eid="B52D98FA54ED023F22066"/>
+      <GlobalParameter GlobalParameterValue="KM" Name="DISTANCE_UNIT" eid="B52D98FA54ED023F22067"/>
+      <GlobalParameter GlobalParameterValue="Y" Name="ENABLE_LANGUAGE_MAPS" eid="50A5E2312EAF393948847"/>
+      <GlobalParameter GlobalParameterValue="xls" Name="LANGUAGE_MAP_EXT" eid="50A5E2312EAF393948847"/>
+    </GlobalParameters>
+  </Parameters>
+  <DirectoryStructure Name="Directory Structure Root" eid="2B363CEF7D050D7F84323">
+    <Directory DefaultDir="Y" Directory="./templates" Name="Templates dir" eid="DFFA14F4CB65DE8321548"/>
+    <Directory DefaultDir="Y" Directory="./html" Name="HTML dir" eid="DFFA14F4CB65DE8321549"/>
+    <Directory DefaultDir="Y" Directory="./html/js" Name="JavaScript dir" eid="DFFA14F4CB65DE8321550"/>
+    <Directory DefaultDir="Y" Directory="./html/css" Name="Stylesheet dir" eid="DFFA14F4CB65DE8321551"/>
+    <Directory DefaultDir="Y" Directory="./html/templates" Name="HTML Templates dir" eid="DFFA14F4CB65DE8321552"/>
+    <Directory DefaultDir="Y" Directory="./images" Name="Images dir" eid="DFFA14F4CB65DE8321553"/>
+    <Directory DefaultDir="Y" Directory="./dictionary" Name="Dictionary dir" eid="DFFA14F4CB65DE8321554"/>
+    <Directory DefaultDir="Y" Directory="./DataSets" Name="Data Sets dir" eid="DFFA14F4CB65DE8321555"/>
+  </DirectoryStructure>
+  <ComponentRoot Name="ComponentRoot" eid="2B363CEF7D050D7F84123">
+    <Component ComponentName="LoadProduct" Name="471C70FD62780E83 ComponentSource 87" ProjectLocation="Common/Integration/LoadProduct" ProjectName="LoadProduct" eid="471C70FD62780E8375200">
+      <Component ComponentName="TcibAcctDetailss" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\Integration\LoadProduct\LoadProduct.ifp" Name="471C70FD62780E83 ComponentSource 142" ProjectLocation="Common/Integration/TcibAcctDetailss" ProjectName="TcibAcctDetailss" eid="471C70FD62780E8397689"/>
+      <Component ComponentName="TcibAaAdArrangementTabs" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\Integration\LoadProduct\LoadProduct.ifp" Name="471C70FD62780E83 ComponentSource 143" ProjectLocation="Common/Integration/TcibAaAdArrangementTabs" ProjectName="TcibAaAdArrangementTabs" eid="471C70FD62780E8397690"/>
+      <Component ComponentName="TcibAaLoanss" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\Integration\LoadProduct\LoadProduct.ifp" Name="471C70FD62780E83 ComponentSource 144" ProjectLocation="Common/Integration/TcibAaLoanss" ProjectName="TcibAaLoanss" eid="471C70FD62780E8397691"/>
+    </Component>
+    <Component ComponentName="BasicTopNavigation" Name="471C70FD62780E83 ComponentSource 91" ProjectLocation="$$LIBRARY_HOME$/Common/UI/TopNavigation" ProjectName="TopNavigation" eid="471C70FD62780E8375408">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8395316" Name="Link to 471C70FD62780E83 ComponentSource 48" eid="471C70FD62780E8397880"/>
+    </Component>
+    <Component ComponentName="AccountSelector" Name="471C70FD62780E83 ComponentSource 92" ProjectLocation="Common/UI/AccountSelector" ProjectName="AccountSelector" eid="471C70FD62780E8376274"/>
+    <Component ComponentName="AccountSummary" Name="471C70FD62780E83 ComponentSource 93" ProjectLocation="Common/UI/AccountSummary" ProjectName="AccountSummary" eid="471C70FD62780E8378640"/>
+    <Component ComponentName="AccountOperations" Name="471C70FD62780E83 ComponentSource 94" ProjectLocation="Common/UI/AccountOperations" ProjectName="AccountOperations" eid="471C70FD62780E8379451"/>
+    <Component ComponentName="LoanDetails" Name="471C70FD62780E83 ComponentSource 95" ProjectLocation="Common/UI/LoanDetails" ProjectName="LoanDetails" eid="471C70FD62780E8380186"/>
+    <Component ComponentName="Deposits" Name="471C70FD62780E83 ComponentSource 96" ProjectLocation="Common/UI/Deposits" ProjectName="Deposits" eid="471C70FD62780E8380959"/>
+    <Component ComponentName="GenericOverview" Name="471C70FD62780E83 ComponentSource 97" ProjectLocation="Common/UI/AccountOverview" ProjectName="AccountOverview" eid="471C70FD62780E8381732"/>
+    <Component ComponentName="AllAccountsRecentTransactionListss" Name="471C70FD62780E83 ComponentSource 98" ProjectLocation="Common/Integration/AllAccountsTransactionList" ProjectName="AllAccountsTransactionList" eid="471C70FD62780E8382476"/>
+    <Component ComponentName="AccountsList" Name="471C70FD62780E83 ComponentSource 99" ProjectLocation="Common/UI/AccountsList" ProjectName="AccountsList" eid="471C70FD62780E8382601">
+      <Component ComponentName="AaArrangementActivity_TcibNewUpdates-New" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\AccountsList\AccountsList.ifp" Name="471C70FD62780E83 ComponentSource 147" ProjectLocation="Common/Integration/AaArrangementActivity_TcibNewUpdates" ProjectName="AaArrangementActivity_TcibNewUpdates" eid="471C70FD62780E8397694"/>
+      <Component ComponentName="Account_Tcibs-Get" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\AccountsList\AccountsList.ifp" Name="471C70FD62780E83 ComponentSource 150" ProjectLocation="Common/Integration/Account_Tcibs" ProjectName="Account_Tcibs" eid="471C70FD62780E8397697"/>
+      <Component ComponentName="ProcessTxnAuthentication" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\AccountsList\AccountsList.ifp" Name="471C70FD62780E83 ComponentSource 153" ProjectLocation="Common/UI/TransactionAuthentication" ProjectName="TransactionAuthentication" eid="471C70FD62780E8397700">
+        <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397708" Name="Link to 471C70FD62780E83 ComponentSource 161" eid="471C70FD62780E8397915"/>
+      </Component>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397889"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397890"/>
+    </Component>
+    <Component ComponentName="Login" Name="471C70FD62780E83 ComponentSource 103" ProjectLocation="Common/UI/Login" ProjectName="Login" eid="471C70FD62780E8383392">
+      <Component ComponentName="UserLoginWithPassword" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Login\Login.ifp" Name="471C70FD62780E83 ComponentSource 161" ProjectLocation="Common/Integration/4TRESS_Integration" ProjectName="4TRESS_Integration" eid="471C70FD62780E8397708"/>
+      <Component ComponentName="TcibLoginDetailss" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Login\Login.ifp" Name="471C70FD62780E83 ComponentSource 162" ProjectLocation="Common/Integration/TcibLoginDetailss" ProjectName="TcibLoginDetailss" eid="471C70FD62780E8397709"/>
+    </Component>
+    <Component ComponentName="GetAllowedActions" Name="471C70FD62780E83 ComponentSource 106" ProjectLocation="Common/UI/Configuration" ProjectName="Configuration" eid="471C70FD62780E8384185"/>
+    <Component ComponentName="AllAccounts" Name="471C70FD62780E83 ComponentSource 107" ProjectLocation="Common/Integration/AllAccounts" ProjectName="AllAccounts" eid="471C70FD62780E8384202"/>
+    <Component ComponentName="ChequeDetails" Name="471C70FD62780E83 ComponentSource 108" ProjectLocation="Retail/UI/Cheques" ProjectName="Cheques" eid="471C70FD62780E8384475">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397891"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397892"/>
+      <Component ComponentName="TcibChequeStatuss" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Retail\UI\Cheques\Cheques.ifp" Name="471C70FD62780E83 ComponentSource 169" ProjectLocation="Common/Integration/TcibChequeStatuss" ProjectName="TcibChequeStatuss" eid="471C70FD62780E8397716"/>
+      <Component ComponentName="EbSecureMessage_Tcibs-Validate" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Retail\UI\Cheques\Cheques.ifp" Name="471C70FD62780E83 ComponentSource 171" ProjectLocation="Common/Integration/EbSecureMessage_Tcibs" ProjectName="EbSecureMessage_Tcibs" eid="471C70FD62780E8397718"/>
+      <Component ComponentName="PaymentStop_TcibStopCheques-List" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Retail\UI\Cheques\Cheques.ifp" Name="471C70FD62780E83 ComponentSource 177" ProjectLocation="Common/Integration/PaymentStop_TcibStopCheques" ProjectName="PaymentStop_TcibStopCheques" eid="471C70FD62780E8397724"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397893"/>
+    </Component>
+    <Component ComponentName="DirectDebits" Name="471C70FD62780E83 ComponentSource 112" ProjectLocation="Retail/UI/DirectDebits" ProjectName="DirectDebits" eid="471C70FD62780E8384886">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397894"/>
+      <Component ComponentName="TcibCusDdMandatess" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Retail\UI\DirectDebits\DirectDebits.ifp" Name="471C70FD62780E83 ComponentSource 188" ProjectLocation="Common/Integration/TcibCusDdMandatess" ProjectName="TcibCusDdMandatess" eid="471C70FD62780E8397735"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397895"/>
+      <Component ComponentName="DdDdi_TcibStandalones-Get" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Retail\UI\DirectDebits\DirectDebits.ifp" Name="471C70FD62780E83 ComponentSource 193" ProjectLocation="Common/Integration/DdDdi_TcibStandalones" ProjectName="DdDdi_TcibStandalones" eid="471C70FD62780E8397740"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397896"/>
+    </Component>
+    <Component ComponentName="LoanSchedule" Name="471C70FD62780E83 ComponentSource 115" ProjectLocation="Common/UI/LoanSchedule" ProjectName="LoanSchedule" eid="471C70FD62780E8385646">
+      <Component ComponentName="TcibAaPaymentScheduless" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\LoanSchedule\LoanSchedule.ifp" Name="471C70FD62780E83 ComponentSource 199" ProjectLocation="Common/Integration/TcibAaPaymentScheduless" ProjectName="TcibAaPaymentScheduless" eid="471C70FD62780E8397746"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397897"/>
+    </Component>
+    <Component ComponentName="Payments" Name="471C70FD62780E83 ComponentSource 117" ProjectLocation="Common/UI/CommonMakePayment" ProjectName="CommonMakePayment" eid="471C70FD62780E8386424">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397898"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397899"/>
+      <Component ComponentName="StandingOrder_Tcibs-Populate" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonMakePayment\CommonMakePayment.ifp" Name="471C70FD62780E83 ComponentSource 205" ProjectLocation="Common/Integration/StandingOrder_Tcibs" ProjectName="StandingOrder_Tcibs" eid="471C70FD62780E8397752"/>
+      <Component ComponentName="FundsTransfer_Tcibs-Validate" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonMakePayment\CommonMakePayment.ifp" Name="471C70FD62780E83 ComponentSource 207" ProjectLocation="Common/Integration/FundsTransfer_Tcibs" ProjectName="FundsTransfer_Tcibs" eid="471C70FD62780E8397754"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397900"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8394550" Name="Link to 471C70FD62780E83 ComponentSource 46" eid="471C70FD62780E8397901"/>
+    </Component>
+    <Component ComponentName="RecentTransactions" Name="471C70FD62780E83 ComponentSource 120" ProjectLocation="Common/UI/CommonRecentTransactions" ProjectName="CommonRecentTransactions" eid="471C70FD62780E8388006">
+      <Component ComponentName="TcibLastNTxnsRecentListss" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonRecentTransactions\CommonRecentTransactions.ifp" Name="471C70FD62780E83 ComponentSource 232" ProjectLocation="Common/Integration/TcibLastNTxnsRecentListss" ProjectName="TcibLastNTxnsRecentListss" eid="471C70FD62780E8397779"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397902"/>
+    </Component>
+    <Component ComponentName="StandingOrders" Name="471C70FD62780E83 ComponentSource 122" ProjectLocation="Common/UI/StandingOrders" ProjectName="StandingOrders" eid="471C70FD62780E8388758">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397903"/>
+      <Component ComponentName="TcibStos" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\StandingOrders\StandingOrders.ifp" Name="471C70FD62780E83 ComponentSource 236" ProjectLocation="Common/Integration/TcibStos" ProjectName="TcibStos" eid="471C70FD62780E8397783"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397904"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397752" Name="Link to 471C70FD62780E83 ComponentSource 205" eid="471C70FD62780E8397905"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397906"/>
+    </Component>
+    <Component ComponentName="FutureDatedPayments" Name="471C70FD62780E83 ComponentSource 124" ProjectLocation="Common/UI/UpcomingPayments" ProjectName="UpcomingPayments" eid="471C70FD62780E8389515">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397907"/>
+      <Component ComponentName="TcibFtFwds" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\UpcomingPayments\UpcomingPayments.ifp" Name="471C70FD62780E83 ComponentSource 251" ProjectLocation="Common/Integration/TcibFtFwds" ProjectName="TcibFtFwds" eid="471C70FD62780E8397798"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8376274" Name="Link to 471C70FD62780E83 ComponentSource 16" eid="471C70FD62780E8397908"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397754" Name="Link to 471C70FD62780E83 ComponentSource 207" eid="471C70FD62780E8397909"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397910"/>
+    </Component>
+    <Component ComponentName="BeneficiaryDirectories" Name="471C70FD62780E83 ComponentSource 126" ProjectLocation="$$LIBRARY_HOME$/Common/UI/BanescoPaymentTransfers" ProjectName="BanescoPaymentTransfers" eid="471C70FD62780E8390275"/>
+    <Component ComponentName="ChangePassword" Name="471C70FD62780E83 ComponentSource 127" ProjectLocation="Common/UI/Personalisation" ProjectName="Personalisation" eid="471C70FD62780E8390722">
+      <Component ComponentName="TcibCusLists" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Personalisation\Personalisation.ifp" Name="471C70FD62780E83 ComponentSource 287" ProjectLocation="Common/Integration/TcibCusLists" ProjectName="TcibCusLists" eid="471C70FD62780E8397834"/>
+      <Component ComponentName="Customer_TcibProfiles-Get" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Personalisation\Personalisation.ifp" Name="471C70FD62780E83 ComponentSource 288" ProjectLocation="Common/Integration/Customer_TcibProfiles" ProjectName="Customer_TcibProfiles" eid="471C70FD62780E8397835"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397708" Name="Link to 471C70FD62780E83 ComponentSource 161" eid="471C70FD62780E8397911"/>
+    </Component>
+    <Component ComponentName="Deposits" Name="471C70FD62780E83 ComponentSource 130" ProjectLocation="$$LIBRARY_HOME$/Common/UI/BanescoLoansAndDeposits" ProjectName="BanescoLoansAndDeposits" eid="471C70FD62780E8392234"/>
+    <Component ComponentName="ExchangeRates" Name="471C70FD62780E83 ComponentSource 131" ProjectLocation="Common/UI/ExchangeRates" ProjectName="ExchangeRates" eid="471C70FD62780E8392263">
+      <Component ComponentName="TcibCurrencyLists" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\ExchangeRates\ExchangeRates.ifp" Name="471C70FD62780E83 ComponentSource 295" ProjectLocation="Common/Integration/TcibCurrencyLists" ProjectName="TcibCurrencyLists" eid="471C70FD62780E8397842"/>
+    </Component>
+    <Component ComponentName="FindATM" Name="471C70FD62780E83 ComponentSource 133" ProjectLocation="Common/UI/FindATM" ProjectName="FindATM" eid="471C70FD62780E8392986"/>
+    <Component ComponentName="ManagePayees" Name="471C70FD62780E83 ComponentSource 134" ProjectLocation="Common/UI/CommonManagePayees" ProjectName="CommonManagePayees" eid="471C70FD62780E8394550">
+      <Component ComponentName="TcibBeneficiaryUtils" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonManagePayees\CommonManagePayees.ifp" Name="471C70FD62780E83 ComponentSource 301" ProjectLocation="Common/Integration/TcibBeneficiaryUtils" ProjectName="TcibBeneficiaryUtils" eid="471C70FD62780E8397848"/>
+      <Component ComponentName="TcibBenLists" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonManagePayees\CommonManagePayees.ifp" Name="471C70FD62780E83 ComponentSource 302" ProjectLocation="Common/Integration/TcibBenLists" ProjectName="TcibBenLists" eid="471C70FD62780E8397849"/>
+      <Component ComponentName="Beneficiary_Tcibs-Authorise" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\CommonManagePayees\CommonManagePayees.ifp" Name="471C70FD62780E83 ComponentSource 303" ProjectLocation="Common/Integration/Beneficiary_Tcibs" ProjectName="Beneficiary_Tcibs" eid="471C70FD62780E8397850"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397700" Name="Link to 471C70FD62780E83 ComponentSource 153" eid="471C70FD62780E8397912"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8384185" Name="Link to 471C70FD62780E83 ComponentSource 8" eid="471C70FD62780E8397913"/>
+    </Component>
+    <Component ComponentName="Messages" Name="471C70FD62780E83 ComponentSource 138" ProjectLocation="Common/UI/Messages" ProjectName="Messages" eid="471C70FD62780E8395316">
+      <Component ComponentName="TcibPersonalMessages - Load all" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Messages\Messages.ifp" Name="471C70FD62780E83 ComponentSource 320" ProjectLocation="Common/Integration/TcibPersonalMessages" ProjectName="TcibPersonalMessages" eid="471C70FD62780E8397867"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="471C70FD62780E8397718" Name="Link to 471C70FD62780E83 ComponentSource 171" eid="471C70FD62780E8397914"/>
+      <Component ComponentName="EbSecureMessage_TcibReplys-Validate" ContainingProjectLocation="C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\Messages\Messages.ifp" Name="471C70FD62780E83 ComponentSource 329" ProjectLocation="Common/Integration/EbSecureMessage_TcibReplys" ProjectName="EbSecureMessage_TcibReplys" eid="471C70FD62780E8397876"/>
+    </Component>
+    <Component ComponentName="Settings" Name="471C70FD62780E83 ComponentSource 141" ProjectLocation="Common/UI/Settings" ProjectName="Settings" eid="471C70FD62780E8396858"/>
+  </ComponentRoot>
+  <Profiles Name="Profiles Root" eid="2B363CEF7D050D7F84340">
+    <IOSProfiles Name="iOS Profiles" eid="2B363CEF7D050D7F84341">
+      <IOSProfile ApplicationOrientation="portrait" ApplicationTitle="TCMB" CertificateFile="$$PROJECTHOME$/hybrid/ios/certificates/TemenosEnterpriseCertificate.p12" CertificateName="iPhone Distribution: Temenos UK Ltd" CertificatePassword="temenos" DestinationFolder="$$DEPLOY_HOME$/hybrid/ios" DeviceConfiguration="phone and tablet" EdgeConnect_URL="http://localhost:9095/RetailMobile/servletcontroller" IsDevelopmentMode="Y" JailbreakDetection="Y" Name="TCMB_IOS_Beta" OsVersionsSupported="6.0" PackageName="com.temenos.retailmobile" ProfileName="TCMB_IOS_Beta" ProvisioningProfile="$$PROJECTHOME$/hybrid/ios/certificates/TemenosInHouseDistribution.mobileprovision" ResourcesFolder="$$PROJECTHOME$/hybrid/ios/res" RunInBackground="N" UpdateServletUrl="http://localhost:9095/RetailMobile/mobileUpdate" eid="BD64FB73202F497B28975" iTunesLink="https://itunes.apple.com/in/app/itunes-u/id490217893?mt=8&amp;ign-mpt=uo%3D4"/>
+    </IOSProfiles>
+    <AndroidProfiles Name="Android Profiles" eid="2B363CEF7D050D7F84342">
+      <AndroidProfile AccessContacts="N" ApplicationOrientation="portrait" ApplicationTitle="TCMB" ApplicationVersionCode="1" CertificateAlias="EdgeHybrid" CertificateAliasPassword="Kj!&amp;454ger3iodcde3" CertificateFile="$$PROJECTHOME$/hybrid/android/certificates/keystore" CertificatePassword="Kj!&amp;454ger3iodcde3" DestinationFolder="$$DEPLOY_HOME$/hybrid/android" EdgeConnect_URL="http://192.168.4.77:8181/RetailMobile/servletcontroller" IsDevelopmentMode="Y" JailbreakDetection="Y" Name="TCMB_ANDROID_BETA" OsVersionsSupported="Android 2.3.3-2.3.7 Gingerbread" PackageName="com.temenos.retailmobile" ProfileName="TCMB_ANDROID_BETA" RecordsAudio="N" ResourcesFolder="$$PROJECTHOME$/hybrid/android/res" StreamsAudio="N" UpdateServletUrl="http://192.168.4.77:8181/RetailMobile/mobileUpdate" UsesCamera="N" UsesGeolocation="Y" UsesPushNotifications="N" UsesVibration="N" eid="BD64FB73202F497B28976"/>
+    </AndroidProfiles>
+    <WindowsProfiles Name="WP8 Profiles" eid="2B363CEF7D050D7F84343">
+      <WindowsProfile AccessContacts="Y" ApplicationDescription="TCMB Windows" ApplicationOrientation="portrait" ApplicationTitle="TCMB" CompanyName="Temenos" DestinationFolder="$$DEPLOY_HOME$/hybrid/wp8/" EdgeConnect_URL="http://localhost:9095/RetailMobile/servletcontroller" GUID="63d8f315-1115-4ed1-86d7-481d19722a5d" IsDevelopmentMode="Y" JailbreakDetection="Y" ManifestGUID="3DA6336E-0E83-4817-B0EA-EE921F1514F9" NEW_GUID="N" NEW_MANIFEST_GUID="N" Name="Windows8" OsVersionsSupported="Windows Phone 8" ProfileName="Windows8" RecordsAudio="N" ResourcesFolder="$$PROJECTHOME$/hybrid/wp8/res" StreamsAudio="N" UpdateServletUrl="http://localhost:9095/RetailMobile/mobileUpdate" UsesCamera="Y" UsesGeolocation="Y" eid="4F4734470D03204D170112"/>
+    </WindowsProfiles>
+    <WindowsUniversalProfiles Name="Windows Profiles" eid="2B363CEF7D050D7F84344"/>
+  </Profiles>
+  <Messages Name="Messages Root" eid="2B363CEF7D050D7F84351">
+    <Message INITIALIZED="true" MESSAGE_NAME="ok" Name="ok" OTHER_LANGUAGES="English=OK" VALUE="OK" eid="DFFA14F4CB65DE8321566"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="not_now" Name="not_now" OTHER_LANGUAGES="English=Not Now" VALUE="Not Now" eid="DFFA14F4CB65DE8321567"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="user_settings" Name="user_settings" OTHER_LANGUAGES="English=Settings" VALUE="Settings" eid="DFFA14F4CB65DE8321568"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="check_updates" Name="check_updates" OTHER_LANGUAGES="English=Check for updates" VALUE="Check for updates" eid="DFFA14F4CB65DE8321569"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="developer_settings" Name="developer_settings" OTHER_LANGUAGES="English=Developer settings" VALUE="Developer settings" eid="DFFA14F4CB65DE8321570"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="title_activity_app_pereferences" Name="title_activity_app_pereferences" OTHER_LANGUAGES="English=Settings" VALUE="Settings" eid="DFFA14F4CB65DE8321571"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="internet_connection_needed_title" Name="internet_connection_needed_title" OTHER_LANGUAGES="English=No Connectivity" VALUE="No Connectivity" eid="DFFA14F4CB65DE8321572"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="internet_connection_needed" Name="internet_connection_needed" OTHER_LANGUAGES="English=Please verify you have cellular network or WiFi connection" VALUE="Please verify you have cellular network or WiFi connection" eid="DFFA14F4CB65DE8321573"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="error_accessing_server_title" Name="error_accessing_server_title" OTHER_LANGUAGES="English=Error communicating with the server" VALUE="Error communicating with the server" eid="DFFA14F4CB65DE8321574"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="error_accessing_server_description" Name="error_accessing_server_description" OTHER_LANGUAGES="English=The server cannot be reached" VALUE="The server cannot be reached" eid="DFFA14F4CB65DE8321575"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="invalid_ssl_cert" Name="invalid_ssl_cert" OTHER_LANGUAGES="English=The SSL certificate is invalid. The server cannot be trusted." VALUE="The SSL certificate is invalid. The server cannot be trusted." eid="DFFA14F4CB65DE8321576"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="invalid_ssl_cert_development" Name="invalid_ssl_cert_development" OTHER_LANGUAGES="English=The SSL certificate is invalid. This is allowed only in development mode." VALUE="The SSL certificate is invalid. This is allowed only in development mode." eid="DFFA14F4CB65DE8321577"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_dialog_title" Name="lang_preference_dialog_title" OTHER_LANGUAGES="English=Preferred language" VALUE="Preferred language" eid="DFFA14F4CB65DE8321578"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_title" Name="lang_preference_title" OTHER_LANGUAGES="English=Language settings" VALUE="Language settings" eid="DFFA14F4CB65DE8321579"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_summary" Name="lang_preference_summary" OTHER_LANGUAGES="English=Select your preferred language" VALUE="Select your preferred language" eid="DFFA14F4CB65DE8321580"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="change_confirm_reload" Name="change_confirm_reload" OTHER_LANGUAGES="English=For applying your settings, the application has to be reloaded. Reload the application now?" VALUE="For applying your settings, the application has to be reloaded. Reload the application now?" eid="DFFA14F4CB65DE8321581"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="settings_update_title" Name="settings_update_title" OTHER_LANGUAGES="English=Settings update" VALUE="Settings update" eid="DFFA14F4CB65DE8321582"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_download_updates_now" Name="update_download_updates_now" OTHER_LANGUAGES="English=Updates are available. Download updates now?" VALUE="Updates are available. Download updates now?" eid="DFFA14F4CB65DE8321583"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_uptodate" Name="update_result_uptodate" OTHER_LANGUAGES="English=The application is up to date." VALUE="The application is up to date." eid="DFFA14F4CB65DE8321584"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_error" Name="update_result_error" OTHER_LANGUAGES="English=The update site rejected the query." VALUE="The update site rejected the query." eid="DFFA14F4CB65DE8321585"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_processing_error" Name="update_result_processing_error" OTHER_LANGUAGES="English=Error encountered during update." VALUE="Error encountered during update." eid="DFFA14F4CB65DE8321586"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_unknown_error" Name="update_result_unknown_error" OTHER_LANGUAGES="English=Error reading the update status from the update site." VALUE="Error reading the update status from the update site." eid="DFFA14F4CB65DE8321587"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_title" Name="downloading_file_title" OTHER_LANGUAGES="English=Downloading updates..." VALUE="Downloading updates..." eid="DFFA14F4CB65DE8321588"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_starting" Name="downloading_file_starting" OTHER_LANGUAGES="English=Starting..." VALUE="Starting..." eid="DFFA14F4CB65DE8321589"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_progress" Name="downloading_file_progress" OTHER_LANGUAGES="English=Downloading file %1$d of %2$d." VALUE="Downloading file %1$d of %2$d." eid="DFFA14F4CB65DE8321590"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_updates_error" Name="downloading_updates_error" OTHER_LANGUAGES="English=Failed to download the updates." VALUE="Failed to download the updates." eid="DFFA14F4CB65DE8321591"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_updates_success" Name="downloading_updates_success" OTHER_LANGUAGES="English=The updates were downloaded successfully." VALUE="The updates were downloaded successfully." eid="DFFA14F4CB65DE8321592"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_through_googleplay_confirmation" Name="update_through_googleplay_confirmation" OTHER_LANGUAGES="English=You need to update the application through Google play. Download the updated application now?" VALUE="You need to update the application through Google play. Download the updated application now?" eid="DFFA14F4CB65DE8321593"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="store_updatetitle" Name="store_updatetitle" OTHER_LANGUAGES="English=AppStore update" VALUE="AppStore update" eid="DFFA14F4CB65DE8321594"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_major_update" Name="update_result_major_update" OTHER_LANGUAGES="English=Updates are available for this application. Connect to iTunes now?" VALUE="Updates are available for this application. Connect to iTunes now?" eid="DFFA14F4CB65DE8321595"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="alert_title" Name="alert_title" OTHER_LANGUAGES="English=Alert" VALUE="Alert" eid="63F6B7129AEAD99B10678"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="loading_wait" Name="loading_wait" OTHER_LANGUAGES="English=Loading, please wait..." VALUE="Loading, please wait..." eid="63F6B7129AEAD99B10679"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_through_windows_store_confirmation" Name="update_through_windows_store_confirmation" OTHER_LANGUAGES="English=You need to update the application through Windows Phone Store. Download the updated application now?" VALUE="You need to update the application through Windows Phone Store. Download the updated application now?" eid="C8A9C675B390B88018389"/>
+    <Message MESSAGE_NAME="save" Name="save" VALUE="Save" eid="4897D0D4F403CEB917326"/>
+    <Message MESSAGE_NAME="use_device_language" Name="use_device_language" VALUE="Use device language" eid="4897D0D4F403CEB917327"/>
+    <Message MESSAGE_NAME="all_pages" Name="all_pages" VALUE="All pages" eid="DF510D0D7EE40F5F37182"/>
+    <Message MESSAGE_NAME="filesave_success" Name="filesave_success" VALUE="File saved successfully" eid="DF510D0D7EE40F5F37183"/>
+    <Message MESSAGE_NAME="one_page" Name="one_page" VALUE="One page" eid="DF510D0D7EE40F5F37184"/>
+    <Message MESSAGE_NAME="pdf_documents" Name="pdf_documents" VALUE="PDF Documents" eid="DF510D0D7EE40F5F37185"/>
+    <Message MESSAGE_NAME="print" Name="print" VALUE="Print" eid="DF510D0D7EE40F5F37186"/>
+    <Message MESSAGE_NAME="reports" Name="reports" VALUE="Reports" eid="DF510D0D7EE40F5F37187"/>
+  </Messages>
+  <HybridLanguages Name="HybridLanguages Root" eid="2B363CEF7D050D7F84434">
+    <HybridLanguage Alias="English" ISOCode="en" IncludeInDeployment="Y" LanguageMapFile="$$PROJECTHOME$WEB-INF/config/Languages/English/RetailMobile.xml" Name="English" eid="A436D69CB1E6699D56754"/>
+    <HybridLanguage Alias="$$Configuration[1].Languages[1].Language[C].Alias$" IncludeInDeployment="false" LanguageMapFile="$$!LANGUAGE_MAP_FOLDER$/$$Configuration[1].Languages[1].Language[C].Alias$/RetailMobile.$$!LANGUAGE_MAP_EXT$" Name="$$Configuration[1].Languages[1].Language[C].Alias$" eid="624AB905F222586474874"/>
+  </HybridLanguages>
+  <DataMapping/>
+</DeploymentDescriptor>

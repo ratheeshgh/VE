@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="5">
+  <!---->
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="-1" ServiceName="PetroGas"/>
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="0" ServiceName="Edelap"/>
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="1" ServiceName="ServiLuz"/>
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="2" ServiceName="Movistar"/>
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="3" ServiceName="Servicel"/>
+  <SearchInDirectory AccountNo="5455-****-****-3456" Alias="Petro" Amount="1234" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchInDirectory[1]" DS_UID="4" ServiceName="Personal"/>
+</DataSetRoot>

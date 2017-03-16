@@ -1,0 +1,420 @@
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+ * $RCSfile: header.tpl,v $
+ * $Author: pete $
+ * $Revision: 1.34 $
+ * $Date: 2013/04/02 17:27:00 $
+-->
+  <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+		<!-- Version number: TCMB_V1_0_0__20160417 -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	  <meta name="HandheldFriendly" content="true" />
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <meta name="author" content="Edge IPK"/>
+	  <link rel="shortcut icon" href="./html/favicon.ico">
+	  <title>Temenos Mobile Banking</title>
+	  <link href="./html/css/main.css" rel="stylesheet">
+	  <link href="./html/css/temenos.css" rel="stylesheet">
+	  
+	  <link rel="stylesheet" id="cssLink">
+	  <script src="./html/js/cordova/cordova_loader.js"></script> 
+	  <script src="./html/js/hookit.min.js"></script> 
+	  <script type="text/javascript">
+		var controlCss; 
+		var deviceAgent = navigator.userAgent.toLowerCase(); 
+		if(deviceAgent.match(/android/i)){
+			controlCss = "./html/css/android.css"; 
+			document.getElementById("cssLink").setAttribute("href", controlCss);
+		}
+		</script>
+	  <script src="./html/js/jquery.min.js"></script>
+	  <script type="text/javascript" src="./html/js/main.js"></script>
+	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
+<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+
+<script type="text/javascript">
+//<![CDATA[
+var controllerMode = 'XX';
+var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
+var rootContext = '.';
+var act = './servletcontroller';
+var popupAct = './servletcontroller';
+var session = new Array();
+var checkbox = new Array();
+var activeTabName = '';
+var rowClickedIds = new Array();
+var calendarComponents = new Array();
+var submitEnabled = true;
+var enabledControls = new Array();
+var enabledLinks = new Array();
+var forwardsConfirmMsg = '';
+var backConfirmMsg = '';
+var hasSubmitted = false;
+var keyspressed = '';
+var qlrOk = 'Y';
+var invalidQuestions = new Array();
+var calendarPagePath = './html/calendar.html';
+var calendarPopup = '	<div id="toolbar" onmouseover="this.style.cursor = \'pointer\'" style="height: 20px; width:197px;  ">		<div style="height: 20px; background: rgb(126, 192, 233) url(./images/toolBarBlueGradient.gif) repeat-x scroll 0% 0%; float: left; width: 175px; " onmousedown="try {dragStart(event, \'FloatCalendarDiv\');} catch (e){}">&nbsp;<\\/div>		<div style="background-color: #ffffff;border-top: 2px solid rgb(170, 220, 250); border-right: 2px solid rgb(126, 192, 233); float: left; color: rgb(126, 192, 233); font-family: Arial; text-align: center; width: 20px; height: 18px;" onclick="parentNode.parentNode.style.display = \'none\';" >X<\\/div>		<div style="clear: both"><\\/div>	<\\/div>	<div style="color: #4444BB; font-family: Arial; height:92%; width:100%;">		<iframe id="calendarIframe" src="javascript:false;" style="height:100%; width:100%; color: #FFFFFF;" scrolling="no" frameBorder="0"			>		    <p>Your browser does not support iframes.<\\/p>		<\\/iframe>	<\\/div>';
+var helpPagePath = './html/help.html';
+var imageDirPath = './images/';
+var popupParams = '';
+var clientSideValidation = true;
+var calendars = [];
+var currentX = 390;
+var currentY = 650;
+var SORT_COLUMN_INDEX;
+var CURRENT_YEAR = 2017;
+var CURRENT_THEME = '';
+var focusValue = '';
+var MessagePosition = 'Below Question';
+var MessageTargetId = '';
+var InfoMessagePosition = 'Do Not Show';
+var InfoMessageTargetId = '';
+var WarningMessagePosition = 'Do Not Show';
+var WarningMessageTargetId = '';
+var ShowOneMessage = 'Y';
+var MessagesSeparator = '';
+var MessagesOrder = '';
+var MandMessage = 'Please answer all the required questions';
+var ValidationMessage = 'Please enter a valid value';
+var InvalidUploadTypeMessage = 'The valid file types you are allowed to upload are: $$QUESTION_CONSTRAINT$';
+var InvalidMaxFileSizeMessage = 'The maximum file size allowed is $$QUESTION_CONSTRAINT$k';
+var InvalidAlphaNumericMessage = 'Please re-enter using letters and numbers';
+var InvalidAlphaMessage = 'Please re-enter using letters';
+var InvalidNumMessage = 'Please enter a valid number';
+var InvalidDecimalMessage = 'Please enter a valid decimal number';
+var InvalidDateMessage = 'Please enter a valid date in the form: $$QUESTION_CONSTRAINT$';
+var InvalidTimeMessage = 'Please enter a valid time in the form: $$QUESTION_CONSTRAINT$';
+var InvalidMaxValueMessage = 'The maximum value is $$QUESTION_CONSTRAINT$';
+var InvalidMinValueMessage = 'The minimum value is $$QUESTION_CONSTRAINT$';
+var InvalidMaxLengthMessage = 'The maximum length is $$QUESTION_CONSTRAINT$';
+var InvalidMinLengthMessage = 'The minimum length is $$QUESTION_CONSTRAINT$';
+var InvalidDaysInMonthMessage = 'There are not that many days in the specified month';
+var InvalidLeapYearMessage = 'The specified year is not a leap year';
+var InvalidMaxDateMessage = 'The latest date is $$QUESTION_CONSTRAINT$';
+var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
+//]]>
+</script>
+
+<script type="text/javascript" src="./html/js/calendar1.js"></script>
+<script type="text/javascript" src="./html/js/connect.js"></script>
+<script type="text/javascript" src="./html/js/jsep.js"></script>
+<script type="text/javascript" src="./html/js/spellcheck-caller.js"></script>
+<script type="text/javascript" src="./html/js/connect_ajax.js"></script>
+<script type="text/javascript" src="./html/js/connect_transferable_list.js"></script>
+<script type="text/javascript" src="./html/js/connect_validation.js"></script>
+<script type="text/javascript" src="./html/js/connect_help.js"></script>
+<script type="text/javascript" src="./html/js/connect_divs.js"></script>
+<script type="text/javascript" src="./html/js/modernizr.js"></script>
+<script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
+
+	   <script src="./html/js/tcmb.js"></script>	
+	   <script type="text/javascript">
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
+			if ($("#" + p_element).is(".ECDontRegen"))
+				return false;
+			return true;
+		}
+	   </script>
+
+    </head>
+    <body>
+
+
+        <!-- UNCOMMENT IFRAME IF USING AUTOCOMPLETE - PROVIDES WORK-AROUND FOR IE6 ISSUE -->
+    <!--iframe id="ec_suggest_iframe" style="position:absolute; left:0; top:0px; width:0px; height: 0px; " ></iframe-->
+    <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
+      <div><input type="hidden" name="MODE"/></div>
+      
+      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
+      
+      
+	  <div><input type="hidden" name="MENUSTATE"/></div>
+
+
+          
+              <div   style="width: 100%; padding-top: 0px;">
+                      
+                      
+          
+		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.WhatsNew"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_BAE38555A9D6259745123" class="navbar navbar-inverse-green navbar-fixed-top"><div class="ecDIBCol  ecDIB  TopNavSectionLeft" id="COL_BAE38555A9D6259745133"><div id="row_BUT_90709B068562F964120474" class="TopNavBtnContainer  "><div class="ecDIB  TopNavBtnContainer  " style="text-align: left; " id="p4_BUT_90709B068562F964120474"><div><!-- $Revision: 1.1 $ -->
+<a onclick="return buttonClicked('__90709B068562F964 FormButton 8', false, null, '', false, 'BUT_90709B068562F964120474', true, false, '', true, true, 'preInPhase');" type="button" class="TopNavBtn" style="" id="BUT_90709B068562F964120474"></a>
+<script type = "text/javascript" charset="utf-8">
+    document.getElementById("BUT_90709B068562F964120474").onclick = null;             
+    document.getElementById("BUT_90709B068562F964120474")
+            .addEventListener('click', function(e) {                    
+            	var isOnline = typeof Connection === 'undefined'?true:Connection.NONE != navigator.connection.type;
+				if (isOnline) {
+					
+					return buttonClicked('__90709B068562F964 FormButton 8', false, null, '', false, 'BUT_90709B068562F964120474', true, false, '', true, true, 'preInPhase');            
+				} else {
+					
+					var offlineDestination = "OfflineEnabled.Offline";
+					var replaceAllFunc = function (str, find, replace) {
+						return str.split(find).join(replace);
+					};
+					
+					offlineDestination = replaceAllFunc(offlineDestination, " ", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+					var languageMapAlias = "";
+					if (/\S/.test(languageMapAlias)) {
+						
+						offlineDestination = offlineDestination + "_" + languageMapAlias;
+					} 	
+					offlineDestination = offlineDestination + ".html";
+					
+					window.location.href = offlineDestination;
+				};
+      }, false);
+</script></div></div></div><div id="row_BUT_A34AD113ECB67B0820770"><div id="p1_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p2_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_A34AD113ECB67B0820770"><div><!-- $Revision: 1.0 $ -->
+ 
+
+<script type = "text/javascript" charset="utf-8">
+window.onunload = function() {document.removeEventListener("backbutton", backbutton_BUT_A34AD113ECB67B0820770_callback, false)};
+function navigationHandler(targetButtonName, targetButtonId)
+{
+	var isOnline = typeof Connection === 'undefined'?true:Connection.NONE != navigator.connection.type;
+	if (isOnline) {
+			return buttonClicked(targetButtonName, false, null, '', false, targetButtonId, true, false, '', true, true, 'preInPhase');            
+	} else {
+			
+			var offlineDestination = "OfflineEnabled.Offline";
+			var replaceAllFunc = function (str, find, replace) {
+			return str.split(find).join(replace);
+	};
+			
+	offlineDestination = replaceAllFunc(offlineDestination, " ", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+	var languageMapAlias = "";
+	if (/\S/.test(languageMapAlias)) {
+		
+	offlineDestination = offlineDestination + "_" + languageMapAlias;
+	} 	
+	offlineDestination = offlineDestination + ".html";
+			
+	window.location.href = offlineDestination;
+	}
+}
+ function backbutton_BUT_A34AD113ECB67B0820770_callback() {
+   	if('BUT_BACK'.length > 0 && (!$( "#off_canvas_left" ).hasClass( "active" )))	
+	{
+		if('__90709B068562F964 FormButton 8'.length > 0)
+		{
+			//this helps us work around an issue in android 4.1.2 and lower whereby the ...().click() does not work
+			navigationHandler('__90709B068562F964 FormButton 8', 'BUT_BACK');
+		}
+		else
+		{
+			document.getElementById("BUT_BACK").click();
+		}
+	}
+	else
+	{
+   		return buttonClicked('__A34AD113ECB67B08 FormButton 17', false, null, '', false, 'BUT_A34AD113ECB67B0820770', true, false, '', true, true, 'preInPhase');
+   	}
+}
+function BUT_A34AD113ECB67B0820770onDeviceReady() {
+     document.addEventListener("backbutton", backbutton_BUT_A34AD113ECB67B0820770_callback, false); 
+}
+ document.addEventListener("deviceready", BUT_A34AD113ECB67B0820770onDeviceReady, false);
+</script>
+</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E181652"><div id="p1_HEAD_0645D21B37B8E82E181652" class="ecDIB  NavTitle"><div>What's New</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E181680"><div class="Justify">
+<div class="Padding10">
+<div class="BColorWhite" style="border-radius: 5px;">
+
+<div class="Padding5">
+<h4></span>20/01/2015</h4>
+<div>
+	<ul>
+		<li>Short description of the feature 1</li>
+		<li>Short description of the feature 2</li>
+		<li>Short description of the feature 3</li>
+		<li>Short description of the feature 4</li>
+	</ul>
+</div>
+</div>
+
+<div class="BColorDarkGray Padding5">
+<h4></span>07/01/2015</h4>
+<div>
+	<ul>
+		<li>Short description of the feature 1</li>
+		<li>Short description of the feature 2</li>
+		<li>Short description of the feature 3</li>
+		<li>Short description of the feature 4</li>
+	</ul>
+</div>
+</div>
+
+<div class="Padding5">
+<h4></span>31/12/2014</h4>
+<div>
+	<ul>
+		<li>Short description of the feature 1</li>
+		<li>Short description of the feature 2</li>
+		<li>Short description of the feature 3</li>
+		<li>Short description of the feature 4</li>
+	</ul>
+</div>
+</div>
+
+<div class="BColorDarkGray Padding5">
+<h4></span>09/12/2015</h4>
+<div>
+	<ul>
+		<li>Short description of the feature 1</li>
+		<li>Short description of the feature 2</li>
+		<li>Short description of the feature 3</li>
+		<li>Short description of the feature 4</li>
+	</ul>
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"><script type="text/javascript">
+$(document).ready(function() {$('body').addClass("general");
+
+});
+</script></div></div></div></div>
+		<div id="androidfooterfix"></div>
+		    
+        
+      </div>
+	     
+    </form>
+<script type="text/javascript">
+//<![CDATA[
+
+forwardsConfirmMsg="";
+backConfirmMsg="";
+MANDCHAR='&nbsp;';
+
+function initForm(p_namespace) {
+if ( null == p_namespace ) p_namespace = '';
+fetchBrowserFeatures(getForm(p_namespace).id);
+document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
+notifyUniversalAppsForDeviceInfo();
+if ( beforeInitForm(p_namespace) == false ) return ;
+showECForm(p_namespace);
+showServerSideValidationMessagesPopup(p_namespace);
+afterInitForm(p_namespace);
+}
+var tid = setInterval( function () { 
+    if ( document.readyState !== 'complete' ) return; 
+    clearInterval( tid );   
+    initForm('');
+
+}, 100 );
+
+function showECForm(p_ns){
+}
+function hideECForm(p_ns, p_mode, p_scroll, p_id){
+return true;}
+function getRefreshInfo() {
+var refreshInfo = {pagekey:'', pageval:''};
+return JSON.stringify(refreshInfo);
+}
+function hasDeviceInfo() {
+return false;
+}
+function setDeviceInfoInForm(deviceInfoJsonString) {
+var namespace = '';
+var form = getForm(namespace);
+if (form != null && form.DEVICE_INFO != null) {
+form.DEVICE_INFO.value = deviceInfoJsonString;
+}
+}
+function hasDeviceInfo() {
+return false;
+}
+function setDeviceInfoInForm(deviceInfoJsonString) {
+var namespace = '';
+var form = getForm(namespace);
+if (form != null && form.DEVICE_INFO != null) {
+form.DEVICE_INFO.value = deviceInfoJsonString;
+}
+}
+//]]>
+
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function setRefreshInfo(destURL, pagekey, pageval) {
+var frm = getForm('');
+if (frm) {
+frm.action=destURL;
+setVariable('', 'act', destURL);
+var validPageKey = pagekey && (pagekey != 'null') && (/\S/.test(pagekey));
+if (validPageKey){
+var input = document.createElement('input');
+input.setAttribute('type', 'hidden');
+input.setAttribute('name', pagekey);
+input.setAttribute('value', pageval);
+frm.appendChild(input);
+} else {
+wrapCallToEcDoSubmit('XX');
+}
+}
+}
+//]]>
+</script>
+
+	
+
+<script>
+	jQuery(document).ready(function() {
+	  //Click ON FORWARD BUTTON on GetLocalStorage Initialization page
+	$( "input[type='number']" ).attr("pattern", "[0-9\.]*"); //FIX for Keypad on number inputs
+	$( "input[type='number']" ).attr("step", "0.01");	//FIX for Keypad on number inputs
+	var deviceAgent = navigator.userAgent.toLowerCase();
+
+		$(document)
+			 $("#androidfooterfix").css("height","60px");
+		
+	
+	//WHIRLE EFFECT TO ACCOUNT CARDS
+  	$("div[id*=inner-currentaccount]").each(function( index ) {
+  	    index++;
+  	    var $this = $( this );
+  		setTimeout(function (){$this.addClass('whirleactive');}, index * 350);
+	});
+	//END OF WHIRLE EFFECT TO ACCOUNT CARDS
+  });
+</script>
+
+<form name="sessionTimeoutForm" method=POST action="servletcontroller" autocomplete="off">
+			<input type="hidden" name="PRODUCT" value="">
+			<input type="hidden" name="PRESENTATION_TYPE" value="">
+			<input type="hidden" name="MODE" value="XX">
+			<input type="hidden" name="WorkingElements[1].SessionLoggedOutDueToInactivity" value="Y"/>
+		</form>
+
+
+  
+<script type="text/javascript">
+//<![CDATA[
+//]]>
+
+</script>
+</body>
+</html>
+
+
+		  
+	

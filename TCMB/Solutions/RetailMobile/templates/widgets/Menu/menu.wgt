@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-12 col-md-12">
+        <div class="panel-group" id="accordion">
+			$$FORMCONTENT$
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).scroll(function () {
+    var y = $(document).scrollTop(),
+        header = $("#$$COMPONENT_ID_PREFIX$row_$$ITEM.ID$");
+	if ($( "#$$COMPONENT_ID_PREFIX$off_canvas_left" ).hasClass( "active" )) {
+    if (y >= 100){
+        header.addClass('SideMenuFixedToTop');
+    } else {
+        header.removeClass('SideMenuFixedToTop');
+    }
+}
+});
+$('#$$ITEM.ID()$').addClass('MenuWidth');
+</script>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="0">
+  <!---->
+  <BanesoLoans DS_REF_DATAGROUP_ATTRIBUTE_NAME="BanesoLoans[1]" DS_UID="-1" InterestRate="12" Title="Prestamo"/>
+</DataSetRoot>

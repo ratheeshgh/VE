@@ -1,0 +1,46 @@
+$$ITEM.EC_GENERATE()$
+
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#$$ITEM.IdToUpdate$").removeClass("$$ITEM.ClassToRemove$");
+            $("#$$ITEM.IdToUpdate$").toggleClass("$$ITEM.ClassToToggle$");
+            $("#$$ITEM.ID()$").toggleClass("$$ITEM.ClassToToggleOnButton$");
+
+            $%IF ITEM.SoundIdToPlay != ""$
+                $("#$$ITEM.SoundIdToPlay$")[0].play();
+            $%ENDIF$
+
+            $%IF ITEM.JavascriptFunction != ""$
+                try {
+                    $$ITEM.JavascriptFunction$({id: "$$ITEM.ID()$",
+                                            IdToUpdate: "$$ITEM.IdToUpdate$",
+                                            ClassToRemove: "$$ITEM.ClassToRemove$",
+                                            ClassToToggle: "$$ITEM.ClassToToggle$"})
+                } catch (e) {
+                    log("Problem running javascript function: $$ITEM.JavascriptFunction$");
+                }
+            $%ENDIF$   
+            
+            $%IF ITEM.RunButtonRules == "Y"$
+                $$ITEM.ONCLICK()$
+            $%ENDIF$
+    }
+
+    $("#$$ITEM.ID()$")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+
+    $%IF ITEM.ListeningContainerId != ""$
+        $("#$$ITEM.ListeningContainerId$")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    $%ENDIF$
+});
+</script>

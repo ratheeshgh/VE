@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+ * $RCSfile: index.html,v $
+ * $Author: tony $
+ * $Revision: 1.17 $
+ * $Date: 2013/03/25 15:21:22 $
+-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate"/>
+    <meta http-equiv="cache-control" content="post-check=0, pre-check=0, false"/>
+    <meta name="author" content="Edge IPK" />
+    <title>edge IPK</title>
+    <link href="html/css/Default.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="html/js/modernizr.js"></script>
+	<script type="text/javascript" src="html/js/connect.js"></script>
+  </head>
+  <body style="margin:0" onload="javascript:fetchBrowserFeatures('form1');document.forms['form1'].submit()">
+    <!--<div>
+        <div style="width: 100%; background: url(./images/edgeBanner.jpg) no-repeat; height: 200px"></div>
+    </div>-->
+    <form id="form1" method="post" action="servletcontroller">
+	  <div>
+        <input type="hidden" name="PRODUCT" value=""/>
+        <input type="hidden" name="PRESENTATION_TYPE" value=""/>
+        <input type="hidden" name="MODE" value="XX"/>
+        <input type="hidden" name="BROWSER_FEATURES" value=""/>
+	  </div>
+    </form>
+  </body>
+</html>

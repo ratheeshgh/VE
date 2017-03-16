@@ -1,0 +1,36 @@
+$%SCRIPT$  
+  function GenerateButton(){  
+   var ecCode = "$$ITEM.EC_GENERATE().ESCAPEFORJS()$";
+   var insertIndex = ecCode.indexOf('onclick="')+9;
+   var functionCall="$$ITEM.ID()$onclick();";
+   return ecCode = ecCode.substring(0, insertIndex) + functionCall + ecCode.substring(insertIndex);   
+  };
+  GenerateButton();
+  $%ENDSCRIPT$
+ <script type = "text/javascript" charset="utf-8">
+ function $$ITEM.ID()$onclick() {
+ var storage = window.edge.widgets.cordova.Storage;  
+ var storageType=$%IF ITEM.storageType == "PERMANENT"$0$%ELSE$1$%ENDIF$;
+storage.setSource(storageType);
+$%IF ITEM.action == "SET ITEM"$
+storage.setItem("$$ITEM.itemkey$","$$ITEM.itemvalue$");
+$%ENDIF$
+$%IF ITEM.action == "REMOVE ITEM"$
+storage.removeItem("$$ITEM.itemkey$");
+$%ENDIF$
+$%IF ITEM.action == "CLEAR"$
+storage.clear();
+$%ENDIF$
+$%IF ITEM.action == "GET ITEM"$ 
+var value=storage.getItem("$$ITEM.itemkey$");
+if (value!=null) {
+document.getElementById("$$ITEM.inputID$").value=value;}
+$%ENDIF$
+}
+$%IF ITEM.auto_click == "Y"$ 
+function $$ITEM.ID()$onDeviceReady() {
+document.getElementById("$$ITEM.ID()$").click();
+}
+ document.addEventListener("deviceready", $$ITEM.ID()$onDeviceReady, false);
+ $%ENDIF$
+</script>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- widget file maintained by edgeConnect - DO NOT EDIT -->
+<widgets>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryAccordionSectionDialogHandler" icon="/images/widget_accordion.gif" name="Accordion Section (jquery)" type="Section">
+        <template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordionSection.wgt"/>
+        <child force="true" type="Tab" widget="Accordion (jquery)"/>
+        <custom>
+            <item name="BAR_COLOR" prompt="Bar Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_IMAGE" prompt="Bar Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_HOVER_COLOR" prompt="Bar Hover Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_HOVER_IMAGE" prompt="Bar Hover Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_SELECTED_COLOR" prompt="Bar Selected Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_SELECTED_IMAGE" prompt="Bar Selected Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item defaultValue="Y" name="MAINTAIN_STATE" prompt="Maintain State" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="Y" name="SLIDE_EFFECT" prompt="Slide Effect" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+        </custom>
+    </widget>
+    <widget name="Accordion (jquery)" type="Tab">
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordion.wgt"/>
+    </widget>
+    <widget icon="/images/html5_icon.png" name="Telephone (HTML5)" type="Text" validationOnBlur="true">
+        <template type="source" value="./templates/widgets/html5/inputtype_tel.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS"/>
+        </custom>
+    </widget>
+    <widget icon="/images/widget_calendar.gif" name="Calendar (jquery)" type="Date">
+        <template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-datePicker-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-datePicker.wgt"/>
+        <custom>
+            <item defaultValue="./images/cal.gif" help="Specify image if you require a date picker icon after date field" mand="false" name="CAL_IMAGE" prompt="Calendar Image" tab="Calendar Details" type="javax.swing.JFileChooser"/>
+            <item defaultValue="1" mand="true" name="MONTHS_TO_SHOW" prompt="Number Of Months To Display" tab="Calendar Details" type="javax.swing.JTextField"/>
+            <item help="You can also use a language map alias" mand="false" name="LOCALE" prompt="Locale (e.g. en-GB or fr) - Leave Blank For Default Locale" tab="Calendar Details" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+            <item name="BAR_COLOR" prompt="Date Bar Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="VALID_COLOR" prompt="Valid Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="INVALID_COLOR" prompt="Invalid Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="SELECTED_COLOR" prompt="Selected Date Colour" tab="Calendar Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+        </custom>
+    </widget>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputDateDialogHandler" icon="/images/html5_icon.png" name="Date (HTML5)" type="Date" validationOnBlur="true">
+        <template type="source" value="./templates/widgets/html5/inputtype_date.wgt"/>
+    </widget>
+    <widget helpFile="23_Presentation5/Presentation_Editor/Presentation_Layout/Display_Items/Image.htm" icon="/images/PresentationText_Image.gif" name="Image" type="Item:Image">
+        <template type="source" value="./templates/widgets/simpleImage.wgt"/>
+        <custom>
+            <item help="This needs to be accessible by the web browser at runtime, so &#xa;consider using $$LIBRARY_CONTEXTPATH$ for component-only images" mand="true" name="IMG_SRC" prompt="Path To Image" tab="Details"
+                type="javax.swing.JFileChooser|MULTI_RICH_VALUES" typeValue="Image Choose|FILES_ONLY|*|Image File|Open|Project dir"/>
+            <item mand="true" mappable="true" name="IMG_ALT_TEXT" prompt="Alt Text" tab="Details" type="javax.swing.JTextField"/>
+            <item name="IMG_STYLE" prompt="Style" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_CLASS" prompt="Class" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_HEIGHT" prompt="Height (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_WIDTH" prompt="Width (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_LONGDESC" prompt="Long Desc" tab="Image" type="javax.swing.JTextField"/>
+            <item mappable="true" name="IMG_TITLE" prompt="Title" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_USEMAP" prompt="Use Map" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_DIR" prompt="Direction (rtl or ltr)" tab="Advanced" type="javax.swing.JComboBox" typeValue="ltr|rtl"/>
+            <item name="IMG_LANGUAGE" prompt="Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_XMLLANGAUGE" prompt="XML Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+        </custom>
+    </widget>
+    <widget callback="false" displayName="Back Button (Cordova Hybrid)" icon="/images/cordova_16.png" name="com.temenos.widgets.hybrid.events.backbutton" type="Button">
+        <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.events.backbutton/backButton.wgt"/>
+        <custom>
+            <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+        </custom>
+    </widget>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.html5.HTML5InputNumberDialogHandler" icon="/images/html5_icon.png" name="Number (HTML5)" type="Number,Decimal" validationOnBlur="true">
+        <template type="source" value="./templates/widgets/html5/inputtype_number.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 place holder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS"/>
+        </custom>
+    </widget>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryDataTableDialogHandler" icon="/images/widget_grid.gif" name="Data Grid (jquery)" type="Table">
+        <template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/dataTable/dataTable-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/dataTable/dataTable.wgt"/>
+        <custom>
+            <item defaultValue="0" dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryDataTableDialogHandler" mand="true" name="PAGE_SIZE" prompt="Results Per Page (Use 0 To Show All)"
+                tab="Data Table Options" typeValue="NUMERIC|4"/>
+            <item applicableCondition="PAGE_SIZE>0" help="The paging options to display in a dropdown menu, this should be used in combination with the 'Results per page' field" name="PAGE_MENU" prompt="Paging Options" tab="Data Table Options"/>
+            <item name="SHOW_FILTER" prompt="Show Filter" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item name="SHOW_SORT" prompt="Show Sorting" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item name="SHOW_INFO" prompt="Show Footer Info" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item name="SAVE_STATE" prompt="Save State" tab="Data Table Options" type="javax.swing.JCheckBox"/>
+            <item defaultValue="Filter" mappable="true" name="SEARCH_TEXT" prompt="Search Filter Label" tab="Data Table Text"/>
+            <item defaultValue="_MENU_ records per page" mappable="true" name="PAGE_SIZE_TEXT" prompt="Records Per Page Text" tab="Data Table Text"/>
+            <item defaultValue="No records found" mappable="true" name="ZERO_RECORDS_TEXT" prompt="Zero Records Text" tab="Data Table Text"/>
+            <item defaultValue="Showing _START_ to _END_ of _TOTAL_" mappable="true" name="INFO_TEXT" prompt="Information Text" tab="Data Table Text"/>
+            <item defaultValue="Showing 0 to 0 of 0 records" mappable="true" name="INFO_EMPTY_TEXT" prompt="Information Empty Text" tab="Data Table Text"/>
+            <item defaultValue="(filtered from _MAX_ total records)" mappable="true" name="INFO_FILTERED_TEXT" prompt="Information Filtered Text" tab="Data Table Text"/>
+            <item name="Pagination" prompt="Pagination Buttons" tab="Data Table Text" type="com.acquire.util.ui.Legend" typeValue="4|N"/>
+            <item defaultValue="First" mappable="true" name="PAGINATE_FIRST_TEXT" prompt="First Text" tab="Data Table Text"/>
+            <item defaultValue="Last" mappable="true" name="PAGINATE_LAST_TEXT" prompt="Last Text" tab="Data Table Text"/>
+            <item defaultValue="Next" mappable="true" name="PAGINATE_NEXT_TEXT" prompt="Next Text" tab="Data Table Text"/>
+            <item defaultValue="Previous" mappable="true" name="PAGINATE_PREVIOUS_TEXT" prompt="Previous Text" tab="Data Table Text"/>
+            <item name="Sorting" prompt="Sorting ARIA labels" tab="Data Table Text" type="com.acquire.util.ui.Legend" typeValue="2|N"/>
+            <item defaultValue=": activate to sort column ascending" mappable="true" name="ARIA_SORT_ASCENDING_TEXT" prompt="Sort Ascending Text" tab="Data Table Text"/>
+            <item defaultValue=": activate to sort column descending" mappable="true" name="ARIA_SORT_DESCENDING_TEXT" prompt="Sort Descending Text" tab="Data Table Text"/>
+            <item defaultValue="Loading..." mappable="true" name="LOADING_RECORDS_TEXT" prompt="Loading Records Text" tab="Data Table Text"/>
+            <item defaultValue="Processing..." mappable="true" name="PROCESSING_TEXT" prompt="Processing Text" tab="Data Table Text"/>
+        </custom>
+    </widget>
+    <widget callback="false" displayName="Contacts Table (Cordova Hybrid)" icon="/images/cordova_16.png" name="com.temenos.widgets.hybrid.contacts.getContacts" type="Table">
+        <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.getContacts/getContactsTable.wgt"/>
+        <template type="header" value="./templates/widgets/com.temenos.widgets.hybrid.contacts.getContacts/getContactsTableHeader.wgt"/>
+        <custom>
+            <item name="GEN_TABLE" prompt="Generate table content" type="com.acquire.util.FocusCheckbox"/>
+            <item mand="true" name="DI_NAME" prompt="Name Data Item:" type="PropertyChooser"/>
+            <item name="Numbers" prompt="Numbers" type="com.acquire.util.ui.Legend" typeValue="3|N"/>
+            <item name="l2" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." type="javax.swing.JLabel"/>
+            <item help="Must be used as question in nested table in contacts table" name="DI_NUMBERS" prompt="Number Data Item:" type="PropertyChooser"/>
+            <item help="Must be used as question in nested table in contacts table" layout="1" name="DI_NUMBERS_TYPE" prompt="Number Type Data Item:" type="PropertyChooser"/>
+            <item name="Emails" prompt="Emails" type="com.acquire.util.ui.Legend" typeValue="3|N"/>
+            <item name="l3" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." type="javax.swing.JLabel"/>
+            <item help="Must be used as question in nested table in contacts table" name="DI_EMAILS" prompt="Email Data Item:" type="PropertyChooser"/>
+            <item help="Must be used as question in nested table in contacts table" layout="1" name="DI_EMAILS_TYPE" prompt="Email Type Data Item:" type="PropertyChooser"/>
+            <item name="Urls" prompt="Urls" type="com.acquire.util.ui.Legend" typeValue="3|N"/>
+            <item name="l4" prompt="These data items, if specified, must be used in a nested table with in the main contacts table.  If they are not, then a security exception will be thrown if the item is populated." type="javax.swing.JLabel"/>
+            <item help="Must be used as question in nested table in contacts table" name="DI_URLS" prompt="URL Data Item:" type="PropertyChooser"/>
+            <item help="Must be used as question in nested table in contacts table" layout="1" name="DI_URLS_TYPE" prompt="URL Type Data Item:" type="PropertyChooser"/>
+            <item name="DI_NOTE" prompt="Notes Data Item:" type="PropertyChooser"/>
+        </custom>
+    </widget>
+    <widget name="Tab Pane (jquery)" type="Tab">
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-tab.wgt"/>
+    </widget>
+</widgets>

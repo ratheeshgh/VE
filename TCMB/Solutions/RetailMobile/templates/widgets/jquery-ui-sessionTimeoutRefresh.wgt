@@ -1,0 +1,40 @@
+<script type="text/javascript">
+	var servletSessionInactivityIntervalSeconds = $$SessionTimeout$;
+	 
+	var changingTimeout = servletSessionInactivityIntervalSeconds;
+	
+	decrementTimer();
+	
+	
+	
+	
+	
+	function decrementTimer() {
+		
+
+		window.setTimeout((--changingTimeout > 0) ? decrementTimer : doRedirectToLoginPage, 1000);
+	}
+
+	
+	function doRedirectToLoginPage() {
+		document.forms['sessionTimeoutForm'].submit();
+	}
+
+	// connect_ajax.js override
+	
+	function send(url, async, ajaxCaller, ns){
+		var dest = url.substring(0, url.indexOf("?"));
+		var params = url.substring(url.indexOf("?") + 1);
+		var result = makePOSTRequest(dest, async, params, ns, ajaxCaller);
+		
+		
+		changingTimeout = servletSessionInactivityIntervalSeconds;
+		decrementTimer();
+		
+		return result;
+	}
+</script>
+<div id="$$ITEM.ID()$" style='display: none'>
+	$$FORMCONTENT$
+	<input id="$$ITEM.ID()$_flag" type="hidden" name="$$COMPONENT_ID_PREFIX$_V_$$ITEM.PARENT().GroupName$" value="N">
+</div>

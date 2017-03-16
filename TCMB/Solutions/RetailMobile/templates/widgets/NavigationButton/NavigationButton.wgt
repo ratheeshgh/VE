@@ -1,0 +1,1 @@
+<a onclick="$$ITEM.NAVIGATION()$" type="button" class="$$ITEM.CLASS$" style="$$ITEM.CUSTOMSTYLE$" id="$$ITEM.ID()$">$$ITEM.TEXT$</a>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="0">
+  <!---->
+  <DepositDetail AccountNo="123-12345-XXXX" AvailableBalance="5.340,20" DS_REF_DATAGROUP_ATTRIBUTE_NAME="DepositDetail[1]" DS_UID="-1" InterestPaid="$387.00" MaturityDate="20/02/2016" Title="Plazo Fijo"/>
+</DataSetRoot>

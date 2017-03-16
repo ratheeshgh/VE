@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="./templates/widgets/carousel/css/idangerous.swiper.css" />
+<script type="text/javascript" src="./templates/widgets/carousel/js/idangerous.swiper.js"></script>
+<style type="text/css">
+.swiper-slide .swiper-slide {
+    width: 100%
+}
+</style>

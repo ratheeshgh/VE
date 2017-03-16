@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+    <div class="panel-heading" id="BranchListener$$ITEM.ID()$">
+        <h4 class="panel-title">
+            $%IF ITEM.CHILD[0].MenuText == "dummyLeaf"$
+                $%COMMENT$  Generate this as a leaf but looking like a branch $%ENDCOMMENT$
+                <a id="BranchTarget$$ITEM.ID()$" href="#" onclick="return goNavItem('', '$$COMPONENT_ID_PREFIX$$$ITEM.ENTITYNAME()$', false, false, 'NAVMENU_', this, true);">
+                    <i id="$$ITEM.ID()$" class="$$ITEM.RTID()$"></i>
+                    $$ITEM.MenuText$
+                </a>
+            $%ELSE$
+                <a id="BranchTarget$$ITEM.ID()$" data-toggle="collapse" data-parent="#accordion" href="#collapse$$ITEM.ID()$">
+                    <i id="$$ITEM.ID()$" class="$$ITEM.RTID()$"></i>
+                    $$ITEM.MenuText$ 
+                    <i class="indicator glyphicon glyphicon-chevron-right pull-right custom"></i>
+                </a>
+            $%ENDIF$
+			<script>$("#BranchListener$$ITEM.ID()$").on("click", function(e) { document.getElementById('BranchTarget$$ITEM.ID()$').click()})</script>
+        </h4>
+    </div>
+
+    $%IF ITEM.CHILD[0].NavigationText != "dummyLeaf"$
+    <div id="collapse$$ITEM.ID()$" class="panel-collapse collapse">
+        <div class="panel-body">
+            <table class="table">
+                $$FORMCONTENT$
+            </table>
+        </div>		 
+    </div>
+    $%ENDIF$
+</div>
+

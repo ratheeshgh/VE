@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?><widgets>
+  <widget displayString="Bootstrap BTN" icon="$$PROJECTHOME$/html/img/btnicon.png" name="button_bootstrap" type="Button">
+    <template type="source" value="./templates/widgets/button_bootstrap.wgt"/>
+    <custom>
+      <item layout="-1" mand="false" name="TEXT" prompt="Button Text" tab="Bootstrap BTN Option" type="javax.swing.JTextField" usage="15"/>
+      <item layout="-1" mand="false" name="STYLE" prompt="Button Style" tab="Bootstrap BTN Option" type="javax.swing.JComboBox" typeValue="default|primary|success|info|warning|danger|special|link" usage="7"/>
+      <item layout="-1" mand="false" name="BTNSIZE" prompt="Button Size (leave empty for normal size)" tab="Bootstrap BTN Option" type="javax.swing.JComboBox" typeValue="btn-lg|btn-sm|btn-xs" usage="7"/>
+      <item layout="-1" mand="false" name="ICONLEFT" prompt="Icon Left" tab="Bootstrap BTN Option" type="javax.swing.JComboBox" typeValue="user|lock|ok|plus|chevron-left|chevron-right|repeat|picture" usage="7"/>
+      <item layout="-1" mand="false" name="ICONRIGHT" prompt="Icon Right" tab="Bootstrap BTN Option" type="javax.swing.JComboBox" typeValue="user|lock|ok|plus|chevron-left|chevron-right|picture" usage="7"/>
+      <item help="Write plain CSS without any {}" layout="-1" mand="false" name="CUSTOMSTYLE" prompt="Custom CSS Style" tab="Bootstrap BTN Option" type="javax.swing.JTextField" usage="7"/>
+      <item layout="-1" mand="false" name="ENTER" prompt="Enter" tab="Bootstrap BTN Option" type="com.acquire.util.FocusCheckbox" usage="15"/>
+    </custom>
+    <template type="header" value="./templates/widgets/button_bootstrap_header.wgt"/>
+  </widget>
+  <widget name="Google Map V3" type="Item:GoogleMapV3">
+    <template type="header" value="./templates/widgets/com.edgeipk.widgets.google/mapsv3/header.wgt"/>
+    <template type="source" value="./templates/widgets/com.edgeipk.widgets.google/mapsv3/instance.wgt"/>
+    <custom>
+      <item name="WIDTH" prompt="Width (px)" type="javax.swing.JTextField"/>
+      <item name="HEIGHT" prompt="Height (px)" type="javax.swing.JTextField"/>
+      <item defaultValue="true" name="ENABLEMAPTYPES" prompt="Enable Map Types" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item defaultValue="ROADMAP" name="INITMAPTYPE" prompt="Initial Map Type" type="javax.swing.JComboBox" typeValue="ROADMAP^Road Map|SATELLITE^Satellite|TERRAIN^Terrain|HYBRID^Hybrid"/>
+      <item defaultValue="ROADMAP" name="MAPTYPES" prompt="Available Map Types" type="javax.swing.JComboBox" typeValue="ROADMAP^Road Map|SATELLITE^Satellite|TERRAIN^Terrain|HYBRID^Hybrid"/>
+      <item defaultValue="true" name="ENABLENAV" prompt="Enable Navigation Control" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item defaultValue="DEFAULT" name="NAVTYPE" prompt="Navigation Control Style" type="javax.swing.JComboBox" typeValue="DEFAULT^Auto|ANDROID^Small Android|SMALL^Zoom Only|ZOOM_PAN^Large Control"/>
+      <item defaultValue="true" name="ENABLESCALE" prompt="Enable Scale Control" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item defaultValue="TOP_LEFT" name="SCALEPOS" prompt="Scale Control Position" type="javax.swing.JComboBox" typeValue="BOTTOM^Bottom|BOTTOM_LEFT^Bottom Left|BOTTOM_RIGHT^Bottom Right|LEFT^Left|RIGHT^Right|TOP^Top|TOP_LEFT^Top Left|TOP_RIGHT^Top Right"/>
+      <item defaultValue="true" name="DRAGGABLE" prompt="Draggable" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item defaultValue="false" name="DISABLEDCLICKZOOM" prompt="Disable Double Click Zoom" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item name="DEFLONGITUDE" prompt="Default Longitude" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+      <item name="DEFLATITUDE" prompt="Default Latitide" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+      <item defaultValue="6" name="DEFZOOM" prompt="Default Zoom" type="javax.swing.JTextField"/>
+      <item name="ADDRESS" prompt="Address" type="javax.swing.JTextField"/>
+      <item name="LONGITUDE" prompt="Longitude" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+      <item name="LATITUDE" prompt="Latitide" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE"/>
+      <item defaultValue="14" name="ZOOM" prompt="Zoom" type="javax.swing.JTextField"/>
+      <item defaultValue="false" name="GEOLOCATION" prompt="Geolocation" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item default="false" name="SEARCH" prompt="Enable Search" type="javax.swing.JComboBox" typeValue="true^Yes|false^No"/>
+      <item name="PLACES" prompt="Places" type="javax.swing.JComboBox" typeValue="atm^ATM|hotel^HOTEL"/>
+      <item name="RADIUS" prompt="Search Radius" type="javax.swing.JTextField"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="DATASTORE" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="InputHTML" type="Text">
+    <template type="source" value="./templates/widgets/html5/inputtype_text.wgt"/>
+    <custom>
+      <item layout="-1" mand="false" name="PlaceHolder" type="javax.swing.JTextField" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="InputHTMLPWD" type="Text">
+    <template type="source" value="./templates/widgets/html5/inputtype_password.wgt"/>
+    <custom>
+      <item layout="-1" mand="false" name="PlaceHolder" type="javax.swing.JTextField" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="navbar_button" rootType="Use Button" type="Button">
+    <template type="source" value="./templates/widgets/custombtn.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="CLASS" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="CUSTOMSTYLE" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="TEXT" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUES" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="ClassToggler" type="Button">
+    <template type="header" value="./templates/widgets/ClassToggler/ClassToggler-header.wgt"/>
+    <template type="source" value="./templates/widgets/ClassToggler/ClassToggler.wgt"/>
+    <custom>
+      <item name="IdToUpdate" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES"/>
+      <item name="ClassToToggle"/>
+      <item name="ClassToRemove"/>
+      <item name="ClassToToggleOnButton"/>
+      <item includeInDesign="For Specific Usage" name="ListeningContainerId" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES"/>
+      <item name="JavascriptFunction"/>
+      <item name="RunButtonRules" type="com.acquire.util.FocusCheckbox"/>
+      <item name="SoundIdToPlay"/>
+    </custom>
+  </widget>
+  <widget name="SwipeToShowMenu" type="Item:">
+    <template type="source" value="./templates/widgets/SwipeShowMenu/swipetoshowmenu.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="BUTTONID" prompt="Button ID to Show Menu" type="javax.swing.JTextField" usage="7"/>
+      <item help="For some screens we may wish to disable swiping of the menu (e.g. google maps as the 2 rely on swiping they trip over each other)" includeInDesign="true" layout="-1" mand="false" name="DISABLE_SWIPE" prompt="Select Data Item that disables swipe" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="SetBodyClass" type="Item:">
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="BODYCLASS" prompt="Set Class for Body" type="javax.swing.JComboBox" typeValue="login|general|white|myaccount|error_page" usage="7"/>
+      <item help="Check this if you want to disable the transparent spacer on the bottom of the page." includeInDesign="Always" layout="-1" mand="false" name="TRANSPARENTSPACER" prompt="Disable Transparent Spacer on Bottom" type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+    <template type="source" value="./templates/widgets/SetBodyClass.wgt"/>
+  </widget>
+  <widget name="Checkbox Switch" rootType="Checkbox" type="List">
+    <template type="source" value="./templates/widgets/CheckboxSwitch.wgt"/>
+  </widget>
+  <widget name="Checkbox Switch Standard" rootType="Checkbox" type="List">
+    <template type="source" value="./templates/widgets/CheckboxSwitchStandard.wgt"/>
+  </widget>
+  <widget name="Carousel-Table" rootType="Linear Table" type="Table">
+    <template type="header" value="./templates/widgets/carousel/carousel-header.wgt"/>
+    <template type="source" value="./templates/widgets/carousel/carousel-body.wgt"/>
+    <child type="Column" widget="Carousel Item"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="SWIPERCUSTOMCLASS" prompt="Swiper Custom Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="SLIDECLASS" type="javax.swing.JTextField" usage="7"/>
+      <item name="numOfItems" prompt="Number of Slides / View" typeValue="NUMERIC|2"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="loop" prompt="Loop? (optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="navigation" prompt="Navigation (Optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="pagination" type="javax.swing.JCheckBox" usage="7"/>
+      <item help="This option will center the active slide" name="centeredslide" prompt="Centered Slide? (optional)" type="javax.swing.JCheckBox"/>
+      <item help="This option is required for Centered Slide" name="watchActiveIndex" prompt="Watch Active Index (required for Centered Slide option)" type="javax.swing.JCheckBox"/>
+      <item name="idToTrigger" prompt="ID to Trigger  (optional)"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="ASIS" prompt="Auto Selector Initial Slide" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="finitialSlide" prompt="Force Initial Slide (Overwrite AutoSelector)" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PaginationClass" prompt="Pagination Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="NoSwipe" prompt="No Swipe" type="javax.swing.JCheckBox" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="Carousel-Section" type="Section">
+    <template type="header" value="./templates/widgets/carousel/carousel-header.wgt"/>
+    <template type="source" value="./templates/widgets/carousel/carousel-body.wgt"/>
+    <child type="Column" widget="Carousel Item"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="SWIPERCUSTOMCLASS" prompt="Swiper Custom Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="SLIDECLASS" type="javax.swing.JTextField" usage="7"/>
+      <item name="numOfItems" prompt="Number of Slides / View" typeValue="NUMERIC|2"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="loop" prompt="Loop? (optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="navigation" prompt="Navigation (Optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="pagination" type="javax.swing.JCheckBox" usage="7"/>
+      <item help="This option will center the active slide" name="centeredslide" prompt="Centered Slide? (optional)" type="javax.swing.JCheckBox"/>
+      <item help="This option is required for Centered Slide" name="watchActiveIndex" prompt="Watch Active Index (required for Centered Slide option)" type="javax.swing.JCheckBox"/>
+      <item name="idToTrigger" prompt="ID to Trigger  (optional)"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="initialSlide" prompt="Initial Slide to show" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PaginationClass" prompt="Pagination Class" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="Carousel Item" type="Column">
+    <template type="source" value="./templates/widgets/carousel/carousel-item.wgt"/>
+  </widget>
+  <widget name="PlaceholderInput" type="Text,Number,Decimal,Date">
+    <template type="source" value="./templates/widgets/PlaceholderInput.wgt"/>
+    <custom>
+      <item help="text,password,number,date, etc" includeInDesign="true" layout="-1" mand="false" name="TYPE" prompt="Input Type" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PlaceHolder" type="javax.swing.JTextField" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="RadioSwitch" type="List">
+    <template type="source" value="./templates/widgets/radioswitch.wgt"/>
+  </widget>
+  <widget name="ModalWindows" type="Section">
+    <template type="source" value="./templates/widgets/ModalWindows/modalwindows.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="Title" prompt="Title" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="TitleClass" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Native" type="javax.swing.JCheckBox" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Body" type="com.acquire.intelligentforms.ide.dialogs.RichTextArea|MULTI_RICH_VALUES" typeValue="ALL_CHARS|Y" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="ModalButton" type="Button">
+    <template type="source" value="./templates/widgets/ModalWindows/modalbtn.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="DismissModal" prompt="Use it to Dismiss Modal Window" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Trigger" prompt="Use it as a Trigger" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="1" mand="false" name="TriggerId" type="javax.swing.JTextField" usage="7"/>
+      <item help="Activate Icon on the Left" includeInDesign="true" layout="-1" mand="false" name="ActivateIcon" prompt="Activate Icon" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="1" mand="false" name="IconClass" prompt="Icon Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Text" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="QLR" prompt="Run Rules on  Button" type="javax.swing.JCheckBox" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="TCMBMenu" type="Menu">
+    <template type="source" value="./templates/widgets/Menu/menu.wgt"/>
+    <template type="header" value="./templates/widgets/Menu/menuheader.wgt"/>
+  </widget>
+  <widget name="TCMBMenuBranch" type="MenuBranch">
+    <template type="source" value="./templates/widgets/Menu/menubranch.wgt"/>
+  </widget>
+  <widget name="TCMBMenuLeaf" type="MenuLeaf">
+    <template type="source" value="./templates/widgets/Menu/menuleaf.wgt"/>
+  </widget>
+  <widget name="KeyStrokeCounter" type="Item:">
+    <template type="source" value="./templates/widgets/KeyStrokeCounter/keystrokecounter.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="SOURCE" prompt="Source ID" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="RESULT" prompt="Destination ID" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="FontIcon" type="Item:">
+    <template type="source" value="./templates/widgets/FontIcon/FontIcon.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="ICON" prompt="Icon" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="CLASS" prompt="Custom Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="STYLING" prompt="Styling" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="CustomLinkButton" type="Button">
+    <template type="source" value="./templates/widgets/CustomLinkButton.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="LINK" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="CLASS" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="TEXT" type="javax.swing.JTextField" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="Google Map V3 Input" type="Text">
+    <template type="source" value="./templates/widgets/com.edgeipk.widgets.google/mapsv3/SearchInput.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="CLASS" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PLACEHOLDER" type="javax.swing.JTextField" usage="15"/>
+    </custom>
+  </widget>
+  <widget name="Custom detectGerstures" type="Button">
+    <template type="source" value="./templates/widgets/detectGestures/buttonBody.wgt"/>
+    <template type="header" value="./templates/widgets/detectGestures/buttonHeader.wgt"/>
+    <custom>
+      <item help="Gestures to be detected" includeInDesign="true" layout="-1" mand="false" name="gesture" prompt="Gestures" type="com.acquire.util.ui.Legend" typeValue="2|N" usage="7"/>
+      <item defaultValue="true" help="Detect shake gesture" layout="-1" mand="true" name="ShakeOpt" prompt="Shake" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="false" help="Detect face down gesture" layout="-1" mand="true" name="UpSideDown" prompt="Face down" type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item defaultValue="1000" help="How often to retrieve the Acceleration in milliseconds." includeInDesign="true" layout="-1" mand="true" name="Frequency" prompt="Frequency" type="javax.swing.JTextField" usage="7"/>
+      <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" displayName="Hybrid Offline Navigation" name="HybridOfflineNavigation" type="Button">
+    <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.offlineNavigation/hybridOfflineNavigation.wgt"/>
+    <custom>
+      <item help="Select Phase to Navigate to if the Device is Off-line" includeInDesign="true" layout="-1" mand="true" name="GoToPhaseIfOffline" prompt="Select Phase to Navigate to if the Device is Off-line" type="com.acquire.intelligentforms.ide.producteditor.PhaseChooser" typeValue="Phase Chooser|-1|true|true|com.acquire.intelligentforms.entities.Phase" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="CLASS" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="CUSTOMSTYLE" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="TEXT" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUES" usage="15"/>
+    </custom>
+  </widget>
+  <widget displayName="Indirect Dropdown" name="IndirectDropdown" rootType="LIST" type="List">
+    <template type="source" value="./templates/widgets/IndirectDropdown.wgt"/>
+  </widget>
+  <widget callback="false" displayString="Cordova Back Button Redirect" icon="/images/cordova_16.png" name="Hard Back Button Redirect" type="Button">
+    <template type="source" value="./templates/widgets/BackHardButton/backButton.wgt"/>
+    <custom>
+      <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+      <item help="Rather than use the back navigation from Cordova we want to trap the request and forward it on to a given button id, this will trigger the 'click' event on that button" includeInDesign="For Specific Usage" layout="-1" mand="false" name="Target_Button_Id" prompt="Enter the button id you want the device hard back to be deferred to" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+      <item help="&lt;html&gt;When we define this attribute we provide the name of the button we want to run the buttonClicked function with,&lt;br&gt; if we specify this then we must sepcify the the Target_Button_Id as well. This helps us to work &lt;br&gt;around an issue whereby seemingly in older &lt;br&gt;versions of android (4.1.2) simply forwarding a click to a button does not actually work&lt;/html&gt;" includeInDesign="For Specific Usage" layout="-1" mand="false" name="Target_Button_Name" prompt="Enter the button name you want the device hard back to be deferred to" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|MULTI_RICH_VALUES" usage="7"/>
+    </custom>
+  </widget>
+  <widget callback="false" name="Pivot" type="List">
+    <template alwaysAddHeader="false" type="source" value="./templates/widgets/Pivot/menu.wgt"/>
+    <template type="header" value="./templates/widgets/Pivot/menuheader.wgt"/>
+  </widget>
+  <widget name="Carousel-Radiobutton" type="List">
+    <template type="header" value="./templates/widgets/carousel/carousel-header.wgt"/>
+    <template type="source" value="./templates/widgets/carousel/carousel-radiobutton.wgt"/>
+    <child type="Column" widget="Carousel Item"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="SWIPERCUSTOMCLASS" prompt="Swiper Custom Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="SLIDECLASS" type="javax.swing.JTextField" usage="7"/>
+      <item name="numOfItems" prompt="Number of Slides / View" typeValue="NUMERIC|2"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="loop" prompt="Loop? (optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="navigation" prompt="Navigation (Optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="pagination" type="javax.swing.JCheckBox" usage="7"/>
+      <item help="This option will center the active slide" name="centeredslide" prompt="Centered Slide? (optional)" type="javax.swing.JCheckBox"/>
+      <item help="This option is required for Centered Slide" name="watchActiveIndex" prompt="Watch Active Index (required for Centered Slide option)" type="javax.swing.JCheckBox"/>
+      <item name="idToTrigger" prompt="ID to Trigger  (optional)"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="initialSlide" prompt="Initial Slide to show" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PaginationClass" prompt="Pagination Class" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="TCMBWindowsMenu" type="Menu">
+    <template type="source" value="./templates/widgets/WindowsMenu/menu.wgt"/>
+    <template type="header" value="./templates/widgets/WindowsMenu/menuheader.wgt"/>
+  </widget>
+  <widget name="TCMBWindowsMenuBranch" type="MenuBranch">
+    <template type="source" value="./templates/widgets/WindowsMenu/menubranch.wgt"/>
+  </widget>
+  <widget name="TCMBWindowsMenuLeaf" type="MenuLeaf">
+    <template type="source" value="./templates/widgets/WindowsMenu/menuleaf.wgt"/>
+  </widget>
+  <widget name="Windows-Carousel-Table" rootType="Linear Table" type="Table">
+    <template type="header" value="./templates/widgets/carousel/carousel-header.wgt"/>
+    <template type="source" value="./templates/widgets/carousel/Windows-carousel-body.wgt"/>
+    <child type="Column" widget="Carousel Item"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="SWIPERCUSTOMCLASS" prompt="Swiper Custom Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="SLIDECLASS" type="javax.swing.JTextField" usage="7"/>
+      <item name="numOfItems" prompt="Number of Slides / View" typeValue="NUMERIC|2"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="loop" prompt="Loop? (optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="navigation" prompt="Navigation (Optional)" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="pagination" type="javax.swing.JCheckBox" usage="7"/>
+      <item help="This option will center the active slide" name="centeredslide" prompt="Centered Slide? (optional)" type="javax.swing.JCheckBox"/>
+      <item help="This option is required for Centered Slide" name="watchActiveIndex" prompt="Watch Active Index (required for Centered Slide option)" type="javax.swing.JCheckBox"/>
+      <item name="idToTrigger" prompt="ID to Trigger  (optional)"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="ASIS" prompt="Auto Selector Initial Slide" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUE" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="finitialSlide" prompt="Force Initial Slide (Overwrite AutoSelector)" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="PaginationClass" prompt="Pagination Class" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="NoSwipe" prompt="No Swipe" type="javax.swing.JCheckBox" usage="7"/>
+    </custom>
+  </widget>
+  <widget name="Session Timeout Refresh" type="Section">
+    <template type="source" value="./templates/widgets/jquery-ui-sessionTimeoutRefresh.wgt"/>
+  </widget>
+  <widget icon="$$PROJECTHOME$/images/cal.gif" name="StandAlone Date Picker (jquery-ui)" type="Date">
+    <template type="source" value="./templates/widgets/jquery-ui/DatePicker-StandAlone.wgt"/>
+    <custom>
+      <item includeInDesign="Always" layout="-1" mand="false" name="MAX_DATE" prompt="Max date limit" tab="Calendar Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="MIN_DATE" prompt="Min date limit" tab="Calendar Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="MAX_DATE_ID" prompt="ID of Max date field" tab="Calendar Settings" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="MIN_DATE_ID" prompt="ID of Min date field" tab="Calendar Settings" type="javax.swing.JTextField" usage="7"/>
+    </custom>
+  </widget>
+  <widget icon="/images/cal.gif" name="StandAlone Date Picker (jquery-ui) - Copy" type="Date">
+    <template type="source" value="./templates/widgets/jquery-ui/DatePicker-StandAlone.wgt"/>
+  </widget>
+<widget name="navbar_button_current_location" rootType="Use Button" type="Button">
+    <template type="source" value="./templates/widgets/custombtn_current_location.wgt"/>
+    <custom>
+      <item includeInDesign="Always" layout="-1" mand="false" name="CLASS" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="CUSTOMSTYLE" type="javax.swing.JTextField" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="TEXT" type="com.acquire.intelligentforms.ide.dialogs.RichTextField|RICH_VALUES" usage="15"/>
+    </custom>
+  </widget>
+</widgets>

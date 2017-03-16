@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceList Connect="version 5.3.0__12" Name="Default" deviceFilePath="." eid="1FC7385714F1CDA01074">
+  <Device ClassType="com.acquire.intelligentforms.entities.theme.Device" Name="Very small" eid="1FC7385714F1CDA01078" maxwidth="360" minwidth="1"/>
+  <Device ClassType="com.acquire.intelligentforms.entities.theme.Device" Name="Small" eid="1FC7385714F1CDA01076" maxwidth="1024" minwidth="768"/>
+  <Device ClassType="com.acquire.intelligentforms.entities.theme.Device" Name="Medium" eid="1FC7385714F1CDA01076" maxwidth="767" minwidth="361"/>
+  <Device ClassType="com.acquire.intelligentforms.entities.theme.Device" Name="Large" eid="1FC7385714F1CDA01076" minwidth="1025"/>  
+</DeviceList>

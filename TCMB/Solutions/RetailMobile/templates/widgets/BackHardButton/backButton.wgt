@@ -1,0 +1,60 @@
+<!-- $Revision: 1.0 $ -->
+
+$%IF ITEM.button_body == "Y" $$$ITEM.EC_GENERATE()$$%ENDIF$ 
+$%IF ITEM.NotApplicableAppearance != "Disable" && ITEM.NotApplicableAppearance != "Hide" || ITEM.HideField != "Y" $
+<script type = "text/javascript" charset="utf-8">
+window.onunload = function() {document.removeEventListener("backbutton", backbutton_$$ITEM.ID()$_callback, false)};
+
+function navigationHandler(targetButtonName, targetButtonId)
+{
+	var isOnline = typeof Connection === 'undefined'?true:Connection.NONE != navigator.connection.type;
+	if (isOnline) {
+			return buttonClicked(targetButtonName, false, null, '', false, targetButtonId, true, false, '', true, true, 'preInPhase');            
+	} else {
+			
+			var offlineDestination = "OfflineEnabled.Offline";
+			var replaceAllFunc = function (str, find, replace) {
+			return str.split(find).join(replace);
+	};
+			
+	offlineDestination = replaceAllFunc(offlineDestination, " ", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+	var languageMapAlias = "";
+	if (/\S/.test(languageMapAlias)) {
+		
+	offlineDestination = offlineDestination + "_" + languageMapAlias;
+	} 	
+	offlineDestination = offlineDestination + ".html";
+			
+	window.location.href = offlineDestination;
+	}
+}
+ function backbutton_$$ITEM.ID()$_callback() {
+   	if('$$ITEM.Target_Button_Id$'.length > 0 && (!$( "#$$ITEM.COMPONENT_PREFIX()$off_canvas_left" ).hasClass( "active" )))	
+	{
+		if('$$ITEM.Target_Button_Name$'.length > 0)
+		{
+			//this helps us work around an issue in android 4.1.2 and lower whereby the ...().click() does not work
+			navigationHandler('$$ITEM.Target_Button_Name$', '$$ITEM.Target_Button_Id$');
+		}
+		else
+		{
+			document.getElementById("$$ITEM.Target_Button_Id$").click();
+		}
+	}
+
+	else
+	{
+   		$$ITEM.NAVIGATION()$
+   	}
+}
+function $$ITEM.ID()$onDeviceReady() {
+     document.addEventListener("backbutton", backbutton_$$ITEM.ID()$_callback, false); 
+}
+ document.addEventListener("deviceready", $$ITEM.ID()$onDeviceReady, false);
+</script>
+$%ENDIF$

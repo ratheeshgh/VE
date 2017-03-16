@@ -1,0 +1,8 @@
+<!-- $Revision: 1.2 $ -->
+$%SCRIPT$
+var newType = $%IF BROWSER_FEATURES == "" || BROWSER_FEATURES.inputtypes.number == "Y"$"type=\"number\""$%ELSE$""$%ENDIF$
+$%INCLUDE widgets/html5/inputtype.wgt$$%ENDINCLUDE$
+var additionalAttrs = "";
+$%IF ITEM.DATAITEM().TYPE() == "Decimal"$additionalAttrs += " step=\"any\"";$%ENDIF$
+genHTML5Input(newType, additionalAttrs, false);
+$%ENDSCRIPT$

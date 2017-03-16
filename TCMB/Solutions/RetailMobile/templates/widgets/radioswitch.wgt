@@ -1,0 +1,134 @@
+<style>
+label { 
+    padding:0.4em 2em 0.4em 0;
+}
+.toggle-btn-grp { 
+    margin:0px 0; 
+}
+.toggle-btn { 
+    text-align:centre; 
+    margin:5px 2px;
+    padding:0.4em 3em; 
+    color:#D1D1D1; 
+    background-color:#FFF; 
+    border-radius:10px; 
+    display:inline-block; 
+    border:solid 1px #CCC; 
+    cursor:pointer;
+	font-size:25px;
+	transition:All 0.3s ease;
+-webkit-transition:All 0.3s ease;
+-moz-transition:All 0.3s ease;
+-o-transition:All 0.3s ease;
+
+}
+
+.toggle-btn-grp.joint-toggle .toggle-btn { 
+    margin:0px 0; 
+    padding:5px 20px;
+    border-radius:0;
+    border-right-color:white;
+}
+.toggle-btn-grp.joint-toggle .toggle-btn:first-child { 
+    margin-left:2px; 
+    border-radius: 10px 0px 0px 10px; 
+}
+.toggle-btn-grp.joint-toggle .toggle-btn:last-child { 
+    margin-right:2px;  
+    border-radius: 0px 10px 10px 0px;
+    border-right:solid 1px #CCC;
+}
+
+
+.toggle-btn:hover { 
+    border:solid 1px #D8D8D8 !important; 
+    background:#FAFAFA;
+}
+
+
+.toggle-btn.success { 
+    background:rgb(32, 90, 192);
+    border:solid 1px rgb(16, 10, 151) !important; 
+	color: #FFF;
+font-size: 25px;
+}
+
+
+.visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { 
+    clip: auto; 
+    height: auto; 
+    margin: 0; 
+    overflow: visible; 
+    position: static; 
+    width: auto; 
+}
+
+/* CSS only version */
+.toggle-btn-grp.cssonly * {
+    width:50px;
+    height:30px;
+    line-height:30px;
+}
+.toggle-btn-grp.cssonly div {
+    display:inline-block;
+    position:relative;
+    margin:5px 2px;
+}
+
+.toggle-btn-grp.cssonly div label {
+    position:absolute;
+    z-index:0;
+    padding:0;
+    text-align:center;
+}
+
+.toggle-btn-grp.cssonly div input {
+    position:absolute;
+    z-index:1;
+    cursor:pointer;
+    opacity:0;
+}
+
+.toggle-btn-grp.cssonly div:hover label {
+    border:solid 1px #a0d5dc !important; 
+    background:#f1fdfe;
+}
+
+.toggle-btn-grp.cssonly div input:checked + label {
+    background:lightgreen;
+    border:solid 1px green !important; 
+}
+
+</style>
+<div style="display:none;">$$ITEM.EC_GENERATE()$</div>
+<div class="toggle-btn-grp joint-toggle">
+$%FOREACH LISTITEM in DATAITEM$<label class="toggle-btn  $%IF ITEM.DATAITEM().VALUE() == ITEM.DATAITEM().LISTITEM().KEY()$success$%ENDIF$"><input type="radio" name="group$$ITEM.ID()$"  value="$$ITEM.DATAITEM().LISTITEM().VALUE()$"$%IF ITEM.DATAITEM().VALUE() == ITEM.DATAITEM().LISTITEM().KEY()$checked="checked"$%ENDIF$>$$ITEM.DATAITEM().LISTITEM().GROUPVALUE()$</label>$%ENDFOREACH$
+</div>
+
+
+
+<script type="text/javascript">
+$(".toggle-btn:not('.noscript') input[type=radio]").addClass("visuallyhidden");
+$(".toggle-btn:not('.noscript') input[type=radio]").change(function() {
+    if( $(this).attr("name") ) {
+        $(this).parent().addClass("success").siblings().removeClass("success")
+    } else {
+        $(this).parent().toggleClass("success");
+    }
+});
+
+$( "input[name='group$$ITEM.ID()$']" ).on( "click", function(event) {
+  $( "#$$ITEM.ID()$" ).val( $( "input[name='group$$ITEM.ID()$']:checked" ).val());
+  $$ITEM.QLR()$;
+});
+</script>

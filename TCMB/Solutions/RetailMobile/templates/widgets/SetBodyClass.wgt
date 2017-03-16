@@ -1,0 +1,7 @@
+<script type="text/javascript">
+$(document).ready(function() {$('body').addClass("$$ITEM.BODYCLASS$");
+$%IF ITEM.TRANSPARENTSPACER == "Y"$
+$('#androidfooterfix').addClass("NotDisplayed");
+$%ENDIF$
+});
+</script>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Locations.xsd">
+ <location>
+  <name> Casa Matriz</name>
+  <type>Branch</type>
+  <latitude>8.977011</latitude>
+  <Longitude>-79.522844</Longitude>
+  <Address>Marbella, street Aquilino de la Guardia y street 47 Bella Vista</Address>
+  <Area>Metro</Area>
+  <City>Panama</City>
+  <District>Panama</District>
+  <State>Panama</State>
+  <Country>Panama</Country>
+  <PostalCode></PostalCode>
+  <Language></Language>
+  <Message></Message>
+  <Phone>(507)282-2000</Phone>
+  <Email>acliente_pa@banesco.com</Email>
+   <facility>
+   <name>ATM 24 hours</name>
+   <description>cash machine</description>
+  </facility>
+  <schedule>
+   <dayofweek>1</dayofweek>
+   <closed>N</closed>
+   <starttime1>08:00:00</starttime1>
+   <endtime1>16:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>2</dayofweek>
+   <closed>N</closed>
+   <starttime1>08:00:00</starttime1>
+   <endtime1>16:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>3</dayofweek>
+   <closed>N</closed>
+   <starttime1>08:00:00</starttime1>
+   <endtime1>16:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>4</dayofweek>
+   <closed>N</closed>
+   <starttime1>08:00:00</starttime1>
+   <endtime1>16:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>5</dayofweek>
+   <closed>N</closed>
+   <starttime1>08:00:00</starttime1>
+   <endtime1>16:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>6</dayofweek>
+   <closed>N</closed>
+   <starttime1>09:00:00</starttime1>
+   <endtime1>13:00:00</endtime1>
+  </schedule>
+  <schedule>
+   <dayofweek>7</dayofweek>
+   <closed>Y</closed>
+  </schedule>
+ </location>
+ </locations>

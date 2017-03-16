@@ -1,0 +1,153 @@
+<link type="text/css" href="./templates/widgets/jquery/jquery-ui/css/connect-widgets/jquery-ui-1.9.2.custom.min.css" rel="stylesheet"  media="screen" />
+<script src="./templates/widgets/jquery/js/jquery-1.10.2.js"></script>
+<script src="./templates/widgets/jquery/js/jquery-ui.js"></script>
+<style>
+
+.ui-datepicker-trigger{
+	cursor: pointer;
+	width: 25px;
+	height: 31px;
+    margin-left:3px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: -186px -113px;
+	float: right;
+	
+}
+
+button.ui-datepicker-trigger {
+    border-radius: 0 2px 2px 0px!important;
+	margin-top:-5px;
+}
+
+#ui-datepicker-div {
+    z-index: 3003 !important;
+}
+
+
+
+
+
+/* line 372, ../sass/partials/_forms.scss */
+button.ui-datepicker-trigger {
+  margin-top:0!important;
+  position: relative;
+  z-index: 5;
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid #C3C3C3;
+  border: solid rgba(195, 195, 195, 0.65);
+  -webkit-box-shadow: rgba(207, 208, 208, 0.65) 0 1px 2px inset, rgba(255, 255, 255, 0.75) 0 1px 0;
+  -moz-box-shadow: rgba(207, 208, 208, 0.65) 0 1px 2px inset, rgba(255, 255, 255, 0.75) 0 1px 0;
+  box-shadow: rgba(207, 208, 208, 0.65) 0 1px 2px inset, rgba(255, 255, 255, 0.75) 0 1px 0;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: center;
+  color: #777777;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f0f0), color-stop(100%, #dbdbdb));
+  background-image: -webkit-linear-gradient(#f0f0f0, #dbdbdb);
+  background-image: -moz-linear-gradient(#f0f0f0, #dbdbdb);
+  background-image: -o-linear-gradient(#f0f0f0, #dbdbdb);
+  background-image: linear-gradient(#f0f0f0, #dbdbdb);
+  text-shadow: 0 1px 0 white;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height:33px!important;
+  width:33px!important;
+}
+
+
+/* line 421, ../sass/partials/_forms.scss */
+button.ui-datepicker-trigger {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-width: 1px 1px 1px 0;
+}
+
+
+/* line 426, ../sass/partials/_forms.scss */
+input.date-picker{
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width:125px!important;
+  height: 32px;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {display:none!important;}
+.ui-datepicker-prev, .ui-datepicker-next {display:none!important;}
+.ui-datepicker-title{margin:0!important;}
+  
+</style>
+
+<div>
+    <input type="text" 
+            size="15"
+            style="display: inline-block"
+            class="MediumTextBoxWidth date-picker form-control" 
+            value="$$ITEM.DATAITEM().VALUE()$"
+            id="$$ITEM.ID()$"
+            name="$$ITEM.DATAITEM()$"       
+			placeholder="DD/MM/YYYY"
+			onchange="$$ITEM.VALIDATION().ESCAPEQUOTES()$"
+			readonly="readonly"
+			onclick="if (this.value == '') {this.value = placeholder;}"
+    >&nbsp;
+</div>
+
+<script type="text/javascript">
+
+$(function() {
+	 
+     $( "#$$ITEM.ID()$" ).datepicker({
+        dateFormat: "dd/mm/yy",
+		$%IF ITEM.MAX_DATE != ""$ maxDate: "$$ITEM.MAX_DATE$", $%ENDIF$ 
+		$%IF ITEM.MIN_DATE != ""$ minDate: "$$ITEM.MIN_DATE$" , $%ENDIF$ 
+		showOn: "button",
+        buttonImage: './images/cal.gif', 
+		buttonText: "Calendar",		
+        buttonImageOnly: true,
+        changeMonth: true,
+        changeYear: true,
+		yearRange: "2010:2020",
+		hideIfNoPrevNext: true,
+		onClose: function(dateText, inst) {	  
+
+
+            $%IF ITEM.MIN_DATE_ID != ""$
+                $( "#$$ITEM.MIN_DATE_ID$" ).datepicker("option", "minDate", dateText);
+            $%ENDIF$
+            $%IF ITEM.MAX_DATE_ID != ""$
+                $( "#$$ITEM.MAX_DATE_ID$" ).datepicker("option", "maxDate", dateText);
+            $%ENDIF$
+
+        }
+		
+    }); 
+
+    $%IF ITEM.IS_READONLY() == "true"$
+        $( "#$$ITEM.ID()$" ).datepicker('disable');
+    $%ENDIF$
+
+	$('<style type="text/css"> .ui-datepicker-current { display: none; } </style>').appendTo("head");
+
+	$("#$$ITEM.ID()$").bind("keypress", function (e) {
+		if (e.keyCode == 13) {
+			$("#search").attr('value');
+			return false;
+		}
+	});
+});
+
+</script>

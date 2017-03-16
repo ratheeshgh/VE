@@ -1,0 +1,1 @@
+This folder holds all generic javascript and css for widgets in edgeConnect.

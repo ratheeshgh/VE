@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="1">
+  <!---->
+  <SearchCreditCards AccountNo="1232-****-****-1231" Alias="Juan Perez" CreditCardName="Master Card" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchCreditCards[1]" DS_UID="-1"/>
+  <SearchCreditCards AccountNo="1232-****-****-1231" Alias="Juan Carlos" CreditCardName="Master Card 2" DS_REF_DATAGROUP_ATTRIBUTE_NAME="SearchCreditCards[1]" DS_UID="0"/>
+</DataSetRoot>

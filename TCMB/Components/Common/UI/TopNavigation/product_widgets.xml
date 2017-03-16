@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- widget file maintained by edgeConnect - DO NOT EDIT -->
+<widgets>
+    <widget callback="false" displayName="Back Button (Cordova Hybrid)" icon="/images/cordova_16.png" name="com.temenos.widgets.hybrid.events.backbutton" type="Button">
+        <template type="source" value="./templates/widgets/com.temenos.widgets.hybrid.events.backbutton/backButton.wgt"/>
+        <custom>
+            <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
+        </custom>
+    </widget>
+</widgets>

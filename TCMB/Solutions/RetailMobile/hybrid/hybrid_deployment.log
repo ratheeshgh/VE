@@ -1,0 +1,7 @@
+
+unpackCordovaPlugins:
+    [unzip] Expanding: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Solutions\RetailMobile\html\js\cordova\cordovaPlugins.zip into C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Solutions\RetailMobile\html\js\cordova
+   [delete] Deleting: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Solutions\RetailMobile\html\js\cordova\cordovaPlugins.zip
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

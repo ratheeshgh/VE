@@ -1,0 +1,154 @@
+[2017-01-15 23:35:06.318], ==============================================
+[2017-01-15 23:35:06.318], ['DEBUG_4' 'STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'Startup' 'Rules Engine'], Evaluating rule Startup with Startup
+[2017-01-15 23:35:06.318], ==============================================
+[2017-01-15 23:35:06.318], ['DEBUG_4' 'STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'XML Integration' 'Rules Engine'], Evaluating rule XML Integration with Read from XML source: Source - Configuration, Interface - Configuration
+[2017-01-15 23:35:06.318], ==============================================
+[2017-01-15 23:35:06.321], ['DEBUG_4' 'STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'XML Integration'], Invoking XML Rule from: Configuration - Configuration with operation: Read
+[2017-01-15 23:35:06.346], ==============================================
+[2017-01-15 23:35:06.346], ['DEBUG_3' 'STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'XML Integration' 'ReadXMLDocument'], Reading XML document from file: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\TopNavigation
+[2017-01-15 23:35:06.346], ==============================================
+[2017-01-15 23:35:06.346], ['DEBUG_4' 'STARTUP_RULES_SESSION_ID_04EA045F47E21574' 'none' 'none' 'none' 'XML Integration'], Completed XML Rule from: Configuration - Configuration with operation: Read
+[2017-01-15 23:35:06.351], ==============================================
+[2017-01-15 23:35:06.351], ['DEBUG_2' '' '' '' '' 'XML Integration'], Running startup rules failed: java.io.FileNotFoundException: C:\TemenosCR\Projects\Banesco\TCMBEVA\Banesco_EVA\TCMB\Components\Common\UI\TopNavigation (Access is denied)
+[2017-01-15 23:35:06.378], ==============================================
+[2017-01-15 23:35:06.378], ['DEBUG_4' 'null' 'none' 'none' 'none' 'none'], Query String null
+[2017-01-15 23:35:06.386], ==============================================
+[2017-01-15 23:35:06.386], ['DEBUG_3' 'null' 'none' 'none' 'none' 'none'], Mode: XX
+[2017-01-15 23:35:06.386], ==============================================
+[2017-01-15 23:35:06.386], ['DEBUG_3' 'null' 'none' 'none' 'none' 'none'], Page Requested: null, Current Session Page: 0
+[2017-01-15 23:35:06.386], ==============================================
+[2017-01-15 23:35:06.386], ['DEBUG_3' 'null' 'none' 'none' 'none' 'none'], Presentation Type Requested: 
+[2017-01-15 23:35:06.396], ==============================================
+[2017-01-15 23:35:06.396], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'none' 'none' 'none' 'none'], Setting up new session.
+[2017-01-15 23:35:06.396], ==============================================
+[2017-01-15 23:35:06.396], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'none' 'none' 'none' 'none'], Setting up session info.
+[2017-01-15 23:35:06.396], ==============================================
+[2017-01-15 23:35:06.396], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'none' 'none' 'none' 'none'], Presentation Type Name: Mobile
+[2017-01-15 23:35:06.396], ==============================================
+[2017-01-15 23:35:06.396], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'none' 'none' 'none'], Product Name: BasicTopNavigation
+[2017-01-15 23:35:06.411], ==============================================
+[2017-01-15 23:35:06.411], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'none'], Property not found : usePushNotifications
+[2017-01-15 23:35:06.411], ==============================================
+[2017-01-15 23:35:06.411], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'none'], Process Mode for Security called: p_applicationMode=XX
+[2017-01-15 23:35:06.428], ==============================================
+[2017-01-15 23:35:06.428], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'none'], Process Mode called: p_applicationMode=XX
+[2017-01-15 23:35:06.431], ==============================================
+[2017-01-15 23:35:06.431], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Goto Phase NavigationBasic' 'Rules Engine'], Evaluating rule Goto Phase NavigationBasic with Go Forward to a Named Phase: Phase 'BasicTopNavigation.NavigationBasic'
+[2017-01-15 23:35:06.431], ==============================================
+[2017-01-15 23:35:06.431], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Goto Phase NavigationBasic' 'Goto Phase Rule: Goto Phase NavigationBasic'], Adding named phase BasicTopNavigation.NavigationBasic to stack.
+[2017-01-15 23:35:06.431], ==============================================
+[2017-01-15 23:35:06.431], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If this session has not been authenticated' 'Rules Engine'], Evaluating rule If this session has not been authenticated with if $$!MAINSESSION.TCMB_AUTHENTICATED$ != 'Y'
+[2017-01-15 23:35:06.433], ==============================================
+[2017-01-15 23:35:06.433], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If this session has not been authenticated'], Evaluating expression: ""!="Y"
+[2017-01-15 23:35:06.503], ==============================================
+[2017-01-15 23:35:06.503], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If not an authenticated session then Disable the menu swiping' 'Rules Engine'], Evaluating rule If not an authenticated session then Disable the menu swiping with set Data Item value In[1].DisableMenuSwiping from Y
+[2017-01-15 23:35:06.503], ==============================================
+[2017-01-15 23:35:06.503], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If not an authenticated session then Disable the menu swiping' 'Set Value Rule: If not an authenticated session then Disable the menu swiping'], Setting Data Item IN[1].DISABLEMENUSWIPING with value Y
+[2017-01-15 23:35:06.506], ==============================================
+[2017-01-15 23:35:06.506], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If not an authenticated session then Dont allow the menu icon to be displayed' 'Rules Engine'], Evaluating rule If not an authenticated session then Dont allow the menu icon to be displayed with set Data Item value In[1].ShowMenu from N
+[2017-01-15 23:35:06.506], ==============================================
+[2017-01-15 23:35:06.506], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'If not an authenticated session then Dont allow the menu icon to be displayed' 'Set Value Rule: If not an authenticated session then Dont allow the menu icon to be displayed'], Setting Data Item IN[1].SHOWMENU with value N
+[2017-01-15 23:35:06.506], ==============================================
+[2017-01-15 23:35:06.506], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Check whether to override Back Button text' 'Rules Engine'], Evaluating rule Check whether to override Back Button text with if $$In[1].BackButtonText$ != ''
+[2017-01-15 23:35:06.506], ==============================================
+[2017-01-15 23:35:06.506], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Check whether to override Back Button text'], Evaluating expression: ""!=""
+[2017-01-15 23:35:06.506], ==============================================
+[2017-01-15 23:35:06.508], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Set Back Button Text to Back' 'Rules Engine'], Evaluating rule Set Back Button Text to Back with set Data Item value WorkingElements[1].BackButtonText to Message Back
+[2017-01-15 23:35:06.508], ==============================================
+[2017-01-15 23:35:06.508], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Set Back Button Text to Back' 'Set Value Rule: Set Back Button Text to Back'], Setting Data Item WORKINGELEMENTS[1].BACKBUTTONTEXT with value Back
+[2017-01-15 23:35:06.508], ==============================================
+[2017-01-15 23:35:06.508], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Expression rule for formatted time last used' 'Rules Engine'], Evaluating rule Expression rule for formatted time last used with ("$$LastLoginDetails[1].TimeLastUsed$").substring(0,2)+":"+("$$LastLoginDetails[1].TimeLastUsed$").substring(2,4)
+[2017-01-15 23:35:06.508], ==============================================
+[2017-01-15 23:35:06.508], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Expression rule for formatted time last used'], Evaluating expression: ("").substring(0,2)+":"+("").substring(2,4)
+[2017-01-15 23:35:06.533], ==============================================
+[2017-01-15 23:35:06.533], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'Initialise' 'Expression rule for formatted time last used' 'Expression Rule: Expression rule for formatted time last used'], Setting property WorkingElements[1].FormattedTimeLastUsed to :
+[2017-01-15 23:35:06.536], ==============================================
+[2017-01-15 23:35:06.536], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Showing phase name: BasicTopNavigation.NavigationBasic
+[2017-01-15 23:35:06.681], ==============================================
+[2017-01-15 23:35:06.681], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Property not found : isHybrid
+[2017-01-15 23:35:06.698], ==============================================
+[2017-01-15 23:35:06.698], ['DEBUG_2' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Cannot find specified text to include.
+[2017-01-15 23:35:06.756], ==============================================
+[2017-01-15 23:35:06.756], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Property not found : isHybrid
+[2017-01-15 23:35:10.440], ==============================================
+[2017-01-15 23:35:10.443], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Query String null
+[2017-01-15 23:35:10.443], ==============================================
+[2017-01-15 23:35:10.443], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Mode: __CE2290CB40780B0C FormButton 7
+[2017-01-15 23:35:10.443], ==============================================
+[2017-01-15 23:35:10.443], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Page Requested: 0, Current Session Page: 0
+[2017-01-15 23:35:10.445], ==============================================
+[2017-01-15 23:35:10.445], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Presentation Type Requested: null
+[2017-01-15 23:35:10.445], ==============================================
+[2017-01-15 23:35:10.445], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Property not found : usePushNotifications
+[2017-01-15 23:35:10.445], ==============================================
+[2017-01-15 23:35:10.445], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Process Mode for Security called: p_applicationMode=__CE2290CB40780B0C FormButton 7
+[2017-01-15 23:35:10.448], ==============================================
+[2017-01-15 23:35:10.448], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Process Mode called: p_applicationMode=__CE2290CB40780B0C FormButton 7
+[2017-01-15 23:35:10.450], ==============================================
+[2017-01-15 23:35:10.450], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Button/Nav Item/Breadcrumb with name CE2290CB40780B0C FormButton 7 pressed.
+[2017-01-15 23:35:10.450], ==============================================
+[2017-01-15 23:35:10.450], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'Process logout' 'Rules Engine'], Evaluating rule Process logout with Process logout
+[2017-01-15 23:35:10.450], ==============================================
+[2017-01-15 23:35:10.450], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'Reset Active operation' 'Rules Engine'], Evaluating rule Reset Active operation with 
+[2017-01-15 23:35:10.453], ==============================================
+[2017-01-15 23:35:10.453], ['DEBUG_4' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'Broadcast logout message' 'Rules Engine'], Evaluating rule Broadcast logout message with Broadcast with message: "LOGOUT"
+[2017-01-15 23:35:10.453], ==============================================
+[2017-01-15 23:35:10.453], ['DEBUG_1' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'Broadcast logout message' 'Error occurred in item 'Process logout.Broadcast logout message' (-1)'], com.acquire.intelligentforms.rules.RuleException: java.lang.Exception: This rule can only be used within a presentation based component
+com.acquire.intelligentforms.rules.RuleException: java.lang.Exception: This rule can only be used within a presentation based component
+	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRuleInternal(RulesEngine.java:1944)
+	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRuleInternal(RulesEngine.java:2009)
+	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRule(RulesEngine.java:1756)
+	at com.acquire.intelligentforms.rules.RulesEngine.runActionRulesInternal(RulesEngine.java:1100)
+	at com.acquire.intelligentforms.rules.RulesEngine.runActionRules(RulesEngine.java:1070)
+	at com.acquire.intelligentforms.rules.RulesEngine.runAction(RulesEngine.java:1055)
+	at com.acquire.intelligentforms.rules.RulesEngine.runActionAndGetPhase(RulesEngine.java:1135)
+	at com.acquire.intelligentforms.presentation.MainController.runAction(MainController.java:550)
+	at com.acquire.intelligentforms.presentation.MainController.runAction(MainController.java:528)
+	at com.acquire.intelligentforms.presentation.MainController.processActionButtonMode(MainController.java:3718)
+	at com.acquire.intelligentforms.presentation.MainController.processModeForAction(MainController.java:3433)
+	at com.acquire.intelligentforms.presentation.MainController.processAction(MainController.java:1407)
+	at com.acquire.intelligentforms.presentation.MainController.processAction(MainController.java:1167)
+	at com.acquire.intelligentforms.presentation.workers.Worker.processAction(Worker.java:547)
+	at com.acquire.intelligentforms.presentation.workers.Worker.doWork(Worker.java:582)
+	at com.acquire.intelligentforms.presentation.workers.Worker.doWork(Worker.java:689)
+	at com.acquire.intelligentforms.presentation.util.ServerUtility.doMainWork(ServerUtility.java:1657)
+	at com.acquire.intelligentforms.presentation.ServletController.performWork(ServletController.java:490)
+	at com.acquire.intelligentforms.presentation.ServletController.doWork(ServletController.java:287)
+	at com.acquire.intelligentforms.presentation.ServletController.doPostImpl(ServletController.java:218)
+	at com.acquire.intelligentforms.presentation.BaseServletController.doPost(BaseServletController.java:98)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:755)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:138)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:564)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:213)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1094)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1028)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:258)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:445)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:267)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:224)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: java.lang.Exception: This rule can only be used within a presentation based component
+	at com.acquire.intelligentforms.rules.BroadcastRule.evaluate(BroadcastRule.java:141)
+	at com.acquire.intelligentforms.rules.RulesEngine.runRule(RulesEngine.java:2075)
+	at com.acquire.intelligentforms.rules.RulesEngine.evaluateRuleInternal(RulesEngine.java:1862)
+	... 41 more
+[2017-01-15 23:35:10.458], ==============================================
+[2017-01-15 23:35:10.458], ['DEBUG_1' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Caught an exception, going to error phase: java.lang.Exception: This rule can only be used within a presentation based component
+[2017-01-15 23:35:10.715], ==============================================
+[2017-01-15 23:35:10.715], ['DEBUG_2' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'NavigationBasic' 'none'], Created new phase to handle error: BasicTopNavigation.ErrorPhase
+[2017-01-15 23:35:10.723], ==============================================
+[2017-01-15 23:35:10.723], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'ErrorPhase' 'none'], Showing phase name: BasicTopNavigation.ErrorPhase
+[2017-01-15 23:35:10.743], ==============================================
+[2017-01-15 23:35:10.743], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'ErrorPhase' 'none'], Property not found : isHybrid
+[2017-01-15 23:35:10.760], ==============================================
+[2017-01-15 23:35:10.760], ['DEBUG_3' '1vtc5mr6ttw771bbtymm54i4db' 'Mobile' 'BasicTopNavigation' 'ErrorPhase' 'none'], Property not found : isHybrid

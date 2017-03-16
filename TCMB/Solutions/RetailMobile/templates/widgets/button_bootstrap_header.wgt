@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	$(function(){
+ $('input').keydown(function (e) {
+  if (e.which == 13) {
+     $('button.enter').click();
+    return false; 
+  }
+});
+});
+</script>

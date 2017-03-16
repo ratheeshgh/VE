@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+	<deployment>
+	 		<dependencies>
+				<module name="com.temenos.acquire"/>				
+			</dependencies>
+				<local-last value="true"/>	
+
+                     	 <exclusions>
+
+             			 <module name="com.temenos.tafj"/>
+         		 </exclusions>
+	</deployment>
+</jboss-deployment-structure>

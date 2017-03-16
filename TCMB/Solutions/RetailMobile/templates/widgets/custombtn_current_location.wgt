@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a type="button" class="$$ITEM.CLASS$" style="$$ITEM.CUSTOMSTYLE$" id="$$ITEM.ID()$">$$ITEM.TEXT$</a>
+<!-- This widget is used only by "current location" button for avoiding screen refresh on clicking current location -->
+</body>
+</html>

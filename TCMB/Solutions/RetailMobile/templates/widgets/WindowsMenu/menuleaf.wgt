@@ -1,0 +1,19 @@
+$%IF ITEM.NUMBER_OF_CHILDREN() == "0"$
+<tr id="LeafListener$$ITEM.ID()$">
+	<td>
+		<a id="LeafTarget$$ITEM.ID()$" href="#" onclick="return goNavItem('', '$$COMPONENT_ID_PREFIX$$$ITEM.ENTITYNAME()$', false, false, 'NAVMENU_', this, true);" id="$$ITEM.ID()$"><i id="$$ITEM.ID()$" class="tcmbicon $$ITEM.RTID()$"></i> $$ITEM.MenuText$</a>
+	</td>
+</tr>
+<script>$("#LeafListener$$ITEM.ID()$").on("click", function(e) { document.getElementById('LeafTarget$$ITEM.ID()$').click()})</script>
+<!-- THIS IS A LEAF AND HAS $$ITEM.NUMBER_OF_CHILDREN()$ childrens-->
+$%ENDIF$
+$%IF ITEM.NUMBER_OF_CHILDREN() > "0"$
+<div class="panel panel-default" style="border-top: 1px solid #004276;">
+<div class="panel-heading">
+	<h4 class="panel-title">
+		<a href="#" onclick="return goNavItem('', '$$COMPONENT_ID_PREFIX$$$ITEM.ENTITYNAME()$', false, false, 'NAVMENU_', this, true);" id="$$ITEM.ID()$"><i id="$$ITEM.ID()$" class="tcmbicon $$ITEM.RTID()$"></i>$$ITEM.MenuText$ <i class="indicator glyphicon glyphicon-chevron-down pull-right custom"></i></a>
+	</h4>
+</div>
+</div>
+<!-- THIS IS A BRANCH AND HAS $$ITEM.NUMBER_OF_CHILDREN()$ childrens-->
+$%ENDIF$

@@ -1,0 +1,31 @@
+$$ITEM.EC_GENERATE()$    
+$%IF ITEM.itemkey != ""$            
+<script type = "text/javascript" charset="utf-8">
+
+//FUNCTIE APELATA
+function $$ITEM.ID()$onDeviceReady() {
+var storage = window.edge.widgets.cordova.Storage; //INITIALIZEAZA STORAGE
+var storageType=$%IF ITEM.storageType == "PERMANENT"$0$%ELSE$1$%ENDIF$; //SE UITA CE FEL DE STORAGE SE FOLOSESTE
+storage.setSource(storageType);//SETEAZA STORAGE TYPE
+var current_value = storage.getItem("$$ITEM.itemkey$"); //PREIA VALOAREA DIN STORAGE
+document.getElementById("$$COMPONENT_ID_PREFIX$$$ITEM.listener$").value=current_value;
+}
+
+//LISTENER
+ document.addEventListener("deviceready", $$ITEM.ID()$onDeviceReady, false);
+
+//SE UITA CAND SE DA CLICK PE UN BUTON SI SCHIMBA VALOAREA DIN INPUT
+ $('#$$COMPONENT_ID_PREFIX$$$ITEM.listener$').on('focusout', function() {
+	$('#$$ITEM.ID()$').val($('#$$COMPONENT_ID_PREFIX$$$ITEM.listener$').val());
+	var storage = window.edge.widgets.cordova.Storage; //INITIALIZEAZA STORAGE
+	var storageType=$%IF ITEM.storageType == "PERMANENT"$0$%ELSE$1$%ENDIF$; //SE UITA CE FEL DE STORAGE SE FOLOSESTE
+	storage.setSource(storageType);//SETEAZA STORAGE TYPE
+	storage.setItem("$$ITEM.itemkey$",$('#$$COMPONENT_ID_PREFIX$$$ITEM.listener$').val());
+});
+
+$(function(){
+$$ITEM.ID()$onDeviceReady();
+});
+ 
+</script>
+$%ENDIF$

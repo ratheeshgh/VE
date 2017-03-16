@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="-1">
+  <!---->
+  <BanescoLoans AccountNo="5412-XXXX-3412" AmtOustanding="$ 1.650,20" DS_REF_DATAGROUP_ATTRIBUTE_NAME="BanescoLoans[1]" DS_UID="-1" InterestRate="12" Title="Prestamo"/>
+  <BanescoLoans AccountNo="5412-XXXX-3412" AmtOustanding="$ 1.750,20" DS_REF_DATAGROUP_ATTRIBUTE_NAME="BanescoLoans[1]" DS_UID="-1" InterestRate="12" Title="Prestamo 2"/>
+</DataSetRoot>

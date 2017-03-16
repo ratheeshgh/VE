@@ -1,0 +1,32 @@
+<!-- $Revision: 1.0 $ -->
+
+$%IF ITEM.GEN_TABLE == "Y"$
+	$$ITEM.EC_GENERATE()$
+$%ENDIF$
+
+<script type = "text/javascript" charset="utf-8">
+document.addEventListener("deviceready", $$ITEM.ID()$onDeviceReady, false);
+
+function $$ITEM.ID()$onDeviceReady() {
+    var options = new ContactFindOptions();
+    options.multiple=true; 
+    var fields = ["*"];
+    navigator.contacts.find(                                $%COMMENT$  search for existing contact $%ENDCOMMENT$
+        fields, 
+        function(contacts) {                                $%COMMENT$  callback if search completed ok $%ENDCOMMENT$
+            for (var i = 0; i < contacts.length; i++) {
+                com.temenos.widgets.hybrid.contacts.getcontacts.extractValue(contacts[i].name.formatted,   "$$:ITEM.DI_NAME$", i+1);
+
+                com.temenos.widgets.hybrid.contacts.getcontacts.extractValues(contacts[i].phoneNumbers, "$$:ITEM.DI_NUMBERS$", "$$:ITEM.DI_NUMBERS_TYPE$", i+1);
+                com.temenos.widgets.hybrid.contacts.getcontacts.extractValues(contacts[i].emails,       "$$:ITEM.DI_EMAILS$",  "$$:ITEM.DI_EMAILS_TYPE$", i+1);
+                com.temenos.widgets.hybrid.contacts.getcontacts.extractValues(contacts[i].urls,         "$$:ITEM.DI_URLS$",    "$$:ITEM.DI_URLS_TYPE$", i+1);
+
+                com.temenos.widgets.hybrid.contacts.getcontacts.extractValue(contacts[i].note,          "$$:ITEM.DI_NOTE$", i+1);
+            }
+        }, 
+        function(){                                         $%COMMENT$  error during search $%ENDCOMMENT$
+            alert("$$ITEM.ErrorMessage$")                   $%COMMENT$  alert error message if one has been defined $%ENDCOMMENT$
+        }, 
+        options);
+}           
+</script>

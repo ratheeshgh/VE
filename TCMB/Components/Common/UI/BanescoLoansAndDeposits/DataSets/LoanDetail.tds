@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="0">
+  <!---->
+  <LoanDetails AccountNo="1234-12345-XXXX" AccruedInterest="124.2 USD" DS_REF_DATAGROUP_ATTRIBUTE_NAME="LoanDetails[1]" DS_UID="-1" NumberOfTerms="2" OtherCharges="151,81 USD" OutstandingAmount="5.340,20 USD" Status="Pending" Title="Prestamo Auto"/>
+</DataSetRoot>

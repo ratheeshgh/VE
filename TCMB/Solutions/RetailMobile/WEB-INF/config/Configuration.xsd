@@ -1,0 +1,346 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:annotation>
+		<xs:documentation>Configuration parameters for TCMB which cannot be set up in T24</xs:documentation>
+	</xs:annotation>
+	<xs:simpleType name="YesNo" final="restriction" >
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Yes" />
+			<xs:enumeration value="No" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	 <xs:simpleType name="AccountType" final="restriction" >
+		<xs:annotation>
+			<xs:documentation>
+				<p id="AccountType">
+				This type contains the product types (also known as account types) which are recognised by TCMB.
+				Each product (or "account") is assigned exactly one of these types, via the TypeNameMap element.
+				These are assigned from the "ProductGroup" field of any given product.
+				<br/>
+				For any given installation of T24, the "ProductGroup" field is to be enumerated for <b>all</b> products
+				offered, for each of:
+				<ol>
+					<li>Accounts (read via the "TcibAcctDetailss" interface)</li>
+					<li>Loans (read via the "TcibAaLoanss" interface)</li>
+					<li>Deposits (read via the "TcibAaAdArrangementTabs" interface)</li>
+				</ol>
+				Each one is to be assigned (via the TypeNameMap element) one of the below types.
+				</p>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Account" />
+			<xs:enumeration value="Savings" />
+			<xs:enumeration value="Deposits" />
+			<xs:enumeration value="Loans" />
+			<xs:enumeration value="Mortgage" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	 <xs:simpleType name="Authenticatable" final="restriction" >
+	 	<xs:annotation>
+	 		<xs:documentation>
+	 			Each of these values refers to an operation within TCMB which has a "confirm" action.
+	 		</xs:documentation>
+	 	</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="MakeTransfer" />
+			<xs:enumeration value="MakePayment" />
+			<xs:enumeration value="MakePaymentInternational" />
+			<xs:enumeration value="PayBill" />
+			<xs:enumeration value="PayBillInternational" />
+			<xs:enumeration value="AddPayee" />
+			<xs:enumeration value="EditPayee" />
+			<xs:enumeration value="DeletePayee" />
+			<xs:enumeration value="EditFuturePayment" />
+			<xs:enumeration value="DeleteFuturePayment" />
+			<xs:enumeration value="EditStandingOrder" />
+			<xs:enumeration value="DeleteStandingOrder" />
+			<xs:enumeration value="DeleteDirectDebit" />
+			<xs:enumeration value="StopCheque" />
+			<xs:enumeration value="UpdatePersonalDetails" />
+			<xs:enumeration value="ChangeAccountName" />
+			<xs:enumeration value="ChangePin" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="StatAuthType" final="restriction" >
+		<xs:annotation>
+			<xs:documentation>
+				These are the possible static authentication types as required by ActivID (also known as 4TRESS).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PW" />
+			<xs:enumeration value="PIN" />
+			<xs:enumeration value="MW" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="AuthMode" final="restriction" >
+		<xs:annotation>
+			<xs:documentation>
+				These are the possible authentication modes as required by ActivID (also known as 4TRESS).
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Password" />
+			<xs:enumeration value="Token" />
+			<xs:enumeration value="SMS" />
+			<xs:enumeration value="Challenge" />
+		</xs:restriction>
+	</xs:simpleType>
+
+  <xs:element name="Configuration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StaticAuthenticationTypes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" maxOccurs="3" minOccurs="3">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="StatAuthType" name="TypeKey"/>
+                    <xs:element type="xs:string" name="TypeName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AuthenticationModes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" maxOccurs="4" minOccurs="4">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="AuthMode" name="TypeKey"/>
+                    <xs:element type="xs:string" name="TypeName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+       <xs:element type="StatAuthType" name="StaticAuthenticationType">
+			<xs:annotation>
+				<xs:documentation>In its current implementation, all users will be offered the same static authentication type:
+				<ol>
+					<li>Password (PW)</li>
+					<li>PIN</li>
+					<li>Memorable Word (MW)</li>
+				</ol>
+				</xs:documentation>
+			</xs:annotation>
+       </xs:element>
+       <xs:element type="AuthMode" name="AuthenticationMode">
+			<xs:annotation>
+				<xs:documentation>In its current implementation, all users will be offered the same authentication mode:
+				<ol>
+					<li>Password (or other static authentication)</li>
+					<li>Token</li>
+					<li>SMS</li>
+					<li>Challenge question</li>
+				</ol>
+				</xs:documentation>
+			</xs:annotation>
+       </xs:element>
+       <xs:element name="TypeNameMap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Type" maxOccurs="unbounded" minOccurs="5">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="TypeKey"/>
+                    <xs:element type="AccountType" name="TypeName"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+       <xs:element name="AccountTypes">
+          <xs:complexType>
+            <xs:sequence>
+             <xs:element name="Type" maxOccurs="5" minOccurs="5">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="AccountType" name="TypeID">
+                     	<xs:annotation>
+					 		<xs:documentation>This field contains one of the product types: Current, Savings, Loans, etc.</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="AccountActions">
+                     	<xs:annotation>
+					 		<xs:documentation>
+					 		<p>This field contains a pipe-separated list of the allowed account actions.  They are a subset of the AccountOperation list 
+					 		which is used in the main Solution component to drive the options.
+					 		<br/>
+					 		They can be categorised as follows:
+					 		<br/>
+					 		First, the actions which can be invoked via the Carousel:
+					 		<ul>
+						 		<li>Transactions</li>
+						 		<li>MakeTransfer</li>
+						 		<li>MakePayment</li>
+						 		<li>PayBill</li>
+						 		<li>ManagePayees</li>
+						 		<li>PendingPayments</li>
+						 		<li>StandingOrder</li>
+						 		<li>DirectDebits</li>
+						 		<li>Cheques</li>
+						 		<li>Schedule</li>
+					 		</ul>
+					 		Next, the pages which may be presented when the account is first selected:
+					 		<ul>
+						 		<li>AccountOverview</li>
+						 		<li>DepositOverview</li>
+						 		<li>LoanOverview</li>
+						 		<li>RecentTransactions</li>
+					 		</ul>
+					 		Finally, sundry properties which may apply to various products:
+					 		<ul>
+						 		<li>CanAcceptFunds (i.e. may be offered up as a "To" account in the Make Transfer tool)</li>
+						 		<li>ChangeAccountName</li>
+					 		</ul>
+					 		</p>
+					 		</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransactionAuthentications">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransactionAuthentication" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="Authenticatable" name="Authenticatable"/>
+                    <xs:element type="YesNo" name="Authentication" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AccountProperties">
+          <xs:complexType>
+            <xs:sequence>
+	 		 	<xs:annotation>
+		 			<xs:documentation><p>In T24, it is not possible to make a payment from an International account to a 
+		 			Domestic account. But if this changes in the future, then we need to allow it.
+		 			<br/>
+		 			If this flag is set to "Y", then Domestic accounts are displayed on the Make Payment screens when an International
+		 			account is selected. 
+		 			<br/>
+		 			If set to "N", then no such accounts are made available for payment.
+		 			<br/>
+		 			This is to prevent the user from selecting a payment to an account that is not payable to, and receiving an error message. 
+		 			</p>
+		 			</xs:documentation>
+		 		</xs:annotation>
+              <xs:element type="xs:string" name="CanPayDomesticFromInternational"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="YesNo" name="CanPayDomesticFromInternational"/>
+        <xs:element name="Currencies">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Currency" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Key">
+				 	 	<xs:annotation>
+					 		<xs:documentation>3-character ISO code for the currency (e.g. USD, GBP, EUR)</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Symbol">
+				 	 	<xs:annotation>
+					 		<xs:documentation>If implemented, the symbol to be used, in Unicode (e.g &#x24;, &#xA3; etc), 
+					 		otherwise same as Key.
+					 		</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:byte" name="Order">
+				 	 	<xs:annotation>
+					 		<xs:documentation>Integer determining order (1 at the top) in the Exchange Rate tool</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                   <xs:element type="YesNo" name="BaseCurrency">
+				 	 	<xs:annotation>
+					 		<xs:documentation>
+					 		<p>The default currency which is to be used in absence of one associated with the logged-in user.
+					 		<br/>
+					 		The base currency is company-dependent. There may be more than one company in a given T24 / TCMB installation. We do not
+					 		support the concept of company in TCMB. But each user is associated with one company, and therefore each user entity has 
+					 		a base currency associated with it.
+					 		<br/>
+					 		Before login, however, the Exchange Rates component needs to know what the base currency is. So the app needs to have a 
+					 		base currency defined in order to operate.
+					 		</p>
+					 		</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                 </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+       <xs:element name="Languages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Language" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Key">
+				 	 	<xs:annotation>
+					 		<xs:documentation>Unique numerical ID</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Code">
+				 	 	<xs:annotation>
+					 		<xs:documentation>2-letter ISO code (e.g. en, fr, de)</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Alias">
+				 	 	<xs:annotation>
+					 		<xs:documentation>The name of the language in English (e.g. "English", "French", "German", etc.)</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Name">
+				 	 	<xs:annotation>
+					 		<xs:documentation>The name of the language in that language (e.g. "English", "Fran&#xe7;ais", "Deutsch", etc.)</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                    <xs:element type="YesNo" name="Default">
+				 	 	<xs:annotation>
+					 		<xs:documentation>
+					 		<p>In absence of any other indication, whether this language is to be used by default.
+					 		<br/>
+					 		When first presenting a Login screen to the user, it is expected that the language it is presented in will be obtained
+					 		from the device.  However, this may not be possible (it is not guaranteed that it be available).
+					 		<br/>
+					 		So, in that case, the login page will need to be presented in the language setas the default.
+					 		<br/>
+					 		Only one of the Language elements in the Languages section will be assigned "Y" to indicate that it is the default. All the
+					 		others are to be assigned "N".
+					 		</p>
+					 		</xs:documentation>
+					 	</xs:annotation>
+                    </xs:element>
+                 </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+     </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

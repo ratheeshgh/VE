@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><DeploymentDescriptor AllowDataSets="N" AndroidProfile="TCMB_ANDROID_BETA" ApplicationName="RetailMobile" BuildAndroidApp="Y" BuildIOSApp="N" BuildWAR="Y" BuildWebApp="Y" BuildWindowsApp="N" BuildWindowsUniversalApp="N" Connect="version 5.3.2__8" DefaultDataSet="Do not use Data Sets" DeploymentDestination="D:/SVN/Deployments/Test/2015_07/06232015" ExcludeXMLJars="Y" FilePattern="*.gif,*.jpg,*.png,*.css,*.js,*.html" IncludeStdJars="Y" JailbreakErrorPhase="JailBreak" Name="RetailMobile" OfflineErrorPhase="Offline" Presentation="TCMB" ProjectFileName="RetailMobile.ifp" RepositoryFolder="D:/svn/RepositoryLocation" ResourceFolders="images,html,hybrid" SSLErrorPhase="SSL Error" Version="1.10" eid="DFFA14F4CB65DE8321529">
+  <WebServices Name="Web Services Root" eid="E25C4665BF4B2C6E74339"/>
+  <VersioningInfo FilePattern="*.gif,*.jpg,*.png,*.css,*.js,*.html" Name="Versioning Info" RepositoryFolder="D:/svn/RepositoryLocation" ResourceFolders="images,html,hybrid" Version="1.10" eid="DFFA14F4CB65DE8340463"/>
+  <Portlets Name="Portlets Root" eid="E25C4665BF4B2C6E74342"/>
+  <Parameters Name="Variables Root" eid="E25C4665BF4B2C6E74482">
+    <RunTimeParameters Name="Runtime Variables" eid="E25C4665BF4B2C6E74483">
+      <RunTimeParameter Mode="Live" Name="Mode" eid="DFFA14F4CB65DE8321557"/>
+      <RunTimeParameter Name="Session Timeout" SessionTimeout="300" eid="DFFA14F4CB65DE8321558"/>
+      <RunTimeParameter Name="Debug Level" eid="DFFA14F4CB65DE8321559"/>
+      <RunTimeParameter Name="Cryptokey File" eid="DFFA14F4CB65DE8321560"/>
+      <RunTimeParameter Name="Security" eid="DFFA14F4CB65DE8321561"/>
+      <RunTimeParameter Name="SubSession" eid="DFFA14F4CB65DE8321562"/>
+    </RunTimeParameters>
+    <GlobalParameters Name="Global Variables" eid="E25C4665BF4B2C6E74490">
+      <GlobalParameter GlobalParameterValue="N" Name="4TRESS_SERVICE_STATUS" eid="DFFA14F4CB65DE8345490"/>
+      <GlobalParameter GlobalParameterValue="http://10.92.5.120:8053/TCMBCommon-iris/TCMBCommon.svc/GB0010001/" Name="IRIS_COMMON_SERVICE_ROOT_URI" eid="E7929170CDF56B9B12410"/>
+      <GlobalParameter GlobalParameterValue="http://10.92.5.120:8053/TCMBRetail-iris/TCMBRetail.svc/GB0010001/" Name="IRIS_RETAIL_SERVICE_ROOT_URI" eid="C8A9C675B390B88019929"/>
+      <GlobalParameter GlobalParameterValue="123456" Name="STATIC_DEMO_PASSWD" eid="29CE80C7510DBF8F10240"/>
+      <GlobalParameter GlobalParameterValue="ROLFGERLINGTC" Name="SYSTEM_USER" eid="191A652DED73DE1812957"/>
+      <GlobalParameter GlobalParameterValue="123456" Name="SYSTEM_PASSWORD" eid="191A652DED73DE1812958"/>
+      <GlobalParameter GlobalParameterValue="111111" Name="HELP_DESK_NUMBER" eid="9A59337C9A6BCD3D13131"/>
+      <GlobalParameter GlobalParameterValue="Temenos" Name="NAME" eid="78966D99B5C6962C25532"/>
+      <GlobalParameter GlobalParameterValue="TCMB_V1_0_0__20150623" Name="VERSION" eid="78966D99B5C6962C25533"/>
+      <GlobalParameter GlobalParameterValue="23-JUNE-2015" Name="RELEASE_DATE" eid="78966D99B5C6962C25535"/>
+      <GlobalParameter GlobalParameterValue="10" Name="NO_OF_TXNS" eid="12CC3C1D68903F5816086"/>
+      <GlobalParameter GlobalParameterValue="5" Name="NO_OF_RECENT_TXNS" eid="12CC3C1D68903F5816086"/>
+      <GlobalParameter GlobalParameterValue="10" Name="NO_OF_MESSAGES" eid="661755204E5E32E137961"/>
+      <GlobalParameter GlobalParameterValue="777777" Name="ABOUT_CONTACT_NO" eid="0F3E3B60C24DEB5012014"/>
+      <GlobalParameter GlobalParameterValue="WEB-INF/config/Configuration.xml" Name="CONFIG_FILENAME" eid="A177D25759C831D615847"/>
+      <GlobalParameter GlobalParameterValue="4" Name="SEARCH_RADIUS" eid="B52D98FA54ED023F22066"/>
+      <GlobalParameter GlobalParameterValue="Y" Name="LOAD_ALL_LOCATIONS" eid="B52D98FA54ED023F22066"/>
+      <GlobalParameter GlobalParameterValue="KM" Name="DISTANCE_UNIT" eid="B52D98FA54ED023F22067"/>
+      <GlobalParameter GlobalParameterValue="Y" Name="ENABLE_LANGUAGE_MAPS" eid="50A5E2312EAF393948847"/>
+      <GlobalParameter GlobalParameterValue="xls" Name="LANGUAGE_MAP_EXT" eid="50A5E2312EAF393948847"/>
+    </GlobalParameters>
+  </Parameters>
+  <DirectoryStructure Name="Directory Structure Root" eid="E25C4665BF4B2C6E74543">
+    <Directory DefaultDir="Y" Directory="./templates" Name="Templates dir" eid="DFFA14F4CB65DE8321548"/>
+    <Directory DefaultDir="Y" Directory="./html" Name="HTML dir" eid="DFFA14F4CB65DE8321549"/>
+    <Directory DefaultDir="Y" Directory="./html/js" Name="JavaScript dir" eid="DFFA14F4CB65DE8321550"/>
+    <Directory DefaultDir="Y" Directory="./html/css" Name="Stylesheet dir" eid="DFFA14F4CB65DE8321551"/>
+    <Directory DefaultDir="Y" Directory="./html/templates" Name="HTML Templates dir" eid="DFFA14F4CB65DE8321552"/>
+    <Directory DefaultDir="Y" Directory="./images" Name="Images dir" eid="DFFA14F4CB65DE8321553"/>
+    <Directory DefaultDir="Y" Directory="./dictionary" Name="Dictionary dir" eid="DFFA14F4CB65DE8321554"/>
+    <Directory DefaultDir="Y" Directory="./DataSets" Name="Data Sets dir" eid="DFFA14F4CB65DE8321555"/>
+  </DirectoryStructure>
+  <ComponentRoot Name="ComponentRoot" eid="E25C4665BF4B2C6E74343">
+    <Component ComponentName="LoadProduct" Name="4A5971D6C5DAD085 ComponentSource 2" ProjectLocation="Common/Integration/LoadProduct" ProjectName="LoadProduct" eid="4A5971D6C5DAD08518238">
+      <Component ComponentName="TcibAcctDetailss" Name="4A5971D6C5DAD085 ComponentSource 114" ProjectLocation="Common/Integration/TcibAcctDetailss" ProjectName="TcibAcctDetailss" eid="4A5971D6C5DAD08523082"/>
+      <Component ComponentName="TcibAaAdArrangementTabs" Name="4A5971D6C5DAD085 ComponentSource 115" ProjectLocation="Common/Integration/TcibAaAdArrangementTabs" ProjectName="TcibAaAdArrangementTabs" eid="4A5971D6C5DAD08523083"/>
+      <Component ComponentName="TcibAaLoanss" Name="4A5971D6C5DAD085 ComponentSource 116" ProjectLocation="Common/Integration/TcibAaLoanss" ProjectName="TcibAaLoanss" eid="4A5971D6C5DAD08523084"/>
+    </Component>
+    <Component ComponentName="BasicTopNavigation" Name="4A5971D6C5DAD085 ComponentSource 10" ProjectLocation="Common/UI/TopNavigation" ProjectName="TopNavigation" eid="4A5971D6C5DAD08518446">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08522481" Name="Link to 4A5971D6C5DAD085 ComponentSource 48" eid="4A5971D6C5DAD08523242"/>
+    </Component>
+    <Component ComponentName="AccountSelector" Name="4A5971D6C5DAD085 ComponentSource 16" ProjectLocation="Common/UI/AccountSelector" ProjectName="AccountSelector" eid="4A5971D6C5DAD08518490"/>
+    <Component ComponentName="AccountSummary" Name="4A5971D6C5DAD085 ComponentSource 28" ProjectLocation="Common/UI/AccountSummary" ProjectName="AccountSummary" eid="4A5971D6C5DAD08518588"/>
+    <Component ComponentName="AccountOperations" Name="4A5971D6C5DAD085 ComponentSource 18" ProjectLocation="Common/UI/AccountOperations" ProjectName="AccountOperations" eid="4A5971D6C5DAD08518701"/>
+    <Component ComponentName="LoanDetails" Name="4A5971D6C5DAD085 ComponentSource 26" ProjectLocation="Common/UI/LoanDetails" ProjectName="LoanDetails" eid="4A5971D6C5DAD08518726"/>
+    <Component ComponentName="Deposits" Name="4A5971D6C5DAD085 ComponentSource 24" ProjectLocation="Common/UI/Deposits" ProjectName="Deposits" eid="4A5971D6C5DAD08518789"/>
+    <Component ComponentName="GenericOverview" Name="4A5971D6C5DAD085 ComponentSource 22" ProjectLocation="Common/UI/AccountOverview" ProjectName="AccountOverview" eid="4A5971D6C5DAD08518852"/>
+    <Component ComponentName="AllAccountsRecentTransactionListss" Name="4A5971D6C5DAD085 ComponentSource 20" ProjectLocation="Common/Integration/AllAccountsTransactionList" ProjectName="AllAccountsTransactionList" eid="4A5971D6C5DAD08518886"/>
+    <Component ComponentName="AccountsList" Name="4A5971D6C5DAD085 ComponentSource 12" ProjectLocation="Common/UI/AccountsList" ProjectName="AccountsList" eid="4A5971D6C5DAD08519011">
+      <Component ComponentName="AaArrangementActivity_TcibNewUpdates-New" Name="4A5971D6C5DAD085 ComponentSource 119" ProjectLocation="Common/Integration/AaArrangementActivity_TcibNewUpdates" ProjectName="AaArrangementActivity_TcibNewUpdates" eid="4A5971D6C5DAD08523087"/>
+      <Component ComponentName="Account_Tcibs-Get" Name="4A5971D6C5DAD085 ComponentSource 122" ProjectLocation="Common/Integration/Account_Tcibs" ProjectName="Account_Tcibs" eid="4A5971D6C5DAD08523090"/>
+      <Component ComponentName="ProcessTxnAuthentication" Name="4A5971D6C5DAD085 ComponentSource 125" ProjectLocation="Common/UI/TransactionAuthentication" ProjectName="TransactionAuthentication" eid="4A5971D6C5DAD08523093">
+        <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523101" Name="Link to 4A5971D6C5DAD085 ComponentSource 133" eid="4A5971D6C5DAD08523277"/>
+      </Component>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523251"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523252"/>
+    </Component>
+    <Component ComponentName="Login" Name="4A5971D6C5DAD085 ComponentSource 4" ProjectLocation="Common/UI/Login" ProjectName="Login" eid="4A5971D6C5DAD08519087">
+      <Component ComponentName="UserLoginWithPassword" Name="4A5971D6C5DAD085 ComponentSource 133" ProjectLocation="Common/Integration/4TRESS_Integration" ProjectName="4TRESS_Integration" eid="4A5971D6C5DAD08523101"/>
+      <Component ComponentName="TcibLoginDetailss" Name="4A5971D6C5DAD085 ComponentSource 134" ProjectLocation="Common/Integration/TcibLoginDetailss" ProjectName="TcibLoginDetailss" eid="4A5971D6C5DAD08523102"/>
+    </Component>
+    <Component ComponentName="GetAllowedActions" Name="4A5971D6C5DAD085 ComponentSource 8" ProjectLocation="Common/UI/Configuration" ProjectName="Configuration" eid="4A5971D6C5DAD08519168"/>
+    <Component ComponentName="AllAccounts" Name="4A5971D6C5DAD085 ComponentSource 6" ProjectLocation="Common/Integration/AllAccounts" ProjectName="AllAccounts" eid="4A5971D6C5DAD08519185"/>
+    <Component ComponentName="ChequeDetails" Name="4A5971D6C5DAD085 ComponentSource 42" ProjectLocation="Retail/UI/Cheques" ProjectName="Cheques" eid="4A5971D6C5DAD08519433">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523253"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523254"/>
+      <Component ComponentName="TcibChequeStatuss" Name="4A5971D6C5DAD085 ComponentSource 139" ProjectLocation="Retail/Integration/TcibChequeStatuss" ProjectName="TcibChequeStatuss" eid="4A5971D6C5DAD08523107"/>
+      <Component ComponentName="EbSecureMessage_Tcibs-Validate" Name="4A5971D6C5DAD085 ComponentSource 141" ProjectLocation="Common/Integration/EbSecureMessage_Tcibs" ProjectName="EbSecureMessage_Tcibs" eid="4A5971D6C5DAD08523109"/>
+      <Component ComponentName="PaymentStop_TcibStopCheques-List" Name="4A5971D6C5DAD085 ComponentSource 147" ProjectLocation="Retail/Integration/PaymentStop_TcibStopCheques" ProjectName="PaymentStop_TcibStopCheques" eid="4A5971D6C5DAD08523115"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523255"/>
+    </Component>
+    <Component ComponentName="DirectDebits" Name="4A5971D6C5DAD085 ComponentSource 40" ProjectLocation="Retail/UI/DirectDebits" ProjectName="DirectDebits" eid="4A5971D6C5DAD08519835">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523256"/>
+      <Component ComponentName="TcibCusDdMandatess" Name="4A5971D6C5DAD085 ComponentSource 158" ProjectLocation="Common/Integration/TcibCusDdMandatess" ProjectName="TcibCusDdMandatess" eid="4A5971D6C5DAD08523126"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523257"/>
+      <Component ComponentName="DdDdi_TcibStandalones-Get" Name="4A5971D6C5DAD085 ComponentSource 163" ProjectLocation="Common/Integration/DdDdi_TcibStandalones" ProjectName="DdDdi_TcibStandalones" eid="4A5971D6C5DAD08523131"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523258"/>
+    </Component>
+    <Component ComponentName="LoanSchedule" Name="4A5971D6C5DAD085 ComponentSource 44" ProjectLocation="Common/UI/LoanSchedule" ProjectName="LoanSchedule" eid="4A5971D6C5DAD08520049">
+      <Component ComponentName="TcibAaPaymentScheduless" Name="4A5971D6C5DAD085 ComponentSource 169" ProjectLocation="Common/Integration/TcibAaPaymentScheduless" ProjectName="TcibAaPaymentScheduless" eid="4A5971D6C5DAD08523137"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523259"/>
+    </Component>
+    <Component ComponentName="Payments" Name="4A5971D6C5DAD085 ComponentSource 34" ProjectLocation="Common/UI/CommonMakePayment" ProjectName="CommonMakePayment" eid="4A5971D6C5DAD08520467">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523260"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523261"/>
+      <Component ComponentName="StandingOrder_Tcibs-Populate" Name="4A5971D6C5DAD085 ComponentSource 175" ProjectLocation="Common/Integration/StandingOrder_Tcibs" ProjectName="StandingOrder_Tcibs" eid="4A5971D6C5DAD08523143"/>
+      <Component ComponentName="FundsTransfer_Tcibs-Validate" Name="4A5971D6C5DAD085 ComponentSource 177" ProjectLocation="Common/Integration/FundsTransfer_Tcibs" ProjectName="FundsTransfer_Tcibs" eid="4A5971D6C5DAD08523145"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523262"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08522073" Name="Link to 4A5971D6C5DAD085 ComponentSource 46" eid="4A5971D6C5DAD08523263"/>
+    </Component>
+    <Component ComponentName="RecentTransactions" Name="4A5971D6C5DAD085 ComponentSource 30" ProjectLocation="Common/UI/CommonRecentTransactions" ProjectName="CommonRecentTransactions" eid="4A5971D6C5DAD08521333">
+      <Component ComponentName="TcibLastNTxnsRecentListss" Name="4A5971D6C5DAD085 ComponentSource 202" ProjectLocation="Common/Integration/TcibLastNTxnsRecentListss" ProjectName="TcibLastNTxnsRecentListss" eid="4A5971D6C5DAD08523170"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523264"/>
+    </Component>
+    <Component ComponentName="StandingOrders" Name="4A5971D6C5DAD085 ComponentSource 38" ProjectLocation="Common/UI/StandingOrders" ProjectName="StandingOrders" eid="4A5971D6C5DAD08521375">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523265"/>
+      <Component ComponentName="TcibStos" Name="4A5971D6C5DAD085 ComponentSource 206" ProjectLocation="Common/Integration/TcibStos" ProjectName="TcibStos" eid="4A5971D6C5DAD08523174"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523266"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523143" Name="Link to 4A5971D6C5DAD085 ComponentSource 175" eid="4A5971D6C5DAD08523267"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523268"/>
+    </Component>
+    <Component ComponentName="FutureDatedPayments" Name="4A5971D6C5DAD085 ComponentSource 32" ProjectLocation="Common/UI/UpcomingPayments" ProjectName="UpcomingPayments" eid="4A5971D6C5DAD08521586">
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523269"/>
+      <Component ComponentName="TcibFtFwds" Name="4A5971D6C5DAD085 ComponentSource 221" ProjectLocation="Common/Integration/TcibFtFwds" ProjectName="TcibFtFwds" eid="4A5971D6C5DAD08523189"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08518490" Name="Link to 4A5971D6C5DAD085 ComponentSource 16" eid="4A5971D6C5DAD08523270"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523145" Name="Link to 4A5971D6C5DAD085 ComponentSource 177" eid="4A5971D6C5DAD08523271"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523272"/>
+    </Component>
+    <Component ComponentName="ChangePassword" Name="4A5971D6C5DAD085 ComponentSource 58" ProjectLocation="Common/UI/Personalisation" ProjectName="Personalisation" eid="4A5971D6C5DAD08521859">
+      <Component ComponentName="TcibCusLists" Name="4A5971D6C5DAD085 ComponentSource 230" ProjectLocation="Common/Integration/TcibCusLists" ProjectName="TcibCusLists" eid="4A5971D6C5DAD08523198"/>
+      <Component ComponentName="Customer_TcibProfiles-Get" Name="4A5971D6C5DAD085 ComponentSource 231" ProjectLocation="Common/Integration/Customer_TcibProfiles" ProjectName="Customer_TcibProfiles" eid="4A5971D6C5DAD08523199"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523101" Name="Link to 4A5971D6C5DAD085 ComponentSource 133" eid="4A5971D6C5DAD08523273"/>
+    </Component>
+    <Component ComponentName="ExchangeRates" Name="4A5971D6C5DAD085 ComponentSource 54" ProjectLocation="Common/UI/ExchangeRates" ProjectName="ExchangeRates" eid="4A5971D6C5DAD08522047">
+      <Component ComponentName="TcibCurrencyLists" Name="4A5971D6C5DAD085 ComponentSource 236" ProjectLocation="Common/Integration/TcibCurrencyLists" ProjectName="TcibCurrencyLists" eid="4A5971D6C5DAD08523204"/>
+    </Component>
+    <Component ComponentName="FindATM" Name="4A5971D6C5DAD085 ComponentSource 56" ProjectLocation="Common/UI/FindATM" ProjectName="FindATM" eid="4A5971D6C5DAD08522060"/>
+    <Component ComponentName="ManagePayees" Name="4A5971D6C5DAD085 ComponentSource 46" ProjectLocation="Common/UI/CommonManagePayees" ProjectName="CommonManagePayees" eid="4A5971D6C5DAD08522073">
+      <Component ComponentName="TcibBeneficiaryUtils" Name="4A5971D6C5DAD085 ComponentSource 242" ProjectLocation="Common/Integration/TcibBeneficiaryUtils" ProjectName="TcibBeneficiaryUtils" eid="4A5971D6C5DAD08523210"/>
+      <Component ComponentName="TcibBenLists" Name="4A5971D6C5DAD085 ComponentSource 243" ProjectLocation="Common/Integration/TcibBenLists" ProjectName="TcibBenLists" eid="4A5971D6C5DAD08523211"/>
+      <Component ComponentName="Beneficiary_Tcibs-Authorise" Name="4A5971D6C5DAD085 ComponentSource 244" ProjectLocation="Common/Integration/Beneficiary_Tcibs" ProjectName="Beneficiary_Tcibs" eid="4A5971D6C5DAD08523212"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523093" Name="Link to 4A5971D6C5DAD085 ComponentSource 125" eid="4A5971D6C5DAD08523274"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08519168" Name="Link to 4A5971D6C5DAD085 ComponentSource 8" eid="4A5971D6C5DAD08523275"/>
+    </Component>
+    <Component ComponentName="Messages" Name="4A5971D6C5DAD085 ComponentSource 48" ProjectLocation="Common/UI/Messages" ProjectName="Messages" eid="4A5971D6C5DAD08522481">
+      <Component ComponentName="TcibPersonalMessages - Load all" Name="4A5971D6C5DAD085 ComponentSource 261" ProjectLocation="Common/Integration/TcibPersonalMessages" ProjectName="TcibPersonalMessages" eid="4A5971D6C5DAD08523229"/>
+      <Component ClassType="com.acquire.intelligentforms.entities.component.ComponentSource" LinkReference="4A5971D6C5DAD08523109" Name="Link to 4A5971D6C5DAD085 ComponentSource 141" eid="4A5971D6C5DAD08523276"/>
+      <Component ComponentName="EbSecureMessage_TcibReplys-Validate" Name="4A5971D6C5DAD085 ComponentSource 270" ProjectLocation="Common/Integration/EbSecureMessage_TcibReplys" ProjectName="EbSecureMessage_TcibReplys" eid="4A5971D6C5DAD08523238"/>
+    </Component>
+    <Component ComponentName="Settings" Name="4A5971D6C5DAD085 ComponentSource 52" ProjectLocation="Common/UI/Settings" ProjectName="Settings" eid="4A5971D6C5DAD08522881"/>
+  </ComponentRoot>
+  <Profiles Name="Profiles Root" eid="E25C4665BF4B2C6E74560">
+    <IOSProfiles Name="iOS Profiles" eid="E25C4665BF4B2C6E74561">
+      <IOSProfile ApplicationOrientation="portrait" ApplicationTitle="TCMB" CertificateFile="$$PROJECTHOME$/hybrid/ios/certificates/TemenosEnterpriseCertificate.p12" CertificateName="iPhone Distribution: Temenos UK Ltd" CertificatePassword="temenos" DestinationFolder="$$PROJECTHOME$/hybrid/ios" EdgeConnect_URL="http://10.93.24.112:9081/RetailMobile/servletcontroller" IsDevelopmentMode="Y" JailbreakDetection="Y" Name="TCMB_IOS_Beta" OsVersionsSupported="6.0" PackageName="com.temenos.retailmobile" ProfileName="TCMB_IOS_Beta" ProvisioningProfile="$$PROJECTHOME$/hybrid/ios/certificates/TemenosInHouseDistribution.mobileprovision" ResourcesFolder="$$PROJECTHOME$/hybrid/ios/res" RunInBackground="N" UpdateServletUrl="http://10.93.24.112:9081/RetailMobile/mobileUpdate" eid="BD64FB73202F497B28975" iTunesLink="https://itunes.apple.com/in/app/itunes-u/id490217893?mt=8&amp;ign-mpt=uo%3D4"/>
+    </IOSProfiles>
+    <AndroidProfiles Name="Android Profiles" eid="E25C4665BF4B2C6E74562">
+      <AndroidProfile AccessContacts="N" ApplicationOrientation="portrait" ApplicationTitle="TCMB" ApplicationVersionCode="1" CertificateAlias="EdgeHybrid" CertificateAliasPassword="Kj!&amp;454ger3iodcde3" CertificateFile="$$PROJECTHOME$/hybrid/android/certificates/keystore" CertificatePassword="Kj!&amp;454ger3iodcde3" DestinationFolder="$$DEPLOY_HOME$/hybrid/android" EdgeConnect_URL="http://10.93.24.112:9081/RetailMobile/servletcontroller" IsDevelopmentMode="Y" JailbreakDetection="Y" Name="TCMB_ANDROID_BETA" OsVersionsSupported="Android 2.2-2.2.3 Froyo" PackageName="com.temenos.retailmobile" ProfileName="TCMB_ANDROID_BETA" RecordsAudio="N" ResourcesFolder="$$PROJECTHOME$/hybrid/android/res" StreamsAudio="N" UpdateServletUrl="http://10.93.24.112:9081/RetailMobile/mobileUpdate" UsesCamera="N" UsesGeolocation="Y" UsesVibration="N" eid="BD64FB73202F497B28976"/>
+    </AndroidProfiles>
+    <WindowsProfiles Name="WP8 Profiles" eid="E25C4665BF4B2C6E74563"/>
+    <WindowsUniversalProfiles Name="Windows Profiles" eid="E25C4665BF4B2C6E74564"/>
+  </Profiles>
+  <Messages Name="Messages Root" eid="E25C4665BF4B2C6E74569">
+    <Message INITIALIZED="true" MESSAGE_NAME="ok" Name="ok" OTHER_LANGUAGES="English=OK" VALUE="OK" eid="DFFA14F4CB65DE8321566"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="not_now" Name="not_now" OTHER_LANGUAGES="English=Not Now" VALUE="Not Now" eid="DFFA14F4CB65DE8321567"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="user_settings" Name="user_settings" OTHER_LANGUAGES="English=Settings" VALUE="Settings" eid="DFFA14F4CB65DE8321568"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="check_updates" Name="check_updates" OTHER_LANGUAGES="English=Check for updates" VALUE="Check for updates" eid="DFFA14F4CB65DE8321569"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="developer_settings" Name="developer_settings" OTHER_LANGUAGES="English=Developer settings" VALUE="Developer settings" eid="DFFA14F4CB65DE8321570"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="title_activity_app_pereferences" Name="title_activity_app_pereferences" OTHER_LANGUAGES="English=Settings" VALUE="Settings" eid="DFFA14F4CB65DE8321571"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="internet_connection_needed_title" Name="internet_connection_needed_title" OTHER_LANGUAGES="English=No Connectivity" VALUE="No Connectivity" eid="DFFA14F4CB65DE8321572"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="internet_connection_needed" Name="internet_connection_needed" OTHER_LANGUAGES="English=Please verify you have cellular network or WiFi connection" VALUE="Please verify you have cellular network or WiFi connection" eid="DFFA14F4CB65DE8321573"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="error_accessing_server_title" Name="error_accessing_server_title" OTHER_LANGUAGES="English=Error communicating with the server" VALUE="Error communicating with the server" eid="DFFA14F4CB65DE8321574"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="error_accessing_server_description" Name="error_accessing_server_description" OTHER_LANGUAGES="English=The server cannot be reached" VALUE="The server cannot be reached" eid="DFFA14F4CB65DE8321575"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="invalid_ssl_cert" Name="invalid_ssl_cert" OTHER_LANGUAGES="English=The SSL certificate is invalid. The server cannot be trusted." VALUE="The SSL certificate is invalid. The server cannot be trusted." eid="DFFA14F4CB65DE8321576"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="invalid_ssl_cert_development" Name="invalid_ssl_cert_development" OTHER_LANGUAGES="English=The SSL certificate is invalid. This is allowed only in development mode." VALUE="The SSL certificate is invalid. This is allowed only in development mode." eid="DFFA14F4CB65DE8321577"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_dialog_title" Name="lang_preference_dialog_title" OTHER_LANGUAGES="English=Preferred language" VALUE="Preferred language" eid="DFFA14F4CB65DE8321578"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_title" Name="lang_preference_title" OTHER_LANGUAGES="English=Language settings" VALUE="Language settings" eid="DFFA14F4CB65DE8321579"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="lang_preference_summary" Name="lang_preference_summary" OTHER_LANGUAGES="English=Select your preferred language" VALUE="Select your preferred language" eid="DFFA14F4CB65DE8321580"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="change_confirm_reload" Name="change_confirm_reload" OTHER_LANGUAGES="English=For applying your settings, the application has to be reloaded. Reload the application now?" VALUE="For applying your settings, the application has to be reloaded. Reload the application now?" eid="DFFA14F4CB65DE8321581"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="settings_update_title" Name="settings_update_title" OTHER_LANGUAGES="English=Settings update" VALUE="Settings update" eid="DFFA14F4CB65DE8321582"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_download_updates_now" Name="update_download_updates_now" OTHER_LANGUAGES="English=Updates are available. Download updates now?" VALUE="Updates are available. Download updates now?" eid="DFFA14F4CB65DE8321583"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_uptodate" Name="update_result_uptodate" OTHER_LANGUAGES="English=The application is up to date." VALUE="The application is up to date." eid="DFFA14F4CB65DE8321584"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_error" Name="update_result_error" OTHER_LANGUAGES="English=The update site rejected the query." VALUE="The update site rejected the query." eid="DFFA14F4CB65DE8321585"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_processing_error" Name="update_result_processing_error" OTHER_LANGUAGES="English=Error encountered during update." VALUE="Error encountered during update." eid="DFFA14F4CB65DE8321586"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_unknown_error" Name="update_result_unknown_error" OTHER_LANGUAGES="English=Error reading the update status from the update site." VALUE="Error reading the update status from the update site." eid="DFFA14F4CB65DE8321587"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_title" Name="downloading_file_title" OTHER_LANGUAGES="English=Downloading updates..." VALUE="Downloading updates..." eid="DFFA14F4CB65DE8321588"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_starting" Name="downloading_file_starting" OTHER_LANGUAGES="English=Starting..." VALUE="Starting..." eid="DFFA14F4CB65DE8321589"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_file_progress" Name="downloading_file_progress" OTHER_LANGUAGES="English=Downloading file %1$d of %2$d." VALUE="Downloading file %1$d of %2$d." eid="DFFA14F4CB65DE8321590"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_updates_error" Name="downloading_updates_error" OTHER_LANGUAGES="English=Failed to download the updates." VALUE="Failed to download the updates." eid="DFFA14F4CB65DE8321591"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="downloading_updates_success" Name="downloading_updates_success" OTHER_LANGUAGES="English=The updates were downloaded successfully." VALUE="The updates were downloaded successfully." eid="DFFA14F4CB65DE8321592"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_through_googleplay_confirmation" Name="update_through_googleplay_confirmation" OTHER_LANGUAGES="English=You need to update the application through Google play. Download the updated application now?" VALUE="You need to update the application through Google play. Download the updated application now?" eid="DFFA14F4CB65DE8321593"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="store_updatetitle" Name="store_updatetitle" OTHER_LANGUAGES="English=AppStore update" VALUE="AppStore update" eid="DFFA14F4CB65DE8321594"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_result_major_update" Name="update_result_major_update" OTHER_LANGUAGES="English=Updates are available for this application. Connect to iTunes now?" VALUE="Updates are available for this application. Connect to iTunes now?" eid="DFFA14F4CB65DE8321595"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="alert_title" Name="alert_title" OTHER_LANGUAGES="English=Alert" VALUE="Alert" eid="63F6B7129AEAD99B10678"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="loading_wait" Name="loading_wait" OTHER_LANGUAGES="English=Loading, please wait..." VALUE="Loading, please wait..." eid="63F6B7129AEAD99B10679"/>
+    <Message INITIALIZED="true" MESSAGE_NAME="update_through_windows_store_confirmation" Name="update_through_windows_store_confirmation" OTHER_LANGUAGES="English=You need to update the application through Windows Phone Store. Download the updated application now?" VALUE="You need to update the application through Windows Phone Store. Download the updated application now?" eid="C8A9C675B390B88018389"/>
+    <Message MESSAGE_NAME="save" Name="save" VALUE="Save" eid="4897D0D4F403CEB917326"/>
+    <Message MESSAGE_NAME="use_device_language" Name="use_device_language" VALUE="Use device language" eid="4897D0D4F403CEB917327"/>
+  </Messages>
+  <HybridLanguages Name="HybridLanguages Root" eid="E25C4665BF4B2C6E74640">
+    <HybridLanguage Alias="English" ISOCode="en" IncludeInDeployment="Y" LanguageMapFile="$$PROJECTHOME$WEB-INF/config/Languages/English/RetailMobile.xml" Name="English" eid="A436D69CB1E6699D56754"/>
+  </HybridLanguages>
+  <DataMapping/>
+</DeploymentDescriptor>

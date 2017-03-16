@@ -1,0 +1,2 @@
+<input type="checkbox" name="$$ITEM.ID()$" class="toggle" id="$$ITEM.ID()$" >
+<label for="$$ITEM.ID()$"></label>

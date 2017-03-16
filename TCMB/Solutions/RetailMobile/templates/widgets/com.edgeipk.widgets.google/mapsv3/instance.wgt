@@ -1,0 +1,98 @@
+<!--<p id="$$ITEM.ID()$-gmapresult"> </p>-->
+<div id="$$ITEM.ID()$-gmap" style="width: $$ITEM.WIDTH$; height: $$ITEM.HEIGHT$;" class="gmap"> </div>
+
+<script type="text/javascript">
+//Direct search on Enter press / Search button on mobile.
+var smi = $('#$$COMPONENT_ID_PREFIX$SearchMapInput');
+smi.bind("enterKey",function(e){
+	GetGeoCode();
+});
+//For every keypress we check if is the enterkey or a autocomplete element was clicked so we do the search, focusout the search input and the keypad is off.
+smi.on("input", function(e){
+	if(e.keyCode == 13)
+	{
+   	 	$(this).trigger("enterKey"); 
+		$(this).blur(); 
+	}
+	var _this = smi
+	var ul = document.getElementById('ui-id-1');  // Parent
+	ul.addEventListener('click', function(e) {
+		if (e.target.tagName === 'LI'){
+      		_this.blur();
+	  		$('.ui-helper-hidden-accessible').hide();
+   		 }
+	});
+});
+
+
+(function() {
+  var defaultZoom = 1*'$$ITEM.DEFZOOM$';
+  var defaultLong = '$$ITEM.DEFLONGITUDE$';
+  var defaultLat = '$$ITEM.DEFLATITUDE$';
+  var appLongitude = '$$ITEM.LONGITUDE$';
+  var appLatitude = '$$ITEM.LATITUDE$';
+  var appAddress = '$$ITEM.ADDRESS$';
+  var appZoom = 1*'$$ITEM.ZOOM$';
+  var id = "$$ITEM.ID()$";
+
+  // settings
+  var enableNav = "$$ITEM.ENABLENAV$";
+  var navStyle = "$$ITEM.NAVTYPE$";
+  var enableMapTypes = "$$ITEM.ENABLEMAPTYPES$";
+  var initialMapType = "$$ITEM.INITMAPTYPE$";
+  var mapTypes = "$$ITEM.MAPTYPES$";
+  var mapTypeStyle = "$$ITEM.TYPECONTROLSTYLE$";
+  var disabledClickZoom = "$$ITEM.DISABLEDCLICKZOOM$";
+  var draggable = "$$ITEM.DRAGGABLE$";
+  var geo = "$$ITEM.GEOLOCATION$";
+  var radius = "$$ITEM.RADIUS$";
+  var places = "$$ITEM.PLACES$";
+  $%if ITEM.DATASTORE > ''$
+  var locations = $$ITEM.DATASTORE$;
+  $%ELSE$
+  var locations = '[]';
+  $%ENDIF$
+  var search ="$$ITEM.SEARCH$";
+  var getdirection="$$WorkingElements[1].GetDirection$";
+  var boundsAsRadius = $$WorkingElements[1].SearchRadiusInMeters$;
+
+//document.getElementById("C1__BUT_CURRENT_LOCATION").addEventListener("click", function(){
+
+	$("#C1__BUT_CURRENT_LOCATION").click(function(){
+    setTimeout(function(){ if(sessionStorage.flag==0){$("#C1__BUT_MAPREFLOCOFF").trigger('click');}}, 3000);
+	//This is added because we are not able to recognize the location change (on -> off or off -> on without a refresh)
+	
+    widget.setLocation(appAddress,appLongitude,appLatitude,appZoom,geo,places,locations,radius,search,boundsAsRadius);
+	//on detecting a current location button click event, setLocation function will be called to set the current location.
+   });
+  // check to see if widget exists (i.e. we've been updated via a QLR)
+  //  - CANT DO THIS YET - EDGECONNECT IDE ALWAYS FORCES COMPLETE REDRAW
+  var widget = widgetapi.getWidget(id);
+  //if (null == widget || undefined == widget) {
+    // create widget
+    widget = new com.edgeipk.widgets.google.Map(id);
+    widgetapi.registerWidget(id,widget);
+    widget.setDefaults(defaultLong,defaultLat,defaultZoom,enableNav,navStyle,enableMapTypes,initialMapType,mapTypes,mapTypeStyle,disabledClickZoom,draggable);
+  //}
+   google.maps.event.addListener(widget._map, 'zoom_changed', function() {
+   var zoomLevel = widget._map.getZoom();
+   //TODO - maybe we could trigger the loading of Locations from here when the Zoom changes
+  });
+   google.maps.event.addListener(widget._map, 'center_changed', function() {
+ 			$("input[id$='MCLatitude']").val(widget._map.getCenter().lat());
+			$("input[id$='MCLongitude']").val(widget._map.getCenter().lng());
+  });
+  
+  if (getdirection == "Y") { 
+  var mylatitude = "$$WorkingElements[1].Device[1].Latitude$";
+  var mylongitude = "$$WorkingElements[1].Device[1].Longitude$";
+  var endlatitude = "$$locations[1].location[C].latitude$";
+  var endlongitude = "$$locations[1].location[C].Longitude$";
+  
+widget.getDirections(new google.maps.LatLng(mylatitude,mylongitude),new google.maps.LatLng(endlatitude,endlongitude));
+widget.setLocation(appAddress,appLongitude,appLatitude,appZoom,geo,places,locations,radius,search)
+  } else { widget.setLocation(appAddress,appLongitude,appLatitude,appZoom,geo,places,locations,radius,search,boundsAsRadius); }
+  
+window.globalMap = widget._map;
+}).call();
+</script>"

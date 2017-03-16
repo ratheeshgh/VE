@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot DSAttrsNewLine="N" DSOmitXMLDecl="N" DSPrettyPrint="Y" DS_UID="-1">
+  <!---->
+  <CardDetails AccountName="MasterCard" AccountNo="5412-XXXX-3412" ActualAmount="$ 1650,20" Balance="$ 1650,20" Currency="$" DS_REF_DATAGROUP_ATTRIBUTE_NAME="CardDetails[1]" DS_UID="-1" PaymentAmount="$ 650,02" Type="MasterCard"/>
+</DataSetRoot>

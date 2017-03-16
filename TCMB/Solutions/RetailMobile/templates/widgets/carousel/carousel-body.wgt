@@ -1,0 +1,137 @@
+$%IF ITEM.centeredslide == "Y"$
+<style>.swiper-slide {
+height:100%;
+opacity:0.4;
+-webkit-transition:100ms;
+-moz-transition:100ms;
+-ms-transition:100ms;
+-o-transition:100ms;
+transition:100ms;
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+-ms-transform:scale(0);
+-o-transform:scale(0);
+transform:scale(0);
+}
+
+.swiper-slide-visible {
+opacity:0.5;
+-webkit-transform:scale(0.8);
+-moz-transform:scale(0.8);
+-ms-transform:scale(0.8);
+-o-transform:scale(0.8);
+transform:scale(0.8);
+}
+
+.swiper-slide-active {
+top:0;
+opacity:1;
+-webkit-transform:scale(1);
+-moz-transform:scale(1);
+-ms-transform:scale(1);
+-o-transform:scale(1);
+transform:scale(1);
+}</style>$%ENDIF$
+<div id="$$ITEM.ID()$">
+$%IF ITEM.centeredslide == "Y"$<div class="bigcontainer">$%ENDIF$
+$%IF ITEM.navigation == "Y"$
+<div class="bigcontainer">
+<a id="arrowleft$$ITEM.ID()$" class="arrow-left" href="#"></a>
+<a id="arrowright$$ITEM.ID()$" class="arrow-right" href="#"></a>
+$%ENDIF$
+<div id="carousel$$ITEM.ID()$" class="$$ITEM.STYLES().TableStyle$ swiper-container $$ITEM.SWIPERCUSTOMCLASS$ ">
+	$%IF ITEM.TYPE() == "FormTable"$
+    <div class="swiper-wrapper swiper-no-swiping">
+        $%FOREACH TABLE_ROW IN TABLE$
+            $%FOREACH TABLE_CHILD IN TABLE$
+                <div class="swiper-slide swiper-no-swiping blue-slide" id="$$TABLE_CHILD.ID()$" onclick="$$ITEM.ONCLICK()$">
+                    $$TABLE_CHILD.EC_GENERATE()$
+                </div>
+            $%ENDFOREACH$
+        $%ENDFOREACH$
+    </div>
+	$%ENDIF$
+	$%IF ITEM.TYPE() == "Section"$
+    <div class="swiper-wrapper swiper-no-swiping">
+			$%FOREACH ITEM IN SECTION$
+					$%IF ITEM.IS_HIDDEN() != "true"$
+						<div class="swiper-slide swiper-no-swiping $$ITEM.PARENT().SLIDECLASS$" id="$$ITEM.ID()$">
+							$$ITEM.EC_GENERATE()$
+						</div>
+					$%ENDIF$
+			$%ENDFOREACH$
+		</div>
+	$%ENDIF$
+$%IF ITEM.centeredslide != "Y"$<div id="pagination$$ITEM.ID()$" class="pagination $$ITEM.PaginationClass$"></div>$%ENDIF$
+</div>
+$%IF ITEM.navigation == "Y"$
+</div>
+$%ENDIF$
+$%IF ITEM.centeredslide == "Y"$<div id="pagination$$ITEM.ID()$" class="pagination $$ITEM.PaginationClass$"></div>
+</div>$%ENDIF$
+</div>
+
+<script type="text/javascript">
+$%IF ITEM.TYPE() == "FormTable"$
+$("#$$ITEM.ID()$").parent().closest("[id]").addClass("ECDontRegen");
+$%ENDIF$
+
+$%IF ITEM.TYPE() == "FormTable" && ITEM.ASIS != ""$
+var activeSlide=$$ITEM.ASIS$-1;
+$%ENDIF$
+$%IF ITEM.TYPE() == "FormTable" && ITEM.ASIS == "" && ITEM.finitialSlide != ""$
+var activeSlide=$$ITEM.finitialSlide$;
+$%ENDIF$
+$%IF ITEM.TYPE() == "FormTable" && ITEM.ASIS == "" && ITEM.finitialSlide == ""$
+var activeSlide=0;
+$%ENDIF$
+
+  $%COMMENT$ how many slides shown at the same time $%ENDCOMMENT$
+  var noOfSlidesToShow = $%IF ITEM.numOfItems == ""$1$%ELSE$$$ITEM.numOfItems$$%ENDIF$;
+  
+  $%COMMENT$ how many slides actually in carousel  $%ENDCOMMENT$
+  var noOfSlides = $("#carousel$$ITEM.ID()$ .swiper-slide").length;
+   
+  $%COMMENT$ if there are fewer slides than the number to show, then we reduce count...  $%ENDCOMMENT$
+  noOfSlidesToShow = noOfSlidesToShow > noOfSlides ? noOfSlides : noOfSlidesToShow;
+
+  var mySwiper$$ITEM.ID()$ = new Swiper('#carousel$$ITEM.ID()$',{
+    $%IF ITEM.pagination == "Y"$pagination: '#pagination$$ITEM.ID()$',
+    paginationClickable: true,$%ENDIF$
+    $%IF ITEM.centeredslide == "Y"$centeredSlides: true,$%ENDIF$
+    slidesPerView: noOfSlidesToShow,
+$%IF ITEM.NoSwipe == "Y"$noSwiping: true,$%ENDIF$
+    $%IF ITEM.watchActiveIndex == "Y"$watchActiveIndex: true,$%ENDIF$
+	initialSlide: $%IF ITEM.TYPE() == "FormTable"$activeSlide$%ELSE$0$%ENDIF$,
+	$%IF ITEM.loop == "Y"$loop: true,$%ENDIF$
+longSwipesRatio:0.1,
+	$%IF ITEM.idToTrigger != ""$
+    onSlideChangeEnd : function(swiper, direction) {
+        var index = $("#$$ITEM.ID()$ .swiper-slide-active").attr("id");
+        var row = index.substring(index.lastIndexOf("_R"));
+		var idArray = "$$ITEM.idToTrigger$".split(",");
+		$.each(idArray, function(i,o) {
+			$("#" + $.trim(o) + row + ":first").click();
+		});
+    }
+	$%ENDIF$
+  })
+  $%IF ITEM.navigation == "Y"$
+  $('#arrowleft$$ITEM.ID()$').on('click', function(e){
+    e.preventDefault()
+    mySwiper$$ITEM.ID()$.swipePrev()
+  })
+  $('#arrowright$$ITEM.ID()$').on('click', function(e){
+    e.preventDefault()
+    mySwiper$$ITEM.ID()$.swipeNext()
+  })
+  $%ENDIF$
+function getAndroidVersion(ua) {
+    var ua = ua || navigator.userAgent; 
+    var match = ua.match(/Android\s([0-9\.]*)/);
+    return match ? match[1] : false;
+};
+
+IE4 = IE4 || getAndroidVersion() === "4.1.2"
+
+</script>

@@ -1,0 +1,12 @@
+[2017-03-13 15:29:47.509], ==============================================
+[2017-03-13 15:29:47.509], ['DEBUG_3' 'null' 'none' 'none' 'none' 'none'], Loading library from C:/TemenosCR/Projects/Banesco/TCMBPhase1/VE/TCMB/Components/Common/UI/Login/Login.ifp
+
+Invoker(s): ServletWorker@4f78f115 FormSession@d1bc276
+[2017-03-13 15:30:13.451], ==============================================
+[2017-03-13 15:30:13.451], ['DEBUG_3' 'null' 'none' 'Login:none' 'none' 'none'], Loading library from C:/TemenosCR/Projects/Banesco/TCMBPhase1/VE/TCMB/Components/Common/Integration/4TRESS_Integration/4TRESS_Integration.ifp
+
+Invoker(s): PhaseComponentWorker@66c4bfb7 ComponentSession@7f06bc16 Library="Login"
+[2017-03-13 15:30:49.428], ==============================================
+[2017-03-13 15:30:49.428], ['DEBUG_3' 'null' 'none' 'Login:none' 'none' 'none'], Loading library from C:/TemenosCR/Projects/Banesco/TCMBPhase1/VE/TCMB/Components/Common/Integration/TcibLoginDetailss/TcibLoginDetailss.ifp
+
+Invoker(s): PhaseComponentWorker@66c4bfb7 ComponentSession@7f06bc16 Library="Login"
