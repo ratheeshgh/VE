@@ -16,25 +16,24 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
-	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  $%IF PHASE == "TakeATour"$<link rel="stylesheet" href="./templates/widgets/carousel/css/idangerous.swiper.css">$%ENDIF$
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="$$HTML_LOCATION$js/cordova/cordova_loader.js"></script> 
-	  <script src="$$HTML_LOCATION$js/hookit.min.js"></script> 
+	  <script src="$$HTML_LOCATION$js/cordova/cordova_loader.js"></script>
+	  <script src="$$HTML_LOCATION$js/hookit.min.js"></script>
 	  <script type="text/javascript">
-		var controlCss; 
-		var deviceAgent = navigator.userAgent.toLowerCase(); 
+		var controlCss;
+		var deviceAgent = navigator.userAgent.toLowerCase();
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css"; 
+			controlCss = "./html/css/android.css";
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   $$HEADCONTENT$
-	   <script src="$$HTML_LOCATION$js/tcmb.js"></script>	
+	   <script src="$$HTML_LOCATION$js/tcmb.js"></script>
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -54,7 +53,7 @@ $%if PRESENTATIONTYPE != "Pure HTML" && PRESENTATIONTYPE != "Accessibility Compl
       $%ELSE$
       	<div><input type="hidden" name="$$PAGE_KEY$" value="$$PAGE_VAL$"/></div>
       $%ENDIF$
-      
+
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 $%else$
     <form id="$$NAMESPACE$form1" method="post" action="$$ACTIONURL$">
@@ -81,9 +80,9 @@ $%endif$
       </div>
 	$%else$
 	    </table>
-	$%endif$     
+	$%endif$
     </form>
-	
+
 
 <script>
 	jQuery(document).ready(function() {
@@ -94,8 +93,8 @@ $%endif$
 
 		$(document)
 			$%IF PHASE != "Login"$ $("#androidfooterfix").css("height","60px");$%ENDIF$
-		
-	
+
+
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -117,6 +116,3 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
   </body>
 </html>
 $%endif$
-
-		  
-	
