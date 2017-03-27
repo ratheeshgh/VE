@@ -1,0 +1,29 @@
+.error-headergrande {
+	font-size:2.500em; 
+	color:#54616d; 
+	text-transform:initial; 
+	margin-top:35px;
+	margin-bottom: 35px;}
+
+.error-texto {
+	font-size:15.33px; 
+	color:#54616d; 
+	text-transform:initial;
+	font-weight:bold; 
+	margin-top:5px;}
+
+.error-boton {
+	background: #007953 ;
+	color: #ffffff;
+	width: 90%;
+	height:40px; 
+	border-radius: 5px;
+	width: auto;
+	font-size: 14.33px;
+}
+
+@media (min-width: 200px) and (orientation: landscape) { 
+	.error-boton {
+		margin-bottom: 10px;
+	}
+}

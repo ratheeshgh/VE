@@ -1,0 +1,127 @@
+.card {
+    box-shadow: 1px 5px 10px #CCC;
+    position: relative;
+    border: 1px solid #DBE0E6;
+    border-radius: 8px 8px 8px 8px;
+    width: auto;
+}
+
+/*.padre {
+  position: relative;
+  text-align: center;
+}
+
+.padre p {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);*/
+  /*vertical-align: middle;*/
+/*}*/
+
+.centradoVertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*vertical-align: middle;*/
+}
+
+.card__header {
+    padding: 1.041em;
+    background: #F9FAFC;
+    text-align: center;
+    position: relative;
+}
+
+.card__body {
+    border-top: 1px solid #DBE0E6;
+    border-bottom: 1px solid #DBE0E6;
+    background: #FFFFFF;
+    padding: 1.041em;
+    text-align: center;
+    height: auto;
+}
+
+.card__footer {
+    background: #FFFFFF;
+    text-align: center;
+    padding: 1.041em;
+}
+
+.card__footer a, .card__footer-2-col a {
+    color: #029CD8;
+    text-decoration: none;
+}
+
+.card__footer-2-col {
+    background: #FFFFFF;
+    height: 100%;
+    width: 50%;
+    padding: 1.041em;
+    display: inline-block;
+    text-align: center;
+}
+
+.card__footer-2-col--borderLeft {
+  border-left: 1px solid #DBE0E6;
+}
+
+
+
+/*Esta utilidad sirve para rotar 180° <i class="banicon banicon-left-arrow"></i>. La arrow señalaria hacia la derecha*/
+
+.u-right-arrow {
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+
+/* --------------  CLASES PARA ESTILAR A MODO DE PRUEBA -------------- */
+
+.card__header-estiloPrueba-rowContainer {
+    /*margin: 0 5px;*/
+    display: inline-block;
+    /*font-weight: bold;*/
+    /*font-size: 18px;*/
+    /*float: left;*/
+}
+
+.card__header-estiloPrueba-titleH1Container {
+    display: inline-block;
+    padding: 0;
+    /*position: absolute;*/
+    font-size: 0.875em;
+}
+
+.card__header-estiloPrueba-titleH2Container {
+    display: inline-block;
+    font-size: 0.875em;
+    padding: 0;
+    width: auto;
+    /*line-height: 25px;
+    margin-left: 25px;*/
+    color: #54616D;
+}
+
+.card__header-estiloPrueba-arrowContainer {
+    /*display: inline-block;*/
+    /*right: -30px;*/
+    padding: 0;
+    /*width: auto;*/
+    position: absolute;
+    line-height: 0px;
+}
+
+.card__header-estiloPrueba-contentNumber {
+  font-size: 1.708em;
+  color: #3a4454;
+}
+
+.card__header-estiloPrueba-actionLink {
+  color: #2b5f8c;
+  font-size: 0.750em;
+}
+
+/* --------------  /CLASES PARA ESTILAR A MODO DE PRUEBA -------------- */

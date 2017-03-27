@@ -1,0 +1,29 @@
+.cardDetails__Body{
+	border: 1px solid #DBE0E6;
+}
+
+.cardDetails__BodyLeft{
+	border-right: 1px solid #DBE0E6;
+}
+
+.cardDetails__BodyLeft__Row1{
+	font-size: 11px;
+	padding-left: 5px;
+}
+.cardDetails__BodyLeft__Row2{
+	font-size: 1.25em;
+	padding-left: 5px;
+}
+.cardDetails__BodyRight__Row1{
+	font-size: 11px;
+	padding-left: 5px;
+}
+.cardDetails__BodyRight__Row2{
+	font-size: 1.25em;
+	padding-left: 5px;
+}
+
+.cardDetails__Footer{
+	border: 1px solid #DBE0E6;
+	padding: 5px;
+}
