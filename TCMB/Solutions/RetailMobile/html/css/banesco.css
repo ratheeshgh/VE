@@ -82,7 +82,7 @@
 /*BODY STYLING*/
 body{background-color: #fff;padding-top: 60px;font-family: "Lato Regular", courier; font-size:10px;line-height:1.42857143;color:#708090;overflow-x: hidden;text-transform:uppercase;}
 body.main_menu{padding-top: 60px;background-color:#053e83;font-size:18px;}
-body.error_page{padding-top: 100px;background-color: #FFF; color:#000;}
+body.error_page{padding-top: 0px;background-color: #FFF; color:#000;}
 /*body.general{padding-top: 60px;background-color: #f4f4f4;color:#000}*/
 body.general{padding-top: 60px;background-color: #fff;color:#708090;}
 body.login{padding-top: 100px;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/back1.jpg) repeat-x center center;color:#000}
@@ -1083,7 +1083,7 @@ input[type="checkbox"]:checked  {
 .TopNavSectionRight {width:20%; text-align:right;height:50px;} /* TOP NAV RIGHT SECTION FOR BUTTONS */
 .TopNavSectionCenter {width:60%; text-align:center;height:50px;} /* TOP NAV CENTER SECTION FOR TITLE */
 .VerticalAlign15 {padding-top:15px;padding-bottom:15px;} /* PADDING TO POSITION BUTTONS */
-.NavTitle { float:none; padding: 12px 1px 20px 25px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
+.NavTitle {float:none; padding: 15px 1px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
 /*Start Changes for Banesco*/
 .NavTitleH1White{display:block; font-family: "Lato Regular", courier; font-size:15.33px; text-align:left;color:#fff;margin-top:10px;}
 .NavTitleH1WhiteBold{display:block; font-family: "Lato Bold"; font-size:30px; text-align:left;color:#fff;margin-top:5px;}
@@ -1444,9 +1444,9 @@ color:#324254;
 /* --- END OF ACTIONS CAROUSEL COMPONENT ---*/
 
 /*LOGIN COMPONENT*/
-.LoginLinksBackground {background-color: rgba(0, 0, 0, 0.9);background: rgba(0, 0, 0, 0.9);color: rgba(14, 34, 46, 0.37);margin:0;}
-.LoginLinksBackground:hover {background-color: rgba(0, 0, 0, 0.9);background: rgba(0, 0, 0, 0.9);color: rgba(14, 34, 46, 0.56);margin:0;}
-.LoginLinks {display: block;text-decoration: none;color: #FFFFFF;background:none;outline:none;border:none;}
+.LoginLinksBackground {background-color:#f4f8f9;background:#f4f8f9;color: rgba(14, 34, 46, 0.37);margin:2%;}
+.LoginLinksBackground:active {background-color:#dce1e9;background:#dce1e9;color: rgba(14, 34, 46, 0.56);margin:0;color: #FFF; user-select:none;}
+.LoginLinks {display: block;text-decoration: none;color: #3A4454;background:none;outline:none;border:none;font-family:"Lato Regular";}
 a.LoginLinks:hover {text-decoration:none; display:block; color: white;}
 /* Changes for Banesco*/
 .LoginButton{font-family:"Lato Regular";width:100%;line-height:40px;margin:0;outline:none;color:rgba(255,255,255,1.0);background-color:rgba(31,140,107,1);border:0px solid #cccccc;border-radius: 5px;text-decoration:none;text-transform:uppercase;}
@@ -1741,20 +1741,20 @@ font-size:16px;}
 .OfflineCallBtn:before {content: "\f17b";display: inline-block;font-size: 30px;margin-right:5px;vertical-align: middle;color: #053e83;}
 .OfflineCallBtn:focus {background:#ddd;}
 
-.OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkTermsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkAboutText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkWhatsNewText{padding-left:10px; display:inline-block; }
 
 .OfflineBullet  {background: #B2B2B2;padding: 0px 6px 0px 6px;margin-right: 10px;color: #FFF;border-radius: 180px;font-family:"Lato Medium",courier;}
@@ -2035,7 +2035,7 @@ label{display: inline-block;margin-bottom: 2px;font-size:14px;font-weight: norma
 .ErrorMessage {display:block; font-family: "Lato Medium", courier; font-size:16px; text-align:left;color:#C90000;}
 .GeneralErrorMessage {font-family: "Lato Light", courier;text-align:left;color:#DA0000;}
 .padding-container-top {border-top: 1px solid #919191;}
-.padding-container {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
+.padding-container {margin-left: 0px;margin-right: 0px;border: 1px solid #dce1e9;}
 /* should be able to get rid of this one -- paddng-container and padding-container-top have been refactored */
 .padding-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
 .login-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;background-color:#fff;}
@@ -2089,7 +2089,7 @@ width: 20px;
 /*LOGIN SCREEN */
 .findus           {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
 .currencyexchange {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
-.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
+.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493; cursor: pointer; }
 
 .findus_text          {padding-left:10px; display:inline-block; }
 .currencyexchange_text{padding-left:10px; display:inline-block; }
@@ -2098,7 +2098,7 @@ width: 20px;
 
 .findus:before          {content: "\f15e"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
 .currencyexchange:before{content: "\f157"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF; }
-.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#556176;}
 
 .currentaccount {font-family: "Lato Medium", courier; font-size:18px;line-height:70px;min-height:70px; border-bottom: 1px solid #DBDBDB;}
 .currentaccount_text{font-family: "Lato Medium", courier;color:#053e83;} 
