@@ -1085,7 +1085,7 @@ input[type="checkbox"]:checked  {
 .TopNavSectionRight {width:20%; text-align:right;height:50px;} /* TOP NAV RIGHT SECTION FOR BUTTONS */
 .TopNavSectionCenter {width:60%; text-align:center;height:50px;} /* TOP NAV CENTER SECTION FOR TITLE */
 .VerticalAlign15 {padding-top:15px;padding-bottom:15px;} /* PADDING TO POSITION BUTTONS */
-.NavTitle {float:none; padding: 12px 1px 20px 25px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
+.NavTitle {float:none; padding: 15px 1px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
 
 /*Start Changes for Banesco*/
 .NavTitleH1White{display:block; font-family: "Lato Regular", courier; font-size:15.33px; text-align:left;color:#fff;margin-top:10px;}
@@ -1745,6 +1745,7 @@ font-size:16px;}
 .OfflineCallBtn:focus {background:#ddd;}
 
 .OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+<<<<<<< HEAD
 .OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
 .OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
@@ -1758,6 +1759,21 @@ font-size:16px;}
 
 .OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
 .OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
+=======
+.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
+.OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
+
+.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
+.OfflineLinkTermsText{padding-left:10px; display:inline-block; }
+
+.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
+.OfflineLinkAboutText{padding-left:10px; display:inline-block; }
+
+.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
+>>>>>>> 965d734cda8f7af5599d9460c78ac7c3a59f26de
 .OfflineLinkWhatsNewText{padding-left:10px; display:inline-block; }
 
 .OfflineBullet  {background: #B2B2B2;padding: 0px 6px 0px 6px;margin-right: 10px;color: #FFF;border-radius: 180px;font-family:"Lato Medium",courier;}
@@ -2038,7 +2054,7 @@ label{display: inline-block;margin-bottom: 2px;font-size:14px;font-weight: norma
 .ErrorMessage {display:block; font-family: "Lato Medium", courier; font-size:16px; text-align:left;color:#C90000;}
 .GeneralErrorMessage {font-family: "Lato Light", courier;text-align:left;color:#DA0000;}
 .padding-container-top {border-top: 1px solid #919191;}
-.padding-container {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
+.padding-container {margin-left: 0px;margin-right: 0px;border: 1px solid #dce1e9;}
 /* should be able to get rid of this one -- paddng-container and padding-container-top have been refactored */
 .padding-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
 .login-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;background-color:#fff;}
@@ -2092,7 +2108,7 @@ width: 20px;
 /*LOGIN SCREEN */
 .findus           {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
 .currencyexchange {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
-.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
+.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493; cursor: pointer; }
 
 .findus_text          {padding-left:10px; display:inline-block; }
 .currencyexchange_text{padding-left:10px; display:inline-block; }
@@ -2101,7 +2117,7 @@ width: 20px;
 
 .findus:before          {content: "\f15e"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
 .currencyexchange:before{content: "\f157"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF; }
-.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#556176;}
 
 .currentaccount {font-family: "Lato Medium", courier; font-size:18px;line-height:70px;min-height:70px; border-bottom: 1px solid #DBDBDB;}
 .currentaccount_text{font-family: "Lato Medium", courier;color:#053e83;}
