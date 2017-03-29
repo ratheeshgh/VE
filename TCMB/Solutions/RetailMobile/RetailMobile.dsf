@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><DeploymentDescriptor AllowDataSets="N" AndroidProfile="TCMB_ANDROID_BETA" AppURLOverride="http://192.168.4.174:8181/RetailMobile/servletcontroller" ApplicationName="RetailMobile" BuildAndroidApp="Y" BuildIOSApp="N" BuildWAR="Y" BuildWebApp="N" BuildWindowsApp="N" BuildWindowsUniversalApp="N" Connect="version 5.4.1__7" DefaultDataSet="Do not use Data Sets" DeploymentDestination="D:/SVN/Deployments/Test/2015_08/interim_1" ExcludeXMLJars="Y" IncludeStdJars="Y" JailbreakErrorPhase="OfflineEnabled.JailBreak" Name="RetailMobile" OfflineErrorPhase="OfflineEnabled.Offline" Presentation="TCMB" ProjectFileName="RetailMobile.ifp" RepositoryFolder="C:/TemenosCR/Projects/Banesco/TCMBEVA/Banesco_EVA/TCMB" SSLErrorPhase="OfflineEnabled.SSL Error" Version="1.121" eid="DFFA14F4CB65DE8321529">
+<?xml version="1.0" encoding="UTF-8"?><DeploymentDescriptor AllowDataSets="N" AndroidProfile="TCMB_ANDROID_BETA" AppURLOverride="http://192.168.4.174:8181/RetailMobile/servletcontroller" ApplicationName="RetailMobile" BuildAndroidApp="Y" BuildIOSApp="N" BuildWAR="Y" BuildWebApp="N" BuildWindowsApp="N" BuildWindowsUniversalApp="N" Connect="version 5.4.1__12" DefaultDataSet="Do not use Data Sets" DeploymentDestination="D:/SVN/Deployments/Test/2015_08/interim_1" ExcludeXMLJars="Y" IncludeStdJars="Y" JailbreakErrorPhase="OfflineEnabled.JailBreak" Name="RetailMobile" OfflineErrorPhase="OfflineEnabled.Offline" Presentation="TCMB" ProjectFileName="RetailMobile.ifp" RepositoryFolder="C:/TemenosCR/Projects/Banesco/TCMBEVA/Banesco_EVA/TCMB" SSLErrorPhase="OfflineEnabled.SSL Error" Version="1.121" eid="DFFA14F4CB65DE8321529">
   <WebServices Name="Web Services Root" eid="2B363CEF7D050D7F84119"/>
   <VersioningInfo FilePattern="*.gif,*.jpg,*.png,*.css,*.js,*.html" Name="Versioning Info" RepositoryFolder="D:/svn/RepositoryLocation" ResourceFolders="images,html,hybrid" Version="1.121" eid="DFFA14F4CB65DE8340463"/>
   <Portlets Name="Portlets Root" eid="2B363CEF7D050D7F84122"/>
@@ -10,11 +10,13 @@
       <RunTimeParameter Name="Cryptokey File" eid="DFFA14F4CB65DE8321560"/>
       <RunTimeParameter Name="Security" eid="DFFA14F4CB65DE8321561"/>
       <RunTimeParameter Name="SubSession" eid="DFFA14F4CB65DE8321562"/>
+      <RunTimeParameter Name="Compress HTML Responses" eid="7187ADA7DA538AE272285"/>
     </RunTimeParameters>
     <GlobalParameters Name="Global Variables" eid="2B363CEF7D050D7F84270">
       <GlobalParameter GlobalParameterValue="N" Name="4TRESS_SERVICE_STATUS" eid="DFFA14F4CB65DE8345490"/>
       <GlobalParameter GlobalParameterValue="http://localhost:8085/TCMBCommon-iris/TCMBCommon.svc/GB0010001/" Name="IRIS_COMMON_SERVICE_ROOT_URI" eid="E7929170CDF56B9B12410"/>
       <GlobalParameter GlobalParameterValue="http://localhost:8085/TCMBRetail-iris/TCMBRetail.svc/GB0010001/" Name="IRIS_RETAIL_SERVICE_ROOT_URI" eid="C8A9C675B390B88019929"/>
+      <GlobalParameter GlobalParameterValue="http://10.135.199.234:8080" Name="APIDOMAIN_SERVICE_ROOT_URI" eid="7187ADA7DA538AE275234"/>
       <GlobalParameter GlobalParameterValue="123456" Name="STATIC_DEMO_PASSWD" eid="29CE80C7510DBF8F10240"/>
       <GlobalParameter GlobalParameterValue="ROLFGERLINGTC" Name="SYSTEM_USER" eid="191A652DED73DE1812957"/>
       <GlobalParameter GlobalParameterValue="123456" Name="SYSTEM_PASSWORD" eid="191A652DED73DE1812958"/>
@@ -199,6 +201,7 @@
     <Message MESSAGE_NAME="pdf_documents" Name="pdf_documents" VALUE="PDF Documents" eid="DF510D0D7EE40F5F37185"/>
     <Message MESSAGE_NAME="print" Name="print" VALUE="Print" eid="DF510D0D7EE40F5F37186"/>
     <Message MESSAGE_NAME="reports" Name="reports" VALUE="Reports" eid="DF510D0D7EE40F5F37187"/>
+    <Message MESSAGE_NAME="app_name" Name="app_name" VALUE="App name - not used required by Cordova" eid="7187ADA7DA538AE272459"/>
   </Messages>
   <HybridLanguages Name="HybridLanguages Root" eid="2B363CEF7D050D7F84434">
     <HybridLanguage Alias="English" ISOCode="en" IncludeInDeployment="Y" LanguageMapFile="$$PROJECTHOME$WEB-INF/config/Languages/English/RetailMobile.xml" Name="English" eid="A436D69CB1E6699D56754"/>
