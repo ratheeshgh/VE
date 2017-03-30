@@ -85,14 +85,14 @@ body.main_menu{padding-top: 60px;background-color:#053e83;font-size:18px;}
 body.error_page{padding-top: 0px;background-color: #FFF; color:#000;}
 /*body.general{padding-top: 60px;background-color: #f4f4f4;color:#000}*/
 body.general{padding-top: 60px;background-color: #fff;color:#708090;}
-body.login{padding-top: 70px;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
+body.login{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
 
 @media (min-width: 400px) and (max-width: 1200px) {
-body.login{padding-top: 75px;background-color: #005294;background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
 @media only screen and (min-width: 1200px) {
-body.login{padding-top: 100px;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x ; background-size: cover;color:#000}
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
 body.white{padding-top: 60px;background-color: #fff;color:#000}
