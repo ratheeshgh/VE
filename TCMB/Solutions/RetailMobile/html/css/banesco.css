@@ -1745,21 +1745,7 @@ font-size:16px;}
 .OfflineCallBtn:focus {background:#ddd;}
 
 .OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-<<<<<<< HEAD
-.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkTermsText{padding-left:10px; display:inline-block; }
-
-.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkAboutText{padding-left:10px; display:inline-block; }
-
-.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-=======
 .OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
@@ -1773,7 +1759,7 @@ font-size:16px;}
 
 .OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
 .OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
->>>>>>> 965d734cda8f7af5599d9460c78ac7c3a59f26de
+
 .OfflineLinkWhatsNewText{padding-left:10px; display:inline-block; }
 
 .OfflineBullet  {background: #B2B2B2;padding: 0px 6px 0px 6px;margin-right: 10px;color: #FFF;border-radius: 180px;font-family:"Lato Medium",courier;}
