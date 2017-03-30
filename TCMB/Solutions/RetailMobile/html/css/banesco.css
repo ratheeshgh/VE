@@ -940,7 +940,7 @@ span:nth-child(7).BlockDateFont {font-size:8px; padding-top:1px;font-family:"Lat
 /* HYBRID INPUTS, ICONS & STANDARD BUTTONS*/
 .StandardButton {background:none;border:none;}
 .f{background: #fff; border: 1px solid #ddd; border-left: none; border-right: none;}
-div.QuestionHybridFirst label{font-size:20px !important;}
+div.QuestionHybridFirst label{font-size: 120px t!imporant;}
 .QuestionHybridFirst input.hybridinput[type='text'], input.hybridinput[type='number'] {
 width: 100%;
 font-family: 'Lato Light';
@@ -953,6 +953,14 @@ outline: none;
 border: none;
 cursor: text;
 }
+
+.QuestionHybridFirst {
+  background: #fff; 
+  border: none; 
+  border-left: none; 
+  border-right: none;
+}
+
 .QuestionHybrid select {
 -webkit-appearance: none;
 width: 100%;
@@ -1593,15 +1601,15 @@ div.FDTableRowInfo label{font-size:12px; color:#8B8B8B;}
 
 /*SETTINGS SCREENS*/
 .SSection {margin-bottom:20px;}
-.SSRow{height:40px; max-height:40px; margin-top:5px;}
-.SSQuestion       {font-size:20px;position: relative; top: 0px;padding-left: 5px;} /*with swipe button the top is -13 */
+.SSRow{height:40px; max-height:40px; margin-top:5px; margin-left: 5%;}
+.SSQuestion       {font-size:20px;position: relative;} /*with swipe button the top is -13 */
 .SSQuestionFilter {font-size:20px;position: relative; top: -3px;padding-left: 5px;} /*with swipe button the top is -13 */
-div.SSQuestion       label{font-family: "Lato Medium"; font-size:16px !important;padding-left: 5px;}
+div.SSQuestion       label{font-family: "Lato Regular"; font-size:15.33px; text-transform:none; margin-top: 5px;}
 div.SSQuestionFilter label{font-family: "Lato Medium"; font-size:16px !important;padding-left: 5px;}
-.SSInput       {text-align:right !important;margin-top: 4px;}
+.SSInput       {text-align:right !important;margin-top: 4px; float:right; margin-right: 5%;}
 .SSInputFilter {text-align:right !important;margin-top: 4px;}
 div.SSInputFilter input{font-family: "Lato Medium"; width:20px; height:20px; font-size:16px !important;padding-left: 5px;margin-top: 6px;}
-.SSNotes {font-size: 13px;color: #5A5A5A; padding-left: 10px;}
+.SSNotes {font-size: 14px;color: #54616d; text-transform: none; margin-left: 5%; margin-right:5%; margin-top: 10px;}
 .SSHeadingAndroidIos {display:none;}
 
 /* MANAGE PAYEES SCREENS*/
@@ -1917,12 +1925,11 @@ transition: .25s ease-in-out;
 }
 input.toggle[type='checkbox']:checked + label:before {
 width: 50px;
-background: rgba(19,191,17,1);
 }
 
 input.toggle[type='checkbox']:checked + label:after {
 left: 20px;
-box-shadow: inset 0 0 0 1px rgba(19,191,17,1), 0 2px 4px rgba(0,0,0,.2);
+box-shadow: inset 0 0 0 1px #007953, 0 2px 4px rgba(0,0,0,.2);
 }
 
 /* MODAL WINDOWS & MODAL BUTTONS*/
@@ -2042,7 +2049,7 @@ fieldset[disabled] .form-control {
   background-color: #FDFFDB;
  }
 
-label{display: inline-block;margin-bottom: 2px;font-size:14px;font-weight: normal;padding: 4px 4px 4px 4px !important;}
+label{display: inline-block;margin-bottom: 2px;font-size:16px;font-weight: normal;}}
 .selectedoption{background-color: #FFF; border-top: 1px solid #DBDBDB; border-bottom: 1px solid #DBDBDB; margin-bottom: 6px;box-shadow: 0 1px 1px #D5D5D5;padding:3px;}
 .selectedoptionanswer {color:#125baa;font-size:18px; font-weight:bold;}
 .selectedoptionamount {color:#419641;font-size:16px; font-weight:bold;}
