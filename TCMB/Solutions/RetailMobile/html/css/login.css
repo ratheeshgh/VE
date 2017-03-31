@@ -1,3 +1,12 @@
+.login {
+  padding-top: 0;
+}
+
+.login #form1 {
+  padding-top: 70px;
+  overflow: auto;
+}
+
 .login input {
   height: 40px;
   font-size: 0.833em;
