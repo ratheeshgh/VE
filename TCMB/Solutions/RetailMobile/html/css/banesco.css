@@ -1085,7 +1085,7 @@ input[type="checkbox"]:checked  {
 .TopNavSectionRight {width:20%; text-align:right;height:50px;} /* TOP NAV RIGHT SECTION FOR BUTTONS */
 .TopNavSectionCenter {width:60%; text-align:center;height:50px;} /* TOP NAV CENTER SECTION FOR TITLE */
 .VerticalAlign15 {padding-top:15px;padding-bottom:15px;} /* PADDING TO POSITION BUTTONS */
-.NavTitle {float:none; padding: 15px 1px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
+.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 15.33px;height: 60px;line-height: 60px;margin-top: -10px;margin-left: 10px;text-transform: initial;} /* CONTAINER FOR TITLE */
 
 /*Start Changes for Banesco*/
 .NavTitleH1White{display:block; font-family: "Lato Regular", courier; font-size:15.33px; text-align:left;color:#fff;margin-top:10px;}
@@ -1745,21 +1745,7 @@ font-size:16px;}
 .OfflineCallBtn:focus {background:#ddd;}
 
 .OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-<<<<<<< HEAD
-.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkTermsText{padding-left:10px; display:inline-block; }
-
-.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-.OfflineLinkAboutText{padding-left:10px; display:inline-block; }
-
-.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
-.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#FFF;}
-=======
 .OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
@@ -1773,7 +1759,7 @@ font-size:16px;}
 
 .OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
 .OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
->>>>>>> 965d734cda8f7af5599d9460c78ac7c3a59f26de
+
 .OfflineLinkWhatsNewText{padding-left:10px; display:inline-block; }
 
 .OfflineBullet  {background: #B2B2B2;padding: 0px 6px 0px 6px;margin-right: 10px;color: #FFF;border-radius: 180px;font-family:"Lato Medium",courier;}
@@ -2681,6 +2667,9 @@ border-top-color:#155EAC;
 height:100%;
 }
 
+body #form1 {
+  overflow:auto;
+}
 .icon-home-page {padding-bottom: 20px;padding-top: 30px;}
 
 .SideMenuContainerFix {height: 100%;/*overflow: hidden;*/}
