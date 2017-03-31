@@ -1,0 +1,46 @@
+.paddingCard
+{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+
+.u-centradoVerticalPadre
+{
+    position: relative;
+}
+
+.u-centradoVerticalPadre span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#PaymentFrecuentes span,
+#PaymentCredit span,
+#MyPaymentCreditVNZ span,
+#OtherPaymentCreditVNZ span,
+#PaymentServicios span,
+#PaymentPrestamos span,
+#PaymentProgramados span,
+#TransferCuentas span,
+#TransferTerceros span,
+#TransferCuentasVNZ span,
+#TransferTercerosVNZ span,
+#TransferInternacionales span,
+#Donaciones span,
+#DirectorioBeneficiario span,
+#HistorialMovimientos span
+{
+    font-family: 'Lato Regular', courier;
+    font-size: 12px;
+    padding-left: 20px;
+    color: #3a4454;
+}
+
+.bordeBoton
+{
+    border-radius: 5px;
+}
