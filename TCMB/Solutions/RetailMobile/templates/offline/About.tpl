@@ -7,11 +7,11 @@
 	</div>
 
 	<div style="margin-top: 50px;">
-		<div style="text-align: left; width: 50%; display: inline-block; float: left">
+		<div style="text-align: left; width: 40%; display: inline-block; float: left">
 			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Nombre:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 50%; display: inline-block; float: right">
+		<div style="text-align: left; width: 60%; display: inline-block; float: right">
 			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!NAME$</span>
 			</div>
 		</div>
@@ -20,11 +20,11 @@
 
 
 	<div style="margin-top: 10px;">
-		<div style="text-align: left; width: 50%; display: inline-block; float: left">
+		<div style="text-align: left; width: 40%; display: inline-block; float: left">
 			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Versi&oacute;n:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 50%; display: inline-block; float: right">
+		<div style="text-align: left; width: 60%; display: inline-block; float: right">
 			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!VERSION$</span>
 			</div>
 		</div>
@@ -32,11 +32,11 @@
 	</div>
 
 	<div style="margin-top: 10px;">
-		<div style="text-align: left; width: 50%; display: inline-block; float: left">
+		<div style="text-align: left; width: 40%; display: inline-block; float: left">
 			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Disponible:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 50%; display: inline-block; float: right">
+		<div style="text-align: left; width: 60%; display: inline-block; float: right">
 			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!RELEASE_DATE$</span>
 			</div>
 		</div>
@@ -65,12 +65,12 @@
 		</div>
 	</div>
 -->
-	<div style="position: absolute; bottom: 15px;">
-		<div style="text-align: left; ; width: 100.0%; padding-left: 14px;">
+	<div style="position: absolute; bottom: 30px;">
+		<div style="text-align: left; ; width: 100.0%;">
 			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px;color:#54516d;"> @2017 Banesco Universal
 			</div>
 		</div>
-		<div style="text-align: left; ; width: 100.0%;  padding-left: 14px;" class="muted textMedium">
+		<div style="text-align: left; ; width: 100.0%; " class="muted textMedium">
 			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px; color:#54516d;">Todos los derechos reservados
 			</div>
 		</div>
