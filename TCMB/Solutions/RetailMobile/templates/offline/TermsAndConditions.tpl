@@ -1,10 +1,9 @@
-<div class="Justify">
+<div class="Justify tac-style">
 <div class="BColorWhite Padding5">
-<h4><span class="OfflineBullet">1</span>General Things</h4>
+<h4 class=" tac-head"><span>1 </span>General Things</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis laoreet dapibus. Etiam porttitor molestie efficitur. Praesent eu sagittis odio, eu dictum est. Proin finibus tortor et posuere volutpat. Mauris eleifend lacus eget metus finibus aliquam. Nam ornare volutpat est, in sodales mauris vestibulum sed. Maecenas aliquet mi est, at hendrerit elit viverra sed. Donec egestas nulla non ultricies aliquam. Donec dolor nunc, vehicula nec leo eu, varius cursus quam. Vivamus posuere, dui a tincidunt luctus, ipsum ligula dapibus quam, sit amet ornare diam lorem vel sem. Mauris quis metus massa.</p>
 
-<hr>
-<h4><span class="OfflineBullet">2</span>Particularities</h4>
+<h4 class=" tac-head"><span>2 </span>Particularities</h4>
 <p>Quisque molestie, nisi blandit lacinia eleifend, leo nibh euismod augue, eu auctor nulla mi faucibus nunc. Etiam porttitor ut nunc vitae mattis. Nulla vitae aliquam libero. Praesent dictum, ex non consectetur sollicitudin, enim elit efficitur mi, a tincidunt sapien mauris id metus. Quisque laoreet quam vitae tristique viverra. Ut sem justo, pulvinar sed risus vitae, laoreet viverra libero. Curabitur auctor nec mi a molestie. Duis facilisis malesuada lacinia. Quisque nec nisl bibendum, facilisis dui vel, aliquam dui. Nulla ullamcorper vitae ante vitae finibus. Cras quam ipsum, pretium ut rutrum eu, tincidunt sed elit.</p>
 
 <p>Quisque posuere convallis metus at cursus. Nunc varius laoreet purus, ut porta magna dapibus a. Quisque rhoncus est ac justo tincidunt mollis. Aenean orci elit, malesuada sed gravida ut, tristique sit amet odio. Aliquam condimentum faucibus massa nec venenatis. Fusce cursus egestas urna sed pulvinar. Sed convallis vulputate est, eget porta dui interdum quis. Proin fringilla eros nec odio ullamcorper, consectetur dignissim nisi vehicula. Fusce vitae tincidunt nulla. Cras in arcu vitae tellus ultrices sagittis sed sit amet risus. Donec congue ullamcorper libero id convallis. Vivamus pellentesque est nec mollis auctor.</p>

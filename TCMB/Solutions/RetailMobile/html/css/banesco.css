@@ -2,7 +2,7 @@
  * TCMB iOS Structure
 */
  html,body{height:100%;}
- 
+
  /*FONTS DEFINITIONS*/
 @font-face {
     font-family: "Banesco";
@@ -82,15 +82,17 @@
 /*BODY STYLING*/
 body{background-color: #fff;padding-top: 60px;font-family: "Lato Regular", courier; font-size:10px;line-height:1.42857143;color:#708090;overflow-x: hidden;text-transform:uppercase;}
 body.main_menu{padding-top: 60px;background-color:#053e83;font-size:18px;}
-body.error_page{padding-top: 100px;background-color: #FFF; color:#000;}
+body.error_page{padding-top: 0px;background-color: #FFF; color:#000;}
 /*body.general{padding-top: 60px;background-color: #f4f4f4;color:#000}*/
 body.general{padding-top: 60px;background-color: #fff;color:#708090;}
-body.login{padding-top: 100px;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/back1.jpg) repeat-x center center;color:#000}
-@media (min-width: 686px) and (max-width: 1200px) {
-body.login{padding-top: 100px;background-color: #005294;background: url(../img/homepage/background/mediumbackground1.jpg) repeat-x center center;color:#000}
+body.login{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
 }
+
 @media only screen and (min-width: 1200px) {
-body.login{padding-top: 100px;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x center center;color:#000}
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
 body.white{padding-top: 60px;background-color: #fff;color:#000}
@@ -98,7 +100,7 @@ body.myaccount{padding-top: 60px;background-color: #f4f4f4;color:#000}
 body.myaccount a{color:#4E74B0; text-decoration:none;}
 body.myaccount a:hover,a:focus{-webkit-transition: all .2s linear;-moz-transition: all .2s linear;transition: all .2s linear;color:#C71212; text-decoration:none;}
 
-.LoginContainer{background-color:#ffffff; margin-bottom:5px;padding:20px;font-size:16px;border-radius:3px;line-height:65px;padding-top:40px;}
+.LoginContainer{background-color:#ffffff; margin-bottom:5px;font-size:16px;border-radius:5px;padding: 23px 25px 23px 25px;}
 .SuccessImage {position:relative;;background: url(../img/icons/banesco/success.png) no-repeat;border:0px;color:transparent;margin-left:40px;height:70px;}
 
 /* STRUCTURE*/
@@ -1016,7 +1018,7 @@ input[type="radio"] {
 
 input[type="radio"] {
    display:inline;
-    
+
     background:url(../img/icons/check_radio_sheet.png) left top no-repeat;
 }
 
@@ -1083,7 +1085,8 @@ input[type="checkbox"]:checked  {
 .TopNavSectionRight {width:20%; text-align:right;height:50px;} /* TOP NAV RIGHT SECTION FOR BUTTONS */
 .TopNavSectionCenter {width:60%; text-align:center;height:50px;} /* TOP NAV CENTER SECTION FOR TITLE */
 .VerticalAlign15 {padding-top:15px;padding-bottom:15px;} /* PADDING TO POSITION BUTTONS */
-.NavTitle { float:none; padding: 12px 1px 20px 25px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: left;color: #fff;width: 100%; text-shadow: 1px 1px #000;} /* CONTAINER FOR TITLE */
+.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 15.33px;height: 60px;line-height: 60px;margin-top: -10px;margin-left: 10px;text-transform: initial;} /* CONTAINER FOR TITLE */
+
 /*Start Changes for Banesco*/
 .NavTitleH1White{display:block; font-family: "Lato Regular", courier; font-size:15.33px; text-align:left;color:#fff;margin-top:10px;}
 .NavTitleH1WhiteBold{display:block; font-family: "Lato Bold"; font-size:30px; text-align:left;color:#fff;margin-top:5px;}
@@ -1161,7 +1164,7 @@ input[type="checkbox"]:checked  {
 .BottomNavCancelBtn,
 .BottomNavScheduleBtn,
 .BottomNavEditScheduleBtn,
-.BottomNavAnotherPaymentBtn, 
+.BottomNavAnotherPaymentBtn,
 .BottomNavResetBtn,
 .BottomNavAnotherTransferBtn  {display: inline-block;height: 50px;line-height: 50px;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;color: #fff;width: 100%;font-size: 18px;cursor: pointer;text-transform: uppercase;text-align: center;z-index:1033;}
 
@@ -1294,7 +1297,7 @@ input[type="checkbox"]:checked  {
 .ActionsCarouselContainer {height:72px;background-color:#fff;border-top:1px solid #ddd;border-bottom: 1px solid #ddd;box-shadow: 0 4px 6px #DDDDDD;}
 .ActionsCarouselSlide {text-align:center; border:1px solid #ddd; border-top:none; border-left:none; color:#399adc; cursor:pointer; padding: 4px;}
 .ActionsCarouselSlide:hover,.ActionsCarouselSlide:focus {background: #F9F9F9;color:#696969;}
-.ActionsCarouselPagination {bottom:-5px !important;} 
+.ActionsCarouselPagination {bottom:-5px !important;}
 
 /*Changes for Banesco*/
 .BtnContactUs,
@@ -1310,7 +1313,7 @@ input[type="checkbox"]:checked  {
 .BtnFindUs:focus{color:#fff !important;}
 
 .BtnContactUs:before {padding:0px 15px 20px 10px;content: "\E903";display: block;font-size: 20px; line-height:20px;}
-.BtnFindUs:before {padding-left:53px;content: "\E938";display: block;font-size: 20px; line-height:60px;}
+.BtnFindUs:before {content: "\E938";display: block;font-size: 20px; line-height:60px;text-align: center;}
 
 /*Changes for the Contact Us*/
 .ContactCall,.ContactEmail{width: 100%;border: 1px solid #fff;background:#fff;color: #556176;outline: none;font-family:"Banesco";font-size: 12px;text-decoration: none !important; display:inline-block;padding:15px;text-align:left !important;}
@@ -1444,12 +1447,12 @@ color:#324254;
 /* --- END OF ACTIONS CAROUSEL COMPONENT ---*/
 
 /*LOGIN COMPONENT*/
-.LoginLinksBackground {background-color: rgba(0, 0, 0, 0.9);background: rgba(0, 0, 0, 0.9);color: rgba(14, 34, 46, 0.37);margin:0;}
-.LoginLinksBackground:hover {background-color: rgba(0, 0, 0, 0.9);background: rgba(0, 0, 0, 0.9);color: rgba(14, 34, 46, 0.56);margin:0;}
-.LoginLinks {display: block;text-decoration: none;color: #FFFFFF;background:none;outline:none;border:none;}
+.LoginLinksBackground {background-color:#f4f8f9;background:#f4f8f9;color: rgba(14, 34, 46, 0.37);margin:2%;}
+.LoginLinksBackground:active {background-color:#dce1e9;background:#dce1e9;color: rgba(14, 34, 46, 0.56);margin:0;color: #FFF; user-select:none;}
+.LoginLinks {display: block;text-decoration: none;color: #3A4454;background:none;outline:none;border:none;font-family:"Lato Regular";}
 a.LoginLinks:hover {text-decoration:none; display:block; color: white;}
 /* Changes for Banesco*/
-.LoginButton{font-family:"Lato Regular";width:100%;line-height:40px;margin:0;outline:none;color:rgba(255,255,255,1.0);background-color:rgba(31,140,107,1);border:0px solid #cccccc;border-radius: 5px;text-decoration:none;text-transform:uppercase;}
+.LoginButton{font-family:"Lato Regular";width:100%;line-height:40px;margin:0;outline:none;color:rgba(255,255,255,1.0);background-color:#007953;border:0px solid #cccccc;border-radius: 5px;text-decoration:none;text-transform:uppercase;}
 .GreenButton{font-family:"Lato Regular";width:100%;height:40px;margin:0;outline:none;color:rgba(255,255,255,1.0);background-color:rgba(31,140,107,1);border:0px solid #cccccc;border-radius: 5px;text-decoration:none;text-transform:uppercase;font-size:14.67px;}
 .GreenButtonMedium{font-family:"Lato Regular";width:100%;height:40px;margin:0;outline:none;color:rgba(255,255,255,1.0);background-color:rgba(31,140,107,1);border:0px solid #cccccc;border-radius: 3px;text-decoration:none;text-transform:uppercase;font-size:14.67px;}
 .CancelButton{font-family:"Lato Regular";width:100%;height:40px;margin:0;outline:none;color:rgba(58,68,84,1.0);background-color:rgba(255,255,255,1);border:1px solid #a5adb4;border-radius: 3px;text-decoration:none;text-transform:uppercase;font-size:14.67px;}
@@ -1472,7 +1475,7 @@ a.LoginLinks:hover {text-decoration:none; display:block; color: white;}
 .ApplicationNameContainer {position: absolute;top: 17px;left:10px;}
 .ApplicationName {font-family: 'Lato Medium', courier;font-size:25px; color:#fff;}
 /* .StandardBackgroundBlackRow {position: absolute; bottom: 0px; right: 0px; color: transparent; background-color: #000; width: 100%; height:35px; font-family: 'Lato Light', courier; opacity: 0.2; line-height: 30px;} */
-.AccountName{font-family:"Lato Bold";color:#3A4454;} 
+.AccountName{font-family:"Lato Bold";color:#3A4454;}
 .NameOfUserContainer {position: absolute;bottom: 13px;right:10px;}
 .NameOfUser {font-family: 'Lato Medium', courier;font-size:17px; color:#fff;}
 .LastLoginContainer{position: absolute;bottom: 0px;right:10px;}
@@ -1487,9 +1490,9 @@ a.LoginLinks:hover {text-decoration:none; display:block; color: white;}
 
 /*Account Card*/
 .ALAccountCard{font-family: "Lato Medium", courier; font-size:18px;line-height: 20px; border: 1px solid #DBDBDB;margin: 10px;padding:10px; background:#fff;box-shadow: 2px 2px 0px #EBEBEB; }
-.ALAccountCard:hover, .ALAccountCard:focus{background-color:#F5F9FF;} 
+.ALAccountCard:hover, .ALAccountCard:focus{background-color:#F5F9FF;}
 .ALAccountCardNew{font-family: "Lato Medium"; font-size:14px;line-height: 14px; border: 1px solid #DBDBDB;margin: 10px;padding:5px; background:#fff;box-shadow: 2px 2px 0px #EBEBEB;border-radius:3px; }
-/*.ALAccountCardNew:hover, .ALAccountCardNew:focus{background-color:#F5F9FF;} 
+/*.ALAccountCardNew:hover, .ALAccountCardNew:focus{background-color:#F5F9FF;}
 .ALAccountCardDetailsContainer{border-top:1px solid #DADADA;padding-top: 8px;margin-top: 8px;}
 .ALAccountCardComponentDetailsContainer{border-top:1px solid #DADADA;padding-top: 0px;margin-top: 0px;padding-bottom:10px;box-shadow: 0 3px 5px #C5C5C5;}
 .ALAccountCardDetails{font-size:14px; color:#053e83;line-height:14px; }
@@ -1608,8 +1611,8 @@ border-bottom: none;
 border-right: none;}
 /*.PayeesTable {font-family: "Lato Medium", courier; font-size:18px;line-height:70px;min-height:70px; border-bottom: 1px solid #DBDBDB; background:#fff;}*/
 .PayeesTable {font-family: "Lato Medium", courier; font-size:18px; border-top: 1px solid #DBDBDB; background:#fff; padding-top: 8px; padding-bottom: 8px;}
-.PayeesTableText{font-family: "Lato Medium", courier;color:#053e83;} 
-.PayeesTable:hover, .PayeesTable:focus{background-color:#F5F5F5;} 
+.PayeesTableText{font-family: "Lato Medium", courier;color:#053e83;}
+.PayeesTable:hover, .PayeesTable:focus{background-color:#F5F5F5;}
 .CreateNewPayeeBtn:focus, .CreateNewPayeeBtn:hover {background:#F3F3F3; color:#0080C7}
 .PersonalPayeeContainer {background: transparent;margin: 20px 0 20px 30px;height: 40px;min-height: 40px;height: 40px;min-height: 40px;border-radius: 10px;border: 2px solid #1167B1;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-right-width: 1px;font-family: "Lato Medium";text-align: center;padding-top: 6px;font-size:16px;}
 .PersonalPayeeContainer:hover,.PersonalPayeeContainer:focus {background:#FFF;}
@@ -1709,7 +1712,7 @@ div.ReplyQuestionContainer label {font-size:14px; white-space: nowrap;}
 
 /*MAKE A TRANSFER */
 /*TRANSFER CONFIRMATION STACKS*/
-.TransferConfirmationContainer {background:#FFF;color:#000; font-size:14px; box-shadow: 0 2px 2px rgba(0,0,0,0.3);} 
+.TransferConfirmationContainer {background:#FFF;color:#000; font-size:14px; box-shadow: 0 2px 2px rgba(0,0,0,0.3);}
 .TransferConfirmationTitle{background:#DFDFDF;font-size:18px; text-align:center;}
 .ReviewContainer {background:#fff; margin:0px 0px 0px 0px;padding: 20px 20px 20px 20px;border:1px solid #ddd;box-shadow: 0 2px 2px rgba(0,0,0,0.1);}
 .ConfirmationContainer {background:#FFF;color:#000; box-shadow: 0 2px 2px rgba(0,0,0,0.3);margin-bottom:10px;}
@@ -1731,7 +1734,7 @@ background: #F8F8F8;
 border: 1px solid #ABABAB;
 font-size:16px;}
 .RadioCheck  input[type="radio"]:checked+label{ font-weight: bold;background:#0A5493;color:#fff;}
- 
+
 /*OFFLINE PAGES*/
 .GetOnlineBtn{cursor: pointer;width: 100%;height: 60px;font-size: 22px;background: #FFF;border: 1px solid #ddd;outline: none;border-radius:6px;opacity: 0.96;}
 .GetOnlineBtn:before {content: "\f1ab";display: inline-block;font-size: 30px;margin-right:5px;vertical-align: middle;color: #053e83;}
@@ -1741,20 +1744,22 @@ font-size:16px;}
 .OfflineCallBtn:before {content: "\f17b";display: inline-block;font-size: 30px;margin-right:5px;vertical-align: middle;color: #053e83;}
 .OfflineCallBtn:focus {background:#ddd;}
 
-.OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkContactUs {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+
+.OfflineLinkContactUs:before{content: "\f151"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkContactUsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkTerms {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkTerms:before{content: "\f183"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkTermsText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkAbout {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkAbout:before{content: "\f101"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
 .OfflineLinkAboutText{padding-left:10px; display:inline-block; }
 
-.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
-.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.OfflineLinkWhatsNew {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493;cursor: pointer; }
+.OfflineLinkWhatsNew:before{content: "\f16f"; display:inline-block;font-size: 30px;vertical-align: middle;color:#556176;}
+
 .OfflineLinkWhatsNewText{padding-left:10px; display:inline-block; }
 
 .OfflineBullet  {background: #B2B2B2;padding: 0px 6px 0px 6px;margin-right: 10px;color: #FFF;border-radius: 180px;font-family:"Lato Medium",courier;}
@@ -2035,7 +2040,7 @@ label{display: inline-block;margin-bottom: 2px;font-size:14px;font-weight: norma
 .ErrorMessage {display:block; font-family: "Lato Medium", courier; font-size:16px; text-align:left;color:#C90000;}
 .GeneralErrorMessage {font-family: "Lato Light", courier;text-align:left;color:#DA0000;}
 .padding-container-top {border-top: 1px solid #919191;}
-.padding-container {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
+.padding-container {margin-left: 0px;margin-right: 0px;border: 1px solid #dce1e9;}
 /* should be able to get rid of this one -- paddng-container and padding-container-top have been refactored */
 .padding-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;}
 .login-container-last {margin-left: 0px;margin-right: 0px;border-bottom: 1px solid #919191;background-color:#fff;}
@@ -2060,19 +2065,19 @@ width: 20px;
 }
 
 #QUE_52B78DB086B5E0BD2357:-moz-placeholder,
-#QUE_52B78DB086B5E0BD2360:-moz-placeholder 
+#QUE_52B78DB086B5E0BD2360:-moz-placeholder
 {
   color:    #0A5493;
 }
 
 #QUE_52B78DB086B5E0BD2357::-moz-placeholder,
-#QUE_52B78DB086B5E0BD2360::-moz-placeholder 
+#QUE_52B78DB086B5E0BD2360::-moz-placeholder
 {
   color:    #0A5493;
 }
 
 #QUE_52B78DB086B5E0BD2357:-ms-input-placeholder,
-#QUE_52B78DB086B5E0BD2360:-ms-input-placeholder 
+#QUE_52B78DB086B5E0BD2360:-ms-input-placeholder
 {
   color:    #0A5493;
 }
@@ -2089,7 +2094,7 @@ width: 20px;
 /*LOGIN SCREEN */
 .findus           {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493;cursor: pointer; }
 .currencyexchange {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
-.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 5px;color:#0A5493; cursor: pointer; }
+.tourtheapp       {font-family: "Lato Medium", courier; font-size:18px;line-height:50px;margin:0 0 0 15px;color:#0A5493; cursor: pointer; }
 
 .findus_text          {padding-left:10px; display:inline-block; }
 .currencyexchange_text{padding-left:10px; display:inline-block; }
@@ -2098,20 +2103,20 @@ width: 20px;
 
 .findus:before          {content: "\f15e"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
 .currencyexchange:before{content: "\f157"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF; }
-.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.tourtheapp:before      {content: "\f1a9"; display:inline-block;font-size: 35px;vertical-align: middle;color:#556176;}
 
 .currentaccount {font-family: "Lato Medium", courier; font-size:18px;line-height:70px;min-height:70px; border-bottom: 1px solid #DBDBDB;}
-.currentaccount_text{font-family: "Lato Medium", courier;color:#053e83;} 
-.currentaccount:hover, .currentaccount:focus{background-color:#F5F5F5;} 
+.currentaccount_text{font-family: "Lato Medium", courier;color:#053e83;}
+.currentaccount:hover, .currentaccount:focus{background-color:#F5F5F5;}
 .currentaccount_text_balance{font-family: "Lato Light", courier;text-align:right;}
 .currentaccount_text_balance_positive{font-family: "Lato Medium", courier; font-size:18px; color:#000;}
 .currentaccount_text_balance_negative{font-family: "Lato Medium", courier;font-size:18px; color:#C71212;}
 
 
-.mortgage{ font-family: "Lato Light", courier; font-size:20px;line-height:70px; min-height:70px;border-bottom: 1px solid #DBDBDB;}.mortgage_text{font-family: "Lato Medium", courier;color:#053e83;} 
+.mortgage{ font-family: "Lato Light", courier; font-size:20px;line-height:70px; min-height:70px;border-bottom: 1px solid #DBDBDB;}.mortgage_text{font-family: "Lato Medium", courier;color:#053e83;}
 .mortgage:hover{background-color:#FCFCFC;}
 
-.savingsaccount{ font-family: "Lato Light", courier; font-size:20px;line-height:70px; min-height:70px;border-bottom: 1px solid #DBDBDB;}.savingsaccount_text{padding-left:65px;color:#053e83;} 
+.savingsaccount{ font-family: "Lato Light", courier; font-size:20px;line-height:70px; min-height:70px;border-bottom: 1px solid #DBDBDB;}.savingsaccount_text{padding-left:65px;color:#053e83;}
 .savingsaccount:hover{background-color:#FCFCFC;}
 
 .creditcard{font-family: "Lato Light", courier; font-size:20px;line-height:70px; min-height:70px;border-bottom: 1px solid #DBDBDB;}.creditcard_text{padding-left:65px;color:#053e83;}
@@ -2662,6 +2667,9 @@ border-top-color:#155EAC;
 height:100%;
 }
 
+body #form1 {
+  overflow:auto;
+}
 .icon-home-page {padding-bottom: 20px;padding-top: 30px;}
 
 .SideMenuContainerFix {height: 100%;/*overflow: hidden;*/}
@@ -2689,7 +2697,7 @@ height:100%;
 
   .row-offcanvas-right
   .sidebar-offcanvas {
-	
+
     right: -80%; /* 6 columns */
 	min-height: 100%;
 border-left: 1px solid #818181;
@@ -2707,7 +2715,7 @@ margin-left:-15px;
 
   .row-offcanvas-right.active {
     right: 80%; /* 6 columns */
-	
+
   }
 
   .row-offcanvas-left.active {
@@ -2766,8 +2774,8 @@ padding-right:10px;
 		position:fixed;
 		left:0px;
     }
-	
-	
+
+
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
@@ -2795,10 +2803,10 @@ padding-right:10px;
 	}
 
 	#sidebar {
-	display:block;  
+	display:block;
 	left:-400px;
 	}
-	
+
   .row-offcanvas {
     position: relative;
     -webkit-transition: all .05s linear;
@@ -2837,20 +2845,20 @@ margin-left:-15px;
 
   .row-offcanvas-right.active {
     right: 80%; /* 6 columns */
-	
+
   }
 
   .row-offcanvas-left.active {
     left: 30%; /* 6 columns */
   }
   .active #sidebar{
-  display:block;  
+  display:block;
   left:0;
   }
   .sidebar-offcanvas {
     position: absolute;
 	background-color:#fff;
-	height:100%; 
+	height:100%;
 	z-index:999;
     width:30%; /* 6 columns */
   }
@@ -2859,12 +2867,12 @@ margin-left:-15px;
 a.sidebarlink:hover {text-decoration:none; color:#FFF;}
 a.sidebarlink:focus {text-decoration:none; color:#FFF;}
 
-	
+
 	}
 
-	
 
-/*Custom positioning of the bottom button on Login Screen*/	
+
+/*Custom positioning of the bottom button on Login Screen*/
 @media (min-height: 0px) and (max-height: 430px) {
 .BottomLinks {margin-top:30px;}
 .Mrg_top {margin-top:40%;}

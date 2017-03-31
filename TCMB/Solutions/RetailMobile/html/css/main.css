@@ -2955,7 +2955,8 @@ input[type="button"].btn-block {
 .OfflineLinkWhatsNew:after,
 .findus:after,
 .currencyexchange:after,
-.tourtheapp:after  { content: "\f101";font-size: 30px; vertical-align: middle;text-align: right;float: right;margin-top: 12px;margin-right: 10px;color: #fff; }
+/*.tourtheapp:after  { content: "\f101";font-size: 30px; vertical-align: middle;text-align: right;float: right;margin-top: 12px;margin-right: 10px;color: #fff; } */
+.tourtheapp:after  { content: none;font-size: 30px; vertical-align: middle;text-align: right;float: right;margin-top: 12px;margin-right: 10px;color: #fff; }
 .arrow-left:before { content: "\f100";}
 .TableInactiveIcon:before { content: "\f101"; }
 
