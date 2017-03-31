@@ -29,7 +29,8 @@ body.general {
 .titleContact{
 	margin-top: 20px;
 	margin-left: 15px;
-	color: #54616D
+	margin-right: 20px;
+	color: #3A4454
 }
 
 .titleContactMail {
@@ -44,9 +45,9 @@ body.general {
 
 .infoContact {
 	padding-top: 25px;
-	padding-left: 30px; 
+	padding-left: 20px; 
 	font-family: "Lato Light";
-    color: #324254;
+    color: #3A4454;
 }
 
 .from {
