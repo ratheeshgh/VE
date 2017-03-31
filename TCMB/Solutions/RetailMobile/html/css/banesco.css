@@ -2667,6 +2667,9 @@ border-top-color:#155EAC;
 height:100%;
 }
 
+body #form1 {
+  overflow:auto;
+}
 .icon-home-page {padding-bottom: 20px;padding-top: 30px;}
 
 .SideMenuContainerFix {height: 100%;/*overflow: hidden;*/}
