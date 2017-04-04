@@ -1,0 +1,277 @@
+$$ITEM.EC_GENERATE()$
+
+<div id="$$ITEM.ID()$_wrapper">
+    <label> $$ITEM.label$ </label>
+
+    <div class="wrapper-select" tabindex="0">
+        <select
+        name="$$ITEM.DATAITEM()$"
+        id="$$ITEM.ID()$"
+        value="$$ITEM.DATAITEM().VALUE()$"
+        onfocus="doOnFocus('', this.id, ''); setUpFocusValue('',this);"
+        onblur="if (FORMAT_VALIDATION_TRIGGER == getTriggeredReason() || '' == getTriggeredReason()) { doOnBlur('', this.id);}"
+        onkeypress="return(searchList(event, this, 'F', ''))"
+        onchange="$$ITEM.VALIDATION().ESCAPEQUOTES()$"
+        >
+          <option value="" >- Please Select</option>
+           $%FOREACH LISTITEM IN DATAITEM$
+
+             $%IF ITEM.DATAITEM().VALUE() == ITEM.DATAITEM().LISTITEM().KEY()$
+               <option value="$$ITEM.DATAITEM().LISTITEM().KEY()$" selected="selected">$$ITEM.DATAITEM().LISTITEM().VALUE()$</option>
+             $%ELSE$
+               <option value="$$ITEM.DATAITEM().LISTITEM().KEY()$">$$ITEM.DATAITEM().LISTITEM().VALUE()$</option>
+             $%ENDIF$
+
+           $%ENDFOREACH$
+        </select>
+
+        <div class="dd-select">
+          $%IF ITEM.DATAITEM().VALUE() == '' $
+            <span> - Please Select </span>
+          $%ELSE$
+            <span id="$$ITEM.ID()$_dd-selected"></span>
+            <script> $(function (){
+              $('#$$ITEM.ID()$_dd-selected').html($('#$$ITEM.ID()$_wrapper option[value=$$ITEM.DATAITEM().VALUE()$]').html());
+            }) </script>
+          $%ENDIF$
+        </div>
+
+        <ul style="$$ITEM.INLINE_STYLES().SelectStyle$" class="hide">
+            $%FOREACH LISTITEM IN DATAITEM$
+
+            <li value="$$ITEM.DATAITEM().LISTITEM().KEY()$" class="$$ITEM.STYLES().OptionStyle$" style="$$ITEM.INLINE_STYLES().OptionStyle$">
+                <p>$$ITEM.DATAITEM().LISTITEM().VALUE()$</p>
+            </li>
+
+            $%ENDFOREACH$
+        </ul>
+
+        <div class="dd-btn">
+            <i class="$$ITEM.iconClass$"></i>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        var $select = $('#$$ITEM.ID()$_wrapper .dd-select'),
+            $btn = $('#$$ITEM.ID()$_wrapper .dd-btn'),
+            $ul = $('#$$ITEM.ID()$_wrapper ul'),
+            $wrapper = $('#$$ITEM.ID()$_wrapper .wrapper-select'),
+            $li = $('#$$ITEM.ID()$_wrapper li'),
+            $p = $('#$$ITEM.ID()$_wrapper li p'),
+            $disableAttr = $('#$$ITEM.ID()$').attr('disable'),
+            $selectEdge = $('#$$ITEM.ID()$');
+
+        var useComparison = '$$ITEM.useComparison$',
+            evalType = '$$ITEM.evalType$',
+            is_DISABLED = false;
+
+      $%IF ITEM.useComparison == 'Y'$
+          $%IF ITEM.evalType == 'N' $
+            if ( $$ITEM.Value1$ $$ITEM.Expression$ $$ITEM.Value2$) {
+              console.log("DESHABILITO");
+              is_DISABLED = true;
+            }
+          $%ENDIF$
+      $%ELSE$
+         $%IF ITEM.Expression != '' $
+            if (! $$ITEM.Value1$ $$ITEM.Expression$ $$ITEM.Value2$) {
+              console.log("DESHABILITO");
+              is_DISABLED = true;
+            }
+         $%ENDIF$
+      $%ENDIF$
+
+      if (!is_DISABLED) {
+
+          $li.on('touchstart', function(e) {
+              var $currentP = $(e.currentTarget).find('p');
+              $currentP.addClass('toggleBackground');
+          });
+
+          $li.on('touchend', function() {
+              $p.removeClass('toggleBackground');
+          });
+
+          $li.on('click', function(e) {
+
+              var $currentTarget = $(e.currentTarget),
+                  currVal = $currentTarget.find('p').html(),
+                  currKey = $currentTarget.val();
+
+              var currentSelected = {
+                  value: currVal,
+                  key: currKey
+              };
+
+            toggleLi($ul, 'hide')();
+
+            $selectEdge[0].value = currentSelected.key;
+            $selectEdge.trigger('change');
+            $select.find('span').html(currentSelected.value);
+
+            toggleLi($wrapper, 'bradius-bottom-none')()
+
+          });
+
+          $wrapper.on('blur', function() {
+              $ul.addClass('hide')
+              $selectEdge.trigger('blur')
+              $wrapper.removeClass('bradius-bottom-none')
+          });
+
+          $select.on('click', function() {
+              $wrapper.focus();
+              toggleLi($ul, 'hide')()
+              toggleLi($wrapper, 'bradius-bottom-none')()
+          });
+
+          $select.on('blur', function() {
+              $ul.addClass('hide');
+              $wrapper.removeClass('bradius-bottom-none')
+          });
+
+          $wrapper.on('focus', function () {
+            $selectEdge.trigger('focus')
+          });
+
+          $btn.on('click', function () {
+            toggleLi($ul, 'hide')();
+            toggleLi($wrapper, 'bradius-bottom-none')();
+          });
+          $btn.on('blur', $ul.addClass('hide'));
+
+      } else {
+        $btn.addClass('disabled');
+        $select.addClass('disabled');
+      }
+
+      function toggleLi(e, className) {
+          return function() {
+              $(e).toggleClass(className);
+          }
+      };
+
+    })
+
+</script>
+
+<style media="screen">
+
+    #$$ITEM.ID()$ {
+        display: none;
+    }
+
+    #$$ITEM.ID()$_wrapper {
+        width: 100%;
+    }
+
+    #$$ITEM.ID()$_wrapper > label {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #$$ITEM.ID()$_wrapper .dd-select {
+        width: 100%;
+        height: 40px;
+        background: #fff;
+        border-radius: 7px;
+        z-index: 1;
+    }
+
+    #$$ITEM.ID()$_wrapper .disabled {
+      background-color: #ebf0f5 !important;
+      color: #708090 !important;
+      border-color: #ccc;
+    }
+
+    #$$ITEM.ID()$_wrapper ul {
+        list-style: none;
+        border: 1px solid #a5adb4;
+        border-collapse: collapse;
+        padding: 10px 5px;
+        background: #fff;
+        z-index: 2;
+        position: relative;
+        margin: 0 -1px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    #$$ITEM.ID()$_wrapper ul li {
+        width: 100%;
+        height: 42px;
+        padding: 0px 10px;
+    }
+
+    #$$ITEM.ID()$_wrapper ul li p {
+        height: 100%;
+        padding: 10px 7px;
+        border-radius: 6px;
+    }
+
+    #$$ITEM.ID()$_wrapper .toggleBackground {
+        background: #ebf0f5;
+    }
+
+    #$$ITEM.ID()$_wrapper .dd-select > span {
+        position: absolute;
+        padding: 10px 15px;
+    }
+
+    #$$ITEM.ID()$_wrapper .hide {
+        display: none;
+    }
+
+    #$$ITEM.ID()$_wrapper .show {
+        display: block;
+    }
+
+    #$$ITEM.ID()$_wrapper .wrapper-select {
+        background: #fff;
+        margin: 8px 0px 23.33px 0;
+        height: 42px;
+        width: 100%;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 7px;
+        color: #3a4454;
+    }
+
+    #$$ITEM.ID()$_wrapper .wrapper-select:focus {
+        outline: none;
+    }
+
+    #$$ITEM.ID()$_wrapper .bradius-bottom-none {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+    #$$ITEM.ID()$_wrapper .dd-btn > i {
+        color: #a5adb4;
+        line-height: 42px;
+    }
+
+    #$$ITEM.ID()$_wrapper .dd-btn {
+        position: absolute;
+        width: 15%;
+        height: 100%;
+        top: 0%;
+        color: black;
+        right: 0;
+        text-align: center;
+        border-left: 1px solid #a5adb4;
+        background: #fff;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        z-index: 0;
+    }
+
+    #$$ITEM.ID()$_wrapper .banicon-left-arrow {
+        transform: rotate(-90deg);
+    }
+
+</style>
