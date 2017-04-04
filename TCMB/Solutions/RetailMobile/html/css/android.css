@@ -47,7 +47,7 @@ border-radius: 0px;
 .tourtheapp:before{content: "\f1aa"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
 
 /* MODAL WINDOWS FIX FOR ANDROID*/
-.modal-content {border-radius:0px;background-color: rgba(249, 249, 249, 0.95);}
+.modal-content {border-radius:5px;background-color: rgba(249, 249, 249, 0.95);}
 
 /* ACCOUNT ICONS REPLACEMENT*/
 
