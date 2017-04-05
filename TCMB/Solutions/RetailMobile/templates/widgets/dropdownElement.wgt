@@ -1,7 +1,7 @@
 $$ITEM.EC_GENERATE()$
 
 <div id="$$ITEM.ID()$_wrapper">
-    <label> $$ITEM.label$ </label>
+    <!-- <label> $$ITEM.label$ </label> -->
 
     <div class="wrapper-select" tabindex="0">
         <select
@@ -46,7 +46,7 @@ $$ITEM.EC_GENERATE()$
             $%ENDFOREACH$
         </ul>
 
-        <div class="dd-btn">
+        <div class="dd-btn" $%IF ITEM.iconClass == ''$ style="background: #fff url('../img/icons/arrowdown.png') no-repeat;" $%ENDIF$>
             <i class="$$ITEM.iconClass$"></i>
         </div>
     </div>
@@ -232,7 +232,6 @@ $$ITEM.EC_GENERATE()$
 
     #$$ITEM.ID()$_wrapper .wrapper-select {
         background: #fff;
-        margin: 8px 0px 23.33px 0;
         height: 42px;
         width: 100%;
         position: relative;
@@ -265,6 +264,8 @@ $$ITEM.EC_GENERATE()$
         text-align: center;
         border-left: 1px solid #a5adb4;
         background: #fff;
+        background-size: 15px;
+        background-position: center;
         border-bottom-right-radius: 6px;
         border-top-right-radius: 6px;
         z-index: 0;
