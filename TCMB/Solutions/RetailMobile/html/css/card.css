@@ -1,33 +1,14 @@
 .card {
-    box-shadow: 1px 5px 10px #CCC;
+    box-shadow: 0px 4px 5px #DCE1E9;
+    background: #FFFFFF;
     position: relative;
-    border: 1px solid #DBE0E6;
-    border-radius: 8px 8px 8px 8px;
-    width: auto;
-}
-
-/*.padre {
-  position: relative;
-  text-align: center;
-}
-
-.padre p {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);*/
-  /*vertical-align: middle;*/
-/*}*/
-
-.centradoVertical {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  /*vertical-align: middle;*/
+    border: 1px solid #DCE1E9;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .card__header {
     padding: 1.041em;
-    background: #F9FAFC;
     text-align: center;
     position: relative;
 }
@@ -35,10 +16,20 @@
 .card__body {
     border-top: 1px solid #DBE0E6;
     border-bottom: 1px solid #DBE0E6;
-    background: #FFFFFF;
     padding: 1.041em;
     text-align: center;
     height: auto;
+}
+
+.card__body-text label {
+    font-size: 11px;
+    padding: 0 !important;
+    margin-bottom: 0px;
+    color: #54616D;
+}
+
+.card__body-progressBar-Container {
+  padding: 15px 5px;
 }
 
 .card__footer {
@@ -69,59 +60,61 @@
 
 /*Esta utilidad sirve para rotar 180° <i class="banicon banicon-left-arrow"></i>. La arrow señalaria hacia la derecha*/
 
-.u-right-arrow {
+.card .u-right-arrow {
+    font-family: 'Banesco';
+    font-size: 9px;
+}
+
+.card .u-right-arrow::before {
+  content: '\E90D';
+}
+
+.card__header-arrow {
+    height: 100%;
+    line-height: 100%;
+    margin-top: -1.041em;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    padding: 0;
+    width: auto;
     -ms-transform: rotate(180deg);
     /* IE 9 */
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
+    transform: rotate(180deg);>
 }
 
-
-/* --------------  CLASES PARA ESTILAR A MODO DE PRUEBA -------------- */
-
-.card__header-estiloPrueba-rowContainer {
-    /*margin: 0 5px;*/
-    display: inline-block;
-    /*font-weight: bold;*/
-    /*font-size: 18px;*/
-    /*float: left;*/
-}
-
-.card__header-estiloPrueba-titleH1Container {
+.card__header-titleH1Container {
     display: inline-block;
     padding: 0;
-    /*position: absolute;*/
-    font-size: 0.875em;
+    font-size: 12px;
+    text-transform: none;
+    color: #3A4454;
 }
 
-.card__header-estiloPrueba-titleH2Container {
+.card__header-titleH2Container {
     display: inline-block;
-    font-size: 0.875em;
+    font-size: 12px;
     padding: 0;
     width: auto;
-    /*line-height: 25px;
-    margin-left: 25px;*/
+    margin-left: 8px;
     color: #54616D;
+    text-transform: none;
 }
 
-.card__header-estiloPrueba-arrowContainer {
-    /*display: inline-block;*/
-    /*right: -30px;*/
-    padding: 0;
-    /*width: auto;*/
-    position: absolute;
-    line-height: 0px;
-}
 
-.card__header-estiloPrueba-contentNumber {
-  font-size: 1.708em;
+.card__header-contentNumber {
+  /*font-size: 1.708em;*/
+  font-size: 27.33px;
   color: #3a4454;
 }
 
-.card__header-estiloPrueba-actionLink {
+.card__header-actionLink {
   color: #2b5f8c;
-  font-size: 0.750em;
+  /*font-size: 0.750em;*/
+  font-size: 12px;
 }
-
-/* --------------  /CLASES PARA ESTILAR A MODO DE PRUEBA -------------- */
