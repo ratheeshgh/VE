@@ -1615,4 +1615,12 @@
                 />
         </custom>
     </widget>
+    <widget name="progress-bar" type="Item:">
+      <template type="source" value="./templates/widgets/progress-bar/progress_bar.wgt"/>
+      <template alwaysAddHeader="false" type="header" value="./templates/widgets/progress-bar/progress_bar_header.wgt"/>
+      <custom>
+        <item includeInDesign="Always" layout="-1" mand="false" name="MontoUtilizado" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+        <item includeInDesign="Always" layout="-1" mand="false" name="MontoDisponible" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      </custom>
+    </widget>
 </widgets>
