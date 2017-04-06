@@ -6,14 +6,38 @@ padding: 0px 0px 0px 0px;
 text-align: right;
 border-top: none;
 }
+.exit-modal-content{    
+  border-radius: 5px;   
+  padding-bottom: 20px;   
+}   
+.exit-modal-header{   
+  border-bottom: none;    
+}   
+.exit-modal-dialog h5 {   
+  font-size: 18px;    
+  color: #708090;   
+  text-transform: initial;    
+}   
+.exit-modal-boton {   
+    background: #007953;    
+    color: #ffffff;   
+    width: 50%;   
+    height: 40px;   
+    border-radius: 5px;   
+    font-size: 14.33px;   
+}   
+.exit-modal-footer {    
+  margin-top:15px;    
+}
+
 .modal-content { background-color: rgba(255, 255, 255, 0.95);}
 .modal-header {text-align:center;}
 </style>
 $%ENDIF$
 <div class="modal fade" id="$$ITEM.ID()$" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
+  <div class="exit-modal-dialog modal-dialog">
+    <div class="exit-modal-content modal-content">
+      <div class="exit-modal-header modal-header">
         $%IF ITEM.Native != "Y"$<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>$%ENDIF$
         <h4 class="$$ITEM.TitleClass$" id="myModalLabel">$$ITEM.Title$</h4>
 		$%IF ITEM.Native == "Y" && ITEM.Body != ""$<h5>$$ITEM.Body$</h5>$%ENDIF$
@@ -22,7 +46,7 @@ $%ENDIF$
         $$ITEM.Body$
       </div>
 	  $%ENDIF$
-      <div class="modal-footer">
+      <div class="exit-modal-footer modal-footer">
         $$ITEM.EC_GENERATE()$
       </div>
     </div>
