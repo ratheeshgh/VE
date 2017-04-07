@@ -7,7 +7,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
     sessionStorage.ShowMenu = 0;
 
     function toogleNav() {
-        var sidebar = $("div[id$=sidebar_container]");
+        var sidebar = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
         var mobile = $("div[id$=mobile]");
 
         sidebar.removeClass('NotDisplayed');
@@ -15,21 +15,19 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
         $('.SideMenuContainerFix').toggleClass('overflowHidden');
 
         if (sidebar.css("position") === "fixed") {
-            if (mobile.hasClass('off')) {
-
+            if (mobile.hasClass('off') || sidebar.hasClass('inactive')) {
                 sidebar.animate({
                     left: -sidebar.width()
                 },0);
-                $('#C1__hidden_Section').animate({'opacity':0},0);
+                $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').animate({'opacity':0},0);
 
                 setTimeout(function () {
-                  $('#C1__hidden_Section').addClass('NotDisplayed');
+                  $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').addClass('NotDisplayed');
                 },700);
 
             } else {
-
-                $('#C1__hidden_Section').removeClass('NotDisplayed');
-                $('#C1__hidden_Section').animate({'opacity':1},0)
+                $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').removeClass('NotDisplayed');
+                $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').animate({'opacity':1},0)
 
                 sidebar.animate({
                     left: 0
@@ -38,10 +36,12 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
         }
 
         $('.row-offcanvas').toggleClass('active');
-        if (mobile.hasClass('off')) {
+        if (mobile.hasClass('off') || sidebar.hasClass('inactive')) {
             mobile.animate({
                 opacity: 1
             }, 200).removeClass('off').addClass('on').removeAttr('style');
+            sidebar.removeClass('inactive')
+            sidebar.addClass('active')
             $(sidebar).unbind('touchmove');
             $('#EDGE_CONNECT_PROCESS').unbind('touchmove');
             sessionStorage.ShowMenu = 0;
@@ -52,6 +52,9 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
             mobile.animate({
                 opacity: 0.5
             }, 200).removeClass('on').addClass('off').css('margin-left', '-15px');
+
+            sidebar.removeClass('active')
+            sidebar.addClass('inactive')
             $(sidebar).bind('touchmove', function(e) {
                 //e.preventDefault();
             });
@@ -78,7 +81,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
 
     $(window).resize(function() {
         $(".sidebar-offcanvas").height($(document).height() - topnavheight);
-        var sidebar = $("div[id$=sidebar-container]");
+        var sidebar = $("#$$ITEM.COMPONENT_PREFIX()$sidebar-container");
         if (sidebar.css("position") !== "fixed") {
             sidebar.removeAttr("style");
         }
@@ -86,12 +89,12 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
 
     $(document).ready(function() {
 
-        var $sidebar_container = $("#C1__sidebar_container");
+        var $sidebar_container = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
         $sidebar_container.addClass('SideMenuFixedToTop');
         $sidebar_container.css('left', -$sidebar_container.width());
         $sidebar_container.addClass('NotDisplayed');
 
-        $('#C1__hidden_Section').addClass('NotDisplayed');
+        $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').addClass('NotDisplayed');
 
         $(document).on("click", ".TabsRadio input:first-child", function(e) {
             var documentheight = $("#form1").height();
@@ -102,7 +105,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
 
         $("#$$ITEM.BUTTONID$").on("click", function() {
             //$(".sidebar-offcanvas").height($(document).height() - topnavheight);
-            var header = $("#C1__sidebar_container");
+            var header = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
 
             if (!$("#$$ITEM.COMPONENT_PREFIX()$off_canvas_left").hasClass("active")) {
                 var y = $(document).scrollTop();
@@ -125,23 +128,23 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
         var slides = $('body')
         window.isClicked = false;
 
-        $('#p1_GRP_1E489C352C27288894326,#p1_GRP_CB64BE446A74068199709,#C1__row_TBL_CD9DE3227B16A75142639,#C1__row_TBL_3B7D07F5FA42E3152853').on('swipeleft swiperight', function(event) {
+        $('#p1_GRP_1E489C352C27288894326,#p1_GRP_CB64BE446A74068199709,#$$ITEM.COMPONENT_PREFIX()$row_TBL_CD9DE3227B16A75142639,#$$ITEM.COMPONENT_PREFIX()$row_TBL_3B7D07F5FA42E3152853').on('swipeleft swiperight', function(event) {
             window.isClicked = true;
             //event.stopPropagation();
         });
 
         slides
             .on('swipeleft', function(e) {
-              header = $("#C1__sidebar_container");
+              header = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
 
               header.animate({
                 left: -header.width()
               },0)
 
-              $('#C1__hidden_Section').animate({'opacity':0},0);
+              $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').animate({'opacity':0},0);
 
               setTimeout(function () {
-                $('#C1__hidden_Section').addClass('NotDisplayed');
+                $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').addClass('NotDisplayed');
               }, 700);
                 //  header.removeClass('SideMenuFixedToTop')
 
@@ -154,12 +157,12 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
             })
 
             .on('swiperight', function(e) {
-              header = $("#C1__sidebar_container");
+              header = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
 
               header.removeClass('NotDisplayed');
 
-              $('#C1__hidden_Section').removeClass('NotDisplayed');
-              $('#C1__hidden_Section').animate({'opacity':1},0)
+              $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').removeClass('NotDisplayed');
+              $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section').animate({'opacity':1},0)
 
               header.animate({
                 left: 0
@@ -168,7 +171,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
               $(".sidebar-offcanvas").height($(document).height() - topnavheight);
               if (!$("#$$ITEM.COMPONENT_PREFIX()$off_canvas_left").hasClass("active")) {
                   var y = $(document).scrollTop(),
-                  header = $("#C1__sidebar_container");
+                  header = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
                   if (window.isClicked == false) {
                       $("#$$ITEM.BUTTONID$").click();
                         //if (y >= 100) {

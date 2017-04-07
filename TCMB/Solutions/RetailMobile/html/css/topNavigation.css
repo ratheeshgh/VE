@@ -1,22 +1,23 @@
 /* Top Navigation */
 
-.SideMenuContainerFix {
+ .SideMenuContainerFix{
   overflow:auto;
   text-transform: initial;
 }
 
-.SideMenuContainerFix .SideMenuFixedToTop{
-  transition: left 0.7s ease;
+ .SideMenuFixedToTop{
+  transition: left 0.4s ease;
+  text-transform: initial;
 }
 
-.SideMenuContainerFix .sidebarHeader {
+ .sidebarHeader {
   height: 120px;
   padding: 36px 17px 23px 15px;
   font-family: "Lato Regular";
   margin-bottom: 15px;
 }
 
-.SideMenuContainerFix .backgroundGradient {
+ .backgroundGradient {
   background: #007953; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left, #007953, #229C7A); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, #007953, #229C7A); /* For Opera 11.1 to 12.0 */
@@ -24,28 +25,28 @@
   background: linear-gradient(to right, #007953, #229C7A ); /* Standard syntax */
 }
 
-.SideMenuContainerFix .sidebar {
+ .sidebar {
   height: 100%;
   overflow: auto;
 }
 
-.SideMenuContainerFix .sidebarContainer {
+ .sidebarContainer {
   overflow-y: scroll;
   height:100%;
   top: 0;
 }
 
-.SideMenuContainerFix #C2__off_canvas_left, .SideMenuContainerFix #C1__FMT_72D14C8ACF50F163203367 {
+ #C2__off_canvas_left,  #C2__C2__off_canvas_left,  #C1__FMT_72D14C8ACF50F163203367,  #C1__C1__FMT_72D14C8ACF50F163203367 {
   z-index: 0;
 }
 
-.SideMenuContainerFix #C1__off_canvas_left {
+ #C1__off_canvas_left,  #C1__C1__off_canvas_left {
   transition: left 1s ease;
   position: absolute;
   height: 100%;
 }
 
-#C1__BranchSettings:before, #C1__BranchHelp:before  {
+#C1__BranchSettings:before, #C1__BranchHelp:before, #C1__C1__BranchSettings:before, #C1__C1__BranchHelp:before  {
     content: none;
 }
 
@@ -113,9 +114,9 @@
 }
 
 .off, .on {
-  transition: left 0.7s ease;
+  transition: left 0.4s ease;
 }
 
 .row-offcanvas-left {
-  transition: left 0.7s ease;
+  transition: left 0.4s ease;
 }
