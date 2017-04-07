@@ -1,0 +1,121 @@
+/* Top Navigation */
+
+.SideMenuContainerFix {
+  overflow:auto;
+  text-transform: initial;
+}
+
+.SideMenuContainerFix .SideMenuFixedToTop{
+  transition: left 0.7s ease;
+}
+
+.SideMenuContainerFix .sidebarHeader {
+  height: 120px;
+  padding: 36px 17px 23px 15px;
+  font-family: "Lato Regular";
+  margin-bottom: 15px;
+}
+
+.SideMenuContainerFix .backgroundGradient {
+  background: #007953; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #007953, #229C7A); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #007953, #229C7A); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #007953, #229C7A,); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #007953, #229C7A ); /* Standard syntax */
+}
+
+.SideMenuContainerFix .sidebar {
+  height: 100%;
+  overflow: auto;
+}
+
+.SideMenuContainerFix .sidebarContainer {
+  overflow-y: scroll;
+  height:100%;
+  top: 0;
+}
+
+.SideMenuContainerFix #C2__off_canvas_left, .SideMenuContainerFix #C1__FMT_72D14C8ACF50F163203367 {
+  z-index: 0;
+}
+
+.SideMenuContainerFix #C1__off_canvas_left {
+  transition: left 1s ease;
+  position: absolute;
+  height: 100%;
+}
+
+#C1__BranchSettings:before, #C1__BranchHelp:before  {
+    content: none;
+}
+
+.icon-arrow {
+  font-family: "Banesco";
+  font-style: initial;
+  font-size: 10px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-arrow:before {
+  content: "\E90D";
+}
+
+.rotateDownIcon {
+  transform: rotate(270deg);
+}
+
+.overflowHidden {
+  overflow: hidden !important;
+}
+
+.hiddenSection {
+  width: 100%;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.34);
+    opacity: 0;
+    height: 100%;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+}
+
+/* REPLACED */
+
+.LogoutBtn:before {
+  font-family: "Banesco";
+  margin-right: 0;
+}
+
+.LogoutBtn {
+  font-family: "Lato Regular";
+  text-transform: initial;
+  padding: 8px 22px 8px 15px;
+  font-weight: bold;
+}
+
+.WelcomeMessageWhite14 {
+  font-family: "Lato Regular";
+  font-size: 13px;
+  text-align: left;
+  color: #FFF;
+}
+
+.MenuWidth {
+  position: absolute;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  z-index: 999999;
+}
+
+.off, .on {
+  transition: left 0.7s ease;
+}
+
+.row-offcanvas-left {
+  transition: left 0.7s ease;
+}

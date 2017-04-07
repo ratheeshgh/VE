@@ -883,6 +883,7 @@ body.myaccount a:hover,a:focus{-webkit-transition: all .2s linear;-moz-transitio
 .BorderTop {border-top: 1px solid #ddd;}
 .BorderBottom {border-bottom: 1px solid #ddd;}
 .PaddingTop15 {padding-top:15px;}
+.PaddingTop10 {padding-top:10px;}
 .PaddingTopBottom5 {border-top: 1px solid #ddd;padding-top: 5px; padding-bottom: 5px;}
 .PaddingLeftRight10 {padding-left: 10px; padding-right: 10px;}
 .PaddingLeftRight5 {padding-left: 5px; padding-right: 5px;}
@@ -2712,7 +2713,7 @@ height:100%;
     right: -80%; /* 6 columns */
 	min-height: 100%;
 border-left: 1px solid #818181;
-border: 1px solid #113EB3;
+border: 1px solid #FFFF;
 border-radius: 0 0 2px;
 margin-left:-15px;
   }
@@ -2735,7 +2736,7 @@ margin-left:-15px;
 
   .sidebar-offcanvas {
     position: absolute;
-	background-color:#0A5493;
+	background-color:#FFFF;
 	min-height:100%;
     top: 1px;
     width: 80%; /* 6 columns */
@@ -2842,7 +2843,7 @@ padding-right:10px;
 	height: 100%;
 min-height: 300px;
 border-left: 1px solid #818181;
-border: 1px solid #113EB3;
+border: 1px solid #FFFF;
 border-radius: 0 0 2px;
 margin-left:-15px;
   }
