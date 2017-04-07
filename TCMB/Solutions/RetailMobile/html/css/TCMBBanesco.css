@@ -22,6 +22,22 @@ hr {
   margin: 0;
 }
 
+.banesco_icon_navbar {
+	font-family: 'Banesco';
+
+}
+
+.banesco_icon_navbar::before {
+	content: '\E900';
+    color: #FFF;
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	left: 0;
+    right: 0;
+}
+
 /*---  STATUS - TEXTO  ---*/
 
 .status {

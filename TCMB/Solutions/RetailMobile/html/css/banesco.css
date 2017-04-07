@@ -955,9 +955,9 @@ border: none;
 cursor: text;
 }
 
-.QuestionHybridFirst { 
-  border: none; 
-  border-left: none; 
+.QuestionHybridFirst {
+  border: none;
+  border-left: none;
   border-right: none;
 }
 
@@ -1105,7 +1105,7 @@ input[type="checkbox"]:checked  {
 .BodyTextRegularH1{display:block; font-family: "Lato Regular", courier; font-size:14.67px; text-align:left;color:#3a4454;}
 .BodyTextRegularH2{display:block; font-family: "Lato Regular",courier; font-size:13.33px; margin-left:10px;color:#54616d;}
 /*End*/
-.TopNavBtnContainer {width: 100%;height: 50px;} /* CONTAINER FOR THE BUTTONS */
+.TopNavBtnContainer {width: 100%;height: 50px;position: absolute; z-index: 900000;} /* CONTAINER FOR THE BUTTONS */
 .PaymentHeader {float:none; padding: 15px 1px; display:inline-block;font-size: 18px;line-height: 20px;height: 50px; font-family: 'Lato Medium', courier;text-align: center;color: #556176;width: 100%; }/*Title for payment screen*/
 .PaymentHeader:hover{color: #007953}
 /* Show Account Btn */
