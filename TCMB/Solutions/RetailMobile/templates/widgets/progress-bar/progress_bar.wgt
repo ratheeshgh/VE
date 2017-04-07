@@ -1,0 +1,32 @@
+
+<span id="info-percentaje_$$ITEM.ID()$" class="progress-bar-banesco__percentage"></span>
+<div class="progress-bar-banesco">
+	<div id="progress-bar-color_$$ITEM.ID()$" class="progress-bar-banesco-percentage">
+	</div>
+</div>
+
+<script type="text/javascript">
+
+  (function() {
+    var montoUtilizado = Number('$$ITEM.MontoUtilizado$'.replace(/[^0-9\,]+/g,"").replace(',','.'));
+	var montoDisponible =  Number('$$ITEM.MontoDisponible$'.replace(/[^0-9\,]+/g,"").replace(',','.'));
+	var result = ((montoUtilizado*100)/(montoDisponible));
+	var progressBar = $("#progress-bar-color_$$ITEM.ID()$");
+	var infoPercentaje = $("#info-percentaje_$$ITEM.ID()$");
+	progressBar.css('width', result +'%');
+	if(result <= 30) {
+      progressBar.addClass('progress-bar-banesco-low-percentage');
+      infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+      infoPercentaje.css('color', '#1C8464')
+	} else if(result <= 70) {
+	 	 progressBar.addClass('progress-bar-banesco-medium-percentage');
+	 	 infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+	 	 infoPercentaje.css('color', '#EE9E14')
+		} else if(result <= 100) {
+			progressBar.addClass('progress-bar-banesco-hight-percentage');
+			infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+			infoPercentaje.css('color', '#EB514E')
+		}
+   })();
+
+</script>

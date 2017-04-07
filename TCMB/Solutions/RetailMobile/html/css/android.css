@@ -47,7 +47,7 @@ border-radius: 0px;
 .tourtheapp:before{content: "\f1aa"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
 
 /* MODAL WINDOWS FIX FOR ANDROID*/
-.modal-content {border-radius:0px;background-color: rgba(249, 249, 249, 0.95);}
+.modal-content {border-radius:5px;background-color: rgba(249, 249, 249, 0.95);}
 
 /* ACCOUNT ICONS REPLACEMENT*/
 
@@ -224,13 +224,13 @@ box-shadow: inset 0 0 0px 1px #d5d5d5;
 }
 
 input.toggle[type='checkbox']:checked + label:after {
-content: "ON";
+content: "";
 color:#FFF;
 font-family: "Roboto Medium", courier;
 padding-top: 5px;
 padding-right: 10px;
 left: 30px;
-background:#1167B1;
+background: #1F8C6B;
 box-shadow: inset 0 0 0 1px rgba(5, 81, 162, 0.2), 0 2px 4px rgba(0,0,0,.2);
 }
 /*END OF STYLING FOR SWITCH CHECKBOX*/

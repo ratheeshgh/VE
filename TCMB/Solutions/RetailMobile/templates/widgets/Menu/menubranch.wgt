@@ -6,15 +6,16 @@
                 <a id="BranchTarget$$ITEM.ID()$" href="#" onclick="return goNavItem('', '$$COMPONENT_ID_PREFIX$$$ITEM.ENTITYNAME()$', false, false, 'NAVMENU_', this, true);">
                     <i id="$$ITEM.ID()$" class="$$ITEM.RTID()$"></i>
                     $$ITEM.MenuText$
+                    <i class="indicator icon-arrow pull-right custom"></i>
                 </a>
             $%ELSE$
                 <a id="BranchTarget$$ITEM.ID()$" data-toggle="collapse" data-parent="#accordion" href="#collapse$$ITEM.ID()$">
                     <i id="$$ITEM.ID()$" class="$$ITEM.RTID()$"></i>
-                    $$ITEM.MenuText$ 
-                    <i class="indicator glyphicon glyphicon-chevron-right pull-right custom"></i>
+                    $$ITEM.MenuText$
+                    <i class="indicator icon-arrow pull-right custom"></i>
                 </a>
             $%ENDIF$
-		
+
 			<script>$("#BranchListener$$ITEM.ID()$").on("click", function(e) { document.getElementById('BranchTarget$$ITEM.ID()$').click()})</script>
         </h4>
     </div>
@@ -25,8 +26,7 @@
             <table class="table">
                 $$FORMCONTENT$
             </table>
-        </div>		 
+        </div>
     </div>
     $%ENDIF$
 </div>
-
