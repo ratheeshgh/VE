@@ -3,3 +3,5 @@
 *.ect~*
 *.ifp.settings
 logs
+*_cs
+.edgeserver
