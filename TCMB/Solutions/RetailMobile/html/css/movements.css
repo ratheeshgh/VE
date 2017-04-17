@@ -8,7 +8,7 @@
 	text-transform: initial;
 }
 
-.movement label {
+.movement {
 	margin-bottom: 0;
 }
 
@@ -26,7 +26,7 @@
 	content:'\E935';
 }
 
-.desc_mv label {
+.desc_mv {
     font-size: 14.66px;
     color: #3a4454; 
     padding-bottom: 0;
@@ -34,18 +34,18 @@
     font-weight: bold;
 }
 
-.desc_date label {
+.desc_date {
 	font-size: 12px;
     color: #54616d;
 }
 
-.desc_cur label {
+.desc_cur {
 	font-size: 16px;
     font-weight: bold;
     color: #54616d;
     /* color: #E31D19; */
 }
 
-.desc_cur.negative label {
+.desc_cur.negative {
     color: #E31D19;
 }
