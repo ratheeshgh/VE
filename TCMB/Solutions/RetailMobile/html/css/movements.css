@@ -30,12 +30,35 @@
 	content:'\E935';
 }
 
+@media (max-width: 380px) {
+	.desc_mv label, .desc_mv span {
+		font-size: 10.66px;
+	}
+}
+
+@media (min-width: 381px) {
+	.desc_mv label, .desc_mv span {
+		font-size: 14.66px;
+	}
+}
+
 .desc_mv label, .desc_mv span {
-    font-size: 14.66px;
     color: #3a4454;
     padding-bottom: 0;
     margin-bottom: 0;
     font-weight: bold;
+}
+
+@media (max-width: 380px) {
+	.desc_date label, .desc_date span {
+		font-size: 9px;
+	}
+}
+
+@media (min-width: 381px) {
+	.desc_date label, .desc_date span {
+		font-size: 12px;
+	}
 }
 
 .desc_date label, .desc_date span {
