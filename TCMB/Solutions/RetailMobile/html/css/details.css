@@ -21,6 +21,12 @@
 	font-size: 12px;
 }
 
+@media (max-width: 350px) { 
+	.det-navbar .TopNavSectionCenter .NavTitleH1White {
+		font-size: 10px;
+	}
+}
+
 .det-text-h1 {
 	font-size:14px; 
 	color:#FFF;
