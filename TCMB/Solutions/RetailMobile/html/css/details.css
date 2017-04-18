@@ -1,10 +1,22 @@
-.ecDIB{
-	/*Este elemento viene por default en "vertical-align: top;" y por lo tanto modifica la linea de algunos textos dejandolos en diferentes alturas */
-	vertical-align: baseline;
-}
 
 .det-navbar .navbar {
 	padding-top: 0;
+}
+
+.det-navbar .TopNavSectionCenter {
+	width: 80%;
+}
+
+.det-navbar .TopNavSectionCenter {
+	position: absolute;
+	height: 50px;
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+.det-navbar .TopNavSectionCenter .NavTitleH1White {
+	margin: 0;
+	font-size: 12px;
 }
 
 .det-text-h1 {
@@ -12,7 +24,7 @@
 	color:#FFF;
 	text-transform:uppercase;
 	font-family: "Lato Regular", courier;
-	padding-top:10px;}
+	}
 
 
 .det-card-text-title {
@@ -22,7 +34,7 @@
 
 }
 
-.det-card-text label {
+.det-card-text {
 	font-size:20px;
 	color:#3A4454;
 	padding: 0 !important;
@@ -36,11 +48,12 @@
 	padding-top:10px;
 }
 
-.det-headergrande label {
+.det-headergrande {
 	font-size:30px; 
 	color:#FFF; 
 	text-transform:initial; 
 	margin-bottom: 50px;
+
 }
 
 .det-card {
@@ -50,7 +63,7 @@
     background-color: #FFF;
     border-radius: 5px;
     margin: 0 auto;
-    top: -30px;
+    top: -35px;
 
 }
 
