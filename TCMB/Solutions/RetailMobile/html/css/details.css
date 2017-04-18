@@ -9,10 +9,12 @@
 
 .det-navbar .TopNavSectionCenter {
 	position: absolute;
-	height: 50px;
-	line-height: 40px;
+	height: 60px;
+	line-height: 60px;
 	vertical-align: middle;
 }
+
+.det-navbar .TopNavBtn { padding-top: 20px; }
 
 .det-navbar .TopNavSectionCenter .NavTitleH1White {
 	margin: 0;
