@@ -65,11 +65,21 @@
     color: #54616d;
 }
 
+@media (max-width: 380px) {
+	.desc_cur label, .desc_cur span {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 381px) {
+	.desc_cur label, .desc_cur span {
+		font-size: 16px;
+	}
+}
+
 .desc_cur label, .desc_cur span {
-	font-size: 16px;
     font-weight: bold;
     color: #54616d;
-    /* color: #E31D19; */
 }
 
 .desc_cur.negative label, .desc_cur.negative span  {
