@@ -1,3 +1,6 @@
+<style>.swiper-slide {
+  position: relative;
+}</style>
 $%IF ITEM.centeredslide == "Y"$
 <style>.swiper-slide {
 height:100%;
@@ -56,6 +59,7 @@ $%ENDIF$
 			$%FOREACH ITEM IN SECTION$
 					$%IF ITEM.IS_HIDDEN() != "true"$
 						<div class="swiper-slide swiper-no-swiping $$ITEM.PARENT().SLIDECLASS$" id="$$ITEM.ID()$">
+              <span class="$$ITEM.PARENT().fontIconClass$"></span>
 							$$ITEM.EC_GENERATE()$
 						</div>
 					$%ENDIF$
@@ -72,6 +76,7 @@ $%IF ITEM.centeredslide == "Y"$<div id="pagination$$ITEM.ID()$" class="paginatio
 </div>
 
 <script type="text/javascript">
+$(function(){
 $%IF ITEM.TYPE() == "FormTable"$
 $("#$$ITEM.ID()$").parent().closest("[id]").addClass("ECDontRegen");
 $%ENDIF$
@@ -88,10 +93,10 @@ $%ENDIF$
 
   $%COMMENT$ how many slides shown at the same time $%ENDCOMMENT$
   var noOfSlidesToShow = $%IF ITEM.numOfItems == ""$1$%ELSE$$$ITEM.numOfItems$$%ENDIF$;
-  
+
   $%COMMENT$ how many slides actually in carousel  $%ENDCOMMENT$
   var noOfSlides = $("#carousel$$ITEM.ID()$ .swiper-slide").length;
-   
+
   $%COMMENT$ if there are fewer slides than the number to show, then we reduce count...  $%ENDCOMMENT$
   noOfSlidesToShow = noOfSlidesToShow > noOfSlides ? noOfSlides : noOfSlidesToShow;
 
@@ -126,12 +131,18 @@ longSwipesRatio:0.1,
     mySwiper$$ITEM.ID()$.swipeNext()
   })
   $%ENDIF$
+
+  function swiperReInit() {
+    mySwiper$$ITEM.ID()$.reInit()
+  }
+  window.swiperReInit = swiperReInit;
+
 function getAndroidVersion(ua) {
-    var ua = ua || navigator.userAgent; 
+    var ua = ua || navigator.userAgent;
     var match = ua.match(/Android\s([0-9\.]*)/);
     return match ? match[1] : false;
 };
 
 IE4 = IE4 || getAndroidVersion() === "4.1.2"
-
+})
 </script>

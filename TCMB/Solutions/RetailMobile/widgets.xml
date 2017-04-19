@@ -658,6 +658,15 @@
                 type="javax.swing.JTextField"
                 usage="7"
                 />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="fontIconClass"
+                prompt="Font Icon Class"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
         </custom>
     </widget>
     <widget
@@ -1615,12 +1624,87 @@
                 />
         </custom>
     </widget>
-    <widget name="progress-bar" type="Item:">
-      <template type="source" value="./templates/widgets/progress-bar/progress_bar.wgt"/>
-      <template alwaysAddHeader="false" type="header" value="./templates/widgets/progress-bar/progress_bar_header.wgt"/>
-      <custom>
-        <item includeInDesign="Always" layout="-1" mand="false" name="MontoUtilizado" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
-        <item includeInDesign="Always" layout="-1" mand="false" name="MontoDisponible" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
-      </custom>
+    <widget
+        name="progress-bar"
+        type="Item:"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/progress-bar/progress_bar.wgt"
+            />
+        <template
+            alwaysAddHeader="false"
+            type="header"
+            value="./templates/widgets/progress-bar/progress_bar_header.wgt"
+            />
+        <custom>
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="MontoUtilizado"
+                type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser"
+                typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="MontoDisponible"
+                type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser"
+                typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property"
+                usage="7"
+                />
+        </custom>
+    </widget>
+    <widget
+        displayName="Generic Tab"
+        name="GenericTab"
+        type="Tab"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/genericTab.wgt"
+            />
+    </widget>
+    <widget
+        displayName="Apply Styles to Tab "
+        name="Apply Styles to Tab "
+        type="Section"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/applyStylesTab.wgt"
+            />
+        <custom>
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="IDTab"
+                prompt="Tab ID"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="linkStyle"
+                prompt="Style Link"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="wrapperStyle"
+                prompt="Style Content"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+        </custom>
     </widget>
 </widgets>
