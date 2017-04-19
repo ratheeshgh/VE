@@ -19,6 +19,9 @@
 .det-navbar .TopNavSectionCenter .NavTitleH1White {
 	margin: 0;
 	font-size: 12px;
+	text-align: left !important;
+	padding-left: 20px;
+	text-transform:initial;
 }
 
 @media (max-width: 350px) { 
