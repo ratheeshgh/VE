@@ -55,8 +55,9 @@ $%ENDIF$
     <div class="swiper-wrapper swiper-no-swiping">
         $%FOREACH ITEM IN QUESTION$
                 <div class="swiper-slide swiper-no-swiping blue-slide" id="$$TABLE_CHILD.ID()$" onclick="$$ITEM.ONCLICK()$">
+                    <span class="$$ITEM.fontIconClass$"></span>
                     $$ITEM.EC_GENERATE()$
-               
+
  </div>
 $%ENDFOREACH$
         $%ENDFOREACH$
@@ -83,6 +84,7 @@ $%IF ITEM.centeredslide == "Y"$<div id="pagination$$ITEM.ID()$" class="paginatio
 </div>
 
 <script type="text/javascript">
+$(function(){
 $%IF ITEM.TYPE() == "Question"$
 $("#$$ITEM.ID()$").parent().closest("[id]").addClass("ECDontRegen");
 $%ENDIF$
@@ -99,10 +101,10 @@ $%ENDIF$
 
   $%COMMENT$ how many slides shown at the same time $%ENDCOMMENT$
   var noOfSlidesToShow = $%IF ITEM.numOfItems == ""$3$%ELSE$$$ITEM.numOfItems$$%ENDIF$;
-  
+
   $%COMMENT$ how many slides actually in carousel  $%ENDCOMMENT$
   var noOfSlides = $("#carousel$$ITEM.ID()$ .swiper-slide").length;
-   
+
   $%COMMENT$ if there are fewer slides than the number to show, then we reduce count...  $%ENDCOMMENT$
   noOfSlidesToShow = noOfSlidesToShow > noOfSlides ? noOfSlides : noOfSlidesToShow;
 
@@ -137,11 +139,11 @@ $%IF ITEM.NoSwipe == "Y"$noSwiping: true,$%ENDIF$
   })
   $%ENDIF$
 function getAndroidVersion(ua) {
-    var ua = ua || navigator.userAgent; 
+    var ua = ua || navigator.userAgent;
     var match = ua.match(/Android\s([0-9\.]*)/);
     return match ? match[1] : false;
 };
 
 IE4 = IE4 || getAndroidVersion() === "4.1.2"
-
+})
 </script>

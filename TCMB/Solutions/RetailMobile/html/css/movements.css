@@ -1,6 +1,4 @@
 .movement {
-	/*margin-left: 5%;
-	margin-right: 5%; */
 	background: #FFF;
 	margin-bottom: 3px;
 	padding: 3%;
@@ -47,9 +45,41 @@
 	font-size: 16px;
     font-weight: bold;
     color: #54616d;
-    /* color: #E31D19; */
 }
 
 .desc_cur.negative label, .desc_cur.negative span  {
     color: #E31D19;
+}
+
+/* Monthly Period */
+
+.movs-period-icon {
+	font-family: "Banesco";
+  font-size: 32px;
+  color: #1F8C6B;
+  display: block;
+}
+
+.movs-period-icon:before {
+	content:'\E939';
+}
+
+.spanStyle span {
+  color: #1F8C6B;
+  font-weight: bold;
+}
+
+.carousel_btn > span {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+}
+
+.carousel_btn{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
