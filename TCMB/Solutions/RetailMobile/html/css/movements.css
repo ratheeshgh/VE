@@ -18,26 +18,6 @@
 	vertical-align: middle;
 }
 
-.icon_db {
-	font-family: "Banesco";
-	font-size: 32px;
-	color: #F68A70;
-}
-
-.icon_db:before {
-	content:'\E935';
-}
-
-.icon_cr {
-	font-family: "Banesco";
-	font-size: 32px;
-	color: #4E74B0;
-}
-
-.icon_cr:before {
-	content:'\E936';
-}
-
 @media (max-width: 380px) {
 	.desc_mv label, .desc_mv span {
 		font-size: 10.66px;
