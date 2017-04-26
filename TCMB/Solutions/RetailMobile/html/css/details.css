@@ -1,0 +1,88 @@
+
+.det-navbar .navbar {
+	padding-top: 0;
+}
+
+.det-navbar .TopNavSectionCenter {
+	width: 80%;
+}
+
+.det-navbar .TopNavSectionCenter {
+	position: absolute;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+.det-navbar .TopNavBtn { padding-top: 20px; }
+
+.det-navbar .TopNavSectionCenter .NavTitleH1White {
+	margin: 0;
+	font-size: 12px;
+	text-align: left !important;
+	padding-left: 20px;
+	text-transform:initial;
+}
+
+@media (max-width: 350px) { 
+	.det-navbar .TopNavSectionCenter .NavTitleH1White {
+		font-size: 10px;
+	}
+}
+
+.det-text-h1 {
+	font-size:14px; 
+	color:#FFF;
+	text-transform:uppercase;
+	font-family: "Lato Regular", courier;
+	}
+
+
+.det-card-text-title {
+	font-size:1em;
+	color:#3A4454;
+	font-family: "Lato Regular", courier;
+
+}
+
+.det-card-text {
+	font-size:20px;
+	color:#3A4454;
+	padding: 0 !important;
+}
+
+.det-text-head {
+	font-size:20px; 
+	color:#54616d; 
+	text-transform:uppercase;
+	font-weight:bold; 
+	padding-top:10px;
+}
+
+.det-headergrande {
+	font-size:30px; 
+	color:#FFF; 
+	text-transform:initial; 
+	margin-bottom: 50px;
+
+}
+
+.det-card {
+	position: relative;
+    z-index: 100;
+    width: 90%;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin: 0 auto;
+    top: -35px;
+
+}
+
+.det-btn {
+	background: #007953 ;
+	color: #ffffff;
+	width: 100%;
+	height:40px; 
+	border-radius: 5px;
+	font-size: 14.67px;
+}
