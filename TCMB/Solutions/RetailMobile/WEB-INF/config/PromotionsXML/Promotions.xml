@@ -1,0 +1,66 @@
+<BanescoPromotionsCatalog>
+	<Promotion>
+		<PromotionName>General1</PromotionName>
+		<DashboardHeading>Promotion for every body</DashboardHeading>
+		<DashboardLink>Click Here 1</DashboardLink>
+		<PromotionTitle>Title 1</PromotionTitle>
+		<PromotionDescription>Description General 1</PromotionDescription>
+		<PromotionSubtitle>Subtitle General 1</PromotionSubtitle>
+		<PromotionDetails1>
+		   <Item1>Prom1.Item1</Item1>
+		   <Item2>Prom1.Item2</Item2>
+		   <Item3>Prom1.Item3</Item3>
+		   <Item4>Prom1.Item4</Item4>
+		   <Item5>Prom1.Item5</Item5>
+		   <Item6>Prom1.Item6</Item6>
+		   <Item7>Prom1.Item7</Item7>
+		   <Item8>Prom1.Item8</Item8>
+		   <Item9>Prom1.Item9</Item9>
+		   <Item10>Prom1.Item10</Item10>
+		</PromotionDetails1>
+		<PromotionDetails2>
+		   <Item1>Prom2.Item1</Item1>
+		   <Item2>Prom2.Item2</Item2>
+		   <Item3>Prom2.Item3</Item3>
+		   <Item4>Prom2.Item4</Item4>
+		   <Item5>Prom2.Item5</Item5>
+		   <Item6>Prom2.Item6</Item6>
+		   <Item7>Prom2.Item7</Item7>
+		   <Item8>Prom2.Item8</Item8>
+		   <Item9>Prom2.Item9</Item9>
+		   <Item10>Prom2.Item10</Item10>
+		</PromotionDetails2>
+	</Promotion>
+	<Promotion>
+		<PromotionName>General2</PromotionName>
+		<DashboardHeading>Promotion for somebody</DashboardHeading>
+		<DashboardLink>Click Here 2</DashboardLink>
+		<PromotionTitle>Title 2</PromotionTitle>
+		<PromotionDescription>Description General 2</PromotionDescription>
+		<PromotionSubtitle>Subtitle General 2</PromotionSubtitle>
+		<PromotionDetails1>
+		   <Item1>Prom1.Item1</Item1>
+		   <Item2>Prom1.Item2</Item2>
+		   <Item3>Prom1.Item3</Item3>
+		   <Item4>Prom1.Item4</Item4>
+		   <Item5>Prom1.Item5</Item5>
+		   <Item6>Prom1.Item6</Item6>
+		   <Item7>Prom1.Item7</Item7>
+		   <Item8>Prom1.Item8</Item8>
+		   <Item9>Prom1.Item9</Item9>
+		   <Item10>Prom1.Item10</Item10>
+		</PromotionDetails1>
+		<PromotionDetails2>
+		   <Item1>Prom2.Item1</Item1>
+		   <Item2>Prom2.Item2</Item2>
+		   <Item3>Prom2.Item3</Item3>
+		   <Item4>Prom2.Item4</Item4>
+		   <Item5>Prom2.Item5</Item5>
+		   <Item6>Prom2.Item6</Item6>
+		   <Item7>Prom2.Item7</Item7>
+		   <Item8>Prom2.Item8</Item8>
+		   <Item9>Prom2.Item9</Item9>
+		   <Item10>Prom2.Item10</Item10>
+		</PromotionDetails2>
+	</Promotion>
+</BanescoPromotionsCatalog>
