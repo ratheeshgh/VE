@@ -1707,4 +1707,115 @@
                 />
         </custom>
     </widget>
+    <widget
+        name="BanescoBranches"
+        type="Item:"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/BanescoBranches/BanescoBranchesList.wgt"
+            />
+        <template
+            type="header"
+            value="./templates/widgets/BanescoBranches/BanescoBranches_header.wgt"
+            />
+        <custom>
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="onRowClickFn"
+                prompt="Function to call when row is clicked"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="rowStyle"
+                prompt="Row Style"
+                tab="Appearance"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="rowTitleStyle"
+                prompt="Row Title Style"
+                tab="Appearance"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="rowSubtitleStyle"
+                prompt="Row Subtitle Style"
+                tab="Appearance"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="rowDistanceStyle"
+                prompt="Row Distance Text Style"
+                tab="Appearance"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="listStyle"
+                prompt="List Style"
+                tab="Appearance"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="querySearchText"
+                prompt="Text for query Search "
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="typeOfSearch"
+                prompt="Type of search"
+                type="javax.swing.JComboBox"
+                typeValue="bank^Branches|atm^ATM"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="locateSearchResultInMap"
+                prompt="Put markers on search results"
+                type="javax.swing.JCheckBox"
+                usage="7"
+                />
+        </custom>
+    </widget>
+    <widget
+        name="BanescoBranchesMap"
+        type="Item:"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/BanescoBranches/BanescoBranchesMap.wgt"
+            />
+    </widget>
 </widgets>

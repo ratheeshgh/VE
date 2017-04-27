@@ -1,0 +1,97 @@
+<script>
+    $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        var widgetArgs = {
+            searchConfig: {
+                query: $%IF ITEM.querySearchText != ''$ '$$ITEM.querySearchText$' $%ELSE$ '' $%ENDIF$,
+                type: $%IF ITEM.typeOfSearch != ''$ ['$$ITEM.typeOfSearch$'] $%ELSE$ ['store'] $%ENDIF$,
+                locateInMap: $%IF ITEM.locateSearchResultInMap == 'Y'$ true $%ELSE$ false $%ENDIF$
+            },
+            calculateDistanceConfig: {}
+        }
+
+        function onDeviceReady() {
+            var onSuccess = function (position) {
+
+                var banescoMap, myLocation;
+                var BanescoMap = window.com.widgets.BanescoMap;
+
+                myLocation = {
+                	lat: position.coords.latitude,
+                	lng: position.coords.longitude
+                };
+
+                banescoMap = BanescoMap.init(document.getElementById('mapHolder'), myLocation);
+
+                banescoMap.search(widgetArgs.searchConfig, onSearchCallback)
+
+                var destinations;
+
+                function onSearchCallback(results) {
+
+                    banescoMap.calculateDistance(widgetArgs.calculateDistanceConfig, function (branchesList) {
+                        createBranchesList(branchesList);
+                    })
+                }
+
+                function createBranchesList(branches) {
+                    var $branchesList = $('#branchesList')
+                    branches.forEach(function (item) {
+                        var newRow = buildBranchRow(item)
+                        newRow.on('click', function () {
+                            $%IF ITEM.onRowClickFn != ''$
+                                ($$ITEM.onRowClickFn$)()
+                            $%ENDIF$
+                            banescoMap.refreshMap()
+                            banescoMap.renderRouteTo(item.place)
+                        })
+                        $branchesList.append(newRow)
+                    });
+                    $('#mapLoadingText').remove()
+                }
+
+                function buildBranchRow(branch) {
+                    console.log(branch)
+                    var newRow = $(
+                        '<div '+
+                            '$%IF ITEM.Styles().rowStyle != ''$class="$$ITEM.Styles().rowStyle$"$%ENDIF$'+
+                            '$%IF ITEM.INLINE_STYLES().rowStyle != ''$style="$$ITEM.INLINE_STYLES().rowStyle$"$%ENDIF$'+'>'+
+                                '<p '+
+                                    '$%IF ITEM.Styles().rowTitleStyle != ''$class="$$ITEM.Styles().rowTitleStyle$"$%ENDIF$'+
+                                    '$%IF ITEM.INLINE_STYLES().rowTitleStyle != ''$style="$$ITEM.INLINE_STYLES().rowTitleStyle$"$%ENDIF$'+'>' + 
+                                        '<span>'+
+                                            branch.place.name +
+                                        '</span>'+
+                                        '<span ' + 
+                                            '$%IF ITEM.Styles().rowDistanceStyle != ''$class="$$ITEM.Styles().rowDistanceStyle$"$%ENDIF$'+
+                                            '$%IF ITEM.INLINE_STYLES().rowDistanceStyle != ''$style="$$ITEM.INLINE_STYLES().rowDistanceStyle$"$%ENDIF$'+'>'+
+                                            branch.distance.distance.text + 
+                                        '</span>'+
+                                '</p>'+
+                                '<p ' +
+                                    '$%IF ITEM.Styles().rowSubtitleStyle != ''$class="$$ITEM.Styles().rowSubtitleStyle$"$%ENDIF$'+
+                                    '$%IF ITEM.INLINE_STYLES().rowSubtitleStyle != ''$style="$$ITEM.INLINE_STYLES().rowSubtitleStyle$"$%ENDIF$'+'>'+
+                                        branch.place.formatted_address +
+                                '</p>'+
+                            '</div>')
+                    return newRow
+                }
+
+            }
+
+            navigator.geolocation.getCurrentPosition(onSuccess, function onError(error) {
+                alert("Ocurrió un error");
+            });
+
+            onSuccess()
+        }
+        onDeviceReady()
+    })
+</script>
+
+<div 
+    id="branchesList"
+    $%IF ITEM.Styles().listStyle != ''$class="$$ITEM.Styles().listStyle$"$%ENDIF$
+    $%IF ITEM.INLINE_STYLES().listStyle != ''$style="$$ITEM.INLINE_STYLES().listStyle$"$%ENDIF$>
+</div>
