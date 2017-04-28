@@ -30,3 +30,12 @@
             usage="7" />
     </custom>
 </widget>
+<widget
+        name="BanescoBranchesMap"
+        type="Item:"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/BanescoBranches/BanescoBranchesMap.wgt"
+            />
+    </widget>

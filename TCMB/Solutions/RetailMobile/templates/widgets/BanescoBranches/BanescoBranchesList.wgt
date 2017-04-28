@@ -21,7 +21,6 @@
 
         function onDeviceReady() {
             var onSuccess = function (position) {
-                console.log('mati gato')
 
                 var banescoMap, myLocation;
                 var BanescoMap = window.com.widgets.BanescoMap;
