@@ -39,7 +39,8 @@ $$ITEM.EC_GENERATE()$
         <ul style="$$ITEM.INLINE_STYLES().SelectStyle$" class="hide">
             $%FOREACH LISTITEM IN DATAITEM$
 
-            <li value="$$ITEM.DATAITEM().LISTITEM().KEY()$" class="$$ITEM.STYLES().OptionStyle$" style="$$ITEM.INLINE_STYLES().OptionStyle$">
+            <li class="$$ITEM.STYLES().OptionStyle$" style="$$ITEM.INLINE_STYLES().OptionStyle$">
+                <span class="value" style="display:none;">$$ITEM.DATAITEM().LISTITEM().KEY()$</span>
                 <p>$$ITEM.DATAITEM().LISTITEM().VALUE()$</p>
             </li>
 
@@ -100,7 +101,7 @@ $$ITEM.EC_GENERATE()$
 
               var $currentTarget = $(e.currentTarget),
                   currVal = $currentTarget.find('p').html(),
-                  currKey = $currentTarget.val();
+                  currKey = $currentTarget.find('span.value').html();
 
               var currentSelected = {
                   value: currVal,
