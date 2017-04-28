@@ -89,7 +89,6 @@
             }
 
             var mergedConfig = Object.assign({}, defaultConfig, config);
-            console.log(mergedConfig)
 
             var service = new google.maps.DistanceMatrixService();
             service.getDistanceMatrix(mergedConfig, function distanceMatrixResponse(response, status) {
@@ -100,6 +99,9 @@
                         distance: response.rows[0].elements[j]
                     })
                 }
+                placeDistanceList.sort(function (a, b) {
+                    return a.distance.distance.value > b.distance.distance.value ? 1 : -1
+                })
                 successCalback(placeDistanceList)
             });
         }

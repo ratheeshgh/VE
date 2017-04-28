@@ -8,18 +8,30 @@
                 type: $%IF ITEM.typeOfSearch != ''$ ['$$ITEM.typeOfSearch$'] $%ELSE$ ['store'] $%ENDIF$,
                 locateInMap: $%IF ITEM.locateSearchResultInMap == 'Y'$ true $%ELSE$ false $%ENDIF$
             },
-            calculateDistanceConfig: {}
+            calculateDistanceConfig: {},
+            testOnBrowser: $%IF ITEM.testOnBrowser == 'Y'$ true $%ELSE$ false$%ENDIF$,
+            useLocationMock: $%IF ITEM.locationMock == 'Y'$ true $%ELSE$ false $%ENDIF$,
+            locationMock: {
+                coords: {
+                    latitude: $%IF ITEM.locationMock == 'Y'$ $$ITEM.locationMockLat$ $%ELSE$ 0 $%ENDIF$,
+                    longitude: $%IF ITEM.locationMock == 'Y'$ $$ITEM.locationMockLng$ $%ELSE$ 0 $%ENDIF$
+                }
+            }
         }
 
         function onDeviceReady() {
             var onSuccess = function (position) {
+                console.log('mati gato')
 
                 var banescoMap, myLocation;
                 var BanescoMap = window.com.widgets.BanescoMap;
 
+                var _position = widgetArgs.useLocationMock ? widgetArgs.locationMock : position;
+                console.log(_position)
+
                 myLocation = {
-                	lat: position.coords.latitude,
-                	lng: position.coords.longitude
+                	lat: _position.coords.latitude,
+                	lng: _position.coords.longitude
                 };
 
                 banescoMap = BanescoMap.init(document.getElementById('mapHolder'), myLocation);
@@ -81,12 +93,13 @@
             }
 
             navigator.geolocation.getCurrentPosition(onSuccess, function onError(error) {
-                alert("Ocurrió un error");
+               alert("Ocurrió un error");
             });
-
-            onSuccess()
         }
-        onDeviceReady()
+
+        if (widgetArgs.testOnBrowser) {
+            onDeviceReady()
+        }
     })
 </script>
 

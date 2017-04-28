@@ -20,5 +20,13 @@
             typeValue="bank^Branches|atm^ATM" usage="7" />
         <item includeInDesign="Always" layout="-1" mand="false" name="locateSearchResultInMap" prompt="Put markers on search results"
             type="javax.swing.JCheckBox" usage="7" />
+        <item includeInDesign="Always" layout="-1" mand="false" name="testOnBrowser" prompt="Test on browser?" type="javax.swing.JCheckBox"
+            usage="7" />
+        <item includeInDesign="Always" layout="-1" mand="false" name="locationMock" prompt="Use location mock?" type="javax.swing.JCheckBox"
+            usage="7" />
+        <item includeInDesign="Always" layout="-1" mand="false" name="locationMockLat" prompt="Location Mock Latitude" type="javax.swing.JTextField"
+            usage="7" />
+        <item includeInDesign="Always" layout="-1" mand="false" name="locationMockLng" prompt="Location Mock Longitude" type="javax.swing.JTextField"
+            usage="7" />
     </custom>
 </widget>
