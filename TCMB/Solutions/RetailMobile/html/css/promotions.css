@@ -1,0 +1,27 @@
+.promotions-card {
+	font-family: "Lato Regular";
+	width: 99%;
+	background: transparent;
+	margin: 0px auto;
+	margin-top: 12px;
+	border: 1.50px dashed #A5ADB4;
+	padding: 15px 15px 22px 15px;
+}
+
+		.promotions-card:first-child {
+			margin-top: 6px;
+		}
+
+.promotions-image {
+	margin-bottom: 15px;
+}
+
+.promotions-description, .promotions-link {
+	font-size: 13px;
+  color: #3a4454;
+}
+
+.promotions-link {
+	text-decoration: underline !important;
+	font-weight: bold;
+}
