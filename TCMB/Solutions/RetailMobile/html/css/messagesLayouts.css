@@ -41,3 +41,35 @@
     width: 100%;
     text-align: center;
   }
+
+  /* Icons */
+
+  .msg-icon-error, .msg-icon-ok {
+    font-family: "Banesco";
+    position: absolute;
+    line-height: 100%;
+    float:none;
+  }
+
+  .msg-icon-error:before {
+    content: "\E90A";
+    color: #e31d19;
+  }
+
+  .msg-icon-ok:before {
+    content: "\E908";
+    color: #007953;
+  }
+
+  .msg-error, .msg-success {
+    float:none;
+    font-size: 15.33px;
+  }
+
+  .msg-error {
+    color: #e31d19;
+  }
+
+  .msg-success {
+    color: #007953;
+  }
