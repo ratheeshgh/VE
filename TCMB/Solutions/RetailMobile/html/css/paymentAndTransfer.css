@@ -44,3 +44,27 @@
 {
     border-radius: 5px;
 }
+
+.ROW_paymentTDC {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.QUE_paymentTDC label{
+  font-size:12px !important;
+  margin-top: 12px;
+  color: #54616d
+}
+
+.ANS_paymentTDC_confirm {
+  margin-top: 12px;
+  color: #3a4454
+}
+
+.title_paymentTDC_confirm {
+    color: #3a4454;
+}
+
+.frec-body-text-dd , .frec-body-text-dd label {
+     font-size: 13.33px;
+     color: #708090;
