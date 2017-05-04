@@ -62,9 +62,31 @@
 }
 
 .title_paymentTDC_confirm {
-    color: #3a4454;
+  color: #3a4454;
 }
 
 .frec-body-text-dd , .frec-body-text-dd label {
-     font-size: 13.33px;
-     color: #708090;
+  font-size: 13.33px;
+  color: #708090;
+}
+
+.card-directory {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: initial;
+}
+
+.card-row {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-answer {
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
