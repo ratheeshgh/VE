@@ -71,14 +71,12 @@
 }
 
 .card-directory {
-  box-shadow: 0px 4px 5px #DCE1E9;
   position: relative;
   border: 1px solid #DCE1E9;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  width: initial;
   background: #EBF0F5
 }
 
