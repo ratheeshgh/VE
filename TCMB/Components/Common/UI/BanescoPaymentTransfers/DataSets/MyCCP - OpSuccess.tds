@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot
+  DSAttrsNewLine="Y"
+  DSOmitXMLDecl="N"
+  DSPrettyPrint="Y"
+  DS_UID="0"
+  >
+    <!---->
+    <ConfirmPayment
+    CreditCardNumber="132155145"
+    DS_REF_DATAGROUP_ATTRIBUTE_NAME="CreditCardPaymentsVNZ[1].ConfirmPayment[1]"
+    DS_UID="-1"
+    Date="10/04/2017"
+    DebitAccount="54545"
+    PaymentAmount="3216"
+    ReferenceNo="2151"
+    />
+</DataSetRoot>
