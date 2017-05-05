@@ -1736,6 +1736,28 @@ div.ReplyQuestionContainer label {font-size:14px; white-space: nowrap;}
 /* REVIEW PAYMENT*/
 .PaymentConfirmationContainer{background: #266da5;font-size: 18px;padding-left: 20px;padding-top: 3px;padding-bottom: 3px;padding-right: 20px;}
 
+/* PAYMENT OPERATION SUCCESS CONTAINER */
+
+.OperationSuccessContainer {
+  width:90%;
+  margin:auto;
+  padding: 25px 6px;
+  border-top: 3px solid #e9f3f6;
+}
+
+.OperationSuccessContainer label {
+  font-family: "Lato Medium";
+  font-size: 12px;
+  color: #54616d;
+}
+
+.OperationSuccessContainer span {
+  font-size: 13.33px;
+  font-weight: bold;
+  color: #3a4454;
+  margin-bottom: 5px;
+}
+
 /*EXCHANGE RATE*/
 .RadioCheck  input[type="radio"]{display:none;}
 .RadioCheck  input[type="radio"]+label{

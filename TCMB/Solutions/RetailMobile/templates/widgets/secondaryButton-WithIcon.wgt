@@ -1,0 +1,28 @@
+<button class="btn btn-primary-bordered secondBtnImg secondBtnImg--is-primary font-regular" type="button" name="button" onclick="$$ITEM.NAVIGATION()$">
+  <i id="icon"class="$$ITEM.icon$"></i>
+  $$ITEM.ActionCommand$
+</button>
+
+<style type="text/css">
+
+  .secondBtnImg {
+    width: 100%;
+  }
+
+  .secondBtnImg--is-primary {
+    border: 1px solid #dce1e9;
+    background-color: #f4f8f9;
+    color: #3a4454;
+    font-size: 14px;
+  }
+
+  .secondBtnImg--is-primary:focus {
+    outline: none;
+  }
+
+  #icon {
+    margin-right: 5px;
+  }
+
+</style>
+
