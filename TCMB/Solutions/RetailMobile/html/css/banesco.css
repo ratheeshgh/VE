@@ -1320,7 +1320,9 @@ input[type="checkbox"]:checked  {
 .BtnFindUs:hover,
 .BtnFindUs:focus{color:#fff !important;}
 
-.BtnContactUs:before {padding:0px 15px 20px 10px;content: "\E903";display: block;font-size: 20px; line-height:20px;}
+.BtnContactUs:before,
+.BtnFindUs:before {display: block;font-size: 20px; line-height:60px;text-align: center;}
+.BtnContactUs:before {content: "\E903";}
 .BtnFindUs:before {content: "\E938";display: block;font-size: 20px; line-height:60px;text-align: center;}
 
 /*Changes for the Contact Us*/
@@ -1750,7 +1752,7 @@ div.ReplyQuestionContainer label {font-size:14px; white-space: nowrap;}
 }
 
 .OperationSuccessContainer span {
-  font-size: 13.33px;
+  font-size: 15.33px;
   font-weight: bold;
   color: #3a4454;
   margin-bottom: 5px;
