@@ -1,0 +1,48 @@
+
+<style>
+
+	.banesco_checkbox {
+		display: none !important;
+	}
+
+	.banesco_checkbox + label {
+		font-family: 'Banesco'
+	}
+
+	.banesco_checkbox + label::before {
+		content: '';
+		width: 15px;
+		height: 15px;
+		border: 1px solid #A5ADB4;
+		display: block;
+		border-radius: 2px;
+	}
+
+	.banesco_checkbox:checked + label::before {
+		    content: '✓';
+		    font-size: 10px;
+		    line-height: 12px;
+		    color: #FFF;
+		    text-align: center !important;
+		    background: #2B5F8C;
+		    border: 1px solid #2B5F8C;
+	}
+</style>
+<div id="$$ITEM.ID()$" class="$$ITEM.STYLES().SectionStyle$" style="display: inline-block; $$ITEM.INLINE_STYLES().SectionStyle$">
+	$$FORMCONTENT$
+</div>
+<script type="text/javascript">
+	$(function() {
+		var $this = $('#$$ITEM.ID()$');
+
+		var $checkbox = $this.find("input[type='checkbox']");
+		$checkbox.addClass('banesco_checkbox')
+		console.log($checkbox)
+		var $label = $('<label for="' + $checkbox.attr('id') + '"></label>');
+		$checkbox.parent().append($label)
+
+		$checkbox.on('click', function () {
+			$checkbox.toggleClass('active', $checkbox.is(':checked'))
+		})
+	})
+</script>

@@ -1875,4 +1875,22 @@
                 />
         </custom>
     </widget>
+    <widget
+        name="inputNumber"
+        type="Text"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/numberInput.wgt"
+            />
+    </widget>
+    <widget
+        name="banescoCbx"
+        type="Section"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/banescoCheckbox.wgt"
+            />
+    </widget>
 </widgets>

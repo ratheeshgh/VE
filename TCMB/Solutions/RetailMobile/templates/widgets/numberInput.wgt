@@ -1,0 +1,4 @@
+$$ITEM.EC_GENERATE()$
+<script type="text/javascript">
+	$('#$$ITEM.ID()$').attr('type','number');
+</script>

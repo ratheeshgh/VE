@@ -14,6 +14,10 @@
 			margin-top: 6px;
 		}
 
+    .promotions-card:last-child {
+			margin-bottom: 25px;
+		}
+
 .promotions-image {
 	margin-bottom: 15px;
 }
