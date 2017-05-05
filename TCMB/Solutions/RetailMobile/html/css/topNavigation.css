@@ -12,9 +12,10 @@
 
  .sidebarHeader {
   height: 120px;
-  padding: 36px 17px 23px 15px;
+  padding: 15px 17px;
   font-family: "Lato Regular";
   margin-bottom: 15px;
+  position: relative;
 }
 
  .backgroundGradient {
