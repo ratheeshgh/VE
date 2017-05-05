@@ -1854,4 +1854,25 @@
             value="./templates/widgets/BanescoBranches/BanescoBranchesMap.wgt"
             />
     </widget>
+    <widget
+        displayName="Secondary Button With Icon"
+        name="Secondary Button With Icon"
+        type="Button"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/secondaryButton-WithIcon.wgt"
+            />
+        <custom>
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="icon"
+                prompt="Icon Class"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+        </custom>
+    </widget>
 </widgets>

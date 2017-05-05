@@ -1,0 +1,62 @@
+/* Promotions Card */
+
+.promotions-card {
+	font-family: "Lato Regular";
+	width: 99%;
+	background: transparent;
+	margin: 0px auto;
+	margin-top: 12px;
+	border: 1.50px dashed #A5ADB4;
+	padding: 15px 15px 22px 15px;
+}
+
+		.promotions-card:first-child {
+			margin-top: 6px;
+		}
+
+    .promotions-card:last-child {
+			margin-bottom: 25px;
+		}
+
+.promotions-image {
+	margin-bottom: 15px;
+}
+
+.promotions-description, .promotions-link {
+	font-size: 13px;
+  color: #3a4454;
+}
+
+.promotions-link {
+	text-decoration: underline !important;
+	font-weight: bold;
+}
+
+/* Promotions Details */
+
+.promotions-title {
+  font-size: 15.33px;
+  font-weight: bold;
+  color: #3a4454;
+}
+
+.promotions-subtitle {
+  font-size: 13.33px;
+  font-weight: bold;
+}
+
+.promotions-details {
+  background: transparent;
+  margin-top: 10px;
+}
+
+    .promotions-details span {
+      font-size: 14px;
+    }
+
+.promotions-details-card {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 11px 11px;
+}

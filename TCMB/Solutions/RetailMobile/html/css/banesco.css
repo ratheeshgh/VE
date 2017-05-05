@@ -1320,7 +1320,9 @@ input[type="checkbox"]:checked  {
 .BtnFindUs:hover,
 .BtnFindUs:focus{color:#fff !important;}
 
-.BtnContactUs:before {padding:0px 15px 20px 10px;content: "\E903";display: block;font-size: 20px; line-height:20px;}
+.BtnContactUs:before,
+.BtnFindUs:before {display: block;font-size: 20px; line-height:60px;text-align: center;}
+.BtnContactUs:before {content: "\E903";}
 .BtnFindUs:before {content: "\E938";display: block;font-size: 20px; line-height:60px;text-align: center;}
 
 /*Changes for the Contact Us*/
@@ -1733,6 +1735,28 @@ div.ReplyQuestionContainer label {font-size:14px; white-space: nowrap;}
 .MakePaymentCarouselTextStyling{color:#FFF; font-size:11px; text-align:center;}
 /* REVIEW PAYMENT*/
 .PaymentConfirmationContainer{background: #266da5;font-size: 18px;padding-left: 20px;padding-top: 3px;padding-bottom: 3px;padding-right: 20px;}
+
+/* PAYMENT OPERATION SUCCESS CONTAINER */
+
+.OperationSuccessContainer {
+  width:90%;
+  margin:auto;
+  padding: 25px 6px;
+  border-top: 3px solid #e9f3f6;
+}
+
+.OperationSuccessContainer label {
+  font-family: "Lato Medium";
+  font-size: 12px;
+  color: #54616d;
+}
+
+.OperationSuccessContainer span {
+  font-size: 15.33px;
+  font-weight: bold;
+  color: #3a4454;
+  margin-bottom: 5px;
+}
 
 /*EXCHANGE RATE*/
 .RadioCheck  input[type="radio"]{display:none;}
