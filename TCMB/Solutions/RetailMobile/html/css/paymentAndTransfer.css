@@ -44,3 +44,110 @@
 {
     border-radius: 5px;
 }
+
+.ROW_paymentTDC {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.QUE_paymentTDC label{
+  font-size:12px !important;
+  margin-top: 12px;
+  color: #54616d
+}
+
+.ANS_paymentTDC_confirm {
+  margin-top: 12px;
+  color: #3a4454
+}
+
+.title_paymentTDC_confirm {
+  color: #3a4454;
+}
+
+.row-dropdown {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top:10px;
+}
+
+.title-dropdown , .title-dropdown label {
+  color: #708090;
+  font-size: 12px;
+}
+
+.card-directory {
+  position: relative;
+  border: 1px solid #DCE1E9;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #EBF0F5
+}
+
+.card-row {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ANS_paymentTDC {
+  margin-top: -15px;
+}
+
+.radio_ANS_CONTROL {
+  margin-top: 15px;
+}
+
+.radio_ANS {
+  margin-top: -15px;
+}
+
+
+.radio_ROW {
+  margin-left: 5px;
+}
+
+.card-arrow {
+    line-height: 100%;
+    margin-top: -1.041em;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    padding: 0;
+    width: auto;
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);>
+}
+
+.right-arrow-directory {
+    font-family: 'Banesco';
+    font-size: 16px;
+}
+
+.right-arrow-directory::before {
+  content: '\E90D';
+}
+
+
+.card-answer-title {
+  font-size: 15.33px;
+  font-family: "Lato Regular";
+  color: #3a4454;
+  line-height: 1px;
+}
+
+.card-answer-subtitle {
+  font-size: 13.33px;
+  font-family: "Lato Regular";
+  color: #54616d;
+}
+
+
