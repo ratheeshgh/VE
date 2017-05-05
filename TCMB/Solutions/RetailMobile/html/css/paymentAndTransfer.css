@@ -65,9 +65,14 @@
   color: #3a4454;
 }
 
-.frec-body-text-dd , .frec-body-text-dd label {
-  font-size: 13.33px;
+.row-dropdown {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.title-dropdown , .title-dropdown label {
   color: #708090;
+  font-size: 12px;
 }
 
 .card-directory {
