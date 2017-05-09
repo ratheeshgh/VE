@@ -86,3 +86,32 @@
 	border-radius: 5px;
 	font-size: 14.67px;
 }
+
+.det-titleH1Regular {
+	font-family: "Lato Bold", courier;
+	font-size:15.33px;
+	color:#3a4454;
+}
+
+.det-titleH2Medium {
+	display: block;
+}
+
+.det-titleH2Medium label {	
+	font-family: "Lato Medium", courier;
+	font-size: 12px !important;
+	color: #54616d !important;;
+}
+
+.paddingLeftRight0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.paddingTop20 {
+	padding-top: 20px;
+}
+
+.borderBottom {
+	border-bottom: 1px solid #DCE1E9;
+}
