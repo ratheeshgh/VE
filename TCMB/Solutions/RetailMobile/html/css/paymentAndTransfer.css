@@ -123,7 +123,7 @@
     -ms-transform: rotate(180deg);
     /* IE 9 */
     -webkit-transform: rotate(180deg);
-    /* Chrome, Safari, Opera */
+    * Chrome, Safari, Opera */
     transform: rotate(180deg);>
 }
 
@@ -150,4 +150,55 @@
   color: #54616d;
 }
 
+.search_in_directory_btn {
+  border: 1px solid #A5ADB4;
+  margin: 15px 10px;
+  position: relative;
+}
 
+.search_in_directory_btn .search_directory_btn_button {
+  position: absolute;
+  opacity: 0 !important;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+}
+
+.search_in_directory_btn .icon_wrapper, .search_in_directory_btn .text_wrapper{
+  float: none;
+  padding: 10px;
+  display: inline-block;
+  height: 100%;
+}
+
+.search_in_directory_btn .text_wrapper {
+  float: none;
+  height: 100%;
+  width: 80%;
+  font-size: 15px;
+  color: #3a4454;
+  text-transform: initial;
+  position: relative;
+  top: -7px;
+}
+.search_in_directory_btn .text_wrapper .search_directory_text {
+  float: none;
+}
+
+.search_in_directory_btn .icon_wrapper {
+  float: none;
+  text-align: center;
+  width: 20%;
+  border-right: 1px solid #A5ADB4;
+}
+
+.search_in_directory_btn .search_directory_icon::before {
+  float: none;
+  content: '\E923';
+  font-family: "Banesco";
+  font-size: 25px;
+  color: #1f8C6B;
+}
