@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot
+    DSAttrsNewLine="Y"
+    DSOmitXMLDecl="N"
+    DSPrettyPrint="Y"
+    DS_UID="0"
+    >
+    <!---->
+    <ConfirmPaymentService
+        Amount="30"
+        DS_REF_DATAGROUP_ATTRIBUTE_NAME="PaymentServices[1].ConfirmPaymentService[1]"
+        DS_UID="-1"
+        PaymentService="qwerasdqr"
+        ReferenceNo="12345678"
+        />
+</DataSetRoot>
