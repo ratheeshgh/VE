@@ -186,4 +186,7 @@
   <data name="reports" xml:space="preserve">
     <value>Reports</value>
   </data>
+  <data name="app_name" xml:space="preserve">
+    <value>App name - not used required by Cordova</value>
+  </data>
 </root>

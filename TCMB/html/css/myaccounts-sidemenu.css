@@ -1,0 +1,94 @@
+.glyphicon { margin-right:10px; }
+.panel-group {margin-bottom:0px;}
+.panel-group .panel {border-radius:0px;}
+.panel-group .panel + .panel {margin-top: 0px;}
+.panel-default {
+/* border-color: #004276; */
+border:none;
+border-top: none;
+}
+table {background-color: #004276;}
+first {border-top: 1px solid #001E36;}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+border: 1px solid #229C7B;
+border-left: none;
+border-top: none;
+border-right: none;
+background: #004276;
+}
+/*.table > tbody > tr > td,*/
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tfoot > tr > td {
+border-top: 1px solid #001E36;
+font-size:12px;
+}
+
+.custom {position:relative; top:0px; margin-right:0px;}
+
+.panel-default > .panel-heading {
+  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+  background-image: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  color:#fff;
+  font-family: "Lato Regular", !important;
+  font-size:12px;
+}
+
+.panel-default > .panel-heading > .panel-title {
+  font-size:14px;
+  font-weight:none;
+  font-family: "Lato Regular";
+}
+
+
+.panel-group a {
+color: #FFF;
+text-decoration: none;
+}
+.panel-group a:hover {
+color: #DDDDDD;
+text-decoration: none;
+}
+
+.panel-default a:hover{
+	color: #229C7B !important;
+}
+.panel:hover , .panel-default a>i :hover{
+background:#EBF0F5;
+border-left:8px #229C7B solid;
+}
+
+.panel-heading:hover, .table > tbody > tr :hover{
+	background:#EBF0F5;
+}
+
+.table > tbody > tr > td > a{
+	color:#556176;
+	font-size:12.67px;
+}
+.table > tbody > tr > td{
+	background-color:#fff;
+	border:none;padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	}
+
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+
+.ALAccountCard:focus {
+	/* Firefox */
+	-moz-transform: scale(1.05);
+	/* WebKit */
+	-webkit-transform: scale(1.05);
+	/* Opera */
+	-o-transform: scale(1.05);
+	/* Standard */
+	transform: scale(1.05);
+
+	z-index: 1000;
+}

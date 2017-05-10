@@ -1,0 +1,455 @@
+body.general{padding-top: 50px;background: #FDFDFD;color:#000}
+body.myaccount{padding-top: 50px;background: #f4f4f4;color:#000}
+body.myaccount a{color:#fff; text-decoration:none;}
+body.myaccount a:hover,a:focus{-webkit-transition: all .2s linear;-moz-transition: all .2s linear;transition: all .2s linear;color:#ADADAD; text-decoration:none;}
+
+/* NAVBAR FIX BACK TO ORIGINAL */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  padding-top:0px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  margin-bottom:0px;
+  border: none;
+}
+.GMapContainerFix { 
+height: 100%;
+min-height: 100%;
+overflow: auto;
+}
+
+.form-control {
+border-radius: 0px;
+}
+.QuestionHybridFirst{background:transparent; border: 1px solid #ddd; border-left: none; border-right: none;}
+.QuestionHybrid{background:transparent; border: 1px solid #ddd; border-left: none; border-right: none;border-top:none;}
+
+/*LOGIN PAGE ANDROID ICONS */
+.findus:before{content: "\f164"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;margin-left: 7px;width: 28px;}
+.currencyexchange:before{content: "\f156"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+.tourtheapp:before{content: "\f1aa"; display:inline-block;font-size: 35px;vertical-align: middle;color:#FFF;}
+
+/* MODAL WINDOWS FIX FOR ANDROID*/
+.modal-content {border-radius:5px;background-color: rgba(249, 249, 249, 0.95);}
+
+/* ACCOUNT ICONS REPLACEMENT*/
+
+.IconLoans:before,
+.IconSmallLoans:before {content: "\f120";}
+.IconAccount:before,
+.IconSmallAccount:before {content: "\f12d";}
+.IconSavings:before,
+.IconSmallSavings:before {content: "\f1b3";}
+.IconMortgage:before,
+.IconSmallMortgage:before {content: "\f133";}
+.IconDeposits:before,
+.IconSmallDeposits:before {content: "\f141";}
+.IconCarouselSetup {height:100px;}
+
+.MailContainer:before {content: "\f168";}
+.MailContainer {font-size: 18px;margin-top: 16px;margin-right: 25px;color: #fff;}
+.MailText { position: absolute;top: 7px;right: 7px;font-family: "Roboto Bold";color: #fff;font-size: 13px;line-height: 11px;background: #CF0000;padding: 4px 6px;border-radius: 180px;border: 1px solid #fff;}
+
+.PersonalPayeeContainer {background: #F0F0F0;
+margin: 0 0 20px 0px;
+height: 40px;
+min-height: 40px;
+border: 1px solid #ddd;
+border-radius:0px;
+font-family: "Roboto Medium";
+text-align: center;
+padding-top: 9px;
+font-size: 16px;
+border-left: none;
+border-right: none;
+border-top: none;}
+
+.PersonalPayeeContainer:hover,.PersonalPayeeContainer:focus {background: #F0F0F0;
+color: #6C7074;
+border: 4px solid #6C7074;
+border-top: none;
+border-left: none;
+border-right: none;}
+
+.UtilityPayeeContainer {background: #F0F0F0;
+margin: 0 0 20px 0px;
+height: 40px;
+min-height: 40px;
+border: 1px solid #ddd;
+border-radius:0px;
+font-family: "Roboto Medium";
+text-align: center;
+padding-top: 9px;
+font-size: 16px;
+border-left: none;
+border-right: none;
+border-top: none;}
+
+.UtilityPayeeContainer:hover,.UtilityPayeeContainer:focus {background: #F0F0F0;
+color: #6C7074;
+border: 4px solid #6C7074;
+border-top: none;
+border-left: none;
+border-right: none;}
+
+.SelectorPayeeActive {color: #1167B1;
+border: 4px solid #1167B1;
+border-top: none;
+border-left: none;
+border-right: none;}
+.SelectorPayeeActive:hover,.SelectorPayeeActive:focus {background:#F0F0F0 !important; color: #1167B1;}
+
+
+select {width: 100%;
+font-family: 'Roboto Light';
+font-size: 14px;
+margin: 0;
+padding: 8px 8px 6px 8px;
+position: relative;
+cursor: text;
+display: block;
+outline: none;
+border: none;
+background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+background-size: 1px 6px, 1px 1px, 1px 6px;}
+
+select:hover, select:focus {
+	background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;
+	background-size: 1px 6px, 1px 1px, 1px 6px;	
+} 
+
+/*STYLING FOR HYBRID INPUT*/
+input.hybridinput[type='text'],input.hybridinput[type='number'],input.hybridinput[type='password'] {
+	/* You can set width to whatever you like */
+    width: 100%;
+	font-family: 'Roboto Light';
+	font-size: 16px;
+	margin: 0;
+	padding: 8px 8px 6px 8px;
+	position: relative;
+	cursor:text;
+	display: block;
+	outline: none;
+	border: none;
+	background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+	background-size: 1px 6px, 1px 1px, 1px 6px;
+}
+input.hybridinput[type='text']:hover, input.hybridinput[type='text']:focus, input.hybridinput[type='number']:hover, input.hybridinput[type='number']:focus,input.hybridinput[type='password']:hover,input.hybridinput[type='password']:focus {
+	background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;
+	background-size: 1px 6px, 1px 1px, 1px 6px;	
+} 
+
+.hybridinput_error {
+	background: bottom left linear-gradient(#ff0000, #ff0000) no-repeat, bottom center linear-gradient(#ff0000, #ff0000) repeat-x, bottom right linear-gradient(#ff0000, #ff0000) no-repeat !important;
+	background-size: 1px 6px, 1px 1px, 1px 6px !important;}
+/*END STYLING FOR HYBRID INPUT*/
+
+.StickyContainer {position: fixed;left: 0;right: 0;top: 50px;z-index: 1028;}
+.TabsRadioSectionTransactions {border-bottom: 1px solid #ddd;position: relative;left: 0;right: 0;top: 1px;z-index: 1027;box-shadow: 0 3px 3px #F3F3F3;} /* Personalized for transactions */
+.RTTable  {background:#fff; border-bottom: 1px solid #ddd;padding-top: 150px;}
+.MSTable {padding-top: 33px;}
+
+/*STYLING FOR SWITCH CHECKBOX*/
+input.toggle[type='checkbox'] {
+max-height: 0;
+max-width: 0;
+opacity: 0;
+}
+input.toggle[type='checkbox'] + label {
+display: inline-block;
+position: relative;
+background:#ddd;
+box-shadow: inset 0 0 0px 1px #d5d5d5;
+text-indent: -5000px;
+height: 30px;
+width: 70px;
+border-radius: 2px;
+}
+
+input.toggle[type='checkbox'] + label:before {
+content: "";
+position: absolute;
+display: inline-block;
+height: 30px;
+width: 40px;
+top: 0;
+left: 0;
+border-radius: 2px;
+background: rgba(19,191,17,0);
+-moz-transition: .25s ease-in-out;
+-webkit-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+input.toggle[type='checkbox'] + label:after {
+content: "OFF";
+color: #000;
+font-family: "Roboto Medium", courier;
+padding-top: 5px;
+padding-right: 8px;
+position: absolute;
+display: inline-block;
+height: 30px;
+width: 40px;
+top: 0;
+left: 0px;
+border-radius: 2px;
+background: white;
+box-shadow: inset 0 0 0px 1px #d5d5d5;
+-moz-transition: .15s ease-in-out;
+-webkit-transition: .15s ease-in-out;
+transition: .15s ease-in-out;
+}
+input.toggle[type='checkbox']:checked + label:before {
+width: 70px;
+background: #DBDBDB;
+box-shadow: inset 0 0 0px 1px #d5d5d5;
+}
+
+input.toggle[type='checkbox']:checked + label:after {
+content: "";
+color:#FFF;
+font-family: "Roboto Medium", courier;
+padding-top: 5px;
+padding-right: 10px;
+left: 30px;
+background: #1F8C6B;
+box-shadow: inset 0 0 0 1px rgba(5, 81, 162, 0.2), 0 2px 4px rgba(0,0,0,.2);
+}
+/*END OF STYLING FOR SWITCH CHECKBOX*/
+
+/*STYLING FOR STANDARD BUTTONS*/
+.btn {
+border-radius: 0px;
+}
+
+/*CAROUSEL ICONS*/
+.TransactionsButton:before {content: "\f112";display: block;font-size: 40px; line-height:40px;}
+.MakeATransferButton:before {content: "\f10b";display: block;font-size: 45px;line-height:40px;}
+.MakeAPaymentButton:before {content: "\f119";display: block;font-size: 55px;line-height: 40px;}
+.PayaBillButton:before {content: "\f182";display: block;font-size: 40px;line-height: 40px;}
+.PendingPaymentsButton:before {content: "\f12b";display: block;font-size: 47px;line-height: 40px;}
+.ManagePayeesButton:before {content: "\f14d";display: block;font-size: 38px;line-height: 40px;}
+.StandingOrdersButton:before {content: "\f1a6";display: block;font-size: 40px;line-height: 40px;}
+.DirectDebitsButton:before {content: "\f195";display: block;font-size: 40px;line-height: 40px;}
+.ChequesButton:before {content: "\f193";display: block;font-size: 40px;line-height: 40px;}
+.OverviewButton:before {content: "\f18e";display: block;font-size: 40px;line-height: 40px;}
+.ScheduleButton:before {content: "\f115";display: block;font-size: 40px;line-height: 40px;}
+
+/* TOP NAVIGATION*/
+.TopNavButtonsSectionLeft {width:50%;border-right:1px solid #f4f4f4;}
+.TopNavButtonsSectionRight {width:50%; text-align:right;}
+.TopNavButtonsSectionCenter {width:0px;display:none; text-align:center;}
+.TopNavBtnContainer {width: 100%;height: 50px;}
+
+.TopNavBtn:before { content: "\f100"; margin-right: 5px; color:#fff;}
+.TopNavBtn { display:inline-block; height:50px; padding-left:0px; padding-top:15px; padding-right:0px; padding-bottom:0px; margin-left:5px; color: transparent;width: 39px;cursor: pointer;outline: none;}
+
+.TopNavBtn:hover{color:transparent;opacity: 0.7;text-decoration: none;vertical-align: middle;outline: none;}
+.TopNavBtn:focus{color:transparent;opacity: 0.7;text-decoration: none;vertical-align: middle;outline: none;}
+
+/*.TopNavBackBtn { display:inline-block; background: url(../img/navbar/backbtnandroid.png) no-repeat 5px center; display:inline-block; height:50px; padding-left:0px; padding-top:15px; padding-right:0px; padding-bottom:0px;color: transparent;width: 45px;cursor: pointer;outline: none;}*/
+
+/*
+.TopNavEditBtn { display: inline-block;height: 50px;padding-left: 0px;padding-top: 15px;padding-right: 5px;padding-bottom: 0px;color: #FFF;width: 100%;cursor: pointer;outline: none;}
+.TopNavEditBtn:focus{color:transparent;opacity: 0.7;text-decoration: none;vertical-align: middle;outline: none;}
+
+.TopNavDoneBtn { display: inline-block;height: 50px;padding-left: 0px;padding-top: 15px;padding-right: 5px;padding-bottom: 0px;color: #FFF;width: 100%;cursor: pointer;outline: none;}
+.TopNavDoneBtn:focus{color:transparent;opacity: 0.7;text-decoration: none;vertical-align: middle;outline: none;}
+*/
+.TopShowMenuBtn {-webkit-transition: all .05s linear;-moz-transition: all .05s linear;transition: all .05s linear;background: url(../img/icons/ShowMenuAndroid.png) no-repeat center center; display:inline-block; height:50px; width:34px;margin-left: 2px; border: none; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px;color:transparent;cursor: pointer; outline: none;}
+.TopShowMenuBtn:focus {-webkit-transition: all .05s linear;-moz-transition: all .05s linear;transition: all .05s linear;background: url(../img/icons/ShowMenuAndroidHover.png) no-repeat center center; display:inline-block; height:50px; width:34px; margin-left: 0px; border: none;padding-left:4px; padding-top:4px; padding-right:4px; padding-bottom:4px;color:transparent;cursor: pointer; outline: none;}
+
+
+
+.NavTitle {font-family: 'Roboto Light', courier; text-align:left; margin-left: -20px;}
+
+/* BOTTOM NAVIGATION*/
+.BottomNavSectionLeft {width:50%;border-right:1px solid #f4f4f4;height:50px;}
+.BottomNavSectionRight {width:50%; text-align:right;height:50px;}
+.BottomNavFullSection {width:100%;} /*This is full section in both iOS & Android*/
+
+/* BOTTOM RIGHT SECTION. For these an AndroidIcon has to be set below!*/
+.BottomNavContinueBtn,
+.BottomNavSubmitBtn,
+.BottomNavTransferBtn,
+.BottomNavDoneBtn,
+.BottomNavConfirmBtn {
+position:initial;
+display: inline-block;
+height: 50px;
+padding-left: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+color: #fff;
+width: 100%;
+font-size: 18px;
+line-height: 50px;
+cursor: pointer;
+text-transform: uppercase;
+text-align: center;}
+
+/* BOTTOM LEFT SECTION. For these an .tcmb-<name>-bottomios icon has to be set below!*/
+.BottomNavDeleteBtn,
+.BottomNavCancelBtn,
+.BottomNavScheduleBtn,
+.BottomNavAnotherTransferBtn,
+.BottomNavAnotherPaymentBtn,
+.BottomNavEditScheduleBtn,
+.BottomNavPayNowBtn{
+background:none;
+position:initial;
+display: inline-block;
+height: 50px;
+padding-left: 0px;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+color: #fff;
+width: 100%;
+font-size: 18px;
+line-height: 50px;
+cursor: pointer;
+text-transform: uppercase;
+text-align: center;}
+
+.BottomNavBtn{
+background:none;
+position:initial;
+display: inline-block;
+height: 50px;
+padding: 0px;
+color: #fff;
+width: 100%;
+font-size: 18px;
+line-height: 50px;
+cursor: pointer;
+text-transform: uppercase;
+text-align: center;}
+
+/* BOTTOM NAV NAMING FOR COMMON BEHAVIOR IN IOS & ANDROID - MUST BE USED WITHOUT ANY OTHER CONTAINER. POSITION TOP RIGHT CORNER*/
+.BottomNavCreateBtn,
+.BottomNavSendBtn,
+.BottomNavFilterBtn,
+.BottomNavReplyBtn
+{display: inline-block; position: fixed;font-family:"Roboto Light"; top: 0px;right: 5px;height: 50px;line-height: 50px;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;color: #FFF;cursor: pointer;font-size: 18px;outline:none;z-index:1033;}
+
+.CommonBtn {display: inline-block; position: fixed;font-family:"Roboto Light"; top: 0px;right: 40px !important;height: 50px;line-height: 50px;padding-left: 0px;padding-top: 0px;padding-right: 0px;padding-bottom: 0px;color: #FFF;cursor: pointer;font-size: 18px;outline:none;z-index:1033;}
+
+.BottomNavCreateBtn:hover,
+.BottomNavReplyBtn:hover,
+.BottomNavDeleteBtn:hover,
+.BottomNavCancelBtn:hover,
+.BottomNavScheduleBtn:hover,
+.BottomNavAnotherTransferBtn:hover,
+.BottomNavAnotherPaymentBtn:hover,
+.BottomNavEditScheduleBtn:hover,
+.BottomNavContinueBtn:hover,
+.BottomNavSubmitBtn:hover,
+.BottomNavTransferBtn:hover,
+.BottomNavDoneBtn:hover,
+.BottomNavConfirmBtn:hover,
+.BottomNavPayNowBtn:hover {color: #fff;opacity: 0.7;text-decoration: none;vertical-align: middle;}
+
+.BottomNavCreateBtn:focus,
+.BottomNavReplyBtn:focus,
+.BottomNavDeleteBtn:focus,
+.BottomNavCancelBtn:focus,
+.BottomNavScheduleBtn:focus,
+.BottomNavAnotherTransferBtn:focus,
+.BottomNavAnotherPaymentBtn:focus,
+.BottomNavEditScheduleBtn:focus,
+.BottomNavContinueBtn:focus,
+.BottomNavSubmitBtn:focus,
+.BottomNavTransferBtn:focus,
+.BottomNavDoneBtn:focus,
+.BottomNavConfirmBtn:focus,
+.BottomNavPayNowBtn:focus {color: #fff;opacity: 0.7;text-decoration: none;vertical-align: middle;}
+
+.BottomNavBtn:hover {color: #fff;opacity: 0.7;text-decoration: none;vertical-align: middle;}
+.BottomNavBtn:focus {color: #fff;opacity: 0.7;text-decoration: none;vertical-align: middle;}
+
+/* ANDROID ICONS FOR BOTTOM NAVIGATION LEFT SECTION*/
+.tcmb-AnotherTransfer-bottomios:before { content: "\f10b"; color:#43BCF5; margin-right:3px; }
+.tcmb-AnotherPayment-bottomios:before { content: "\f119"; color:#43BCF5; margin-right:3px; font-size:18px;}
+.tcmb-EditSchedule-bottomios:before { content: "\f143"; color:#43BCF5; }
+.tcmb-Schedule-bottomios:before { content: "\f115"; color:#43BCF5; }
+.tcmb-Cancel-bottomios:before { content: "\f116"; color:#43BCF5; }
+.tcmb-Delete-bottomios:before { content: "\f116"; color:#43BCF5; }
+
+/* ANDROID ICONS FOR BOTTOM NAVIGATION RIGHT SECTION. Must be declared also in main.css*/
+.IconAndroidContinue:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+.IconAndroidSubmit:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+.IconAndroidTransfer:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+.IconAndroidDone:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+.IconAndroidConfirm:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+.IconAndroidPayNow:before { content: "\f128"; color:#43BCF5; margin-right: 0px; font-size: 20px}
+ 
+/* SETTINGS SCREEN*/
+.SSHeadingAndroidIos {display:block;font-size:20px;}
+
+
+/* CHEQUES SCREENS */
+.NewChequeIcon{background: url(../img/cheques/newchequeandroid.png) no-repeat center center;height:48px;}
+.StopChequeIcon{background: url(../img/cheques/stopchequeandroid.png) no-repeat center center;height:48px;}
+.ViewChequeIcon{background: url(../img/cheques/viewchequeandroid.png) no-repeat center center;height:48px;}
+
+/* ATM LOCATOR */
+.Icon-GetLocation:before { content: "\f13e"; font-size:36px;}
+.Icon-ATM:before { content: "\f11c"; font-size:40px;text-align: center;color: #1E4AAB;}
+.Icon-BRANCH:before { content: "\f16c"; font-size:40px;text-align: center;color: #1E4AAB;} 
+
+/*MENU ICONS */
+.BranchManageAccounts:before { content: "\f1b5"; }
+.BranchPersonalise:before { content: "\f175"; }
+.BranchMessages:before { content: "\f168";font-size: 14px;margin-right: 4px; }
+.BranchSettings:before { content: "\f199"; }
+.BranchHelp:before { content: "\f100"; }
+.BranchQuickLinks:before { content: "\f15b"; }
+.LeafSortAccounts:before { content: "\f14b"; }
+.LeafShowHideAccount:before { content: "\f1b0"; }
+.LeafActiveAccount:before { content: "\f128"; font-size:16px; }
+.LeafUpdate:before { content: "\f122"; }
+.LeafChangeAccountNames:before { content: "\f10c"; }
+.LeafChangePin:before { content: "\f10c"; }
+.LeafContactUs:before { content: "\f150"; }
+.LeafBranchLocator:before { content: "\f164"; }
+.LeafWhatsNew:before  { content: "\f16f"; }
+.LeafAbout:before { content: "\f100"; }
+.LeafTour:before { content: "\f1aa"; font-size: 20px; margin-right: -4px;}
+.LeafTerms:before { content: "\f182";}
+
+
+.ViewMoreContainer {
+background: rgba(255, 255, 255, 1);
+}
+
+.SideMenuFixedToTop{position: fixed;top: 50px;left: 0px;width: 80%;}
+
+.QuestionSection {border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+.QuestionHybrid {background: #fff; border: none;}
+.QuestionSeparator {border: none;}
+
+/*SESSION TIMEOUT CARD*/
+.SessionTimeOutContainer {border-radius:0px;}
+
+/*OFFLINE BUTTON*/
+.GetOnlineBtn {border-radius:0px;}
