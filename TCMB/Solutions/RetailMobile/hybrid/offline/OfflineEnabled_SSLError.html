@@ -16,53 +16,28 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
+	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script>
-	  <script src="./html/js/hookit.min.js"></script>
+	  <script src="./html/js/cordova/cordova_loader.js"></script> 
+	  <script src="./html/js/hookit.min.js"></script> 
 	  <script type="text/javascript">
-		var controlCss;
-		var deviceAgent = navigator.userAgent.toLowerCase();
+		var controlCss; 
+		var deviceAgent = navigator.userAgent.toLowerCase(); 
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css";
+			controlCss = "./html/css/android.css"; 
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x0a845953-d446-4d65-a945-f44d6abfd900=ea8a6aa5-4684-477c-8e2c-e872d5771f61';
+var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -135,9 +110,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
 
-	   <script src="./html/js/tcmb.js"></script>
+	   <script src="./html/js/tcmb.js"></script>	
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -153,9 +128,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x0a845953-d446-4d65-a945-f44d6abfd900" value="ea8a6aa5-4684-477c-8e2c-e872d5771f61"/></div>
+      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
       
-
+      
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -164,25 +139,29 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
                       
                       
           
-		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.SSL Error"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_E454B89CF70407F1210911" class="error" style="text-align:center; padding-top:initial;"><div style="text-align: center; " id="TXT_8302F037970D57F3296918"><!-- $Revision: 1.4 $ -->
+		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.SSL Error"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_E454B89CF70407F1210911" class="navbar navbar-inverse-transparent navbar-fixed-top"><div class="navbar-header navbar-brand" style="text-align: center; width:" id="TXT_E454B89CF70407F1210925"><!-- $Revision: 1.4 $ -->
 <!-- widget file maintained by edgeConnect - DO NOT EDIT -->
-<img src="images/modelbank/error/Piggy_01.png"  alt="Error" id="img_TXT_8302F037970D57F3296918"
-	
-	
-	
-	  width="100%" 
+<img src="html/img/logo_blue.png"  alt="Temenos" id="img_TXT_E454B89CF70407F1210925"
 	
 	
 	
 	
 	
 	
-	/></div><div id="row_HEAD_6BC0B802A85BA31275815" class="error-headergrande  "><div id="p1_HEAD_6BC0B802A85BA31275815" style="text-align: center; ; " class="ecDIB  "><div>Hemos detectado un error con su certificado SSL.</div></div></div><div id="row_HEAD_6BC0B802A85BA31275821" class="error-texto  " style="width:80%; margin-left:10%;"><div id="p1_HEAD_6BC0B802A85BA31275821" style="text-align: center; ; " class="ecDIB  "><div>Intenta reinstalando la aplicación o comunicate con el banco para más información.</div></div></div><div style="text-align: left; " id="TXT_BD31A25E20AAAAAC31990"></div></div></div></div>
+	
+	
+	
+	
+	/></div></div><div style="width: 100%"><div id="SPC_DA5068E62C87DF5A25544" style="text-align: left; width: 100%;">&nbsp;<br/>&nbsp;<br/></div></div><div id="FMT_DA5068E62C87DF5A25458" class="Padding10"><div id="FMT_DA5068E62C87DF5A25422" class="row OfflineCallout"><div class="ecDIBCol  ecDIB  col-xs-12" id="COL_DA5068E62C87DF5A25432"><div id="row_HEAD_FEC332371A9EC4C923775" class="ErrorMessage Center  "><div id="p1_HEAD_FEC332371A9EC4C923775" style="text-align: center; ; " class="ecDIB  Center"><div>We have detected a problem with your SSL certificate</div></div></div></div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"><script type="text/javascript">
+$(document).ready(function() {$('body').addClass("general");
+
+});
+</script></div><div id="SPC_DA5068E62C87DF5A25541" style="text-align: left; width: 100%;">&nbsp;<br/></div><div id="row_HEAD_DA5068E62C87DF5A25419" class="Center  "><div id="p1_HEAD_DA5068E62C87DF5A25419" style="text-align: center; ; width: 100.0%;" class="ecDIB  Size16 Medium"><div style="padding: 4px">What can you do?</div></div></div></div><div id="FMT_DA5068E62C87DF5A25472" class="PaddingLeftRight10"><div id="FMT_DA5068E62C87DF5A25473" class="row OfflineCallout"><div class="ecDIBCol  ecDIB  col-xs-12" id="COL_DA5068E62C87DF5A25483"><div id="row_HEAD_DA5068E62C87DF5A25488" class="Center  "><div id="p1_HEAD_DA5068E62C87DF5A25488" style="text-align: left; ; " class="ecDIB  Size14 Medium ColorBlue"><div>Reinstall the application</div></div></div></div></div></div><div id="FMT_DA5068E62C87DF5A25513" class="PaddingLeftRight10"><div id="FMT_DA5068E62C87DF5A25514" class="row OfflineCallout"><div class="ecDIBCol  ecDIB  col-xs-12" id="COL_DA5068E62C87DF5A25515"><div id="row_HEAD_DA5068E62C87DF5A25498" class="Center  "><div id="p1_HEAD_DA5068E62C87DF5A25498" style="text-align: left; ; " class="ecDIB  Size14 Medium ColorBlue"><div>Call your bank for further information</div></div></div></div></div></div></div></div>
 		<div id="androidfooterfix"></div>
 		    
         
       </div>
-	
+	     
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -197,7 +176,6 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
-
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -264,7 +242,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-
+	
 
 <script>
 	jQuery(document).ready(function() {
@@ -275,8 +253,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-
-
+		
+	
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -304,3 +282,6 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
+
+		  
+	

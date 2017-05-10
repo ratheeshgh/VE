@@ -16,53 +16,28 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
+	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  <link rel="stylesheet" href="./templates/widgets/carousel/css/idangerous.swiper.css">
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script>
-	  <script src="./html/js/hookit.min.js"></script>
+	  <script src="./html/js/cordova/cordova_loader.js"></script> 
+	  <script src="./html/js/hookit.min.js"></script> 
 	  <script type="text/javascript">
-		var controlCss;
-		var deviceAgent = navigator.userAgent.toLowerCase();
+		var controlCss; 
+		var deviceAgent = navigator.userAgent.toLowerCase(); 
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css";
+			controlCss = "./html/css/android.css"; 
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x0a845953-d446-4d65-a945-f44d6abfd900=ea8a6aa5-4684-477c-8e2c-e872d5771f61';
+var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -135,9 +110,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
 
-	   <script src="./html/js/tcmb.js"></script>
+	   <script src="./html/js/tcmb.js"></script>	
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -153,9 +128,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x0a845953-d446-4d65-a945-f44d6abfd900" value="ea8a6aa5-4684-477c-8e2c-e872d5771f61"/></div>
+      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
       
-
+      
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -164,7 +139,96 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
                       
                       
           
-		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.TakeATour"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_BAE38555A9D6259745123" class="navbar navbar-inverse-green navbar-fixed-top"><div class="ecDIBCol  ecDIB  TopNavSectionLeft" id="COL_BAE38555A9D6259745133"><div id="row_BUT_90709B068562F964120474" class="TopNavBtnContainer  "><div class="ecDIB  TopNavBtnContainer  " style="text-align: left; " id="p4_BUT_90709B068562F964120474"><div><a title="Back" onclick="return buttonClicked('__90709B068562F964 FormButton 8', false, null, '', false, 'BUT_90709B068562F964120474', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" id="BUT_90709B068562F964120474"><span>Back</span></a></div></div></div><div id="row_BUT_A34AD113ECB67B0820770"><div id="p1_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p2_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_A34AD113ECB67B0820770"><div><a title="Hard back" onclick="return buttonClicked('__A34AD113ECB67B08 FormButton 17', false, null, '', false, 'BUT_A34AD113ECB67B0820770', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" id="BUT_A34AD113ECB67B0820770"><span>Hard back</span></a></div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E205553"><div id="p1_HEAD_0645D21B37B8E82E205553" class="ecDIB  NavTitle"><div>Take a Tour</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div id="row_HEAD_FA90B5626FC0ED4548177"><div id="p1_HEAD_FA90B5626FC0ED4548177" style="text-align: center; ; width: 100.0%;" class="ecDIB  ColorGray Size14"><div style="padding: 4px">Swipe Left or Right on the virtual phone screen</div></div></div><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E181680"><style>body{color:#fff;padding:0;margin:0;font-size:13px;}.swiper-container{width:230px;height:320px;background:#000;-webkit-perspective:1200px;-moz-perspective:1200px;-ms-perspective:1200px;perspective:1200px;border-radius:3px;}.swiper-wrapper,.swiper-slide{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;}.swiper-slide{position:relative;}.title{line-height:320px;text-align:center;font-weight:100;color:#fff;background:#0C599A;}.title span{font-size:60px;line-height:70px;display:inline-block;vertical-align:middle;}.mediumtitle{line-height:320px;text-align:center;font-weight:100;color:#fff;background:#0C599A;}.mediumtitle span{font-size:48px;line-height:50px;display:inline-block;vertical-align:middle;}.inner{padding:20px;font-size:12px;font-weight:300;color:#fff;background:#0C599A;}.caption{font-size:24px;font-weight:100;position:absolute;left:0;bottom:0;width:100%;text-align:center;background:rgba(0,0,0,0.5);padding:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#fff;}.device{padding:30px 10px;background:#222;margin:10px auto;width:260px;border-radius:20px;border:4px solid #fff;box-shadow:0px 0px 10px rgba(0,0,0,0.5);}</style>
+		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.TakeATour"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_BAE38555A9D6259745123" class="navbar navbar-inverse-green navbar-fixed-top"><div class="ecDIBCol  ecDIB  TopNavSectionLeft" id="COL_BAE38555A9D6259745133"><div id="row_BUT_90709B068562F964120474" class="TopNavBtnContainer  "><div class="ecDIB  TopNavBtnContainer  " style="text-align: left; " id="p4_BUT_90709B068562F964120474"><div><!-- $Revision: 1.1 $ -->
+<a onclick="return buttonClicked('__90709B068562F964 FormButton 8', false, null, '', false, 'BUT_90709B068562F964120474', true, false, '', true, true, 'preInPhase');" type="button" class="TopNavBtn" style="" id="BUT_90709B068562F964120474"></a>
+<script type = "text/javascript" charset="utf-8">
+    document.getElementById("BUT_90709B068562F964120474").onclick = null;             
+    document.getElementById("BUT_90709B068562F964120474")
+            .addEventListener('click', function(e) {                    
+            	var isOnline = typeof Connection === 'undefined'?true:Connection.NONE != navigator.connection.type;
+				if (isOnline) {
+					
+					return buttonClicked('__90709B068562F964 FormButton 8', false, null, '', false, 'BUT_90709B068562F964120474', true, false, '', true, true, 'preInPhase');            
+				} else {
+					
+					var offlineDestination = "OfflineEnabled.Offline";
+					var replaceAllFunc = function (str, find, replace) {
+						return str.split(find).join(replace);
+					};
+					
+					offlineDestination = replaceAllFunc(offlineDestination, " ", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+					offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+					var languageMapAlias = "";
+					if (/\S/.test(languageMapAlias)) {
+						
+						offlineDestination = offlineDestination + "_" + languageMapAlias;
+					} 	
+					offlineDestination = offlineDestination + ".html";
+					
+					window.location.href = offlineDestination;
+				};
+      }, false);
+</script></div></div></div><div id="row_BUT_A34AD113ECB67B0820770"><div id="p1_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p2_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_A34AD113ECB67B0820770" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_A34AD113ECB67B0820770"><div><!-- $Revision: 1.0 $ -->
+ 
+
+<script type = "text/javascript" charset="utf-8">
+window.onunload = function() {document.removeEventListener("backbutton", backbutton_BUT_A34AD113ECB67B0820770_callback, false)};
+function navigationHandler(targetButtonName, targetButtonId)
+{
+	var isOnline = typeof Connection === 'undefined'?true:Connection.NONE != navigator.connection.type;
+	if (isOnline) {
+			return buttonClicked(targetButtonName, false, null, '', false, targetButtonId, true, false, '', true, true, 'preInPhase');            
+	} else {
+			
+			var offlineDestination = "OfflineEnabled.Offline";
+			var replaceAllFunc = function (str, find, replace) {
+			return str.split(find).join(replace);
+	};
+			
+	offlineDestination = replaceAllFunc(offlineDestination, " ", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "-", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ".", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "(", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, ")", "_");
+	offlineDestination = replaceAllFunc(offlineDestination, "/", "_");
+	var languageMapAlias = "";
+	if (/\S/.test(languageMapAlias)) {
+		
+	offlineDestination = offlineDestination + "_" + languageMapAlias;
+	} 	
+	offlineDestination = offlineDestination + ".html";
+			
+	window.location.href = offlineDestination;
+	}
+}
+ function backbutton_BUT_A34AD113ECB67B0820770_callback() {
+   	if('BUT_BACK'.length > 0 && (!$( "#off_canvas_left" ).hasClass( "active" )))	
+	{
+		if('__90709B068562F964 FormButton 8'.length > 0)
+		{
+			//this helps us work around an issue in android 4.1.2 and lower whereby the ...().click() does not work
+			navigationHandler('__90709B068562F964 FormButton 8', 'BUT_BACK');
+		}
+		else
+		{
+			document.getElementById("BUT_BACK").click();
+		}
+	}
+	else
+	{
+   		return buttonClicked('__A34AD113ECB67B08 FormButton 17', false, null, '', false, 'BUT_A34AD113ECB67B0820770', true, false, '', true, true, 'preInPhase');
+   	}
+}
+function BUT_A34AD113ECB67B0820770onDeviceReady() {
+     document.addEventListener("backbutton", backbutton_BUT_A34AD113ECB67B0820770_callback, false); 
+}
+ document.addEventListener("deviceready", BUT_A34AD113ECB67B0820770onDeviceReady, false);
+</script>
+</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E205553"><div id="p1_HEAD_0645D21B37B8E82E205553" class="ecDIB  NavTitle"><div>Take a Tour</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div id="row_HEAD_FA90B5626FC0ED4548177"><div id="p1_HEAD_FA90B5626FC0ED4548177" style="text-align: center; ; width: 100.0%;" class="ecDIB  ColorGray Size14"><div style="padding: 4px">Swipe Left or Right on the virtual phone screen</div></div></div><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E181680"><style>body{color:#fff;padding:0;margin:0;font-size:13px;}.swiper-container{width:230px;height:320px;background:#000;-webkit-perspective:1200px;-moz-perspective:1200px;-ms-perspective:1200px;perspective:1200px;border-radius:3px;}.swiper-wrapper,.swiper-slide{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;}.swiper-slide{position:relative;}.title{line-height:320px;text-align:center;font-weight:100;color:#fff;background:#0C599A;}.title span{font-size:60px;line-height:70px;display:inline-block;vertical-align:middle;}.mediumtitle{line-height:320px;text-align:center;font-weight:100;color:#fff;background:#0C599A;}.mediumtitle span{font-size:48px;line-height:50px;display:inline-block;vertical-align:middle;}.inner{padding:20px;font-size:12px;font-weight:300;color:#fff;background:#0C599A;}.caption{font-size:24px;font-weight:100;position:absolute;left:0;bottom:0;width:100%;text-align:center;background:rgba(0,0,0,0.5);padding:10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:#fff;}.device{padding:30px 10px;background:#222;margin:10px auto;width:260px;border-radius:20px;border:4px solid #fff;box-shadow:0px 0px 10px rgba(0,0,0,0.5);}</style>
 <div class="device">
 <div class="swiper-container">
 <div class="swiper-wrapper">
@@ -211,12 +275,16 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
       }
     })
   </script>
-</div><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"></div></div></div></div>
+</div><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"><script type="text/javascript">
+$(document).ready(function() {$('body').addClass("general");
+
+});
+</script></div></div></div></div>
 		<div id="androidfooterfix"></div>
 		    
         
       </div>
-	
+	     
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -231,7 +299,6 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
-
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -298,7 +365,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-
+	
 
 <script>
 	jQuery(document).ready(function() {
@@ -309,8 +376,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-
-
+		
+	
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -338,3 +405,6 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
+
+		  
+	

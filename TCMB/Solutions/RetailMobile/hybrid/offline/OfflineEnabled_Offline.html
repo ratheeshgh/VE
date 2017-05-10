@@ -16,53 +16,28 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
+	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script>
-	  <script src="./html/js/hookit.min.js"></script>
+	  <script src="./html/js/cordova/cordova_loader.js"></script> 
+	  <script src="./html/js/hookit.min.js"></script> 
 	  <script type="text/javascript">
-		var controlCss;
-		var deviceAgent = navigator.userAgent.toLowerCase();
+		var controlCss; 
+		var deviceAgent = navigator.userAgent.toLowerCase(); 
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css";
+			controlCss = "./html/css/android.css"; 
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
-
-<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x0a845953-d446-4d65-a945-f44d6abfd900=ea8a6aa5-4684-477c-8e2c-e872d5771f61';
+var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -134,10 +109,11 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/connect_divs.js"></script>
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script--> 
 
-	   <script src="./html/js/tcmb.js"></script>
+	   <script src="./html/js/tcmb.js"></script>	
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -153,9 +129,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x0a845953-d446-4d65-a945-f44d6abfd900" value="ea8a6aa5-4684-477c-8e2c-e872d5771f61"/></div>
+      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
       
-
+      
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -164,25 +140,169 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
                       
                       
           
-		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.Offline"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_E454B89CF70407F1210911" class="error" style="text-align:center; padding-top:initial;"><div style="text-align: center; " id="TXT_8302F037970D57F3296918"><!-- $Revision: 1.4 $ -->
+		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="OfflineEnabled.Offline"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_E454B89CF70407F1210911" class="navbar navbar-inverse-transparent navbar-fixed-top"><div class="navbar-header navbar-brand" style="text-align: center; width:" id="TXT_E454B89CF70407F1210925"><!-- $Revision: 1.4 $ -->
 <!-- widget file maintained by edgeConnect - DO NOT EDIT -->
-<img src="images/modelbank/error/Piggy_01.png"  alt="Error" id="img_TXT_8302F037970D57F3296918"
-	
-	
-	
-	  width="100%" 
+<img src="html/img/logo_banesco.png"  alt="Banesco" id="img_TXT_E454B89CF70407F1210925"
 	
 	
 	
 	
 	
 	
-	/></div><div id="row_HEAD_1F601CC4A75C62F875661" class="error-headergrande  " style="margin-bottom:0px; margin-top:20px;"><div id="p1_HEAD_1F601CC4A75C62F875661" style="text-align: left; ; " class="ecDIB  "><div>Se ha perdido la conexión</div></div></div><div id="FMT_7A250E3B243FF810124396"><div id="row_BUT_1F601CC4A75C62F875670" style="margin-top:20px;"><div id="p1_BUT_1F601CC4A75C62F875670__REMOVED" class="ecDIB" style="display: none;"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875670__REMOVED" class="ecDIB" style="display: none;"><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875670__REMOVED" class="ecDIB  " style="display: none;"><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: center; width:40%;  " id="p4_BUT_1F601CC4A75C62F875670"><div><button title="Get Online Now" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 36', false, null, '', false, 'BUT_1F601CC4A75C62F875670', true, false, '', true, true, 'preInPhase');" type="button" name="__1F601CC4A75C62F8 FormButton 36" onmouseover="this.style.cursor='pointer'" value="RECONECTAR" class="btn error-boton" id="BUT_1F601CC4A75C62F875670">RECONECTAR</button></div></div></div></div></div><div id="FMT_E454B89CF70407F1221773" class="error" style="width:90%; margin-left:5%; margin-top:5%;"><div id="CONTACTUS" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_1F601CC4A75C62F875680" class="OfflineLinkContactUs  "><div id="p1_BUT_1F601CC4A75C62F875680" class="ecDIB  OfflineLinkContactUsText"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875680" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875680" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: center; " id="p4_BUT_1F601CC4A75C62F875680"><div><a title="Contact us" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 37', false, null, '', false, 'BUT_1F601CC4A75C62F875680', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" class="LoginLinks" id="BUT_1F601CC4A75C62F875680"><span>Contact us</span></a></div></div></div></div><div id="TERMSANDCONDITIONS" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_1F601CC4A75C62F875691" class="OfflineLinkTerms  "><div id="p1_BUT_1F601CC4A75C62F875691" class="ecDIB  OfflineLinkTermsText"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875691" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875691" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_1F601CC4A75C62F875691"><div><a title="Terms and conditions" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 38', false, null, '', false, 'BUT_1F601CC4A75C62F875691', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" class="LoginLinks" id="BUT_1F601CC4A75C62F875691"><span>Terms and conditions</span></a></div></div></div></div><div id="ABOUT" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_1F601CC4A75C62F875702" class="OfflineLinkAbout  "><div id="p1_BUT_1F601CC4A75C62F875702" class="ecDIB  OfflineLinkAboutText"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875702" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875702" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_1F601CC4A75C62F875702"><div><a title="About" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 39', false, null, '', false, 'BUT_1F601CC4A75C62F875702', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" class="LoginLinks" id="BUT_1F601CC4A75C62F875702"><span>About</span></a></div></div></div></div><div id="TAKEATOUR" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_1F601CC4A75C62F875713" class="tourtheapp  "><div id="p1_BUT_1F601CC4A75C62F875713" class="ecDIB  tourtheapp_text"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875713" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875713" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_1F601CC4A75C62F875713"><div><a title="Take a tour" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 40', false, null, '', false, 'BUT_1F601CC4A75C62F875713', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" class="LoginLinks" id="BUT_1F601CC4A75C62F875713"><span>Take a tour</span></a></div></div></div></div><div id="WHATSNEW" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_1F601CC4A75C62F875724" class="OfflineLinkWhatsNew  "><div id="p1_BUT_1F601CC4A75C62F875724" class="ecDIB  OfflineLinkWhatsNewText"><div>&nbsp;</div></div><div id="p2_BUT_1F601CC4A75C62F875724" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_1F601CC4A75C62F875724" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_1F601CC4A75C62F875724"><div><a title="Whats New" onclick="return buttonClicked('__1F601CC4A75C62F8 FormButton 41', false, null, '', false, 'BUT_1F601CC4A75C62F875724', true, false, '', true, true, 'preInPhase');" href="javascript:void(0)" class="LoginLinks" id="BUT_1F601CC4A75C62F875724"><span>Whats New</span></a></div></div></div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_1F601CC4A75C62F875875"></div></div></div></div>
+	
+	
+	
+	
+	/></div></div><div id="FMT_11B983F1287DEF2258824" class="row"><div id="row_HEAD_11B983F1287DEF2258849"><div id="p1_HEAD_11B983F1287DEF2258849" style="text-align: center; ; " class="ecDIB  Size20 Medium ColorWhite FullWidth"><div>Your Internet connection was lost.</div></div></div><div id="row_BUT_90709B068562F964120481" class="FullWidth Center Padding10  "><div class="ecDIB  FullWidth  " style="text-align: center; " id="p4_BUT_90709B068562F964120481"><div><button title="Get Online Now" onclick="return buttonClicked('__90709B068562F964 FormButton 9', false, null, '', false, 'BUT_90709B068562F964120481', true, false, '', true, true, 'preInPhase');" type="button" name="__90709B068562F964 FormButton 9" onmouseover="this.style.cursor='pointer'" value="Get Online Now" class="GetOnlineBtn Medium" id="BUT_90709B068562F964120481">Get Online Now</button></div></div></div></div><div id="FMT_E454B89CF70407F1221773" class="BottomLinksOffline padding-container-top"><div id="CONTACTUS" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_FEC332371A9EC4C923785" class="OfflineLinkContactUs  "><div id="p1_BUT_FEC332371A9EC4C923785" class="ecDIB  OfflineLinkContactUsText"><div>&nbsp;</div></div><div id="p2_BUT_FEC332371A9EC4C923785" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_FEC332371A9EC4C923785" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_FEC332371A9EC4C923785"><div><button title="Contact us" onclick="window.location.href='OfflineEnabled_ContactUs_Banesco.html';" type="button" name="__FEC332371A9EC4C9 FormButton 5" onmouseover="this.style.cursor='pointer'" value="Contact us" class="LoginLinks" id="BUT_FEC332371A9EC4C923785">Contact us</button>
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#").removeClass("");
+            $("#").toggleClass("");
+            $("#BUT_FEC332371A9EC4C923785").toggleClass("");
+            
+               
+            
+                window.location.href='OfflineEnabled_ContactUs_Banesco.html';
+            
+    }
+    $("#BUT_FEC332371A9EC4C923785")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+    
+        $("#CONTACTUS")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    
+});
+</script></div></div></div></div><div id="TERMSANDCONDITIONS" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_FEC332371A9EC4C923790" class="OfflineLinkTerms  "><div id="p1_BUT_FEC332371A9EC4C923790" class="ecDIB  OfflineLinkTermsText"><div>&nbsp;</div></div><div id="p2_BUT_FEC332371A9EC4C923790" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_FEC332371A9EC4C923790" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_FEC332371A9EC4C923790"><div><button title="Terms and conditions" onclick="window.location.href='OfflineEnabled_TermsAndConditions_Banesco.html';" type="button" name="__FEC332371A9EC4C9 FormButton 6" onmouseover="this.style.cursor='pointer'" value="Terms and conditions" class="LoginLinks" id="BUT_FEC332371A9EC4C923790">Terms and conditions</button>
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#").removeClass("");
+            $("#").toggleClass("");
+            $("#BUT_FEC332371A9EC4C923790").toggleClass("");
+            
+               
+            
+                window.location.href='OfflineEnabled_TermsAndConditions_Banesco.html';
+            
+    }
+    $("#BUT_FEC332371A9EC4C923790")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+    
+        $("#TERMSANDCONDITIONS")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    
+});
+</script></div></div></div></div><div id="ABOUT" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_FEC332371A9EC4C923795" class="OfflineLinkAbout  "><div id="p1_BUT_FEC332371A9EC4C923795" class="ecDIB  OfflineLinkAboutText"><div>&nbsp;</div></div><div id="p2_BUT_FEC332371A9EC4C923795" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_FEC332371A9EC4C923795" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_FEC332371A9EC4C923795"><div><button title="About" onclick="window.location.href='OfflineEnabled_About_Banesco.html';" type="button" name="__FEC332371A9EC4C9 FormButton 7" onmouseover="this.style.cursor='pointer'" value="About" class="LoginLinks" id="BUT_FEC332371A9EC4C923795">About</button>
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#").removeClass("");
+            $("#").toggleClass("");
+            $("#BUT_FEC332371A9EC4C923795").toggleClass("");
+            
+               
+            
+                window.location.href='OfflineEnabled_About_Banesco.html';
+            
+    }
+    $("#BUT_FEC332371A9EC4C923795")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+    
+        $("#ABOUT")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    
+});
+</script></div></div></div></div><div id="TAKEATOUR" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_90709B068562F964120489" class="tourtheapp  "><div id="p1_BUT_90709B068562F964120489" class="ecDIB  tourtheapp_text"><div>&nbsp;</div></div><div id="p2_BUT_90709B068562F964120489" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_90709B068562F964120489" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_90709B068562F964120489"><div><button title="Take a tour" onclick="window.location.href='OfflineEnabled_TakeATour_Banesco.html';" type="button" name="__90709B068562F964 FormButton 10" onmouseover="this.style.cursor='pointer'" value="Take a tour" class="LoginLinks" id="BUT_90709B068562F964120489">Take a tour</button>
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#").removeClass("");
+            $("#").toggleClass("");
+            $("#BUT_90709B068562F964120489").toggleClass("");
+            
+               
+            
+                window.location.href='OfflineEnabled_TakeATour_Banesco.html';
+            
+    }
+    $("#BUT_90709B068562F964120489")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+    
+        $("#TAKEATOUR")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    
+});
+</script></div></div></div></div><div id="WHATSNEW" class="col-lg-12 padding-container LoginLinksBackground"><div id="row_BUT_0645D21B37B8E82E231306" class="OfflineLinkWhatsNew  "><div id="p1_BUT_0645D21B37B8E82E231306" class="ecDIB  OfflineLinkWhatsNewText"><div>&nbsp;</div></div><div id="p2_BUT_0645D21B37B8E82E231306" class="ecDIB  "><div>&nbsp;</div></div><div id="p3_BUT_0645D21B37B8E82E231306" class="ecDIB  "><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: left; " id="p4_BUT_0645D21B37B8E82E231306"><div><button title="Whats New" onclick="window.location.href='OfflineEnabled_WhatsNew_Banesco.html';" type="button" name="__0645D21B37B8E82E FormButton 12" onmouseover="this.style.cursor='pointer'" value="Whats New" class="LoginLinks" id="BUT_0645D21B37B8E82E231306">Whats New</button>
+<script type="text/javascript">
+$(function() {
+    function doWork() {
+            $("#").removeClass("");
+            $("#").toggleClass("");
+            $("#BUT_0645D21B37B8E82E231306").toggleClass("");
+            
+               
+            
+                window.location.href='OfflineEnabled_WhatsNew_Banesco.html';
+            
+    }
+    $("#BUT_0645D21B37B8E82E231306")
+        .removeProp("onclick")
+        .on("click", function(e) {
+            doWork();
+            e.stopPropagation();
+        }
+    );
+    
+        $("#WHATSNEW")
+            .on("click", function(e) {
+                doWork();
+            }
+        );
+    
+});
+</script></div></div></div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E227687"><script type="text/javascript">
+$(document).ready(function() {$('body').addClass("login");
+
+});
+</script></div></div></div></div>
 		<div id="androidfooterfix"></div>
 		    
         
       </div>
-	
+	     
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -197,7 +317,6 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
-
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -264,7 +383,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-
+	
 
 <script>
 	jQuery(document).ready(function() {
@@ -275,8 +394,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-
-
+		
+	
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -304,3 +423,6 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
+
+		  
+	

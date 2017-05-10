@@ -40,5 +40,4 @@
   <string name="pdf_documents">PDF Documents</string>
   <string name="print">Print</string>
   <string name="reports">Reports</string>
-  <string name="app_name">App name - not used required by Cordova</string>
 </resources>
