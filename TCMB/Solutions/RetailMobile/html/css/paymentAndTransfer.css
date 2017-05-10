@@ -190,6 +190,7 @@
 
 .search_directory_text {
   text-transform: uppercase;
+  padding-left: 10px;
 }
 
 .search_in_directory_btn .icon_wrapper {
