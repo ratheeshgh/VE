@@ -7,4 +7,22 @@
             <item help="Generate body of the button" includeInDesign="true" layout="-1" mand="false" name="button_body" prompt="Generate body of the button " type="com.acquire.util.FocusCheckbox" usage="7"/>
         </custom>
     </widget>
+    <widget helpFile="23_Presentation5/Presentation_Editor/Presentation_Layout/Display_Items/Image.htm" icon="/images/PresentationText_Image.gif" name="Image" type="Item:Image">
+        <template type="source" value="./templates/widgets/simpleImage.wgt"/>
+        <custom>
+            <item help="This needs to be accessible by the web browser at runtime, so &#xa;consider using $$LIBRARY_CONTEXTPATH$ for component-only images" mand="true" name="IMG_SRC" prompt="Path To Image" tab="Details"
+                type="javax.swing.JFileChooser|MULTI_RICH_VALUES" typeValue="Image Choose|FILES_ONLY|*|Image File|Open|Project dir"/>
+            <item mand="true" mappable="true" name="IMG_ALT_TEXT" prompt="Alt Text" tab="Details" type="javax.swing.JTextField"/>
+            <item name="IMG_STYLE" prompt="Style" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_CLASS" prompt="Class" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_HEIGHT" prompt="Height (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_WIDTH" prompt="Width (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_LONGDESC" prompt="Long Desc" tab="Image" type="javax.swing.JTextField"/>
+            <item mappable="true" name="IMG_TITLE" prompt="Title" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_USEMAP" prompt="Use Map" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_DIR" prompt="Direction (rtl or ltr)" tab="Advanced" type="javax.swing.JComboBox" typeValue="ltr|rtl"/>
+            <item name="IMG_LANGUAGE" prompt="Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_XMLLANGAUGE" prompt="XML Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+        </custom>
+    </widget>
 </widgets>
