@@ -1,0 +1,16 @@
+.right-edit-directory {
+    font-family: 'Banesco';
+    font-size: 16px;
+}
+
+.right-edit-directory::before {
+  content: '\E907';
+}
+
+.icon-norotate{
+	-ms-transform: none !important;
+    /* IE 9 */
+    -webkit-transform: none !important;
+    /* Chrome, Safari, Opera */
+    transform: none !important;
+}

@@ -67,8 +67,12 @@
   text-transform: initial;
 }
 
-.tab-underlined div[id^="TAB"], .tab-underlined div[id^="C1__TAB"] { 
-  background: #1f8c6b;	
+.underlined-3tabs div[id^="TAB"], .underlined-3tabs div[id^="C1__TAB"] {
+  width: 33.33% !important;
+}
+
+.tab-underlined div[id^="TAB"], .tab-underlined div[id^="C1__TAB"] {
+  background: #1f8c6b;
   padding: 15px 2px 15px 2px;
   display: inline-block;
   height: 50px;
@@ -80,7 +84,7 @@
   float: none !important;
 }
 
-.tab-underlined div[id*='PaneTAB'] {  
+.tab-underlined div[id*='PaneTAB'] {
   width: 100%;
   height: 100%;
   float: none !important;
