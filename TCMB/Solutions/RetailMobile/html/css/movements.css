@@ -69,6 +69,12 @@
 	margin-top: -3px;
 }
 
+.transaction_icon.ophistory::before {
+	font-family: "Banesco";
+	content: '\E936';
+	margin-top: -3px;
+}
+
 @media (max-width: 380px) {
 	.desc_date label, .desc_date span {
 		font-size: 9px;
