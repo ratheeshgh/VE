@@ -1320,7 +1320,7 @@ input[type="checkbox"]:checked  {
 .BtnFindUs:hover,
 .BtnFindUs:focus{color:#fff !important;}
 
-.BtnContactUs:before {padding:0px 15px 20px 10px;content: "\E903";display: block;font-size: 20px; line-height:20px;}
+.BtnContactUs:before {padding:19px 15px 20px 10px;content: "\E903";display: block;font-size: 20px; line-height:20px;}
 .BtnFindUs:before {content: "\E938";display: block;font-size: 20px; line-height:60px;text-align: center;}
 
 /*Changes for the Contact Us*/
