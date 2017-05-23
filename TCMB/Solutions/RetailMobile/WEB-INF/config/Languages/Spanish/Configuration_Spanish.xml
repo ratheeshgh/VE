@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="" project="Configuration" sourcelanguage="en-GB" targetlanguage="es" updated="18/05/17 09:26" version="1">
+  <Comment/>
+  <ProcessEntities/>
+  <Designs/>
+  <PresentationOnlyObjects/>
+  <Rules>
+    <MasterRules/>
+  </Rules>
+  <Lists>
+    <List eid="01D61125DA86EA711056686" listName="AccountOperation" reset="True">
+      <ListItem eid="01D61125DA86EA711056687" group="" groupState="NEW" key="HomePage" original="HomePage" originalGroup="PostLogin.AccountsList" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056688" group="" groupState="NEW" key="AccountSummary" original="AccountSummary" originalGroup="MultiAccount.init" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056689" group="" groupState="NEW" key="Transactions" original="Transactions" originalGroup="Standalone.RecentTransactions" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056690" group="" groupState="NEW" key="MakeTransfer" original="MakeTransfer" originalGroup="Standalone.MakeTransfer" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056691" group="" groupState="NEW" key="MakePayment" original="MakePayment" originalGroup="SingleAccount.MakePayment" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056692" group="" groupState="NEW" key="ManagePayees" original="ManagePayees" originalGroup="Standalone.ManagePayees" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056693" group="" groupState="NEW" key="PendingPayments" original="Future Dated" originalGroup="SingleAccount.UpcomingPayments" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056694" group="" groupState="NEW" key="StandingOrder" original="StandingOrder" originalGroup="Standalone.StandingOrders" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056695" group="" groupState="NEW" key="DirectDebits" original="DirectDebits" originalGroup="Standalone.DirectDebits" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056696" group="" groupState="NEW" key="Cheques" original="Cheques" originalGroup="SingleAccount.Cheques" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056697" group="" groupState="NEW" key="UpdatePersonalDetails" original="UpdatePersonalDetails" originalGroup="Standalone.Personalisation" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056698" group="" groupState="NEW" key="Messages" original="Messages" originalGroup="Standalone.Messages" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056699" group="" groupState="NEW" key="Deposits" original="Deposits" originalGroup="SingleAccount.Deposits" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056700" group="" groupState="NEW" key="Loans" original="Loans" originalGroup="Loans" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056701" group="" groupState="NEW" key="ChangeAccountName" original="ChangeAccountName" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056702" group="" groupState="NEW" key="PayBill" original="PayBill" originalGroup="SingleAccount.MakePayment" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056703" group="" groupState="NEW" key="Settings" original="Settings" originalGroup="Standalone.Settings" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056704" group="" groupState="NEW" key="PersonaliseApp" original="PersonaliseApp" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056705" group="" groupState="NEW" key="Help" original="Help" originalGroup="Standalone.About" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056706" group="" groupState="NEW" key="QuickLinks" original="QuickLinks" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056707" group="" groupState="NEW" key="About" original="About" originalGroup="Standalone.About" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056708" group="" groupState="NEW" key="ATMBranch" original="ATMBranch" originalGroup="Standalone.FindATM" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056709" group="" groupState="NEW" key="Schedule" original="Schedule" originalGroup="Standalone.LoanSchedule" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056710" group="" groupState="NEW" key="ChangePassword" original="ChangePassword" originalGroup="Standalone.ChangePassword" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056711" group="" groupState="NEW" key="CanAcceptFunds" original="CanAcceptFunds" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056712" group="" groupState="NEW" key="AccountOverview" original="AccountOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056713" group="" groupState="NEW" key="DepositOverview" original="DepositOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056714" group="" groupState="NEW" key="LoanOverview" original="LoanOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="01D61125DA86EA711056715" group="" groupState="NEW" key="RecentTransactions" original="RecentTransactions" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="668B16E03394CFAF124984" listName="YesNo" reset="True">
+      <ListItem eid="668B16E03394CFAF124985" group="" groupState="NEW" key="Y" original="Yes" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="668B16E03394CFAF124987" group="" groupState="NEW" key="N" original="No" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+  </Lists>
+</LanguageMap>
