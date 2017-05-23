@@ -12,6 +12,7 @@
 	height: 60px;
 	line-height: 60px;
 	vertical-align: middle;
+	padding-top: 10px;
 }
 
 .det-navbar .TopNavBtn { padding-top: 20px; }
@@ -42,7 +43,8 @@
 	font-size:1em;
 	color:#3A4454;
 	font-family: "Lato Regular", courier;
-
+	text-transform: capitalize;
+	text-align: center;
 }
 
 .det-card-text {

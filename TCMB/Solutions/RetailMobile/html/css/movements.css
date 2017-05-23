@@ -37,12 +37,20 @@
     font-weight: bold;
 }
 
-.transaction_icon {
+/*.transaction_icon {
 	display: inline-block;
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-}
+}*/
+
+  .transaction_icon {
+  	display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+  	border-radius: 50%;
+  }
 
 .transaction_icon.cred {
 	background: #2B5F8C;
@@ -60,14 +68,33 @@
 	color: #FFF;
 }
 
-.transaction_icon.cred::before {
+/*.transaction_icon.cred::before {
 	content: '+';
 	margin-top: -1px;
 }
 .transaction_icon.deb::before {
 	content: '–';
 	margin-top: -3px;
-}
+}*/
+
+  .transaction_icon.cred::before {
+  	content: '+';
+  	margin-top: -1px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-stretch: 100%;
+    line-height: 100%;
+  }
+  .transaction_icon.deb::before {
+  	content: '–';
+  	margin-top: -3px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-stretch: 100%;
+    line-height: 100%;;
+  }
+
+
 
 .transaction_icon.ophistory::before {
 	font-family: "Banesco";
