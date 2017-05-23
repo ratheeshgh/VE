@@ -22,7 +22,7 @@
 }
 
 .card__body-text label {
-    font-size: 11px;
+    font-size: 12px;
     padding: 0 !important;
     margin-bottom: 0px;
     color: #54616D;
@@ -98,7 +98,7 @@
 
 .card__header-titleH2Container {
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
     width: auto;
     margin-left: 8px;

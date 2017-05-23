@@ -1,0 +1,18 @@
+.BtnContactUs2 {
+    /*line-height: 10px;*/
+    width: 100%;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-family: "Lato Light";
+    display: block;
+    font-size: 12px;
+    text-decoration: none !important;
+    display: block;
+    margin-top: 10px;
+}
+
+.BtnContactUs2 input {
+    margin-bottom: 2px !important;
+}
+
