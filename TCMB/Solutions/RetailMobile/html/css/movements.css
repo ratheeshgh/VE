@@ -52,13 +52,13 @@
   	border-radius: 50%;
   }
 
-.transaction_icon.cred {
-	background: #2B5F8C;
-}
+  .transaction_icon.cred {
+  	background: #859CCF;
+  }
 
-.transaction_icon.deb {
-	background: #E31D19;
-}
+  .transaction_icon.deb {
+  	background: #F68A70;
+  }
 
 .transaction_icon.cred::before,
 .transaction_icon.deb::before {
