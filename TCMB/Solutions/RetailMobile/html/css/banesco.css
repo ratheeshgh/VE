@@ -1093,7 +1093,7 @@ input[type="checkbox"]:checked  {
 .TopNavSectionRight {width:20%; text-align:right;height:50px;} /* TOP NAV RIGHT SECTION FOR BUTTONS */
 .TopNavSectionCenter {width:60%; text-align:center;height:50px;} /* TOP NAV CENTER SECTION FOR TITLE */
 .VerticalAlign15 {padding-top:15px;padding-bottom:15px;} /* PADDING TO POSITION BUTTONS */
-.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 15.33px;height: 60px;margin-left: 10px;text-transform: capitalize; position: relative;} /* CONTAINER FOR TITLE */
+.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 15.33px;height: 60px;margin-left: 10px;text-transform: capitalize; /*position: relative*/ margin-top:-10px;} /* CONTAINER FOR TITLE */
 .NavTitle > div {position: absolute;top: 50%;transform: translateY(-50%);}
 
 /*Start Changes for Banesco*/
