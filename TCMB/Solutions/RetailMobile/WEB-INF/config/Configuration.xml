@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
-	<StaticAuthenticationTypes>
+	<!--<StaticAuthenticationTypes>
 		<Type>
 			<TypeKey>PW</TypeKey>
 			<TypeName>Password</TypeName>
@@ -379,7 +379,7 @@
 			<Symbol>ZAR</Symbol>
 			<Order>27</Order>
 		</Currency>
-	</Currencies>
+	</Currencies>-->
 
 	<Languages>
 		<Language>
@@ -391,9 +391,9 @@
 		</Language>
 		<Language>
 			<Key>2</Key>
-			<Code>fr</Code>
-			<Alias>French</Alias>
-			<Name>Fran&#xe7;ais</Name>
+			<Code>es</Code>
+			<Alias>Spanish</Alias>
+			<Name>Spanish</Name>
 			<Default>N</Default>
 		</Language>
 	</Languages>
