@@ -41,7 +41,7 @@
 		<a href="mailto:ACLIENTE_PA@BANESCO.COM" class="col-xs-12 contactCallBtn">
 			<div class="col-xs-3 iconContact ContactEmail"></div>
 			<div class="col-xs-9 infoContact">
-				<p class="from Size12">FROM UNITED STATES</p>
+				<!--<p class="from Size12">FROM UNITED STATES</p>-->
 				<p class="Size12">ACLIENTE_PA@BANESCO.COM</p>
 			</div>
 		</a>
