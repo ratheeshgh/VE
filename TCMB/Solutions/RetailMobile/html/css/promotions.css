@@ -32,6 +32,15 @@
 	font-weight: bold;
 }
 
+.promotions-link-btn button {
+   border: 0;
+   font-size: 13px;
+   color: #3a4454;
+   background: transparent;
+   font-weight: bold;
+   text-decoration: underline !important;
+}
+
 /* Promotions Details */
 
 .promotions-title {
