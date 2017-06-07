@@ -14,7 +14,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
       <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
       <meta name="author" content="Edge IPK"/>
 	  <link rel="shortcut icon" href="./html/favicon.ico">
-	  <title>Temenos Mobile Banking</title>
+	  <title>Banesco Móvil</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
 	  $%IF PHASE == "TakeATour"$<link rel="stylesheet" href="./templates/widgets/carousel/css/idangerous.swiper.css">$%ENDIF$
 	  <link rel="stylesheet" id="cssLink">
