@@ -11,10 +11,14 @@ TO.CCANTV,CanTv service search
 TO.CMOVILNET,Movilnet service search
 TO.CMOVISTAR,Movistar service search
 TO.CD,Directory Search
-TO.PS,Pay a Bill
-TO.TCP,Transfer Between My Accounts
-TO.TT,Transfer to Other Person and Other Bank
-TO.PTP,Credit Card Payment (My cards)
-TO.PTT,Credit Card Payment (Other Person and Other Bank)
+TO.PS,Pay a Bill,Txn
+TO.TMTB,Transfer Between My Accounts,Txn
+TO.TTB,Transfer to Other Person,Txn
+TO.TTOB,Transfer to Other Bank,Txn
+TO.TMTOB,Transfer to My accounts in other Bank,Txn
+TO.PTMTB,My Credit Cards Payment in Banesco,Txn
+TO.PTMTOB,My Credit Cards in Other Bank,Txn
+TO.PTTB,Other Credit Cards Payment in Banesco,Txn 
+TO.PTTOB,Other Credit Cards Payment Other Bank,Txn
 TO.CON,Login
 TO.DES,Logout
