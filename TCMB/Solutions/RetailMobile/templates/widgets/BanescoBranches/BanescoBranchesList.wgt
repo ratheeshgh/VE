@@ -96,9 +96,9 @@
             });
         }
 
-        if (widgetArgs.testOnBrowser) {
+        //if (widgetArgs.testOnBrowser) {
             onDeviceReady()
-        }
+        //}
     })
 </script>
 
