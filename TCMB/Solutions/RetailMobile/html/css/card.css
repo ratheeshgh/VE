@@ -22,7 +22,7 @@
 }
 
 .card__body-text label {
-    font-size: 12px;
+    font-size: 9.33px;
     padding: 0 !important;
     margin-bottom: 0px;
     color: #54616D;
@@ -117,4 +117,12 @@
   color: #2b5f8c;
   /*font-size: 0.750em;*/
   font-size: 12px;
+}
+
+.font27 {
+    font-size: 27.33px;
+}
+
+.font20 {
+    font-size: 20.66px;
 }

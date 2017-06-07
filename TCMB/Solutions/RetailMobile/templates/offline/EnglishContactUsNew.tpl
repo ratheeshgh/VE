@@ -39,9 +39,11 @@
     <p class="Size12 Medium titleContact titleContactMail">SEND US A SAFE EMAIL TO</p>
 	 <div class="contactCallRow">
 		<a href="mailto:ACLIENTE_PA@BANESCO.COM" class="col-xs-12 contactCallBtn">
-			<div class="col-xs-3 iconContact ContactEmail"></div>
+			<div class="col-xs-3 iconContactFix">
+				<img src="images/iconmail.svg" style="height:55px; width: 50px; position:relative; top:-2px;">
+			</div>
 			<div class="col-xs-9 infoContact">
-				<p class="from Size12">FROM UNITED STATES</p>
+				<!--<p class="from Size12">FROM UNITED STATES</p>-->
 				<p class="Size12">ACLIENTE_PA@BANESCO.COM</p>
 			</div>
 		</a>

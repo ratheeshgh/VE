@@ -2,13 +2,13 @@
 
 	<div style="text-align: left;width: 100.0%; text-transform: initial;">
 		<div style="font-family: Lato Regular, courier; font-size:15.33px; text-align:left;color:#3A4454;">
-			Informaci&oacute;n de la aplicaci&oacute;n
+			App info
 		</div>
 	</div>
 
 	<div style="margin-top: 50px;">
 		<div style="text-align: left; width: 40%; display: inline-block; float: left">
-			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Nombre:</label>
+			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Name:</label>
 			</div>
 		</div>
 		<div style="text-align: left; width: 60%; display: inline-block; float: right">
@@ -33,7 +33,7 @@
 
 	<div style="margin-top: 10px;">
 		<div style="text-align: left; width: 40%; display: inline-block; float: left">
-			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Disponible:</label>
+			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Available:</label>
 			</div>
 		</div>
 		<div style="text-align: left; width: 60%; display: inline-block; float: right">
@@ -71,7 +71,8 @@
 			</div>
 		</div>
 		<div style="text-align: left; ; width: 100.0%; " class="muted textMedium">
-			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px; color:#54516d;">Todos los derechos reservados
+			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px; color:#54516d;">All rights reserved
+
 			</div>
 		</div>
 	</div>

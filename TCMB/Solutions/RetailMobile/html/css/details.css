@@ -39,11 +39,10 @@
 
 
 .det-card-text-title {
-	font-size:1em;
+	font-size:11px;
 	color:#3A4454;
 	font-family: "Lato Regular", courier;
-	text-transform: capitalize;
-	text-align: center;
+	text-transform: uppercase;
 }
 
 .det-card-text {
