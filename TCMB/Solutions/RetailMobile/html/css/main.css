@@ -94,7 +94,7 @@ figure {
 }
 hr {
   /* -moz-box-sizing: content-box;
-  box-sizing: content-box; 
+  box-sizing: content-box;
   height: 0;*/
 }
 pre {
@@ -1410,13 +1410,13 @@ th {
   margin-bottom: 20px;
 }
 
-.table > tbody > tr > td{ 
+.table > tbody > tr > td{
 	background-color:#EBF0F5;
 	border:none;padding: 8px;
 	line-height: 1.42857143;
 	vertical-align: top;
 	}
-	
+
 /*.table > tbody > tr > td,*/
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2860,7 +2860,7 @@ input[type="button"].btn-block {
 .BranchHelp:before { content: "\f101"; }
 .BranchQuickLinks:before { content: "\f15a"; }
 .BranchAccounts:before { content: "\f1b4"; }
-.BranchPayments:before { content: "\f1b3"; } 
+.BranchPayments:before { content: "\f1b3"; }
 .LeafContactUs:before { content: "\f151"; }
 .LeafBranchLocator:before { content: "\f15e"; }
 .LeafWhatsNew:before  { content: "\f16f"; }
@@ -2884,7 +2884,7 @@ input[type="button"].btn-block {
 .Icon-GetLocation:before { content: "\f13d"; }
 .Icon-ViewList:before { content: "\f15c"; }
 .Icon-ATM:before { content: "\f11d"; }
-.Icon-BRANCH:before { content: "\f16d"; } 
+.Icon-BRANCH:before { content: "\f16d"; }
 .MailContainer:before { content: "\f169"; }
 .GetOnlineBtn:before  {content: "\f1ab";}
 .OfflineCallBtn:before  {content: "\f1ab";}
@@ -5351,18 +5351,18 @@ a.list-group-item-danger.active:focus {
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  
+
 }
 .panel-body {
   padding: 15px;
-  
+
 }
 .panel-heading {
-  padding: 15px 15px;
+  padding: 15px 25px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
-  
+
 }
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
@@ -5376,7 +5376,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-title > a {
   color: inherit;
-    
+
 }
 .panel-footer {
   padding: 10px 15px;
@@ -5551,7 +5551,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  
+
   background-color: #f5f5f5;
   border-color: #dddddd;
 }
