@@ -17,20 +17,20 @@
 		progressBar.css('width', result +'%');
 		if(result <= 30) {
 	      progressBar.addClass('progress-bar-banesco-low-percentage');
-	      infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+	      infoPercentaje.append(result.toFixed(2) + "% USED");
 	      infoPercentaje.css('color', '#1C8464')
 		} else if(result <= 70) {
 		 	 progressBar.addClass('progress-bar-banesco-medium-percentage');
-		 	 infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+		 	 infoPercentaje.append(result.toFixed(2) + "% USED");
 		 	 infoPercentaje.css('color', '#EE9E14')
 			} else if(result <= 100) {
 				progressBar.addClass('progress-bar-banesco-hight-percentage');
-				infoPercentaje.append(result.toFixed(2) + "% UTILIZADO");
+				infoPercentaje.append(result.toFixed(2) + "% USED");
 				infoPercentaje.css('color', '#EB514E')
 			}
    	} else {
    		  progressBar.addClass('progress-bar-banesco-low-percentage');
-	      infoPercentaje.append("0% UTILIZADO");
+	      infoPercentaje.append("0% USED");
 	      infoPercentaje.css('color', '#1C8464')
    	}
    })();

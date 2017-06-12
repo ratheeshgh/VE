@@ -2991,3 +2991,11 @@ a.sidebarlink:focus {text-decoration:none; color:#FFF;}
 /*Banesco changes*/
   color:#556176 !important;
 }
+
+div[id*='EmptyMessage'] {
+    font-size: 14px;
+    text-transform: initial;
+    color: #54616d;
+    text-align: center;
+    font-weight: bold;
+}
