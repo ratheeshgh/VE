@@ -1,0 +1,117 @@
+<button id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().ButtonStyle$" class="$$ITEM.STYLES().ButtonStyle$">$$ITEM.ActionCommand$</button>
+<input type="text" style="display:none" >
+<script type="text/javascript">
+    $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // BORRAR. SOLO PARA PRUEBAS
+        // ============================================
+/*
+        var $fingerprintButton = $('#$$ITEM.ID()$')
+
+        $%IF ITEM.registerFunctionality = 'Y'$
+            var username = "$$ITEM.Username$";
+            var password = "$$ITEM.Password$";
+
+            $fingerprintButton.on('click', function () {
+                if (result.withFingerprint) {
+                    $$ITEM.NAVIGATION()$
+                }
+            })
+        $%ENDIF$
+
+        $%IF ITEM.registerFunctionality != 'Y'$
+            $fingerprintButton.on('click', function () {
+
+                if (true) {
+                    $('button[id*=$$ITEM.LoginWithFingerprintButtonID$]').click()
+                
+                } else {
+                    $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val(registeredUser.username);
+                    $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val(result.password);
+                                    
+                    $$ITEM.NAVIGATION()$
+                }
+            }) 
+        $%ENDIF$
+  */      
+        // ============================================
+
+        function onDeviceReady() {
+
+            var fingerprintHelper = new FingerprintHelper();
+            var $fingerprintButton = $('#$$ITEM.ID()$')
+
+//          fingerprintHelper.deleteDbTable();
+
+            $%IF ITEM.registerFunctionality = 'Y'$
+                var username = "$$ITEM.Username$";
+                var password = "$$ITEM.Password$";
+
+                $fingerprintButton.on('click', function () {
+                    if (username !== '' && password !== '') {
+                        var encryptConfig = {
+                            clientId: 'BanescoMovil_App',
+                            username: username,
+                            password: password,
+                            disableBackup: true,
+                            maxAttempts: 3
+                        }; // See config object for required parameters
+                        FingerprintAuth.encrypt(encryptConfig, function successCallback(result) {
+                            console.log("successCallback()");
+                            if (result.withFingerprint) {
+                                fingerprintHelper.saveLocal(result.token, username, password)
+                                $$ITEM.NAVIGATION()$
+                            }
+                        }, function errorCallback(error) {
+                            if (error === FingerprintAuth.ERRORS.FINGERPRINT_CANCELLED) {
+                                console.log("FingerprintAuth Dialog Cancelled!");
+                            } else {
+                                console.log("FingerprintAuth Error: " + error);
+                            }
+                        });
+                    }        
+            $%ENDIF$
+
+            $%IF ITEM.registerFunctionality != 'Y'$
+                $fingerprintButton.on('click', function () {
+
+                    fingerprintHelper.isAlreadyRegistered(function (response) {
+                        if (response.isRegistered) {
+                            fingerprintHelper.getRegisteredUser(function (registeredUser) {
+                                var decryptConfig = {
+                                    clientId: 'BanescoMovil_App',
+                                    username: registeredUser.username,
+                                    token: registeredUser.token,
+                                    disableBackup: true,
+                                    maxAttempts: 3
+                                };
+
+                                FingerprintAuth.decrypt(decryptConfig, function successCallback(result) {
+                                    console.log("successCallback()");
+                                    if (result.withFingerprint) {
+                                        console.log(registeredUser)
+                                        console.log(result)
+                                        $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val(registeredUser.username);
+                                        $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val(result.password);
+                                        
+                                        $('button[id*=$$ITEM.LoginWithFingerprintButtonID$]').click()
+                                    }
+                                }, function errorCallback(error) {
+                                    if (error === FingerprintAuth.ERRORS.FINGERPRINT_CANCELLED) {
+                                        console.log("FingerprintAuth Dialog Cancelled!");
+                                    } else {
+                                        console.log("FingerprintAuth Error: " + error);
+                                    }
+                                });
+                            })
+                        } else {
+                            $$ITEM.NAVIGATION()$
+                        }
+                    }) 
+                })
+            $%ENDIF$
+
+        }
+    })
+</script>

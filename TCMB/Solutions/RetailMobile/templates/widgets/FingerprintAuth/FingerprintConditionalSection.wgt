@@ -1,0 +1,45 @@
+<div id="$$ITEM.ID()$" style="display:none;">$$FORMCONTENT$</div>
+<script type="text/javascript">
+     $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // BORRAR. SOLO PARA PRUEBAS
+        // ==============================
+/*
+        var $section = $('#$$ITEM.ID()$');
+
+        if (true) {
+            $section.css('display','block');
+        } else {
+            $section.remove();
+        }
+*/
+        // ==============================
+
+        function onDeviceReady() {
+
+            var $section = $('#$$ITEM.ID()$');
+
+            FingerprintAuth.isAvailable(isAvailableSuccess, isAvailableError);
+
+            /**
+             * @return {
+             *      isAvailable:boolean,
+             *      isHardwareDetected:boolean,
+             *      hasEnrolledFingerprints:boolean
+             *   }
+             */
+            function isAvailableSuccess(result) {
+                if (result.isAvailable) {
+                    $section.css('display','block');
+                } else {
+                    $section.remove();
+                }
+            }
+
+            function isAvailableError (error) {
+                console.log('Error: ' + error)
+            }
+        }
+    })
+</script>

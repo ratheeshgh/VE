@@ -1,4 +1,5 @@
-<script>
+<script type="text/javascript">
+     //<![CDATA[
     $(function () {
         document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -100,6 +101,7 @@
             onDeviceReady()
         }
     })
+    //]]
 </script>
 
 <div 

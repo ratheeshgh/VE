@@ -1,5 +1,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu7Hj-YJAiNdhAng61lk5aYyK7ekQwiLQ&libraries=places"></script>
-<script>
+<script type="text/javascript">
+   //<![CDATA[
     window.com = window.com || {};
     window.com.widgets = window.com.widgets || {};
     window.com.widgets.BanescoMap = window.com.widgets.BanescoMap || {};
@@ -151,4 +152,5 @@
             renderRouteTo: renderRouteTo
         }
     })();
+    //]]
 </script>

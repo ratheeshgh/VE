@@ -1,0 +1,19 @@
+.useTermTitle {
+ text-transform: initial;
+ text-align: center;
+ width: 100%;
+ margin-bottom: 20px; 
+}
+
+.useTermBody {
+    text-transform: initial;
+    text-align: justify;
+}
+
+.useTermButtonsContainer {
+    margin-top: 30px;
+}
+
+.fingerprintAuthTitle {
+    text-transform: capitalize;
+}
