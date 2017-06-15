@@ -39,3 +39,4 @@
 "pdf_documents"="PDF Documents";
 "print"="Print";
 "reports"="Reports";
+"app_name"="App name - not used required by Cordova";

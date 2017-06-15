@@ -1,8 +1,8 @@
 .useTermTitle {
- text-transform: initial;
- text-align: center;
- width: 100%;
- margin-bottom: 20px; 
+    text-transform: initial;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .useTermBody {
@@ -16,4 +16,35 @@
 
 .fingerprintAuthTitle {
     text-transform: capitalize;
+}
+
+.fingerprintBtn {
+    line-height: 10px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-family: "Banesco";
+    font-size: 12px;
+    text-decoration: none !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fingerprintBtn span {
+    font-family: "Lato Light";
+    display: block;
+}
+
+.fingerprintBtn:hover, .fingerprintBtn:focus {
+    color: #fff !important;
+}
+
+.fingerprintBtn:before {
+    content: '\E94D';
+    font-family: 'Banesco';
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
 }

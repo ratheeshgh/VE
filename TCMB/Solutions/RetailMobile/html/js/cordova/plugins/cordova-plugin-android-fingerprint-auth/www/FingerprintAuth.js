@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-android-fingerprint-auth.FingerprintAuth", function(require, exports, module) {
-function FingerprintAuth() {
+cordova.define("cordova-plugin-android-fingerprint-auth.FingerprintAuth", function(require, exports, module) { function FingerprintAuth() {
     FingerprintAuth.prototype.ERRORS = {
         BAD_PADDING_EXCEPTION: "BAD_PADDING_EXCEPTION",
         CERTIFICATE_EXCEPTION: "CERTIFICATE_EXCEPTION",

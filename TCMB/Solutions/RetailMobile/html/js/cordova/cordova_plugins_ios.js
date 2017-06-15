@@ -492,38 +492,6 @@ module.exports = [
         "clobbers": [
             "navigator.goOffline"
         ]
-    },
-    {
-        "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-        "id": "cordova-sqlite-storage.SQLitePlugin",
-        "pluginId": "cordova-sqlite-storage",
-        "clobbers": [
-            "SQLitePlugin"
-        ]
-    },
-    {
-        "file": "plugins/com.clone.phonegap.plugins.PushPlugin/www/PushNotification.js",
-        "id": "com.clone.phonegap.plugins.PushPlugin.PushNotification",
-        "pluginId": "com.clone.phonegap.plugins.PushPlugin",
-        "clobbers": [
-            "PushNotification"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-android-fingerprint-auth/www/FingerprintAuth.js",
-        "id": "cordova-plugin-android-fingerprint-auth.FingerprintAuth",
-        "pluginId": "cordova-plugin-android-fingerprint-auth",
-        "clobbers": [
-            "FingerprintAuth"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-keychain-touch-id/www/touchid.js",
-        "id": "cordova-plugin-keychain-touch-id.TouchID",
-        "pluginId": "cordova-plugin-keychain-touch-id",
-        "clobbers": [
-            "window.plugins.touchid"
-        ]
     }
 ];
 module.exports.metadata = 
@@ -548,11 +516,7 @@ module.exports.metadata =
     "cordova-plugin-pushplugin": "2.6.1",
     "com.temenos.edgehybrid.plugins.spinner": "1.2.0",
     "cordova-plugin-geolocation": "2.2.0",
-    "com.temenos.edgehybrid.plugins.gooffline": "1.2.0",
-    "cordova-sqlite-storage": "2.0.4",
-    "com.clone.phonegap.plugins.PushPlugin": "2.4.1",
-    "cordova-plugin-android-fingerprint-auth": "1.2.7",
-    "cordova-plugin-keychain-touch-id": "3.2.1"
+    "com.temenos.edgehybrid.plugins.gooffline": "1.2.0"
 }
 // BOTTOM OF METADATA
 });

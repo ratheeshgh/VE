@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-console.logger", function(require, exports, module) {
-/*
+cordova.define("cordova-plugin-console.logger", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -44,6 +43,7 @@ cordova.define("cordova-plugin-console.logger", function(require, exports, modul
 var logger = exports;
 
 var exec    = require('cordova/exec');
+var utils   = require('cordova/utils');
 
 var UseConsole   = false;
 var UseLogger    = true;

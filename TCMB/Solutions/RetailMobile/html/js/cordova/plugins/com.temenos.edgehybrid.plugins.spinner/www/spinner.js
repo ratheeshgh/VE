@@ -1,5 +1,4 @@
-cordova.define("com.temenos.edgehybrid.plugins.spinner.SpinnerDialog", function(require, exports, module) {
-var exec = require('cordova/exec');
+cordova.define("com.temenos.edgehybrid.plugins.spinner.SpinnerDialog", function(require, exports, module) { var exec = require('cordova/exec');
 
 module.exports = {
 

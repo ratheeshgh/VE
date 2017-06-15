@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-device.device", function(require, exports, module) {
-/*
+cordova.define("cordova-plugin-device.device", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -43,8 +42,6 @@ function Device() {
     this.cordova = null;
     this.model = null;
     this.manufacturer = null;
-    this.isVirtual = null;
-    this.serial = null;
 
     var me = this;
 
@@ -59,9 +56,7 @@ function Device() {
             me.uuid = info.uuid;
             me.cordova = buildLabel;
             me.model = info.model;
-            me.isVirtual = info.isVirtual;
             me.manufacturer = info.manufacturer || 'unknown';
-            me.serial = info.serial || 'unknown';
             channel.onCordovaInfoReady.fire();
         },function(e) {
             me.available = false;

@@ -16,28 +16,73 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
-	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script> 
-	  <script src="./html/js/hookit.min.js"></script> 
+	  <script src="./html/js/cordova/cordova_loader.js"></script>
+	  <script src="./html/js/hookit.min.js"></script>
 	  <script type="text/javascript">
-		var controlCss; 
-		var deviceAgent = navigator.userAgent.toLowerCase(); 
+		var controlCss;
+		var deviceAgent = navigator.userAgent.toLowerCase();
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css"; 
+			controlCss = "./html/css/android.css";
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/details.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/movements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabMenu.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/branchesList.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/promotions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/frecuent_payments.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/historyOfOperations.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/payabill.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/list-Styles.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contactFix.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x77b814f1-0bdd-4d42-bb94-78bc05347dea=d5dab93d-52b2-41c6-a5a7-0d071c36de4a';
+var pageCode = '&xdf7ded23-ef19-4b35-8985-76f8b52da0de=5e26d25b-1ebf-499b-9539-6f43caca9401';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -110,9 +155,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
 
-	   <script src="./html/js/tcmb.js"></script>	
+	   <script src="./html/js/tcmb.js"></script>
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -128,9 +173,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x77b814f1-0bdd-4d42-bb94-78bc05347dea" value="d5dab93d-52b2-41c6-a5a7-0d071c36de4a"/></div>
+      	<div><input type="hidden" name="xdf7ded23-ef19-4b35-8985-76f8b52da0de" value="5e26d25b-1ebf-499b-9539-6f43caca9401"/></div>
       
-      
+
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -229,61 +274,59 @@ function BUT_A34AD113ECB67B0820770onDeviceReady() {
  document.addEventListener("deviceready", BUT_A34AD113ECB67B0820770onDeviceReady, false);
 </script>
 </div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E209128"><div id="p1_HEAD_0645D21B37B8E82E209128" class="ecDIB  NavTitle"><div>Contact Us</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div style="text-align: left; width:100%  ;background-color: #EBF0F5;" id="TXT_83E8CB5ADDDAA23C48224"><div class="ContactContainer">
-	<div>
-	<br/>
-		<div >
-		<div class="Size14 Medium" style="padding-left:10px; color: #54616D;">LLAMANOS AL CENTRO DE ATENCION AL CLIENTE</div>
-		<br/>
-		<div>
-			
-			<div class="    FullWidth Padding10" style="text-align: left; width: 49%;">
-				<a href="tel:5078001300" class="Size14 FullWidth  NoDecoration ContactCall  ">
-				<span style="margin-top:-5px;">DESDE PANAMA</span></br>
-				<span style="text-align:left;padding-left:107px;">(507)800-1300</span></a>
+	<p class="Size12 Medium titleContact">CALL US AT THE CUSTOMER SERVICE CENTER</p>
+	<div class="contactCallRow">
+		<a href="tel:5078001300" class="col-xs-12 contactCallBtn">
+			<div class="col-xs-3 iconContactFix">
+				<img src="html/img/icon_phone-05-05-2.svg" style="height:55px;">
 			</div>
-		</div>
-		<div>
-			
-			<div class="ecDIB  Medium  FullWidth Padding10" style="text-align: left; width: 49%;">
-				<a href="tel:05002263726" class="Size14 FullWidth DisplayBlock NoDecoration ContactCall ">
-				<span style="margin-top:-5px;">DESDE VENEZUELA</span></br>
-				<span style="text-align:left;padding-left:107px;">0500BANESCO (0500-2263726)</span></a>
+			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
+			<div class="col-xs-9 infoContact ">
+				<p class="from Size12">FROM PANAMA</p>
+				<p class="Size12">(507)800-1300</p>
 			</div>
-		</div>
-		<div>
-			
-			<div class="ecDIB  Medium  FullWidth Padding10" style="text-align: left; width: 49%;">
-				<a href="tel:0115072822013" class="Size14 FullWidth DisplayBlock NoDecoration ContactCall ">
-				<span style="margin-top:-5px;">DESDE ESTADOS UNIDOS</span> </br>
-				<span style="text-align:left;padding-left:107px;">011-507-282-2013</span></a>
-			</div>
-		</div>
-		
+		</a>
 	</div>
-	<br/>
-	<br/>
-	<br/>
-	
-	
-	<div>
-	<br/>
-		<div class="Size14  Medium" style="padding-left:10px;color: #54616D;">ENVIAMOS UN CORREO ELECTRONICO SEGURO A</div>
-		<br/>
-		<div class="ecDIB  Medium  FullWidth Padding10" style="text-align: left; width: 49%;">
-				<a href="mailto:ACLIENTE_PA@BANESCO.COM" class="Size14 FullWidth DisplayBlock NoDecoration ContactEmail ">
-				<span style="margin-top:-5px;padding-left:34px;">DESDE ESTADOS UNIDOS</span></br>
-				<span style="text-align:left;padding-left:100px;">ACLIENTE_PA@BANESCO.COM</span></a>
+	<div class="contactCallRow">
+		<a href="tel:05002263726" class="col-xs-12 contactCallBtn">
+			<div class="col-xs-3 iconContactFix">
+				<img src="html/img/icon_phone-05-05-2.svg" style="height:55px;">
 			</div>
-		
-		
+			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
+			<div class="col-xs-9 infoContact">
+				<p class="from Size12">FROM VENEZUELA</p>
+				<p class="Size12">0500BANESCO (0500-2263726)</p>
+			</div>
+		</a>
 	</div>
-	<br/>
-	<br/>
-	<br/>
-	</div><!--Container-->
+	<div class="contactCallRow">
+		<a href="tel:0115072822013" class="col-xs-12 contactCallBtn">
+			<div class="col-xs-3 iconContactFix">
+				<img src="html/img/icon_phone-05-05-2.svg" style="height:55px;">
+			</div>
+			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
+			<div class="col-xs-9 infoContact">
+				<p class="from Size12">FROM UNITED STATES</p>
+				<p class="Size12">011-507-282-2013</p>
+			</div>
+		</a>
+	</div>
+    <p class="Size12 Medium titleContact titleContactMail">SEND US A SAFE EMAIL TO</p>
+	 <div class="contactCallRow">
+		<a href="mailto:ACLIENTE_PA@BANESCO.COM" class="col-xs-12 contactCallBtn">
+			<div class="col-xs-3 iconContact ContactEmail"></div>
+			<div class="col-xs-9 infoContact">
+				<!--<p class="from Size12">FROM UNITED STATES</p>-->
+				<p class="Size12">ACLIENTE_PA@BANESCO.COM</p>
+			</div>
+		</a>
+	</div> 
+	<div class="space"></div>
 </div>
 </div><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"><script type="text/javascript">
 $(document).ready(function() {$('body').addClass("general");
+
+$('#androidfooterfix').addClass("NotDisplayed");
 
 });
 </script></div></div></div></div>
@@ -291,7 +334,7 @@ $(document).ready(function() {$('body').addClass("general");
 		    
         
       </div>
-	     
+	
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -306,6 +349,7 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
+
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -372,7 +416,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-	
+
 
 <script>
 	jQuery(document).ready(function() {
@@ -383,8 +427,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-		
-	
+
+
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -412,6 +456,3 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
-
-		  
-	

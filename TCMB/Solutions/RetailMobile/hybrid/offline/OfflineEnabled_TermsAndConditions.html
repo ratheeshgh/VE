@@ -16,28 +16,73 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
-	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script> 
-	  <script src="./html/js/hookit.min.js"></script> 
+	  <script src="./html/js/cordova/cordova_loader.js"></script>
+	  <script src="./html/js/hookit.min.js"></script>
 	  <script type="text/javascript">
-		var controlCss; 
-		var deviceAgent = navigator.userAgent.toLowerCase(); 
+		var controlCss;
+		var deviceAgent = navigator.userAgent.toLowerCase();
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css"; 
+			controlCss = "./html/css/android.css";
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/details.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/movements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabMenu.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/branchesList.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/promotions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/frecuent_payments.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/historyOfOperations.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/payabill.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/list-Styles.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contactFix.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
+var pageCode = '&x60c2fa26-464e-42e2-bf2e-647fe460d315=9346fcfd-ccfc-4c78-a4e3-0c7b0a279d46';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -110,9 +155,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
 
-	   <script src="./html/js/tcmb.js"></script>	
+	   <script src="./html/js/tcmb.js"></script>
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -128,9 +173,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
+      	<div><input type="hidden" name="x60c2fa26-464e-42e2-bf2e-647fe460d315" value="9346fcfd-ccfc-4c78-a4e3-0c7b0a279d46"/></div>
       
-      
+
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -228,13 +273,12 @@ function BUT_A34AD113ECB67B0820770onDeviceReady() {
 }
  document.addEventListener("deviceready", BUT_A34AD113ECB67B0820770onDeviceReady, false);
 </script>
-</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E181652"><div id="p1_HEAD_0645D21B37B8E82E181652" class="ecDIB  NavTitle"><div>Terms and Conditions</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E181680"><div class="Justify">
+</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_BAE38555A9D6259746363"><div id="row_HEAD_0645D21B37B8E82E181652"><div id="p1_HEAD_0645D21B37B8E82E181652" class="ecDIB  NavTitle"><div>Terms and Conditions</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_BAE38555A9D6259746365"><div class="ec-empty-column" id="dummyCOL_BAE38555A9D6259746365">&nbsp;</div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_0645D21B37B8E82E181680"><div class="Justify tac-style">
 <div class="BColorWhite Padding5">
-<h4><span class="OfflineBullet">1</span>General Things</h4>
+<h4 class=" tac-head"><span>1 </span>General Things</h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis laoreet dapibus. Etiam porttitor molestie efficitur. Praesent eu sagittis odio, eu dictum est. Proin finibus tortor et posuere volutpat. Mauris eleifend lacus eget metus finibus aliquam. Nam ornare volutpat est, in sodales mauris vestibulum sed. Maecenas aliquet mi est, at hendrerit elit viverra sed. Donec egestas nulla non ultricies aliquam. Donec dolor nunc, vehicula nec leo eu, varius cursus quam. Vivamus posuere, dui a tincidunt luctus, ipsum ligula dapibus quam, sit amet ornare diam lorem vel sem. Mauris quis metus massa.</p>
 
-<hr>
-<h4><span class="OfflineBullet">2</span>Particularities</h4>
+<h4 class=" tac-head"><span>2 </span>Particularities</h4>
 <p>Quisque molestie, nisi blandit lacinia eleifend, leo nibh euismod augue, eu auctor nulla mi faucibus nunc. Etiam porttitor ut nunc vitae mattis. Nulla vitae aliquam libero. Praesent dictum, ex non consectetur sollicitudin, enim elit efficitur mi, a tincidunt sapien mauris id metus. Quisque laoreet quam vitae tristique viverra. Ut sem justo, pulvinar sed risus vitae, laoreet viverra libero. Curabitur auctor nec mi a molestie. Duis facilisis malesuada lacinia. Quisque nec nisl bibendum, facilisis dui vel, aliquam dui. Nulla ullamcorper vitae ante vitae finibus. Cras quam ipsum, pretium ut rutrum eu, tincidunt sed elit.</p>
 
 <p>Quisque posuere convallis metus at cursus. Nunc varius laoreet purus, ut porta magna dapibus a. Quisque rhoncus est ac justo tincidunt mollis. Aenean orci elit, malesuada sed gravida ut, tristique sit amet odio. Aliquam condimentum faucibus massa nec venenatis. Fusce cursus egestas urna sed pulvinar. Sed convallis vulputate est, eget porta dui interdum quis. Proin fringilla eros nec odio ullamcorper, consectetur dignissim nisi vehicula. Fusce vitae tincidunt nulla. Cras in arcu vitae tellus ultrices sagittis sed sit amet risus. Donec congue ullamcorper libero id convallis. Vivamus pellentesque est nec mollis auctor.</p>
@@ -253,13 +297,15 @@ function BUT_A34AD113ECB67B0820770onDeviceReady() {
 </div><div style="text-align: left; width:100%" id="TXT_17514B55408B715B59309"><script type="text/javascript">
 $(document).ready(function() {$('body').addClass("general");
 
+$('#androidfooterfix').addClass("NotDisplayed");
+
 });
 </script></div></div></div></div>
 		<div id="androidfooterfix"></div>
 		    
         
       </div>
-	     
+	
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -274,6 +320,7 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
+
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -340,7 +387,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-	
+
 
 <script>
 	jQuery(document).ready(function() {
@@ -351,8 +398,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-		
-	
+
+
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -380,6 +427,3 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
-
-		  
-	

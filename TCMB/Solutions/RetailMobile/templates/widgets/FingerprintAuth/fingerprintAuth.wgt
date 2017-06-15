@@ -64,13 +64,14 @@
             $%ENDIF$
 
             $%IF ITEM.registerFunctionality != 'Y'$
+
+                $%IF WorkingElements[1].Flag[1].GoToFingerprint = 'Y'$
                 function setDataItems (user, password) {
                     $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val(user);
                     $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val(password);
                 }
 
-
-                $fingerprintButton.on('click', function () {
+                //$fingerprintButton.on('click', function () {
                     fingerprintHelper.isAlreadyRegistered(function (response) {
                         console.log(response)
                         if (response.isRegistered) {
@@ -120,7 +121,9 @@
                             $('button[id*=$$ITEM.LoginWithFingerprintButtonID$]').click()
                         }
                     })
-                })
+
+                $%ENDIF$
+                //})
             $%ENDIF$
 
         }
