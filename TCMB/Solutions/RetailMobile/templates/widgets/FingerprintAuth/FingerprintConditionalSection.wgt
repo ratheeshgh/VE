@@ -14,7 +14,7 @@
                 $section.css('display','inline-block');
                 $section.css('width','33%')
                 $("#COL_EF565F46CE98C024403209").css('width','33%')
-                $("#COL_579FA8B6F6416D06620285").css('width','33%')
+                $("#COL_EF565F46CE98C024403212").css('width','33%')
             }
 
             function removeContent() {
