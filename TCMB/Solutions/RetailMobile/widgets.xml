@@ -1893,4 +1893,111 @@
             value="./templates/widgets/banescoCheckbox.wgt"
             />
     </widget>
+    <widget
+        displayName="FingerprintAuth"
+        name="FingerprintAuth"
+        type="Button"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/FingerprintAuth/fingerprintAuth.wgt"
+            />
+        <custom>
+            <item
+                help="Flag to indicate if this is the register functionality or not"
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="registerFunctionality"
+                type="javax.swing.JCheckBox"
+                usage="7"
+                />
+            <item
+                help="Username to associate with the fingerprint"
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="Username"
+                type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser"
+                typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property"
+                usage="7"
+                />
+            <item
+                help="Password to associate with the fingerprint"
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="Password"
+                type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser"
+                typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="LoginWithFingerprintButtonID"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="testWrongCredentials"
+                prompt="Test Wrong Credentials"
+                type="com.acquire.util.FocusCheckbox"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="TestRegisterFunctionality"
+                prompt="Delete Database"
+                type="com.acquire.util.FocusCheckbox"
+                usage="7"
+                />
+        </custom>
+        <template
+            type="header"
+            value="./templates/widgets/FingerprintAuth/fingerprintAuth_header.wgt"
+            />
+    </widget>
+    <widget
+        displayName="FingerprintConditionalSection"
+        name="FingerprintConditionalSection"
+        type="Section"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/FingerprintAuth/fingerprintConditionalSection.wgt"
+            />
+    </widget>
+    <widget
+        displayName="FingerprintAuthRegisterIfSuccess"
+        name="FingerprintAuthRegisterIfSuccess"
+        type="Item:"
+        >
+        <template
+            type="source"
+            value="./templates/widgets/FingerprintAuth/fingerprintAuthRegisterIfSuccess.wgt"
+            />
+        <custom>
+            <item
+                help="Boolean to check if login with fingerprint is success"
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="LoginWithFingerprintSuccess"
+                type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser"
+                typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property"
+                usage="7"
+                />
+        </custom>
+        <template
+            type="header"
+            value="./templates/widgets/FingerprintAuth/fingerprintAuth_header.wgt"
+            />
+    </widget>
 </widgets>

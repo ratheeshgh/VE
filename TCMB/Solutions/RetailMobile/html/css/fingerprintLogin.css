@@ -1,0 +1,83 @@
+.useTermTitle {
+    text-transform: initial;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.useTermBody {
+    text-transform: initial;
+    text-align: justify;
+}
+
+.useTermButtonsContainer {
+    margin-top: 30px;
+}
+
+.fingerprintAuthTitle {
+    text-transform: capitalize;
+}
+
+.fingerprintBtn {
+    line-height: 10px;
+    width: 100%;
+    border: none;
+    color: #fff;
+    outline: none;
+    font-family: "Banesco";
+    font-size: 12px;
+    text-decoration: none !important;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.fingerprintBtn span {
+    font-family: "Lato Light";
+    display: block;
+}
+
+.fingerprintBtn:hover, .fingerprintBtn:focus {
+    color: #fff !important;
+}
+
+.fingerprintBtn:before {
+    content: '\E94D';
+    font-family: 'Banesco';
+    display: block;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.fingerprintResultMessage, .fingerprintWrongCredentialsText {
+    margin-top:30px;   
+}
+
+.fingerprintResultMessage::before {
+    content: '\E94D';
+    font-family: 'Banesco';
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background: #007953;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-left: 15px;
+}
+
+.fingerprintWrongCredentialsText::before {
+    content: '\E90F';
+    font-family: 'Banesco';
+    font-size: 36px;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    color: #E31D19;
+}

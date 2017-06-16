@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-file-transfer.FileTransfer", function(require, exports, module) {
-/*
+cordova.define("cordova-plugin-file-transfer.FileTransfer", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -19,8 +18,6 @@ cordova.define("cordova-plugin-file-transfer.FileTransfer", function(require, ex
  * under the License.
  *
 */
-
-/* global cordova, FileSystem */
 
 var argscheck = require('cordova/argscheck'),
     exec = require('cordova/exec'),
@@ -159,9 +156,7 @@ FileTransfer.prototype.upload = function(filePath, server, successCallback, erro
                 self.onprogress(newProgressEvent(result));
             }
         } else {
-            if (successCallback) {
-                successCallback(result);
-            }
+            successCallback && successCallback(result);
         }
     };
     exec(win, fail, 'FileTransfer', 'upload', [filePath, server, fileKey, fileName, mimeType, params, trustAllHosts, chunkedMode, headers, this._id, httpMethod]);

@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-camera.CameraPopoverHandle", function(require, exports, module) {
-/*
+cordova.define("cordova-plugin-camera.CameraPopoverHandle", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -20,8 +19,9 @@ cordova.define("cordova-plugin-camera.CameraPopoverHandle", function(require, ex
  *
 */
 
+var exec = require('cordova/exec');
+
 /**
- * @ignore in favour of iOS' one
  * A handle to an image picker popover.
  */
 var CameraPopoverHandle = function() {

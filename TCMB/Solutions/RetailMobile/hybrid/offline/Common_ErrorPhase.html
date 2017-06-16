@@ -16,28 +16,73 @@
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Temenos Mobile Banking</title>
 	  <link href="./html/css/main.css" rel="stylesheet">
-	  <link href="./html/css/temenos.css" rel="stylesheet">
 	  
 	  <link rel="stylesheet" id="cssLink">
-	  <script src="./html/js/cordova/cordova_loader.js"></script> 
-	  <script src="./html/js/hookit.min.js"></script> 
+	  <script src="./html/js/cordova/cordova_loader.js"></script>
+	  <script src="./html/js/hookit.min.js"></script>
 	  <script type="text/javascript">
-		var controlCss; 
-		var deviceAgent = navigator.userAgent.toLowerCase(); 
+		var controlCss;
+		var deviceAgent = navigator.userAgent.toLowerCase();
 		if(deviceAgent.match(/android/i)){
-			controlCss = "./html/css/android.css"; 
+			controlCss = "./html/css/android.css";
 			document.getElementById("cssLink").setAttribute("href", controlCss);
 		}
 		</script>
 	  <script src="./html/js/jquery.min.js"></script>
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 	   <style type='text/css'>.accessibilityStyle { position:absolute !important; width:0 !important; height:0 !important; font-size:0 !important; overflow:hidden !important;padding:0 !important} *[align="right"]  { text-align: right; }  *[align="left"]   { text-align: left;  }  *[align="center"] { text-align: center;} </style><style type='text/css'>.ecDIB {display: -moz-inline-stack;display: inline-block;zoom: 1;*display: inline;vertical-align: top;}.ecDIBCol {vertical-align: top;}</style>
-<link id='maincss' title='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+<link id='maincss' rel='stylesheet' type='text/css' href='./html/css/banesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/buttons.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/card.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contact.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/login.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/details.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/movements.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/tabMenu.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/branchesList.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/promotions.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/frecuent_payments.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/historyOfOperations.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/payabill.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/list-Styles.css' />
+
+<link rel='stylesheet' type='text/css' href='./html/css/contactFix.css' />
 
 <script type="text/javascript">
 //<![CDATA[
 var controllerMode = 'XX';
-var pageCode = '&x0470ff95-fa76-481a-80f4-72614da648f3=01fdcd8d-56b3-42b4-a429-1c70e4a92e9a';
+var pageCode = '&x60c2fa26-464e-42e2-bf2e-647fe460d315=9346fcfd-ccfc-4c78-a4e3-0c7b0a279d46';
 var rootContext = '.';
 var act = './servletcontroller';
 var popupAct = './servletcontroller';
@@ -110,9 +155,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
 <script type="text/javascript" src="./html/js/modernizr.js"></script>
 <script type="text/javascript" src="./html/js/connect_hybrid.js"></script>
 
-	   <script src="./html/js/tcmb.js"></script>	
+	   <script src="./html/js/tcmb.js"></script>
 	   <script type="text/javascript">
-		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {			
+		function afterAjaxButtonActionService(p_service, p_element, p_innerOrOuter, p_text, p_actionFlag, p_actionData, p_ajaxCaller, p_dElement, ns) {
 			if ($("#" + p_element).is(".ECDontRegen"))
 				return false;
 			return true;
@@ -128,9 +173,9 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
     <form id="form1" method="post" action="servletcontroller" onsubmit="return false;">
       <div><input type="hidden" name="MODE"/></div>
       
-      	<div><input type="hidden" name="x0470ff95-fa76-481a-80f4-72614da648f3" value="01fdcd8d-56b3-42b4-a429-1c70e4a92e9a"/></div>
+      	<div><input type="hidden" name="x60c2fa26-464e-42e2-bf2e-647fe460d315" value="9346fcfd-ccfc-4c78-a4e3-0c7b0a279d46"/></div>
       
-      
+
 	  <div><input type="hidden" name="MENUSTATE"/></div>
 
 
@@ -139,7 +184,20 @@ var InvalidMinDateMessage = 'The earliest date is $$QUESTION_CONSTRAINT$';
                       
                       
           
-		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="Common.ErrorPhase"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_8200757CB824C3EF147720" class="navbar navbar-inverse-green navbar-fixed-top"><div class="ecDIBCol  ecDIB  TopNavSectionLeft" id="COL_8200757CB824C3EF147729"><div id="row_BUT_6752AE2191A4050D163066" class="TopNavBtnContainer  "><div class="ecDIB  TopNavBtnContainer  " id="p4_BUT_6752AE2191A4050D163066"><div><a onclick="return buttonClicked('__6752AE2191A4050D FormButton 14', false, null, '', false, 'BUT_6752AE2191A4050D163066', true, false, '', true, true, 'preInPhase');" type="button" class="TopNavBtn" style="" id="BUT_6752AE2191A4050D163066"></a></div></div></div><div id="row_BUT_FF487B653612AFD552531" class="NotDisplayed  "><div class="ecDIB  " style="text-align: left; " id="p4_BUT_FF487B653612AFD552531"><div><!-- $Revision: 1.0 $ -->
+		<div style="display: none;"><input type="hidden" name="BROWSER_FEATURES" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="DEVICE_SIZE_INFO" value=""/></div><div style="display: none;"><input type="hidden" name="OFFLINE_PHASE_NAME" value="Common.ErrorPhase"/></div><div class="GlobalFont Color1  " id="EDGE_CONNECT_PROCESS"><div id="EDGE_CONNECT_PHASE"><div id="FMT_8302F037970D57F3297085" class="error" style="text-align:center; padding-top:initial;"><div style="text-align: center; " id="TXT_8302F037970D57F3296918"><!-- $Revision: 1.4 $ -->
+<!-- widget file maintained by edgeConnect - DO NOT EDIT -->
+<img src="images/modelbank/error/Piggy_01.png"  alt="Error" id="img_TXT_8302F037970D57F3296918"
+	
+	
+	
+	  width="100%" 
+	
+	
+	
+	
+	
+	
+	/></div><div id="row_HEAD_6BC0B802A85BA31276158" class="error-headergrande  "><div id="p1_HEAD_6BC0B802A85BA31276158" style="text-align: center; ; " class="ecDIB  "><div>Something went wrong</div></div></div><div id="row_HEAD_6BC0B802A85BA31276164" class="error-texto  "><div id="p1_HEAD_6BC0B802A85BA31276164" style="text-align: center; ; " class="ecDIB  "><div>An error has occurred.</div></div></div><div id="row_HEAD_6BC0B802A85BA31276170" class="error-texto  "><div id="p1_HEAD_6BC0B802A85BA31276170" style="text-align: center; ; " class="ecDIB  "><div>Please try again later.</div></div></div><div id="FMT_74FCF676B601C3A475445"><div id="row_BUT_6752AE2191A4050D163066" style="margin-top:40px;"><div id="p1_BUT_6752AE2191A4050D163066__REMOVED" class="ecDIB" style="display: none;"><div>&nbsp;</div></div><div id="p2_BUT_6752AE2191A4050D163066__REMOVED" class="ecDIB" style="display: none;"><div>&nbsp;</div></div><div id="p3_BUT_6752AE2191A4050D163066__REMOVED" class="ecDIB  " style="display: none;"><div>&nbsp;</div></div><div class="ecDIB  " style="text-align: center; width:40%;  " id="p4_BUT_6752AE2191A4050D163066"><div><button title="Back" onclick="return buttonClicked('__6752AE2191A4050D FormButton 14', false, null, '', false, 'BUT_6752AE2191A4050D163066', true, false, '', true, true, 'preInPhase');" type="button" name="__6752AE2191A4050D FormButton 14" onmouseover="this.style.cursor='pointer'" value="LOGIN" class="btn error-boton" id="BUT_6752AE2191A4050D163066">LOGIN</button></div></div></div></div><div><div id="row_BUT_FF487B653612AFD552531" class="NotDisplayed  "><div class="ecDIB  " style="text-align: left; " id="p4_BUT_FF487B653612AFD552531"><div><!-- $Revision: 1.0 $ -->
  
 
 <script type = "text/javascript" charset="utf-8">
@@ -195,8 +253,10 @@ function BUT_FF487B653612AFD552531onDeviceReady() {
 }
  document.addEventListener("deviceready", BUT_FF487B653612AFD552531onDeviceReady, false);
 </script>
-</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionCenter" id="COL_8200757CB824C3EF147733"><div id="row_HEAD_50CC198FD360656D17625"><div id="p1_HEAD_50CC198FD360656D17625" class="ecDIB  NavTitle"><div>Application Error</div></div></div></div><div class="ecDIBCol  ecDIB  TopNavSectionRight" id="COL_8200757CB824C3EF147737"><div class="ec-empty-column" id="dummyCOL_8200757CB824C3EF147737">&nbsp;</div></div></div><div style="width: 100%"><div id="row_QUE_91D1E093C7CD49862762" class="QuestionHybridFirst pleft10  " style="display: none;"><div id="p1_QUE_91D1E093C7CD49862762" style="display: none;text-align: left; ; width: 48%;" class="ecDIB  "><div style="padding: 4px"><label>Error Code</label></div></div><div id="p2_QUE_91D1E093C7CD49862762__REMOVED" style="text-align: left; display: none;  width: 2%;  display: none;" class="ecDIB"><div style="padding: 4px">&nbsp;</div></div><div id="p3_QUE_91D1E093C7CD49862762" style="text-align: left; display: none;  width: 1%;" class="ecDIB  "><div style="padding: 4px">&nbsp;</div></div><div style="width: 49%;text-align: left; ; display: none;" class="ecDIB  " id="p4_QUE_91D1E093C7CD49862762"><div style="padding: 4px"><span  id="QUE_91D1E093C7CD49862762" class="hybridinput"><!-- --></span></div></div></div><div id="QUE_91D1E093C7CD49862762_ERRORROW" style="display: none;clear: left;"><div class="ecDIB"></div></div><div id="row_QUE_91D1E093C7CD49862763" class="QuestionHybrid pleft10  "><div id="p1_QUE_91D1E093C7CD49862763" style="text-align: left; ; width: 48%;" class="ecDIB  "><div style="padding: 4px"><label>Error Message</label></div></div><div id="p2_QUE_91D1E093C7CD49862763__REMOVED" style="text-align: left; width: 2%;  display: none;" class="ecDIB"><div style="padding: 4px">&nbsp;</div></div><div id="p3_QUE_91D1E093C7CD49862763" style="text-align: left; width: 1%;" class="ecDIB  "><div style="padding: 4px">&nbsp;</div></div><div style="width: 49%;text-align: left; ; " class="ecDIB  " id="p4_QUE_91D1E093C7CD49862763"><div style="padding: 4px"><span  id="QUE_91D1E093C7CD49862763" class="hybridinput"><!-- --></span></div></div></div><div id="QUE_91D1E093C7CD49862763_ERRORROW" style="display: none;clear: left;"><div class="ecDIB"></div></div><div style="text-align: left; width:100%" id="TXT_8200757CB824C3EF147687"><script type="text/javascript">
+</div></div></div></div></div><div style="width: 100%"><div style="text-align: left; width:100%" id="TXT_8200757CB824C3EF147687"><script type="text/javascript">
 $(document).ready(function() {$('body').addClass("error_page");
+
+$('#androidfooterfix').addClass("NotDisplayed");
 
 });
 </script></div></div></div></div>
@@ -204,7 +264,7 @@ $(document).ready(function() {$('body').addClass("error_page");
 		    
         
       </div>
-	     
+	
     </form>
 <script type="text/javascript">
 //<![CDATA[
@@ -219,7 +279,7 @@ fetchBrowserFeatures(getForm(p_namespace).id);
 document.addEventListener('deviceready', function() {fetchDeviceInfo(getForm(p_namespace).id)}, false);
 notifyUniversalAppsForDeviceInfo();
 if ( beforeInitForm(p_namespace) == false ) return ;
-put("ERROR[1].CODE", "", "");
+
 showECForm(p_namespace);
 showServerSideValidationMessagesPopup(p_namespace);
 afterInitForm(p_namespace);
@@ -286,7 +346,7 @@ wrapCallToEcDoSubmit('XX');
 //]]>
 </script>
 
-	
+
 
 <script>
 	jQuery(document).ready(function() {
@@ -297,8 +357,8 @@ wrapCallToEcDoSubmit('XX');
 
 		$(document)
 			 $("#androidfooterfix").css("height","60px");
-		
-	
+
+
 	//WHIRLE EFFECT TO ACCOUNT CARDS
   	$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
@@ -326,6 +386,3 @@ wrapCallToEcDoSubmit('XX');
 </body>
 </html>
 
-
-		  
-	

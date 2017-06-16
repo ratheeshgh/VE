@@ -1,0 +1,26 @@
+
+<script type="text/javascript">
+    $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        function onDeviceReady() {
+
+            var loginSuccess = "$$ITEM.LoginWithFingerprintSuccess$" == 'Y';
+
+            var fingerprintHelper;
+
+            if (loginSuccess) {
+                fingerprintHelper = new FingerprintHelper();
+                var fingerprintData = fingerprintHelper.getLocal();
+                fingerprintHelper.isAlreadyRegistered(function (response){
+                    if (response.isRegistered) {
+                        fingerprintHelper.updateCredentials(fingerprintData);
+                    } else {
+                        fingerprintHelper.register(fingerprintData);
+                    }
+                })
+            }
+
+        }
+    })
+</script>

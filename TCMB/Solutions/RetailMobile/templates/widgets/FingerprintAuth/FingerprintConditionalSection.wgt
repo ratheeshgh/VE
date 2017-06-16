@@ -1,0 +1,48 @@
+<div id="$$ITEM.ID()$" style="display:none;">$$FORMCONTENT$</div>
+<script type="text/javascript">
+     $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        var ANDROID = navigator.userAgent.match(/Android/);
+        var IOS = navigator.userAgent.match(/(iPhone|iPod|iPad)/);
+
+        function onDeviceReady() {
+
+            var $section = $('#$$ITEM.ID()$');
+
+            function showContent() {
+                $section.css('display','inline-block');
+                $section.css('width','33%')
+                $("#COL_EF565F46CE98C024403209").css('width','33%')
+                $("#COL_579FA8B6F6416D06620285").css('width','33%')
+            }
+
+            function removeContent() {
+                $section.remove();
+            }
+
+            if (IOS) {
+                window.plugins.touchid.isAvailable(
+                  function() {
+                    showContent()
+                  },
+                  function(msg) {
+                    removeContent()
+                  }
+                );
+            }
+            
+            if (ANDROID) {
+                FingerprintAuth.isAvailable(function isAvailableSuccess(result) {
+                    if (result.isAvailable) {
+                        showContent()
+                    } else {
+                        removeContent()
+                    }
+                }, function isAvailableError (error) {
+                    console.log('Error: ' + error)
+                });
+            }
+        }
+    })
+</script>

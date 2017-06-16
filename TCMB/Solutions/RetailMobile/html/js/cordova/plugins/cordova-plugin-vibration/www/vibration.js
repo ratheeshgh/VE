@@ -1,5 +1,4 @@
-cordova.define("cordova-plugin-vibration.notification", function(require, exports, module) {
-/*
+cordova.define("cordova-plugin-vibration.notification", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -56,14 +55,14 @@ module.exports = {
         /* Aligning with w3c spec */
         
         //vibrate
-        if ((typeof param == 'number') && param !== 0)
+        if ((typeof param == 'number') && param != 0)
             exec(null, null, "Vibration", "vibrate", [param]);
 
         //vibrate with array ( i.e. vibrate([3000]) )
         else if ((typeof param == 'object') && param.length == 1)
         {
             //cancel if vibrate([0])
-            if (param[0] === 0)
+            if (param[0] == 0)
                 exec(null, null, "Vibration", "cancelVibration", []);
 
             //else vibrate
@@ -81,8 +80,6 @@ module.exports = {
         //cancel vibration (param = 0 or [])
         else
             exec(null, null, "Vibration", "cancelVibration", []);
-
-        return true;
     },
 
     /**

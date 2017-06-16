@@ -1,0 +1,136 @@
+<button id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().ButtonStyle$" class="$$ITEM.STYLES().ButtonStyle$">$$ITEM.ActionCommand$</button>
+<input type="text" style="display:none" >
+<script type="text/javascript">
+    $(function () {
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        var ANDROID = navigator.userAgent.match(/Android/);
+        var IOS = navigator.userAgent.match(/(iPhone|iPod|iPad)/);
+
+        function onDeviceReady() {
+
+            var fingerprintHelper = new FingerprintHelper();
+            var $fingerprintButton = $('#$$ITEM.ID()$')
+
+            $%IF ITEM.TestRegisterFunctionality = 'Y'$
+                fingerprintHelper.deleteDbTable();
+            $%ENDIF$
+
+            $%IF ITEM.registerFunctionality = 'Y'$
+                var username = "$$ITEM.Username$";
+                var password = "$$ITEM.Password$";
+
+                $fingerprintButton.on('click', function () {
+                    username = $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val();
+                    password = $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val();
+
+                    if (username !== '' && password !== '') {
+
+                        if (ANDROID) {
+                            var encryptConfig = {
+                                clientId: 'BanescoMovil_App',
+                                username: username,
+                                password: password,
+                                disableBackup: true,
+                                maxAttempts: 3
+                            }; // See config object for required parameters
+                            FingerprintAuth.encrypt(encryptConfig, function successCallback(result) {
+                                console.log("successCallback()");
+                                if (result.withFingerprint) {
+                                    fingerprintHelper.saveLocal(result.token, username, password)
+                                    $$ITEM.NAVIGATION()$
+                                }
+                            }, function errorCallback(error) {
+                                if (error === FingerprintAuth.ERRORS.FINGERPRINT_CANCELLED) {
+                                    console.log("FingerprintAuth Dialog Cancelled!");
+                                } else {
+                                    console.log("FingerprintAuth Error: " + error);
+                                }
+                            });
+                        } 
+
+                        if (IOS) {
+                            window.plugins.touchid.save(username,password, function () {
+                                window.plugins.touchid.verify(username, 'Verify Touch ID', function (password) {
+                                    fingerprintHelper.saveLocal('banesco', username, password)
+                                    $$ITEM.NAVIGATION()$
+                                }, function (error) {
+                                    console.log(error)
+                                })
+                            }, function (error) {
+                                console.log(error)
+                            })
+                        }
+                    }
+                });        
+            $%ENDIF$
+
+            $%IF ITEM.registerFunctionality != 'Y'$
+
+                $%IF WorkingElements[1].Flag[1].GoToFingerprint = 'Y'$
+                function setDataItems (user, password) {
+                    $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val(user);
+                    $%IF ITEM.testWrongCredentials = 'Y'$
+                        password = 'wrongPassword';
+                    $%ENDIF$
+                    $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val(password);
+                }
+
+                //$fingerprintButton.on('click', function () {
+                    fingerprintHelper.isAlreadyRegistered(function (response) {
+                        console.log(response)
+                        if (response.isRegistered) {
+                            fingerprintHelper.getRegisteredUser(function (registeredUser) {
+
+                                if (ANDROID) {
+                                    var decryptConfig = {
+                                        clientId: 'BanescoMovil_App',
+                                        username: registeredUser.username,
+                                        token: registeredUser.token,
+                                        disableBackup: true,
+                                        maxAttempts: 3
+                                    };
+
+                                    FingerprintAuth.decrypt(decryptConfig, function successCallback(result) {
+                                        console.log("successCallback()");
+                                        if (result.withFingerprint) {
+                                            console.log(registeredUser)
+                                            console.log(result)
+                                            setDataItems(registeredUser.username, result.password)
+                                            
+                                            $$ITEM.NAVIGATION()$
+                                        }
+                                    }, function errorCallback(error) {
+                                        if (error === FingerprintAuth.ERRORS.FINGERPRINT_CANCELLED) {
+                                            console.log("FingerprintAuth Dialog Cancelled!");
+                                        } else {
+                                            console.log("FingerprintAuth Error: " + error);
+                                        }
+                                    });
+                                }
+
+                                if (IOS) {
+                                    window.plugins.touchid.has(registeredUser.username, function () {
+                                        window.plugins.touchid.verify(registeredUser.username, 'Verify Touch ID', function (password) {
+                                            console.log(password)
+                                            setDataItems(registeredUser.username, password)
+                                            
+                                            $$ITEM.NAVIGATION()$
+                                        }, function (error) {
+                                            console.log(error)
+                                        })
+                                    })
+                                }
+                            })
+                        } else {
+                            $('button[id*=$$ITEM.LoginWithFingerprintButtonID$]').click()
+                        }
+                    })
+
+                $%ENDIF$
+                //})
+            $%ENDIF$
+
+        }
+    })
+</script>
