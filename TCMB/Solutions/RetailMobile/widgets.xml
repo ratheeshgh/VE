@@ -1940,6 +1940,24 @@
                 type="javax.swing.JTextField"
                 usage="7"
                 />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="testWrongCredentials"
+                prompt="Test Wrong Credentials"
+                type="com.acquire.util.FocusCheckbox"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="TestRegisterFunctionality"
+                prompt="Delete Database"
+                type="com.acquire.util.FocusCheckbox"
+                usage="7"
+                />
         </custom>
         <template
             type="header"

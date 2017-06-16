@@ -12,7 +12,9 @@
             var fingerprintHelper = new FingerprintHelper();
             var $fingerprintButton = $('#$$ITEM.ID()$')
 
-//          fingerprintHelper.deleteDbTable();
+            $%IF ITEM.TestRegisterFunctionality = 'Y'$
+                fingerprintHelper.deleteDbTable();
+            $%ENDIF$
 
             $%IF ITEM.registerFunctionality = 'Y'$
                 var username = "$$ITEM.Username$";
@@ -68,6 +70,9 @@
                 $%IF WorkingElements[1].Flag[1].GoToFingerprint = 'Y'$
                 function setDataItems (user, password) {
                     $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val(user);
+                    $%IF ITEM.testWrongCredentials = 'Y'$
+                        password = 'wrongPassword';
+                    $%ENDIF$
                     $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val(password);
                 }
 

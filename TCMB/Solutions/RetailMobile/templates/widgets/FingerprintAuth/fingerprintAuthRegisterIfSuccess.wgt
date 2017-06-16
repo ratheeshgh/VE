@@ -12,7 +12,13 @@
             if (loginSuccess) {
                 fingerprintHelper = new FingerprintHelper();
                 var fingerprintData = fingerprintHelper.getLocal();
-                fingerprintHelper.register(fingerprintData);
+                fingerprintHelper.isAlreadyRegistered(function (response){
+                    if (response.isRegistered) {
+                        fingerprintHelper.updateCredentials(fingerprintData);
+                    } else {
+                        fingerprintHelper.register(fingerprintData);
+                    }
+                })
             }
 
         }

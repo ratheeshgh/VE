@@ -37,6 +37,20 @@ FingerprintHelper.prototype.register = function (data) {
 
 }
 
+FingerprintHelper.prototype.updateCredentials = function (data) {
+    var token = data.token,
+        username = data.username,
+        password = data.password;
+
+    this.db.transaction(function (tx) {
+        tx.executeSql('DELETE FROM FingerprintData');
+        tx.executeSql('INSERT INTO FingerprintData VALUES (?,?)', [token, username]);
+    }, function (error) {
+        console.log('Transaction ERROR: ' + error.message);
+    });
+
+}
+
 FingerprintHelper.prototype.isAlreadyRegistered = function (cbSuccess, cbError) {
 
     this.db.transaction(function (tx) {
