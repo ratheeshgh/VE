@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="AccountsList" sourcelanguage="en-GB" targetlanguage="en" updated="20/06/17 17:37" version="1">
+  <Comment/>
+  <ProcessEntities/>
+  <Designs/>
+  <PresentationOnlyObjects/>
+  <Rules>
+    <MasterRules>
+      <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Populate AaArrangementActivity" eid="0B00A7AC4AE9D0FB180533" type="Container Rule">
+        <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component AaArrangementActivity_TcibNewUpdates-New" eid="0B00A7AC4AE9D0FB182285" type="Call Component Rule">
+          <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component AaArrangementActivity_TcibNewUpdates-AAPopulate" eid="0B00A7AC4AE9D0FB182684" type="Call Component Rule">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$OverallResult$ == '1'" eid="0B00A7AC4AE9D0FB186045" type="Evaluation Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set error message" eid="DD7098D837B63DF8201316" path="Populate AaArrangementActivity.Call Component for new arrangement.Call Component to populate arrangement property.Evaluation to check successful response.Set error message" type="Set Value Rule">
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Could not update account name" state="NEW" status="OKAY" value=""/>
+              </Rule>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Populate non-AA account" eid="3418BE4A66B2C7A940105" type="Container Rule">
+        <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component Account_Tcibs-Get" eid="3418BE4A66B2C7A940153" type="Call Component Rule">
+          <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component Account_Tcibs-Validate" eid="3418BE4A66B2C7A940303" type="Call Component Rule">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$OverallResult$ == '1'" eid="3418BE4A66B2C7A940361" type="Evaluation Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set error message" eid="DD7098D837B63DF892219" path="Populate non-AA account.Call Component to call account application.Call Component to call account application validation.Evaluation to check successful response.Set error message" type="Set Value Rule">
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Could not update account name" state="NEW" status="OKAY" value=""/>
+              </Rule>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set TopNavigation Title to Personalise" eid="85B9790875E2A5F187446" leafType="link" path="ChangeAccountName.ListAllAccounts.Set TopNavigation Title to Personalise" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set TopNavigation subTitle to Personalise" eid="0E03A25D6872C7EF292611" leafType="link" path="ChangeAccountName.ChangeAccountName.Set TopNavigation subTitle to Personalise" type="Set Value Rule"/>
+    </MasterRules>
+    <Container class="com.acquire.intelligentforms.entities.Product" displayString="ChangeAccountName" eid="85B9790875E2A5F187428" type="Process">
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ListAllAccounts" eid="85B9790875E2A5F187433" type="Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set TopNavigation Title to Personalise" eid="85B9790875E2A5F187446" path="ChangeAccountName.ListAllAccounts.Set TopNavigation Title to Personalise" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Personalise" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ChangeAccountName" eid="E431D740703A9F0033647" type="Phase">
+        <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set TopNavigation Title to Personalise" eid="85B9790875E2A5F187446" leafType="link" path="ChangeAccountName.ListAllAccounts.Set TopNavigation Title to Personalise" type="Set Value Rule"/>
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set TopNavigation subTitle to Personalise" eid="0E03A25D6872C7EF292611" path="ChangeAccountName.ChangeAccountName.Set TopNavigation subTitle to Personalise" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Personalise" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+    </Container>
+  </Rules>
+  <Lists>
+    <List eid="C9221B68762AE95E33863" listName="YesNo" reset="True">
+      <ListItem eid="C9221B68762AE95E33864" group="" groupState="NEW" key="Y" original="Yes" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="C9221B68762AE95E33866" group="" groupState="NEW" key="N" original="No" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="B31F0B4D8C04DC9A70826" listName="AuthStatus" reset="True">
+      <ListItem eid="B31F0B4D8C04DC9A70827" group="" groupState="NEW" key="0" original="Failure" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="B31F0B4D8C04DC9A70828" group="" groupState="NEW" key="1" original="Success" originalGroup="" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="2AD558A6B6CA414F394234" listName="AccountOperation" reset="True">
+      <ListItem eid="2AD558A6B6CA414F394235" group="" groupState="NEW" key="HomePage" original="HomePage" originalGroup="PostLogin.AccountsList" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394236" group="" groupState="NEW" key="AccountSummary" original="AccountSummary" originalGroup="MultiAccount.init" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394237" group="" groupState="NEW" key="Transactions" original="Transactions" originalGroup="Standalone.RecentTransactions" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394238" group="" groupState="NEW" key="MakeTransfer" original="MakeTransfer" originalGroup="Standalone.MakeTransfer" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394239" group="" groupState="NEW" key="MakePayment" original="MakePayment" originalGroup="SingleAccount.MakePayment" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394240" group="" groupState="NEW" key="ManagePayees" original="ManagePayees" originalGroup="Standalone.ManagePayees" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394241" group="" groupState="NEW" key="PendingPayments" original="Future Dated" originalGroup="SingleAccount.UpcomingPayments" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394242" group="" groupState="NEW" key="StandingOrder" original="StandingOrder" originalGroup="Standalone.StandingOrders" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394243" group="" groupState="NEW" key="DirectDebits" original="DirectDebits" originalGroup="Standalone.DirectDebits" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394244" group="" groupState="NEW" key="Cheques" original="Cheques" originalGroup="Standalone.Cheques" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394245" group="" groupState="NEW" key="UpdatePersonalDetails" original="UpdatePersonalDetails" originalGroup="Standalone.Personalisation" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394246" group="" groupState="NEW" key="Messages" original="Messages" originalGroup="Standalone.Messages" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394247" group="" groupState="NEW" key="Deposits" original="Deposits" originalGroup="SingleAccount.Deposits" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394248" group="" groupState="NEW" key="Loans" original="Loans" originalGroup="Loans" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394249" group="" groupState="NEW" key="ChangeAccountName" original="ChangeAccountName" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394250" group="" groupState="NEW" key="PayBill" original="PayBill" originalGroup="SingleAccount.MakePayment" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394251" group="" groupState="NEW" key="Settings" original="Settings" originalGroup="Standalone.Settings" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394252" group="" groupState="NEW" key="PersonaliseApp" original="PersonaliseApp" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394253" group="" groupState="NEW" key="Help" original="Help" originalGroup="Standalone.About" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394254" group="" groupState="NEW" key="QuickLinks" original="QuickLinks" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394255" group="" groupState="NEW" key="About" original="About" originalGroup="Standalone.About" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394256" group="" groupState="NEW" key="ATMBranch" original="ATMBranch" originalGroup="Standalone.FindATM" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394257" group="" groupState="NEW" key="Schedule" original="Schedule" originalGroup="Standalone.LoanSchedule" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394258" group="" groupState="NEW" key="ChangePassword" original="ChangePassword" originalGroup="Standalone.ChangePassword" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394259" group="" groupState="NEW" key="CanAcceptFunds" original="CanAcceptFunds" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394260" group="" groupState="NEW" key="AccountOverview" original="AccountOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394261" group="" groupState="NEW" key="DepositOverview" original="DepositOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394262" group="" groupState="NEW" key="LoanOverview" original="LoanOverview" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394263" group="" groupState="NEW" key="RecentTransactions" original="RecentTransactions" originalGroup="" remove="" state="NEW" value=""/>
+      <ListItem eid="2AD558A6B6CA414F394264" group="" groupState="NEW" key="WhatsNew" original="WhatsNew" originalGroup="OfflineEnabled.WhatsNew" remove="" state="NEW" value=""/>
+    </List>
+    <List eid="63FFE98DDF253908562763" listName="BanescoActiveOperation" reset="True">
+      <ListItem eid="63FFE98DDF253908562764" group="" groupState="NEW" key="PaymentsAndTransfers" original="PaymentsAndTransfers" originalGroup="Standalone.PaymentsAndTransfers" remove="" state="NEW" value=""/>
+      <ListItem eid="63FFE98DDF253908562765" group="" groupState="NEW" key="Loans" original="Loans" originalGroup="Standalone.Loans" remove="" state="NEW" value=""/>
+      <ListItem eid="63FFE98DDF253908933991" group="" groupState="NEW" key="Deposits" original="Deposits" originalGroup="Standalone.Deposits" remove="" state="NEW" value=""/>
+    </List>
+  </Lists>
+</LanguageMap>
