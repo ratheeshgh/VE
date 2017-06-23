@@ -137,7 +137,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1CBC621D6A88987541411:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1CBC621D6A88987541410:Button" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="39186CBA98B6F424113496:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1CBC621D6A88987541410:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HintText" original="Forward" state="NEW">
+          <ProcessEntityAttr default="Forward" name="HintText" original="Forward" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1CBC621D6A88987541411:TCMB" mappingType="OVERRIDE" original="Forward" specifiedBy="1CBC621D6A88987541410:Button" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="39186CBA98B6F424113496:TCMB-Windows" mappingType="OVERRIDE" original="Forward" specifiedBy="1CBC621D6A88987541410:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
