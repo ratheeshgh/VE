@@ -32,6 +32,13 @@
 #TransferInternacionales span,
 #Donaciones span,
 #DirectorioBeneficiario span,
+#ChangeLanguage span,
+#AppSettings span,
+#ContactUs span,
+#WhereIsBanesco span,
+#TermsAndConditions span,
+#TakeATour span,
+#About span,
 #HistorialMovimientos span
 {
     font-family: 'Lato Regular', courier;
@@ -55,6 +62,13 @@
 #TransferInternacionales:before{color:#23BFE6;}
 #Donaciones:before{color:#00B395;}
 #DirectorioBeneficiario:before{color:#00B395;}
+#ChangeLanguage:before{color:#00B395;}
+#AppSettings:before{color:#00B395;}
+#ContactUs:before{color:#00B395;}
+#WhereIsBanesco:before{color:#00B395;}
+#TermsAndConditions:before{color:#00B395;}
+#TakeATour:before{color:#00B395;}
+#About:before{color:#00B395;}
 #HistorialMovimientos:before{content: "\E939";color:#00B395;}
 
 .bordeBoton

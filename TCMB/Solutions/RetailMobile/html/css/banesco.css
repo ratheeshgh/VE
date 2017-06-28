@@ -1323,9 +1323,9 @@ input[type="checkbox"]:checked  {
 
 
 .BtnContactUs:before,
-.BtnFindUs:before {display: block;font-size: 20px; line-height:60px;text-align: center;}
+.BtnFindUs:before {display: block;font-size: 24px; line-height:60px;text-align: center;}
 .BtnContactUs:before {content: "\E903";}
-.BtnFindUs:before {content: "\E938";}
+.BtnFindUs:before {content: "\E944";}
 
 /*Changes for the Contact Us*/
 .ContactCall,.ContactEmail{width: 100%;border: 1px solid #fff;background:#fff;color: #556176;outline: none;font-family:"Banesco";font-size: 12px;text-decoration: none !important; display:inline-block;padding:15px;text-align:left !important;}
@@ -1366,6 +1366,13 @@ color:#324254;padding-right:20px}
 #TransferInternacionales ,
 #Donaciones ,
 #DirectorioBeneficiario ,
+#ChangeLanguage ,
+#AppSettings ,
+#ContactUs ,
+#WhereIsBanesco ,
+#TermsAndConditions ,
+#TakeATour ,
+#About ,
 #HistorialMovimientos
  {height: auto;line-height: 20px;width: 100%;border: none;color: #556176;outline: none;font-family:"Banesco";font-size: 12px;text-decoration: none !important; display:inline;text-align:left !important;}
 
@@ -1383,6 +1390,13 @@ color:#324254;padding-right:20px}
 #TransferInternacionales span,
 #Donaciones span,
 #DirectorioBeneficiario span,
+#ChangeLanguage span,
+#AppSettings span,
+#ContactUs span,
+#WhereIsBanesco span,
+#TermsAndConditions span,
+#TakeATour span,
+#About span,
 #HistorialMovimientos span
 {display:inline-block;
 padding-left:40px;
@@ -1406,6 +1420,13 @@ color:#324254;
 #Donaciones:before{content: "\E91F";display: inline;padding:15px;font-size: 32px;line-height: 50px;border-right: 1px solid #DcE1E9;padding-right:20px;color:#23BFE6;}
 #DirectorioBeneficiario:before{content: "\E923";display: inline;padding:15px;font-size: 32px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#FF9E00;}
 #HistorialMovimientos:before{content: "\E91F";display: inline;padding:15px;font-size: 32px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#ChangeLanguage:before{content: "\E941";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#AppSettings:before{content: "\E93F";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#ContactUs:before{content: "\E93D";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#WhereIsBanesco:before{content: "\E944";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#TermsAndConditions:before{content: "\E943";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#TakeATour:before{content: "\E949";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
+#About:before{content: "\E93B";display: inline;padding:15px;font-size: 30px;line-height: 50px;border-right: 1px solid #DcE1E9;color:#23BFE6;}
 
 .DondeBanesco span,
 .ScheduleButton span,
