@@ -85,14 +85,24 @@ body.main_menu{padding-top: 60px;background-color:#053e83;font-size:18px;}
 body.error_page{padding-top: 0px;background-color: #FFF; color:#000;}
 /*body.general{padding-top: 60px;background-color: #f4f4f4;color:#000}*/
 body.general{padding-top: 60px;background-color: #fff;color:#708090;}
-body.login{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
+
+/*body.login{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}*/
+body.login{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imgBankDay.jpg) repeat-x ; background-size: cover;color:#000}
+
+body.login_night{padding-top: 0;background-color: rgba(0,52,94,0.9);background: url(../img/homepage/background/imgBankNight.jpg) repeat-x ; background-size: cover;color:#000}
 
 @media (min-width: 400px) and (max-width: 1200px) {
-body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}
+/*body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imagebackground.jpg) repeat-x ; background-size: cover;color:#000}*/
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imgBankDay.jpg) repeat-x ; background-size: cover;color:#000}
+
+body.login_night{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imgBankNight.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
 @media only screen and (min-width: 1200px) {
-body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x ; background-size: cover;color:#000}
+/*body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/largebackground1.jpg) repeat-x ; background-size: cover;color:#000}*/
+body.login{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imgBankDay.jpg) repeat-x ; background-size: cover;color:#000}
+
+body.login_night{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imgBankNight.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
 body.white{padding-top: 60px;background-color: #fff;color: #708090;}
@@ -1325,7 +1335,7 @@ input[type="checkbox"]:checked  {
 .BtnContactUs:before,
 .BtnFindUs:before {display: block;font-size: 24px; line-height:60px;text-align: center;}
 .BtnContactUs:before {content: "\E903";}
-.BtnFindUs:before {content: "\E944";}
+.BtnFindUs:before {content: "\E94E";}
 
 /*Changes for the Contact Us*/
 .ContactCall,.ContactEmail{width: 100%;border: 1px solid #fff;background:#fff;color: #556176;outline: none;font-family:"Banesco";font-size: 12px;text-decoration: none !important; display:inline-block;padding:15px;text-align:left !important;}

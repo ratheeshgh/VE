@@ -400,7 +400,7 @@
                 name="BODYCLASS"
                 prompt="Set Class for Body"
                 type="javax.swing.JComboBox"
-                typeValue="login|general|white|myaccount|error_page"
+                typeValue="login|general|white|myaccount|error_page|login_night"
                 usage="7"
                 />
             <item

@@ -22,3 +22,28 @@
   border: 1px solid #4e74b0 !important;
   box-shadow: 0px 0px 3px 0px #4e74b0;
 }
+
+.login_night {
+  padding-top: 0;
+}
+
+.login_night #form1 {
+  padding-top: 70px;
+  overflow: auto;
+}
+
+.login_night input {
+  height: 40px;
+  font-size: 0.833em;
+  color: #3a4454;
+  margin-bottom: 5px;
+}
+
+.login_night .input-group {
+  padding-top: 10px;
+}
+
+.login_night input:focus {
+  border: 1px solid #4e74b0 !important;
+  box-shadow: 0px 0px 3px 0px #4e74b0;
+}

@@ -142,7 +142,25 @@
 
 .card-arrow {
     bottom: 0;
-    top: 0;
+    top: -20px;
+    display: inline-block;
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    padding: 0;
+    width: auto;
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.card-arrow-cc {
+    bottom: 0;
+    top: -80px;
     display: inline-block;
     background: none;
     border: none;
