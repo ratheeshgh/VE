@@ -98,8 +98,6 @@
     line-height: 100%;
   }
 
-
-
 .transaction_icon.ophistory::before {
 	font-family: "Banesco";
 	content: '\E936';
@@ -174,4 +172,56 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.transaction_period {
+  display: inline-block;
+  vertical-align: middle;
+  background: #FFF;
+  margin-bottom: 3px;
+  padding: 3%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Lato Regular", courier;
+  font-size: 12px;
+  color: #708090;
+}
+
+  .transaction_period.statement::before {
+	width: 0px;
+    height: 0px;
+  	font-family: "Banesco";
+	color: #00B395;
+	content: "\E924";
+  	margin-top: -1px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-stretch: 100%;
+    line-height: 100%;
+  }
+
+.period {
+  position: relative;
+}  
+  
+.period .u-right-arrow {
+    font-family: 'Banesco';
+    font-size: 9px;
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg);>
+}
+
+.period .u-right-arrow::before {
+  content: '\E90D';
+}
+
+.period .detail_btn {
+  position:absolute;
+  top:0;
+  right:0;
+  left: 0;
+  bottom:0;
 }
