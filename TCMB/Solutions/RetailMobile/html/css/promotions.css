@@ -22,8 +22,23 @@
 	margin-bottom: 15px;
 }
 
-.promotions-description, .promotions-link {
-	font-size: 13px;
+.promotions-predescription:before {
+  content:"\2022";
+  font-family: "Lato Regular"; 
+  font-size: 15.33px; 
+  font-weight: bold; 
+  color: #007953;
+} 
+
+.promotions-description, .promotions-predescription {
+  font-family: "Lato Regular";
+  font-size: 15.33px;
+  font-weight: bold;
+  color: #3a4454;
+} 
+
+.promotions-link {
+  font-size: 13px;
   color: #3a4454;
 }
 
@@ -44,14 +59,17 @@
 /* Promotions Details */
 
 .promotions-title {
+  font-family: "Lato Regular";
   font-size: 15.33px;
-  font-weight: bold;
+  text-transform: uppercase;
   color: #3a4454;
 }
 
 .promotions-subtitle {
-  font-size: 13.33px;
-  font-weight: bold;
+  font-family: "Lato Medium";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #3a4454;
 }
 
 .promotions-details {
@@ -59,9 +77,12 @@
   margin-top: 10px;
 }
 
-    .promotions-details span {
-      font-size: 14px;
-    }
+.promotions-details span {
+  font-family: "Lato Regular";
+  font-size: 15.33px;
+  font-weight: bold;
+  color: #3a4454;
+}
 
 .promotions-details-card {
   margin-top: 10px;
@@ -69,3 +90,4 @@
   border-radius: 5px;
   padding: 11px 11px;
 }
+
