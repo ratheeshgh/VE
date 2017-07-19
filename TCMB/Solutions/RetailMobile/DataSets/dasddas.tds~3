@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><DataSetRoot
+    DSAttrsNewLine="Y"
+    DSOmitXMLDecl="N"
+    DSPrettyPrint="Y"
+    DS_UID="0"
+    >
+    <!---->
+    <Event
+        DS_REF_DATAGROUP_ATTRIBUTE_NAME="BanescoHistoryOperation[1].Event[1]"
+        DS_UID="-1"
+        event_amount="125.00"
+        event_datetime="2017-05-19 11:22:57"
+        event_detail="Transaction"
+        event_id="1"
+        />
+    <Event
+        DS_REF_DATAGROUP_ATTRIBUTE_NAME="BanescoHistoryOperation[1].Event[1]"
+        DS_UID="-1"
+        event_amount="-125.00"
+        event_datetime="2017-05-19 11:25:57"
+        event_detail="Transfer"
+        event_id="1"
+        />
+</DataSetRoot>

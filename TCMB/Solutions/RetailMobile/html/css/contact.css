@@ -81,3 +81,13 @@ body.general {
     padding: 0;
 	font-size: 12px;
 }
+
+.infoContact > .lineHeight1 {
+	line-height: 1px;
+	text-transform: uppercase;
+}
+
+.infoContact > .detalleContacto {
+	color: #54616D;
+	font-family:"Lato Regular";
+}
