@@ -5,6 +5,8 @@
 .login #form1 {
   padding-top: 70px;
   overflow: auto;
+-webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 .login input {
@@ -30,6 +32,8 @@
 .login_night #form1 {
   padding-top: 70px;
   overflow: auto;
+-webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 .login_night input {
