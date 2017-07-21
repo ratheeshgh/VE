@@ -6,7 +6,8 @@
 	}
 
 	.banesco_checkbox + label {
-		font-family: 'Banesco'
+		font-family: 'Banesco';
+		margin: 0px;
 	}
 
 	.banesco_checkbox + label::before {

@@ -175,12 +175,18 @@ input[type='radio']{
 }
 
 input[type='radio'] + label {
-  font-size: 13.33px;
+  font-size: 14px;
+  font-family: "Lato Regular"
   color: #3a4454;
   text-transform: initial;
+  margin-bottom: 15px;
 }
 
-input[type='radio'] + label:before {
+input[type='radio']:last-child + label {
+  margin-bottom: 0px;
+}
+
+input[type='radio'] + label::before {
   content: '';
   display: inline-block;
   width: 15px;
@@ -192,6 +198,7 @@ input[type='radio'] + label:before {
   position: relative;
   top: 3px;
 }
+
 
 input[type='radio']:checked + label:before {
   box-shadow: inset 0px 0 0 3px #2b5f8c;

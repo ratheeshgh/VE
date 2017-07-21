@@ -67,6 +67,11 @@
   text-transform: initial;
 }
 
+.tab-underlined > div > div:first-child {
+  background: #1f8c6b;
+}
+
+
 .underlined-3tabs div[id^="TAB"], .underlined-3tabs div[id^="C1__TAB"] {
   width: 33.33% !important;
 }

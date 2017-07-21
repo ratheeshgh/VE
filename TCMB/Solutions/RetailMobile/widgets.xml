@@ -1913,7 +1913,7 @@
     </widget>
     <widget
         name="banescoCbx"
-        type="Section"
+        type="Column"
         >
         <template
             type="source"
