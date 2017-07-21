@@ -110,6 +110,7 @@
 .card__header-contentNumber {
   /*font-size: 1.708em;*/
   font-size: 27.33px;
+  line-height: 27.33px;
   color: #3a4454;
 }
 
@@ -131,3 +132,23 @@
     font-size: 16px !important;
 }
 
+.fieldAbout {
+    color:#54616D;
+    font-family: Lato Regular, courier;
+    font-size:12px !important;
+    text-transform: uppercase;
+}
+
+.dataAbout {
+    color:#54616D;
+    font-family: Lato Regular ,courier;
+    font-size:13.33px;
+    text-transform: initial;
+}
+
+.copyrightAbout {
+    color:#54516d;
+    font-family: Lato Regular, courier;
+    font-size: 12px;
+    text-transform: initial;
+}
