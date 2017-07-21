@@ -129,4 +129,16 @@
     <widget name="Tab Pane (jquery)" type="Tab">
         <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-tab.wgt"/>
     </widget>
+    <widget icon="/images/html5_icon.png" name="Input (HTML5)" type="Text">
+        <template type="source" value="./templates/widgets/html5/inputtype_text.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS"/>
+        </custom>
+    </widget>
+    <widget icon="/images/html5_icon.png" name="Password (HTML5)" type="Text">
+        <template type="source" value="./templates/widgets/html5/inputtype_password.wgt"/>
+        <custom>
+            <item help="What text do you want to display for HTML 5 placeholder" mand="false" name="PlaceHolder" prompt="Placeholder Text" tab="Text" type="com.acquire.intelligentforms.ide.dialogs.RichTextField" typeValue="ALL_CHARS"/>
+        </custom>
+    </widget>
 </widgets>
