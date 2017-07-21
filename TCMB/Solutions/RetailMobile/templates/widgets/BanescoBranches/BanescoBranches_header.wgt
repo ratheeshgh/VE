@@ -1,6 +1,5 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu7Hj-YJAiNdhAng61lk5aYyK7ekQwiLQ&libraries=places"></script>
-<script type="text/javascript">
-   //<![CDATA[
+<script src="https://maps.googleapis.com/maps/api/js?key=$$ITEM.GOOGLE_API_KEY$&libraries=places"></script>
+<script>
     window.com = window.com || {};
     window.com.widgets = window.com.widgets || {};
     window.com.widgets.BanescoMap = window.com.widgets.BanescoMap || {};
@@ -11,7 +10,9 @@
             _mapMountNode,
             _infowindow,
             _markers,
-            _placesSearchResult,
+            _placesSearchResult = [],
+            _branchAndAtmList = [],
+            _numberOfSearchRequests,
             _directionsDisplay;
 
         function init(mapMountNode, currentLocation, mapConfig) {
@@ -34,15 +35,26 @@
             return _map;
         }
 
-        function addMarkerForPlace(place) {
+        function addMarkerForPlace(place, icon) {
             var marker = new google.maps.Marker({
                 map: _map,
                 position: place.geometry.location
             });
+            if (icon) {
+                marker.setIcon(icon)
+            }
+
             _markers.push(marker);
 
             google.maps.event.addListener(marker, 'click', function () {
-                _infowindow.setContent(place.name);
+                var infoNode = $(""+
+                    "<div>"+
+                        "<h4>"+place.name+"</h4>"+
+                        "<p style='margin:0;'>"+"Horarios:"+"</p>"+
+                        "<p style='margin:0;'>"+"10:00hs - 13:50hs"+"</p>"+
+                    "</div>"+
+                "")[0];
+                _infowindow.setContent(infoNode);
                 _infowindow.open(_map, this);
             });
         }
@@ -56,33 +68,62 @@
         }
 
         function search(config, successCalback, errorCallback) {
-            var placesService = new google.maps.places.PlacesService(_map);
-            var defaultConfig = {
-                location: _currentLocation,
-                rankBy: google.maps.places.RankBy.DISTANCE
-            };
+            var searchType = config.searchType;
+            if (searchType != '') {
+                var types = searchType.split(';')
+                _numberOfSearchRequests = types.length
+                for (var i = 0; i<types.length; i++) {
+                    type = types[i]
+                    console.log(type)
+                    config.query = type == 'atm'? '' : config.queryText;
+                    var placesService = new google.maps.places.PlacesService(_map);
+                    var defaultConfig = {
+                        location: _currentLocation,
+                        rankBy: google.maps.places.RankBy.DISTANCE,
+                        language: 'es',
+                        type: [type]
+                    };
 
-            var mergedConfig = Object.assign({}, defaultConfig, config);
+                    var mergedConfig = Object.assign({}, defaultConfig, config);
 
-            placesService.textSearch(mergedConfig, function (results, status) {
-                if (status == google.maps.places.PlacesServiceStatus.OK) {
-                    _placesSearchResult = results;
-                    if (config.locateInMap) {
-                        _placesSearchResult.forEach(function (place) {
-                            addMarkerForPlace(place)
+                    (function(type){
+                        placesService.textSearch(mergedConfig, function (results, status) {
+                            if (status == google.maps.places.PlacesServiceStatus.OK) {
+                                _branchAndAtmList = _branchAndAtmList.concat(results)
+                                if (type != 'atm') {
+                                    _placesSearchResult = _placesSearchResult.concat(results)
+                                }
+                                
+                                _numberOfSearchRequests--;
+                                if (_numberOfSearchRequests == 0) {
+                                    if (_placesSearchResult.length > 25) {
+                                        _placesSearchResult = _placesSearchResult.slice(0,25);
+                                    }
+
+                                    if (config.locateInMap) {
+                                        console.log(_branchAndAtmList)
+                                        _branchAndAtmList.forEach(function (place) {
+                                            var markerIcon = place.types.indexOf('atm') != -1 ? config.atmIcon : config.branchIcon;
+                                            addMarkerForPlace(place, markerIcon)
+                                        })
+                                    }
+
+                                    successCalback(_placesSearchResult)
+                                }
+                            } else {
+                                errorCallback(status)
+                            }
                         })
-                    }
-                    successCalback(results)
-                } else {
-                    errorCallback(results)
+                    })(type);
                 }
-            })
+            }
         }
 
         function calculateDistance(config, successCalback) {
             var destinations = _placesSearchResult.map(function (place) {
                 return place.geometry.location
             })
+            console.log(destinations)
             var defaultConfig = {
                 origins: [_currentLocation],
                 destinations: destinations,
@@ -92,8 +133,10 @@
             var mergedConfig = Object.assign({}, defaultConfig, config);
 
             var service = new google.maps.DistanceMatrixService();
+            console.log(mergedConfig)
             service.getDistanceMatrix(mergedConfig, function distanceMatrixResponse(response, status) {
                 var placeDistanceList = []
+                console.log(response, status)
                 for (var j = 0; j < response.rows[0].elements.length; j++) {
                     placeDistanceList.push({
                         place: _placesSearchResult[j],
@@ -135,6 +178,20 @@
 
         }
 
+        function getIcon(glyph, color) {
+            var canvas, ctx;
+            canvas = document.createElement('canvas');
+            canvas.width = canvas.height = 20;
+            ctx = canvas.getContext('2d');
+            if (color) {
+              ctx.strokeStyle = color;
+            }
+            ctx.font = '20px Banesco';
+            ctx.fillText(glyph, 0, 16);
+            
+            return canvas.toDataURL();
+        }
+
 
         function refreshMap() {
             google.maps.event.trigger(_map, 'resize');
@@ -152,5 +209,4 @@
             renderRouteTo: renderRouteTo
         }
     })();
-    //]]
 </script>

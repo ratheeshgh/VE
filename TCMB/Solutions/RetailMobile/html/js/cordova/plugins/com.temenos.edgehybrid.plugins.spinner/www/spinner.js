@@ -2,8 +2,8 @@ cordova.define("com.temenos.edgehybrid.plugins.spinner.SpinnerDialog", function(
 
 module.exports = {
 
-    show : function(showMessage, message) {
-    	cordova.exec(null, null, 'SpinnerDialog', 'show', [showMessage, message]);
+	show : function(showMessage, message) {
+        cordova.exec(null, null, 'SpinnerDialog', 'show', [showMessage, message]);
     },
 
     hide : function(success, fail) {
