@@ -197,3 +197,58 @@ input[type='radio']:checked + label:before {
   box-shadow: inset 0px 0 0 3px #2b5f8c;
   border: 1px solid #2b5f8c;
 }
+
+.marginT15 {
+  margin-top:15px !important;
+}
+
+.marginB15 {
+  margin-bottom:15px !important;
+}
+
+.marginLR15{
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+.informative_card, .clickable_card {
+  padding: 15px;
+  position: relative;
+}
+
+.informative_card {
+  background-color:#FFFFFF;
+}
+
+.clickable_card {
+  background-color:#F4F8F9;
+}
+
+.clickable_card .first_line, .informative_card .first_line {
+  font-family: "Lato Regular";
+  font-size: 16px;
+  color: #3A4454;
+}
+
+.clickable_card .second_line, .informative_card .second_line {
+  font-family: "Lato Regular";
+  font-size: 14px;
+  color: #556176;
+}
+
+.clickable_card .action_arrow {
+    position: absolute;
+    right: 15px;
+    font-family: 'Banesco';
+    font-size: 15px;
+    transform: rotate(180deg);
+    top: 0;
+    bottom: 0;
+    height: 15px;
+    line-height: 15px;
+    margin: auto;
+}
+
+.clickable_card .action_arrow::before {
+  content: '\E90D';
+}

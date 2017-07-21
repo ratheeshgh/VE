@@ -1724,6 +1724,15 @@
                 includeInDesign="Always"
                 layout="-1"
                 mand="false"
+                name="GOOGLE_API_KEY"
+                prompt="Google API KEY"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
                 name="onRowClickFn"
                 prompt="Function to call when row is clicked"
                 type="javax.swing.JTextField"
@@ -1789,13 +1798,13 @@
                 usage="7"
                 />
             <item
+                help="Search type for Google Places API separated by semicolon (;) ."
                 includeInDesign="Always"
                 layout="-1"
                 mand="false"
                 name="typeOfSearch"
                 prompt="Type of search"
-                type="javax.swing.JComboBox"
-                typeValue="bank^Branches|atm^ATM"
+                type="javax.swing.JTextField"
                 usage="7"
                 />
             <item
@@ -1840,6 +1849,24 @@
                 mand="false"
                 name="locationMockLng"
                 prompt="Location Mock Longitude"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="BranchIcon"
+                prompt="Branch Icon"
+                type="javax.swing.JTextField"
+                usage="7"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="ATMIcon"
+                prompt="ATM Icon"
                 type="javax.swing.JTextField"
                 usage="7"
                 />
