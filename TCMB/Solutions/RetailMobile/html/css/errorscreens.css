@@ -16,7 +16,7 @@
 .error-boton {
 	background: #007953 ;
 	color: #ffffff;
-	width: 90%;
+	width: 100% !important;
 	height:40px; 
 	border-radius: 5px;
 	width: auto;

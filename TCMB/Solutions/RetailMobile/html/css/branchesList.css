@@ -13,22 +13,27 @@
     border-radius: 5px;
 }
 
-.branchlist_card .branchTitle {
-    font-size: 15.33px;
-    font-family: 'Lato Regular';
+.branchlist_card .branchTitle span:first-child {
+    font-size: 12px;
+    font-family: 'Lato Medium';
+    text-transform: capitalize;
+    color: #3A4454;
     margin-bottom:5px;
 }
 
 .branchlist_card .branchSubtitle {
-    font-size: 13.33px;
-    font-family: 'Lato Light';
+    color: #3A4454;
+    font-family: 'Lato Medium';
+    font-size: 12px;
+    font-weight: bold;
     margin: 0;
 }
 
 .branchlist_card .branchDistance {
     position: absolute;
-    font-family: 'Lato Medium';
+    font-family: 'Lato Regular';
+    font-size: 12px;
+    color: #54616D;
     top: 15px;
     right: 15px;
-    font-size: 15.33px;
 }
