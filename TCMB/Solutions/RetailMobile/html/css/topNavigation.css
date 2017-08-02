@@ -30,6 +30,13 @@
 
  .sidebar {
   height: 100%;
+}
+ 
+.sidebar.android {
+  overflow: auto;
+}
+
+.sidebar.ios {
   overflow: visible;
 }
 
