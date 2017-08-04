@@ -2516,6 +2516,7 @@ background: -ms-linear-gradient(top, #1F8C6B 0%,#1F8C6B 100%);
 background: linear-gradient(to bottom, #1F8C6B 0%,#1F8C6B 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1F8C6B', endColorstr='#1F8C6B',GradientType=0 );
 /* border-color: #0051A8; */
+border: none;
 }
 
 .navbar-inverse .navbar-nav > .active > a {
@@ -2732,12 +2733,14 @@ height:100%;
 }
 
 body #form1 {
-  overflow:auto;
+  overflow: auto;
+
 }
 .icon-home-page {padding-bottom: 20px;padding-top: 30px;}
 
 .SideMenuContainerFix {height: 100%;/*overflow: hidden;*/}
-.GMapContainerFix { height: 100%;min-height: 100%;overflow: auto;}
+.GMapContainerFix { height: 100%;min-height: 100%;overflow: auto;
+}
 
 @media screen and (max-width: 767px) {
 #sidebar {display:block;}

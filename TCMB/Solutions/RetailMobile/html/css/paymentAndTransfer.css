@@ -266,3 +266,63 @@
   width: 100%;
   opacity: 0 !important;
 }
+
+.confirm_label label , .confirm_labelH1{
+  margin-top: 15px;
+  font-family: "Lato Medium";
+  font-size: 12px;
+  color: #556176;
+  text-transform: uppercase;
+}
+
+.marginB10 {
+  margin-bottom: 10px !important;
+}
+
+.confirm_value {
+  font-family: "Lato Medium";
+  font-size: 16px;
+  color: #3A4454;
+}
+
+.toBottom {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+.confirm_buttons_container{
+  height: initial;
+  margin-top:25px;
+  margin-bottom:15px;
+}
+
+.confirm_two_button {
+  width: 50%;
+}
+
+.confirm_two_button.left {
+  padding-right: 6px;
+}
+.confirm_two_button.right {
+  padding-left: 6px;
+}
+
+.confirm_header_title {
+  text-align: left;
+  float: left;
+  font-size: 13.33px;
+  text-transform: initial;
+  padding: 15px;
+  font-family: "Lato Medium";
+}
+
+.success_operation_data {
+  margin-top:5px;
+}
+
+.confirm_frec_section {
+  padding: 0;
+  margin-bottom:15px;
+}

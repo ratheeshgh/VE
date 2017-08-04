@@ -1,13 +1,14 @@
-<script type="text/javascript">
-     //<![CDATA[
+<script>
     $(function () {
         document.addEventListener("deviceready", onDeviceReady, false);
 
         var widgetArgs = {
             searchConfig: {
-                query: $%IF ITEM.querySearchText != ''$ '$$ITEM.querySearchText$' $%ELSE$ '' $%ENDIF$,
-                type: $%IF ITEM.typeOfSearch != ''$ ['$$ITEM.typeOfSearch$'] $%ELSE$ ['store'] $%ENDIF$,
-                locateInMap: $%IF ITEM.locateSearchResultInMap == 'Y'$ true $%ELSE$ false $%ENDIF$
+                queryText: $%IF ITEM.querySearchText != ''$ '$$ITEM.querySearchText$' $%ELSE$ '' $%ENDIF$,
+                searchType: $%IF ITEM.typeOfSearch != ''$ '$$ITEM.typeOfSearch$' $%ELSE$ '' $%ENDIF$,
+                locateInMap: $%IF ITEM.locateSearchResultInMap == 'Y'$ true $%ELSE$ false $%ENDIF$,
+                branchIcon: $%IF ITEM.BranchIcon != ''$ '$$ITEM.BranchIcon$' $%ELSE$ false $%ENDIF$,
+                atmIcon: $%IF ITEM.ATMIcon != ''$ '$$ITEM.ATMIcon$' $%ELSE$ false $%ENDIF$
             },
             calculateDistanceConfig: {},
             testOnBrowser: $%IF ITEM.testOnBrowser == 'Y'$ true $%ELSE$ false$%ENDIF$,
@@ -22,12 +23,11 @@
 
         function onDeviceReady() {
             var onSuccess = function (position) {
-
+                
                 var banescoMap, myLocation;
                 var BanescoMap = window.com.widgets.BanescoMap;
 
                 var _position = widgetArgs.useLocationMock ? widgetArgs.locationMock : position;
-                console.log(_position)
 
                 myLocation = {
                 	lat: _position.coords.latitude,
@@ -36,7 +36,9 @@
 
                 banescoMap = BanescoMap.init(document.getElementById('mapHolder'), myLocation);
 
-                banescoMap.search(widgetArgs.searchConfig, onSearchCallback)
+                banescoMap.search(widgetArgs.searchConfig, onSearchCallback, function(error) {
+                    console.log(error)
+                })
 
                 var destinations;
 
@@ -64,21 +66,21 @@
                 }
 
                 function buildBranchRow(branch) {
-                    console.log(branch)
                     var newRow = $(
                         '<div '+
                             '$%IF ITEM.Styles().rowStyle != ''$class="$$ITEM.Styles().rowStyle$"$%ENDIF$'+
                             '$%IF ITEM.INLINE_STYLES().rowStyle != ''$style="$$ITEM.INLINE_STYLES().rowStyle$"$%ENDIF$'+'>'+
+                                '<span ' + 
+                                    '$%IF ITEM.Styles().rowDistanceStyle != ''$class="$$ITEM.Styles().rowDistanceStyle$"$%ENDIF$'+
+                                    '$%IF ITEM.INLINE_STYLES().rowDistanceStyle != ''$style="$$ITEM.INLINE_STYLES().rowDistanceStyle$"$%ENDIF$'+'>'+
+                                        branch.distance.distance.text + 
+                                '</span>'+
+                                '<span class="branch_arrow"></span>'+
                                 '<p '+
                                     '$%IF ITEM.Styles().rowTitleStyle != ''$class="$$ITEM.Styles().rowTitleStyle$"$%ENDIF$'+
                                     '$%IF ITEM.INLINE_STYLES().rowTitleStyle != ''$style="$$ITEM.INLINE_STYLES().rowTitleStyle$"$%ENDIF$'+'>' + 
                                         '<span>'+
                                             branch.place.name +
-                                        '</span>'+
-                                        '<span ' + 
-                                            '$%IF ITEM.Styles().rowDistanceStyle != ''$class="$$ITEM.Styles().rowDistanceStyle$"$%ENDIF$'+
-                                            '$%IF ITEM.INLINE_STYLES().rowDistanceStyle != ''$style="$$ITEM.INLINE_STYLES().rowDistanceStyle$"$%ENDIF$'+'>'+
-                                            branch.distance.distance.text + 
                                         '</span>'+
                                 '</p>'+
                                 '<p ' +
@@ -101,7 +103,6 @@
             onDeviceReady()
         //}
     })
-    //]]
 </script>
 
 <div 

@@ -1,26 +1,31 @@
 .error-headergrande {
-	font-size:2.500em; 
+	font-size:30px; 
 	color:#54616d; 
 	text-transform:initial; 
 	margin-top:35px;
 	margin-bottom: 35px;
+	font-family: "Lato Light";
 }
 
 .error-texto {
-	font-size:15.33px; 
+	font-size:14px; 
 	color:#54616d; 
 	text-transform:initial;
 	font-weight:bold; 
-	margin-top:5px;}
+	margin-top:5px;
+	font-family: "Lato Regular"
+}
 
 .error-boton {
 	background: #007953 ;
 	color: #ffffff;
-	width: 90%;
+	width: 100% !important;
 	height:40px; 
 	border-radius: 5px;
 	width: auto;
-	font-size: 14.33px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: "Lato Regular";
 }
 
 @media (min-width: 200px) and (orientation: landscape) { 

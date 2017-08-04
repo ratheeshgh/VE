@@ -5,7 +5,7 @@
 
 .branchlist_card {
     padding: 15px;
-    background: #FFF;
+    background: #F4F8F9;
     color: #3A4454;
     font-family: 'Lato Regular';
     position: relative;
@@ -14,21 +14,50 @@
 }
 
 .branchlist_card .branchTitle {
-    font-size: 15.33px;
-    font-family: 'Lato Regular';
+    margin: 0px;
+    width:90%;
+}
+
+.branchlist_card .branch_arrow {
+    position: absolute;
+    right: 15px;
+    font-family: 'Banesco';
+    font-size: 15px;
+    transform: rotate(180deg);
+    top: 0;
+    bottom: 0;
+    height: 15px;
+    line-height: 15px;
+    margin: auto;
+}
+
+.branchlist_card .branch_arrow::before {
+  content: '\E90D';
+}
+
+.branchlist_card .branchTitle span:first-child {
+    font-size: 12px;
+    font-family: 'Lato Medium';
+    text-transform: capitalize;
+    color: #3A4454;
     margin-bottom:5px;
 }
 
 .branchlist_card .branchSubtitle {
-    font-size: 13.33px;
-    font-family: 'Lato Light';
+    color: #54616D;
+    font-family: 'Lato Regular';
+    font-size: 12px;
     margin: 0;
+    text-transform: initial;
+    width:90%;
 }
 
 .branchlist_card .branchDistance {
     position: absolute;
     font-family: 'Lato Medium';
+    font-weight: bold;
+    font-size: 12px;
+    color: #3A4454;
     top: 15px;
     right: 15px;
-    font-size: 15.33px;
 }

@@ -8,7 +8,7 @@
 }
 
 .card__header {
-    padding: 1.041em;
+    padding: 16.66px;
     text-align: center;
     position: relative;
 }
@@ -16,16 +16,25 @@
 .card__body {
     border-top: 1px solid #DBE0E6;
     border-bottom: 1px solid #DBE0E6;
-    padding: 1.041em;
+    padding: 16.66px;
     text-align: center;
     height: auto;
 }
 
 .card__body-text label {
-    font-size: 9.33px;
+    font-size: 12px;
     padding: 0 !important;
     margin-bottom: 0px;
     color: #54616D;
+    text-transform: uppercase;
+}
+
+.card__body-text-available label {
+	padding: 0 !important; 
+	margin-bottom: 0px; 
+	color: #54616D; 
+	text-transform:uppercase; 
+	font-size:9.33px !important;
 }
 
 .card__body-progressBar-Container {
@@ -35,7 +44,7 @@
 .card__footer {
     background: #FFFFFF;
     text-align: center;
-    padding: 1.041em;
+    padding: 16.66px;
 }
 
 .card__footer a, .card__footer-2-col a {
@@ -47,7 +56,9 @@
     background: #FFFFFF;
     height: 100%;
     width: 50%;
-    padding: 1.041em;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 16.66px;
     display: inline-block;
     text-align: center;
 }
@@ -72,20 +83,20 @@
 .card__header-arrow {
     height: 100%;
     line-height: 100%;
-    margin-top: -1.041em;
     display: inline-block;
     background: none;
     border: none;
     outline: none;
     position: absolute;
-    right: 15px;
+    right: 16.66px;
+    top:0px;
     padding: 0;
     width: auto;
     -ms-transform: rotate(180deg);
     /* IE 9 */
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari, Opera */
-    transform: rotate(180deg);>
+    transform: rotate(180deg);
 }
 
 .card__header-titleH1Container {
@@ -110,24 +121,35 @@
 .card__header-contentNumber {
   /*font-size: 1.708em;*/
   font-size: 27.33px;
+  line-height: 27.33px;
+  margin-top: 5px;
   color: #3a4454;
 }
 
 .card__header-actionLink {
   color: #2b5f8c;
   /*font-size: 0.750em;*/
+  line-height: 27.33px;
   font-size: 12px;
 }
 
-.font27 {
-    font-size: 27.33px;
+.fieldAbout {
+    color:#54616D;
+    font-family: "Lato Medium", courier;
+    font-size:12px !important;
+    text-transform: uppercase;
 }
 
-.font20 {
-    font-size: 20.66px;
+.dataAbout {
+    color:#54616D;
+    font-family: "Lato Regular" ,courier;
+    font-size:13.33px;
+    text-transform: initial;
 }
 
-.font16 {
-    font-size: 16px !important;
+.copyrightAbout {
+    color:#54516d;
+    font-family: "Lato Regular", courier;
+    font-size: 12px;
+    text-transform: initial;
 }
-

@@ -30,7 +30,7 @@ body.general {
 	margin-top: 20px;
 	margin-left: 15px;
 	margin-right: 20px;
-	color: #3A4454
+	color: #54616D
 }
 
 .titleContactMail {
@@ -43,11 +43,22 @@ body.general {
 	line-height: inherit;
 }
 
+.infoContactHeader {
+	font-family: "Lato Regular";
+    color: #3A4454;
+	margin: 0 0 5px;
+}
+
+.infoContactDetail {
+	font-family: "Lato Regular";
+    color: #54616D;
+}
+
 .infoContact {
 	padding-top: 25px;
 	padding-left: 20px; 
-	font-family: "Lato Light";
-    color: #3A4454;
+	font-family: "Lato Regular";
+    color: #54616D;
 }
 
 .from {
@@ -64,7 +75,7 @@ body.general {
 	width: 25%;
     /*height: 55px;
 	margin-top: 7px;*/
-    line-height: 70px;
+    line-height: 65px;
     text-align: center !important;
     border-right: 1px solid #ebf0f5;
     padding: 0;

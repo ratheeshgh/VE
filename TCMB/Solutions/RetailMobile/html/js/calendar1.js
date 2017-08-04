@@ -264,17 +264,7 @@ function cal_prs_time1 (str_time, dt_date) {
     if (!dt_date) return null;
     var arr_time = String(str_time ? str_time : '').split(this.timeSeparator);
 
-    if (!arr_time[0]) 
-    {
-    	// special treatment for DST occuring at 00:00 when using Firefox
-    	var date_copy = new Date(dt_date);
-        dt_date.setHours(0);
-        if (dt_date.getHours() != 0) 
-        {
-        	dt_date = date_copy;
-        	dt_date.setHours(1);
-        }
-    }
+    if (!arr_time[0]) dt_date.setHours(0);
     else if (RE_NUM.exec(arr_time[0])) 
         if (arr_time[0] < 24) dt_date.setHours(arr_time[0]);
         else return cal_error ("Invalid hours value: '" + arr_time[0] + "'.\nAllowed range is 00-23.");

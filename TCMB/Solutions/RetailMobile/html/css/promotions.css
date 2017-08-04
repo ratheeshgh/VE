@@ -32,9 +32,8 @@
 
 .promotions-description, .promotions-predescription {
   font-family: "Lato Regular";
-  font-size: 15.33px;
-  font-weight: bold;
-  color: #3a4454;
+  font-size: 13.33px;
+  color: #54616D;
 } 
 
 .promotions-link {
@@ -59,14 +58,14 @@
 /* Promotions Details */
 
 .promotions-title {
-  font-family: "Lato Regular";
-  font-size: 15.33px;
+  font-family: "Lato Medium";
+  font-size: 12px;
   text-transform: uppercase;
-  color: #3a4454;
+  color: #54616D;
 }
 
 .promotions-subtitle {
-  font-family: "Lato Medium";
+  font-family: "Lato Regular";
   font-size: 12px;
   text-transform: uppercase;
   color: #3a4454;
@@ -79,9 +78,8 @@
 
 .promotions-details span {
   font-family: "Lato Regular";
-  font-size: 15.33px;
-  font-weight: bold;
-  color: #3a4454;
+  font-size: 13.33px;
+  color: #54616D;
 }
 
 .promotions-details-card {
