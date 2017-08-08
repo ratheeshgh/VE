@@ -155,3 +155,15 @@
  padding-left: 15px;
  padding-bottom: 12px;
 }
+
+
+.recents-transactions-button {
+	position: absolute;
+	opacity: 0 !important;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 9000;
+	width: 100%;
+} 
