@@ -106,6 +106,10 @@
   background-color: #fff;
 }
 
+.tab-underlined.grayBG div[id*="GRP"]:last-child {
+  background-color: #EBF0F5 !important;
+}
+
 .tab-underlined div[selected='y'] {
   border-bottom: 6px solid #007953 !important;
   color: #fff !important;
