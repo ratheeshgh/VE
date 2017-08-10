@@ -1998,7 +1998,7 @@
         >
         <template
             type="source"
-            value="./templates/widgets/FingerprintAuth/fingerprintConditionalSection.wgt"
+            value="./templates/widgets/FingerprintAuth/FingerprintConditionalSection.wgt"
             />
     </widget>
     <widget

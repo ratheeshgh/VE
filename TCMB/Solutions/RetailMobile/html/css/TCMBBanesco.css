@@ -176,7 +176,7 @@ input[type='radio']{
 
 input[type='radio'] + label {
   font-size: 14px;
-  font-family: "Lato Regular"
+  font-family: "Lato Regular";
   color: #3a4454;
   text-transform: initial;
   margin-bottom: 15px;

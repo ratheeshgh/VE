@@ -54,14 +54,9 @@
 
 /* cambiar */
 
-.helperHeightLogin {
-  position: absolute;
-  bottom: 0;
-}
-
-@media (max-height: 560px) {
- .helperHeightLogin {
-  position: fixed;
-  bottom: initial;
- }
+@media (min-height: 590px) {
+  .helperHeightLogin {
+    position: absolute;
+    bottom: 30px;
+  }
 }
