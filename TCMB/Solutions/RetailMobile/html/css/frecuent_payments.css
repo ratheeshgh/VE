@@ -83,8 +83,12 @@
 	font-weight:bold;
 }
 
-.frec-fecha label{
- color: #3a4454;
+.frec-h1-date , .frec-h1-date label{
+	font-size: 15.33px;
+	color: #3a4454;
+	text-transform: uppercase;
+	font-family: "Lato Regular", courier;
+	font-weight:bold;
 }
 
 .f.dd-select span {
