@@ -75,7 +75,6 @@
                                     '$%IF ITEM.INLINE_STYLES().rowDistanceStyle != ''$style="$$ITEM.INLINE_STYLES().rowDistanceStyle$"$%ENDIF$'+'>'+
                                         branch.distance.distance.text + 
                                 '</span>'+
-                                '<span class="branch_arrow"></span>'+
                                 '<p '+
                                     '$%IF ITEM.Styles().rowTitleStyle != ''$class="$$ITEM.Styles().rowTitleStyle$"$%ENDIF$'+
                                     '$%IF ITEM.INLINE_STYLES().rowTitleStyle != ''$style="$$ITEM.INLINE_STYLES().rowTitleStyle$"$%ENDIF$'+'>' + 
