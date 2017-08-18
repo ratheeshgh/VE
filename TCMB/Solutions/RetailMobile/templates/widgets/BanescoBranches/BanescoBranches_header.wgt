@@ -47,13 +47,17 @@
             _markers.push(marker);
 
             google.maps.event.addListener(marker, 'click', function () {
-                var infoNode = $(""+
+                var infoNodeText = ""+
                     "<div>"+
-                        "<h4>"+place.name+"</h4>"+
-                        "<p style='margin:0;'>"+"Horarios:"+"</p>"+
-                        "<p style='margin:0;'>"+"10:00hs - 13:50hs"+"</p>"+
-                    "</div>"+
-                "")[0];
+                        "<h4>"+place.name+"</h4>";
+                if (place.opening_hours) {
+                    infoNodeText += "<p style='margin:0;'>"+"Horarios:"+"</p>"+
+                        "<p style='margin:0;'>"+ place.opening_hours.weekday_text +"</p>";
+                }
+
+                        
+                infoNodeText += "</div>";
+                var infoNode = $(infoNodeText)[0];
                 _infowindow.setContent(infoNode);
                 _infowindow.open(_map, this);
             });
@@ -177,21 +181,6 @@
             });
 
         }
-
-        function getIcon(glyph, color) {
-            var canvas, ctx;
-            canvas = document.createElement('canvas');
-            canvas.width = canvas.height = 20;
-            ctx = canvas.getContext('2d');
-            if (color) {
-              ctx.strokeStyle = color;
-            }
-            ctx.font = '20px Banesco';
-            ctx.fillText(glyph, 0, 16);
-            
-            return canvas.toDataURL();
-        }
-
 
         function refreshMap() {
             google.maps.event.trigger(_map, 'resize');
