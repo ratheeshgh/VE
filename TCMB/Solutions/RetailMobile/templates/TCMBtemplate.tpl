@@ -104,6 +104,17 @@ $%endif$
 	//END OF WHIRLE EFFECT TO ACCOUNT CARDS
   });
 </script>
+$%IF PHASE == 'Login' || PHASE == 'ContactUs' || PHASE == 'DuplicatedSession' || PHASE == 'BanescoBranches' || PHASE == 'SessionTimeOut' || PHASE == 'AccessViolation' || PHASE == 'ErrorPhase' || PHASE == 'Offline'$
+<script type="text/javascript">
+   function ecHeartbeat() {
+      var params = "MODE=AjaxHeartbeatService&namespace=$$NAMESPACE$&controllername=ajaxservletcontroller";
+      makePOSTRequest("ajaxservletcontroller", true, params, '$$NAMESPACE$', "AjaxHeartbeatService");
+   }
+   setInterval( ecHeartbeat, ($$SessionTimeout$ * 1000) - 1000);
+</script>
+
+$%ENDIF$
+
 $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 <form name="sessionTimeoutForm" method=POST action="servletcontroller" autocomplete="off">
 			<input type="hidden" name="PRODUCT" value="">

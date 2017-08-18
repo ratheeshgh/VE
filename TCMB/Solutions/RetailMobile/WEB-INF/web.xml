@@ -18,6 +18,10 @@
 	<servlet>
 		<servlet-name>ajaxservletcontroller</servlet-name>
 		<servlet-class>com.acquire.intelligentforms.presentation.AjaxServletController</servlet-class>
+		<init-param>
+		  <param-name>CUSTOM_AJAX_SERVICES</param-name>
+		  <param-value>com.edgeipk.custom.service.ajax.AjaxHeartbeatService</param-value>
+		</init-param>
 	</servlet>
 	<servlet>
 		<servlet-name>helpservletcontroller</servlet-name>
