@@ -7,17 +7,17 @@
 .msg-container .topSection {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 60px;
   background: #e9f3f6;
 }
 
 .msg-container .bottomSection {
   position: relative;
   width: 100%;
-  height: 60%;
   background: #f4f8f9;
-  padding-top: 40px;
+  margin-top: 35px;
   font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .msg-container .iconSection {
@@ -40,6 +40,7 @@
     height: 100%;
     width: 100%;
     text-align: center;
+    position: relative;
   }
 
   /* Icons */
@@ -58,18 +59,19 @@
 
   .msg-icon-ok:before {
     content: "\E908";
-    color: #007953;
+    color: #007953; 
   }
 
   .msg-error, .msg-success {
     float:none;
-    font-size: 15.33px;
-  }
+    font-size: 16px;
+    font-family: "Lato Regular"
+  } 
 
-  .msg-error {
-    color: #e31d19;
-  }
+    .msg-error {
+      color: #e31d19;
+    } 
 
-  .msg-success {
-    color: #007953;
-  }
+    .msg-success {
+      color: #007953; 
+    }

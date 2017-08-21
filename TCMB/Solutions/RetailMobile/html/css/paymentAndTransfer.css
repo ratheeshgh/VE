@@ -269,6 +269,7 @@
 
 .confirm_label label , .confirm_labelH1{
   margin-top: 15px;
+  margin-bottom: 0;
   font-family: "Lato Medium";
   font-size: 12px;
   color: #556176;
@@ -279,10 +280,15 @@
   margin-bottom: 10px !important;
 }
 
+.marginT15 {
+  margin-top: 15px !important;
+}
+
 .confirm_value {
   font-family: "Lato Medium";
   font-size: 16px;
   color: #3A4454;
+  text-transform: initial;
 }
 
 .toBottom {
@@ -312,10 +318,10 @@
 .confirm_header_title {
   text-align: left;
   float: left;
-  font-size: 13.33px;
+  font-size: 12px;
   text-transform: initial;
   padding: 15px;
-  font-family: "Lato Medium";
+  font-family: "Lato Regular";
 }
 
 .success_operation_data {

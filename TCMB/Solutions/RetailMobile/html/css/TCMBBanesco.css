@@ -170,6 +170,18 @@ hr {
   text-align: center;
 }
 
+input.ban-checkbox[type="checkbox"]{
+  display: none;
+}
+
+input.ban-checkbox[type="checkbox"] + label::before{
+  content:'';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #CCC;
+}
+
 input[type='radio']{
   display: none;
 }
@@ -243,7 +255,7 @@ input[type='radio']:checked + label:before {
   color: #556176;
 }
 
-.clickable_card .action_arrow {
+.clickable_card .action_arrow, .clickable_card .action_arrow:hover {
     position: absolute;
     right: 15px;
     font-family: 'Banesco';
@@ -254,8 +266,23 @@ input[type='radio']:checked + label:before {
     height: 15px;
     line-height: 15px;
     margin: auto;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 .clickable_card .action_arrow::before {
   content: '\E90D';
+}
+
+.action-arrow-edit {
+    top: 15px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    padding: 0;
+    width: auto;
+    background: none;
+    border: none;
+    outline: none;
 }
