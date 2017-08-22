@@ -4,6 +4,7 @@
 	padding: 3%;
 	border-radius: 3px;
 	text-transform: initial;
+  position: relative;
 }
 
 .movement:last-child {
@@ -18,57 +19,34 @@
 	vertical-align: middle;
 }
 
-@media (max-width: 380px) {
-	.desc_mv label, .desc_mv span {
-		font-size: 10.66px;
-	}
-}
-
-@media (min-width: 381px) {
-	.desc_mv label, .desc_mv span {
-		font-size: 14.66px;
-	}
-}
-
-.desc_mv label, .desc_mv span {
-    color: #3a4454;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-/*.transaction_icon {
+.transaction_icon {
 	display: inline-block;
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-}*/
+}
 
-  .transaction_icon {
-  	display: inline-block;
-    width: 15px;
-    height: 15px;
-    vertical-align: middle;
-  	border-radius: 50%;
-  }
+/*
+.transaction_icon.cred {
+	background: #859CCF;
+}
 
-/*  .transaction_icon.cred {
-  	background: #859CCF;
-  }
-
-  .transaction_icon.deb {
+.transaction_icon.deb {
   	background: #F68A70;
-  } */
+} */
 
 .transaction_icon.cred::before,
 .transaction_icon.deb::before {
-	display: inline-block;
-	font-size: 25px;
-	line-height: 25px;
-	color: #FFF;
+    font-family: "Banesco";
+    display: inline-block;
+    font-size: 37px;
+    line-height: 37px;
+    position: absolute;
+    height: 37px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-/*.transaction_icon.cred::before {
+/*
+.transaction_icon.cred::before {
 	content: '+';
 	margin-top: -1px;
 }
@@ -77,63 +55,55 @@
 	margin-top: -3px;
 }*/
 
-  .transaction_icon.cred::before {
-  	font-family: "Banesco";
+.transaction_icon.cred::before {
 	color: #859CCF;
 	content: "\E948";
-  	margin-top: -1px;
-    vertical-align: middle;
-    font-size: 20px;
-    font-stretch: 100%;
-    line-height: 100%;
-  }
-  .transaction_icon.deb::before {
-  	font-family: "Banesco";
+}
+.transaction_icon.deb::before {
 	color: #F68A70;
 	content: "\E946";
-  	margin-top: -1px;
-    vertical-align: middle;
-    font-size: 20px;
-    font-stretch: 100%;
-    line-height: 100%;
-  }
+}
 
-.transaction_icon.ophistory::before {
-	font-family: "Banesco";
-	content: '\E936';
-	margin-top: -3px;
+.desc_mv label, .desc_mv span {
+    color: #3a4454;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: "Lato Regular";
 }
 
 @media (max-width: 380px) {
-	.desc_date label, .desc_date span {
-		font-size: 9px;
-	}
+ .desc_date label, .desc_date span {
+  font-size: 9px;
+ }
+
+ .desc_cur label, .desc_cur span {
+  font-size: 13px;
+ }
+
+ .desc_mv label, .desc_mv span {
+  font-size: 10.66px;
+ }
 }
 
 @media (min-width: 381px) {
-	.desc_date label, .desc_date span {
-		font-size: 12px;
-	}
+ .desc_date label, .desc_date span {
+    font-size: 12px;
+ }
+
+ .desc_cur label, .desc_cur span {
+  font-size: 16px;
+ }
+
+ .desc_mv label, .desc_mv span {
+  font-size: 16px;
+ }
 }
 
 .desc_date label, .desc_date span {
     color: #54616d;
 }
 
-@media (max-width: 380px) {
-	.desc_cur label, .desc_cur span {
-		font-size: 13px;
-	}
-}
-
-@media (min-width: 381px) {
-	.desc_cur label, .desc_cur span {
-		font-size: 16px;
-	}
-}
-
 .desc_cur label, .desc_cur span {
-    font-weight: bold;
     color: #54616d;
 }
 
@@ -141,115 +111,24 @@
     color: #E31D19;
 }
 
-/* Monthly Period */
-
-.movs-period-icon {
-	font-family: "Banesco";
-  font-size: 32px;
-  color: #1F8C6B;
-  display: block;
+.desc_cur.negativedeb label, .desc_cur.negativedeb span  {
+    color: #E31D19;
 }
 
-.movs-period-icon:before {
-	content:'\E939';
+.desc_cur.negativedeb label, .desc_cur.negativedeb span:before {
+	content:'- ';
 }
 
-.spanStyle span {
-  color: #1F8C6B;
-  font-weight: bold;
+.title_mv {
+	font-size: 12px;
+	color: #708090;
+	font-weight: bold;
 }
 
-.carousel_btn > span {
-  position: absolute;
-  bottom: 7px;
-  left: 0;
-  right: 0;
+.title_cont{
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:5%;
+	margin-right:5%;
 }
 
-.carousel_btn{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.transaction_period {
-  display: inline-block;
-  vertical-align: middle;
-  background: #FFF;
-  margin-bottom: 3px;
-  padding: 3%;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-family: "Lato Regular", courier;
-  font-size: 12px;
-  color: #708090;
-}
-
-  .transaction_period.statement::before {
-	width: 0px;
-    height: 0px;
-  	font-family: "Banesco";
-	color: #00B395;
-	content: "\E924";
-  	margin-top: -1px;
-    vertical-align: middle;
-    font-size: 20px;
-    font-stretch: 100%;
-    line-height: 100%;
-  }
-
-.period {
-  position: relative;
-}  
-  
-.period .u-right-arrow {
-    font-family: 'Banesco';
-    font-size: 9px;
-    -ms-transform: rotate(180deg);
-    /* IE 9 */
-    -webkit-transform: rotate(180deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(180deg);>
-}
-
-.period .u-right-arrow::before {
-  content: '\E90D';
-}
-
-.period .u-right-up {
-    font-family: 'Banesco';
-    font-size: 9px;
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(90deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(90deg);>
-}
-
-.period .u-right-up::before {
-  content: '\E90D';
-}
-
-.period .u-right-down {
-    font-family: 'Banesco';
-    font-size: 9px;
-    -ms-transform: rotate(270deg);
-    /* IE 9 */
-    -webkit-transform: rotate(270deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(270deg);>
-}
-
-.period .u-right-down::before {
-  content: '\E90D';
-}
-
-.period .detail_btn {
-  position:absolute;
-  top:0;
-  right:0;
-  left: 0;
-  bottom:0;
-}
