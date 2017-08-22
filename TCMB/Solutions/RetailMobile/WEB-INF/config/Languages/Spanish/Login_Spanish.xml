@@ -143,9 +143,9 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999830:Login" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value=""/>
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999832:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="DisplayText" original="Username" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999830:Login" mappingType="OVERRIDE" original="Username" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value=""/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999832:Login-Windows" mappingType="OVERRIDE" original="Username" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value=""/>
+            <ProcessEntityAttr default="Usuario" name="DisplayText" original="Username" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999830:Login" mappingType="OVERRIDE" original="Username" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value="Usuario"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999832:Login-Windows" mappingType="OVERRIDE" original="Username" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value="Usuario"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999830:Login" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999829:Question" state="NEW" status="OKAY" value=""/>
@@ -185,9 +185,9 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999835:Login" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value=""/>
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999837:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="DisplayText" original="Password" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999835:Login" mappingType="OVERRIDE" original="Password" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value=""/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999837:Login-Windows" mappingType="OVERRIDE" original="Password" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value=""/>
+            <ProcessEntityAttr default="Clave" name="DisplayText" original="Password" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999835:Login" mappingType="OVERRIDE" original="Password" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value="Clave"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999837:Login-Windows" mappingType="OVERRIDE" original="Password" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value="Clave"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="35674B705F71D46999835:Login" mappingType="PLACEHOLDER" original="" specifiedBy="35674B705F71D46999834:Question" state="NEW" status="OKAY" value=""/>
