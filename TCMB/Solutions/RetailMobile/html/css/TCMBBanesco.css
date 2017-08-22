@@ -217,6 +217,11 @@ input[type='radio']:checked + label:before {
   border: 1px solid #2b5f8c;
 }
 
+.disabled + label:before {
+	box-shadow: inset 0px 0 0 3px #a5a9ad;
+    border: 1px solid #a5a9ad;
+}
+
 .marginT15 {
   margin-top:15px !important;
 }
