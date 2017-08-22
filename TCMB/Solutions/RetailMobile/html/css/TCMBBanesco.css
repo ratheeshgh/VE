@@ -217,6 +217,11 @@ input[type='radio']:checked + label:before {
   border: 1px solid #2b5f8c;
 }
 
+.disabled + label:before {
+	box-shadow: inset 0px 0 0 3px #a5a9ad;
+    border: 1px solid #a5a9ad;
+}
+
 .marginT15 {
   margin-top:15px !important;
 }
@@ -285,4 +290,35 @@ input[type='radio']:checked + label:before {
     background: none;
     border: none;
     outline: none;
+}
+
+.hamburger_button, .hamburger_button:hover {
+  background: none !important;
+  border: none;
+  outline: none;
+  font-family: 'Banesco';
+  color: transparent;
+  padding: 0;
+  margin-left: 15px;
+  width: 50px;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.hamburger_button::before {
+  content: '\E90E';
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+.font27 {
+  font-size: 27px !important;
+}
+
+.font20 {
+  font-size: 20px !important;
+}
+
+.font16 {
+  font-size: 16px !important;
 }
