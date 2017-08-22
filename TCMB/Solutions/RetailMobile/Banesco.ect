@@ -530,7 +530,7 @@
         AnswerJustification="Center"
         AnswerStyle="DisplayBlock NoFloat MTop10"
         ClassType="com.acquire.intelligentforms.entities.theme.design.QuestionDesign"
-        ErrorStyle="Light Left ColorRed"
+        ErrorStyle="error_login_inputs"
         Justification="Center"
         MandatoryStyle="NotDisplayed"
         Name="Login Question"
@@ -543,7 +543,7 @@
         AnswerJustification="Center"
         AnswerStyle="DisplayBlock NoFloat {margin-top:10px;}"
         ClassType="com.acquire.intelligentforms.entities.theme.design.QuestionDesign"
-        ErrorStyle="Light Left ColorRed"
+        ErrorStyle="error_login_inputs"
         Justification="Center"
         MandatoryStyle="NotDisplayed"
         Name="Username Question"
@@ -578,6 +578,7 @@
         Name="Username Input"
         NumberOfRows="5"
         SpecificAnswerControlStyle="{box-shadow:none;}"
+        ValidationMessage="Please enter a valid value"
         eid="35430069715D680668174"
         />
     <Design
@@ -585,7 +586,7 @@
         AnswerJustification="Center"
         AnswerStyle="{display:block; float:none; margin-top:10px;}"
         ClassType="com.acquire.intelligentforms.entities.theme.design.QuestionDesign"
-        ErrorStyle="GeneralErrorMessage"
+        ErrorStyle="error_login_inputs"
         Justification="Center"
         MandatoryStyle="{display:none;}"
         Name="Password Question"
@@ -2173,10 +2174,10 @@
         eid="4705BF2CA64A4413341190"
         />
     <Design
-        AnswerStyle="container_value"
+        AnswerStyle="confirm_value"
         ClassType="com.acquire.intelligentforms.entities.theme.design.QuestionDesign"
         Name="ReviewField"
-        QuestionStyle="container_label"
+        QuestionStyle="confirm_label"
         eid="2DC60D91676A186A307880"
         />
     <Design
@@ -2211,6 +2212,14 @@
             overridingDesign="Y"
             />
     </SubTheme>
+    <Design
+        AnswerControlStyle="frecinput-ansc"
+        AnswerStyle="frecinput FullWidth {margin-top:0;}"
+        ClassType="com.acquire.intelligentforms.entities.theme.design.QuestionDesign"
+        Name="PaymentInput"
+        QuestionStyle="confirm_label marginB10"
+        eid="BBD54B91E6AAD7FD503226"
+        />
     <LayoutTemplate
         ClassType="com.acquire.intelligentforms.entities.theme.LayoutTemplate"
         Name="CardLayout"

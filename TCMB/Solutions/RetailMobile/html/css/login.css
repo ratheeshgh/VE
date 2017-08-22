@@ -25,6 +25,13 @@
   box-shadow: 0px 0px 3px 0px #4e74b0;
 }
 
+.error_login_inputs {
+  font-family: "Lato Regular";
+  font-size: 12px;
+  color: #E31D18;
+  text-transform: initial;
+}
+
 .login_night {
   padding-top: 0;
 }
