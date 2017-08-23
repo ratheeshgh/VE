@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="22/08/17 12:23" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="23/08/17 15:16" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="AccountsList" eid="3447F77EEDC195AE29675" type="Process">
@@ -251,8 +251,8 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A150963:AccountsList-Windows" mappingType="OVERRIDE" original="Recent Transactions" specifiedBy="D4C8D2A58C91068A150958:Button" state="NEW" status="OKAY" value="Últimos movimientos"/>
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A150960:AccountsList" mappingType="OVERRIDE" original="Recent Transactions" specifiedBy="D4C8D2A58C91068A150958:Button" state="NEW" status="OKAY" value="Últimos movimientos"/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="Últimos movimientos" name="LinkText" original="Recent Transactions" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A150960:AccountsList" mappingType="OVERRIDE" original="Recent Transactions" specifiedBy="D4C8D2A58C91068A150958:Button" state="NEW" status="OKAY" value="Últimos movimientos"/>
+            <ProcessEntityAttr default="Últimos movimientos" name="LinkText" original="" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A150960:AccountsList" mappingType="OVERRIDE" original="Recent Transactions" specifiedBy="D4C8D2A58C91068A150960:Rich Presentation Button" state="NEW" status="OKAY" value="Últimos movimientos"/>
             </ProcessEntityAttr>
           </ProcessEntity>
         </ProcessEntity>
@@ -1803,7 +1803,7 @@
                           <Attribute mappingType="PLACEHOLDER" name="ConfirmationMessage" original="" state="NEW" status="OKAY" value=""/>
                           <Attribute mappingType="PLACEHOLDER" name="HelpText" original="" state="NEW" status="OKAY" value=""/>
                           <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="OKAY" value=""/>
-                          <Attribute mappingType="PLACEHOLDER" name="LinkText" original="" state="NEW" status="OKAY" value=""/>
+                          <Attribute mappingType="OVERRIDE" name="LinkText" original="Recent Transactions" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Últimos movimientos"/>
                         </PresentationObject>
                       </Container>
                     </Container>

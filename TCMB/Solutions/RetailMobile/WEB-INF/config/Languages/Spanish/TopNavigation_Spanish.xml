@@ -529,7 +529,7 @@
             </PresentationObject>
           </Container>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="B14B4E7B03A1A9F840876" path="Mobile.BasicTopNavigation.NavigationBasic.Section" type="Rich Presentation Section">
-            <Attribute mappingType="OVERRIDE" name="Body" original="Do you want to logout?" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
+            <Attribute mappingType="OVERRIDE" name="Body" original="Do you want to logout?" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="¿Desea salir?"/>
             <Attribute mappingType="OVERRIDE" name="Native" original="Y" state="NEW" status="OKAY" value=""/>
             <Attribute mappingType="PLACEHOLDER" name="Title" original="" state="NEW" status="OKAY" value=""/>
             <Attribute mappingType="OVERRIDE" name="TitleClass" original="exit-moda-title" state="NEW" status="OKAY" value=""/>
@@ -634,7 +634,7 @@
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="5090DFE402BD6411382004" path="Mobile-Windows.BasicTopNavigation.NavigationBasic.Section" type="Rich Presentation Section">
             <Attribute mappingType="PLACEHOLDER" name="Body" original="" state="NEW" status="OKAY" value=""/>
             <Attribute mappingType="OVERRIDE" name="Native" original="Y" state="NEW" status="OKAY" value=""/>
-            <Attribute mappingType="OVERRIDE" name="Title" original="Do you want to logout?" state="NEW" status="OKAY" value=""/>
+            <Attribute mappingType="OVERRIDE" name="Title" original="Do you want to logout?" state="NEW" status="OKAY" value="¿Desea salir?"/>
             <Attribute mappingType="OVERRIDE" name="TitleClass" original="modal-title" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
         </Container>
