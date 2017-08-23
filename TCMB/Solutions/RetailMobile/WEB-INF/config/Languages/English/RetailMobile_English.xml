@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="22/08/17 12:23" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="23/08/17 16:28" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -6144,6 +6144,50 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="22A9991FBF00DBCD575932:TCMB-Windows" mappingType="OVERRIDE" original="Aceptar" specifiedBy="22A9991FBF00DBCD575931:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Save as PDF" eid="7406CB1B5F423006181756" path="HistoryOfOperations.ReceiptDetails.Save as PDF" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="Save as PDF" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181757:TCMB" mappingType="OVERRIDE" original="Save as PDF" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181759:TCMB-Windows" mappingType="OVERRIDE" original="Save as PDF" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181757:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181759:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181757:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181759:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181757:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181759:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="Save as PDF" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181757:TCMB" mappingType="OVERRIDE" original="Save as PDF" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181759:TCMB-Windows" mappingType="OVERRIDE" original="Save as PDF" specifiedBy="7406CB1B5F423006181756:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Reset PDF Flag" eid="7406CB1B5F423006181765" path="HistoryOfOperations.ReceiptDetails.Reset PDF Flag" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="Reset PDF Flag" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181766:TCMB" mappingType="OVERRIDE" original="Reset PDF Flag" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="OVERRIDE" original="Reset PDF Flag" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181766:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181766:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181766:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="Reset PDF Flag" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181766:TCMB" mappingType="OVERRIDE" original="Reset PDF Flag" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="OVERRIDE" original="Reset PDF Flag" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
     </Container>
   </ProcessEntities>
@@ -6302,7 +6346,7 @@
           </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="ContactUs" eid="83E8CB5ADDDAA23C48196" type="Rich Presentation Phase">
-          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file offline/EnglishContactUsNew.tpl" eid="83E8CB5ADDDAA23C48224" path="TCMB.OfflineEnabled.ContactUs.Text from file offline/EnglishContactUsNew.tpl" type="Rich Presentation Text">
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file offline/$$LANGUAGE_MAP_ALIAS$ContactUsNew.tpl" eid="83E8CB5ADDDAA23C48224" path="TCMB.OfflineEnabled.ContactUs.Text from file offline/$$LANGUAGE_MAP_ALIAS$ContactUsNew.tpl" type="Rich Presentation Text">
             <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
         </Container>
@@ -7018,6 +7062,11 @@
       </Container>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="0FBA294341969CF099842" leafType="link" path="PostLogin.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="A8E3EF07A17F0351181810" leafType="link" path="MultiAccount.Set Value Main Page Title" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3449755" leafType="link" path="Standalone.Settings.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3407657" leafType="link" path="Standalone.FrequentPayments.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3583538" leafType="link" path="Standalone.PaymentServices.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3412955" leafType="link" path="Standalone.CreditCardPaymentsVNZ.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3434811" leafType="link" path="Standalone.TransferToMyAccountsVNZ.Set Value" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="4BC39A5FA8867A85618358" leafType="link" path="Standalone.PaymentsAndTransfers.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="3D97A91B1EE5407B209392" leafType="link" path="Standalone.PaymentsAndTransfers.Payments.Multiple Payments.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="4BC39A5FA8867A85988039" leafType="link" path="Standalone.PaymentsAndTransfers.Payments.PAGAR TARJETA DE CREDITO PA.Set Value Main Page Title" type="Set Value Rule"/>
@@ -7033,6 +7082,7 @@
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="FF12496DAFA4EFBB1417063" leafType="link" path="Standalone.HelpMenu.Help.Take a Tour.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="FF12496DAFA4EFBB1417080" leafType="link" path="Standalone.HelpMenu.Help.About.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Error Message to the generic version" eid="B0088DDE88CE293F188762" leafType="link" path="Common.ErrorPhase.Set Error Message to the generic version" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93271700" leafType="link" path="AccountDetails.init.Set Value" type="Set Value Rule"/>
     </MasterRules>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="PreLogin" eid="91D1E093C7CD49862688" type="Process">
       <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="Login" eid="4FD65E9564E0ABE22158" type="Component Phase">
@@ -7133,6 +7183,31 @@
 </html>
 
 ]]></Note>
+      <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="Settings" eid="1E489C352C272888178121" type="Component Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3449755" path="Standalone.Settings.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Settings" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="FrequentPayments" eid="3D97A91B1EE5407B182048" type="Component Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3407657" path="Standalone.FrequentPayments.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Frequent Payments" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="PaymentServices" eid="3D97A91B1EE5407B1605994" type="Component Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3583538" path="Standalone.PaymentServices.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payment Services" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="CreditCardPaymentsVNZ" eid="3D97A91B1EE5407B677273" type="Component Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3412955" path="Standalone.CreditCardPaymentsVNZ.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="My Credit Card Payment" state="NEEDS_REVIEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+      <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="TransferToMyAccountsVNZ" eid="048B1AB1A72039E4187945" type="Component Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3434811" path="Standalone.TransferToMyAccountsVNZ.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transer to My Accounts VNZ" state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="PaymentsAndTransfers" eid="3EEB812079333F12318387" type="Phase">
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="4BC39A5FA8867A85618358" path="Standalone.PaymentsAndTransfers.Set Value Main Page Title" type="Set Value Rule">
           <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payments And Transfers" state="NEW" status="OKAY" value=""/>
@@ -7229,6 +7304,13 @@
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ErrorPhase" eid="91D1E093C7CD49862756" type="Phase">
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Error Message to the generic version" eid="B0088DDE88CE293F188762" path="Common.ErrorPhase.Set Error Message to the generic version" type="Set Value Rule">
           <Attribute mappingType="OVERRIDE" name="FromMessage" original="An error has occurred. Please try again later." state="NEW" status="OKAY" value=""/>
+        </Rule>
+      </Container>
+    </Container>
+    <Container class="com.acquire.intelligentforms.entities.Product" displayString="AccountDetails" eid="9E6DD7102BBF0C26160575" type="Process">
+      <Container class="com.acquire.intelligentforms.entities.RulesOnlyPhase" displayString="init" eid="9E6DD7102BBF0C26162694" type="Rules Only Phase">
+        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93271700" path="AccountDetails.init.Set Value" type="Set Value Rule">
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="en" state="NEW" status="NEW" value=""/>
         </Rule>
       </Container>
     </Container>

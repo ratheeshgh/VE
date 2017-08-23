@@ -1,6 +1,6 @@
 <button class="btn btn-primary-bordered secondBtnImg secondBtnImg--is-primary font-regular" type="button" name="button" onclick="$$ITEM.NAVIGATION()$">
   <i id="icon"class="$$ITEM.icon$"></i>
-  $$ITEM.ActionCommand$
+  $$ITEM.ButtonText$
 </button>
 
 <style type="text/css">
