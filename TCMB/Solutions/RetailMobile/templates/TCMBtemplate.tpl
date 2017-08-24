@@ -39,7 +39,26 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 			return true;
 		}
 	   </script>
-
+		$%IF !DownloadPDF = 'Y'$	   
+		<script src="$$HTML_LOCATION$/js/cordova/PdfHandler.js"></script>
+		<script>
+		window.onload=function(e){
+			$%IF DEVICE_INFO.platform == "Android"$				
+				com.temenos.widgets.hybrid.showPDFAndroid.showPDF('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
+			$%ENDIF$					
+			$%IF DEVICE_INFO.platform == "ios"$
+				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=yes','.pdf');
+			$%ENDIF$
+			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$	
+				if ((typeof(window.external) !=='undefined') && (typeof(window.external.notify) !=='undefined')) {
+					window.external.notify('OPEN_IN_APP_PDF_NOTIFY'+ '$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&');
+				} else {
+					window.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=no');
+				}
+			$%ENDIF$
+		}
+	   </script>
+		$%ENDIF$
     </head>
     <body>
 $%endif$
@@ -102,6 +121,7 @@ $%endif$
   		setTimeout(function (){$this.addClass('whirleactive');}, index * 350);
 	});
 	//END OF WHIRLE EFFECT TO ACCOUNT CARDS
+	$(".resetPdfFlag").trigger("click");
   });
 </script>
 $%IF PHASE == 'Login' || PHASE == 'ContactUs' || PHASE == 'DuplicatedSession' || PHASE == 'BanescoBranches' || PHASE == 'SessionTimeOut' || PHASE == 'AccessViolation' || PHASE == 'ErrorPhase' || PHASE == 'Offline'$

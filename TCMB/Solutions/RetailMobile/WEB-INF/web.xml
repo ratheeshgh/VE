@@ -50,7 +50,11 @@
     <servlet>
 		<servlet-name>mobileUpdateServlet</servlet-name>
 		<servlet-class>com.acquire.intelligentforms.MobileUpdateManagerServlet</servlet-class>
-	</servlet>    
+	</servlet> 
+	<servlet>
+		<servlet-name>ServerFileRetrievalServlet</servlet-name>
+		<servlet-class>com.temenos.connect.servlet.ServerFileRetrievalServlet</servlet-class>
+	</servlet> 	
 	<servlet-mapping>
 		<servlet-name>servletcontroller</servlet-name>
 		<url-pattern>/servletcontroller</url-pattern>
@@ -86,6 +90,10 @@
     <servlet-mapping>
               <servlet-name>mobileUpdateServlet</servlet-name>
              <url-pattern>/mobileUpdate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+ 		<servlet-name>ServerFileRetrievalServlet</servlet-name>
+		<url-pattern>/ServerFileRetrievalServlet</url-pattern>
 	</servlet-mapping>
 	<error-page>
 		<error-code>400</error-code>
