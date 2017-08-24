@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="23/08/17 17:04" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="24/08/17 15:04" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Login" eid="D3D38B88E2AF0F8418943" type="Process">
@@ -69,40 +69,40 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163287:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="F8E8FABCFC868A9B16054:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="3 To be blocked" eid="EFB732C45804E104486258" path="Login.Login.3 To be blocked" type="Heading">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Three attempts to be blocked" eid="EFB732C45804E104486258" path="Login.Login.Three attempts to be blocked" type="Heading">
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="Solo tiene 3 intentos" name="DisplayText" original="3 To be blocked" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="OVERRIDE" original="3 To be blocked" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value="Solo tiene 3 intentos"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="OVERRIDE" original="Remember you only have three attempts." specifiedBy="EFB732C45804E104486259:Rich Presentation Heading" state="NEW" status="NEW" value="Solo tiene 3 intentos"/>
+          <ProcessEntityAttr default="Solo tiene tres intentos" name="DisplayText" original="Three attempts to be blocked" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="OVERRIDE" original="Three attempts to be blocked" specifiedBy="EFB732C45804E104486258:Heading" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Solo tiene tres intentos"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="OVERRIDE" original="Remember you only have three attempts." specifiedBy="EFB732C45804E104486259:Rich Presentation Heading" state="NEW" status="OKAY" value="Solo tiene tres intentos"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486261:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486259:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486258:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="User Blocked" eid="EFB732C45804E104486123" path="Login.Login.User Blocked" type="Heading">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Your user has been blocked" eid="EFB732C45804E104486123" path="Login.Login.Your user has been blocked" type="Heading">
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="Usuario bloqueado" name="DisplayText" original="User Blocked" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="OVERRIDE" original="User Blocked" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value="Usuario bloqueado"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="OVERRIDE" original="User Blocked" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value="Usuario bloqueado"/>
+          <ProcessEntityAttr default="Usuario bloqueado" name="DisplayText" original="Your user has been blocked" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="OVERRIDE" original="Your user has been blocked" specifiedBy="EFB732C45804E104486123:Heading" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Usuario bloqueado"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="OVERRIDE" original="Your user has been blocked" specifiedBy="EFB732C45804E104486123:Heading" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Usuario bloqueado"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Click here to reset" eid="B0159233F2D85551139627" path="Login.Login.Click here to reset" type="Button">
@@ -1554,17 +1554,17 @@
   </PresentationOnlyObjects>
   <Rules>
     <MasterRules>
-      <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="9D03B70EAB11C84B236714" leafType="link" path="Login.FingerprintResult.Login.End Component" type="End Component Rule"/>
-      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - PlaceholderUser" eid="CBBA69FCE0AB4E93389354" leafType="link" path="Login.Initialise.Set Value - PlaceholderUser" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93389359" leafType="link" path="Login.Initialise.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - PlaceholderUser" eid="CBBA69FCE0AB4E93389354" leafType="link" path="Login.Initialise.Set Value - PlaceholderUser" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="9D03B70EAB11C84B236714" leafType="link" path="Login.FingerprintResult.Login.End Component" type="End Component Rule"/>
     </MasterRules>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Login" eid="D3D38B88E2AF0F8418943" type="Process">
       <Container class="com.acquire.intelligentforms.entities.RulesOnlyPhase" displayString="Initialise" eid="51C20560C6A604DC17399" type="Rules Only Phase">
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93389359" path="Login.Initialise.Set Value" type="Set Value Rule">
-          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Password" state="NEW" status="NEW" value="Clave"/>
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Password" state="NEW" status="OKAY" value="Clave"/>
         </Rule>
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - PlaceholderUser" eid="CBBA69FCE0AB4E93389354" path="Login.Initialise.Set Value - PlaceholderUser" type="Set Value Rule">
-          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Username" state="NEW" status="NEW" value="Usuario"/>
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Username" state="NEW" status="OKAY" value="Usuario"/>
         </Rule>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="Login" eid="51C20560C6A604DC17617" type="Phase">
