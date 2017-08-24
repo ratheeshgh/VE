@@ -19,8 +19,7 @@
 		</td>
 		<td width="500" valign="top" align="right"  style="text-align:right">
 			<right>
-			<p>UNITED STATES<br />
-			T +011-507-282-2013<br />
+			<p>T +011-507-282-2013<br />
 			E  ACLIENTE_PA@BANESCO.COM</p>
 		</td>
 		
