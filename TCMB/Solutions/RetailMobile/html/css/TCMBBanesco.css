@@ -218,6 +218,7 @@ input[type='radio']:checked + label:before {
 }
 
 .disabled + label:before {
+	background: #d9d9d9 !important;
 	box-shadow: inset 0px 0 0 3px #a5a9ad;
     border: 1px solid #a5a9ad;
 }
