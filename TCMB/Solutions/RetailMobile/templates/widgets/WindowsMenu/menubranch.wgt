@@ -11,7 +11,7 @@
                 <a id="BranchTarget$$ITEM.ID()$" data-toggle="collapse" data-parent="#accordion" href="#collapse$$ITEM.ID()$">
                     <i id="$$ITEM.ID()$" class="$$ITEM.RTID()$"></i>
                     $$ITEM.MenuText$ 
-                    <i class="indicator glyphicon glyphicon-chevron-right pull-right custom"></i>
+                    <i class="indicator glyphicon glyphicon-chevron-right custom"></i>
                 </a>
             $%ENDIF$
 			<script>$("#BranchListener$$ITEM.ID()$").on("click", function(e) { document.getElementById('BranchTarget$$ITEM.ID()$').click()})</script>
