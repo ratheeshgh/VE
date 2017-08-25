@@ -405,4 +405,13 @@
     </custom>
     <template type="header" value="./templates/widgets/FingerprintAuth/fingerprintAuth_header.wgt"/>
   </widget>
+  <widget name="ModalWindowsAuto" type="Section">
+    <template type="source" value="./templates/widgets/ModalWindows/ModalWindowsAuto.wgt"/>
+    <custom>
+      <item includeInDesign="true" layout="-1" mand="false" name="Title" prompt="Title" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="TitleClass" type="javax.swing.JTextField" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Native" type="javax.swing.JCheckBox" usage="15"/>
+      <item includeInDesign="true" layout="-1" mand="false" name="Body" type="com.acquire.intelligentforms.ide.dialogs.RichTextArea|MULTI_RICH_VALUES" typeValue="ALL_CHARS|Y" usage="15"/>
+    </custom>
+  </widget>
 </widgets>
