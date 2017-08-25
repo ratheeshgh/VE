@@ -1,0 +1,85 @@
+$%IF ITEM.Native == "Y"$
+<style>
+.modal-footer {
+margin-top: 0px;
+padding: 0px 0px 0px 0px;
+text-align: right;
+border-top: none;
+}
+
+.exit-modal-content{
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+.exit-modal-header{
+	border-bottom: none;
+}
+
+.exit-modal-dialog h5 {
+	font-size: 18px;
+	color: #708090;
+	text-transform: initial;
+}
+
+.exit-modal-boton {
+    background: #007953;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14.33px;
+}
+
+.exit-modal-footer {
+	margin-top:15px;
+	text-align: center;
+}
+
+.modal-content { background-color: rgba(255, 255, 255, 0.95);}
+.modal-header {text-align:center;}
+</style>
+$%ENDIF$
+<div class="modal fade" id="$$ITEM.ID()$" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="exit-modal-dialog modal-dialog">
+    <div class="exit-modal-content modal-content">
+      <div class="exit-modal-header modal-header">
+        $%IF ITEM.Native != "Y"$<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>$%ENDIF$
+        <h4 class="$$ITEM.TitleClass$" id="myModalLabel">$$ITEM.Title$</h4>
+		$%IF ITEM.Native == "Y" && ITEM.Body != ""$<h5>$$ITEM.Body$</h5>$%ENDIF$
+      </div>
+      $%IF ITEM.Native != "Y"$<div class="modal-body">
+        $$ITEM.Body$
+      </div>
+	  $%ENDIF$
+      <div class="exit-modal-footer modal-footer">
+        $$ITEM.EC_GENERATE()$
+      </div>
+    </div>
+  </div>
+</div>
+
+$%IF ITEM.Native == "Y"$
+<script>
+
+function centerModal() {
+	/*$("#C1__BUT_ShowMenu").click();*/
+    $(this).css('display', 'block');
+    var $dialog = $(this).find(".modal-dialog");
+    var offset = ($(window).height() - $dialog.height()) / 2;
+    // Center modal vertically in window
+    $dialog.css("margin-top", offset);
+	
+}
+
+$('#$$ITEM.ID()$').on('show.bs.modal', centerModal);
+$(window).on("resize", function () {
+	$('$$ITEM.ID()$:visible').each(centerModal);
+
+    
+});
+
+$('#$$ITEM.ID()$').modal('show');
+$('.modal-backdrop').remove();
+
+</script>
+$%ENDIF$

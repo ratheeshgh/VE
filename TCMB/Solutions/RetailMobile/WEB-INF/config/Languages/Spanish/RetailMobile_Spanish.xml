@@ -335,8 +335,8 @@
             </ProcessEntityAttr>
           </ProcessEntity>
           <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Multiple Payments" eid="4BC39A5FA8867A85618420" path="Standalone.PaymentsAndTransfers.Payments.Multiple Payments" type="Button">
-            <ProcessEntityAttr default="Pagos Frecuents&#9;" name="ButtonText" original="Multiple Payments" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618421:TCMB-Windows" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuents"/>
+            <ProcessEntityAttr default="Pagos Frecuentes&#9;" name="ButtonText" original="Multiple Payments" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618421:TCMB-Windows" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuentes&#9;"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value=""/>
@@ -350,12 +350,12 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value=""/>
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618421:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="Pagos Frecuents" name="HintText" original="Multiple Payments" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuents"/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618421:TCMB-Windows" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuents"/>
+            <ProcessEntityAttr default="Pagos Frecuentes&#9;" name="HintText" original="Multiple Payments" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuentes&#9;"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618421:TCMB-Windows" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuentes&#9;"/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="Pagos Frecuents" name="LinkText" original="Multiple Payments" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuents"/>
+            <ProcessEntityAttr default="Pagos Frecuentes&#9;" name="LinkText" original="Multiple Payments" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="4BC39A5FA8867A85618423:TCMB" mappingType="OVERRIDE" original="Multiple Payments" specifiedBy="4BC39A5FA8867A85618420:Button" state="NEW" status="OKAY" value="Pagos Frecuentes&#9;"/>
             </ProcessEntityAttr>
           </ProcessEntity>
           <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="PAGAR TARJETA DE CREDITO PA" eid="3EEB812079333F12318401" path="Standalone.PaymentsAndTransfers.Payments.PAGAR TARJETA DE CREDITO PA" type="Button">
