@@ -71,39 +71,19 @@
     font-family: "Lato Regular";
 }
 
-@media (max-width: 380px) {
- .desc_date label, .desc_date span {
-  font-size: 9px;
- }
-
- .desc_cur label, .desc_cur span {
-  font-size: 13px;
- }
-
- .desc_mv label, .desc_mv span {
-  font-size: 10.66px;
- }
+@media (min-width:326px) {
+	.desc_date label, .desc_date span, .desc_cur label, .desc_cur span, .desc_mv label, .desc_mv span {
+		font-size: 12px;
+	}
 }
 
-@media (min-width: 381px) {
- .desc_date label, .desc_date span {
-    font-size: 12px;
- }
-
- .desc_cur label, .desc_cur span {
-  font-size: 16px;
- }
-
- .desc_mv label, .desc_mv span {
-  font-size: 16px;
- }
+@media (max-width:325px) {
+	.desc_date label, .desc_date span, .desc_cur label, .desc_cur span, .desc_mv label, .desc_mv span {
+		font-size: 10.33px;
+	}
 }
 
 .desc_date label, .desc_date span {
-    color: #54616d;
-}
-
-.desc_cur label, .desc_cur span {
     color: #54616d;
 }
 

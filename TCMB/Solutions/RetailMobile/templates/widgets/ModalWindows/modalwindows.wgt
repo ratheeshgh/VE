@@ -21,7 +21,7 @@ border-top: none;
 .exit-modal-boton {   
     background: #007953;    
     color: #ffffff;   
-    width: 50%;   
+    width: 100%;   
     height: 40px;   
     border-radius: 5px;   
     font-size: 14.33px;   

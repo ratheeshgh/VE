@@ -132,3 +132,29 @@
 .row-offcanvas-left {
   transition: left 0.4s ease;
 }
+
+.sidebarMenu_top {
+  height:120px;
+  background: #1F8C6B;
+  position: relative;
+  padding: 0 25px;
+} 
+
+.sidebarMenu_top .lastLoginText{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFFFFF;
+}
+
+.sidebarMenu_top .lastLoginName {
+  font-family: 'Lato Bold';
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.sidebarMenu_top .lastLoginDate {
+  font-family: 'Lato Regular';
+  font-size: 12px;
+  margin-top: 5px;
+}
