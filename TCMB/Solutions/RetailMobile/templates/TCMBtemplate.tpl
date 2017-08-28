@@ -57,7 +57,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 				}
 			$%ENDIF$
 			$%IF DEVICE_INFO.isHybrid != "Y"$
-				downloadDoc($$CONTEXTPATH$);
+				downloadDoc('$$CONTEXTPATH$');
 			$%ENDIF$
 		}
 	   </script>

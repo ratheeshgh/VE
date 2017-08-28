@@ -100,7 +100,7 @@ window.com.temenos.widgets.hybrid.showPDFAndroid = (function () {
 })();
 function downloadDoc(contextpath){
 	try{
-		openWindow=window.open(ContextPathDownload+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=ViewPdfFile','_Blank');
+		openWindow=window.open(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf','_Blank');
 		openWindow.focus(); 
 	}
 	catch (e){
