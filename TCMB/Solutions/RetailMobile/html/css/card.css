@@ -22,11 +22,17 @@
 }
 
 .card__body-text label {
-    font-size: 12px;
+    font-size: 11px;
     padding: 0 !important;
     margin-bottom: 0px;
     color: #54616D;
     text-transform: uppercase;
+}
+
+@media (min-width:321px) {
+    .card__body-text label {
+        font-size: 12px;
+    }
 }
 
 .card__body-text-available label {

@@ -8,31 +8,45 @@
 <script type="text/javascript">
 
   (function() {
-    var montoUtilizado = Number('$$ITEM.MontoUtilizado$'.replace(/[^0-9\,]+/g,"").replace(',','.'));
-	var montoDisponible =  Number('$$ITEM.MontoDisponible$'.replace(/[^0-9\,]+/g,"").replace(',','.'));
+    var montoUtilizado = Number('$$ITEM.MontoUtilizado$'.split('.').join(''));
+	var montoDisponible =  Number('$$ITEM.MontoDisponible$'.split('.').join(''));
 	var progressBar = $("#progress-bar-color_$$ITEM.ID()$");
 	var infoPercentaje = $("#info-percentaje_$$ITEM.ID()$");
-	if (montoDisponible != 0) {
+	var finalColor = '#1C8464';
+	var finalProgressBarClass = 'progress-bar-banesco-low-percentage';
+	if (montoDisponible > 0) {
 		var result = ((montoUtilizado*100)/(montoDisponible));
-		progressBar.css('width', result +'%');
-		if(result <= 30) {
-	      progressBar.addClass('progress-bar-banesco-low-percentage');
-	      infoPercentaje.append(result.toFixed(2) + "% USED");
-	      infoPercentaje.css('color', '#1C8464')
-		} else if(result <= 70) {
-		 	 progressBar.addClass('progress-bar-banesco-medium-percentage');
-		 	 infoPercentaje.append(result.toFixed(2) + "% USED");
-		 	 infoPercentaje.css('color', '#EE9E14')
-			} else if(result <= 100) {
-				progressBar.addClass('progress-bar-banesco-hight-percentage');
-				infoPercentaje.append(result.toFixed(2) + "% USED");
-				infoPercentaje.css('color', '#EB514E')
-			}
+		var finalResult = Math.round(result)
+		
+		switch (true) {
+			case 0 < result && result < 1 :
+				finalResult = result.toFixed(2);
+				break;
+			case result <= 30: 
+				finalProgressBarClass = 'progress-bar-banesco-low-percentage';
+	      		finalColor = '#1C8464';
+				break;
+			case result <= 70:
+				finalProgressBarClass = 'progress-bar-banesco-medium-percentage';
+		 	 	finalColor = '#EE9E14';
+				break;
+			case result <= 100:
+				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
+				finalColor = '#EB514E';
+				break;
+		}
+
+		setProgressBarInfo(finalProgressBarClass, finalResult, finalColor);
    	} else {
-   		  progressBar.addClass('progress-bar-banesco-low-percentage');
-	      infoPercentaje.append("0% USED");
-	      infoPercentaje.css('color', '#1C8464')
+		setProgressBarInfo(finalProgressBarClass, '0', finalColor);
    	}
+
+	function setProgressBarInfo (classToAdd, percentage, color) {
+		progressBar.addClass(classToAdd);
+	    infoPercentaje.append(percentage + "% USED");
+	    infoPercentaje.css('color', color)
+		progressBar.css('width', percentage +'%');
+	}
    })();
 
 </script>
