@@ -98,3 +98,12 @@ window.com.temenos.widgets.hybrid.showPDFAndroid = (function () {
 
 	return showPDFAndroid;
 })();
+function downloadDoc(contextpath){
+	try{
+		openWindow=window.open(ContextPathDownload+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=ViewPdfFile','_Blank');
+		openWindow.focus(); 
+	}
+	catch (e){
+		alert("Either popup blocker is enabled or file cannot be downloaded for viewing at this moment."); 
+	}
+}

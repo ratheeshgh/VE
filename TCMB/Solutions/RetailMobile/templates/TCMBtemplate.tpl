@@ -56,6 +56,9 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 					window.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=no');
 				}
 			$%ENDIF$
+			$%IF DEVICE_INFO.isHybrid != "Y"$
+				downloadDoc($$CONTEXTPATH$);
+			$%ENDIF$
 		}
 	   </script>
 		$%ENDIF$
