@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="25/08/17 18:01" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="27/08/17 15:17" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -7127,6 +7127,7 @@
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3583538" leafType="link" path="Standalone.PaymentServices.Set Value" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3412955" leafType="link" path="Standalone.CreditCardPaymentsVNZ.Set Value" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3434811" leafType="link" path="Standalone.TransferToMyAccountsVNZ.Set Value" type="Set Value Rule"/>
+      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="E4CF58D6FFED84AF241996" leafType="link" path="Standalone.BeneficiaryDirectory.Set Value" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="4BC39A5FA8867A85618358" leafType="link" path="Standalone.PaymentsAndTransfers.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="4BC39A5FA8867A85988039" leafType="link" path="Standalone.PaymentsAndTransfers.Payments.PAGAR TARJETA DE CREDITO PA.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="3D97A91B1EE5407B674594" leafType="link" path="Standalone.PaymentsAndTransfers.Payments.Credit Card Payment.Set Value Main Page Title" type="Set Value Rule"/>
@@ -7141,8 +7142,6 @@
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="FF12496DAFA4EFBB1417063" leafType="link" path="Standalone.HelpMenu.Help.Take a Tour.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="FF12496DAFA4EFBB1417080" leafType="link" path="Standalone.HelpMenu.Help.About.Set Value Main Page Title" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Error Message to the generic version" eid="B0088DDE88CE293F188762" leafType="link" path="Common.ErrorPhase.Set Error Message to the generic version" type="Set Value Rule"/>
-      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93271700" leafType="link" path="AccountDetails.init.Set Value" type="Set Value Rule"/>
-      <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="E4CF58D6FFED84AF241996" leafType="link" path="Standalone.BeneficiaryDirectory.Set Value" type="Set Value Rule"/>
       <Leaf class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="E4CF58D6FFED84AF406330" leafType="link" path="HistoryOfOperations.HistoryOperations.Set Value" type="Set Value Rule"/>
     </MasterRules>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="PreLogin" eid="91D1E093C7CD49862688" type="Process">
@@ -7280,8 +7279,8 @@
         </Rule>
         <Container class="com.acquire.intelligentforms.entities.ItemGroup" displayString="Payments" eid="4BC39A5FA8867A85618384" type="Item Group">
           <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Multiple Payments" eid="4BC39A5FA8867A85618420" type="Button">
-            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].AccountsCount$ == 1" eid="EBC5ECB53E4381A8168348" type="Evaluation Rule">
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="3D97A91B1EE5407B209392" path="Standalone.PaymentsAndTransfers.Payments.Multiple Payments.Evaluation.Set Value Main Page Title" type="Set Value Rule">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].AccountsCount$ &lt; 2" eid="EBC5ECB53E4381A8168348" type="Evaluation Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="3D97A91B1EE5407B209392" path="Standalone.PaymentsAndTransfers.Payments.Multiple Payments.Evaluation if AccountsCount less than 2.Set Value Main Page Title" type="Set Value Rule">
                 <Attribute mappingType="OVERRIDE" name="FromMessage" original="Pagar Frecuentes" state="NEW" status="OKAY" value=""/>
               </Rule>
             </Container>
@@ -7375,17 +7374,10 @@
         </Rule>
       </Container>
     </Container>
-    <Container class="com.acquire.intelligentforms.entities.Product" displayString="AccountDetails" eid="9E6DD7102BBF0C26160575" type="Process">
-      <Container class="com.acquire.intelligentforms.entities.RulesOnlyPhase" displayString="init" eid="9E6DD7102BBF0C26162694" type="Rules Only Phase">
-        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="CBBA69FCE0AB4E93271700" path="AccountDetails.init.Set Value" type="Set Value Rule">
-          <Attribute mappingType="OVERRIDE" name="FromMessage" original="en" state="NEW" status="OKAY" value=""/>
-        </Rule>
-      </Container>
-    </Container>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="HistoryOfOperations" eid="22A9991FBF00DBCD341586" type="Process">
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="HistoryOperations" eid="22A9991FBF00DBCD341598" type="Phase">
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="E4CF58D6FFED84AF406330" path="HistoryOfOperations.HistoryOperations.Set Value" type="Set Value Rule">
-          <Attribute mappingType="OVERRIDE" name="FromMessage" original="History Of Operations" state="NEW" status="NEW" value=""/>
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="History Of Operations" state="NEW" status="OKAY" value=""/>
         </Rule>
       </Container>
     </Container>
