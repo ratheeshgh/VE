@@ -65,6 +65,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
     </head>
     <body>
 $%endif$
+$%IF !DownloadPDF = 'Y' AND DEVICE_INFO.isHybrid != "Y"$<iframe id="pdf_download" style="display:none;"></iframe>$%ENDIF$
 $%if PRESENTATIONTYPE != "Pure HTML" && PRESENTATIONTYPE != "Accessibility Compliant"$
         <!-- UNCOMMENT IFRAME IF USING AUTOCOMPLETE - PROVIDES WORK-AROUND FOR IE6 ISSUE -->
     <!--iframe id="ec_suggest_iframe" style="position:absolute; left:0; top:0px; width:0px; height: 0px; " ></iframe-->
