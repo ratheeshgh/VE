@@ -42,8 +42,9 @@
    	}
 
 	function setProgressBarInfo (classToAdd, percentage, color) {
+		var label = ('$$ITEM.Label$').toUpperCase();
 		progressBar.addClass(classToAdd);
-	    infoPercentaje.append(percentage + "% USED");
+	    infoPercentaje.append(percentage + "% " + label);
 	    infoPercentaje.css('color', color)
 		progressBar.css('width', percentage +'%');
 	}

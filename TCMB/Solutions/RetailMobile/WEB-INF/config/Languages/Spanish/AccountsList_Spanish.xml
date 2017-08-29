@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="23/08/17 15:16" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="29/08/17 10:42" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="AccountsList" eid="3447F77EEDC195AE29675" type="Process">
@@ -387,7 +387,7 @@
             </ProcessEntityAttr>
             <ProcessEntityAttr default="Saldo actual" name="DisplayText" original="credit_card_current_amount" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246404:AccountsList-Windows" mappingType="OVERRIDE" original="credit_card_current_amount" specifiedBy="D4C8D2A58C91068A246378:Question" state="NEW" status="OKAY" value="Saldo actual"/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246390:AccountsList" mappingType="OVERRIDE" original="Available Balance" specifiedBy="D4C8D2A58C91068A246390:Rich Presentation Question" state="NEW" status="OKAY" value="Saldo disponible"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246390:AccountsList" mappingType="OVERRIDE" original="Current Balance" specifiedBy="D4C8D2A58C91068A246390:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="Saldo disponible"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246404:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="D4C8D2A58C91068A246378:Question" state="NEW" status="OKAY" value=""/>
@@ -1803,7 +1803,7 @@
                           <Attribute mappingType="PLACEHOLDER" name="ConfirmationMessage" original="" state="NEW" status="OKAY" value=""/>
                           <Attribute mappingType="PLACEHOLDER" name="HelpText" original="" state="NEW" status="OKAY" value=""/>
                           <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="OKAY" value=""/>
-                          <Attribute mappingType="OVERRIDE" name="LinkText" original="Recent Transactions" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Últimos movimientos"/>
+                          <Attribute mappingType="OVERRIDE" name="LinkText" original="Recent Transactions" state="NEEDS_REVIEW" status="OKAY" value="Últimos movimientos"/>
                         </PresentationObject>
                       </Container>
                     </Container>
@@ -1814,6 +1814,7 @@
                     <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Card Column [Column]" eid="85052D5F2E692C34119493" type="Rich Presentation Column">
                       <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Card Body [Section]" eid="85052D5F2E692C34119496" type="Rich Presentation Section">
                         <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="progress-bar" eid="85052D5F2E692C34136871" path="AccountsList.AccountsList.AccountsList.Section.Section.Section.CreditCardList.Section.Column.Section.progress-bar" type="progress-bar">
+                          <Attribute mappingType="OVERRIDE" name="Label" original="Used" state="NEW" status="NEW" value="Utilizado"/>
                           <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
                         </PresentationObject>
                       </Container>
@@ -1923,6 +1924,9 @@
           </PresentationObject>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="611073863F2D84C1294672" path="AccountsList.AccountsList.AccountsList.Text" type="Rich Presentation Text">
             <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;var flag = 0;&#10;var num = $('.helperFontSizeN');&#10;for (var i = 0; i &lt; num.length; i++) {&#10;  var $currentNum = $(num[i]);&#10;  var $cardBody = $currentNum.closest('.card__body');&#10;  if (flag == 0) {&#10;                          var tam = num[i].innerHTML.length;&#10;  &#9;  switch (true) {&#10;    &#9;  case (tam &gt; 8 &amp;&amp;  tam &lt; 11):&#10;    &#9;&#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font20');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;        flag = 1;&#10;                          break;&#10;                          case (tam &gt; 11 &amp;&amp; tam &lt; 14):&#10;&#9;                        $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font16');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;       flag = 1;&#10;                          break;&#10;   &#9;  default:&#10;                                                $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font27');&#10;&#9;  break;&#10; &#9;  }&#10;  } &#10;flag = 0;&#10;}&#10;&#10;})&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
+          </PresentationObject>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="D4662E213A942164156340" path="AccountsList.AccountsList.AccountsList.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;    $('.helperFontSize').each(function (i, el) {&#10;        var $el = $(el)&#10;        if ( $el.html().length &gt; 14 ) {&#10;            $el.addClass('resizeAccountLabel');&#10;            $el.siblings('.helperFontSizePrefix').addClass('resizeAccountLabel');&#10;        }&#10;    })&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
         </Container>
       </Container>
