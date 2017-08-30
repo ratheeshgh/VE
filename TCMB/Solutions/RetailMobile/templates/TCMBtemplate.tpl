@@ -46,8 +46,8 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 			$%IF DEVICE_INFO.platform == "Android"$				
 				com.temenos.widgets.hybrid.showPDFAndroid.showPDF('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
 			$%ENDIF$					
-			$%IF DEVICE_INFO.platform == "ios"$
-				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=yes','.pdf');
+			$%IF DEVICE_INFO.platform == "iOS"$
+				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT&filename=/$$!DOC_FILENAME$', '_blank', 'location=yes','.pdf');
 			$%ENDIF$
 			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$	
 				if ((typeof(window.external) !=='undefined') && (typeof(window.external.notify) !=='undefined')) {
@@ -65,6 +65,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
     </head>
     <body>
 $%endif$
+$%IF !DownloadPDF = 'Y' AND DEVICE_INFO.isHybrid != "Y"$<iframe id="pdf_download" style="display:none;"></iframe>$%ENDIF$
 $%if PRESENTATIONTYPE != "Pure HTML" && PRESENTATIONTYPE != "Accessibility Compliant"$
         <!-- UNCOMMENT IFRAME IF USING AUTOCOMPLETE - PROVIDES WORK-AROUND FOR IE6 ISSUE -->
     <!--iframe id="ec_suggest_iframe" style="position:absolute; left:0; top:0px; width:0px; height: 0px; " ></iframe-->

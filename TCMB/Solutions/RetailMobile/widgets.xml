@@ -333,6 +333,7 @@
     <custom>
       <item includeInDesign="Always" layout="-1" mand="false" name="MontoUtilizado" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
       <item includeInDesign="Always" layout="-1" mand="false" name="MontoDisponible" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="Label" type="javax.swing.JTextField" usage="15"/>
     </custom>
   </widget>
   <widget displayName="Generic Tab" name="GenericTab" type="Tab">

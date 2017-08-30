@@ -1,5 +1,5 @@
 <div class="ContactContainer">
-	<p class="Size12 Medium titleContact" style="; color: #54616D;">CALL US AT THE CUSTOMER SERVICE CENTER</p>
+	<p class="Size12 Medium titleContact" style="; color: #54616D;">LLÁMANOS AL CENTRO DE ATENCIÓN AL CLIENTE</p>
 	<div class="contactCallRow">
 		<a href="tel:5078001300" class="col-xs-12 contactCallBtn">
 			<div class="col-xs-3 iconContactFix">

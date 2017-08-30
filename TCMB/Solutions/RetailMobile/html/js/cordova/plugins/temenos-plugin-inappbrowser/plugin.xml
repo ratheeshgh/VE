@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="temenos-plugin-inappbrowser"
+      version="1.0.0">
+
+    <name>InAppBrowserShare</name>
+    
+	<description>
+			EdgeConnect inappbrowser plugin for iOS.
+	</description>
+	<license>commercial</license>
+    
+	<keywords>phonegap,iOS,phone,inappbrowser</keywords>
+	
+	<!-- ios -->
+	<platform name="ios">
+        <js-module src="www/inappbrowsershare.js" name="inappbrowsershare">
+            <clobbers target="cordova.InAppBrowserShare.open" />
+            <clobbers target="window.open" />
+        </js-module>  
+        <config-file target="config.xml" parent="/*">
+            <feature name="InAppBrowserShare">
+                <param name="ios-package" value="CDVInAppBrowserShare" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVInAppBrowserShare.h" />
+	    <source-file src="src/ios/CDVInAppBrowserShare.m" />
+	    
+	    <framework src="CoreGraphics.framework" />
+    </platform>
+
+
+	
+</plugin>
+
