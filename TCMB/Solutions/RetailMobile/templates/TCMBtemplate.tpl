@@ -47,7 +47,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 				com.temenos.widgets.hybrid.showPDFAndroid.showPDF('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
 			$%ENDIF$					
 			$%IF DEVICE_INFO.platform == "iOS"$
-				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT', '_blank', 'location=yes','.pdf');
+				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT&filename=/$$!DOC_FILENAME$', '_blank', 'location=yes','.pdf');
 			$%ENDIF$
 			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$	
 				if ((typeof(window.external) !=='undefined') && (typeof(window.external.notify) !=='undefined')) {
