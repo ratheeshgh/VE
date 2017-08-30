@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="en" updated="29/08/17 16:40" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="en" updated="30/08/17 10:45" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="FrequentPayments" eid="3D97A91B1EE5407B177281" type="Process">
@@ -4457,38 +4457,6 @@
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1806001:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1806000:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-          </ProcessEntity>
-          <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="OtherAmouont" eid="3D97A91B1EE5407B1537243" path="MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.SearchInDirectory.OtherAmouont" type="Question">
-            <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="OVERRIDE" original="OtherAmouont" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="OVERRIDE" original="The amount is greater than limit" specifiedBy="3D97A91B1EE5407B1537244:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="OVERRIDE" original="The amount is lower than minimum" specifiedBy="3D97A91B1EE5407B1537244:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
-            </ProcessEntityAttr>
-            <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3D97A91B1EE5407B1537244:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3D97A91B1EE5407B1537243:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
           </ProcessEntity>
           <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Search In Directory" eid="252CFA4EDE7C14C9285646" path="MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.SearchInDirectory.Search In Directory" type="Button">
@@ -9492,7 +9460,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178928:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178854:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="From My Account Number" eid="048B1AB1A72039E4178855" path="TransferToMyAccountsVNZ.ReviewTransfer.From My Account Number" type="Question">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="From Account" eid="048B1AB1A72039E4178855" path="TransferToMyAccountsVNZ.ReviewTransfer.From Account" type="Question">
           <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178855:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
@@ -9500,7 +9468,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178855:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="OVERRIDE" original="From My Account Number" specifiedBy="048B1AB1A72039E4178855:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="OVERRIDE" original="From Account" specifiedBy="048B1AB1A72039E4178855:Question" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178855:Question" state="NEW" status="OKAY" value=""/>
@@ -9524,7 +9492,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178930:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178855:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="To My Account Number" eid="048B1AB1A72039E4178856" path="TransferToMyAccountsVNZ.ReviewTransfer.To My Account Number" type="Question">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="To Account" eid="048B1AB1A72039E4178856" path="TransferToMyAccountsVNZ.ReviewTransfer.To Account" type="Question">
           <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178856:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
@@ -9532,7 +9500,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178856:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="OVERRIDE" original="To My Account Number" specifiedBy="048B1AB1A72039E4178856:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="OVERRIDE" original="To Account" specifiedBy="048B1AB1A72039E4178856:Question" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178856:Question" state="NEW" status="OKAY" value=""/>
@@ -9554,6 +9522,38 @@
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178932:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178856:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Amount" eid="048B1AB1A72039E4178857" path="TransferToMyAccountsVNZ.ReviewTransfer.Amount" type="Question">
+          <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="OVERRIDE" original="Bs " specifiedBy="048B1AB1A72039E4178934:Rich Presentation Question" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="OVERRIDE" original="Amount" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Description" eid="7A4D4C726D7E2F82368114" path="TransferToMyAccountsVNZ.ReviewTransfer.Description" type="Question">
@@ -9586,38 +9586,6 @@
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A4D4C726D7E2F82368115:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A4D4C726D7E2F82368114:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="Amount" eid="048B1AB1A72039E4178857" path="TransferToMyAccountsVNZ.ReviewTransfer.Amount" type="Question">
-          <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="OVERRIDE" original="Bs" specifiedBy="048B1AB1A72039E4178934:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="OVERRIDE" original="Amount" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178934:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178857:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="048B1AB1A72039E4178858" path="TransferToMyAccountsVNZ.ReviewTransfer.Cancel" type="Button">
@@ -9818,7 +9786,7 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178952:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="048B1AB1A72039E4178867:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178952:TCMB" mappingType="OVERRIDE" original="Bs" specifiedBy="048B1AB1A72039E4178952:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value=""/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178952:TCMB" mappingType="OVERRIDE" original="Bs " specifiedBy="048B1AB1A72039E4178952:Rich Presentation Question" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="048B1AB1A72039E4178952:TCMB" mappingType="OVERRIDE" original="Amount" specifiedBy="048B1AB1A72039E4178867:Question" state="NEW" status="OKAY" value=""/>
@@ -12264,6 +12232,9 @@
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="SetBodyClass" eid="CB509C75E3C52306183942" path="TCMB.MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.SetBodyClass" type="SetBodyClass">
             <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="C1A65969FBDCEAE1288637" path="TCMB.MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;  $(function(){&#10;      function disabledRadioPTC(){&#10;        if($$Credit_Card[C].lastInstance()$ == 0){&#10;            var el = $(&quot;.helperPaymentTypeDisabled&quot;).find(&quot;input[type='radio']&quot;)[0];&#10;            el.disabled = true;&#10;            $(el).addClass(&quot;disabled&quot;);&#10;        }&#10;&#10;        if($$WorkingElements[1].CCRBeneficiaryCount$ == 0){&#10;            var el = $(&quot;.helperPaymentTypeDisabled&quot;).find(&quot;input[type='radio']&quot;)[1];&#10;            el.disabled = true;&#10;            $(el).addClass(&quot;disabled&quot;);&#10;        }&#10;      }&#10;      &#10;      disabledRadioPTC();&#10;  });&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
+          </PresentationObject>
           <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="E64D03050049CA64241664" type="Rich Presentation Section">
             <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="F5F0132FF6E75329479785" type="Rich Presentation Section">
               <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="397D27F15624151E217445" type="Rich Presentation Section">
@@ -12275,7 +12246,7 @@
               </Container>
               <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="F5F0132FF6E75329482461" type="Rich Presentation Section">
                 <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="FBA3F6C0AC688232191430" path="TCMB.MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.Section.Section.Section.Text" type="Rich Presentation Text">
-                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;$(&quot;.hideRadioButtons&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;&#10;        if(el.value.split('*')[1] &amp;&amp; Number(el.value.split('*')[1]) &lt;= 0){&#10;          el.disabled = true;&#10;          $(el).addClass(&quot;disabled&quot;);&#10;        }&#10;&#9;&#10;})&#10;}&#10;&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
+                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;&#10;$(&quot;.hideRadioButtons&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;&#10;       if(el.value.split('*')[1] &amp;&amp; Number(el.value.split('*')[1]) &lt;= 0){&#10;          el.disabled = true;&#10;          $(el).addClass(&quot;disabled&quot;);&#10;      }&#10;&#9;&#10;})&#10;&#10;}&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
                 </PresentationObject>
               </Container>
             </Container>
@@ -12320,9 +12291,11 @@
               </Container>
             </Container>
             <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationItemGroup" displayString="AmountFields" eid="2DC60D91676A186A369808" type="Rich Presentation Item Group">
-              <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="A07493E4AD189FCE290415" path="TCMB.PaymentServices.PaymentService.Section.AmountFields.Text" type="Rich Presentation Text">
-                <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;$(&quot;#C1__p4_QUE_2DC60D91676A186A360727&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;&#9;if(Number(el.value.split(',').join(''))==0) {&#10;&#9;&#9;el.disabled=true;&#10;&#9;&#9;$(el).addClass(&quot;disabled&quot;)&#10;&#9;}&#10;})&#10;}&#10;&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
-              </PresentationObject>
+              <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="6D1177F5BAC354D8183560" type="Rich Presentation Section">
+                <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="A07493E4AD189FCE290415" path="TCMB.PaymentServices.PaymentService.Section.AmountFields.Section.Text" type="Rich Presentation Text">
+                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;&#10;$(&quot;.hideRadioButtons&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;&#10;       if(el.value.split('*')[1].split(',').join('.') &amp;&amp; Number(el.value.split('*')[1].split(',').join('.')) &lt;= 0){&#10;          el.disabled = true;&#10;          $(el).addClass(&quot;disabled&quot;);&#10;      }&#10;&#9;&#10;})&#10;&#10;}&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
+                </PresentationObject>
+              </Container>
             </Container>
           </Container>
         </Container>
@@ -12634,7 +12607,7 @@
             <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Search In Directory" eid="EE546F11E5E0BDA6263830" type="Button">
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].ServiceRead[1].Entity[1].Error[1].Error_code$ == ''" eid="2DC60D91676A186A379124" type="Evaluation Rule">
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - List Values" eid="9F10F7D9ED26096E505165" path="PaymentServices.SearchInDirectory.SearchDirectoryContents.edc.Search In Directory.Evaluation - Check for error code.Set Value - List Values" type="Set Value Rule">
-                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit Amount (&quot;$$PaymentServices[1].edcRead[1].edc_debt_amount$&quot;)|Outstanding Amount (&quot;$$PaymentServices[1].edcRead[1].edc_outstanding_amount$&quot;)|Current Amount (&quot;$$PaymentServices[1].edcRead[1].edc_current_amount$&quot;)" state="NEW" status="NEW" value=""/>
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit Amount (&quot;$$PaymentServices[1].edcRead[1].edc_debt_amount$&quot;)|Outstanding Amount (&quot;$$PaymentServices[1].edcRead[1].edc_outstanding_amount$&quot;)|Current Amount (&quot;$$PaymentServices[1].edcRead[1].edc_current_amount$&quot;)" state="NEW" status="OKAY" value=""/>
                 </Rule>
               </Container>
             </Container>
@@ -12643,7 +12616,7 @@
             <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Search In Directory" eid="EE546F11E5E0BDA6263724" type="Button">
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].ServiceRead[1].Entity[1].Error[1].Error_code$ == ''" eid="2DC60D91676A186A380675" type="Evaluation Rule">
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - List Values" eid="9F10F7D9ED26096E600643" path="PaymentServices.SearchInDirectory.SearchDirectoryContents.cantv.Search In Directory.Evaluation - Check for error code.Set Value - List Values" type="Set Value Rule">
-                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit amount $$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_debt_amount$|Outsatnding amount $$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_outstanding_amount$|Current amount $$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_current_amount$|Other" state="NEW" status="NEW" value=""/>
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit amount (&quot;$$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_debt_amount$&quot;)|Outsatnding amount (&quot;$$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_outstanding_amount$&quot;)|Current amount (&quot;$$Result[1].ServiceRead[1].Entity[1].cantv[1].cantv_current_amount$&quot;)|Other" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
                 </Rule>
               </Container>
             </Container>
@@ -12861,130 +12834,130 @@
     </List>
   </Lists>
   <HybridMessages>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="ok" eid="9F10F7D9ED26096E417785" path="ok" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="ok" eid="6D1177F5BAC354D8151167" path="ok" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="OK" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="not_now" eid="9F10F7D9ED26096E417786" path="not_now" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="not_now" eid="6D1177F5BAC354D8151168" path="not_now" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Not Now" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="user_settings" eid="9F10F7D9ED26096E417787" path="user_settings" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="user_settings" eid="6D1177F5BAC354D8151169" path="user_settings" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="check_updates" eid="9F10F7D9ED26096E417788" path="check_updates" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="check_updates" eid="6D1177F5BAC354D8151170" path="check_updates" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Check for updates" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="developer_settings" eid="9F10F7D9ED26096E417789" path="developer_settings" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="developer_settings" eid="6D1177F5BAC354D8151171" path="developer_settings" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Developer settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="title_activity_app_pereferences" eid="9F10F7D9ED26096E417790" path="title_activity_app_pereferences" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="title_activity_app_pereferences" eid="6D1177F5BAC354D8151172" path="title_activity_app_pereferences" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed_title" eid="9F10F7D9ED26096E417791" path="internet_connection_needed_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed_title" eid="6D1177F5BAC354D8151173" path="internet_connection_needed_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="No Connectivity" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed" eid="9F10F7D9ED26096E417792" path="internet_connection_needed" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed" eid="6D1177F5BAC354D8151174" path="internet_connection_needed" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Please verify you have cellular network or WiFi connection" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_title" eid="9F10F7D9ED26096E417793" path="error_accessing_server_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_title" eid="6D1177F5BAC354D8151175" path="error_accessing_server_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error communicating with the server" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_description" eid="9F10F7D9ED26096E417794" path="error_accessing_server_description" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_description" eid="6D1177F5BAC354D8151176" path="error_accessing_server_description" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The server cannot be reached" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert" eid="9F10F7D9ED26096E417795" path="invalid_ssl_cert" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert" eid="6D1177F5BAC354D8151177" path="invalid_ssl_cert" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. The server cannot be trusted." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert_development" eid="9F10F7D9ED26096E417796" path="invalid_ssl_cert_development" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert_development" eid="6D1177F5BAC354D8151178" path="invalid_ssl_cert_development" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. This is allowed only in development mode." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_dialog_title" eid="9F10F7D9ED26096E417797" path="lang_preference_dialog_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_dialog_title" eid="6D1177F5BAC354D8151179" path="lang_preference_dialog_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Preferred language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_title" eid="9F10F7D9ED26096E417798" path="lang_preference_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_title" eid="6D1177F5BAC354D8151180" path="lang_preference_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Language settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_summary" eid="9F10F7D9ED26096E417799" path="lang_preference_summary" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_summary" eid="6D1177F5BAC354D8151181" path="lang_preference_summary" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Select your preferred language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="change_confirm_reload" eid="9F10F7D9ED26096E417800" path="change_confirm_reload" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="change_confirm_reload" eid="6D1177F5BAC354D8151182" path="change_confirm_reload" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="For applying your settings, the application has to be reloaded. Reload the application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="settings_update_title" eid="9F10F7D9ED26096E417801" path="settings_update_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="settings_update_title" eid="6D1177F5BAC354D8151183" path="settings_update_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings update" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_download_updates_now" eid="9F10F7D9ED26096E417802" path="update_download_updates_now" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_download_updates_now" eid="6D1177F5BAC354D8151184" path="update_download_updates_now" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available. Download updates now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_uptodate" eid="9F10F7D9ED26096E417803" path="update_result_uptodate" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_uptodate" eid="6D1177F5BAC354D8151185" path="update_result_uptodate" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The application is uptodate." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_error" eid="9F10F7D9ED26096E417804" path="update_result_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_error" eid="6D1177F5BAC354D8151186" path="update_result_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The update site rejected the query." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_processing_error" eid="9F10F7D9ED26096E417805" path="update_result_processing_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_processing_error" eid="6D1177F5BAC354D8151187" path="update_result_processing_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error encountered during update." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_unknown_error" eid="9F10F7D9ED26096E417806" path="update_result_unknown_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_unknown_error" eid="6D1177F5BAC354D8151188" path="update_result_unknown_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error reading the update status from the update site." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_title" eid="9F10F7D9ED26096E417807" path="downloading_file_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_title" eid="6D1177F5BAC354D8151189" path="downloading_file_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading updates..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_starting" eid="9F10F7D9ED26096E417808" path="downloading_file_starting" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_starting" eid="6D1177F5BAC354D8151190" path="downloading_file_starting" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Starting..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_progress" eid="9F10F7D9ED26096E417809" path="downloading_file_progress" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_progress" eid="6D1177F5BAC354D8151191" path="downloading_file_progress" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading file  %1$d of %2$d." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_error" eid="9F10F7D9ED26096E417810" path="downloading_updates_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_error" eid="6D1177F5BAC354D8151192" path="downloading_updates_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Failed to download the updates." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_success" eid="9F10F7D9ED26096E417811" path="downloading_updates_success" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_success" eid="6D1177F5BAC354D8151193" path="downloading_updates_success" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The updates were downloaded successfully." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_googleplay_confirmation" eid="9F10F7D9ED26096E417812" path="update_through_googleplay_confirmation" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_googleplay_confirmation" eid="6D1177F5BAC354D8151194" path="update_through_googleplay_confirmation" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through google play. Download the updated application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_windows_store_confirmation" eid="9F10F7D9ED26096E417813" path="update_through_windows_store_confirmation" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_windows_store_confirmation" eid="6D1177F5BAC354D8151195" path="update_through_windows_store_confirmation" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Windows Phone Store. Download the updated application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="store_updatetitle" eid="9F10F7D9ED26096E417814" path="store_updatetitle" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="store_updatetitle" eid="6D1177F5BAC354D8151196" path="store_updatetitle" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="AppStore update" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_major_update" eid="9F10F7D9ED26096E417815" path="update_result_major_update" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_major_update" eid="6D1177F5BAC354D8151197" path="update_result_major_update" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available for this application. Connect to iTunes now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="alert_title" eid="9F10F7D9ED26096E417816" path="alert_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="alert_title" eid="6D1177F5BAC354D8151198" path="alert_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Alert" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="loading_wait" eid="9F10F7D9ED26096E417817" path="loading_wait" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="loading_wait" eid="6D1177F5BAC354D8151199" path="loading_wait" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Loading, please wait..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="save" eid="9F10F7D9ED26096E417818" path="save" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="save" eid="6D1177F5BAC354D8151200" path="save" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Save" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="use_device_language" eid="9F10F7D9ED26096E417819" path="use_device_language" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="use_device_language" eid="6D1177F5BAC354D8151201" path="use_device_language" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Use device language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="all_pages" eid="9F10F7D9ED26096E417820" path="all_pages" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="all_pages" eid="6D1177F5BAC354D8151202" path="all_pages" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="All pages" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="filesave_success" eid="9F10F7D9ED26096E417821" path="filesave_success" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="filesave_success" eid="6D1177F5BAC354D8151203" path="filesave_success" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="File saved successfully" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="one_page" eid="9F10F7D9ED26096E417822" path="one_page" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="one_page" eid="6D1177F5BAC354D8151204" path="one_page" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="One page" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="pdf_documents" eid="9F10F7D9ED26096E417823" path="pdf_documents" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="pdf_documents" eid="6D1177F5BAC354D8151205" path="pdf_documents" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="PDF Documents" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="print" eid="9F10F7D9ED26096E417824" path="print" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="print" eid="6D1177F5BAC354D8151206" path="print" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Print" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="9F10F7D9ED26096E417825" path="reports" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="6D1177F5BAC354D8151207" path="reports" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Reports" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="9F10F7D9ED26096E417826" path="app_name" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="6D1177F5BAC354D8151208" path="app_name" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="App name - not used required by Cordova" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
   </HybridMessages>
