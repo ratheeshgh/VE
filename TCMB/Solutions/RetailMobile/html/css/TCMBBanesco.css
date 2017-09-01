@@ -327,5 +327,12 @@ input[type='radio']:checked + label:before {
 @media (max-width: 360px) {
   .resizeAccountLabel {
      font-size: 20px !important; 
-  }  
+  } 
+  .font20 {
+    font-size: 16px !important;
+  }
+
+  .font16 {
+    font-size: 13px !important;
+  }
 }
