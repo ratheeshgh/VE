@@ -34,6 +34,7 @@
       <GlobalParameter GlobalParameterValue="KM" Name="DISTANCE_UNIT" eid="B52D98FA54ED023F22067"/>
       <GlobalParameter GlobalParameterValue="Y" Name="ENABLE_LANGUAGE_MAPS" eid="50A5E2312EAF393948847"/>
       <GlobalParameter GlobalParameterValue="xml" Name="LANGUAGE_MAP_EXT" eid="50A5E2312EAF393948847"/>
+	  <GlobalParameter GlobalParameterValue="http://172.16.144.94:8181/RetailMobile" Name="COMPLETE_CONTEXTPATH" eid="A86C8DABE8E182C698087"/>
     </GlobalParameters>
   </Parameters>
   <DirectoryStructure Name="Directory Structure Root" eid="2B363CEF7D050D7F84323">
