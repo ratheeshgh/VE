@@ -1,5 +1,6 @@
 <div id="$$ITEM.ID()$" style="display:none;">$$FORMCONTENT$</div>
 <script type="text/javascript">
+$%IF ITEM.IS_ITEM_HIDDEN() != "true"$
      $(function () {
         document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -45,4 +46,6 @@
             }
         }
     })
+
+$%ENDIF$
 </script>
