@@ -1,43 +1,85 @@
 $$ITEM.EC_GENERATE()$
 <script type="text/javascript">
-    $(function () {
-        $('#$$COMPONENT_PREFIX$$$ITEM.ID()$').attr('type', 'number');
-        $('#$$COMPONENT_PREFIX$$$ITEM.ID()$').attr('step', '0.01');
-        var $numberHelper = $('#$$COMPONENT_PREFIX$$$ITEM.ID()__numberHelper$');
-        $('#$$COMPONENT_PREFIX$$$ITEM.ID()$')[0].onkeydown = filterInput;
+    var $inputNumber = $('#$$COMPONENT_PREFIX$$$ITEM.ID()$');
 
-        function filterInput(event) {
-            var keyCode = ('which' in event) ? event.which : event.keyCode;
-            var targetInput = event.target;
-            var targetInputValue = targetInput.value;
-            if (keyCode == 8) {
-                console.log(targetInputValue.substr(-1))
-            }
+    $inputNumber.attr('type', 'number');
+    $inputNumber.attr('step', '0.01');
+    $inputNumber[0].onkeydown = filterInput;
 
-            console.log(targetInputValue)
+    function filterInput(event) {
+        var keyCode = ('which' in event) ? event.which : event.keyCode;
+        var targetInput = event.target;
+        var targetInputValue = targetInput.value;
 
-            var isNotWanted = keyCode == 69 ||
-                keyCode == 107 ||
-                keyCode == 109 ||
-                keyCode == 189 ||
-                keyCode == 187;
-                //((keyCode == 190 || keyCode == 110) && targetInputValue.indexOf(".") != -1 );
+        var isNotWanted = keyCode == 69 ||
+            keyCode == 107 ||
+            keyCode == 109 ||
+            keyCode == 189 ||
+            keyCode == 187
+            $%IF ITEM.DecimalsNotAllowed == 'Y'$
+                ||
+                ((keyCode == 190 || keyCode == 110 || keyCode == 229))
+            $%ENDIF$
+            ;
 
-            return !isNotWanted
+        return !isNotWanted
+    }
+
+
+    function handlePaste(e) {
+        var clipboardData, pastedData;
+
+        // Get pasted data via clipboard API
+        clipboardData = e.clipboardData || window.clipboardData;
+        pastedData = clipboardData.getData('Text').toUpperCase();
+
+        if (pastedData.indexOf('E') > -1) {
+            //alert('found an E');
+            e.stopPropagation();
+            e.preventDefault();
         }
+    };
 
-        function handlePaste(e) {
-            var clipboardData, pastedData;
+    $inputNumber.on("input", function(e){
+        console.log("onInput 1")
+        if ("$$ITEM.MAX_LENGTH$" !== "" && $inputNumber.val().length > Number("$$ITEM.MAX_LENGTH$")) {
+            $inputNumber.val($inputNumber.val().substring(0, $inputNumber.val().length -1));
+        }
+     });
 
-            // Get pasted data via clipboard API
-            clipboardData = e.clipboardData || window.clipboardData;
-            pastedData = clipboardData.getData('Text').toUpperCase();
+    $%IF ITEM.CurrencyFormat == 'Y'$
+        $inputNumber.attr("placeholder", "0.00");
 
-            if (pastedData.indexOf('E') > -1) {
-                //alert('found an E');
-                e.stopPropagation();
-                e.preventDefault();
+        $inputNumber.on('touchstart focus', function (e) {
+            console.log("ontouchstart")
+            $inputNumber.attr("type", "number")
+            $inputNumber.attr("pattern", "\\d*")
+            $inputNumber.attr("step", "1")
+            $inputNumber.attr("formnovalidate", "formnovalidate")
+        })
+
+        /*$inputNumber.on("keydown blur", function () {
+            $inputNumber.attr("type", "text")
+        })*/
+
+        $inputNumber.on("input", function (e) {
+            var currentValue = $inputNumber.val();
+            var lastChar = currentValue.substr(-1);
+            console.log("onInput 2")
+            console.log("currentValue",currentValue)
+            
+            var currentValueString = currentValue.split(".").join("");
+            console.log("currentValueString",currentValueString)
+            
+            if (currentValueString.length - 2 < 15) {
+                var currentValueNumber = parseInt(currentValueString);
+                var numberToShow = (parseFloat(currentValueNumber) / 100).toFixed(2);
+                
+                $inputNumber.val(numberToShow);
+            } else {
+                $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
             }
-        };
-    })
+        })
+    $%ENDIF$
+    
 </script>
