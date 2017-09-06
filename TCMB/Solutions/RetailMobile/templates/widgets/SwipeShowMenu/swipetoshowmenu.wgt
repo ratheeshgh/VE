@@ -156,7 +156,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
                 }
             })
 
-            .on('swiperight', function(e) {
+            /*.on('swiperight', function(e) {
               header = $("#$$ITEM.COMPONENT_PREFIX()$sidebar_container");
 
               header.removeClass('NotDisplayed');
@@ -183,7 +183,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
                   }
                   window.isClicked = false;
                 }
-            });
+            });*/
 
         $('body').on('movestart', function(e) {
           if ((e.distX > e.distY && e.distX < -e.distY) ||
