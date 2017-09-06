@@ -5756,7 +5756,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="40F2D71F1866BB901563068:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="40F2D71F1866BB901563067:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="40F2D71F1866BB901563068:TCMB" mappingType="OVERRIDE" original="Debit Account" specifiedBy="40F2D71F1866BB901563067:Question" state="NEW" status="OKAY" value="Monto vencido"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="40F2D71F1866BB901563068:TCMB" mappingType="OVERRIDE" original="Debit Account" specifiedBy="40F2D71F1866BB901563067:Question" state="NEW" status="OKAY" value="Desde mi cuenta"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="40F2D71F1866BB901563068:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="40F2D71F1866BB901563067:Question" state="NEW" status="OKAY" value=""/>
