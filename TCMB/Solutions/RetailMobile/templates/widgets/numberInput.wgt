@@ -1,10 +1,17 @@
 $$ITEM.EC_GENERATE()$
 <script type="text/javascript">
+$(function() {
     var $inputNumber = $('#$$COMPONENT_PREFIX$$$ITEM.ID()$');
 
-    $inputNumber.attr('type', 'number');
-    $inputNumber.attr('step', '0.01');
-    $inputNumber[0].onkeydown = filterInput;
+    //$inputNumber.attr('type', 'number');
+    $inputNumber.on("keydown", filterInput);
+    var isDroid = navigator.userAgent.match(/Android/);
+    if (isDroid) {
+        $inputNumber.attr("type", "tel");
+    } else {
+        $inputNumber.attr("type", "number");
+    }
+    $inputNumber.attr("pattern", "\\d*")
 
     function filterInput(event) {
         var keyCode = ('which' in event) ? event.which : event.keyCode;
@@ -21,6 +28,11 @@ $$ITEM.EC_GENERATE()$
                 ((keyCode == 190 || keyCode == 110 || keyCode == 229))
             $%ENDIF$
             ;
+
+        if (isNotWanted) {
+            event.stopPropagation()
+            event.preventDefault();
+        }
 
         return !isNotWanted
     }
@@ -40,46 +52,44 @@ $$ITEM.EC_GENERATE()$
         }
     };
 
-    $inputNumber.on("input", function(e){
-        console.log("onInput 1")
-        if ("$$ITEM.MAX_LENGTH$" !== "" && $inputNumber.val().length > Number("$$ITEM.MAX_LENGTH$")) {
-            $inputNumber.val($inputNumber.val().substring(0, $inputNumber.val().length -1));
-        }
-     });
 
     $%IF ITEM.CurrencyFormat == 'Y'$
         $inputNumber.attr("placeholder", "0.00");
-
-        $inputNumber.on('touchstart focus', function (e) {
-            console.log("ontouchstart")
-            $inputNumber.attr("type", "number")
-            $inputNumber.attr("pattern", "\\d*")
-            $inputNumber.attr("step", "1")
-            $inputNumber.attr("formnovalidate", "formnovalidate")
-        })
-
-        /*$inputNumber.on("keydown blur", function () {
-            $inputNumber.attr("type", "text")
-        })*/
+    $%ENDIF$
 
         $inputNumber.on("input", function (e) {
             var currentValue = $inputNumber.val();
-            var lastChar = currentValue.substr(-1);
             console.log("onInput 2")
             console.log("currentValue",currentValue)
             
-            var currentValueString = currentValue.split(".").join("");
+            var currentValueString = currentValue.trim().split(".").join("");
             console.log("currentValueString",currentValueString)
             
-            if (currentValueString.length - 2 < 15) {
+            $%IF ITEM.CurrencyFormat == 'Y'$
                 var currentValueNumber = parseInt(currentValueString);
                 var numberToShow = (parseFloat(currentValueNumber) / 100).toFixed(2);
-                
-                $inputNumber.val(numberToShow);
-            } else {
-                $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
-            }
+                if (currentValueString.length - 2 < 15) {                    
+                    if (!isNaN(numberToShow)) {
+                        $inputNumber.val(numberToShow);
+                    } else {
+                        $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
+                    }
+                } else {
+                    if (!isNaN(numberToShow)) {
+                        $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
+                    }
+                }
+            $%ELSE$
+                if (!isNaN(Number(currentValueString))) {
+                    $inputNumber.val(currentValueString);
+                } else {
+                    $inputNumber.val(currentValueString.substring(0, currentValueString.length - 1));
+                }
+                if ("$$ITEM.MAX_LENGTH$" !== "" && $inputNumber.val().length > Number("$$ITEM.MAX_LENGTH$")) {
+                    $inputNumber.val($inputNumber.val().substring(0, $inputNumber.val().length -1));
+                }
+            $%ENDIF$
         })
-    $%ENDIF$
     
+    })
 </script>

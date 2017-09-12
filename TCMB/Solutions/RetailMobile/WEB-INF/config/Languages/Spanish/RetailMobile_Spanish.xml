@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="05/09/17 21:15" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="12/09/17 15:53" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -1615,6 +1615,28 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="90709B068562F964120469:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="90709B068562F964120468:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4597954" path="OfflineEnabled.About.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597957:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597960:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597957:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597960:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597957:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597960:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597957:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597960:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597957:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597960:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597954:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="TakeATour" eid="90709B068562F964120493" type="Phase">
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="90709B068562F964120473" leafType="link" path="OfflineEnabled.About.Back" type="Button"/>
@@ -1655,6 +1677,28 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113561:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FA90B5626FC0ED4548176:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4597973" path="OfflineEnabled.TakeATour.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597979:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597976:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597979:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597976:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597979:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597976:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597979:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597976:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597979:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4597976:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4597973:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ContactUs" eid="83E8CB5ADDDAA23C48195" type="Phase">
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="90709B068562F964120473" leafType="link" path="OfflineEnabled.About.Back" type="Button"/>
@@ -1675,6 +1719,28 @@
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E209128:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E209127:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113565:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E209127:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4751840" path="OfflineEnabled.ContactUs.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751849:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751846:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751849:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751846:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751849:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751846:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751849:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751846:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751849:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4751846:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4751840:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
       </Container>
@@ -1699,6 +1765,28 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="276724125D17F910311316:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="276724125D17F910311306:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4626065" path="OfflineEnabled.BanescoBranches.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626074:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626071:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626074:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626071:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626074:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626071:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626074:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626071:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626074:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626071:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626065:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="TermsAndConditions" eid="0645D21B37B8E82E181639" type="Phase">
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="90709B068562F964120473" leafType="link" path="OfflineEnabled.About.Back" type="Button"/>
@@ -1721,6 +1809,28 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E181652:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4626090" path="OfflineEnabled.TermsAndConditions.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626096:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626099:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626096:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626099:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626096:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626099:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626096:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626099:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626096:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626099:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626090:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="WhatsNew" eid="0645D21B37B8E82E231253" type="Phase">
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="90709B068562F964120473" leafType="link" path="OfflineEnabled.About.Back" type="Button"/>
@@ -1741,6 +1851,28 @@
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113573:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E231266:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E231267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E231266:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4626115" path="OfflineEnabled.WhatsNew.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626124:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626121:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626124:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626121:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626124:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626121:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626124:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626121:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626124:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4626121:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4626115:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
       </Container>
@@ -6251,6 +6383,28 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7406CB1B5F423006181768:TCMB-Windows" mappingType="OVERRIDE" original="Reset PDF Flag" specifiedBy="7406CB1B5F423006181765:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4513760" path="HistoryOfOperations.ReceiptDetails.ShakeToLogOut" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513763:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513761:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513763:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513761:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513763:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513761:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513763:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513761:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="ShakeToLogOut" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513763:TCMB-Windows" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="8FF15AD0F20D85B4513761:TCMB" mappingType="OVERRIDE" original="ShakeToLogOut" specifiedBy="8FF15AD0F20D85B4513760:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
     </Container>
   </ProcessEntities>
@@ -7265,7 +7419,7 @@
       </Container>
       <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="FrequentPayments" eid="3D97A91B1EE5407B182048" type="Component Phase">
         <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value" eid="9AD91B1BA0778CB3407657" path="Standalone.FrequentPayments.Set Value" type="Set Value Rule">
-          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Frequent Payments" state="NEW" status="OKAY" value="Pagos Múltiples"/>
+          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Multiples Payments" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagos Múltiples"/>
         </Rule>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.ComponentPhase" displayString="PaymentServices" eid="3D97A91B1EE5407B1605994" type="Component Phase">
@@ -7297,7 +7451,7 @@
             <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Accounts[C].lastInstance()$ &gt;= '1'" eid="EBC5ECB53E4381A8168348" type="Evaluation Rule">
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].ProductsCount$ &gt;= 3" eid="34FE67D1CDA2599C152279" type="Evaluation Rule">
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Main Page Title" eid="3D97A91B1EE5407B209392" path="Standalone.PaymentsAndTransfers.Payments.Multiple Payments.Evaluation if AccountsCount greater than or eq 1.Evaluation if user has at least two products.Set Value Main Page Title" type="Set Value Rule">
-                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Pagar Frecuentes" state="NEW" status="OKAY" value=""/>
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Multiple Payments" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagos Múltiples"/>
                 </Rule>
               </Container>
             </Container>
