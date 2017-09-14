@@ -3031,4 +3031,11 @@ div[id*='EmptyMessage'] {
     color: #54616d;
     text-align: center;
     font-weight: bold;
+    
+    display: table-cell;
+    border-collapse: collapse;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0px -2px 0px -2px;
+    width: 30%;
 }

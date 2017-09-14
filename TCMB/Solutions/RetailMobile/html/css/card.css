@@ -51,6 +51,7 @@
     background: #FFFFFF;
     text-align: center;
     padding: 16.66px;
+    border-radius: 5px;
 }
 
 .card__footer a, .card__footer-2-col a {
@@ -67,10 +68,12 @@
     padding: 16.66px;
     display: inline-block;
     text-align: center;
+    border-radius: 0px 0px 0px 5px;
 }
 
 .card__footer-2-col--borderLeft {
   border-left: 1px solid #DBE0E6;
+  border-radius: 0px 0px 5px 0px;
 }
 
 
