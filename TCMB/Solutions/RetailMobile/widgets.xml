@@ -380,6 +380,11 @@
   </widget>
   <widget name="inputNumber" type="Text">
     <template type="source" value="./templates/widgets/numberInput.wgt"/>
+    <custom>
+      <item help="Flag to indicate if the input has to format as a currency" includeInDesign="Always" layout="-1" mand="false" name="CurrencyFormat" type="javax.swing.JCheckBox" usage="7"/>
+      <item includeInDesign="Always" layout="-1" mand="false" name="MAX_LENGTH" prompt="Max length" type="com.acquire.intelligentforms.ide.dictionaryeditor.PropertyChooser" typeValue="Data Item Chooser|-1|true|true|com.acquire.intelligentforms.entities.Property" usage="7" />
+      <item includeInDesign="Always" layout="-1" mand="false" name="DecimalsNotAllowed" prompt="DecimalsNotAllowed" type="com.acquire.util.FocusCheckbox" usage="7" />
+    </custom>
   </widget>
   <widget name="banescoCbx" type="Column">
     <template type="source" value="./templates/widgets/banescoCheckbox.wgt"/>

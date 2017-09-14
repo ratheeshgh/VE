@@ -7,7 +7,7 @@
 			</div>
 			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
 			<div class="col-xs-9 infoContact ">
-				<p class="from Size12 lineHeight1">DESDE PANAMA</p>
+				<p class="from Size12 lineHeight1">DESDE PANAMÁ</p>
 				<p class="Size12 detalleContacto">(507)800-1300</p>
 			</div>
 		</a>

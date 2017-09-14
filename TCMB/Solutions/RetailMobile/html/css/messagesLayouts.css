@@ -45,7 +45,7 @@
 
   /* Icons */
 
-  .msg-icon-error, .msg-icon-ok {
+  .msg-icon-error, .msg-icon-ok, .msg-icon-ups {
     font-family: "Banesco";
     position: absolute;
     line-height: 100%;
@@ -62,7 +62,13 @@
     color: #007953; 
   }
 
-  .msg-error, .msg-success {
+  .msg-icon-ups:before {
+    content: "\E94C";
+    color: #e8cc25;
+    font-size: 
+  }
+
+  .msg-error, .msg-success, .msg-ups {
     float:none;
     font-size: 16px;
     font-family: "Lato Regular"
@@ -74,4 +80,8 @@
 
     .msg-success {
       color: #007953; 
+    }
+
+    .msg-ups {
+      color: #e8cc25; 
     }

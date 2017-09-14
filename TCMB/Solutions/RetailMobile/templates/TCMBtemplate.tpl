@@ -43,21 +43,22 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 		<script src="$$HTML_LOCATION$/js/cordova/PdfHandler.js"></script>
 		<script>
 		window.onload=function(e){
+			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
 			$%IF DEVICE_INFO.platform == "Android"$				
-				com.temenos.widgets.hybrid.showPDFAndroid.showPDF('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
+				com.temenos.widgets.hybrid.showPDFAndroid.showPDF(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
 			$%ENDIF$					
 			$%IF DEVICE_INFO.platform == "iOS"$
-				cordova.InAppBrowserShare.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT&filename=/$$!DOC_FILENAME$', '_blank', 'location=yes','.pdf');
+				cordova.InAppBrowserShare.open(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT&filename=/$$!DOC_FILENAME$', '_blank', 'location=yes','pdf');
 			$%ENDIF$
 			$%IF DEVICE_INFO.platform == "windows8" || DEVICE_INFO.platform == "windows"$	
 				if ((typeof(window.external) !=='undefined') && (typeof(window.external.notify) !=='undefined')) {
-					window.external.notify('OPEN_IN_APP_PDF_NOTIFY'+ '$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&');
+					window.external.notify('OPEN_IN_APP_PDF_NOTIFY'+ contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&');
 				} else {
-					window.open('$$CONTEXTPATH$/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=no');
+					window.open(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=no');
 				}
 			$%ENDIF$
 			$%IF DEVICE_INFO.isHybrid != "Y"$
-				downloadDoc('$$CONTEXTPATH$');
+				downloadDoc(contextpath);
 			$%ENDIF$
 		}
 	   </script>

@@ -65,16 +65,9 @@
   position: absolute;
 }
 
-.login #EDGE_CONNECT_PROCESS, .login_night #EDGE_CONNECT_PROCESS {
-    padding-top: 70px; 
-  }
-
-@media (min-height: 475px) {
-
   .login #EDGE_CONNECT_PROCESS, .login_night #EDGE_CONNECT_PROCESS {
     height: auto;
     position: absolute;
     bottom:0;
   } 
-  
-}
+ 
