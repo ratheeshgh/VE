@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="es" updated="15/09/17 10:10" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="es" updated="15/09/17 10:20" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="FrequentPayments" eid="3D97A91B1EE5407B177281" type="Process">
@@ -1296,12 +1296,12 @@
           </Container>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.ItemGroup" displayString="ThirdPartyInOtherBanks" eid="61A26ED52BA3BC6D484411" type="Item Group">
-          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="My Cards in Other Bank" eid="61A26ED52BA3BC6D485896" path="FrequentPayments.FrequentPayment.ThirdPartyInOtherBanks.My Cards in Other Bank" type="Heading">
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="My Products in Other Bank" eid="61A26ED52BA3BC6D485896" path="FrequentPayments.FrequentPayment.ThirdPartyInOtherBanks.My Products in Other Bank" type="Heading">
             <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="61A26ED52BA3BC6D485897:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="61A26ED52BA3BC6D485896:Heading" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="61A26ED52BA3BC6D485897:TCMB" mappingType="OVERRIDE" original="My Cards in Other Bank" specifiedBy="61A26ED52BA3BC6D485896:Heading" state="NEW" status="OKAY" value="Mis tarjetas otros bancos"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="61A26ED52BA3BC6D485897:TCMB" mappingType="OVERRIDE" original="My Products in Other Bank" specifiedBy="61A26ED52BA3BC6D485896:Heading" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Mis productos en otros bancos"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="61A26ED52BA3BC6D485897:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="61A26ED52BA3BC6D485896:Heading" state="NEW" status="OKAY" value=""/>
@@ -12688,7 +12688,7 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Continue" eid="3D97A91B1EE5407B654090" type="Button">
           <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$FrequentPayments[1].Selected$ == 0" eid="45AFEF632E5E4815158812" type="Evaluation Rule">
             <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - ErrorMessage" eid="45AFEF632E5E4815159090" path="FrequentPayments.FrequentPayment.Continue.Evaluation - Selected.Set Value - ErrorMessage" type="Set Value Rule">
-              <Attribute mappingType="OVERRIDE" name="FromMessage" original="You have not selected any beneficiary" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="No ha seleccionado ningún beneficiario"/>
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="You have not selected any beneficiary" state="NEEDS_REVIEW" status="OKAY" value="No ha seleccionado ningún beneficiario"/>
             </Rule>
             <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$FrequentPayments[1].AlmostOneAmountNull$ != 0 OR $$FrequentPayments[1].Totals[1].SumTotal$ == 0" eid="4705BF2CA64A4413288415" type="Evaluation Rule">
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Please complete all the amounts" eid="4705BF2CA64A4413288418" path="FrequentPayments.FrequentPayment.Continue.Evaluation - Selected.Evaluation - AlmostOneAmountNull.Set Value - Please complete all the amounts" type="Set Value Rule">
