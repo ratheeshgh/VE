@@ -12696,7 +12696,7 @@
               </Rule>
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$FrequentPayments[1].Totals[1].SumTotal$ &gt; $$FrequentPayments[1].FromAccount.groupValue()$" eid="4705BF2CA64A4413288420" type="Evaluation Rule">
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - insufficient fund" eid="4705BF2CA64A4413288423" path="FrequentPayments.FrequentPayment.Continue.Evaluation - Selected.Evaluation - AlmostOneAmountNull.Evaluation - Check insufficient fund.Set Value - insufficient fund" type="Set Value Rule">
-                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Insufficient fund" state="NEW" status="OKAY" value="Fondo insuficientes "/>
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Insufficient fund" state="NEW" status="OKAY" value="Fondo insuficiente "/>
                 </Rule>
                 <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$FrequentPayments[1].FromAccount$ == ''" eid="2DC60D91676A186A488290" type="Evaluation Rule">
                   <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - select from account" eid="2DC60D91676A186A488293" path="FrequentPayments.FrequentPayment.Continue.Evaluation - Selected.Evaluation - AlmostOneAmountNull.Evaluation - Check insufficient fund.Evaluation.Set Value - select from account" type="Set Value Rule">
