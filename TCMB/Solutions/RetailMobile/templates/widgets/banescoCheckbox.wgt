@@ -46,7 +46,7 @@
 			$checkbox.toggleClass('active', $checkbox.is(':checked'))
 		})	
 		
-		if('$$PHASE.NAME()$' == 'FrequentPayment') {
+		$%IF PHASE  == 'FrequentPayment'$
 
 			var ancho = $('body').width() - 35;
 
@@ -54,7 +54,7 @@
 
     		$('.banesco_checkbox + label').css({"position": "absolute", "top": "27px", "right": "18px" });
 
-		}
+		$%ENDIF$
 
 	})
 </script>
