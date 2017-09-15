@@ -44,6 +44,17 @@
 
 		$checkbox.on('click', function () {
 			$checkbox.toggleClass('active', $checkbox.is(':checked'))
-		})
+		})	
+		
+		if('$$PHASE.NAME()$' == 'FrequentPayment') {
+
+			var ancho = $('body').width() - 35;
+
+	  		$('.totalCard').find('label').css({"position": "absolute", "left": "2px", "padding-left": ancho, "top": "8px", "padding-bottom": "25px"});
+
+    		$('.banesco_checkbox + label').css({"position": "absolute", "top": "27px", "right": "18px" });
+
+		}
+
 	})
 </script>
