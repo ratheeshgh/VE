@@ -1,0 +1,8 @@
+<Configuration>
+	<MultiplePayments>Y</MultiplePayments>
+	<CreditCardPayment>Y</CreditCardPayment>
+	<PayABill>Y</PayABill>
+	<Transfers>Y</Transfers>
+	<DirectoryOfBenediciaries>Y</DirectoryOfBenediciaries>
+	<HistoryOfOperations>Y</HistoryOfOperations>
+</Configuration>
