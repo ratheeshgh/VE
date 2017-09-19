@@ -6,7 +6,7 @@ if (!window.edgeCordovaLoaded) {
 	} 
 	
 	;(function () {
-		var isDroid = navigator.userAgent.match(/Android/);
+		var isDroid = navigator.userAgent.match(/Android.*edgeConnectSmartHybrid/);
 		var isiOS = navigator.userAgent.match(/(iPhone|iPod|iPad).*edgeConnectSmartHybrid/);
 		var isWP = isWindowsPhone();
 		var droidScripts = [
