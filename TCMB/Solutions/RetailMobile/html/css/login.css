@@ -71,3 +71,22 @@
     bottom:0;
   } 
  
+
+ .activeKeyboard.login #EDGE_CONNECT_PROCESS, .activeKeyboard.login_night #EDGE_CONNECT_PROCESS{
+  position: initial;
+}
+
+.activeKeyboard.login, .activeKeyboard.login_night{
+  position: initial;
+}
+
+.login-bottom-buttons{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  display:table;
+}
+
+.activeKeyboard.login .login-bottom-buttons, .activeKeyboard.login-night .login-bottom-buttons {
+  display: none;
+}
