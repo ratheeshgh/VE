@@ -11,7 +11,9 @@ $(function() {
     } else {
         $inputNumber.attr("type", "number");
     }
-    $inputNumber.attr("pattern", "\\d*")
+    $inputNumber.attr("pattern", "\\d*");
+
+    $inputNumber.attr('min','0');
 
     function filterInput(event) {
         var keyCode = ('which' in event) ? event.which : event.keyCode;
