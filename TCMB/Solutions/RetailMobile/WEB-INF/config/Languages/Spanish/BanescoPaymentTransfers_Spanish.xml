@@ -12771,7 +12771,7 @@
             <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: CreditCardPaymentsVNZ[1].credit_card_Details[C]" eid="6608059D4A26733C604833" type="Repeat Rule">
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$CreditCardPaymentsVNZ[1].CreditCardNumber$ == $$CreditCardPaymentsVNZ[1].credit_card_Details[C].credit_card_id$" eid="6608059D4A26733C547552" type="Evaluation Rule">
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - List Values" eid="9AD91B1BA0778CB3358655" path="MyCreditCardPaymentsVNZ.CreditCardPaymentsVNZ.Credit Card Number.Container - Set the selected card.Repeat Over - Credit Card Details.Evaluation - Match the ID.Set Value - List Values" type="Set Value Rule">
-                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Minimum ($$CreditCardPaymentsVNZ[1].MinimoFormateado$)|Total ($$CreditCardPaymentsVNZ[1].TotalFormateado$)|Other" state="NEEDS_REVIEW" status="OKAY" value="Pago mínimo ($$CreditCardPaymentsVNZ[1].credit_card_Details[C].credit_card_minimun_payment_last_billing$)|Pago Total ($$CreditCardPaymentsVNZ[1].credit_card_Details[C].credit_card_total_payment_last_billing$)|Otro"/>
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="Minimum ($$CreditCardPaymentsVNZ[1].MinimoFormateado$)|Total ($$CreditCardPaymentsVNZ[1].TotalFormateado$)|Other" state="NEEDS_REVIEW" status="OKAY" value="Pago mínimo ($$CreditCardPaymentsVNZ[1].MinimoFormateado$)|Pago Total ($$CreditCardPaymentsVNZ[1].TotalFormateado$)|Otro"/>
                 </Rule>
               </Container>
             </Container>
