@@ -42,7 +42,9 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 		$%IF !DownloadPDF = 'Y'$	   
 		<script src="$$HTML_LOCATION$/js/cordova/PdfHandler.js"></script>
 		<script>
-		window.onload=function(e){
+		document.addEventListener('deviceready', function () {
+			debugger;
+		//window.onload=function(e){
 			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
 			$%IF DEVICE_INFO.platform == "Android"$				
 				com.temenos.widgets.hybrid.showPDFAndroid.showPDF(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
@@ -60,7 +62,8 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 			$%IF DEVICE_INFO.isHybrid != "Y"$
 				downloadDoc(contextpath);
 			$%ENDIF$
-		}
+		//}
+		})
 	   </script>
 		$%ENDIF$
     </head>
