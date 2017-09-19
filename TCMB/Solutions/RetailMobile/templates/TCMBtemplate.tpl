@@ -148,7 +148,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 			<input type="hidden" name="PRODUCT" value="">
 			<input type="hidden" name="PRESENTATION_TYPE" value="">
 			<input type="hidden" name="MODE" value="XX">
-			<input type="hidden" id="session_token" name="SESSION[1].session_token">
+			<input type="hidden" id="session_token" name="WorkingElements[1].sessiontoken">
 			<input type="hidden" name="WorkingElements[1].SessionLoggedOutDueToInactivity" value="Y"/>
 		</form>
 
