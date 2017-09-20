@@ -6173,7 +6173,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F0D3755DC038E62323022:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3F0D3755DC038E62323021:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F0D3755DC038E62323022:TCMB" mappingType="OVERRIDE" original="Amount is greater than available" specifiedBy="3F0D3755DC038E62323021:Heading" state="NEW" status="OKAY" value="El monto es mayor que el disponible"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F0D3755DC038E62323022:TCMB" mappingType="OVERRIDE" original="Amount is greater than available" specifiedBy="3F0D3755DC038E62323021:Heading" state="NEW" status="OKAY" value="Saldo Insuficiente"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F0D3755DC038E62323022:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="3F0D3755DC038E62323021:Heading" state="NEW" status="OKAY" value=""/>
