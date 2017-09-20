@@ -26,7 +26,8 @@
 
 .frec-body-text-dd , .frec-body-text-dd label {
 	font-size: 13.33px;
-	color: #708090;
+	//color: #708090;
+	color:#556176;
 	text-transform: uppercase;
 	font-family: "Lato Medium", courier;
 	margin-bottom: 12px;

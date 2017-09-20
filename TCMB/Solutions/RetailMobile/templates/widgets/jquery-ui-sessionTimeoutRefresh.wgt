@@ -16,9 +16,21 @@
 	}
 
 	
-	function doRedirectToLoginPage() {
-		document.forms['sessionTimeoutForm'].submit();
+	function setSessionValue(){
+		var userID = "$$Login[1].UserID$";
+		var sid = "$$LoginDetails[1].SessionID$";
+		var res = userID+":"+sid;
+		alert(res);
+		document.getElementById("uid").value = res;
+	return res;
 	}
+	function doRedirectToLoginPage() {
+		var token = "$$Session[1].session_token$";
+		$("input[id=session_token]").val(token);			
+		document.forms['sessionTimeoutForm'].submit();
+
+	}
+
 
 	// connect_ajax.js override
 	

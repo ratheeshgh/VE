@@ -105,7 +105,12 @@ body.login{padding-top: 0;background-color: #005294;background: url(../img/homep
 body.login_night{padding-top: 0;background-color: #005294;background: url(../img/homepage/background/imgBankNight.jpg) repeat-x ; background-size: cover;color:#000}
 }
 
-body.white{padding-top: 60px;background-color: #fff;color: #708090;}
+body.white{
+  padding-top: 60px;
+  background-color: #fff;
+  //color: #708090;
+  color: #3a4454;
+}
 body.myaccount{padding-top: 60px;background-color: #f4f4f4;color:#000}
 body.myaccount a{color:#4E74B0; text-decoration:none;}
 body.myaccount a:hover,a:focus{-webkit-transition: all .2s linear;-moz-transition: all .2s linear;transition: all .2s linear;color:#C71212; text-decoration:none;}
