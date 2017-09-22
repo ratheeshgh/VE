@@ -9952,7 +9952,7 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B9503B4BADCE4086626821:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="B9503B4BADCE4086626820:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B9503B4BADCE4086626821:TCMB" mappingType="OVERRIDE" original="Description" specifiedBy="B9503B4BADCE4086626820:Question" state="NEW" status="OKAY" value=""/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B9503B4BADCE4086626821:TCMB" mappingType="OVERRIDE" original="Description" specifiedBy="B9503B4BADCE4086626820:Question" state="NEW" status="OKAY" value="Descripción"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B9503B4BADCE4086626821:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="B9503B4BADCE4086626820:Question" state="NEW" status="OKAY" value=""/>
