@@ -158,6 +158,12 @@
  font-weight: bold;
  padding-left: 15px;
  padding-bottom: 12px;
+ margin-left:10px !important;
+ margin-top:1px !important;
+}
+
+.error_null_description {
+	margin-left: 30%;
 }
 
 
