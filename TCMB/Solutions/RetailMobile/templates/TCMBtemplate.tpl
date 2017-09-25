@@ -43,7 +43,6 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 		<script src="$$HTML_LOCATION$/js/cordova/PdfHandler.js"></script>
 		<script>
 		document.addEventListener('deviceready', function () {
-			debugger;
 		//window.onload=function(e){
 			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
 			$%IF DEVICE_INFO.platform == "Android"$				
@@ -59,11 +58,14 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 					window.open(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream&', '_blank', 'location=no');
 				}
 			$%ENDIF$
-			$%IF DEVICE_INFO.isHybrid != "Y"$
-				downloadDoc(contextpath);
-			$%ENDIF$
 		//}
+	    })
+	    $%IF DEVICE_INFO.isHybrid != "Y"$
+		$(function () {
+			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
+			downloadDoc(contextpath);
 		})
+		$%ENDIF$
 	   </script>
 		$%ENDIF$
     </head>
