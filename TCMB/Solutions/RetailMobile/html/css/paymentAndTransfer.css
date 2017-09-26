@@ -236,7 +236,7 @@
   top: -7px;
 }
 .search_in_directory_btn .text_wrapper .search_directory_text {
-  float: none;
+  float: none !important;
 }
 
 .search_directory_text {
