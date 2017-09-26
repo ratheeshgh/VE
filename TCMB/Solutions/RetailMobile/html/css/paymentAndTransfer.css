@@ -47,29 +47,29 @@
     color: #3a4454;
 }
 
-#PaymentFrecuentes:before{color:#FFA81B;}
-#PaymentCredit:before{color:#FFA81B;}
-#MyPaymentCreditVNZ:before{color:#FFA81B;}
-#OtherPaymentCreditVNZ:before{color:#FFA81B;}
-#PaymentServicios:before{color:#FFA81B;}
+#PaymentFrecuentes:before,
+#PaymentCredit:before,
+#MyPaymentCreditVNZ:before,
+#OtherPaymentCreditVNZ:before,
+#PaymentServicios:before,
 /*#PaymentServicios:before{color:#F0C300;}*/
-#PaymentPrestamos:before{color:#FFA81B;}
-#PaymentProgramados:before{color:#FFA81B;}
-#TransferCuentas:before{color:#FFA81B;}
-#TransferTerceros:before{color:#23BFE6;}
-#TransferCuentasVNZ:before{color:#23BFE6;}
-#TransferTercerosVNZ:before{color:#23BFE6;}
-#TransferInternacionales:before{color:#23BFE6;}
-#Donaciones:before{color:#00B395;}
-#DirectorioBeneficiario:before{color:#00B395;}
-#ChangeLanguage:before{color:#00B395;}
-#AppSettings:before{color:#00B395;}
-#ContactUs:before{color:#00B395;}
-#WhereIsBanesco:before{color:#00B395;}
-#TermsAndConditions:before{color:#00B395;}
-#TakeATour:before{color:#00B395;}
-#About:before{color:#00B395;}
-#HistorialMovimientos:before{content: "\E939";color:#00B395;}
+#PaymentPrestamos:before,
+#PaymentProgramados:before,
+#TransferCuentas:before{color:#F68A70;}
+#TransferTerceros:before,
+#TransferCuentasVNZ:before,
+#TransferTercerosVNZ:before,
+#TransferInternacionales:before{color:#859CCF;}
+#Donaciones:before,
+#DirectorioBeneficiario:before,
+#ChangeLanguage:before,
+#AppSettings:before,
+#ContactUs:before,
+#WhereIsBanesco:before,
+#TermsAndConditions:before,
+#TakeATour:before,
+#About:before{color:#67AC92;}
+#HistorialMovimientos:before{content: "\E939";color:#67AC92;}
 
 .bordeBoton
 {
