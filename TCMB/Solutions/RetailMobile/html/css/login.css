@@ -32,6 +32,7 @@
   font-size: 12px;
   color: #E31D18;
   text-transform: initial;
+  text-align: left;
 }
 
 .login_night {
@@ -63,6 +64,8 @@
 
 .error_login_inputs_row {
   position: absolute;
+  text-align: left;
+  margin-left: 10px;
 }
 
   .login #EDGE_CONNECT_PROCESS, .login_night #EDGE_CONNECT_PROCESS {

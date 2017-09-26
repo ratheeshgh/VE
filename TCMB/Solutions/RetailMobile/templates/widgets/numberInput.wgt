@@ -1,25 +1,14 @@
 $$ITEM.EC_GENERATE()$
 <style>
-
-input[type=number]::-webkit-outer-spin-button,
-
-input[type=number]::-webkit-inner-spin-button {
-
-    -webkit-appearance: none;
-
-    margin: 0;
-
-}
-
- 
-
-input[type=number] {
-
-    -moz-appearance:textfield;
-
-}
-
+    input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type=number] {
+        -moz-appearance:textfield;
+    }
 </style>
+<span id="$$ITEM.ID()$_Helper" style="display:none;height:0;opacity:0;"></span>
 <script type="text/javascript">
 $(function() {
     var $inputNumber = $('#$$COMPONENT_PREFIX$$$ITEM.ID()$');
@@ -32,7 +21,7 @@ $(function() {
     } else {
         $inputNumber.attr("type", "number");
     }
-    $inputNumber.attr("pattern", "\\d*");
+    $inputNumber.attr("pattern", "\\d*")
 
     function filterInput(event) {
         var keyCode = ('which' in event) ? event.which : event.keyCode;
@@ -76,38 +65,77 @@ $(function() {
 
     $%IF ITEM.CurrencyFormat == 'Y'$
         $inputNumber.attr("placeholder", "0.00");
+        $inputNumber.css({
+            color: 'transparent',
+            textShadow: '0 0 0 #708090'
+        })
     $%ENDIF$
 
+        var $inputHelper = $('#$$ITEM.ID()$_Helper')
         $inputNumber.on("input", function (e) {
+            var previousValue = $inputHelper.html();
+            console.log('valor anterior', previousValue)
             var currentValue = $inputNumber.val();
+            var lastCharInserted;
             console.log("onInput 2")
             console.log("currentValue",currentValue)
             
             var currentValueString = currentValue.trim().split(".").join("");
+            var previousValueString = previousValue.trim().split(".").join("");
             console.log("currentValueString",currentValueString)
+            console.log("previousValueString",previousValueString)
+
+            var currentValueStringChars = currentValueString.split('');
+            var previousValueStringChars = previousValueString.split('');
+
+            if (previousValueString.length < currentValueString.length) {
+                for (var i=0; i < currentValueStringChars.length; i++) {
+                    if (!previousValueStringChars[i] || currentValueStringChars[i] != previousValueStringChars[i]) {
+                        lastCharInserted = currentValueStringChars[i]
+                        break;
+                    }
+                }
+
+                currentValueString = previousValueString + lastCharInserted
+            } else {
+                $inputHelper.html('')
+            }
+
+            console.log("currentValueString",currentValueString)
+            console.log("previousValueString",previousValueString)
+
             
             $%IF ITEM.CurrencyFormat == 'Y'$
+                                
                 var currentValueNumber = parseInt(currentValueString);
-                var numberToShow = (parseFloat(currentValueNumber) / 100).toFixed(2);
-                if (currentValueString.length - 2 < 15) {                    
+                console.log(currentValueNumber)
+                var numberToShow = (parseFloat(currentValueNumber / 100)).toFixed(2);
+                console.log(numberToShow)
+                if (currentValueString.length - 2 < 14) { 
                     if (!isNaN(numberToShow)) {
                         $inputNumber.val(numberToShow);
+                        $inputHelper.html($inputNumber.val())
                     } else {
                         $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
+                        $inputHelper.html($inputNumber.val())
                     }
                 } else {
                     if (!isNaN(numberToShow)) {
-                        $inputNumber.val(currentValue.substring(0, currentValue.length - 1));   
+                        $inputNumber.val($inputHelper.html())
+                        $inputHelper.html($inputNumber.val())
                     }
                 }
             $%ELSE$
                 if (!isNaN(Number(currentValueString))) {
                     $inputNumber.val(currentValueString);
+                    $inputHelper.html($inputNumber.val())
                 } else {
                     $inputNumber.val(currentValueString.substring(0, currentValueString.length - 1));
+                    $inputHelper.html($inputNumber.val())
                 }
                 if ("$$ITEM.MAX_LENGTH$" !== "" && $inputNumber.val().length > Number("$$ITEM.MAX_LENGTH$")) {
                     $inputNumber.val($inputNumber.val().substring(0, $inputNumber.val().length -1));
+                    $inputHelper.html($inputNumber.val())
                 }
             $%ENDIF$
         })

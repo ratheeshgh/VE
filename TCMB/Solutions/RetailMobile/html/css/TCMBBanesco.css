@@ -4,6 +4,12 @@ html, body {
   color: #556176;
 }
 
+input {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
 /* Fonts */
 
 h1 { font-size: 21px }
