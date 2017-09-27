@@ -32,7 +32,9 @@ $(function() {
             keyCode == 107 ||
             keyCode == 109 ||
             keyCode == 189 ||
-            keyCode == 187
+            keyCode == 187 ||
+            keyCode == 38 ||
+            keyCode == 40
             $%IF ITEM.DecimalsNotAllowed == 'Y'$
                 ||
                 ((keyCode == 190 || keyCode == 110 || keyCode == 229))
