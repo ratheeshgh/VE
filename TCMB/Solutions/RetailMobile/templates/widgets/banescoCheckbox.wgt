@@ -12,8 +12,8 @@
 
 	.banesco_checkbox + label::before {
 		content: '';
-		width: 15px;
-		height: 15px;
+		width: 19px;
+		height: 19px;
 		border: 1px solid #A5ADB4;
 		display: block;
 		border-radius: 2px;
@@ -21,8 +21,8 @@
 
 	.banesco_checkbox:checked + label::before {
 		    content: '✓';
-		    font-size: 10px;
-		    line-height: 12px;
+		    font-size: 14px;
+		    line-height: 16px;
 		    color: #FFF;
 		    text-align: center !important;
 		    background: #2B5F8C;
