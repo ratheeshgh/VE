@@ -135,13 +135,6 @@ $%endif$
   });
 </script>
 $%IF PHASE == 'Login' || PHASE == 'ContactUs' || PHASE == 'DuplicatedSession' || PHASE == 'BanescoBranches' || PHASE == 'SessionTimeOut' || PHASE == 'AccessViolation' || PHASE == 'ErrorPhase' || PHASE == 'Offline'$
-<script type="text/javascript">
-   function ecHeartbeat() {
-      var params = "MODE=AjaxHeartbeatService&namespace=$$NAMESPACE$&controllername=ajaxservletcontroller";
-      makePOSTRequest("ajaxservletcontroller", true, params, '$$NAMESPACE$', "AjaxHeartbeatService");
-   }
-   setInterval( ecHeartbeat, ($$SessionTimeout$ * 1000) - 1000);
-</script>
 
 $%ENDIF$
 

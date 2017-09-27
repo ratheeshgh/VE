@@ -1,0 +1,6 @@
+
+<script>
+setInterval(function () {
+	$$ITEM.ONCLICK()$
+}, ($$SESSIONTIMEOUT$ * 1000) - ($$ITEM.SecondsBefore$) * 1000)
+</script>

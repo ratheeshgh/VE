@@ -3295,7 +3295,7 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A79D820C424E2BF2283829:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="A79D820C424E2BF2283828:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A79D820C424E2BF2283829:TCMB" mappingType="OVERRIDE" original="Transaction To" specifiedBy="A79D820C424E2BF2283828:Question" state="NEW" status="OKAY" value=""/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A79D820C424E2BF2283829:TCMB" mappingType="OVERRIDE" original="Transaction To" specifiedBy="A79D820C424E2BF2283828:Question" state="NEW" status="OKAY" value="Destino de la transacción"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A79D820C424E2BF2283829:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="A79D820C424E2BF2283828:Question" state="NEW" status="OKAY" value=""/>
