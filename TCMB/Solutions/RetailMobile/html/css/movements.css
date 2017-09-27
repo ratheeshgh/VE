@@ -36,10 +36,10 @@
 .transaction_icon.deb::before {
     font-family: "Banesco";
     display: inline-block;
-    font-size: 37px;
-    line-height: 37px;
+    font-size: 32px;
+    line-height: 32px;
     position: absolute;
-    height: 37px;
+    height: 32px;
     top: 0;
     bottom: 0;
     margin: auto;

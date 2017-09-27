@@ -34,6 +34,12 @@
 				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
 				finalColor = '#EB514E';
 				break;
+			case result > 100: 
+			    finalResult = 100;
+				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
+				finalColor = '#EB514E';
+				break;
+
 		}
 
 		setProgressBarInfo(finalProgressBarClass, finalResult, finalColor);
