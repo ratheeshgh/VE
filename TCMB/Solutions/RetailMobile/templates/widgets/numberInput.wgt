@@ -1,11 +1,15 @@
 $$ITEM.EC_GENERATE()$
 <style>
     input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
         margin: 0;
     }
     input[type=number] {
-        -moz-appearance:textfield;
+      -webkit-appearance:textfield;
+      -moz-appearance:textfield;
+           appearance:textfield;
     }
 </style>
 <span id="$$ITEM.ID()$_Helper" style="display:none;height:0;opacity:0;"></span>
