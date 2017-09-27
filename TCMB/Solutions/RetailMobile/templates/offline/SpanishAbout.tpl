@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		<div style="text-align: left; display: block;">
-			<div><span style="dataAbout">$$!NAME$</span>
+			<div><span class="dataAbout">$$!NAME$</span>
 			</div>
 		</div>
 		<div style="clear:both"></div>
@@ -67,7 +67,7 @@
 -->
 	<div style="position: absolute; bottom: 15px;">
 		<div style="text-align: left; ; width: 100.0%;">
-			<div class="copyrightAbout" > @2017 Banesco Universal
+			<div class="copyrightAbout" > Banesco Banco Universal, C.A. @2017
 			</div>
 		</div>
 		<div style="text-align: left; width: 100.0%; " class="muted textMedium">
