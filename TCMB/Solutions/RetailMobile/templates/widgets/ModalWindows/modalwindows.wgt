@@ -31,14 +31,18 @@ border-top: none;
 }
 
 .modal-content { background-color: rgba(255, 255, 255, 0.95);}
-.modal-header {text-align:center;}
+.modal-header {
+  text-align:center;
+  padding: 15px 0px 15px 15px;
+}
 </style>
 $%ENDIF$
 <div class="modal fade" id="$$ITEM.ID()$" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="exit-modal-dialog modal-dialog">
     <div class="exit-modal-content modal-content">
       <div class="exit-modal-header modal-header">
-        $%IF ITEM.Native != "Y"$<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>$%ENDIF$
+        $%IF ITEM.Native != "Y"$<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="    padding: 10px 15px 10px 50px;
+">&times;</span><span class="sr-only">Close</span></button>$%ENDIF$
         <h4 class="$$ITEM.TitleClass$" id="myModalLabel">$$ITEM.Title$</h4>
 		$%IF ITEM.Native == "Y" && ITEM.Body != ""$<h5>$$ITEM.Body$</h5>$%ENDIF$
       </div>
