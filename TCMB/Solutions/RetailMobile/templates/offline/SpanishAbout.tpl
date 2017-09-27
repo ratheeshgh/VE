@@ -57,7 +57,7 @@
 			<div>
 				<label style="text-transform: initial;padding: 0 !important; font-family: Lato Regular, courier; font-size:15.33px !important; color:#3a4454;">Call us on</label>
 			</div>
-		</div>
+		</div>error_login_inputs
 		<div style="text-align: left; ; ">
 			<div>
 				<span class="hybridinput" style="font-family: Lato Regular, courier; font-size:14.67px !important; color:#3a4454;">$$!ABOUT_CONTACT_NO$</span>
