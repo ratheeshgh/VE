@@ -4,6 +4,12 @@ html, body {
   color: #556176;
 }
 
+input {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
 /* Fonts */
 
 h1 { font-size: 21px }
@@ -33,7 +39,9 @@ hr {
     font-size: 120px;
     position: absolute;
     top: 55%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
 	left: 0;
     right: 0;
 }
@@ -266,7 +274,9 @@ input[type='radio']:checked + label:before {
     right: 15px;
     font-family: 'Banesco';
     font-size: 15px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
     top: 0;
     bottom: 0;
     height: 15px;

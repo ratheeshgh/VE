@@ -420,4 +420,10 @@
       <item includeInDesign="true" layout="-1" mand="false" name="Body" type="com.acquire.intelligentforms.ide.dialogs.RichTextArea|MULTI_RICH_VALUES" typeValue="ALL_CHARS|Y" usage="15"/>
     </custom>
   </widget>
+  <widget displayName="Run Before Session Timeout" name="RunBeforeSessionTimeout" type="Button">
+        <template type="source" value="./templates/widgets/runBeforeSessionTimeOut.wgt"/>
+        <custom>
+            <item includeInDesign="Always" layout="-1" mand="false" name="SecondsBefore" prompt="Seconds Before" type="javax.swing.JTextField" usage="7"/>
+        </custom>
+    </widget>
 </widgets>

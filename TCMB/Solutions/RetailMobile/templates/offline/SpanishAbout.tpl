@@ -1,18 +1,18 @@
 <div style="height: 100%; background: #FFF; padding: 0 15px;padding-top:90px; position:absolute; top:0px; bottom:0; left:0; right:0;">
 
 	<div style="text-align: left;width: 100.0%; text-transform: initial;">
-		<div style="font-family: Lato Regular, courier; font-size:15.33px; text-align:left;color:#3A4454;">
+		<div style="font-family: Lato Medium, courier; font-size:12px; text-align:left;color:#54616D; text-transform: uppercase">
 			Informaci&oacute;n de la aplicaci&oacute;n
 		</div>
 	</div>
 
 	<div style="margin-top: 50px;">
-		<div style="text-align: left; width: 40%; display: inline-block; float: left">
-			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Nombre:</label>
+		<div style="text-align: left; display: block;">
+			<div><label class="fieldAbout">Nombre:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 60%; display: inline-block; float: right">
-			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!NAME$</span>
+		<div style="text-align: left; display: block;">
+			<div><span class="dataAbout">$$!NAME$</span>
 			</div>
 		</div>
 		<div style="clear:both"></div>
@@ -20,24 +20,24 @@
 
 
 	<div style="margin-top: 10px;">
-		<div style="text-align: left; width: 40%; display: inline-block; float: left">
-			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Versi&oacute;n:</label>
+		<div style="text-align: left; display: block;">
+			<div><label class="fieldAbout" style="padding: 0 !important;">Versi&oacute;n:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 60%; display: inline-block; float: right">
-			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!VERSION$</span>
+		<div style="text-align: left; display: inline-block;">
+			<div><span class="dataAbout">$$!VERSION$</span>
 			</div>
 		</div>
 		<div style="clear:both"></div>
 	</div>
 
 	<div style="margin-top: 10px;">
-		<div style="text-align: left; width: 40%; display: inline-block; float: left">
-			<div><label style="text-transform: initial;padding: 0 !important; font-family: Lato Light, courier; font-size:15.33px !important; color:#3a4454;">Disponible:</label>
+		<div style="text-align: left; display: block;">
+			<div><label class="fieldAbout" style="padding: 0 !important;">Disponible:</label>
 			</div>
 		</div>
-		<div style="text-align: left; width: 60%; display: inline-block; float: right">
-			<div><span style="font-family: Lato Regular ,courier; font-size:15.33px; margin-left:10px;color:#3A4454;">$$!RELEASE_DATE$</span>
+		<div style="text-align: left; display: block;">
+			<div><span class="dataAbout" >$$!RELEASE_DATE$</span>
 			</div>
 		</div>
 		<div style="clear:both"></div>
@@ -65,13 +65,13 @@
 		</div>
 	</div>
 -->
-	<div style="position: absolute; bottom: 30px;">
+	<div style="position: absolute; bottom: 15px;">
 		<div style="text-align: left; ; width: 100.0%;">
-			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px;color:#54516d;"> @2017 Banesco Universal
+			<div class="copyrightAbout" > Banesco Banco Universal, C.A. @2017
 			</div>
 		</div>
-		<div style="text-align: left; ; width: 100.0%; " class="muted textMedium">
-			<div style="text-transform: initial; font-family: Lato Medium, courier; font-size: 12px; color:#54516d;">Todos los derechos reservados
+		<div style="text-align: left; width: 100.0%; " class="muted textMedium">
+			<div class="copyrightAbout">Todos los derechos reservados
 			</div>
 		</div>
 	</div>
