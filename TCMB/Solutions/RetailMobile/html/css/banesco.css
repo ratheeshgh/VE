@@ -3054,3 +3054,21 @@ div[id*='EmptyMessage'] {
   margin: 0px -2px 0px -2px;
   width: 30%;
 }
+
+.icon-pdf {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  font-family: 'Banesco';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download-pdf:before {
+  content: "\e94f";
+  font-size: 20px;
+  font-weight: bold; 
+}
