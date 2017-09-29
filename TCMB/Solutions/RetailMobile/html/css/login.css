@@ -21,6 +21,7 @@
   font-size: 0.833em;
   color: #3a4454;
   margin-bottom: 5px;
+  border-left: none !important;
 }
 
 .login .input-group {
@@ -44,6 +45,7 @@
   font-size: 0.833em;
   color: #3a4454;
   margin-bottom: 5px;
+  border-left: none !important;
 }
 
 .login_night .input-group {
@@ -92,4 +94,9 @@
 
 .activeKeyboard.login .login-bottom-buttons, .activeKeyboard.login-night .login-bottom-buttons {
   display: none;
+}
+
+.error_login_inputs_10P {
+  position: relative;
+  top: -4px;
 }
