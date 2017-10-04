@@ -11,6 +11,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 		<!-- Version number: $$!VERSION$ -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	  <meta name="HandheldFriendly" content="true" />
+	  <meta charset="ISO-8859-1">
       <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
       <meta name="author" content="Edge IPK"/>
 	  <link rel="shortcut icon" href="./html/favicon.ico">
@@ -134,16 +135,12 @@ $%endif$
 	$(".resetPdfFlag").trigger("click");
   });
 </script>
-$%IF PHASE == 'Login' || PHASE == 'ContactUs' || PHASE == 'DuplicatedSession' || PHASE == 'BanescoBranches' || PHASE == 'SessionTimeOut' || PHASE == 'AccessViolation' || PHASE == 'ErrorPhase' || PHASE == 'Offline'$
-
-$%ENDIF$
-
 $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 <form name="sessionTimeoutForm" method=POST action="servletcontroller" autocomplete="off">
 			<input type="hidden" name="PRODUCT" value="">
 			<input type="hidden" name="PRESENTATION_TYPE" value="">
 			<input type="hidden" name="MODE" value="XX">
-			<input type="hidden" id="session_token" name="WorkingElements[1].sessiontoken">
+			<input type="hidden" id="session_token" name="Session[1].Session_Token">
 			<input type="hidden" name="WorkingElements[1].SessionLoggedOutDueToInactivity" value="Y"/>
 		</form>
 
