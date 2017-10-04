@@ -13059,7 +13059,7 @@
               <Attribute mappingType="OVERRIDE" name="FromMessage" original="Date" state="NEW" status="OKAY" value="Date"/>
             </Rule>
             <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Time Label" eid="12D2C5F6BEAFDFF6353973" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Set Value - Time Label" type="Set Value Rule">
-              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Time" state="NEW" status="OKAY" value="Hora"/>
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Time" state="NEW" status="OKAY" value="Time"/>
             </Rule>
           </Container>
         </Container>
