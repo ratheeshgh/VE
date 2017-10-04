@@ -7333,7 +7333,7 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B45AF199858A5836215097:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="B45AF199858A5836215096:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B45AF199858A5836215097:TCMB" mappingType="OVERRIDE" original="From Account" specifiedBy="B45AF199858A5836215096:Question" state="NEW" status="OKAY" value=""/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B45AF199858A5836215097:TCMB" mappingType="OVERRIDE" original="From Account" specifiedBy="B45AF199858A5836215096:Question" state="NEW" status="OKAY" value="Desde mi cuenta"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="B45AF199858A5836215097:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="B45AF199858A5836215096:Question" state="NEW" status="OKAY" value=""/>
