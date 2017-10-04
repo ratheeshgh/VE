@@ -10,8 +10,7 @@
   }
 
   .secondBtnImg--is-primary {
-    //border: 1px solid #dce1e9;
-    border: 1px solid #a5adb4;
+    border: 1px solid #dce1e9;
     background-color: #f4f8f9;
     color: #3a4454;
     font-size: 15px;

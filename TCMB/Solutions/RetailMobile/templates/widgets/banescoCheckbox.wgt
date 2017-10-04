@@ -38,7 +38,6 @@
 
 		var $checkbox = $this.find("input[type='checkbox']");
 		$checkbox.addClass('banesco_checkbox')
-		console.log($checkbox)
 		var $label = $('<label for="' + $checkbox.attr('id') + '"></label>');
 		$checkbox.parent().append($label)
 
