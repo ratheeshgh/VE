@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate"/>
+    <meta http-equiv="cache-control" content="post-check=0, pre-check=0, false"/>
+    <meta name="author" content="Temenos" />
+    <script type="text/javascript">
+        CKEDITOR_BASEPATH = "/edgeConnectBase/notes/js/ckeditor/";
+    </script>
+    <title>Temenos</title>
+	<link rel="stylesheet" type="text/css" href="chrome://firebug/content/highlighter.css"/>
+	<link href="html/css/Default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="html/js/connect.js"></script>
+    <script type="text/javascript" src="/edgeConnectBase/notes/js/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	
+		function makeSavePOSTRequest(url, async, parameters) {
+			if (async == null)
+				async = true;
+
+			var req = getRequestObject();
+			req.open('POST', url, async);
+			req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			if (async)
+			{
+				req.onreadystatechange = function()
+				{
+					callbackSaveNotes(async, req);
+				};
+				req.send(parameters);
+			}
+			else
+			{
+				req.send(parameters);
+				return callbackSaveNotes(async, req);
+			}
+		}
+
+		function getRequestObject()
+		{
+			var req;
+			if (window.XMLHttpRequest) {
+				req = new XMLHttpRequest();
+			}
+			else if (window.ActiveXObject) {
+				try {
+					req = new ActiveXObject("Msxml2.XMLHTTP");
+				}
+				catch(e)
+				{
+					try
+					{
+						req = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					catch(e) {
+						alert("ActiveX must be installed and enabled to run the request - please check your browser settings.");
+						req = false;
+					}
+				}
+			}
+
+			return req;
+		}
+
+		function callbackSaveNotes(async, req)
+		{
+			try {
+				var proceed = false;
+				if (async) {
+					if (req.readyState == 4 && req.status == 200)
+						proceed = true;
+				}
+				else {
+					proceed = true;
+				}
+
+				if (proceed) {
+					var retArray = JSON.parse(req.responseText);
+					if ( retArray && retArray.length > 0 ) {
+						var obj = retArray[0];
+						if (obj.indicator == "NEW")
+						{
+							//Display new note in tree
+							var frm = top.frames["TreeFrame"];
+							var dhtmlxTree = frm.getVisibleTree();
+							//create a new node in dhtmlxTree
+							dhtmlxTree.insertNewChild(obj.id, obj.parentId, obj.comment, 0, "../EVANote.gif", 0, 0, "SELECT");
+						}
+						else if (obj.indicator == "OLD")
+						{
+							// update an existing note in tree
+							var frm = top.frames["TreeFrame"];
+							var dhtmlxTree = frm.getVisibleTree();
+							// update main node
+							dhtmlxTree.setItemText(obj.id, obj.comment);
+							// any links to update
+							var linkedNotes = obj.linkedNotes;
+							for (var j = 0; j < linkedNotes.length; j++)
+							{
+								dhtmlxTree.setItemText(linkedNotes[j].linkedId, linkedNotes[j].linkedNote);
+							}
+							dhtmlxTree.selectItem(obj.id, 'true', 'true');
+							dhtmlxTree.focusItem(obj.id);
+						}
+					}
+				}
+			}
+			finally	{
+			}
+			return true;
+		}
+
+		var typesArr = new Array();
+
+		function populateNoteTypes()
+		{
+			var typesXmlFile = 'data/types.xml';
+			var requestObj = getRequestObject();
+			requestObj.onreadystatechange = function() {typesLoadCallback(requestObj);};
+			requestObj.open("GET", typesXmlFile, true);
+			requestObj.send();
+		}
+
+		function typesLoadCallback(reqObj)
+		{
+			if (reqObj.readyState == 4 && reqObj.status == 200)
+			{
+				var types = reqObj.responseXML.documentElement.childNodes;
+				for (var i = 0; i < types.length; i++)
+				{
+					var typeNode = types[i];
+					var name = typeNode.getAttribute('name');
+					var typeObj = new Object();
+					typeObj.id = typeNode.getAttribute('id');
+					typeObj.statusReq = typeNode.getAttribute('statusReq');
+					typesArr[name] = typeObj;
+					var dropDown = document.getElementById("selNoteType");
+					var optionNode = document.createElement("option");
+					optionNode.value = name;
+					optionNode.appendChild(document.createTextNode(name));
+					dropDown.appendChild(optionNode);
+				}
+			}
+		}
+
+		function saveNote()
+		{
+			var treeFrame = top.frames["TreeFrame"];
+			var eid = treeFrame.currentAnno;
+			var isNewOrOld = (eid != null && eid.length > 0) ? "old" : "new";
+			eid = treeFrame.getSelectedTreeItemId();
+			//if (eid != null && eid.length > 0)
+			{
+				//if 'new', then we have to retrieve the selected item in the tree's PARENT and get its id
+				//Should this be done the same for currentAnno
+				var a = top.frames["ORIGFrame"].act;
+				var b = a.substring(a.lastIndexOf('/')+1);
+				var url = "ajaxservletcontroller?MODE=AJXNoteSave&id="+eid+"&namespace="+"&controllername="+b;
+				var ck = CKEDITOR.instances.NoteEditor;
+				ck.updateElement();
+				var text = ck.getData(true);
+				url += "&note="+escape(text)+"&newOld="+isNewOrOld;
+				url = appendTypeAndStatus(url);
+				url = addSubSessionIdToParameters( url );
+				makeSavePOSTRequest(url, true);
+			}
+		}
+
+		function appendTypeAndStatus(url)
+		{
+			var tempUrl = url;
+
+			var selectElem = document.getElementById("selNoteType");
+			var selTypeIndex = selectElem.selectedIndex;
+
+			var typeVal = selectElem.value;
+			var typeID = "";
+			var statusVal = "";
+			if (typesArr[typeVal])
+			{
+			  var statusReq = typesArr[typeVal].statusReq;
+			  if (statusReq == "true")
+			  {
+				var statusElem = document.getElementById("statusOutstanding");
+				if (!statusElem.checked)
+				{
+					statusElem = document.getElementById("statusComplete");
+				}
+				statusVal = statusElem.value;
+			  }
+			  typeID = typesArr[typeVal].id;
+			}
+
+			tempUrl += "&type=" + typeID;
+			tempUrl += "&status=" + statusVal;
+			return tempUrl;
+		}
+
+		function addNewNote()
+		{
+			var treeFrm = top.frames['TreeFrame'];
+			var treeType = treeFrm.document.getElementById('tree').value;
+			var itemName;
+			if (treeType == "Presentation")
+			{
+				itemName = treeFrm.presTree.getSelectedItemText();
+			}
+			else
+			{
+				itemName = treeFrm.processTree.getSelectedItemText();
+			}
+
+			if (noteAttrsValidate())
+			{
+				var titleElem = document.getElementById("title");
+				titleElem.innerHTML = "EVA Note for: <b>"+itemName+"<\/b>";
+				
+				var typeSelector = document.getElementById("selNoteType");
+				var typeVal = typeSelector.options[typeSelector.selectedIndex].value;
+				var typeElem = document.getElementById("typeLabel");
+				typeElem.innerHTML = "Type: <b>"+typeVal+"<\/b>";
+				
+				var editorContainer = document.getElementById("editorContainer");
+				editorContainer.style.display = "block";
+			}
+		}
+
+		function enableNewNoteButton(doEnable)
+		{
+			//show (or hide) button
+			var btnContainer = document.getElementById("newButtonContainer");
+			btnContainer.style.display = doEnable ? "block" : "none";
+
+			//show note type field
+			var types = document.getElementById("selNoteType");
+			types.style.visibility = doEnable ? "visible" : "hidden";
+			if (!doEnable)
+			{
+				types.options[0].selected = true;
+			}
+			//trigger onchange to display or hide status dropdown
+			types.onchange();
+		}
+
+		function disableSaveNoteButton(disable)
+		{
+			var saveBtn = document.getElementById("Save");
+			saveBtn.disabled = disable;
+		}
+
+		function noteAttrsValidate()
+		{
+			var selectElem = document.getElementById("selNoteType");
+			var selTypeIndex = selectElem.selectedIndex;
+			if (selTypeIndex == 0)
+			{
+				alert("Select type.");
+				return false;
+			}
+			var val = selectElem.value;
+			var statusReq = typesArr[val].statusReq;
+			if (statusReq == "true")
+			{
+				if (!document.getElementById("statusOutstanding").checked && !document.getElementById("statusComplete").checked)
+				{
+					alert("A status is required for notes of type '"+val+"'.");
+					return false;
+				}
+			}
+			return true;
+		}
+
+		function showStatus(typeName)
+		{
+			// find out whether the type selected has status required and hide/show the div accordingly
+			var statusSpan = document.getElementById("status");
+			var typeObj = typesArr[typeName];
+			if (typeObj)
+			{
+				var showStatus = typeObj.statusReq;
+				statusSpan.style.visibility = showStatus == "true" ? "visible" : "hidden";
+			}
+			else
+			{
+				statusSpan.style.visibility = "hidden";
+			}
+		}
+
+		function addSubSessionIdToParameters( parameters, namespace )
+		{
+		    if ( namespace == null ) namespace = "";
+            var form = top.frames['ORIGFrame'].document.forms[namespace+"form1"];
+		    if( form.SUBSESSIONID )
+		    {
+		        parameters += "&SUBSESSIONID=" + form.SUBSESSIONID.value;
+		    }
+		    return parameters;
+		}
+		
+		window.onresize = top.resizeEditor;
+		
+		
+	//]]>	
+	</script>
+  </head>
+  <body style="background-color: #FFFFFF;" onload="top.resizeEditor();populateNoteTypes();" >
+		<div style="height: 100%;" id="www.edgeipk.com:EVA">
+			<div id="newButtonContainer" style="display:none;">
+				<button id="btnNewNote" onclick="addNewNote();">New Note</button>
+				<select id="selNoteType" onchange="showStatus(this.value);" style="visibility:hidden;">
+					<option>- Type -</option>
+				</select>
+				<span id="status" style="visibility:hidden;">
+					<input type="radio" name="status" value="Outstanding" id="statusOutstanding" />Outstanding &nbsp;<input type="radio" name="status" value="Complete" id="statusComplete" />Complete
+				</span>
+			</div>
+			<div id="editorContainer"  style="display:none;">
+				<table style="height:100%; width:100%;" cellspacing="0">
+					<tr style="height:30px; background-color:#f0f0f0;">
+						<td valign="bottom" style="padding:4px;" id="title">
+						</td>
+						<td valign="bottom" style="padding:4px;" id="typeLabel">
+						</td>
+						<td align="right" style="padding:4px;" >
+							<button id="Save" onclick="saveNote()">Save Changes</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" valign="top" id="Note">
+					        <textarea id="NoteEditor" rows="10" cols="50">
+					        </textarea>
+						    <script type="text/javascript">
+						        CKEDITOR.replace('NoteEditor',
+	                            {
+									forcePasteAsPlainText : true,
+									toolbar :
+	                                [ 										
+	                                    ['Bold','Italic','Underline','-','NumberedList','BulletedList','-','Outdent','Indent',],
+	                                    ['TextColor'],
+	                                    ['Undo','Redo'],
+	                                    ['Font','FontSize'],
+	                                    ['Source']
+	                                ],
+	                                toolbarCanCollapse : false,
+	                                resize_enabled : false,
+	                                enterMode : CKEDITOR.ENTER_P,
+	                                font_names: 
+	                                      'Arial/arial;'
+	                                    + 'Times New Roman/times new roman;'
+	                                    + 'Courier New/courier new;'
+	                            });
+							</script>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+  </body>
+</html>

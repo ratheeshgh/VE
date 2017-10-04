@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- widget file maintained by edgeConnect - DO NOT EDIT -->
+<widgets>
+    <widget helpFile="23_Presentation5/Presentation_Editor/Presentation_Layout/Display_Items/Image.htm" icon="/images/PresentationText_Image.gif" name="Image" type="Item:Image">
+        <template type="source" value="./templates/widgets/simpleImage.wgt"/>
+        <custom>
+            <item help="This needs to be accessible by the web browser at runtime, so &#xa;consider using $$LIBRARY_CONTEXTPATH$ for component-only images" mand="true" name="IMG_SRC" prompt="Path To Image" tab="Details"
+                type="javax.swing.JFileChooser|MULTI_RICH_VALUES" typeValue="Image Choose|FILES_ONLY|*|Image File|Open|Project dir"/>
+            <item mand="true" mappable="true" name="IMG_ALT_TEXT" prompt="Alt Text" tab="Details" type="javax.swing.JTextField"/>
+            <item name="IMG_STYLE" prompt="Style" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_CLASS" prompt="Class" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_HEIGHT" prompt="Height (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_WIDTH" prompt="Width (Specify Unit - px or %)" tab="Image" type="javax.swing.JTextField" typeValue="REGEXP#-1#[1-9][0-9]* *(px|%)?#specify number or number px or number %"/>
+            <item name="IMG_LONGDESC" prompt="Long Desc" tab="Image" type="javax.swing.JTextField"/>
+            <item mappable="true" name="IMG_TITLE" prompt="Title" tab="Image" type="javax.swing.JTextField"/>
+            <item name="IMG_USEMAP" prompt="Use Map" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_DIR" prompt="Direction (rtl or ltr)" tab="Advanced" type="javax.swing.JComboBox" typeValue="ltr|rtl"/>
+            <item name="IMG_LANGUAGE" prompt="Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+            <item name="IMG_XMLLANGAUGE" prompt="XML Language Code" tab="Advanced" type="javax.swing.JTextField"/>
+        </custom>
+    </widget>
+    <widget dialogHandler="com.acquire.intelligentforms.ide.presentationeditor.dialoghandlers.html.widgets.jquery.JqueryAccordionSectionDialogHandler" icon="/images/widget_accordion.gif" name="Accordion Section (jquery)" type="Section">
+        <template type="header" value="./templates/widgets/jquery/jquery-common-header.wgt"/>
+        <template type="header" value="./templates/widgets/jquery/jquery-ui/jquery-ui-common-header.wgt"/>
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordionSection.wgt"/>
+        <child force="true" type="Tab" widget="Accordion (jquery)"/>
+        <custom>
+            <item name="BAR_COLOR" prompt="Bar Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_IMAGE" prompt="Bar Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_HOVER_COLOR" prompt="Bar Hover Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_HOVER_IMAGE" prompt="Bar Hover Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item name="BAR_SELECTED_COLOR" prompt="Bar Selected Colour" tab="Accordion Details" type="com.acquire.util.ui.StyleSheetColorChooser"/>
+            <item name="BAR_SELECTED_IMAGE" prompt="Bar Selected Image" tab="Accordion Details" type="javax.swing.JFileChooser"/>
+            <item defaultValue="Y" name="MAINTAIN_STATE" prompt="Maintain State" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+            <item defaultValue="Y" name="SLIDE_EFFECT" prompt="Slide Effect" tab="Accordion Details" type="javax.swing.JCheckBox"/>
+        </custom>
+    </widget>
+    <widget name="Accordion (jquery)" type="Tab">
+        <template type="source" value="./templates/widgets/jquery/jquery-ui/jquery-ui-accordion.wgt"/>
+    </widget>
+</widgets>
