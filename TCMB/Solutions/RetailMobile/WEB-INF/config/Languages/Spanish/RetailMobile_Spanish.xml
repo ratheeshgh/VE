@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="29/09/17 16:15" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="03/10/17 16:36" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -339,24 +339,24 @@
       </ProcessEntity>
       <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="keepAliveSession" eid="E9A8AA8FBB79CC92105679" path="PreLogin.keepAliveSession" type="Button">
         <ProcessEntityAttr default="" name="ButtonText" original="keepAliveSession" state="NEW">
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
         </ProcessEntityAttr>
         <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
         </ProcessEntityAttr>
         <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
         </ProcessEntityAttr>
         <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
         </ProcessEntityAttr>
         <ProcessEntityAttr default="" name="HintText" original="keepAliveSession" state="NEW">
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
-          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="NEW" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105680:TCMB" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
+          <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="E9A8AA8FBB79CC92105682:TCMB-Windows" mappingType="OVERRIDE" original="keepAliveSession" specifiedBy="E9A8AA8FBB79CC92105679:Button" state="NEW" status="OKAY" value=""/>
         </ProcessEntityAttr>
       </ProcessEntity>
     </Container>
@@ -7028,6 +7028,9 @@
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="F7C3BC681DFF01F3116083" path="TCMB.AccountDetails.SelectedAccountDetails.Text" type="Rich Presentation Text">
             <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;var flag = 0;&#10;var num = $('.helperFontSizeN');&#10;var tam1= num[0].innerHTML.length;&#10;var tam2= num[1].innerHTML.length;&#10;var $currentNum = $(num[0]);&#10;var $nextNum = $(num[1]);&#10;&#10;&#9;if (tam1 &gt; tam2) {&#10;&#9;&#9;var tam = num[0].innerHTML.length;&#10;&#9;    if (tam &gt; 11 &amp;&amp; tam &lt; 14) {&#10;&#9;&#9;    $currentNum.addClass('font16');&#10;&#9;&#9;    $nextNum.addClass('font16');&#10;&#9;&#9;    console.log (&quot;llegue&quot;); &#10;&#9;&#9;}&#10;&#9;} else if (tam1 &lt; tam2) {&#10;&#9;&#9;var tam = num[1].innerHTML.length;&#10;&#9;&#9;if (tam &gt; 11 &amp;&amp; tam &lt; 14) {&#10;&#9;&#9;    $currentNum.addClass('font16');&#10;&#9;&#9;    $nextNum.addClass('font16');&#10;&#9;&#9;    console.log (&quot;llegue&quot;); &#10;&#9;&#9;}&#10;&#9;} else {&#10;&#9;&#9;var tam = num[0].innerHTML.length;&#10;&#9;&#9;if (tam &gt; 11 &amp;&amp; tam &lt; 14) {&#10;&#9;&#9;    $currentNum.addClass('font16');&#10;&#9;&#9;    $nextNum.addClass('font16');&#10;&#9;&#9;    console.log (&quot;llegue&quot;); &#10;&#9;&#9;}&#10;&#9;}&#9;&#10;})&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="EE2C9F01C3EFB4F0343383" path="TCMB.AccountDetails.SelectedAccountDetails.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;$('.TopNavBtnContainer').css('height', '90px');&#10;})&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
+          </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="SelectedCardDetails" eid="9E6DD7102BBF0C26169475" type="Rich Presentation Phase">
           <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="B644DB8B2505494E628990" type="Rich Presentation Section">
@@ -7280,6 +7283,9 @@
           </Container>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="D51DAA596CE87F74115792" path="TCMB.AccountDetails.SelectedCardDetails.Text" type="Rich Presentation Text">
             <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;var flag = 0;&#10;var $num = $('.helperFontSizeN');&#10;var $numaso = $('.helperFontSizeNA');&#10;var $date = $('.dateFormater');&#10;console.log($num);&#10;console.log($numaso);&#10;var tam = $num[0].innerHTML.length;&#10;var $currentNum = $($num[0]);&#10;    if (tam &gt; 11 &amp;&amp; tam &lt; 14) {&#10;        $currentNum.addClass('font16');&#10;        for (var i = 0; i &lt; $numaso.length; i++) {&#10;            var $currentNumAso = $($numaso[i]);&#10;            $currentNumAso.addClass('font16');&#10;            $date.addClass(&quot;font16&quot;);&#10;        }&#10;    }&#10;})&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="OKAY" value=""/>
+          </PresentationObject>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="EE2C9F01C3EFB4F0343413" path="TCMB.AccountDetails.SelectedCardDetails.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;$('.TopNavBtnContainer').css('height', '90px');&#10;})&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
           </PresentationObject>
         </Container>
       </Container>
@@ -7704,24 +7710,33 @@
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ReceiptDetails" eid="22A9991FBF00DBCD341648" type="Phase">
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Save as PDF" eid="7406CB1B5F423006181756" type="Button">
           <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf value" eid="90933CEBFE2ABF4E250741" type="Container Rule">
+            <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Date Label" eid="12D2C5F6BEAFDFF6355707" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Set Value - Date Label" type="Set Value Rule">
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Date" state="NEW" status="NEW" value="Fecha"/>
+            </Rule>
+            <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Time Label" eid="12D2C5F6BEAFDFF6355719" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Set Value - Time Label" type="Set Value Rule">
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Time" state="NEW" status="NEW" value="Hora"/>
+            </Rule>
+            <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Footer Label" eid="12D2C5F6BEAFDFF6355721" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Set Value - Footer Label" type="Set Value Rule">
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Banesco Limited" state="NEW" status="NEW" value=""/>
+            </Rule>
             <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf" eid="90933CEBFE2ABF4E250744" type="Container Rule">
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName1" eid="90933CEBFE2ABF4E250745" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName1" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Reference No." state="NEW" status="NEW" value="Número de referencia"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Reference No." state="NEW" status="OKAY" value="Número de referencia"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName2" eid="90933CEBFE2ABF4E250747" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName2" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction From" state="NEW" status="NEW" value="Desde mi cuenta"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction From" state="NEW" status="OKAY" value="Desde mi cuenta"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName3" eid="90933CEBFE2ABF4E250749" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName3" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction To" state="NEW" status="NEW" value="Destino de la transacción"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction To" state="NEW" status="OKAY" value="Destino de la transacción"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName4" eid="90933CEBFE2ABF4E250751" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName4" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction Type" state="NEW" status="NEW" value="Tipo de transacción"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Transaction Type" state="NEW" status="OKAY" value="Tipo de transacción"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName5" eid="90933CEBFE2ABF4E250753" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName5" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payment Amount" state="NEW" status="NEW" value="Monto"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payment Amount" state="NEW" status="OKAY" value="Monto"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName6" eid="90933CEBFE2ABF4E250755" path="HistoryOfOperations.ReceiptDetails.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName6" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Description" state="NEW" status="NEW" value="Descripción"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Description" state="NEW" status="OKAY" value="Descripción"/>
               </Rule>
             </Container>
           </Container>
