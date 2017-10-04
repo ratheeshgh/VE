@@ -1,0 +1,190 @@
+<!-- $Revision: 1.18 $ -->
+<style type="text/css">
+	#$$ITEM.ID()$.ui-widget, #$$ITEM.ID()$ input, #$$ITEM.ID()$ select, #$$ITEM.ID()$ textarea, #$$ITEM.ID()$ button {
+		font-family: inherit;
+	}
+	
+	#$$ITEM.ID()$.ui-accordion {
+		padding: 1px;
+		
+		$%IF ITEM.BAR_COLOR != ""$
+			border: 1px solid $$ITEM.BAR_COLOR$;
+		$%ELSE$
+			border: 1px solid;
+		$%ENDIF$
+	}
+	#$$ITEM.ID()$ .ui-state-default {
+		$%IF ITEM.BAR_COLOR != ""$
+			background-color: $$ITEM.BAR_COLOR$;
+			background-image: none;
+		$%ENDIF$					
+							
+		$%IF ITEM.BAR_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_IMAGE$");
+		$%ENDIF$
+	}
+	#$$ITEM.ID()$ .ui-state-hover {
+		$%IF ITEM.BAR_HOVER_COLOR != ""$
+			background-color: $$ITEM.BAR_HOVER_COLOR$;
+		$%ENDIF$					
+							
+		$%IF ITEM.BAR_HOVER_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_HOVER_IMAGE$");
+		$%ENDIF$					
+	}
+	
+	#$$ITEM.ID()$ .ui-state-active {
+		$%IF ITEM.BAR_SELECTED_COLOR != ""$
+			background-color: $$ITEM.BAR_SELECTED_COLOR$;
+		$%ENDIF$					
+							
+		$%IF ITEM.BAR_SELECTED_IMAGE != ""$
+			background-image: url("$$ITEM.BAR_SELECTED_IMAGE$");
+		$%ENDIF$								
+	}
+	
+	$%IF ITEM.BAR_COLOR != ""$
+		#$$ITEM.ID()$.ui-accordion .ui-accordion-header {
+			margin-top: 1px;
+			border: none;
+		}
+	$%ENDIF$
+		
+	$%IF ITEM.BAR_SELECTED_COLOR != ""$
+		#$$ITEM.ID()$.ui-accordion .ui-accordion-content {
+			border: 2px solid $$ITEM.BAR_SELECTED_COLOR$;
+			border-top: none;
+		}
+	$%ENDIF$
+</style>
+
+$%IF ITEM.SpacerText != ""$
+	$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">
+	$%ELSE$<div id="p1_$$ITEM.ID()$" style="width: 100%; $%IF ITEM.IS_HIDDEN() == "true"$display: none$%ENDIF$">
+	$%ENDIF$
+		$$ITEM.SpacerText$
+	$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>
+	$%ELSE$</div>
+	$%ENDIF$
+$%ENDIF$
+
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$<tr><td colspan="4">$%ENDIF$
+
+
+
+<div id="$$ITEM.ID()$" style="$$ITEM.INLINE_STYLES().SectionStyle$
+							  $%IF ITEM.IS_HIDDEN() == "true"$; display: none;$%ENDIF$	
+                              $%IF ITEM.SectionLayout != "Auto"$width: 100%;$%ENDIF$
+                              $%IF ITEM.SectionLayout == "Specify in pixels (px)"$
+									overflow-y:auto;
+                                    $%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$px;$%ENDIF$
+                                    $%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$px;$%ENDIF$
+                                    $%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$px;$%ENDIF$
+                              $%ENDIF$
+                              $%IF ITEM.SectionLayout == "Specify as percentage (%)"$
+									overflow-y :auto;
+                                    $%IF ITEM.MarginWidth != ""$margin-left: $$ITEM.MarginWidth$%;$%ENDIF$
+                                    $%IF ITEM.SectionWidth != ""$width: $$ITEM.SectionWidth$%;$%ENDIF$
+                                    $%IF ITEM.SectionHeight != ""$height: $$ITEM.SectionHeight$%;$%ENDIF$
+                              $%ENDIF$
+							  " 
+							  class="ecAccordion $$ITEM.STYLES().SectionStyle$"
+		>
+
+	<input type="hidden" value="$$CONNECT_ACTIVE_TAB$" id="CAN_$$ITEM.ID()$" name="$$ITEM.COMPONENT_PREFIX()$CONNECT_ACTIVE_TAB" />
+	    $$FORMCONTENT$
+
+</div>
+
+$%IF PRESENTATIONTYPE.LAYOUTCONTROL == "HTML Tables"$</td></tr>$%ENDIF$
+
+<script type="text/javascript">
+	addWidget("ACCORDION_CONTAINER$$ITEM.ID()$", "$$!NAMESPACE$", "$$ITEM.ID()$");
+
+    function getWidgetActiveTab(p_startingTab){
+        try{
+            var accordionSectionId = $(p_startingTab).closest(".ecAccordion").attr("id");
+            return $("#CAN_" + accordionSectionId)[0];
+        } catch(e) {
+            throw new Error("Error in getWidgetActiveTab("+p_startingTab+") cause: " + e.message);
+        }     
+    }
+
+    function beforeChangeTabACCORDION_CONTAINER$$ITEM.ID()$(ns, p_el) {
+        try{
+            var tabPaneName = buildCompID(ns, "Pane", p_el); 
+            if (getTriggeredReason() != AJAX_RESPONSE_TRIGGER)
+                setFocusToFirst(ns, null, tabPaneName);
+        } catch(e) {
+            throw new Error("Error in beforeChangeTabACCORDION_CONTAINER$$ITEM.ID()$("+ns+", "+p_el+") cause: " + e.message);
+        }
+        return false;
+    }
+
+	function afterShowTabACCORDION_CONTAINER$$ITEM.ID()$(p_namespace, tabPane){
+	    try{
+		    while (tabPane && ( tabPane.id == null || stripPrefix(p_namespace, tabPane.id).indexOf("Pane") != 0 ) ) {
+			    tabPane = tabPane.parentNode;
+		    }
+		    if (tabPane && tabPane.id) {
+			    var accordionSection = $(tabPane).closest(".ui-accordion")[0];/*.parentNode.parentNode;*/
+			    /*is tab part of current accordion? if not, ignore it.*/
+			    if (accordionSection.id == "$$ITEM.ID()$") {
+				    var accordIndex = $(tabPane.parentNode).index();
+				    $("#$$ITEM.ID()$").accordion("activate", accordIndex);
+			    }
+		    }
+		} catch(e) {
+            throw new Error("Error in afterChangeTabACCORDION_CONTAINER$$ITEM.ID()$("+p_namespace+", "+tabPane+") cause: " + e.message);
+        }
+	}
+
+$(function() {
+  try{
+    $("#$$ITEM.ID()$").addClass("ecAccordion");
+	var currentSelTab = "$$CONNECT_ACTIVE_TAB$";
+	var selTabs = currentSelTab.split("|");
+	var currentAccords = $("#$$ITEM.ID()$").find(".accordionHeader:first").parent().nextAll().addBack().find(".accordionHeader:first");
+	var currentAccordsSelector = "";
+    var index = 0;
+
+	for (var i = 0; i < currentAccords.length; i++) {
+		var accordId = currentAccords[i].id;
+		if(currentAccordsSelector.length > 0){
+			currentAccordsSelector += ",";
+		}
+		currentAccordsSelector = currentAccordsSelector + "#" + accordId;
+		for (var j = 0; j < selTabs.length; j++) {
+			if (accordId == selTabs[j]) {
+				index = i;
+				break;
+			}
+		}
+	}
+	$("#$$ITEM.ID()$").accordion({ 
+					header: currentAccordsSelector,
+					collapsible: true,
+					autoHeight: false,
+					animated: $%IF ITEM.SLIDE_EFFECT == "Y"$true$%ELSE$false$%ENDIF$,
+					$%IF ITEM.MAINTAIN_STATE == "Y"$
+						active: index,
+                    $%ENDIF$
+                    change: function(event, ui) {
+                            $%IF ITEM.MAINTAIN_STATE == "Y"$
+                                $("#CAN_$$ITEM.ID()$").val(ui.newHeader.attr('id'));
+                                $%IF ITEM.CHILD[0].TYPE() == "FormTable"$
+                                	var tabRow = ui.newHeader.parent()[0] ? ui.newHeader.parent()[0] : ui.oldContent.parent()[0];
+                                	var rowNum = getRowPart(tabRow.id);
+                                	rowClicked(tabRow, rowNum, '$$ITEM.CHILD[0].DATAITEM()$', '$$!NAMESPACE$');
+                            	$%ENDIF$
+                            $%ENDIF$
+                            
+                            setFocusToFirst("$$!NAMESPACE$", null, ui.newContent.attr('id'));
+                        }
+				    });
+  } catch(e) {
+      throw new Error("Error in ACCORDION_CONTAINER#$$ITEM.ID()$ constructor cause: " + e.message);
+  }
+
+});				 
+</script>

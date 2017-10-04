@@ -1,0 +1,11 @@
+<!-- $Revision: 1.8 $ -->
+<div id="Wrapper_$$ITEM.ID()$" $%IF ITEM.IS_ITEM_HIDDEN() == "true"$style="display: none"$%ENDIF$ >
+	<h3 id="$$ITEM.ID()$" $%IF ITEM.HintText != ""$title="$$ITEM.HintText$"$%ENDIF$ class="tetris_tabHeader accordionHeader"><a href="#">$$ITEM.TabName$</a></h3>
+	<div id="Pane$$ITEM.ID()$" style="
+			$%IF ITEM.SectionLayout != "Auto"$margin-left: $$ITEM.MarginWidth$px;height: $$ITEM.SectionHeight$px; width: $$ITEM.SectionWidth$px;$%ENDIF$
+			$$ITEM.INLINE_STYLES().SectionStyle$" 
+			$%IF ITEM.STYLES().SectionStyle != ""$class="$$ITEM.STYLES().SectionStyle$"$%ENDIF$
+			>
+			$$FORMCONTENT$
+	</div>	
+</div>
