@@ -148,7 +148,10 @@
                     })
                 }
                 placeDistanceList.sort(function (a, b) {
-                    return a.distance.distance.value > b.distance.distance.value ? 1 : -1
+
+                    if(a.distance.status !== "ZERO_RESULTS" && b.distance.status !== "ZERO_RESULTS" ){
+                        return a.distance.distance.value > b.distance.distance.value ? 1 : -1
+                    }
                 })
                 successCalback(placeDistanceList)
             });
