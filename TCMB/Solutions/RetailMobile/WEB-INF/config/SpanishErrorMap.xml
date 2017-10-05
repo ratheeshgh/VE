@@ -2,9 +2,9 @@
     <CriticalError>No se encontró el error</CriticalError>
     <MyCreditCardPaymentsVNZ>
         <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>110</errorCode>
+            <errorDescription>El monto de pago no puede superar el límite de su Tarjeta verifique su Pago Total Saldo Actual</errorDescription>
+            <critical>N</critical>
         </error>
         <error>    
             <errorCode></errorCode>
