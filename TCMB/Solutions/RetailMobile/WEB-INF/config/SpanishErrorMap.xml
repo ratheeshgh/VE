@@ -3,7 +3,7 @@
     <MyCreditCardPaymentsVNZ>
         <error>    
             <errorCode>110</errorCode>
-            <errorDescription>El monto de pago no puede superar el límite de su Tarjeta verifique su Pago Total Saldo Actual</errorDescription>
+            <errorDescription>Monto ingresado supera deuda</errorDescription>
             <critical>N</critical>
         </error>
         <error>    
