@@ -2,9 +2,9 @@
     <CriticalError>Error not found</CriticalError>
     <MyCreditCardPaymentsVNZ>
         <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>110</errorCode>
+            <errorDescription>Amount exceed total payment</errorDescription>
+            <critical>N</critical>
         </error>
         <error>    
             <errorCode></errorCode>

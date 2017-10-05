@@ -2,9 +2,9 @@
     <CriticalError>No se encontró el error</CriticalError>
     <MyCreditCardPaymentsVNZ>
         <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>110</errorCode>
+            <errorDescription>Monto ingresado supera deuda</errorDescription>
+            <critical>N</critical>
         </error>
         <error>    
             <errorCode></errorCode>
