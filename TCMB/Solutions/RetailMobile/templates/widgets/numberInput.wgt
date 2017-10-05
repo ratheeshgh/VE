@@ -131,15 +131,6 @@ $(function() {
                 }
             $%ENDIF$
         })
-    $%IF PHASE == 'PaymentService'$
-     $%IF ("##PaymentServices[1].ReviewPaymentService[1].ServiceType#") == 'cantv'$
-        console.log("ServiceType igual a cantv y CantvAmount igual a Other")
-        $%IF ("##WorkingElements[1].IsReloadPage#") != '1'$
-            console.log("ServiceName distinto de 1, va a recargar")
-            $%SET WorkingElements[1].IsReloadPage = 1$ $%ENDSET$
-            location.reload();
-        $%ENDIF$
-     $%ENDIF$
-    $%ENDIF$
+        
     })
 </script>
