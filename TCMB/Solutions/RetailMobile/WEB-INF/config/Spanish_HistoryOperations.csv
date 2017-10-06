@@ -4,7 +4,7 @@ TO.OTP,Lista de Tarjetas de Crédito,
 TO.DCP,Detalles de Cuentas,
 TO.DT,Detalles de Tarjeta de Crédito,
 TO.MCP,Transacciones de Cuentas,
-TO.MTP,Transaccioes de Tarjetas de Créditos,
+TO.MTP,Transacciones de Tarjetas de Créditos,
 TO.CS,Búsqueda de Servicio,
 TO.CEDC,Búsqueda de Servicio Edt,
 TO.CCANTV,Búsqueda de Servicio CanTv,
@@ -12,13 +12,13 @@ TO.CMOVILNET,Búsqueda de Servicio Movilnet,
 TO.CMOVISTAR,Búsqueda de Servicio Movistar,
 TO.CD,Búsqueda de Directorio,
 TO.PS,Pagar un Servicio,Txn
-TO.TMTB,Transferencia entre mis cuentas,Txn
-TO.TTB,Transferencia a otra persona,Txn
-TO.TTOB,Transferencia a otro banco,Txn
-TO.TMTOB,Transferencia a mis cuentas en otros bancos,Txn
-TO.PTMTB,Pago de tarjetas de crédito en Banesco,Txn
-TO.PTMTOB,Mis tarjestas de crédito en otros bancos,Txn
+TO.TMTB,Transferencias entre mis cuentas,Txn
+TO.TTB,Transferencias a terceros Banesco,Txn
+TO.TTOB,Transferencias a terceros de otro banco,Txn
+TO.TMTOB,Transferencias a mis cuentas en otro banco,Txn
+TO.PTMTB,Mis tarjetas de crédito en Banesco,Txn
+TO.PTMTOB,Mis tarjetas de crédito en otro banco,Txn
 TO.PTTB,Pago a otras tarjetas de crédito en Banesco,Txn 
-TO.PTTOB,Pago a otras tarjetas de crédito en otros bancos,Txn
+TO.PTTOB,Pago a otras tarjetas de crédito en otro banco,Txn
 TO.CON,Inicio de sesión,
 TO.DES,Cierre de sesión,
