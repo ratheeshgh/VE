@@ -7,63 +7,33 @@
             <critical>N</critical>
         </error>
         <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>542</errorCode>
+            <errorDescription>Error 542</errorDescription>
+            <critical>N</critical>
         </error>
         <error>
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>007</errorCode>
+            <errorDescription>Invalid account</errorDescription>
+            <critical>N</critical>
         </error>
     </MyCreditCardPaymentsVNZ>
     <PaymentServices>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
         <error>
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>007</errorCode>
+            <errorDescription>Invalid account</errorDescription>
+            <critical>N</critical>
         </error>
         <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>0003</errorCode>
+            <errorDescription>Error creating payment</errorDescription>
+            <critical>N</critical>
         </error>
     </PaymentServices>
     <TranferToMyAccountsVNZ>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
         <error>
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
-        </error>
-        <error>    
-            <errorCode></errorCode>
-            <errorDescription></errorDescription>
-            <critical></critical>
+            <errorCode>007</errorCode>
+            <errorDescription>Invalid account</errorDescription>
+            <critical>N</critical>
         </error>
     </TranferToMyAccountsVNZ>
 </ErrorMap>
