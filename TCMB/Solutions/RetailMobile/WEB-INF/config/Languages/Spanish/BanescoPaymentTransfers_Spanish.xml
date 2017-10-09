@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="es" updated="29/09/17 17:52" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB" project="BanescoPaymentTransfers" sourcelanguage="en-GB" targetlanguage="es" updated="09/10/17 15:56" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="FrequentPayments" eid="3D97A91B1EE5407B177281" type="Process">
@@ -5471,12 +5471,12 @@
             </ProcessEntityAttr>
           </ProcessEntity>
         </Container>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="We are sorry. The operation could not be performed. Please try again later." eid="BE686B6DE447ACA5254738" path="MyCreditCardPaymentsVNZ.ConfirmPayment.We are sorry. The operation could not be performed. Please try again later." type="Heading">
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" eid="BE686B6DE447ACA5254738" path="MyCreditCardPaymentsVNZ.ConfirmPayment.$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" type="Heading">
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="BE686B6DE447ACA5254739:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="BE686B6DE447ACA5254738:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="BE686B6DE447ACA5254739:TCMB" mappingType="OVERRIDE" original="We are sorry. The operation could not be performed. Please try again later." specifiedBy="BE686B6DE447ACA5254738:Heading" state="NEEDS_REVIEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="BE686B6DE447ACA5254739:TCMB" mappingType="OVERRIDE" original="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" specifiedBy="BE686B6DE447ACA5254738:Heading" state="NEEDS_REVIEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="BE686B6DE447ACA5254739:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="BE686B6DE447ACA5254738:Heading" state="NEW" status="OKAY" value=""/>
@@ -7103,12 +7103,12 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A51B8A22BB29C5E1219363:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="A51B8A22BB29C5E1219362:Heading" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
           </ProcessEntity>
-          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="We are sorry. The operation could not be performed. Please try again later." eid="A51B8A22BB29C5E1219437" path="PaymentServices.ConfirmPayment.ErrorMessages.We are sorry. The operation could not be performed. Please try again later." type="Heading">
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" eid="A51B8A22BB29C5E1219437" path="PaymentServices.ConfirmPayment.ErrorMessages.$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" type="Heading">
             <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A51B8A22BB29C5E1219438:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="A51B8A22BB29C5E1219437:Heading" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A51B8A22BB29C5E1219438:TCMB" mappingType="OVERRIDE" original="We are sorry. The operation could not be performed. Please try again later." specifiedBy="A51B8A22BB29C5E1219437:Heading" state="NEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A51B8A22BB29C5E1219438:TCMB" mappingType="OVERRIDE" original="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" specifiedBy="A51B8A22BB29C5E1219437:Heading" state="NEEDS_REVIEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="A51B8A22BB29C5E1219438:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="A51B8A22BB29C5E1219437:Heading" state="NEW" status="OKAY" value=""/>
@@ -10162,12 +10162,12 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="810B0B26FE35C1A9204907:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="810B0B26FE35C1A9204906:Question" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
           </ProcessEntity>
-          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="We are sorry. The operation could not be performed. Please try again later." eid="F05FFAEE93D95C03382742" path="TransferToMyAccountsVNZ.ConfirmTransfer.ErrorItemGroup.We are sorry. The operation could not be performed. Please try again later." type="Heading">
+          <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" eid="F05FFAEE93D95C03382742" path="TransferToMyAccountsVNZ.ConfirmTransfer.ErrorItemGroup.$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" type="Heading">
             <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="F05FFAEE93D95C03382743:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="F05FFAEE93D95C03382742:Heading" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="DisplayText" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="F05FFAEE93D95C03382743:TCMB" mappingType="OVERRIDE" original="We are sorry. The operation could not be performed. Please try again later." specifiedBy="F05FFAEE93D95C03382742:Heading" state="NEEDS_REVIEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="F05FFAEE93D95C03382743:TCMB" mappingType="OVERRIDE" original="$$WorkingElements[1].GetDescription[1].out[1].errorDescription$" specifiedBy="F05FFAEE93D95C03382742:Heading" state="NEEDS_REVIEW" status="OKAY" value="Lo sentimos. No se pudo realizar la operación. Por favor, intenta más tarde."/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="F05FFAEE93D95C03382743:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="F05FFAEE93D95C03382742:Heading" state="NEW" status="OKAY" value=""/>
@@ -12587,7 +12587,10 @@
             <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationItemGroup" displayString="AmountFields" eid="2DC60D91676A186A369808" type="Rich Presentation Item Group">
               <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="6D1177F5BAC354D8183560" type="Rich Presentation Section">
                 <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="A07493E4AD189FCE290415" path="TCMB.PaymentServices.PaymentService.Section.AmountFields.Section.Text" type="Rich Presentation Text">
-                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;&#10;$(&quot;.hideRadioButtons&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;//Si el valor se agrupa con . para los miles y , para los decimales se formatea para que solo use . para decimales&#10;       if(el.value.split('*')[1].split('.').join('').split(',').join('.') &amp;&amp; Number(el.value.split('*')[1].split('.').join('').split(',').join('.')) &lt;= 0){&#10;          el.disabled = true;&#10;          $(el).addClass(&quot;disabled&quot;);&#10;      }&#10;&#9;&#10;})&#10;&#10;}&#10;postProcessResponse();&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="OKAY" value=""/>
+                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;function postProcessResponse() {&#10;&#10;$(&quot;.hideRadioButtons&quot;).find(&quot;input[type='radio']&quot;).each(function(a,el){&#10;&#10;&#10;if (el.value != 'Other') {&#10;&#10;//Si el valor se agrupa con . para los miles y , para los decimales se formatea para que solo use . para decimales&#10;       if(el.value.split('*')[1].split('.').join('').split(',').join('.') &amp;&amp; Number(el.value.split('*')[1].split('.').join('').split(',').join('.')) &lt;= 0){&#10;          el.disabled = true;&#10;          $(el).addClass(&quot;disabled&quot;);&#10;      }&#10;&#10;}&#10;&#10;})&#10;&#10;}&#10;postProcessResponse();&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="OKAY" value=""/>
+                </PresentationObject>
+                <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="C836420AD2ECFE0A741496" path="TCMB.PaymentServices.PaymentService.Section.AmountFields.Section.Text" type="Rich Presentation Text">
+                  <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;$%IF PHASE == 'PaymentService'$&#10;     $%IF (&quot;##PaymentServices[1].ReviewPaymentService[1].ServiceType#&quot;) == 'cantv'$&#10;        console.log(&quot;ServiceType igual a cantv y CantvAmount igual a Other&quot;)&#10;        $%IF (&quot;##WorkingElements[1].IsReloadPage#&quot;) != '1'$&#10;            console.log(&quot;ServiceName distinto de 1, va a recargar&quot;)&#10;            $%SET WorkingElements[1].IsReloadPage = 1$ $%ENDSET$&#10;            location.reload();&#10;        $%ENDIF$&#10;     $%ENDIF$&#10;    $%ENDIF$&#10;&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
                 </PresentationObject>
               </Container>
             </Container>
@@ -12827,6 +12830,130 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="F5F0132FF6E75329401841" type="Button">
           <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="40F2D71F1866BB90607524" leafType="link" path="PaymentServices.ConfirmPayment.Continue.End Component" type="End Component Rule"/>
         </Container>
+        <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Confirm" eid="F5F0132FF6E75329401846" type="Button">
+          <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - Confirm Transactions" eid="4705BF2CA64A4413443029" type="Container Rule">
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedAccounts[C]" eid="15192A04C5BD80482104831" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0883067" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186002" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == '0000'" eid="1F25190E420F5AD4361361" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="1F25190E420F5AD4289305" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803453" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803455" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - Selected Account Details.Evaluation - Is SessionActive.Evaluation - check If success.Evaluation - errorCode is timeout.Call Component.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedCreditCards[C]" eid="4705BF2CA64A4413449079" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916572" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186417" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0916773" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="1F25190E420F5AD4361660" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803472" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803474" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - Selected  Credit Cards.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedBanescoThirdPartyAccounts[C]" eid="4705BF2CA64A4413443010" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916622" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186323" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0916851" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0916853" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803493" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803495" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedBanescoThirdPartyAccount.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedBanescoThirdPartyCards[C]" eid="4705BF2CA64A4413450596" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916700" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186471" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0916954" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0916956" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803515" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803517" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedBanescoThirdPartyCards.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedOtherBankAccounts[C]" eid="4705BF2CA64A4413444539" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916709" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186434" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0917028" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0917030" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803538" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803540" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedOtherBankAccounts.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedOtherBankCards[C]" eid="4705BF2CA64A4413450614" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916718" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186494" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0917102" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0917104" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803560" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803562" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedOtherBankCards.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedOtherThirdPartyAccounts[C]" eid="4705BF2CA64A4413444557" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916727" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186449" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Accounts[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0917176" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0917178" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803584" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803586" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedOtherThirdPartyAccount.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+            <Container class="com.acquire.intelligentforms.rules.RepeatRule" displayString="Repeat over Data Group: FrequentPayments[1].FrequentPaymentReview[1].SelectedOtherThirdPartyCards[C]" eid="4705BF2CA64A4413450632" type="Repeat Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Flags[1].ServiceSessionTimeout$ != 'Y'" eid="6903CB57371852D0916736" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == ''" eid="EC7D6D50ECC168DB186509" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].FrequentPayments[1].Cards[1].Entity[1].Error[1].Error_code$ == '0000'" eid="6903CB57371852D0917250" type="Evaluation Rule">
+                    <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="6903CB57371852D0917252" type="Call Component Rule">
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D803608" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D803610" path="FrequentPayments.FrequentPaymentReview.Confirm.Container - Confirm Transactions.Repeat Over Data Group - SelectedOtherThirdPartyCards.Evaluation - Is SessionActive.Evaluation - Check If success.Evaluation - errorCode is timeout.Call Component - Copy.Evaluation - Critical Y.End Component" type="End Component Rule">
+                          <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                      </Container>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="FrequentPaymentConfirm" eid="40F2D71F1866BB901193102" type="Phase">
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="ACEPTAR" eid="F5F0132FF6E75329456181" type="Button">
@@ -12902,6 +13029,42 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="3D97A91B1EE5407B672267" type="Button">
           <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="40F2D71F1866BB90607524" leafType="link" path="PaymentServices.ConfirmPayment.Continue.End Component" type="End Component Rule"/>
         </Container>
+        <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Confirm" eid="3D97A91B1EE5407B672272" type="Button">
+          <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - Commit Credit Card Transaction" eid="6693695F4107E75B157570" type="Container Rule">
+            <Note author="EVA-Note"><![CDATA[<html>
+  <head>
+    
+  </head>
+
+  <body>
+    - TO.PTMTB Pago TDC Mismo Titular en Banesco    
+<br />- TO.PTTOB Pago TDC a Terceros en otros Bancos    
+<br />- TO.PTMTOB Pago TDC Mismo Titular en otro Banco    
+<br />- TO.PTTB Pago TDC a Terceros en Banesco    
+<br />
+  </body>
+
+</html>
+
+]]></Note>
+            <Container class="com.banesco.custom.integration.rules.InvokeBanescoAPIDomainService" displayString="Invoke Banesco APi-Domain REST Service - transaction_credit_card_create" eid="6693695F4107E75B158971" type="Invoke Banesco APi-Domain REST Service">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].CreditTransactions[1].Entity[1].Error[1].Error_code$ == '0000'" eid="541BA0728F7214C8382719" type="Evaluation Rule">
+                <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="541BA0728F7214C8382733" path="MyCreditCardPaymentsVNZ.ReviewPayment.Confirm.Container - Commit Credit Card Transaction.Invoke Banesco APi-Domain REST Service - transaction_credit_card_create.Evaluation timeout code.End Component" type="End Component Rule">
+                  <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                </Rule>
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].CreditTransactions[1].Entity[1].Error[1].Error_code$ == ''" eid="6693695F4107E75B158972" type="Evaluation Rule">
+                  <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="1A2BE52B85E342D2557474" type="Call Component Rule">
+                    <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="1A2BE52B85E342D2586727" type="Evaluation Rule">
+                      <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="1A2BE52B85E342D2616219" path="MyCreditCardPaymentsVNZ.ReviewPayment.Confirm.Container - Commit Credit Card Transaction.Invoke Banesco APi-Domain REST Service - transaction_credit_card_create.Evaluation timeout code.Evaluation - Check for error code.Call Component.Evaluation - Critical Y.End Component" type="End Component Rule">
+                        <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                      </Rule>
+                    </Container>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ConfirmPayment" eid="3D97A91B1EE5407B673391" type="Phase">
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="ACCEPT" eid="3D97A91B1EE5407B673469" type="Button">
@@ -12913,19 +13076,19 @@
           <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf value" eid="45C928A6EBA4C23E302380" type="Container Rule">
             <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf" eid="45C928A6EBA4C23E302383" type="Container Rule">
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName1" eid="45C928A6EBA4C23E302384" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Container - pdf.Set Value - itemName1" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Reference No." state="NEW" status="NEW" value="N° Referencia"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Reference No." state="NEW" status="OKAY" value="N° Referencia"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName2" eid="45C928A6EBA4C23E302386" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Container - pdf.Set Value - itemName2" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit Account" state="NEW" status="NEW" value="Desde mi cuenta"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Debit Account" state="NEW" status="OKAY" value="Desde mi cuenta"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName3" eid="45C928A6EBA4C23E302390" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Container - pdf.Set Value - itemName3" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Credit Card Number" state="NEW" status="NEW" value="Número de tarjeta"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Credit Card Number" state="NEW" status="OKAY" value="Número de tarjeta"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName4" eid="45C928A6EBA4C23E302392" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Container - pdf.Set Value - itemName4" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payment Amount" state="NEW" status="NEW" value="Monto"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Payment Amount" state="NEW" status="OKAY" value="Monto"/>
               </Rule>
               <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName5" eid="45C928A6EBA4C23E302394" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Container - pdf.Set Value - itemName5" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Description" state="NEW" status="NEW" value="Descripción"/>
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Description" state="NEW" status="OKAY" value="Descripción"/>
               </Rule>
             </Container>
             <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Footer Label" eid="12D2C5F6BEAFDFF6353979" path="MyCreditCardPaymentsVNZ.ConfirmPayment.Save As PDF.Container - pdf value.Set Value - Footer Label" type="Set Value Rule">
@@ -12979,6 +13142,19 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="40F2D71F1866BB90599166" type="Button">
           <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="40F2D71F1866BB90607524" leafType="link" path="PaymentServices.ConfirmPayment.Continue.End Component" type="End Component Rule"/>
         </Container>
+        <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Confirm" eid="40F2D71F1866BB90599171" type="Button">
+          <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].ServicePayments[1].Entity[1].Error[1].Error_code$ == ''" eid="AEAC3AD1D00F569E157003" type="Evaluation Rule">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].ServicePayments[1].Entity[1].Error[1].Error_code$ == '0000'" eid="7A8A7872A1A6C547384107" type="Evaluation Rule">
+              <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="1A2BE52B85E342D2586755" type="Call Component Rule">
+                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="1A2BE52B85E342D2616216" type="Evaluation Rule">
+                  <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="1A2BE52B85E342D2616224" path="PaymentServices.ReviewPaymentService.Confirm.Evaluation - Error code.Evaluation - errorCode TIMEOUT.Call Component.Evaluation - Critical.End Component" type="End Component Rule">
+                    <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                  </Rule>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ConfirmPayment" eid="40F2D71F1866BB90600331" type="Phase">
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Continue" eid="40F2D71F1866BB90605204" type="Button">
@@ -13029,6 +13205,21 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="048B1AB1A72039E4178858" type="Button">
           <Leaf class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="40F2D71F1866BB90607524" leafType="link" path="PaymentServices.ConfirmPayment.Continue.End Component" type="End Component Rule"/>
         </Container>
+        <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Confirm" eid="048B1AB1A72039E4178859" type="Button">
+          <Container class="com.banesco.custom.integration.rules.InvokeBanescoAPIDomainService" displayString="Invoke Banesco APi-Domain REST Service -  transaction account create" eid="5169993F56582375453383" type="Invoke Banesco APi-Domain REST Service">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].TransferToMyAccounts[1].Entity[1].Error[1].Error_code$ == ''" eid="1A2BE52B85E342D2201174" type="Evaluation Rule">
+              <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Result[1].TransferToMyAccounts[1].Entity[1].Error[1].Error_code$ == '0000'" eid="1A2BE52B85E342D2201464" type="Evaluation Rule">
+                <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component GetDescription" eid="081B48F991A30E7D410542" type="Call Component Rule">
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].GetDescription[1].out[1].critical$ == 'Y'" eid="081B48F991A30E7D410574" type="Evaluation Rule">
+                    <Rule class="com.acquire.intelligentforms.rules.EndComponentRule" displayString="End Component" eid="081B48F991A30E7D410576" path="TransferToMyAccountsVNZ.ReviewTransfer.Confirm.Invoke Banesco APi-Domain REST Service -  transaction account create.Evaluation - Check If Succes.Evaluation - errorCode TIMEOUT.Call Component.Evaluation - Critical.End Component" type="End Component Rule">
+                      <Attribute mappingType="OVERRIDE" name="ErrorMessage" original="" state="NEW" status="OKAY" value=""/>
+                    </Rule>
+                  </Container>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
       </Container>
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="ConfirmTransfer" eid="048B1AB1A72039E4178861" type="Phase">
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Accept" eid="048B1AB1A72039E4178868" type="Button">
@@ -13039,16 +13230,19 @@
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Save as PDF" eid="048B1AB1A72039E4178871" type="Button">
           <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf value" eid="C83D5F69DFC88666827399" type="Container Rule">
             <Container class="com.acquire.intelligentforms.rules.ContainerRule" displayString="Container - pdf" eid="C83D5F69DFC88666827402" type="Container Rule">
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName1" eid="C83D5F69DFC88666827405" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName1" type="Set Value Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName1" eid="F3811786913A3BF0244759" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName1" type="Set Value Rule">
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Reference No" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="N° Referencia"/>
+              </Rule>
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName2" eid="C83D5F69DFC88666827405" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName2" type="Set Value Rule">
                 <Attribute mappingType="OVERRIDE" name="FromMessage" original="From Account" state="NEW" status="OKAY" value="Desde mi cuenta"/>
               </Rule>
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName2" eid="C83D5F69DFC88666827407" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName2" type="Set Value Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName3" eid="C83D5F69DFC88666827407" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName3" type="Set Value Rule">
                 <Attribute mappingType="OVERRIDE" name="FromMessage" original="To Account Number" state="NEW" status="OKAY" value="A la cuenta"/>
               </Rule>
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName3" eid="C83D5F69DFC88666827409" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName3" type="Set Value Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName4" eid="C83D5F69DFC88666827409" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName4" type="Set Value Rule">
                 <Attribute mappingType="OVERRIDE" name="FromMessage" original="Amount" state="NEW" status="OKAY" value="Monto"/>
               </Rule>
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName4" eid="C83D5F69DFC88666827411" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName4" type="Set Value Rule">
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - itemName5" eid="C83D5F69DFC88666827411" path="TransferToMyAccountsVNZ.ConfirmTransfer.Save as PDF.Container - pdf value.Container - pdf.Set Value - itemName5" type="Set Value Rule">
                 <Attribute mappingType="OVERRIDE" name="FromMessage" original="Description" state="NEW" status="OKAY" value="Descripción"/>
               </Rule>
             </Container>
@@ -13202,130 +13396,130 @@
     </List>
   </Lists>
   <HybridMessages>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="ok" eid="12D2C5F6BEAFDFF6352953" path="ok" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="ok" eid="2F63E31D1CCB2980187306" path="ok" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="OK" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="not_now" eid="12D2C5F6BEAFDFF6352954" path="not_now" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="not_now" eid="2F63E31D1CCB2980187307" path="not_now" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Not Now" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="user_settings" eid="12D2C5F6BEAFDFF6352955" path="user_settings" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="user_settings" eid="2F63E31D1CCB2980187308" path="user_settings" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="check_updates" eid="12D2C5F6BEAFDFF6352956" path="check_updates" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="check_updates" eid="2F63E31D1CCB2980187309" path="check_updates" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Check for updates" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="developer_settings" eid="12D2C5F6BEAFDFF6352957" path="developer_settings" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="developer_settings" eid="2F63E31D1CCB2980187310" path="developer_settings" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Developer settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="title_activity_app_pereferences" eid="12D2C5F6BEAFDFF6352958" path="title_activity_app_pereferences" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="title_activity_app_pereferences" eid="2F63E31D1CCB2980187311" path="title_activity_app_pereferences" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed_title" eid="12D2C5F6BEAFDFF6352959" path="internet_connection_needed_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed_title" eid="2F63E31D1CCB2980187312" path="internet_connection_needed_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="No Connectivity" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed" eid="12D2C5F6BEAFDFF6352960" path="internet_connection_needed" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed" eid="2F63E31D1CCB2980187313" path="internet_connection_needed" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Please verify you have cellular network or WiFi connection" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_title" eid="12D2C5F6BEAFDFF6352961" path="error_accessing_server_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_title" eid="2F63E31D1CCB2980187314" path="error_accessing_server_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error communicating with the server" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_description" eid="12D2C5F6BEAFDFF6352962" path="error_accessing_server_description" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_description" eid="2F63E31D1CCB2980187315" path="error_accessing_server_description" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The server cannot be reached" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert" eid="12D2C5F6BEAFDFF6352963" path="invalid_ssl_cert" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert" eid="2F63E31D1CCB2980187316" path="invalid_ssl_cert" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. The server cannot be trusted." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert_development" eid="12D2C5F6BEAFDFF6352964" path="invalid_ssl_cert_development" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert_development" eid="2F63E31D1CCB2980187317" path="invalid_ssl_cert_development" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. This is allowed only in development mode." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_dialog_title" eid="12D2C5F6BEAFDFF6352965" path="lang_preference_dialog_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_dialog_title" eid="2F63E31D1CCB2980187318" path="lang_preference_dialog_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Preferred language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_title" eid="12D2C5F6BEAFDFF6352966" path="lang_preference_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_title" eid="2F63E31D1CCB2980187319" path="lang_preference_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Language settings" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_summary" eid="12D2C5F6BEAFDFF6352967" path="lang_preference_summary" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_summary" eid="2F63E31D1CCB2980187320" path="lang_preference_summary" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Select your preferred language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="change_confirm_reload" eid="12D2C5F6BEAFDFF6352968" path="change_confirm_reload" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="change_confirm_reload" eid="2F63E31D1CCB2980187321" path="change_confirm_reload" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="For applying your settings, the application has to be reloaded. Reload the application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="settings_update_title" eid="12D2C5F6BEAFDFF6352969" path="settings_update_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="settings_update_title" eid="2F63E31D1CCB2980187322" path="settings_update_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings update" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_download_updates_now" eid="12D2C5F6BEAFDFF6352970" path="update_download_updates_now" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_download_updates_now" eid="2F63E31D1CCB2980187323" path="update_download_updates_now" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available. Download updates now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_uptodate" eid="12D2C5F6BEAFDFF6352971" path="update_result_uptodate" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_uptodate" eid="2F63E31D1CCB2980187324" path="update_result_uptodate" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The application is uptodate." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_error" eid="12D2C5F6BEAFDFF6352972" path="update_result_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_error" eid="2F63E31D1CCB2980187325" path="update_result_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The update site rejected the query." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_processing_error" eid="12D2C5F6BEAFDFF6352973" path="update_result_processing_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_processing_error" eid="2F63E31D1CCB2980187326" path="update_result_processing_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error encountered during update." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_unknown_error" eid="12D2C5F6BEAFDFF6352974" path="update_result_unknown_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_unknown_error" eid="2F63E31D1CCB2980187327" path="update_result_unknown_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Error reading the update status from the update site." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_title" eid="12D2C5F6BEAFDFF6352975" path="downloading_file_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_title" eid="2F63E31D1CCB2980187328" path="downloading_file_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading updates..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_starting" eid="12D2C5F6BEAFDFF6352976" path="downloading_file_starting" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_starting" eid="2F63E31D1CCB2980187329" path="downloading_file_starting" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Starting..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_progress" eid="12D2C5F6BEAFDFF6352977" path="downloading_file_progress" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_progress" eid="2F63E31D1CCB2980187330" path="downloading_file_progress" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading file  %1$d of %2$d." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_error" eid="12D2C5F6BEAFDFF6352978" path="downloading_updates_error" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_error" eid="2F63E31D1CCB2980187331" path="downloading_updates_error" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Failed to download the updates." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_success" eid="12D2C5F6BEAFDFF6352979" path="downloading_updates_success" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_success" eid="2F63E31D1CCB2980187332" path="downloading_updates_success" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="The updates were downloaded successfully." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_googleplay_confirmation" eid="12D2C5F6BEAFDFF6352980" path="update_through_googleplay_confirmation" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_googleplay_confirmation" eid="2F63E31D1CCB2980187333" path="update_through_googleplay_confirmation" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through google play. Download the updated application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_windows_store_confirmation" eid="12D2C5F6BEAFDFF6352981" path="update_through_windows_store_confirmation" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_windows_store_confirmation" eid="2F63E31D1CCB2980187334" path="update_through_windows_store_confirmation" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Windows Phone Store. Download the updated application now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="store_updatetitle" eid="12D2C5F6BEAFDFF6352982" path="store_updatetitle" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="store_updatetitle" eid="2F63E31D1CCB2980187335" path="store_updatetitle" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="AppStore update" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_major_update" eid="12D2C5F6BEAFDFF6352983" path="update_result_major_update" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_major_update" eid="2F63E31D1CCB2980187336" path="update_result_major_update" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available for this application. Connect to iTunes now?" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="alert_title" eid="12D2C5F6BEAFDFF6352984" path="alert_title" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="alert_title" eid="2F63E31D1CCB2980187337" path="alert_title" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Alert" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="loading_wait" eid="12D2C5F6BEAFDFF6352985" path="loading_wait" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="loading_wait" eid="2F63E31D1CCB2980187338" path="loading_wait" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Loading, please wait..." state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="save" eid="12D2C5F6BEAFDFF6352986" path="save" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="save" eid="2F63E31D1CCB2980187339" path="save" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Save" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="use_device_language" eid="12D2C5F6BEAFDFF6352987" path="use_device_language" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="use_device_language" eid="2F63E31D1CCB2980187340" path="use_device_language" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Use device language" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="all_pages" eid="12D2C5F6BEAFDFF6352988" path="all_pages" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="all_pages" eid="2F63E31D1CCB2980187341" path="all_pages" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="All pages" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="filesave_success" eid="12D2C5F6BEAFDFF6352989" path="filesave_success" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="filesave_success" eid="2F63E31D1CCB2980187342" path="filesave_success" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="File saved successfully" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="one_page" eid="12D2C5F6BEAFDFF6352990" path="one_page" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="one_page" eid="2F63E31D1CCB2980187343" path="one_page" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="One page" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="pdf_documents" eid="12D2C5F6BEAFDFF6352991" path="pdf_documents" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="pdf_documents" eid="2F63E31D1CCB2980187344" path="pdf_documents" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="PDF Documents" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="print" eid="12D2C5F6BEAFDFF6352992" path="print" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="print" eid="2F63E31D1CCB2980187345" path="print" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Print" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="12D2C5F6BEAFDFF6352993" path="reports" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="2F63E31D1CCB2980187346" path="reports" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Reports" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="12D2C5F6BEAFDFF6352994" path="app_name" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="2F63E31D1CCB2980187347" path="app_name" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="App name - not used required by Cordova" state="NEW" status="OKAY" value=""/>
     </HybridMessage>
   </HybridMessages>
