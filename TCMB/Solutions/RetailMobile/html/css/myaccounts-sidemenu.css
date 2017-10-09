@@ -118,3 +118,15 @@ border-left:8px #229C7B solid;
 
 	z-index: 1000;
 }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+	
+	#BranchListenerC1__ITM_C8616C4AE9D92B90233890, 
+	#BranchListenerC1__ITM_C8616C4AE9D92B90202333, 
+	#BranchListenerC1__BranchPayments, 
+	#BranchListenerC1__BranchAccounts,
+	#C1__FMT_5D45061DB057816B138550 {
+		padding-left: 18px !important;
+	}
+
+}
