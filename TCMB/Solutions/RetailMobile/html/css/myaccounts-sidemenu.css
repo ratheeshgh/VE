@@ -128,9 +128,7 @@ border-left:8px #229C7B solid;
 		padding-left: 18px !important;
 	} 
 
-	#BranchListenerC1__BranchAccounts.bgActive{
-		padding-left: 12px !important;
-	} 
- 
+	.indicator.icon-arrow.custom { right: 18px;}
+
 }
  
