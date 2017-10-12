@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="11/10/17 16:35" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="12/10/17 11:14" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Login" eid="D3D38B88E2AF0F8418943" type="Process">
@@ -35,6 +35,10 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="InvalidAlphaNumericMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
@@ -1603,7 +1607,7 @@
         </Container>
         <Container class="com.acquire.intelligentforms.entities.FormButton" displayString="Login" eid="63FFE98DDF2539081121725" type="Button">
           <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Login[1].Password$ != ''" eid="4E8EBABD63DCA6C1107589" type="Evaluation Rule">
-            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Login[1].Password.length()$ &gt;= 8  AND $$Login[1].Password.length()$ &lt;= 15" eid="4E8EBABD63DCA6C1107867" type="Evaluation Rule">
+            <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Login[1].Password.length()$ &gt;= 8  " eid="4E8EBABD63DCA6C1107867" type="Evaluation Rule">
               <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$WorkingElements[1].Ouput_UserLoginWithPassword[1].Status$ == '1'  OR $$!4TRESS_SERVICE_STATUS$ == 'N'" eid="63FFE98DDF2539081121782" type="Evaluation Rule">
                 <Container class="com.acquire.intelligentforms.rules.CallComponentRule" displayString="Calling Component TcibLoginDetailss" eid="63FFE98DDF2539081121783" type="Call Component Rule">
                   <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$OverallResult$ == '1'" eid="63FFE98DDF2539081121882" type="Evaluation Rule">
@@ -1651,12 +1655,12 @@
                   </Container>
                 </Container>
               </Container>
-              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value Password Error Msg" eid="4E8EBABD63DCA6C1107952" path="Login.Login.Login.Evaluation empty.Evaluation LENGTH.Set Value Password Error Msg" type="Set Value Rule">
-                <Attribute mappingType="OVERRIDE" name="FromMessage" original="Incorrect login details" state="NEW" status="OKAY" value="Detalles de login incorrectos"/>
+              <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value minlength Password Error Msg" eid="4E8EBABD63DCA6C1107952" path="Login.Login.Login.Evaluation empty.Evaluation LENGTH.Set Value minlength Password Error Msg" type="Set Value Rule">
+                <Attribute mappingType="OVERRIDE" name="FromMessage" original="The minimun length is 8" state="NEEDS_REVIEW" status="OKAY" value="La longitud minima es 8"/>
               </Rule>
             </Container>
             <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value PasswordErrror Msg" eid="4E8EBABD63DCA6C1107950" path="Login.Login.Login.Evaluation empty.Set Value PasswordErrror Msg" type="Set Value Rule">
-              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Please enter your password" state="NEW" status="NEW" value="Por favor ingrese su password"/>
+              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Please enter your password" state="NEW" status="OKAY" value="Por favor ingrese su password"/>
             </Rule>
           </Container>
         </Container>
