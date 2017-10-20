@@ -1971,13 +1971,14 @@ box-shadow: inset 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.2);
 transition: .25s ease-in-out;
 }
 input.toggle[type='checkbox']:checked + label:before {
-width: 50px;
+  width: 50px;
+  background: #1F8C6B;
 }
 
 input.toggle[type='checkbox']:checked + label:after {
-left: 20px;
-box-shadow: inset 0 0 0 1px #007953, 0 2px 4px rgba(0,0,0,.2);
-background: #1F8C6B;
+  left: 20px;
+  /*box-shadow: inset 0 0 0 1px #007953, 0 2px 4px rgba(0,0,0,.2);*/
+  background: rgb(255, 255, 255);
 }
 
 /* MODAL WINDOWS & MODAL BUTTONS*/
