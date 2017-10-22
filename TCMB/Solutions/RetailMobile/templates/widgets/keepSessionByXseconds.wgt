@@ -1,0 +1,6 @@
+
+<script>
+    setInterval(function () {
+        $$ITEM.ONCLICK()$
+    }, $$ITEM.seconds$ * 1000);
+</script>
