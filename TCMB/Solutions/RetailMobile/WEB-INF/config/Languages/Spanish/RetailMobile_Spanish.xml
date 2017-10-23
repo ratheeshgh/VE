@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="11/10/17 16:46" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="17/10/17 13:40" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -1098,20 +1098,20 @@
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="$$!CRITICAL_ERROR_MESSAGE$" eid="1A2BE52B85E342D2411043" path="Common.ErrorPhase.$$!CRITICAL_ERROR_MESSAGE$" type="Heading">
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="DisplayText" original="$$!CRITICAL_ERROR_MESSAGE$" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="OVERRIDE" original="$$!CRITICAL_ERROR_MESSAGE$" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="OVERRIDE" original="$$!CRITICAL_ERROR_MESSAGE$" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="OVERRIDE" original="$$!CRITICAL_ERROR_MESSAGE$" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="OVERRIDE" original="$$!CRITICAL_ERROR_MESSAGE$" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411044:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1A2BE52B85E342D2411046:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1A2BE52B85E342D2411043:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Please try again later." eid="6BC0B802A85BA31276167" path="Common.ErrorPhase.Please try again later." type="Heading">
@@ -6669,13 +6669,13 @@
             <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="1D869B83329174DB218313" path="TCMB.Standalone.PaymentsAndTransfers.Text" type="Rich Presentation Text">
-            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;$%IF PHASE == 'PaymentsAndTransfers'$&#10;  if( $('#C1__sidebar').hasClass('ios') ){&#10;    $('#p1_GRP_A8E3EF07A17F0351181794').css('position','absolute');&#10;  }&#10;$%ENDIF$&#10;&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;$%IF PHASE == 'PaymentsAndTransfers'$&#10;  if( $('#C1__sidebar').hasClass('ios') ){&#10;    $('#p1_GRP_A8E3EF07A17F0351181794').css('position','absolute');&#10;  }&#10;$%ENDIF$&#10;&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="SettingsMenu" eid="C8616C4AE9D92B90168513" type="Rich Presentation Phase">
           <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="C8616C4AE9D92B90168516" type="Rich Presentation Section">
             <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="1D869B83329174DB246257" path="TCMB.Standalone.SettingsMenu.Section.Text" type="Rich Presentation Text">
-              <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;$%IF PHASE == 'SettingsMenu'$&#10; if( $('#C1__sidebar').hasClass('ios') ){&#10;    $('#p1_GRP_C8616C4AE9D92B90168514').css('position','absolute');&#10;  }&#10;$%ENDIF$&#10;&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
+              <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;&#10;$%IF PHASE == 'SettingsMenu'$&#10; if( $('#C1__sidebar').hasClass('ios') ){&#10;    $('#p1_GRP_C8616C4AE9D92B90168514').css('position','absolute');&#10;  }&#10;$%ENDIF$&#10;&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
             </PresentationObject>
           </Container>
         </Container>
