@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="29/08/17 10:42" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="AccountsList,AccountsList-Windows" project="AccountsList" sourcelanguage="en-GB" targetlanguage="es" updated="27/10/17 17:32" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="AccountsList" eid="3447F77EEDC195AE29675" type="Process">
@@ -484,9 +484,9 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246442:AccountsList" mappingType="OVERRIDE" original="See Detail" specifiedBy="D4C8D2A58C91068A246441:Button" state="NEW" status="OKAY" value="Ver Detalle"/>
             </ProcessEntityAttr>
           </ProcessEntity>
-          <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Credit Card Payment" eid="D4C8D2A58C91068A246446" path="AccountsList.AccountsList.CreditCardList.Credit Card Payment" type="Button">
-            <ProcessEntityAttr default="" name="ButtonText" original="Credit Card Payment" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246449:AccountsList-Windows" mappingType="OVERRIDE" original="Credit Card Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value="Pagar tarjeta de crédito"/>
+          <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Payment" eid="D4C8D2A58C91068A246446" path="AccountsList.AccountsList.CreditCardList.Payment" type="Button">
+            <ProcessEntityAttr default="" name="ButtonText" original="Payment" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246449:AccountsList-Windows" mappingType="OVERRIDE" original="Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagar tarjeta de crédito"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="PLACEHOLDER" original="" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value=""/>
@@ -500,12 +500,12 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="PLACEHOLDER" original="" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value=""/>
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246449:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value=""/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="Pagar tarjeta de crédito" name="HintText" original="Credit Card Payment" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="OVERRIDE" original="Credit Card Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value="Pagar tarjeta de crédito"/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246449:AccountsList-Windows" mappingType="OVERRIDE" original="Credit Card Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value="Pagar tarjeta de crédito"/>
+            <ProcessEntityAttr default="Pagar" name="HintText" original="Payment" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="OVERRIDE" original="Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagar"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246449:AccountsList-Windows" mappingType="OVERRIDE" original="Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagar tarjeta de crédito"/>
             </ProcessEntityAttr>
-            <ProcessEntityAttr default="Pagar tarjeta de crédito" name="LinkText" original="Credit Card Payment" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="OVERRIDE" original="Credit Card Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEW" status="OKAY" value="Pagar tarjeta de crédito"/>
+            <ProcessEntityAttr default="Pagar" name="LinkText" original="Payment" state="NEW">
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="D4C8D2A58C91068A246447:AccountsList" mappingType="OVERRIDE" original="Payment" specifiedBy="D4C8D2A58C91068A246446:Button" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Pagar"/>
             </ProcessEntityAttr>
           </ProcessEntity>
         </ProcessEntity>
@@ -1357,6 +1357,28 @@
             </ProcessEntityAttr>
           </ProcessEntity>
         </Container>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="AutoClick" eid="FD433124B5C72F76219681" path="AccountsList.AccountsList.AutoClick" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="AutoClick" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219682:AccountsList" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219684:AccountsList-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219682:AccountsList" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219684:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219682:AccountsList" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219684:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219682:AccountsList" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219684:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="AutoClick" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219682:AccountsList" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76219684:AccountsList-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76219681:Button" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
       </Container>
     </Container>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="ChangeAccountName" eid="85B9790875E2A5F187428" type="Process">
@@ -1814,7 +1836,7 @@
                     <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationColumnBreak" displayString="Card Column [Column]" eid="85052D5F2E692C34119493" type="Rich Presentation Column">
                       <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Card Body [Section]" eid="85052D5F2E692C34119496" type="Rich Presentation Section">
                         <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="progress-bar" eid="85052D5F2E692C34136871" path="AccountsList.AccountsList.AccountsList.Section.Section.Section.CreditCardList.Section.Column.Section.progress-bar" type="progress-bar">
-                          <Attribute mappingType="OVERRIDE" name="Label" original="Used" state="NEW" status="NEW" value="Utilizado"/>
+                          <Attribute mappingType="OVERRIDE" name="Label" original="Used" state="NEW" status="OKAY" value="Utilizado"/>
                           <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
                         </PresentationObject>
                       </Container>
@@ -1923,7 +1945,7 @@
             </Container>
           </PresentationObject>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="611073863F2D84C1294672" path="AccountsList.AccountsList.AccountsList.Text" type="Rich Presentation Text">
-            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;var flag = 0;&#10;var num = $('.helperFontSizeN');&#10;for (var i = 0; i &lt; num.length; i++) {&#10;  var $currentNum = $(num[i]);&#10;  var $cardBody = $currentNum.closest('.card__body');&#10;  if (flag == 0) {&#10;                          var tam = num[i].innerHTML.length;&#10;  &#9;  switch (true) {&#10;    &#9;  case (tam &gt; 8 &amp;&amp;  tam &lt; 11):&#10;    &#9;&#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font20');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;        flag = 1;&#10;                          break;&#10;                          case (tam &gt; 11 &amp;&amp; tam &lt; 14):&#10;&#9;                        $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font16');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;       flag = 1;&#10;                          break;&#10;   &#9;  default:&#10;                                                $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font27');&#10;&#9;  break;&#10; &#9;  }&#10;  } &#10;flag = 0;&#10;}&#10;&#10;})&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;var flag = 0;&#10;var num = $('.helperFontSizeN');&#10;for (var i = 0; i &lt; num.length; i++) {&#10;  var $currentNum = $(num[i]);&#10;  var $cardBody = $currentNum.closest('.card__body');&#10;  if (flag == 0) {&#10;                          var tam = num[i].innerHTML.length;&#10;  &#9;  switch (true) {&#10;    &#9;  case (tam &gt; 8 &amp;&amp;  tam &lt; 11):&#10;    &#9;&#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font20');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;        flag = 1;&#10;                          break;&#10;                          case (tam &gt; 11):&#10;&#9;                        $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font16');&#10;&#9;  &#9;$cardBody.find('.helperFontSizeC, .helperFontSizeN').removeClass('font27');&#10;&#9;       flag = 1;&#10;                          break;&#10;   &#9;  default:&#10;                                                $cardBody.find('.helperFontSizeC, .helperFontSizeN').addClass('font27');&#10;&#9;  break;&#10; &#9;  }&#10;  } &#10;flag = 0;&#10;}&#10;&#10;})&#10;&lt;/script&gt;" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value=""/>
           </PresentationObject>
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="D4662E213A942164156340" path="AccountsList.AccountsList.AccountsList.Text" type="Rich Presentation Text">
             <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;    $('.helperFontSize').each(function (i, el) {&#10;        var $el = $(el)&#10;        if ( $el.html().length &gt; 14 ) {&#10;            $el.addClass('resizeAccountLabel');&#10;            $el.siblings('.helperFontSizePrefix').addClass('resizeAccountLabel');&#10;        }&#10;    })&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
