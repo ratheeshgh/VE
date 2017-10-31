@@ -115,3 +115,29 @@
 .borderBottom {
 	border-bottom: 1px solid #DCE1E9;
 }
+
+.paddingCardDetails {
+	padding: 20px;
+}
+
+.paddingCreditCardDetails{
+	padding: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+	.det-card-text {
+		font-size:15px;
+	}
+
+	.paddingCardDetails{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}	
+
+	.paddingCreditCardDetails{
+		padding-left: 11px;
+		padding-right: 11px;
+	}
+}
