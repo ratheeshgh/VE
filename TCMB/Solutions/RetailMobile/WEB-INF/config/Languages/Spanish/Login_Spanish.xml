@@ -17,8 +17,8 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163288:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="51C20560C6A604DC17629:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="51C20560C6A604DC17842:Login" mappingType="OVERRIDE" original="Please insert your username" specifiedBy="51C20560C6A604DC17842:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163288:Login-Windows" mappingType="OVERRIDE" original="Please insert your username" specifiedBy="5090DFE402BD641163288:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="51C20560C6A604DC17842:Login" mappingType="OVERRIDE" original="Please insert your username" specifiedBy="51C20560C6A604DC17842:Rich Presentation Question" state="NEW" status="OKAY" value="Por favor ingrese su usuario"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163288:Login-Windows" mappingType="OVERRIDE" original="Please insert your username" specifiedBy="5090DFE402BD641163288:Rich Presentation Question" state="NEW" status="OKAY" value="Por favor ingrese su usuario"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="51C20560C6A604DC17842:Login" mappingType="PLACEHOLDER" original="" specifiedBy="51C20560C6A604DC17629:Question" state="NEW" status="OKAY" value=""/>
@@ -44,7 +44,7 @@
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="OVERRIDE" original="Please enter your password" specifiedBy="63FFE98DDF2539081502437:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="OVERRIDE" original="Please enter your password" specifiedBy="63FFE98DDF2539081502437:Rich Presentation Question" state="NEW" status="OKAY" value="Por favor ingrese su password"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
@@ -1452,7 +1452,7 @@
       <Attribute mappingType="OVERRIDE" name="LayoutDirection" original="ltr" state="NEW" status="OKAY" value=""/>
       <Attribute mappingType="OVERRIDE" name="MandMessage" original="Please answer all the required questions marked with a $$QUESTION_CONSTRAINT$" state="NEW" status="OKAY" value=""/>
       <Attribute mappingType="OVERRIDE" name="QuestionListDefault" original="- Please Select" state="NEW" status="OKAY" value="-Por favor, seleccione"/>
-      <Attribute mappingType="OVERRIDE" name="ValidationMessage" original="Please enter a valid value" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="ValidationMessage" original="Please enter a valid value" state="NEW" status="OKAY" value="Por favor ingrese un valor válido"/>
       <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationProduct" displayString="Login" eid="D3D38B88E2AF0F8418944" type="Rich Presentation Process">
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="Login" eid="51C20560C6A604DC17836" type="Rich Presentation Phase">
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file $$PROJECTHOME$/templates/RememberMe.tpl" eid="9AF797ED1A30CF3A60884" path="Login.Login.Login.Text from file $$PROJECTHOME$/templates/RememberMe.tpl" type="Rich Presentation Text">
