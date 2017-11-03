@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="27/10/17 15:06" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="03/11/17 14:27" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -182,6 +182,48 @@
           <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="9AE6C9E7B13357F5130180:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="9AE6C9E7B13357F5130177:Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="9AE6C9E7B13357F5130178:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="9AE6C9E7B13357F5130177:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Question" displayString="TermsAndConditionAccepted" eid="7926EBBCDD57D43E100442" path="Initialize.GetLocalStorage.TermsAndConditionAccepted" type="Question">
+          <ProcessEntityAttr default="" name="AnswerPostfix" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="TermsAndConditionAccepted" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="OVERRIDE" original="TermsAndConditionAccepted" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="OVERRIDE" original="TermsAndConditionAccepted" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="QuestionListDefault" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100445:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7926EBBCDD57D43E100447:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100442:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
       </Container>
@@ -1903,6 +1945,24 @@
       <Container class="com.acquire.intelligentforms.entities.Phase" displayString="TermsAndConditions" eid="0645D21B37B8E82E181639" type="Phase">
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="90709B068562F964120473" leafType="link" path="OfflineEnabled.About.Back" type="Button"/>
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Hard back" eid="A34AD113ECB67B0820769" leafType="link" path="OfflineEnabled.About.Hard back" type="Button"/>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="TermsAndConditions - Navbar" eid="1D48D4406E16E279178393" path="OfflineEnabled.TermsAndConditions.TermsAndConditions - Navbar" type="Heading">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="TermsAndConditions - Navbar" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="OVERRIDE" original="Terms And Conditions" specifiedBy="1D48D4406E16E279178394:Rich Presentation Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="OVERRIDE" original="TermsAndConditions - Navbar" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Terms and Conditions" eid="0645D21B37B8E82E181651" path="OfflineEnabled.TermsAndConditions.Terms and Conditions" type="Heading">
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113569:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
@@ -1919,6 +1979,28 @@
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113569:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E181652:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Accept" eid="7926EBBCDD57D43E100789" path="OfflineEnabled.TermsAndConditions.Accept" type="Button">
+          <ProcessEntityAttr default="" name="ButtonText" original="Accept" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100790:TCMB" mappingType="OVERRIDE" original="Accept" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100792:TCMB-Windows" mappingType="OVERRIDE" original="Accept" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100790:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100792:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100790:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100792:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100790:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100792:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="Accept" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100790:TCMB" mappingType="OVERRIDE" original="Accept" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="7926EBBCDD57D43E100792:TCMB-Windows" mappingType="OVERRIDE" original="Accept" specifiedBy="7926EBBCDD57D43E100789:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="ShakeToLogOut" eid="8FF15AD0F20D85B4626090" path="OfflineEnabled.TermsAndConditions.ShakeToLogOut" type="Button">
@@ -2884,6 +2966,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="OVERRIDE" original="," specifiedBy="5427236D0CACF67B2133345:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="OVERRIDE" original="." specifiedBy="5427236D0CACF67B2133345:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
@@ -2896,11 +2984,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133345:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2133329:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2133323:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -3047,6 +3139,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="OVERRIDE" original="," specifiedBy="7A67C7C35F761904225999:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="OVERRIDE" original="." specifiedBy="7A67C7C35F761904225999:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
@@ -3059,11 +3157,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225983:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904225999:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904225977:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -3210,6 +3312,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="OVERRIDE" original="," specifiedBy="5427236D0CACF67B2159267:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="OVERRIDE" original="." specifiedBy="5427236D0CACF67B2159267:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
@@ -3222,11 +3330,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159267:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2159251:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2159245:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -3373,6 +3485,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="OVERRIDE" original="," specifiedBy="5427236D0CACF67B2185171:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="OVERRIDE" original="." specifiedBy="5427236D0CACF67B2185171:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
@@ -3385,11 +3503,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185171:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5427236D0CACF67B2185155:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="5427236D0CACF67B2185149:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -3536,6 +3658,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="OVERRIDE" original="," specifiedBy="7A67C7C35F761904226103:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="OVERRIDE" original="." specifiedBy="7A67C7C35F761904226103:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
@@ -3548,11 +3676,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226087:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226103:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226081:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -3699,6 +3831,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="OVERRIDE" original="," specifiedBy="7A67C7C35F761904226175:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="OVERRIDE" original="." specifiedBy="7A67C7C35F761904226175:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
@@ -3711,11 +3849,15 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMaxLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidDecimalMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
-                <ProcessEntityAttr default="" name="InvalidMinLengthMessage" original="" state="NEW">
+                <ProcessEntityAttr default="" name="InvalidMaxValueMessage" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226159:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7A67C7C35F761904226175:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="7A67C7C35F761904226153:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
@@ -4778,6 +4920,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201805:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A201638:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201718:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A201638:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201805:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A201805:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201805:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A201805:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201805:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A201638:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A201718:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A201638:Question" state="NEW" status="OKAY" value=""/>
@@ -4944,6 +5092,12 @@
                 <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202690:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A202668:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202674:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A202668:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202690:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A202690:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202690:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A202690:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202690:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A202668:Question" state="NEW" status="OKAY" value=""/>
@@ -5112,6 +5266,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202822:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A202800:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202806:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A202800:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202822:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A202822:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202822:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A202822:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202822:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A202800:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A202806:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A202800:Question" state="NEW" status="OKAY" value=""/>
@@ -5278,6 +5438,12 @@
                 <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203018:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203012:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203034:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203012:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203034:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A203034:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203034:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A203034:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203018:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A203012:Question" state="NEW" status="OKAY" value=""/>
@@ -5446,6 +5612,12 @@
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203230:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203224:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203246:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203224:Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203246:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A203246:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203246:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A203246:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203230:TCMB-Windows" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A203224:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203246:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A203224:Question" state="NEW" status="OKAY" value=""/>
@@ -5612,6 +5784,12 @@
                 <ProcessEntityAttr default="" name="AnswerPrefix" original="" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203458:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203436:Question" state="NEW" status="OKAY" value=""/>
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203442:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="169C11F93FA0BD5A203436:Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DecimalSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203458:TCMB" mappingType="OVERRIDE" original="," specifiedBy="169C11F93FA0BD5A203458:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
+                </ProcessEntityAttr>
+                <ProcessEntityAttr default="" name="DigitGroupSymbol" original="" state="NEW">
+                  <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203458:TCMB" mappingType="OVERRIDE" original="." specifiedBy="169C11F93FA0BD5A203458:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
                 </ProcessEntityAttr>
                 <ProcessEntityAttr default="" name="DisplayText" original="Transaction_amount" state="NEW">
                   <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="169C11F93FA0BD5A203458:TCMB" mappingType="OVERRIDE" original="Transaction_amount" specifiedBy="169C11F93FA0BD5A203436:Question" state="NEW" status="OKAY" value=""/>
@@ -5892,24 +6070,24 @@
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="AutoClick" eid="FD433124B5C72F76209498" path="HistoryOfOperations.HistoryOperations.AutoClick" type="Button">
           <ProcessEntityAttr default="" name="ButtonText" original="AutoClick" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="AutoClick" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209499:TCMB" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="FD433124B5C72F76209501:TCMB-Windows" mappingType="OVERRIDE" original="AutoClick" specifiedBy="FD433124B5C72F76209498:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
       </Container>
@@ -6595,46 +6773,46 @@
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="AutoClick" eid="FD433124B5C72F76209498" leafType="link" path="HistoryOfOperations.HistoryOperations.AutoClick" type="Button"/>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Hard Back" eid="0E4DC09F60FD88B6188745" path="HistoryOfOperations.ReceiptDetails.Hard Back" type="Button">
           <ProcessEntityAttr default="" name="ButtonText" original="Hard Back" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="Hard Back" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188746:TCMB" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188748:TCMB-Windows" mappingType="OVERRIDE" original="Hard Back" specifiedBy="0E4DC09F60FD88B6188745:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Back" eid="0E4DC09F60FD88B6188707" path="HistoryOfOperations.ReceiptDetails.Back" type="Button">
           <ProcessEntityAttr default="" name="ButtonText" original="Back" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="Back" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188710:TCMB-Windows" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="0E4DC09F60FD88B6188708:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="0E4DC09F60FD88B6188707:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
       </Container>
@@ -6847,8 +7025,16 @@
           </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="TermsAndConditions" eid="0645D21B37B8E82E181640" type="Rich Presentation Phase">
-          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file offline/$$LANGUAGE_MAP_ALIAS$TermsAndConditions.tpl" eid="0645D21B37B8E82E181680" path="TCMB.OfflineEnabled.TermsAndConditions.Text from file offline/$$LANGUAGE_MAP_ALIAS$TermsAndConditions.tpl" type="Rich Presentation Text">
+          <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationFormatBreak" displayString="Section" eid="7926EBBCDD57D43E110502" type="Rich Presentation Section">
+            <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file offline/$$LANGUAGE_MAP_ALIAS$TermsAndConditions.tpl" eid="0645D21B37B8E82E181680" path="TCMB.OfflineEnabled.TermsAndConditions.Section.Text from file offline/$$LANGUAGE_MAP_ALIAS$TermsAndConditions.tpl" type="Rich Presentation Text">
+              <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
+            </PresentationObject>
+          </Container>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="SetBodyClass" eid="7926EBBCDD57D43E146965" path="TCMB.OfflineEnabled.TermsAndConditions.SetBodyClass" type="SetBodyClass">
             <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
+          </PresentationObject>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="7926EBBCDD57D43E146981" path="TCMB.OfflineEnabled.TermsAndConditions.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function(){&#10;&#10;&#10;function postProcessResponse() {&#10;$(&quot;body&quot;).css(&quot;padding-top&quot;,&quot;0&quot;).css(&quot;-webkit-overflow-scrolling&quot;,&quot;touch&quot;)&#10;}&#10;postProcessResponse();&#10;&#10;})&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
           </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="WhatsNew" eid="0645D21B37B8E82E231254" type="Rich Presentation Phase">
@@ -7574,11 +7760,31 @@
                   <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Master" eid="59F06FA4739E4D4A293454" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Set Value - Master" type="Set Value Rule">
                     <Attribute mappingType="OVERRIDE" name="FromMessage" original="Master" state="NEW" status="OKAY" value=""/>
                   </Rule>
-                </Container>
-                <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCA'" eid="59F06FA4739E4D4A296013" type="Evaluation Rule">
-                  <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Amex" eid="59F06FA4739E4D4A296014" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCA.Set Value - Amex" type="Set Value Rule">
-                    <Attribute mappingType="OVERRIDE" name="FromMessage" original="Amex" state="NEW" status="OKAY" value=""/>
-                  </Rule>
+                  <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCA'" eid="59F06FA4739E4D4A296013" type="Evaluation Rule">
+                    <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Amex" eid="59F06FA4739E4D4A296014" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Evaluation - Credit card TCA.Set Value - Amex" type="Set Value Rule">
+                      <Attribute mappingType="OVERRIDE" name="FromMessage" original="Amex" state="NEW" status="OKAY" value=""/>
+                    </Rule>
+                    <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCS'" eid="8E63460123B32A0A188160" type="Evaluation Rule">
+                      <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Sambil" eid="8E63460123B32A0A188161" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Evaluation - Credit card TCA.Evaluation - Credit card TCS.Set Value - Sambil" type="Set Value Rule">
+                        <Attribute mappingType="OVERRIDE" name="FromMessage" original="Sambil" state="NEW" status="OKAY" value=""/>
+                      </Rule>
+                      <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCR'" eid="8E63460123B32A0A188301" type="Evaluation Rule">
+                        <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Rattan" eid="8E63460123B32A0A188302" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Evaluation - Credit card TCA.Evaluation - Credit card TCS.Evaluation - Credit card TCR.Set Value - Rattan" type="Set Value Rule">
+                          <Attribute mappingType="OVERRIDE" name="FromMessage" original="Rattan" state="NEW" status="OKAY" value=""/>
+                        </Rule>
+                        <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCG'" eid="8E63460123B32A0A188303" type="Evaluation Rule">
+                          <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Graffitti" eid="8E63460123B32A0A188304" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Evaluation - Credit card TCA.Evaluation - Credit card TCS.Evaluation - Credit card TCR.Evaluation - Credit card TCG.Set Value - Graffitti" type="Set Value Rule">
+                            <Attribute mappingType="OVERRIDE" name="FromMessage" original="Graffitti" state="NEW" status="OKAY" value=""/>
+                          </Rule>
+                          <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Credit_Cards[C].credit_card_type$ == 'TCL'" eid="8E63460123B32A0A188309" type="Evaluation Rule">
+                            <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Locatel" eid="8E63460123B32A0A188310" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Credit Card - Copy.Evaluation - Credit card TCV.Evaluation - Credit card TCM.Evaluation - Credit card TCA.Evaluation - Credit card TCS.Evaluation - Credit card TCR.Evaluation - Credit card TCG.Evaluation - Credit card TCL.Set Value - Locatel" type="Set Value Rule">
+                              <Attribute mappingType="OVERRIDE" name="FromMessage" original="Locatel" state="NEW" status="OKAY" value=""/>
+                            </Rule>
+                          </Container>
+                        </Container>
+                      </Container>
+                    </Container>
+                  </Container>
                 </Container>
               </Container>
             </Container>
