@@ -4,12 +4,13 @@
  	color:#54616d;
  	text-transform:initial;
  	font-family: 'Lato Bold';
-  margin:15px 5% 15px 5%;}
+	margin:15px 0px 15px 0px;
+}
 
 .tac-style p {
   font-size:15.33px;
  	color:#54616d;
  	text-transform:initial;
  	font-family: 'Lato Regular';
- 	margin:0px 5% 15px 5%;
+ 	margin:0px 0px 15px 0px;
 }
