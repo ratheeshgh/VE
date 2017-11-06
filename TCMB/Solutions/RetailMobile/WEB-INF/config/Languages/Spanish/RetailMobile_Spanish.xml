@@ -1950,9 +1950,9 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="TerminosYCondiciones - Navbar" name="DisplayText" original="TermsAndConditions - Navbar" state="NEW">
+          <ProcessEntityAttr default="Términos y Condiciones" name="DisplayText" original="TermsAndConditions - Navbar" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="OVERRIDE" original="Terms And Conditions" specifiedBy="1D48D4406E16E279178394:Rich Presentation Heading" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="OVERRIDE" original="TermsAndConditions - Navbar" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value="TerminosYCondiciones - Navbar"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178396:TCMB-Windows" mappingType="OVERRIDE" original="TermsAndConditions - Navbar" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value="Términos y Condiciones"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1D48D4406E16E279178394:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1D48D4406E16E279178393:Heading" state="NEW" status="OKAY" value=""/>
@@ -1968,8 +1968,8 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113569:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E181652:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="Términos y condicinones" name="DisplayText" original="Terms and Conditions" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113569:TCMB-Windows" mappingType="OVERRIDE" original="Terms and Conditions" specifiedBy="39186CBA98B6F424113569:Rich Presentation Heading" state="NEW" status="OKAY" value="Términos y condicinones"/>
+          <ProcessEntityAttr default="Términos y Condiciones" name="DisplayText" original="Terms and Conditions" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="39186CBA98B6F424113569:TCMB-Windows" mappingType="OVERRIDE" original="Terms and Conditions" specifiedBy="39186CBA98B6F424113569:Rich Presentation Heading" state="NEW" status="OKAY" value="Términos y Condiciones"/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="0645D21B37B8E82E181652:TCMB" mappingType="OVERRIDE" original="Terms and Conditions" specifiedBy="0645D21B37B8E82E181651:Heading" state="NEW" status="OKAY" value="Términos y condicinones"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
