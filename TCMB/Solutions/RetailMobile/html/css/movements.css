@@ -1,6 +1,6 @@
 .movement {
 	background: #FFF;
-	margin-bottom: 3px;
+	margin-bottom: 1px;
 	padding: 3%;
 	border-radius: 3px;
 	text-transform: initial;
@@ -8,7 +8,7 @@
 }
 
 .movement:last-child {
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 .movement label {
