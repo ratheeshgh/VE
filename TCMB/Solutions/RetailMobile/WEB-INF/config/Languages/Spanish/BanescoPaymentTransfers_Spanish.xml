@@ -6181,7 +6181,7 @@
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="2DC60D91676A186A428825:TCMB" mappingType="OVERRIDE" original="The amount is greater than available" specifiedBy="2DC60D91676A186A428825:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="Saldo insuficiente"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="InvalidMinValueMessage" original="" state="NEW">
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="2DC60D91676A186A428825:TCMB" mappingType="OVERRIDE" original="The amount is lower than minimum" specifiedBy="2DC60D91676A186A428825:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="Saldo insuficiente"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="2DC60D91676A186A428825:TCMB" mappingType="OVERRIDE" original="The amount is lower than minimum" specifiedBy="2DC60D91676A186A428825:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="El monto debe ser mayor que cero"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="2DC60D91676A186A428825:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="2DC60D91676A186A428824:Question" state="NEW" status="OKAY" value=""/>
