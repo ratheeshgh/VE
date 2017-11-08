@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="03/11/17 14:27" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB,TCMB-Windows" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="en" updated="08/11/17 14:50" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -7793,9 +7793,15 @@
                 <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Savings Account" eid="0B0F7B0F4FE1DA58187575" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Accounts.Evaluation - SAV.Set Value - Savings Account" type="Set Value Rule">
                   <Attribute mappingType="OVERRIDE" name="FromMessage" original="Savings Account" state="NEW" status="OKAY" value=""/>
                 </Rule>
+                <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value veryShortLabel SAV" eid="147D8380F14F6166322685" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Accounts.Evaluation - SAV.Set Value veryShortLabel SAV" type="Set Value Rule">
+                  <Attribute mappingType="OVERRIDE" name="FromMessage" original="SAV" state="NEW" status="NEW" value=""/>
+                </Rule>
                 <Container class="com.acquire.intelligentforms.rules.EvaluateRule" displayString="if $$Accounts[C].Account_Type$ == 'MMK' OR $$Accounts[C].Account_Type$ == 'DDA'" eid="0B0F7B0F4FE1DA58187579" type="Evaluation Rule">
                   <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value - Current Account" eid="0B0F7B0F4FE1DA58187580" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Accounts.Evaluation - SAV.Evaluation - MMK and DDA.Set Value - Current Account" type="Set Value Rule">
                     <Attribute mappingType="OVERRIDE" name="FromMessage" original="Current Account" state="NEW" status="OKAY" value=""/>
+                  </Rule>
+                  <Rule class="com.acquire.intelligentforms.rules.SetValueRule" displayString="Set Value veryShortLabel CA" eid="147D8380F14F6166322690" path="PreLogin.Login.Evaluation to check whether login is succeeded.Container - Get All Accounts List.Repeat Over Data Group - Accounts.Evaluation - SAV.Evaluation - MMK and DDA.Set Value veryShortLabel CA" type="Set Value Rule">
+                    <Attribute mappingType="OVERRIDE" name="FromMessage" original="CUR" state="NEW" status="NEW" value=""/>
                   </Rule>
                 </Container>
               </Container>
