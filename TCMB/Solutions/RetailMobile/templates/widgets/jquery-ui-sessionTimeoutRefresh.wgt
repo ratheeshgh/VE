@@ -10,7 +10,6 @@
 		if (timeoutID) {
 			window.clearTimeout(timeoutID);
 		}
-		console.log("Timeout: ", changingTimeout)
 		timeoutID = window.setTimeout((--changingTimeout > 0) ? decrementTimer : doRedirectToLoginPage, 1000);
 	}
 
