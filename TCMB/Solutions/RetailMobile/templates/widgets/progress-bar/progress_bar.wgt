@@ -19,7 +19,11 @@
 		var finalResult = Math.round(result)
 		
 		switch (true) {
+			case result < 0 :
+				finalResult = '0';
+				break;
 			case 0 < result && result < 1 :
+				result = result.replace('.',',');
 				finalResult = result.toFixed(2);
 				break;
 			case result <= 30: 

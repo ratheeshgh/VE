@@ -27,6 +27,11 @@
             
             var mergedMapConfig = Object.assign({}, defaultMapConfig, mapConfig)
             _map = new google.maps.Map(_mapMountNode, mergedMapConfig);
+            
+            var marker = new google.maps.Marker({
+                position: currentLocation,
+                map: _map
+            });
 
             return this;
         }
