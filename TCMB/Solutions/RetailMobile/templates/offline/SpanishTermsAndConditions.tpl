@@ -6,26 +6,29 @@
 
 <p>A los fines de una mejor comprensión de las presentes Condiciones Generales se establecen las siguientes definiciones, las cuales podrán ser utilizadas en singular o plural, mayúsculas o minúsculas, de acuerdo al contexto en el que se presenten:  </p>
 
-<h4 class=" tac-head"><span>1. </span>BANCO: </h4>
+<ul style="list-style: none; padding-left: 15px;">
+<li class=" tac-head" style="font-size: 13px;"><span>1. </span>BANCO: </li>
 <p>Se refiere a Banesco Banco Universal, C.A., plenamente identificado en el encabezado del presente documento.</p>
 
-<h4 class=" tac-head"><span>2. </span>BANESCONLINE: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>2. </span>BANESCONLINE: </li>
 <p>Se refiere al Servicio de banca por internet mediante el cual los CLIENTES del BANCO pueden, a través de dispositivos electrónicos por intermedio de la Red Mundial de Información denominada Internet (World Wide Web), recibir información, realizar consultas y operaciones y enviar instrucciones y solicitudes, concernientes a las relaciones que mantuvieren con el BANCO, así como mantener, en general, comunicación por ese medio con el BANCO.</p>
 
-<h4 class=" tac-head"><span>3. </span>CLIENTE: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>3. </span>CLIENTE: </li>
 <p>Se refiere a toda persona natural o jurídica que sea titular de una cuenta o cualquiera otro producto financiero en el BANCO y se afilie al SERVICIO.</p>
 
-<h4 class=" tac-head"><span>4. </span>CUENTA: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>4. </span>CUENTA: </li>
 <p>Se refiere a las cuentas financieras que mantenga el CLIENTE con el BANCO.</p>
 
-<h4 class=" tac-head"><span>5. </span>IVR: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>5. </span>IVR: </li>
 <p>Son las siglas en inglés de Robot de Voz Interactivo, y se refiere al sistema telefónico que es capaz de recibir una llamada e interactuar con el humano a través de grabaciones de voz y el reconocimiento de respuestas simples.</p>
 
-<h4 class=" tac-head"><span>6. </span>TARJETA DE CRÉDITO: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>6. </span>TARJETA DE CRÉDITO: </li>
 <p>Son los plásticos personalizados e intransferibles, propiedad del BANCO y emitido por éste último a nombre del CLIENTE y que acredita una relación contractual entre el BANCO y el CLIENTE, en virtud del otorgamiento de un crédito a corto plazo o línea de crédito a favor de éste último, el cual podrá ser utilizado para la compra de bienes, servicios, cargos automáticos en cuenta u obtención de avances de dinero en efectivo, entre otros consumos realizados a través de los canales que disponga el BANCO para tal fin.</p>
 
-<h4 class=" tac-head"><span>7. </span>TRANSACCIONES FINANCIERAS: </h4>
+<li class=" tac-head" style="font-size: 13px;"><span>7. </span>TRANSACCIONES FINANCIERAS: </li>
 <p>Se refiere a todas aquellas operaciones que el CLIENTE podrá ejecutar a través del SERVICIO, tales como consultas, transferencias, pagos y/o retiros, con cargo a su CUENTA o TARJETA DE CRÉDITO, así como, cualquier otra transacción que el BANCO pudiera incorporar.</p>
+
+</ul>
 
 <h4 class=" tac-head">SEGUNDA: </h4>
 <p>El Servicio BANESCOMÓVIL (SERVICIO), es un servicio de pago móvil que tiene como objeto, la ejecución por parte del CLIENTE, de diversas transacciones financieras a través de: (i) la tecnología de telefonía móvil celular por intermedio de la Red Mundial de Información denominada Internet (World Wide Web) con o sin la instalación de un aplicativo en el dispositivo móvil; o, (ii) a través de mensajería de texto (SMS) desde un dispositivo móvil a través de una línea telefónica, contemplando el intercambio de mensajes de texto con la finalidad de solicitar y obtener información de sus productos financieros, así como, realizar transacciones financieras.</p>

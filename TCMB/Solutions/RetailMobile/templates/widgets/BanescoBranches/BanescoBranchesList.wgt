@@ -43,7 +43,7 @@
                 var destinations;
 
                 function onSearchCallback(results) {
-
+                    console.log(results)
                     banescoMap.calculateDistance(widgetArgs.calculateDistanceConfig, function (branchesList) {
                         createBranchesList(branchesList);
                     })
@@ -51,16 +51,19 @@
 
                 function createBranchesList(branches) {
                     var $branchesList = $('#branchesList')
+                    console.log("BRANCHES:", branches)
                     branches.forEach(function (item) {
-                        var newRow = buildBranchRow(item)
-                        newRow.on('click', function () {
-                            $%IF ITEM.onRowClickFn != ''$
-                                ($$ITEM.onRowClickFn$)()
-                            $%ENDIF$
-                            banescoMap.refreshMap()
-                            banescoMap.renderRouteTo(item.place)
-                        })
-                        $branchesList.append(newRow)
+                        if (item.distance.status != google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+                            var newRow = buildBranchRow(item)
+                            newRow.on('click', function () {
+                                $%IF ITEM.onRowClickFn != ''$
+                                    ($$ITEM.onRowClickFn$)()
+                                $%ENDIF$
+                                banescoMap.refreshMap()
+                                banescoMap.renderRouteTo(item.place)
+                            })
+                            $branchesList.append(newRow)
+                        }
                     });
                     $('#mapLoadingText').remove()
                 }
