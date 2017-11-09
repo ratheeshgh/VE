@@ -13,9 +13,11 @@
             _placesSearchResult = [],
             _branchAndAtmList = [],
             _numberOfSearchRequests,
-            _directionsDisplay;
+            _directionsDisplay,
+            _firtTime;
 
         function init(mapMountNode, currentLocation, mapConfig) {
+            _firtTime = true;
             _mapMountNode = mapMountNode;
             _currentLocation = currentLocation;
             _infowindow = new google.maps.InfoWindow();
@@ -192,6 +194,10 @@
 
         function refreshMap() {
             google.maps.event.trigger(_map, 'resize');
+            if(_firtTime){
+            _map.setCenter( new google.maps.LatLng(_currentLocation.lat,_currentLocation.lng));
+            _firtTime  =  false;
+           }
         }
 
         return {
