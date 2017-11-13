@@ -1,4 +1,4 @@
-<link href="./html/css/myaccounts-sidemenu.css" rel="stylesheet"></link>
+
 <script type="text/javascript">
 $( document ).ready(function() {
 	function toggleChevron(e) {
