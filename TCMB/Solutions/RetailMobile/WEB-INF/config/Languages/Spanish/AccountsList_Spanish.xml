@@ -387,7 +387,7 @@
             </ProcessEntityAttr>
             <ProcessEntityAttr default="Saldo actual" name="DisplayText" original="credit_card_current_amount" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246404:AccountsList-Windows" mappingType="OVERRIDE" original="credit_card_current_amount" specifiedBy="D4C8D2A58C91068A246378:Question" state="NEW" status="OKAY" value="Saldo actual"/>
-              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246390:AccountsList" mappingType="OVERRIDE" original="Current Balance" specifiedBy="D4C8D2A58C91068A246390:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="Saldo disponible"/>
+              <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246390:AccountsList" mappingType="OVERRIDE" original="Current Balance" specifiedBy="D4C8D2A58C91068A246390:Rich Presentation Question" state="NEEDS_REVIEW" status="OKAY" value="Saldo actual"/>
             </ProcessEntityAttr>
             <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
               <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="D4C8D2A58C91068A246404:AccountsList-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="D4C8D2A58C91068A246378:Question" state="NEW" status="OKAY" value=""/>
