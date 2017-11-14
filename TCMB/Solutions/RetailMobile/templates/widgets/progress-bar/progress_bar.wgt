@@ -23,8 +23,10 @@
 				finalResult = '0';
 				break;
 			case 0 < result && result < 1 :
-				result = result.replace('.',',');
 				finalResult = result.toFixed(2);
+				var a = finalResult.toString();
+				a = a.replace('.',',');
+				finalResult = parseInt(a);
 				break;
 			case result <= 30: 
 				finalProgressBarClass = 'progress-bar-banesco-low-percentage';
