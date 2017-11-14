@@ -57,7 +57,7 @@
 		progressBar.addClass(classToAdd);
 	    infoPercentaje.append(percentage + "% " + label);
 	    infoPercentaje.css('color', color)
-		percentage = percentage.indexOf(',') > -1 ? Number(percentage.replace(',','.')) : percentage
+		percentage = String(percentage).indexOf(',') > -1 ? Number(percentage.replace(',','.')) : percentage
 		progressBar.css('width', percentage +'%');
 	}
    })();
