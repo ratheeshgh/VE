@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="15/11/17 18:05" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="15/11/17 18:12" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -3924,7 +3924,7 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="786E0A582AB7E36C253889:TCMB-Windows" mappingType="OVERRIDE" original="Back" specifiedBy="786E0A582AB7E36C253886:Button" state="NEW" status="OKAY" value="Volver"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="Text" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="786E0A582AB7E36C253887:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="786E0A582AB7E36C253887:Rich Presentation Button" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="786E0A582AB7E36C253887:TCMB" mappingType="OVERRIDE" original="Back" specifiedBy="786E0A582AB7E36C253887:Rich Presentation Button" state="NEW" status="OKAY" value="Volver"/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Current Balance" eid="5ACD8E110471522D142653" path="AccountDetails.SelectedCardDetails.Current Balance" type="Heading">
