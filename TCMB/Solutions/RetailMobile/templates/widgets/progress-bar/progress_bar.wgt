@@ -23,8 +23,9 @@
 				finalResult = '0';
 				break;
 			case 0 < result && result < 1 :
-				result = result.replace('.',',');
 				finalResult = result.toFixed(2);
+				var a = finalResult.toString();
+				finalResult = a.replace('.',',');
 				break;
 			case result <= 30: 
 				finalProgressBarClass = 'progress-bar-banesco-low-percentage';
@@ -56,6 +57,7 @@
 		progressBar.addClass(classToAdd);
 	    infoPercentaje.append(percentage + "% " + label);
 	    infoPercentaje.css('color', color)
+		percentage = String(percentage).indexOf(',') > -1 ? Number(percentage.replace(',','.')) : percentage
 		progressBar.css('width', percentage +'%');
 	}
    })();

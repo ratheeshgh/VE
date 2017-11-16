@@ -1,39 +1,639 @@
 <ErrorMap>
-    <CriticalError>Error not found</CriticalError>
-    <MyCreditCardPaymentsVNZ>
-        <error>    
-            <errorCode>110</errorCode>
-            <errorDescription>Amount exceed total payment</errorDescription>
-            <critical>N</critical>
-        </error>
-        <error>    
-            <errorCode>542</errorCode>
-            <errorDescription>Error 542</errorDescription>
-            <critical>N</critical>
-        </error>
-        <error>
-            <errorCode>007</errorCode>
-            <errorDescription>Invalid account</errorDescription>
-            <critical>N</critical>
-        </error>
-    </MyCreditCardPaymentsVNZ>
-    <PaymentServices>
-        <error>
-            <errorCode>007</errorCode>
-            <errorDescription>Invalid account</errorDescription>
-            <critical>N</critical>
-        </error>
-        <error>    
-            <errorCode>0003</errorCode>
-            <errorDescription>Error creating payment</errorDescription>
-            <critical>N</critical>
-        </error>
-    </PaymentServices>
-    <TranferToMyAccountsVNZ>
-        <error>
-            <errorCode>007</errorCode>
-            <errorDescription>Invalid account</errorDescription>
-            <critical>N</critical>
-        </error>
-    </TranferToMyAccountsVNZ>
+	<CriticalError>No se encontró el error</CriticalError>
+	<MyCreditCardPaymentsVNZ>
+		<error>
+			<errorCode>0000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0004</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0005</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0006</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0007</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0008</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0009</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0010</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0011</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0012</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>607</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>609</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>905</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>924</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>929</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>9998</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10038</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10053</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10054</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10060</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10093</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>EG000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEG001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEA002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD006</errorCode>
+			<errorDescription>El Usuario que estás ingresando no está afiliado al servicio.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>SQL000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>TOEG00</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU005</errorCode>
+			<errorDescription>Tu Clave de acceso se encuentra vencida, te invitamos a crear una nueva.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU009</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes ingresar en BanescOnline a través de la opción "¿olvidó su usuario o clave de aceso?" y seguir los pasos que indica el sistema.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU010</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU015</errorCode>
+			<errorDescription>Tu usuario fue bloqueado por seguridad. Si eres Usuario Principal llama al +582125011414. Importante tengas a la mano tus productos Banesco al momento de hacer la llamada.Si eres Usuario Secundario comunícate con el Usuario Principal para que gestione el desbloqueo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU017</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU028</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU035</errorCode>
+			<errorDescription>No has respondido correctamente las preguntas de seguridad. Por favor visita la Agencia de tu preferencia o contacta a tu ejecutivo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU034</errorCode>
+			<errorDescription>Tu afiliación al servicio ha sido cancelada por no responder correctamente las preguntas de seguridad. Por favor comunicate con nuestra Banca Telefónica por el +582125011414.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU047</errorCode>
+			<errorDescription>Hemos detectado otra conexión activa en este momento y por tu seguridad no podemos permitir el ingreso.</errorDescription>
+			<critical>Y</critical>
+		</error>
+		<error>
+			<errorCode>110</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>640</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+	</MyCreditCardPaymentsVNZ>
+	<PaymentServices>
+		<error>
+			<errorCode>0000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0004</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0005</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0006</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0007</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0008</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0009</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0010</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0011</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0012</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>607</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>609</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>905</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>924</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>929</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>9998</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10038</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10053</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10054</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10060</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10093</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>EG000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEG001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEA002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD006</errorCode>
+			<errorDescription>El Usuario que estás ingresando no está afiliado al servicio.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>SQL000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>TOEG00</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU005</errorCode>
+			<errorDescription>Tu Clave de acceso se encuentra vencida, te invitamos a crear una nueva.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU009</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes ingresar en BanescOnline a través de la opción "¿olvidó su usuario o clave de aceso?" y seguir los pasos que indica el sistema.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU010</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU015</errorCode>
+			<errorDescription>Tu usuario fue bloqueado por seguridad. Si eres Usuario Principal llama al +582125011414. Importante tengas a la mano tus productos Banesco al momento de hacer la llamada.Si eres Usuario Secundario comunícate con el Usuario Principal para que gestione el desbloqueo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU017</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU028</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU035</errorCode>
+			<errorDescription>No has respondido correctamente las preguntas de seguridad. Por favor visita la Agencia de tu preferencia o contacta a tu ejecutivo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU034</errorCode>
+			<errorDescription>Tu afiliación al servicio ha sido cancelada por no responder correctamente las preguntas de seguridad. Por favor comunicate con nuestra Banca Telefónica por el +582125011414.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU047</errorCode>
+			<errorDescription>Hemos detectado otra conexión activa en este momento y por tu seguridad no podemos permitir el ingreso.</errorDescription>
+			<critical>Y</critical>
+		</error>
+		<error>
+			<errorCode>110</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>640</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+	</PaymentServices>
+	<TranferToMyAccountsVNZ>
+		<error>
+			<errorCode>0000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0004</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0005</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0006</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0007</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0008</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0009</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0010</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0011</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>0012</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>607</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>609</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>905</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>924</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>929</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>9998</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10038</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10053</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10054</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10060</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>10093</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>EG000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD003</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEG001</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUEA002</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUBD006</errorCode>
+			<errorDescription>El Usuario que estás ingresando no está afiliado al servicio.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>SQL000</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>TOEG00</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU005</errorCode>
+			<errorDescription>Tu Clave de acceso se encuentra vencida, te invitamos a crear una nueva.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU009</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes ingresar en BanescOnline a través de la opción "¿olvidó su usuario o clave de aceso?" y seguir los pasos que indica el sistema.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU010</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU015</errorCode>
+			<errorDescription>Tu usuario fue bloqueado por seguridad. Si eres Usuario Principal llama al +582125011414. Importante tengas a la mano tus productos Banesco al momento de hacer la llamada.Si eres Usuario Secundario comunícate con el Usuario Principal para que gestione el desbloqueo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU017</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU028</errorCode>
+			<errorDescription>Por medidas de seguridad, tu Usuario ha sido bloqueado. Para activarlo debes completar nuevamente el proceso de afiliación en BanescOnline.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU035</errorCode>
+			<errorDescription>No has respondido correctamente las preguntas de seguridad. Por favor visita la Agencia de tu preferencia o contacta a tu ejecutivo.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU034</errorCode>
+			<errorDescription>Tu afiliación al servicio ha sido cancelada por no responder correctamente las preguntas de seguridad. Por favor comunicate con nuestra Banca Telefónica por el +582125011414.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>GUVU047</errorCode>
+			<errorDescription>Hemos detectado otra conexión activa en este momento y por tu seguridad no podemos permitir el ingreso.</errorDescription>
+			<critical>Y</critical>
+		</error>
+		<error>
+			<errorCode>110</errorCode>
+			<errorDescription>En estos momentos no podemos procesar tu transacción. Por favor, intenta más tarde.</errorDescription>
+			<critical>N</critical>
+		</error>
+		<error>
+			<errorCode>640</errorCode>
+			<errorDescription>Usuario o clave inválida, por favor verifica e intenta de nuevo. Recuerda que al ingresar la clave errada en tres (3) intentos consecutivos, tu acceso será bloqueado por medidas de seguridad.</errorDescription>
+			<critical>N</critical>
+		</error>
+	</TranferToMyAccountsVNZ>
 </ErrorMap>
