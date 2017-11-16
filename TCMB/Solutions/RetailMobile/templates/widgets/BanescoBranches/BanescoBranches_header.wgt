@@ -139,7 +139,7 @@
             var defaultConfig = {
                 origins: [_currentLocation],
                 destinations: destinations,
-                travelMode: 'DRIVING'
+                travelMode: 'WALKING'
             }
 
             var mergedConfig = Object.assign({}, defaultConfig, config);
