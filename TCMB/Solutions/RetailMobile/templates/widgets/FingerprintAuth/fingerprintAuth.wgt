@@ -2,6 +2,7 @@
 <input type="text" style="display:none" >
 <script type="text/javascript">
     $(function () {
+    
         document.addEventListener("deviceready", onDeviceReady, false);
 
         var ANDROID = navigator.userAgent.match(/Android/);
@@ -19,7 +20,7 @@
             $%IF ITEM.registerFunctionality = 'Y'$
                 var username = "$$ITEM.Username$";
                 var password = "$$ITEM.Password$";
-
+              
                 $fingerprintButton.on('click', function () {
                     username = $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].USERNAME']").val();
                     password = $("input[name='$$ITEM.COMPONENT_PREFIX()$FINGERPRINTDATA[1].PASSWORD']").val();
