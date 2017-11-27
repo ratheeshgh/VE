@@ -33,7 +33,7 @@
 				break;
 			case result <= 70:
 				finalProgressBarClass = 'progress-bar-banesco-medium-percentage';
-		 	 	finalColor = '#EE9E14';
+		 	 	finalColor = '#E8CC25';
 				break;
 			case result <= 100:
 				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
