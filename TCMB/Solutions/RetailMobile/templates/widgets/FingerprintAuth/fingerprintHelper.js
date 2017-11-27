@@ -1,8 +1,9 @@
 function FingerprintHelper() {
-    this.db = window.sqlitePlugin.openDatabase({
+     this.db = window.sqlitePlugin.openDatabase({
         name: 'fingerprint.db',
         location: 'default'
     });
+
 }
 
 FingerprintHelper.prototype.saveLocal = function (token, username, password) {

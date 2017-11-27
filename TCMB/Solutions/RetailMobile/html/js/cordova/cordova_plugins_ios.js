@@ -486,6 +486,22 @@ module.exports = [
         ]
     },
     {
+        "id": "cordova-sqlite-storage.SQLitePlugin",
+        "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+        "pluginId": "cordova-sqlite-storage",
+        "clobbers": [
+            "SQLitePlugin"
+        ]
+    },
+    {
+        "id": "cordova-plugin-keychain-touch-id.TouchID",
+        "file": "plugins/cordova-plugin-keychain-touch-id/www/touchid.js",
+        "pluginId": "cordova-plugin-keychain-touch-id",
+        "clobbers": [
+            "window.plugins.touchid"
+        ]
+    },
+    {
         "file": "plugins/com.temenos.edgehybrid.plugins.gooffline/www/goOffline.js",
         "id": "com.temenos.edgehybrid.plugins.gooffline.GoOffline",
         "pluginId": "com.temenos.edgehybrid.plugins.gooffline",

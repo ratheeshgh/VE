@@ -1,16 +1,19 @@
 <div id="$$ITEM.ID()$" style="display:none;">$$FORMCONTENT$</div>
 <script type="text/javascript">
+
 $%IF ITEM.IS_ITEM_HIDDEN() != "true"$
      $(function () {
-        document.addEventListener("deviceready", onDeviceReady, false);
 
+        document.addEventListener("deviceready", onDeviceReady, false);
+       
         var ANDROID = navigator.userAgent.match(/Android/);
         var IOS = navigator.userAgent.match(/(iPhone|iPod|iPad)/);
 
         function onDeviceReady() {
-
+            
+             console.log('#$$ITEM.ID()$');
             var $section = $('#$$ITEM.ID()$');
-
+             
             function showContent() {
                 $section.css('display','inline-block');
                 $section.css('width','33%')
@@ -21,7 +24,7 @@ $%IF ITEM.IS_ITEM_HIDDEN() != "true"$
             function removeContent() {
                 $section.remove();
             }
-
+           
             if (IOS) {
                 window.plugins.touchid.isAvailable(
                   function() {

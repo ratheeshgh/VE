@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="12/10/17 11:14" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-GB" targetlanguage="es" updated="24/11/17 18:00" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Login" eid="D3D38B88E2AF0F8418943" type="Process">
@@ -35,10 +35,6 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="InvalidAlphaNumericMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502435:Login" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="63FFE98DDF2539081502437:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="63FFE98DDF2539081502434:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
@@ -428,10 +424,6 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163296:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="CA2B07AD97D17ED377282:Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="CA2B07AD97D17ED377480:Login" mappingType="PLACEHOLDER" original="" specifiedBy="CA2B07AD97D17ED377282:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="InvalidAlphaNumericMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163296:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="CA2B07AD97D17ED377282:Question" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="CA2B07AD97D17ED377480:Login" mappingType="PLACEHOLDER" original="" specifiedBy="CA2B07AD97D17ED377282:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="MandMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163296:Login-Windows" mappingType="OVERRIDE" original="Please enter your password" specifiedBy="5090DFE402BD641163296:Rich Presentation Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="CA2B07AD97D17ED377480:Login" mappingType="PLACEHOLDER" original="" specifiedBy="CA2B07AD97D17ED377282:Question" state="NEW" status="OKAY" value=""/>
@@ -451,10 +443,6 @@
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7679F3F9F7AF4AA556216:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7679F3F9F7AF4AA556217:Login" mappingType="PLACEHOLDER" original="" specifiedBy="7679F3F9F7AF4AA556216:Question" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7679F3F9F7AF4AA556216:Question" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="InvalidAlphaNumericMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="7679F3F9F7AF4AA556217:Login" mappingType="PLACEHOLDER" original="" specifiedBy="7679F3F9F7AF4AA556216:Question" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="5090DFE402BD641163297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="7679F3F9F7AF4AA556216:Question" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
@@ -805,6 +793,24 @@
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ValidationMessage" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="9D03B70EAB11C84B232123:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="9D03B70EAB11C84B232120:Question" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Incorrect Log in details" eid="3F72E7CF7EDD85F5132302" path="Login.FingerprintDataInput.Incorrect Log in details" type="Heading">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132305:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132303:Login" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="Incorrect Log in details" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132305:Login-Windows" mappingType="OVERRIDE" original="Incorrect Log in details" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value="Los datos ingresados son incorrectos"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132303:Login" mappingType="OVERRIDE" original="Incorrect Log in details" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value="Los datos ingresados son incorrectos"/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132305:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132303:Login" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132305:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="3F72E7CF7EDD85F5132303:Login" mappingType="PLACEHOLDER" original="" specifiedBy="3F72E7CF7EDD85F5132302:Heading" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="Cancel" eid="E85719B0BFC991E1152643" leafType="link" path="Login.FingerprintUseTerms.Cancel" type="Button"/>
@@ -1492,6 +1498,9 @@
                 <Attribute mappingType="OVERRIDE" name="IMG_ALT_TEXT" original="Banesco" state="NEW" status="OKAY" value=""/>
                 <Attribute mappingType="PLACEHOLDER" name="IMG_TITLE" original="" state="NEW" status="OKAY" value=""/>
                 <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
+              </PresentationObject>
+              <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="3F72E7CF7EDD85F5176052" path="Login.Login.FingerprintWrongCredentials.Section.Section.Text" type="Rich Presentation Text">
+                <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(&quot;#COL_EF565F46CE98C024403209&quot;).css('width','50%')&#10;$(&quot;#COL_EF565F46CE98C024403212&quot;).css('width','50%')&#10;&lt;/script&gt;" state="NEW" status="OKAY" value=""/>
               </PresentationObject>
             </Container>
           </Container>
