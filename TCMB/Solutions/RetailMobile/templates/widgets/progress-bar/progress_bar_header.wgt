@@ -28,7 +28,7 @@
 	}
 
 	.progress-bar-banesco-medium-percentage {
-		background-color: #EE9E14;
+		background-color: #E8CC25;
 	}
 
 	.progress-bar-banesco-hight-percentage {
