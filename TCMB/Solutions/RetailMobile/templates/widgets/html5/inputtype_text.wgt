@@ -6,4 +6,12 @@ $%INCLUDE widgets/html5/inputtype.wgt$
 $%ENDINCLUDE$
 genHTML5Input("", "", false);
 $%ENDSCRIPT$
+
+<script>
+document.addEventListener('input', function (e) {
+    var maxLength = e.target.maxLength
+    var currentValue = e.target.value
+    e.target.value = (currentValue.length > maxLength) ? currentValue.substring(0, maxLength) : currentValue
+})
+</script>
 </div>
