@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-UK" targetlanguage="en" updated="24/11/17 18:00" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="Login,Login-Windows" project="Login" sourcelanguage="en-UK" targetlanguage="en" updated="28/11/17 14:58" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Login" eid="D3D38B88E2AF0F8418943" type="Process">
@@ -99,6 +99,60 @@
           <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486126:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="EFB732C45804E104486124:Login" mappingType="PLACEHOLDER" original="" specifiedBy="EFB732C45804E104486123:Heading" state="NEW" status="OKAY" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Password expired" eid="79EC6452425F8420365286" path="Login.Login.Password expired" type="Heading">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365289:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365287:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="Password expired" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365289:Login-Windows" mappingType="OVERRIDE" original="Password expired" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365287:Login" mappingType="OVERRIDE" original="Password expired" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365289:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365287:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365289:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365287:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365286:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Canceled user" eid="79EC6452425F8420365294" path="Login.Login.Canceled user" type="Heading">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365295:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="Canceled user" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365295:Login" mappingType="OVERRIDE" original="Canceled user" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365297:Login-Windows" mappingType="OVERRIDE" original="Canceled user" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365295:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365295:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365297:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365294:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+        </ProcessEntity>
+        <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="Suspended user" eid="79EC6452425F8420365268" path="Login.Login.Suspended user" type="Heading">
+          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365271:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365269:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="DisplayText" original="Suspended user" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365271:Login-Windows" mappingType="OVERRIDE" original="Suspended user" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365269:Login" mappingType="OVERRIDE" original="Suspended user" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365271:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365269:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+          </ProcessEntityAttr>
+          <ProcessEntityAttr default="" name="HintText" original="" state="NEW">
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365271:Login-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="79EC6452425F8420365269:Login" mappingType="PLACEHOLDER" original="" specifiedBy="79EC6452425F8420365268:Heading" state="NEW" status="NEW" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.Heading" displayString="$$Errors[C].Text$" eid="4E8EBABD63DCA6C1107933" path="Login.Login.$$Errors[C].Text$" type="Heading">

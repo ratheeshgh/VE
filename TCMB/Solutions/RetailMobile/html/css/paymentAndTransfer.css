@@ -267,6 +267,7 @@
   bottom: 0;
   width: 100%;
   opacity: 0 !important;
+  height: 100%;
 }
 
 .confirm_label label , .confirm_labelH1{
