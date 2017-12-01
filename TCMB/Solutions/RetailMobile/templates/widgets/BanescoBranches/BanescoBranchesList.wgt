@@ -101,11 +101,11 @@
             });
         }
 
-        if ( IOS || ANDROID ) {
+        $%IF DEVICE_INFO.isHybrid == "Y"$
             document.addEventListener("deviceready", onDeviceReady, false);          
-        }else{
+        $%ELSE$
              onDeviceReady()
-        }
+        $%ENDIF$
     })
 </script>
 
