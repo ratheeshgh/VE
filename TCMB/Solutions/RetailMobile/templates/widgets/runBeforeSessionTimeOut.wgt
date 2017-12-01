@@ -1,6 +1,20 @@
 
 <script>
 setInterval(function () {
-	$$ITEM.ONCLICK()$
+	// Hack para dispositivos iPhone. Al momento de estar en background las ejecuciones JS se quedan en pausa
+	// y al volver se corre la siguiente vuelta en el estado en que habia quedado
+	// esto provoca que la ejecucion de la rule para hacer el Switch de sesion se ejecute una vez que la sesion ya espiro en el server
+	// mostrando asi la pantalla de sesion expirada
+	$%IF PHASE == 'Login'$
+		var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
+		var secondsSinceSessionInit = (new Date(Date.now() - sessionInitTimestamp)).getSeconds();
+		if (secondsSinceSessionInit < $$SessionTimeout$) {
+			localStorage.setItem('sessionInitTimestamp', Date.now());		
+			$$ITEM.ONCLICK()$
+		}
+	$%ELSE$ 
+		$$ITEM.ONCLICK()$
+	$%ENDIF$
+
 }, ($$SESSIONTIMEOUT$ * 1000) - ($$ITEM.SecondsBefore$) * 1000)
 </script>

@@ -85,7 +85,7 @@
                 _numberOfSearchRequests = types.length
                 for (var i = 0; i<types.length; i++) {
                     type = types[i]
-                    console.log(type)
+                   
                     //config.query = type == 'atm'? '' : config.queryText;
                     config.query = config.queryText;
                     var placesService = new google.maps.places.PlacesService(_map);
@@ -103,8 +103,7 @@
                             if (status == google.maps.places.PlacesServiceStatus.OK || status == google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
                                 _branchAndAtmList = _branchAndAtmList.concat(results)
                                 if (type != 'atm') {
-                                    _placesSearchResult = _placesSearchResult.concat(results)
-                                    console.log("_placesSearchResult", _placesSearchResult)
+                                    _placesSearchResult = _placesSearchResult.concat(results);
                                 }
                                 
                                 _numberOfSearchRequests--;
@@ -114,7 +113,6 @@
                                     }
 
                                     if (config.locateInMap) {
-                                        console.log(_branchAndAtmList)
                                         _branchAndAtmList.forEach(function (place) {
                                             var markerIcon = place.types.indexOf('atm') != -1 ? config.atmIcon : config.branchIcon;
                                             addMarkerForPlace(place, markerIcon)
@@ -147,7 +145,7 @@
             var service = new google.maps.DistanceMatrixService();
             service.getDistanceMatrix(mergedConfig, function distanceMatrixResponse(response, status) {
                 var placeDistanceList = []
-                console.log(response, status)
+               
                 for (var j = 0; j < response.rows[0].elements.length; j++) {
                     placeDistanceList.push({
                         place: _placesSearchResult[j],

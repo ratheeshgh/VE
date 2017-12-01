@@ -68,14 +68,55 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 			return true;
 		}
 	   </script>
+	   <script>
+		   $%IF PHASE == Login$
+			   	$(function () {
+			   		localStorage.setItem('sessionInitTimestamp', Date.now());
+			   	})
+		   	$%ENDIF$
+	   </script>
+	   <script>
+		   document.addEventListener('deviceready', function () {
+		   	    $%IF PHASE == 'Login'$
+			    /*
+			    	Se manejan los eventos pause y resume en la phase de Login para controlar los casos en que la sesion expira
+			    	cuando la aplicacion se encuentra en background y evitar que al regresar la aplicacion muestre
+			    	la pantalla de sesion expirada.
+			    */
+					document.addEventListener('pause', function () {
+					})
+	 
+					document.addEventListener('resume', function () {
+						console.log("En RESUME")
+						    // Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
+							var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
+							var secondsSinceSessionInit = (new Date(Date.now() - sessionInitTimestamp)).getSeconds();
+							if (secondsSinceSessionInit >= $$SessionTimeout$) {
+								console.log("SessionTimeout")
+								rebootApplication()	
+							}
+					})
+
+					function rebootApplication () {
+						document.getElementsByName("WorkingElements[1].SessionLoggedOutDueToInactivity")[0].value = "N";
+						document.forms['sessionTimeoutForm'].submit()
+					}
+				$%ELSE$
+					localStorage.removeItem('sessionInitTimestamp');
+				$%ENDIF$
+		   });
+	   </script>
 		$%IF !DownloadPDF = 'Y'$	   
 		<script src="$$HTML_LOCATION$/js/cordova/PdfHandler.js"></script>
 		<script>
 		document.addEventListener('deviceready', function () {
+
+			
 		//window.onload=function(e){
-			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
+			//var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
+			var contextpath= '$$CONTEXTPATH$';
 			$%IF DEVICE_INFO.platform == "Android"$				
-				com.temenos.widgets.hybrid.showPDFAndroid.showPDF(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
+				com.temenos.widgets.hybrid.showPDFAndroid.showPDF('$$HTTP_HEADER.Origin$' + contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/octet-stream', '$$!DOC_FILENAME$');				
 			$%ENDIF$					
 			$%IF DEVICE_INFO.platform == "iOS"$
 				cordova.InAppBrowserShare.open(contextpath+'/ServerFileRetrievalServlet?serverFilePathSessionAttrName=DOC_FILEPATH&contentType=application/pdf&printPdfFlag=PRINT&filename=/$$!DOC_FILENAME$', '_blank', 'location=yes','pdf');
@@ -91,7 +132,8 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 	    })
 	    $%IF DEVICE_INFO.isHybrid != "Y"$
 		$(function () {
-			var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
+			//var contextpath=('$$!COMPLETE_CONTEXTPATH$').replace(/&#x2F;/g,'/');
+			var contextpath= '$$CONTEXTPATH$';
 			downloadDoc(contextpath);
 		})
 		$%ENDIF$
@@ -154,13 +196,15 @@ $%endif$
 
 
 	//WHIRLE EFFECT TO ACCOUNT CARDS
-  	$("div[id*=inner-currentaccount]").each(function( index ) {
+  	/*$("div[id*=inner-currentaccount]").each(function( index ) {
   	    index++;
   	    var $this = $( this );
   		setTimeout(function (){$this.addClass('whirleactive');}, index * 350);
-	});
+	});*/
 	//END OF WHIRLE EFFECT TO ACCOUNT CARDS
 	$(".resetPdfFlag").trigger("click");
+
+	
   });
 </script>
 $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
