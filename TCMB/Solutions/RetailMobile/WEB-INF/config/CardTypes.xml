@@ -1,0 +1,34 @@
+<CreditCardsTypes>
+	<cardType>
+		<type>TCV</type>
+		<name>Visa</name>
+	</cardType>
+	<cardType>
+		<type>TCM</type>
+		<name>Master</name>
+	</cardType>
+	<cardType>
+		<type>TCA</type>
+		<name>Amex</name>
+	</cardType>
+	<cardType>
+		<type>TCS</type>
+		<name>Sambil</name>
+	</cardType>
+	<cardType>
+		<type>TCR</type>
+		<name>Rattan</name>
+	</cardType>
+	<cardType>
+		<type>TCG</type>
+		<name>Graffitti</name>
+	</cardType>
+	<cardType>
+		<type>TCL</type>
+		<name>Locatel</name>
+	</cardType>
+	<cardType>
+		<type>TVL</type>
+		<name>Locatel</name>
+	</cardType>
+</CreditCardsTypes>
