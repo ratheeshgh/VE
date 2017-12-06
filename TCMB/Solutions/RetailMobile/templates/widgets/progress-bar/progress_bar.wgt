@@ -29,7 +29,7 @@
 				break;
 			case result <= 30: 
 				finalProgressBarClass = 'progress-bar-banesco-low-percentage';
-	      		finalColor = '#1C8464';
+	      		finalColor = '#1F8C6B';
 				break;
 			case result <= 70:
 				finalProgressBarClass = 'progress-bar-banesco-medium-percentage';
@@ -37,12 +37,12 @@
 				break;
 			case result <= 100:
 				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
-				finalColor = '#EB514E';
+				finalColor = '#F25D43';
 				break;
 			case result > 100: 
 			    finalResult = 100;
 				finalProgressBarClass = 'progress-bar-banesco-hight-percentage';
-				finalColor = '#EB514E';
+				finalColor = '#F25D43';
 				break;
 
 		}

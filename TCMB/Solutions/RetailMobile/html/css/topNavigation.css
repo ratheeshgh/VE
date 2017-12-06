@@ -51,6 +51,8 @@
 }
 
  #C1__off_canvas_left,  #C1__C1__off_canvas_left {
+  -webkit-transition: left 1s ease;
+  -o-transition: left 1s ease;
   transition: left 1s ease;
   position: absolute;
   height: 100%;
@@ -75,7 +77,9 @@
 }
 
 .rotateDownIcon {
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
 }
 
 .overflowHidden {
@@ -91,6 +95,8 @@
     opacity: 0;
     height: 100%;
     z-index: 101;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
 }
 
@@ -126,10 +132,14 @@
 }
 
 .off, .on {
+  -webkit-transition: left 0.4s ease;
+  -o-transition: left 0.4s ease;
   transition: left 0.4s ease;
 }
 
 .row-offcanvas-left {
+  -webkit-transition: left 0.4s ease;
+  -o-transition: left 0.4s ease;
   transition: left 0.4s ease;
 }
 
@@ -143,7 +153,9 @@
 .sidebarMenu_top .lastLoginText{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   color: #FFFFFF;
 }
 
