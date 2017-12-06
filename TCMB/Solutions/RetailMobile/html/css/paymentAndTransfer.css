@@ -235,6 +235,12 @@
   position: relative;
   top: -7px;
 }
+
+body.ios .search_in_directory_btn .text_wrapper { 
+  top: -5px;
+}
+
+
 .search_in_directory_btn .text_wrapper .search_directory_text {
   float: none !important;
 }
