@@ -149,13 +149,13 @@
 
 .sidebarMenu_top .lastLoginName {
   font-family: 'Lato Bold';
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
 }
 
 .sidebarMenu_top .lastLoginDate {
   font-family: 'Lato Regular';
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 5px;
 }
 
