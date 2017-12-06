@@ -118,18 +118,20 @@ border-right: none;}
 .SelectorPayeeActive:hover,.SelectorPayeeActive:focus {background:#F0F0F0 !important; color: #1167B1;}
 
 
-select {width: 100%;
-font-family: 'Roboto Light';
-font-size: 14px;
-margin: 0;
-padding: 8px 8px 6px 8px;
-position: relative;
-cursor: text;
-display: block;
-outline: none;
-border: none;
-background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
-background-size: 1px 6px, 1px 1px, 1px 6px;}
+select {
+	width: 100%;
+	font-family: 'Roboto Light';
+	font-size: 14px;
+	margin: 0;
+	padding: 8px 8px 6px 8px;
+	position: relative;
+	cursor: text;
+	display: block;
+	outline: none;
+	border: none;
+	background: bottom left linear-gradient(#a9a9a9, #a9a9a9) no-repeat, bottom center linear-gradient(#a9a9a9, #a9a9a9) repeat-x, bottom right linear-gradient(#a9a9a9, #a9a9a9) no-repeat;
+	background-size: 1px 6px, 1px 1px, 1px 6px;
+}
 
 select:hover, select:focus {
 	background: bottom left linear-gradient(#0099cc, #0099cc) no-repeat, bottom center linear-gradient(#0099cc, #0099cc) repeat-x, bottom right linear-gradient(#0099cc, #0099cc) no-repeat;
