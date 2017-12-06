@@ -338,8 +338,8 @@ input[type='radio']:checked + label:before {
   font-size: 16px !important;
 }
 
-.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 16px;height: 60px;margin-left: 10px;text-transform: capitalize; /*position: relative*/ margin-top:-10px; display: table;} /* CONTAINER FOR TITLE */
-.NavTitle > div {display: table-cell; vertical-align: middle; position: initial; top: initial;}
+.NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 16px;height: 60px;margin-left: 10px;text-transform: capitalize; /*position: relative*/ margin-top:-10px;} /* CONTAINER FOR TITLE */
+.NavTitle > div {position: absolute;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
 
 @media (max-width: 360px) {
   .resizeAccountLabel {
