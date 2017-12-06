@@ -339,7 +339,7 @@ input[type='radio']:checked + label:before {
 }
 
 .NavTitle {float:none; display:inline-block;font-family: 'Lato Regular', courier;text-align: left;color: #fff;width: 100%; font-size: 16px;height: 60px;margin-left: 10px;text-transform: capitalize; /*position: relative*/ margin-top:-10px; display: table;} /* CONTAINER FOR TITLE */
-.NavTitle > div {display: table-cell; vertical-align: middle;}
+.NavTitle > div {display: table-cell; vertical-align: middle; position: initial; top: initial;}
 
 @media (max-width: 360px) {
   .resizeAccountLabel {
