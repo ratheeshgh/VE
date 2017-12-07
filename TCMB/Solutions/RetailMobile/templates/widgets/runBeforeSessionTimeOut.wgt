@@ -7,8 +7,11 @@ setInterval(function () {
 	// mostrando asi la pantalla de sesion expirada
 	$%IF PHASE == 'Login'$
 		var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
-		var secondsSinceSessionInit = (new Date(Date.now() - sessionInitTimestamp)).getSeconds();
+		console.log('WIDGET:: sessionInitTimestamp', sessionInitTimestamp)
+		var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
+		console.log('WIDGET:: secondsSinceSessionInit', secondsSinceSessionInit)
 		if (secondsSinceSessionInit < $$SessionTimeout$) {
+			console.log('Ejecuta SWITCH Session')
 			localStorage.setItem('sessionInitTimestamp', Date.now());		
 			$$ITEM.ONCLICK()$
 		}

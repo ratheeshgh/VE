@@ -90,9 +90,11 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 						console.log("En RESUME")
 						    // Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
 							var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
-							var secondsSinceSessionInit = (new Date(Date.now() - sessionInitTimestamp)).getSeconds();
+							console.log('TEMPLATE:: sessionInitTimestamp', sessionInitTimestamp)
+							var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
+							console.log('TEMPLATE:: secondsSinceSessionInit', secondsSinceSessionInit)
 							if (secondsSinceSessionInit >= $$SessionTimeout$) {
-								console.log("SessionTimeout")
+								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
 								rebootApplication()	
 							}
 					})
