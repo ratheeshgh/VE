@@ -39,7 +39,7 @@ font-size:12px;
 }
 
 .panel-default > .panel-heading > .panel-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight:none;
   font-family: "Lato Regular";
 }
@@ -125,6 +125,7 @@ border-left:8px #229C7B solid;
  
 #C1__sidebar_container div.panel-heading{
 	padding-left: 18px !important;
+	padding-top: 16px !important;
 }
 
  #C1__sidebar_container .indicator.icon-arrow.custom { 

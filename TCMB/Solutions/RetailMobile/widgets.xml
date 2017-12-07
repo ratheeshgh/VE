@@ -1880,6 +1880,24 @@
                 type="javax.swing.JTextField"
                 usage="7"
                 />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="PERMISSION_DENIED_DIALOG_TITLE"
+                prompt="Permission denied dialog title"
+                type="javax.swing.JTextField"
+                usage="15"
+                />
+            <item
+                includeInDesign="Always"
+                layout="-1"
+                mand="false"
+                name="PERMISSION_DENIED_DIALOG_MESSAGE"
+                prompt="Permission denied dialog message"
+                type="javax.swing.JTextField"
+                usage="15"
+                />
         </custom>
     </widget>
     <widget

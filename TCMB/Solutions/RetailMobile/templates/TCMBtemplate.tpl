@@ -204,6 +204,12 @@ $%endif$
 	//END OF WHIRLE EFFECT TO ACCOUNT CARDS
 	$(".resetPdfFlag").trigger("click");
 
+	if(IOS){
+		$("body").addClass("ios");
+	}else if(ANDROID){
+		$("body").addClass("android");
+	}
+	
 	
   });
 </script>

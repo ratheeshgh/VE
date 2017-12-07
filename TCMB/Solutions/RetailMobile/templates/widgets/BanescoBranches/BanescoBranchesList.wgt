@@ -97,7 +97,13 @@
             }
 
             navigator.geolocation.getCurrentPosition(onSuccess, function onError(error) {
-               alert("Ocurrió un error");
+                if (error.code == error.PERMISSION_DENIED) {
+                    navigator.notification.alert("$$ITEM.PERMISSION_DENIED_DIALOG_MESSAGE$", function () {
+                        
+                            document.getElementById('$$COMPONENT_PREFIX$BUT_90709B068562F964120474').click()
+                        
+                    }, "$$ITEM.PERMISSION_DENIED_DIALOG_TITLE$")
+                }
             });
         }
 
