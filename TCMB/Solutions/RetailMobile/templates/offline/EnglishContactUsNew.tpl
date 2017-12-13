@@ -20,7 +20,7 @@
 			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
 			<div class="col-xs-9 infoContact">
 				<p class="from Size12 lineHeight1">FROM VENEZUELA</p>
-				<p class="Size12 detalleContacto">0500BANESCO (0500-2263726)</p>
+				<p class="Size12 detalleContacto">Call us on the phone +582125011111</p>
 			</div>
 		</a>
 	</div>
@@ -44,7 +44,7 @@
 			</div>
 			<div class="col-xs-9 infoContact">
 				<!--<p class="from Size12">FROM UNITED STATES</p>-->
-				<p class="Size12 detalleContacto">ACLIENTE_PA@BANESCO.COM</p>
+				<p class="Size12 detalleContacto">Or write us to Email atclient@banesco.com</p>
 			</div>
 		</a>
 	</div> 
