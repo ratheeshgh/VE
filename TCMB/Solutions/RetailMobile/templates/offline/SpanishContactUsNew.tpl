@@ -20,7 +20,7 @@
 			<div class="col-xs-3 iconContact ContactCall" style="display: none;"></div>
 			<div class="col-xs-9 infoContact">
 				<p class="from Size12 lineHeight1">DESDE VENEZUELA</p>
-				<p class="Size12 detalleContacto">+582125011111</p>
+				<p class="Size12 detalleContacto">+58-2125011111</p>
 			</div>
 		</a>
 	</div>
