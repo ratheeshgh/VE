@@ -12,13 +12,13 @@ TO.CMOVILNET,Búsqueda de Servicio Movilnet,
 TO.CMOVISTAR,Búsqueda de Servicio Movistar,
 TO.CD,Búsqueda de Directorio,
 TO.PS,Pagar un Servicio,Txn
-TO.TMTB,Transferencias entre mis cuentas,Txn
-TO.TTB,Transferencias a terceros Banesco,Txn
-TO.TTOB,Transferencias a terceros de otro banco,Txn
-TO.TMTOB,Transferencias a mis cuentas en otro banco,Txn
-TO.PTMTB,Mis tarjetas de crédito en Banesco,Txn
-TO.PTMTOB,Mis tarjetas de crédito en otro banco,Txn
-TO.PTTB,Pago a otras tarjetas de crédito en Banesco,Txn 
-TO.PTTOB,Pago a otras tarjetas de crédito en otro banco,Txn
-TO.CON,Inicio de sesión,
-TO.DES,Cierre de sesión,
+TO.TMTB,Transferencias Entre Mis Cuentas,Txn
+TO.TTB,Transferencias a Terceros Banesco,Txn
+TO.TTOB,Transferencias a Terceros de Otro Banco,Txn
+TO.TMTOB,Transferencias a Mis Cuentas en Otro Banco,Txn
+TO.PTMTB,Mis Tarjetas de Crédito en Banesco,Txn
+TO.PTMTOB,Mis Tarjetas de Crédito en Otro Banco,Txn
+TO.PTTB,Pago a Otras Tarjetas de Crédito en Banesco,Txn 
+TO.PTTOB,Pago a Otras Tarjetas de Crédito en Otro Banco,Txn
+TO.CON,Inicio de Sesión,
+TO.DES,Cierre de Sesión,

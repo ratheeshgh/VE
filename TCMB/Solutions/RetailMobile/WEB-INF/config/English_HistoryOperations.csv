@@ -5,11 +5,11 @@ TO.DCP,Account Details
 TO.DT,Credit Card Details
 TO.MCP,Account Transactions
 TO.MTP,Credit Card Transactions
-TO.CS,Service search
-TO.CEDC,EDC service search
+TO.CS,Service Search
+TO.CEDC,EDC Service Search
 TO.CCANTV,CanTv service search
-TO.CMOVILNET,Movilnet service search
-TO.CMOVISTAR,Movistar service search
+TO.CMOVILNET,Movilnet Service Search
+TO.CMOVISTAR,Movistar Service Search
 TO.CD,Directory Search
 TO.PS,Pay a Bill,Txn
 TO.TMTB,Transfer Between My Accounts,Txn
