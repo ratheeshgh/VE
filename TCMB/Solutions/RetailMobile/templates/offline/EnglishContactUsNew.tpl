@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<div class="contactCallRow">
-		<a href="tel:05002263726" class="col-xs-12 contactCallBtn">
+		<a href="tel:+58-2125011111" class="col-xs-12 contactCallBtn">
 			<div class="col-xs-3 iconContactFix">
 				<img src="html/img/icon_phone-05-05-2.svg" style="height:55px;">
 			</div>
@@ -38,7 +38,7 @@
 	</div>
     <p class="Size12 Medium titleContact titleContactMail" style="; color: #54616D;">SEND US A SAFE EMAIL TO</p>
 	 <div class="contactCallRow">
-		<a href="mailto:ACLIENTE_PA@BANESCO.COM" class="col-xs-12 contactCallBtn">
+		<a href="mailto:atclient@banesco.com" class="col-xs-12 contactCallBtn">
 			<div class="col-xs-3 iconContactFix">
 				<img src="images/iconmail.svg" style="height:55px; width: 50px; position:relative;">
 			</div>

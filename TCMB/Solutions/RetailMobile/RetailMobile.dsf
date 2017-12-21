@@ -16,7 +16,7 @@
       <GlobalParameter GlobalParameterValue="N" Name="4TRESS_SERVICE_STATUS" eid="DFFA14F4CB65DE8345490"/>
       <GlobalParameter GlobalParameterValue="http://localhost:8085/TCMBCommon-iris/TCMBCommon.svc/GB0010001/" Name="IRIS_COMMON_SERVICE_ROOT_URI" eid="E7929170CDF56B9B12410"/>
       <GlobalParameter GlobalParameterValue="http://localhost:8085/TCMBRetail-iris/TCMBRetail.svc/GB0010001/" Name="IRIS_RETAIL_SERVICE_ROOT_URI" eid="C8A9C675B390B88019929"/>
-      <GlobalParameter GlobalParameterValue="http://10.135.199.236:8080" Name="APIDOMAIN_SERVICE_ROOT_URI" eid="7187ADA7DA538AE275234"/>
+      <GlobalParameter GlobalParameterValue="http://10.135.199.234:8080" Name="APIDOMAIN_SERVICE_ROOT_URI" eid="7187ADA7DA538AE275234"/>
       <GlobalParameter GlobalParameterValue="123456" Name="STATIC_DEMO_PASSWD" eid="29CE80C7510DBF8F10240"/>
       <GlobalParameter GlobalParameterValue="ROLFGERLINGTC" Name="SYSTEM_USER" eid="191A652DED73DE1812957"/>
       <GlobalParameter GlobalParameterValue="123456" Name="SYSTEM_PASSWORD" eid="191A652DED73DE1812958"/>
