@@ -88,21 +88,32 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 	 
 					document.addEventListener('resume', function () {
 						console.log("En RESUME")
-						    // Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
-							var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
-							console.log('TEMPLATE:: sessionInitTimestamp', sessionInitTimestamp)
-							var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
-							console.log('TEMPLATE:: secondsSinceSessionInit', secondsSinceSessionInit)
-							if (secondsSinceSessionInit >= $$SessionTimeout$) {
+						// Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
+						var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
+						console.log('TEMPLATE:: sessionInitTimestamp', sessionInitTimestamp)
+						var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
+						console.log('TEMPLATE:: secondsSinceSessionInit', secondsSinceSessionInit)
+						if (secondsSinceSessionInit >= $$SessionTimeout$) {
+							$%IF PHASE == 'Login'$
 								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
-								rebootApplication()	
-							}
-					})
+								rebootApplication(false)
+							$%ELSE$
+								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
+								rebootApplication(true)
+							$%ENDIF$	
+						}
+				})
 
-					function rebootApplication () {
-						document.getElementsByName("WorkingElements[1].SessionLoggedOutDueToInactivity")[0].value = "N";
-						document.forms['sessionTimeoutForm'].submit()
+				function rebootApplication (timeout) {
+					document.getElementsByName("WorkingElements[1].SessionLoggedOutDueToInactivity")[0].value = timeout ? "Y" : "N";
+					if (timeout) {
+						var userID = "$$Login[1].UserID$";
+						var sid = "$$LoginDetails[1].SessionID$";
+						$("input[id=UID]").val(userID);	
+						$("input[id=SessionID]").val(sid);
 					}
+					document.forms['sessionTimeoutForm'].submit()
+				}
 				$%ELSE$
 					localStorage.removeItem('sessionInitTimestamp');
 				$%ENDIF$

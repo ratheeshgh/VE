@@ -31,4 +31,12 @@
 		<type>TVL</type>
 		<name>Locatel</name>
 	</cardType>
+	<cardType>
+		<type>TMB</type>
+		<name>Master Black</name>
+	</cardType>
+	<cardType>
+		<type>TVS</type>
+		<name>Visa Signature</name>
+	</cardType>
 </CreditCardsTypes>
