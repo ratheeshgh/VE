@@ -8366,130 +8366,130 @@
   </Lists>
   <HybridMessages>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="ok" eid="DFFA14F4CB65DE8321566" path="ok" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="OK" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="OK" state="APPROVED" status="OKAY" value="Bien"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="not_now" eid="DFFA14F4CB65DE8321567" path="not_now" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Not Now" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Not Now" state="APPROVED" status="OKAY" value="Ahora no"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="user_settings" eid="DFFA14F4CB65DE8321568" path="user_settings" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="APPROVED" status="OKAY" value="Ajustes"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="check_updates" eid="DFFA14F4CB65DE8321569" path="check_updates" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Check for updates" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Check for updates" state="APPROVED" status="OKAY" value="Buscar Actualización"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="developer_settings" eid="DFFA14F4CB65DE8321570" path="developer_settings" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Developer settings" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Developer settings" state="APPROVED" status="OKAY" value="Ajustar programación"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="title_activity_app_pereferences" eid="DFFA14F4CB65DE8321571" path="title_activity_app_pereferences" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings" state="APPROVED" status="OKAY" value="Ajustar"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed_title" eid="DFFA14F4CB65DE8321572" path="internet_connection_needed_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="No Connectivity" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="No Connectivity" state="APPROVED" status="OKAY" value="Sin Conectividad"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="internet_connection_needed" eid="DFFA14F4CB65DE8321573" path="internet_connection_needed" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Please verify you have cellular network or WiFi connection" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Please verify you have cellular network or WiFi connection" state="APPROVED" status="OKAY" value="Compruebe que tiene conexión a red celular o WiFi"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_title" eid="DFFA14F4CB65DE8321574" path="error_accessing_server_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error communicating with the server" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error communicating with the server" state="APPROVED" status="OKAY" value="Error en comunicación con el servidor"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="error_accessing_server_description" eid="DFFA14F4CB65DE8321575" path="error_accessing_server_description" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The server cannot be reached" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The server cannot be reached" state="APPROVED" status="OKAY" value="No se puede acceder al servidor"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert" eid="DFFA14F4CB65DE8321576" path="invalid_ssl_cert" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. The server cannot be trusted." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. The server cannot be trusted." state="APPROVED" status="OKAY" value="El certificado SSL no es válido"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="invalid_ssl_cert_development" eid="DFFA14F4CB65DE8321577" path="invalid_ssl_cert_development" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. This is allowed only in development mode." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The SSL certificate is invalid. This is allowed only in development mode." state="APPROVED" status="OKAY" value="El certificado SSL no es válido"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_dialog_title" eid="DFFA14F4CB65DE8321578" path="lang_preference_dialog_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Preferred language" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Preferred language" state="APPROVED" status="OKAY" value="Lenguaje preferido"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_title" eid="DFFA14F4CB65DE8321579" path="lang_preference_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Language settings" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Language settings" state="APPROVED" status="OKAY" value="Ajuste de Lenguaje"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="lang_preference_summary" eid="DFFA14F4CB65DE8321580" path="lang_preference_summary" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Select your preferred language" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Select your preferred language" state="APPROVED" status="OKAY" value="Seleccionar su lenguaje preferido"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="change_confirm_reload" eid="DFFA14F4CB65DE8321581" path="change_confirm_reload" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="For applying your settings, the application has to be reloaded. Reload the application now?" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="For applying your settings, the application has to be reloaded. Reload the application now?" state="APPROVED" status="OKAY" value="La aplicación debe volver a cargarse. ¿ Cargar la aplicación ahora?"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="settings_update_title" eid="DFFA14F4CB65DE8321582" path="settings_update_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings update" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Settings update" state="APPROVED" status="OKAY" value="Ajustes de Actualización"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_download_updates_now" eid="DFFA14F4CB65DE8321583" path="update_download_updates_now" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available. Download updates now?" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available. Download updates now?" state="APPROVED" status="OKAY" value="Las actualizaciones están disponibles. Descargar actualizaciones ahora?"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_uptodate" eid="DFFA14F4CB65DE8321584" path="update_result_uptodate" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The application is up to date." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The application is up to date." state="APPROVED" status="OKAY" value="La aplicación está actualizada."/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_error" eid="DFFA14F4CB65DE8321585" path="update_result_error" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The update site rejected the query." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The update site rejected the query." state="APPROVED" status="OKAY" value="El sitio de actualización rechazó la consulta."/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_processing_error" eid="DFFA14F4CB65DE8321586" path="update_result_processing_error" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error encountered during update." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error encountered during update." state="APPROVED" status="OKAY" value="Error encontrado durante la actualización"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_unknown_error" eid="DFFA14F4CB65DE8321587" path="update_result_unknown_error" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error reading the update status from the update site." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Error reading the update status from the update site." state="APPROVED" status="OKAY" value="Error al leer el estado de actualización desde el sitio de actualización."/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_title" eid="DFFA14F4CB65DE8321588" path="downloading_file_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading updates..." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading updates..." state="APPROVED" status="OKAY" value="Descargando actualización..."/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_starting" eid="DFFA14F4CB65DE8321589" path="downloading_file_starting" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Starting..." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Starting..." state="APPROVED" status="OKAY" value="Ingresando...&#10;"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_file_progress" eid="DFFA14F4CB65DE8321590" path="downloading_file_progress" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading file %1$d of %2$d." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Downloading file %1$d of %2$d." state="APPROVED" status="OKAY" value="Descargando archivo"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_error" eid="DFFA14F4CB65DE8321591" path="downloading_updates_error" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Failed to download the updates." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Failed to download the updates." state="APPROVED" status="OKAY" value="Error al descargar las actualizaciones"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="downloading_updates_success" eid="DFFA14F4CB65DE8321592" path="downloading_updates_success" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="The updates were downloaded successfully." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="The updates were downloaded successfully." state="APPROVED" status="OKAY" value="Las actualizaciones se descargaron exitosamente"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_googleplay_confirmation" eid="DFFA14F4CB65DE8321593" path="update_through_googleplay_confirmation" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Google play. Download the updated application now?" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Google play. Download the updated application now?" state="APPROVED" status="OKAY" value="Debe actualizar la aplicación a través de Google Play. ¿Descargue la aplicación actualizada ahora?"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="store_updatetitle" eid="DFFA14F4CB65DE8321594" path="store_updatetitle" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="AppStore update" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="AppStore update" state="APPROVED" status="OKAY" value="Actualización en AppStore"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_result_major_update" eid="DFFA14F4CB65DE8321595" path="update_result_major_update" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available for this application. Connect to iTunes now?" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Updates are available for this application. Connect to iTunes now?" state="APPROVED" status="OKAY" value="Las actualizaciones están disponibles para esta aplicación. ¿Conectarse a iTunes ahora?"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="alert_title" eid="63F6B7129AEAD99B10678" path="alert_title" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Alert" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Alert" state="APPROVED" status="OKAY" value="Alerta"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="loading_wait" eid="63F6B7129AEAD99B10679" path="loading_wait" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Loading, please wait..." state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Loading, please wait..." state="APPROVED" status="OKAY" value="Ingresando, Por favor espere..."/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="update_through_windows_store_confirmation" eid="C8A9C675B390B88018389" path="update_through_windows_store_confirmation" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Windows Phone Store. Download the updated application now?" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="You need to update the application through Windows Phone Store. Download the updated application now?" state="APPROVED" status="OKAY" value="Debe actualizar la aplicación a través de Windows Phone Store. Descargue la aplicación actualizada ahora?"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="save" eid="4897D0D4F403CEB917326" path="save" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Save" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Save" state="APPROVED" status="OKAY" value="Guardar"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="use_device_language" eid="4897D0D4F403CEB917327" path="use_device_language" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Use device language" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Use device language" state="APPROVED" status="OKAY" value="Usar el idioma del dispositivo"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="all_pages" eid="DF510D0D7EE40F5F37182" path="all_pages" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="All pages" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="All pages" state="APPROVED" status="OKAY" value="Todas las Páginas"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="filesave_success" eid="DF510D0D7EE40F5F37183" path="filesave_success" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="File saved successfully" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="File saved successfully" state="APPROVED" status="OKAY" value="Archivo guardado Exitosamente"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="one_page" eid="DF510D0D7EE40F5F37184" path="one_page" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="One page" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="One page" state="APPROVED" status="OKAY" value="Página 1"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="pdf_documents" eid="DF510D0D7EE40F5F37185" path="pdf_documents" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="PDF Documents" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="PDF Documents" state="APPROVED" status="OKAY" value="Documento en PDF"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="print" eid="DF510D0D7EE40F5F37186" path="print" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Print" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Print" state="APPROVED" status="OKAY" value="Imprimir"/>
     </HybridMessage>
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="DF510D0D7EE40F5F37187" path="reports" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="Reports" state="NEW" status="OKAY" value=""/>
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="Reports" state="APPROVED" status="OKAY" value="Reportes"/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="7187ADA7DA538AE272459" path="app_name" type="Hybrid Message">
-      <Attribute mappingType="OVERRIDE" name="VALUE" original="App name - not used required by Cordova" state="NEW" status="OKAY" value=""/>
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="9D77EE5BDF10525972743" path="app_name" type="Hybrid Message">
+      <Attribute mappingType="OVERRIDE" name="VALUE" original="App name - not used required by Cordova" state="APPROVED" status="OKAY" value="Nombre del App"/>
     </HybridMessage>
   </HybridMessages>
 </LanguageMap>
