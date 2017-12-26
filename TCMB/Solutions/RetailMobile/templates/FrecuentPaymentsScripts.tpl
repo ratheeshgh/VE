@@ -1,6 +1,7 @@
 <script type="text/javascript">
 function runFrecuentPaymentsScripts(){
 
+
 	function processCheckboxWidget() {
 		 //var $this = $('#'+elementId);
  		 $("input[type='checkbox']").each(function(index ){
@@ -30,7 +31,7 @@ function runFrecuentPaymentsScripts(){
 			$(this).after("<span id='"+elId+"_Helper' style='display:none;height:0;opacity:0;'></span>")
 			handleNumberInput(this,'Y', 'Y', "")
 		}) 
-	}
+	} 
 
 
 	function handleNumberInput(element,DecimalsNotAllowed, CurrencyFormat, MAX_LENGTH) {
@@ -139,7 +140,7 @@ function runFrecuentPaymentsScripts(){
 	                if (!isNaN(numberToShow)) {
 	                    $inputNumber.val($inputHelper.html())
 	                    $inputHelper.html($inputNumber.val())
-	                }
+	                } 
 	            }
 	        }else{
 	            if (!isNaN(Number(currentValueString))) {
