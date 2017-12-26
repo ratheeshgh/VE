@@ -1,0 +1,57 @@
+
+<style>
+	.banesco_checkbox {
+		display: none !important;
+	}
+
+	.banesco_checkbox + label {
+		font-family: 'Banesco';
+		margin: 0px;
+	}
+
+	.banesco_checkbox + label::before {
+		content: '';
+		width: 19px;
+		height: 19px;
+		border: 1px solid #A5ADB4;
+		display: block;
+		border-radius: 2px;
+	}
+
+	.banesco_checkbox:checked + label::before {
+		    content: '✓';
+		    font-size: 14px;
+		    line-height: 16px;
+		    color: #FFF;
+		    text-align: center !important;
+		    background: #2B5F8C;
+		    border: 1px solid #2B5F8C;
+	}
+</style>
+
+<script type="text/javascript">
+	function checkboxWidget(elementId) {
+		var $this = $('#'+elementId);
+
+		var $checkbox = $this.find("input[type='checkbox']");
+		$checkbox.addClass('banesco_checkbox')
+		var $label = $('<label for="' + $checkbox.attr('id') + '"></label>');
+		$checkbox.parent().append($label)
+		$checkbox.off('click');
+		$checkbox.on('click', function () {
+			$checkbox.toggleClass('active', $checkbox.is(':checked'))
+		})	
+		
+		$%IF PHASE  == 'FrequentPayment'$
+
+			var ancho = $('body').width() - 35;
+
+	  		$('.totalCard').find('label').css({"position": "absolute", "left": "2px", "padding-left": ancho, "top": "8px", "padding-bottom": "25px"});
+
+    		$('.banesco_checkbox + label').css({"position": "absolute", "top": "27px", "right": "18px" });
+
+		$%ENDIF$
+
+	}
+	
+</script>
