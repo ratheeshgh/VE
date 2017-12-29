@@ -14,6 +14,8 @@
 
 .frec_card_body .frec_checkbox_wrapper {
 	width:20%;
+	float:none !important;
+	display: inline-block !important;
 }
 
 .frec-body-text3 {
