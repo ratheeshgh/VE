@@ -69,42 +69,16 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 		}
 	   </script>
 	   <script>
-		   $%IF PHASE == Login$
+		   if("$$PHASE$" == "Login" || "$$PHASE$" == "SessionTimeOut"  || "$$PHASE$" == 'Offline'){
 			   	$(function () {
 			   		localStorage.setItem('sessionInitTimestamp', Date.now());
 			   	})
-		   	$%ENDIF$
+		   	}
 	   </script>
 	   <script>
 		   document.addEventListener('deviceready', function () {
-		   	    $%IF PHASE == 'Login'$
-			    /*
-			    	Se manejan los eventos pause y resume en la phase de Login para controlar los casos en que la sesion expira
-			    	cuando la aplicacion se encuentra en background y evitar que al regresar la aplicacion muestre
-			    	la pantalla de sesion expirada.
-			    */
-					document.addEventListener('pause', function () {
-					})
-	 
-					document.addEventListener('resume', function () {
-						console.log("En RESUME")
-						// Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
-						var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
-						console.log('TEMPLATE:: sessionInitTimestamp', sessionInitTimestamp)
-						var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
-						console.log('TEMPLATE:: secondsSinceSessionInit', secondsSinceSessionInit)
-						if (secondsSinceSessionInit >= $$SessionTimeout$) {
-							$%IF PHASE == 'Login'$
-								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
-								rebootApplication(false)
-							$%ELSE$
-								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
-								rebootApplication(true)
-							$%ENDIF$	
-						}
-				})
 
-				function rebootApplication (timeout) {
+		   		function rebootApplication (timeout) {
 					document.getElementsByName("WorkingElements[1].SessionLoggedOutDueToInactivity")[0].value = timeout ? "Y" : "N";
 					if (timeout) {
 						var userID = "$$Login[1].UserID$";
@@ -114,9 +88,40 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 					}
 					document.forms['sessionTimeoutForm'].submit()
 				}
-				$%ELSE$
+
+		   	    if("$$PHASE$" == 'Login' || "$$PHASE$" == 'SessionTimeOut' || "$$PHASE$" == 'Offline'){
+				    /*
+				    	Se manejan los eventos pause y resume en la phase de Login para controlar los casos en que la sesion expira
+				    	cuando la aplicacion se encuentra en background y evitar que al regresar la aplicacion muestre
+				    	la pantalla de sesion expirada.
+				    */
+					document.addEventListener('pause', function () {
+						console.log("pause")
+					})
+	 
+					document.addEventListener('resume', function () {
+						console.log("En RESUME")
+						// Se controla que el tiempo de sesion efectivamente haya expirado. En ese caso se reinicia la aplicacion
+						var sessionInitTimestamp = localStorage.getItem('sessionInitTimestamp');
+						console.log('TEMPLATE:: sessionInitTimestamp', sessionInitTimestamp)
+						var secondsSinceSessionInit = (Date.now() - sessionInitTimestamp) / 1000;
+						console.log('TEMPLATE:: secondsSinceSessionInit', secondsSinceSessionInit);
+						debugger;
+						if (secondsSinceSessionInit >= $$SessionTimeout$) {
+							if("$$PHASE$" == 'Login'  || "$$PHASE$" == 'Offline'){
+								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
+								rebootApplication(false)
+							}else{
+								console.log("TEMPLATE:: SessionTimeout. Reboot Application")
+								rebootApplication(true)
+							}	
+						}
+					})
+
+				}else{
 					localStorage.removeItem('sessionInitTimestamp');
-				$%ENDIF$
+				}
+				
 		   });
 	   </script>
 		$%IF !DownloadPDF = 'Y'$	   
@@ -228,12 +233,12 @@ $%endif$
 </script>
 $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 <form name="sessionTimeoutForm" method=POST action="servletcontroller" autocomplete="off">
-			<input type="hidden" name="PRODUCT" value="">
-			<input type="hidden" name="PRESENTATION_TYPE" value="">
-			<input type="hidden" name="MODE" value="XX">
-			<input type="hidden" id="session_token" name="Session[1].Session_Token">
-			<input type="hidden" name="WorkingElements[1].SessionLoggedOutDueToInactivity" value="Y"/>
-		</form>
+	<input type="hidden" name="PRODUCT" value="">
+	<input type="hidden" name="PRESENTATION_TYPE" value="">
+	<input type="hidden" name="MODE" value="XX">
+	<input type="hidden" id="session_token" name="Session[1].Session_Token">
+	<input type="hidden" name="WorkingElements[1].SessionLoggedOutDueToInactivity" value="Y"/>
+</form>
 
 
   </body>
