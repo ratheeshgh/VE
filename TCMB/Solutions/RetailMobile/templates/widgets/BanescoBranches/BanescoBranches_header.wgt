@@ -27,7 +27,7 @@
                 zoom: 15
             };
             
-            var mergedMapConfig = Object.assign({}, defaultMapConfig, mapConfig)
+            var mergedMapConfig = $.extend({}, defaultMapConfig, mapConfig); 
             _map = new google.maps.Map(_mapMountNode, mergedMapConfig);
             
             var marker = new google.maps.Marker({
@@ -96,7 +96,7 @@
                         type: [type]
                     };
 
-                    var mergedConfig = Object.assign({}, defaultConfig, config);
+                    var mergedConfig = $.extend({}, defaultConfig, config);
 
                     (function(type){
                         placesService.textSearch(mergedConfig, function (results, status) {
@@ -140,7 +140,7 @@
                 travelMode: 'WALKING'
             }
 
-            var mergedConfig = Object.assign({}, defaultConfig, config);
+            var mergedConfig = $.extend({}, defaultConfig, config);
 
             var service = new google.maps.DistanceMatrixService();
             service.getDistanceMatrix(mergedConfig, function distanceMatrixResponse(response, status) {
@@ -180,7 +180,7 @@
                 optimizeWaypoints: true
             }
 
-            var mergedConfig = Object.assign({}, defaultConfig, config)
+            var mergedConfig = $.extend({}, defaultConfig, config)
 
             directionsService.route(mergedConfig, function (response, status) {
                 if (status === 'OK') {
