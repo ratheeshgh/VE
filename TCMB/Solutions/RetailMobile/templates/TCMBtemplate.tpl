@@ -16,7 +16,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
       <meta name="author" content="Edge IPK"/>
 	  <link rel="shortcut icon" href="./html/favicon.ico">
 	  <title>Banesco Móvil</title>
-	  <link href="./html/css/main.css?$$!VERSION$" rel="stylesheet">
+	  <!--<link href="./html/css/main.css?$$!VERSION$" rel="stylesheet">-->
 	  $%IF PHASE == "TakeATour"$<link rel="stylesheet" href="./templates/widgets/carousel/css/idangerous.swiper.css">$%ENDIF$
 	  <link rel="stylesheet" id="cssLink">
 	  <script src="$$HTML_LOCATION$js/cordova/cordova_loader.js"></script>
@@ -33,31 +33,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 	  <script type="text/javascript" src="./html/js/main.js"></script>
 
 	   $$HEADCONTENT$ 
-	   <link rel='stylesheet' type='text/css' href='./html/css/buttons.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/card.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/cardDetails.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/contact.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/errorscreens.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/login.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/messagesLayouts.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/tabsElements.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/TCMBBanesco.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/paymentAndTransfer.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/termsandconditions.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/switchLanguage.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/topNavigation.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/details.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/movements.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/tabMenu.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/branchesList.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/promotions.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/frecuent_payments.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/historyOfOperations.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/payabill.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/list-Styles.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/contactFix.css?$$!VERSION$' />
-		<link rel='stylesheet' type='text/css' href='./html/css/fingerprintLogin.css?$$!VERSION$' />	
-		<link rel='stylesheet' type='text/css'  href="./html/css/myaccounts-sidemenu.css?$$!VERSION$" rel="stylesheet"></link>
+	   <link rel='stylesheet' type='text/css' href='./html/css/banesco.css?$$!VERSION$' />
 		
 
 	   <script src="$$HTML_LOCATION$js/tcmb.js"></script>

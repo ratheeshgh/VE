@@ -1,0 +1,5 @@
+$%IF ITEM.DISABLE_SWIPE != 'Y'$
+<script type="text/javascript" src="./html/js/jquery.event.move.js"></script>
+<script type="text/javascript" src="./html/js/jquery.event.swipe.js"></script>
+<script type="text/javascript" src="./html/js/jquery.event.jquery.min.js"></script>
+$%ENDIF$
