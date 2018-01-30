@@ -21,9 +21,12 @@
             }
         }
 
-        function onDeviceReady() {
+        function onDeviceReady() { 
+            console.log("onDeviceReady");
+            
             var onSuccess = function (position) {
-                
+                console.log("onSuccess");
+                closeProgress();
                 var banescoMap, myLocation;
                 var BanescoMap = window.com.widgets.BanescoMap;
 
@@ -43,7 +46,7 @@
                 var destinations;
 
                 function onSearchCallback(results) {
-                    
+
                     banescoMap.calculateDistance(widgetArgs.calculateDistanceConfig, function (branchesList) {
                         createBranchesList(branchesList);
                     })
@@ -51,7 +54,7 @@
 
                 function createBranchesList(branches) {
                     var $branchesList = $('#branchesList')
-                   
+
                     branches.forEach(function (item) {
                         if (item.distance.status != google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
                             var newRow = buildBranchRow(item)
@@ -96,7 +99,8 @@
 
             }
 
-            navigator.geolocation.getCurrentPosition(onSuccess, function onError(error) {
+             var onError = function (error) {    
+                closeProgress();         
                 if (error.code == error.PERMISSION_DENIED) {
                     navigator.notification.alert("$$ITEM.PERMISSION_DENIED_DIALOG_MESSAGE$", function () {
                         
@@ -104,11 +108,24 @@
                         
                     }, "$$ITEM.PERMISSION_DENIED_DIALOG_TITLE$")
                 }
-            });
+
+                if (error.code == error.TIMEOUT) {
+                    navigator.notification.alert( "$$ITEM.GEOLOCATION_TIMEOUT_MESSAGE$", function () {
+                        
+                            document.getElementById('$$COMPONENT_PREFIX$BUT_90709B068562F964120474').click()
+                        
+                    },  "$$ITEM.GEOLOCATION_TIMEOUT_TITLE$")
+                }
+            } 
+           
+           setTimeout( showProgress , 500);
+            navigator.geolocation.getCurrentPosition(onSuccess, onError, {  timeout: 12000  });         
+            
+       
         }
 
         $%IF DEVICE_INFO.isHybrid == "Y"$
-            document.addEventListener("deviceready", onDeviceReady, false);          
+            document.addEventListener("deviceready", onDeviceReady, false);         
         $%ELSE$
              onDeviceReady()
         $%ENDIF$

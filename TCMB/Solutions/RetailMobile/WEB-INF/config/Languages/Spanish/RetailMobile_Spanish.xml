@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="06/12/17 16:17" version="1">
+<?xml version="1.0" encoding="UTF-8"?><LanguageMap presentations="TCMB-Windows,TCMB" project="RetailMobile" sourcelanguage="en-GB" targetlanguage="es" updated="29/01/18 17:06" version="1">
   <Comment/>
   <ProcessEntities>
     <Container class="com.acquire.intelligentforms.entities.Product" displayString="Initialize" eid="C688C2CC681169CE28930" type="Process">
@@ -1543,7 +1543,7 @@
           </ProcessEntityAttr>
           <ProcessEntityAttr default="Se ha perdido la conexión" name="DisplayText" original="Connection lost" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1F601CC4A75C62F875659:TCMB-Windows" mappingType="OVERRIDE" original="Connection lost" specifiedBy="1F601CC4A75C62F875658:Heading" state="NEEDS_REVIEW" status="OKAY" value="Se ha perdido la conexión"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1F601CC4A75C62F875661:TCMB" mappingType="OVERRIDE" original="Connection lost" specifiedBy="1F601CC4A75C62F875658:Heading" state="NEEDS_REVIEW" status="OKAY" value="Se ha perdido la conexión"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1F601CC4A75C62F875661:TCMB" mappingType="OVERRIDE" original="Se ha perdido la conexi&amp;oacute;n" specifiedBy="1F601CC4A75C62F875661:Rich Presentation Heading" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="Se ha perdido la conexión"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationQuestion" forPresObjects="1F601CC4A75C62F875659:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875658:Heading" state="NEW" status="OKAY" value=""/>
@@ -1556,7 +1556,7 @@
         </ProcessEntity>
         <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Get Online Now" eid="1F601CC4A75C62F875665" path="OfflineEnabled.Offline.Get Online Now" type="Button">
           <ProcessEntityAttr default="RECONECTAR" name="ButtonText" original="Get Online Now" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875670:TCMB" mappingType="OVERRIDE" original="Get Online Now" specifiedBy="1F601CC4A75C62F875670:Rich Presentation Button" state="NEEDS_REVIEW" status="OKAY" value="RECONECTAR"/>
+            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875670:TCMB" mappingType="OVERRIDE" original="RECONECTAR" specifiedBy="1F601CC4A75C62F875670:Rich Presentation Button" state="NEEDS_REVIEW" status="UPDATED|Project value has changed. Field may need re-translation" value="RECONECTAR"/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875668:TCMB-Windows" mappingType="OVERRIDE" original="Get Online Now" specifiedBy="1F601CC4A75C62F875665:Button" state="NEW" status="OKAY" value="RECONECTAR"/>
           </ProcessEntityAttr>
           <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
@@ -1574,116 +1574,6 @@
           <ProcessEntityAttr default="RECONECTAR" name="HintText" original="Get Online Now" state="NEW">
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875670:TCMB" mappingType="OVERRIDE" original="Get Online Now" specifiedBy="1F601CC4A75C62F875665:Button" state="NEW" status="OKAY" value="RECONECTAR"/>
             <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875668:TCMB-Windows" mappingType="OVERRIDE" original="Get Online Now" specifiedBy="1F601CC4A75C62F875665:Button" state="NEW" status="OKAY" value="RECONECTAR"/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Contact us" eid="1F601CC4A75C62F875674" path="OfflineEnabled.Offline.Contact us" type="Button">
-          <ProcessEntityAttr default="Contáctanos" name="ButtonText" original="Contact us" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875680:TCMB" mappingType="OVERRIDE" original="Contact us" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value="Contáctanos"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875677:TCMB-Windows" mappingType="OVERRIDE" original="Contact us" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value="Contáctanos"/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875677:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875677:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875680:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875677:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="Contáctanos" name="HintText" original="Contact us" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875680:TCMB" mappingType="OVERRIDE" original="Contact us" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value="Contáctanos"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875677:TCMB-Windows" mappingType="OVERRIDE" original="Contact us" specifiedBy="1F601CC4A75C62F875674:Button" state="NEW" status="OKAY" value="Contáctanos"/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Terms and conditions" eid="1F601CC4A75C62F875685" path="OfflineEnabled.Offline.Terms and conditions" type="Button">
-          <ProcessEntityAttr default="Términos y condiciones" name="ButtonText" original="Terms and conditions" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875691:TCMB" mappingType="OVERRIDE" original="Terms and conditions" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value="Términos y condiciones"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875688:TCMB-Windows" mappingType="OVERRIDE" original="Terms and conditions" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value="Términos y condiciones"/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875691:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875688:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875691:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875688:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875691:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875688:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="Términos y condiciones" name="HintText" original="Terms and conditions" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875691:TCMB" mappingType="OVERRIDE" original="Terms and conditions" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value="Términos y condiciones"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875688:TCMB-Windows" mappingType="OVERRIDE" original="Terms and conditions" specifiedBy="1F601CC4A75C62F875685:Button" state="NEW" status="OKAY" value="Términos y condiciones"/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="About" eid="1F601CC4A75C62F875696" path="OfflineEnabled.Offline.About" type="Button">
-          <ProcessEntityAttr default="Acerca de" name="ButtonText" original="About" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875702:TCMB" mappingType="OVERRIDE" original="About" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value="Acerca de"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875699:TCMB-Windows" mappingType="OVERRIDE" original="About" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value="Acerca de"/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875702:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875699:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875702:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875699:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875702:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875699:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="Acerca de" name="HintText" original="About" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875702:TCMB" mappingType="OVERRIDE" original="About" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value="Acerca de"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875699:TCMB-Windows" mappingType="OVERRIDE" original="About" specifiedBy="1F601CC4A75C62F875696:Button" state="NEW" status="OKAY" value="Acerca de"/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Take a tour" eid="1F601CC4A75C62F875707" path="OfflineEnabled.Offline.Take a tour" type="Button">
-          <ProcessEntityAttr default="Toma un tour" name="ButtonText" original="Take a tour" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875713:TCMB" mappingType="OVERRIDE" original="Take a tour" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value="Toma un tour"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875710:TCMB-Windows" mappingType="OVERRIDE" original="Take a tour" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value="Toma un tour"/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875713:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875713:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875713:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875710:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="Toma un tour" name="HintText" original="Take a tour" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875713:TCMB" mappingType="OVERRIDE" original="Take a tour" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value="Toma un tour"/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875710:TCMB-Windows" mappingType="OVERRIDE" original="Take a tour" specifiedBy="1F601CC4A75C62F875707:Button" state="NEW" status="OKAY" value="Toma un tour"/>
-          </ProcessEntityAttr>
-        </ProcessEntity>
-        <ProcessEntity class="com.acquire.intelligentforms.entities.FormButton" displayString="Whats New" eid="1F601CC4A75C62F875718" path="OfflineEnabled.Offline.Whats New" type="Button">
-          <ProcessEntityAttr default="" name="ButtonText" original="Whats New" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875721:TCMB-Windows" mappingType="OVERRIDE" original="Whats New" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875724:TCMB" mappingType="OVERRIDE" original="Whats New" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ColumnHeading" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875721:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875724:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="ConfirmationMessage" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875721:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875724:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HelpText" original="" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875721:TCMB-Windows" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875724:TCMB" mappingType="PLACEHOLDER" original="" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-          </ProcessEntityAttr>
-          <ProcessEntityAttr default="" name="HintText" original="Whats New" state="NEW">
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875721:TCMB-Windows" mappingType="OVERRIDE" original="Whats New" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
-            <Attr forPresClasses="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationButton" forPresObjects="1F601CC4A75C62F875724:TCMB" mappingType="OVERRIDE" original="Whats New" specifiedBy="1F601CC4A75C62F875718:Button" state="NEW" status="OKAY" value=""/>
           </ProcessEntityAttr>
         </ProcessEntity>
         <Leaf class="com.acquire.intelligentforms.entities.FormButton" displayString="keepAliveSession" eid="E9A8AA8FBB79CC92105679" leafType="link" path="PreLogin.keepAliveSession" type="Button"/>
@@ -7089,6 +6979,9 @@
               <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
             </PresentationObject>
           </Container>
+          <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text" eid="356775404C16514E283828" path="TCMB.OfflineEnabled.Offline.Text" type="Rich Presentation Text">
+            <Attribute mappingType="OVERRIDE" name="Text" original="&lt;script&gt;&#10;$(function () {&#10;  $('body').css('padding-top', 0)&#10;})&#10;&lt;/script&gt;" state="NEW" status="NEW" value=""/>
+          </PresentationObject>
         </Container>
         <Container class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationPhase" displayString="About" eid="90709B068562F96464963" type="Rich Presentation Phase">
           <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="Text from file offline/$$LANGUAGE_MAP_ALIAS$About.tpl" eid="17514B55408B715B59269" path="TCMB.OfflineEnabled.About.Text from file offline/$$LANGUAGE_MAP_ALIAS$About.tpl" type="Rich Presentation Text">
@@ -7111,6 +7004,8 @@
               <Attribute mappingType="PLACEHOLDER" name="HintText" original="" state="NEW" status="OKAY" value=""/>
               <Attribute mappingType="OVERRIDE" name="TabName" original="Branches" state="NEEDS_REVIEW" status="OKAY" value="Sucursales"/>
               <PresentationObject class="com.acquire.intelligentforms.entities.presentation.html.waihtml.richhtml.RichHTMLPresentationText" displayString="BanescoBranches" eid="6F07E77A56B43A9979284" path="TCMB.OfflineEnabled.BanescoBranches.Section.Tab Pane Branches.BanescoBranches" type="BanescoBranches">
+                <Attribute mappingType="OVERRIDE" name="GEOLOCATION_TIMEOUT_MESSAGE" original="There was an error obtaining your location. Please, check your location preferences and try again." state="NEW" status="NEW" value="Ocurrió un error al obtener su ubicación, por favor verifique sus preferencias de localización e intente nuevamente."/>
+                <Attribute mappingType="OVERRIDE" name="GEOLOCATION_TIMEOUT_TITLE" original="Error getting your location" state="NEW" status="NEW" value="Error al obtener su ubicación"/>
                 <Attribute mappingType="OVERRIDE" name="PERMISSION_DENIED_DIALOG_MESSAGE" original="Please, turn on your locations permissions in order to use this functionallity" state="NEW" status="OKAY" value="Por favor, activa los permisos de ubicación para poder acceder a esta funcionalidad"/>
                 <Attribute mappingType="OVERRIDE" name="PERMISSION_DENIED_DIALOG_TITLE" original="Locations permission denied" state="NEW" status="OKAY" value="Permiso de ubicación denegado"/>
                 <Attribute mappingType="PLACEHOLDER" name="Text" original="" state="NEW" status="OKAY" value=""/>
@@ -8488,7 +8383,7 @@
     <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="reports" eid="DF510D0D7EE40F5F37187" path="reports" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="Reports" state="APPROVED" status="OKAY" value="Reportes"/>
     </HybridMessage>
-    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="9D77EE5BDF10525972743" path="app_name" type="Hybrid Message">
+    <HybridMessage class="com.acquire.intelligentforms.entities.deploy.messages.Message" displayString="app_name" eid="7187ADA7DA538AE272459" path="app_name" type="Hybrid Message">
       <Attribute mappingType="OVERRIDE" name="VALUE" original="App name - not used required by Cordova" state="APPROVED" status="OKAY" value="Nombre del App"/>
     </HybridMessage>
   </HybridMessages>
