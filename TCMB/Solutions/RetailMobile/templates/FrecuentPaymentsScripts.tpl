@@ -1,8 +1,30 @@
-<script type="text/javascript">
-function runFrecuentPaymentsScripts(){
+<script type="text/javascript">	
+	var frecuentPaymentsScriptsExecuted = false;
 
 
+function postProcessResponses(a,event,c){
+ 
+ 	 $(".radioButtonWrapper").find("input[type='radio']").each(function(a,el){		 
+		console.log("11");
+		if(el.value.split('*')[1] && Number(el.value.split('*')[1]) <= 0){
+			el.disabled = true;
+			$(el).addClass("disabled");
+		}
+	})
+ 
+ 
+
+	if(frecuentPaymentsScriptsExecuted && !(event == 'ajaxQLR' || event == 'ajaxHiddens') ){
+		window.closeProgress();
+		return true;
+	} 
+	frecuentPaymentsScriptsExecuted = true;
+
+
+
+ 
 	function processCheckboxWidget() {
+		
 		 //var $this = $('#'+elementId);
  		 $("input[type='checkbox']").each(function(index ){
  			//var $checkbox = $this.find("input[type='checkbox']");
@@ -26,6 +48,7 @@ function runFrecuentPaymentsScripts(){
 
 
 	function processAmmountImputs(){
+		
 		$("input.amount-input").each(function(index){
 			var elId = $(this).attr('id');
 			$(this).after("<span id='"+elId+"_Helper' style='display:none;height:0;opacity:0;'></span>")
@@ -35,10 +58,11 @@ function runFrecuentPaymentsScripts(){
 
 
 	function handleNumberInput(element,DecimalsNotAllowed, CurrencyFormat, MAX_LENGTH) {
-	 
+	   
 	    var $inputNumber = $(element);
 	    var elementId = $inputNumber.attr('id');
 
+	    $inputNumber.off("keydown");
 	    $inputNumber.on("keydown", filterInput);
 	    var isDroid = navigator.userAgent.match(/Android/);
 	    if (isDroid) {
@@ -49,6 +73,7 @@ function runFrecuentPaymentsScripts(){
 	    $inputNumber.attr("pattern", "\\d*")
 
 	    function filterInput(event) {
+	    	
 	        var keyCode = ('which' in event) ? event.which : event.keyCode;
 	        var targetInput = event.target;
 	        var targetInputValue = targetInput.value;
@@ -89,6 +114,8 @@ function runFrecuentPaymentsScripts(){
 	    };
 
 
+	   
+
 	    if(CurrencyFormat == 'Y'){
 	        $inputNumber.attr("placeholder", "0.00");
 	        $inputNumber.css({
@@ -99,7 +126,8 @@ function runFrecuentPaymentsScripts(){
 	        
 	    
 
-	    var $inputHelper = $('#'+elementId+'_Helper')
+	    var $inputHelper = $('#'+elementId+'_Helper');
+	    $inputNumber.off("input");
 	    $inputNumber.on("input", function (e) {
 	        var previousValue = $inputHelper.html();
 	        var currentValue = $inputNumber.val();
@@ -157,13 +185,17 @@ function runFrecuentPaymentsScripts(){
 	       }
 	    })	        
 	}
+
+  
 	 
 	processAmmountImputs();
-	processCheckboxWidget();	 
+	processCheckboxWidget();
+	window.closeProgress();
+	return true; 
 }
 
-
-if (Hi !== 'undefined')  {
-  Hi.addHook('postProcessResponses',runFrecuentPaymentsScripts)
-}
+postProcessResponses();
+//if (Hi !== 'undefined')  {
+ // Hi.addHook('postProcessResponses',runFrecuentPaymentsScripts)
+//}
 </script>

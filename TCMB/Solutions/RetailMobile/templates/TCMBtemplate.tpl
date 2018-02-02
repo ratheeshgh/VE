@@ -43,6 +43,13 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 				return false;
 			return true;
 		}
+
+		function beforeSubmit(){
+		
+			 $%IF PHASE == "FrequentPayments"$   
+				$("#C1__C1__FMT_72D14C8ACF50F163203367").css({'height':'61px'});
+			 $%ENDIF$
+		}
 	   </script>
 	   <script>
 		   if("$$PHASE$" == "Login" || "$$PHASE$" == "SessionTimeOut"  || "$$PHASE$" == 'Offline'){
@@ -134,7 +141,7 @@ $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 	   </script>
 		$%ENDIF$
     </head>
-    <body>
+    <body $%IF PHASE == "FrequentPayments"$ style="background-color: white"  $%ENDIF$ >
 $%endif$
 $%if PRESENTATIONTYPE != "Pure HTML" && PRESENTATIONTYPE != "Accessibility Compliant"$
         <!-- UNCOMMENT IFRAME IF USING AUTOCOMPLETE - PROVIDES WORK-AROUND FOR IE6 ISSUE -->
@@ -206,6 +213,86 @@ $%endif$
 	
   });
 </script>
+<script>
+	$%COMMENT$ This is hook that is called befora an AJAX call is performed. $%ENDCOMMENT$		
+	function beforeAjaxPOSTRequest(url, async, parameters, ns, ajaxCaller, req) {
+		showProgress();
+		return true;
+	}
+	$%COMMENT$ This is hook that is called after making an AJAX call. Note that this hooks gets invoked multiple times, hence the logic for req.readyState $%ENDCOMMENT$
+	function afterAjaxPOSTRequest(async, req, ajaxCaller, ns, uid) {
+		if (async)
+		{
+			if (req.readyState == 4) 
+			{ 
+				closeProgress();
+			}
+		}
+		else
+		{
+			closeProgress(); 
+		}			
+		return true;
+	}
+	
+	$%COMMENT$ This is hook that is called before processing a form submit. $%ENDCOMMENT$
+	function beforeSubmit () {
+		showProgress();
+	};
+	$%COMMENT$ This is hook that is called when a new page is displayed. $%ENDCOMMENT$
+	function afterInitForm(ns) {
+		//If you have decided to comment out the call to hideSplashScreen() in index-hybrid.html,
+		//this would be a good place to hide the splashscrreen by uncommenting the line below
+		//document.addEventListener("deviceready", hideSplashScreen, false);
+		document.addEventListener("deviceready", closeProgress, false);		
+		if (isWindowExternalNotifyDefined()) {
+            closeProgress();
+        }           		
+	};
+	
+    $%COMMENT$ 
+            Shows the progress dialog for hybrid
+            Call with a "message" parameter only if you want to display a custom message in the progress dialog. You can choose to display the default message or to show no message at all. 
+        $%ENDCOMMENT$
+        function showProgress(message) {
+            //if (navigator.spinnerDialog) {
+            if ((typeof(navigator) !=='undefined') && (typeof(navigator.spinnerDialog) !=='undefined')) {            
+                if (message) {
+                    navigator.spinnerDialog.show(true, message);
+                } else {
+                    $%COMMENT$ 
+                        Call navigator.spinnerDialog.show(true)  if you want to show also a message in the progress dialog. The message is configured in the hybrid message editor, under the key loading_wait 
+                        Call navigator.spinnerDialog.show(false) if you don't want to show any message in the progress dialog
+                    $%ENDCOMMENT$
+                    navigator.spinnerDialog.show(false, null);
+                }
+            } else 
+            {
+            	if (isWindowExternalNotifyDefined()) {
+                    window.external.notify("UNIVERSAL_APPS_SHOW_PROGRESS_NOTIFY"+JSON.stringify({"showMessage":false, "message":message}));
+                } else {
+                    console.log("no navigator.spinnerDialog");
+                }
+            }
+        };
+        
+        $%COMMENT$ 
+            Closes the progess dialog for hybrid 
+        $%ENDCOMMENT$
+        function closeProgress() {
+            //if (navigator.spinnerDialog) {
+            if ((typeof(navigator) !=='undefined') && (typeof(navigator.spinnerDialog) !=='undefined')) {            
+                navigator.spinnerDialog.hide();
+            } else 
+            {
+            	if (isWindowExternalNotifyDefined()) {
+                    window.external.notify("UNIVERSAL_APPS_CLOSE_PROGRESS_NOTIFY");
+                } else {
+                    console.log("no navigator.spinnerDialog");
+                }
+            }
+        };      
+  </script>
 $%if PRESENTATIONTYPE != Portlet || IS_RUNPREVIEW == "Y"$
 <form name="sessionTimeoutForm" method=POST action="servletcontroller" autocomplete="off">
 	<input type="hidden" name="PRODUCT" value="">
