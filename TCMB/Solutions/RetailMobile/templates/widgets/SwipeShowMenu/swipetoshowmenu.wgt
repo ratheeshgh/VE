@@ -1,4 +1,8 @@
 $%IF ITEM.DISABLE_SWIPE != 'Y'$
+<script type="text/javascript" src="./html/js/jquery.event.move.js"></script>
+<script type="text/javascript" src="./html/js/jquery.event.swipe.js"></script>
+$%ENDIF$
+$%IF ITEM.DISABLE_SWIPE != 'Y'$
 
 <script type="text/javascript">
     sessionStorage.ShowMenu = 0;
@@ -8,6 +12,7 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
         var mobile = $("div[id$=mobile]");
         var $hiddenSection = $('#$$ITEM.COMPONENT_PREFIX()$hidden_Section');
 
+        mobile.parents("div[id$=Container]").first().css('overflow', 'hidden');
         sidebar.removeClass('NotDisplayed');
 
         if (sidebar.css("position") === "fixed") {
@@ -29,21 +34,23 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
 
         $('.row-offcanvas').toggleClass('active');
         if (mobile.hasClass('off') || sidebar.hasClass('inactive')) {
-            mobile.animate({
-                opacity: 1
-            }, 200).removeClass('off').addClass('on').removeAttr('style');
+            
+            mobile.removeClass('off').addClass('on').removeAttr('style');
+            mobile.css("opacity", 1);
             sidebar.removeClass('inactive')
             sidebar.addClass('active')
-            $(sidebar).unbind('touchmove');
-            $('#EDGE_CONNECT_PROCESS').unbind('touchmove');
+            setTimeout(function() {
+                $(sidebar).unbind('touchmove');
+                $('#EDGE_CONNECT_PROCESS').unbind('touchmove');
+            }, 300)
             sessionStorage.ShowMenu = 0;
             /*main page scroll event*/
 
         } else {
+            mobile.css('opacity', 0.5)
 
-            mobile.animate({
-                opacity: 0.5
-            }, 200).removeClass('on').addClass('off').css('margin-left', '-15px');
+            //mobile.removeClass('on').addClass('off').css('margin-left', '-15px');
+            mobile.removeClass('on').addClass('off');
 
             sidebar.removeClass('active')
             sidebar.addClass('inactive')
@@ -66,13 +73,13 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
 
     
 
-    $(window).resize(function() {
+    /*$(window).resize(function() {
         $(".sidebar-offcanvas").height($(document).height() - topnavheight);
         var sidebar = $("#$$ITEM.COMPONENT_PREFIX()$sidebar-container");
         if (sidebar.css("position") !== "fixed") {
             sidebar.removeAttr("style");
         }
-    });
+    });*/
 
     $(document).ready(function() {
 
@@ -89,9 +96,9 @@ $%IF ITEM.DISABLE_SWIPE != 'Y'$
             }
         });
 
-        $(window).resize(function() {
+        /*$(window).resize(function() {
             $(".sidebar-offcanvas").height($(document).height() - topnavheight);
-        });
+        });*/
 
         var $body = $('body')
         window.isClicked = false;

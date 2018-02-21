@@ -12131,7 +12131,64 @@ border-left:8px #229C7B solid;
 	z-index: 1000;
 }
 
+
+.iosScrollFix{
+  overflow-y: scroll;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;
+  padding: 0 15px;
+  padding-bottom: 65px;
+  margin: 0px;
+}
+
+.iosScrollFix-details.branches{  
+  padding-bottom: 120px;   
+}
  
+.iosScrollFix-details{
+  overflow-y: scroll;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100vh;  
+  padding-bottom: 45px;
+  position: relative;
+  z-index: 1000;
+  margin: 0px;
+}
+
+.iosScrollFix-details #wrapper{
+  background-color: #EBF0F5;
+  padding-bottom: 15px;
+}
+
+.iosScrollFix-frecuent-payments{
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+.iosScrollFix-frecuent-payments-review{
+  padding: 0;
+  padding-bottom: 70px;
+}
+
+.iosScrollFix-frecuent-payments-receipt{
+  padding: 0;
+}
+
+.iosScrollFix-beneficiary-directory{
+  padding: 0;
+  padding-bottom: 110px;
+  height: 100vh !important;
+}
+
+ 
+
+.iosScrollFix-directory{
+  padding: 0;   
+  padding-bottom: 110px;
+  height: 90.5vh !important; 
+}
 
 
  

@@ -191,6 +191,18 @@ function postProcessResponses(a,event,c){
 	processAmmountImputs();
 	processCheckboxWidget();
 	window.closeProgress();
+
+	
+	if(IOS){
+		var elem = $('#$$ITEM.COMPONENT_PREFIX()$FMT_F5F0132FF6E75329287373');    
+		if ( !elem.hasClass('iosScrollFix') ){
+			$('#$$ITEM.COMPONENT_PREFIX()$FMT_3D97A91B1EE5407B315319').css('height', 'auto'); 
+			$('#$$ITEM.COMPONENT_PREFIX()$FMT_F5F0132FF6E75329345246').css('height', 'auto');
+			elem.addClass('iosScrollFix iosScrollFix-frecuent-payments');
+		}
+	}
+
+
 	return true; 
 }
 
